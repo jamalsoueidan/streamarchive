@@ -1,0 +1,94 @@
+{
+  "title": "Clips",
+  "description": "AI-generated clips from your recordings",
+  "emptyState": {
+    "title": "No clips yet",
+    "description": "Clips will appear here once they are generated from your recordings"
+  },
+  "share": {
+    "tiktok": "Publish to TikTok",
+    "uploaded": "Published to TikTok",
+    "processing": "Publishing...",
+    "completed": "Published on TikTok",
+    "shared": "Published",
+    "failed": "Failed",
+    "retry": "Retry",
+    "failedTooltip": "Publish failed. Click to retry.",
+    "check": "Check",
+    "checkStatus": "Check TikTok status"
+  },
+  "actions": {
+    "edit": "Edit video",
+    "delete": "Delete"
+  },
+  "publishPage": {
+    "title": "Publish to TikTok",
+    "description": "Review your video and choose how you want to share it on TikTok",
+    "loadingCreator": "Loading your TikTok account...",
+    "publishingTo": "Publishing to",
+    "descriptionLabel": "Title",
+    "descriptionPlaceholder": "Write a title for your video...",
+    "privacyLabel": "Privacy status",
+    "privacyPlaceholder": "Select privacy status",
+    "privacy": {
+      "PUBLIC_TO_EVERYONE": "Everyone",
+      "MUTUAL_FOLLOW_FRIENDS": "Friends",
+      "FOLLOWER_OF_CREATOR": "Followers",
+      "SELF_ONLY": "Only me"
+    },
+    "interactionSettings": "Allow users to",
+    "allowComments": "Comment",
+    "allowDuet": "Duet",
+    "allowStitch": "Stitch",
+    "disabledByCreator": "Disabled in your TikTok settings",
+    "commercialContent": "Content disclosure setting",
+    "commercialContentDescription": "Turn on to disclose that this video promotes goods or services in exchange for something of value. Your video could promote yourself, a third party, or both.",
+    "brandContentToggle": "Your brand",
+    "brandContentDescription": "You are promoting yourself or your own business. This content will be classified as Brand Organic.",
+    "brandOrganicToggle": "Branded content",
+    "brandOrganicDescription": "You are promoting another brand or a third party. This content will be classified as Branded Content.",
+    "promotionalContentLabel": "Your video will be labeled as 'Promotional content'.",
+    "paidPartnershipLabel": "Your video will be labeled as 'Paid partnership'.",
+    "cannotChangeWarning": "This cannot be changed once your video is posted.",
+    "musicConfirmation": "By posting, you agree to TikTok's Music Usage Confirmation",
+    "confirmationPrefix": "By posting, you agree to",
+    "termsOfServiceLink": "LiveStreamRecorder's Terms of Service",
+    "musicConfirmationLink": "TikTok's Music Usage Confirmation",
+    "brandedContentPolicyLink": "TikTok's Branded Content Policy",
+    "andText": "and",
+    "commercialContentToggle": "This content promotes yourself, a brand, product or service",
+    "commercialContentRequired": "You need to indicate if your content promotes yourself, a third party, or both",
+    "brandedContentPrivacyWarning": "Branded content cannot be set to private visibility",
+    "publishButton": "Publish to TikTok",
+    "uploadButton": "Publish",
+    "cancel": "Cancel",
+    "backToClips": "Back to Clips",
+    "noTiktokConnection": {
+      "title": "TikTok account not connected",
+      "description": "To publish clips to TikTok, go to Settings and connect your TikTok account first.",
+      "goToSettings": "Go to Settings",
+      "hint": "Once connected, come back here to publish your clip."
+    },
+    "success": "Publishing",
+    "successMessage": "Your video is being published to TikTok. It may take a few minutes to process and appear on your profile.",
+    "error": "Error",
+    "errorMessage": "Failed to publish to TikTok",
+    "validation": {
+      "privacyRequired": "Please select who can view this video",
+      "musicConfirmationRequired": "You must agree to the Music Usage Confirmation"
+    },
+    "cannotPostNow": "You've reached your daily posting limit on TikTok. Please try again later.",
+    "videoTooLong": "This video is {duration} seconds long, but TikTok only allows videos up to {maxDuration} seconds for your account.",
+    "selfOnlyDisabledBranded": "Branded content visibility cannot be set to private"
+  },
+  "upgrade": {
+    "title": "From recording to TikTok in seconds",
+    "features": {
+      "publish": "Post directly to TikTok, Reels, and Shorts",
+      "schedule": "Schedule your clips — stay consistent on autopilot",
+      "edit": "Add captions, effects, and make it yours"
+    },
+    "upgradeButton": "Upgrade Now",
+    "hint": "Unlock clip publishing with a premium subscription"
+  }
+}

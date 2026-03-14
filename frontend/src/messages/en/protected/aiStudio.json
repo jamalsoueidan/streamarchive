@@ -1,0 +1,91 @@
+{
+  "title": "AI Studio",
+  "description": "Create clips and memes from your recordings with AI",
+  "requestDetails": "Request Details",
+  "createRequest": "Create Request",
+  "unknownCreator": "Unknown Creator",
+  "unknownRecording": "Unknown Recording",
+  "recordingDeleted": {
+    "badge": "Recording deleted"
+  },
+  "viewDetails": "View Details",
+  "state": {
+    "pending": "Pending",
+    "processing": "Processing",
+    "completed": "Completed",
+    "failed": "Failed"
+  },
+  "options": {
+    "clips": "Clips",
+    "memes": "Memes",
+    "profile": "Profile"
+  },
+  "filters": {
+    "all": "All",
+    "pending": "Pending",
+    "processing": "In Progress",
+    "completed": "Completed"
+  },
+  "emptyState": {
+    "title": "No AI requests yet",
+    "description": "Go to your recordings and click the AI button to create clips and memes"
+  },
+  "create": {
+    "selectOptions": "What would you like to create?",
+    "options": {
+      "clips": {
+        "label": "Generate Clips",
+        "description": "AI will find the best moments and create short clips"
+      },
+      "memes": {
+        "label": "Generate Memes",
+        "description": "AI will create meme-worthy screenshots with captions"
+      },
+      "profile": {
+        "label": "Generate Profile",
+        "description": "AI will analyze and suggest profile improvements"
+      }
+    },
+    "sizeWarning": {
+      "title": "Video too large",
+      "message": "This video is {size}GB. Videos larger than 2GB need to be processed in parts."
+    },
+    "submit": "Start Processing"
+  },
+  "status": {
+    "progress": "Progress",
+    "tasks": "Tasks",
+    "pendingTitle": "Waiting to Start",
+    "pendingMessage": "Your request is queued and will begin processing shortly.",
+    "clipsCount": "{count} clips",
+    "memesCount": "{count} memes",
+    "localesCount": "{count} locales",
+    "clipFallback": "Clip {index}",
+    "default": "Default",
+    "tagline": "Tagline",
+    "description": "Description",
+    "state": {
+      "pending": "Pending",
+      "processing": "Processing",
+      "completed": "Completed",
+      "failed": "Failed"
+    }
+  },
+  "upgrade": {
+    "title": "Your AI Video Studio",
+    "features": {
+      "clips": "Smart clips from long recordings — ready to share",
+      "memes": "AI-generated memes and photos from your videos",
+      "viral": "Instant video translation in dozens of languages"
+    },
+    "upgradeButton": "Upgrade Now",
+    "hint": "Unlock AI Studio with a premium subscription"
+  },
+  "quota": {
+    "badge": "{used} / {total} this month",
+    "limitReachedNote": "Limit reached · resets {date}",
+    "alertTitle": "Monthly limit reached",
+    "alertBody": "You've used all {total} AI generations this month. Your limit resets on {date}.",
+    "editButton": "Edit video manually"
+  }
+}

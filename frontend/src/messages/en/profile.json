@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "title": "{nickname} (@{username}) Videos & Recordings",
+    "notFoundTitle": "Creator Not Found",
+    "notFoundDescription": "This creator profile could not be found.",
+    "description": "Watch {nickname}'s {platform} live recordings and clips. {nickname} uses Live Stream Recorder to save and share their live streams.",
+    "ogTitle": "{nickname} — Videos & Clips | Live Stream Recorder",
+    "twitterTitle": "{nickname} — {platform} Videos & Clips",
+    "keywords": "{nickname} videos, {nickname} clips, {nickname} {platform}, watch {nickname}, {nickname} live stream, {nickname} recordings"
+  },
+  "defaultTagline": "{nickname} saves their live streams here. Watch recordings and clips anytime.",
+  "about": "About {nickname}",
+  "faq": "FAQ",
+  "recorded": "Recorded on {date}",
+  "emptyState": {
+    "title": "No recordings yet",
+    "description": "This creator hasn't saved any streams yet. Check back later!"
+  },
+  "jsonLd": {
+    "streamTitle": "{nickname}'s Stream - {date}"
+  },
+  "report": "Report",
+  "cta": {
+    "title": "You're only seeing a preview from @{username}",
+    "description": "@{username} shares their recordings here. Sign up to save and share your own streams.",
+    "button": "Create Free Account"
+  }
+}

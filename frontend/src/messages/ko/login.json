@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "title": "로그인",
+    "description": "LiveStreamRecorder 계정에 로그인하여 녹화 영상과 팔로우한 스트리머를 확인하세요."
+  },
+  "title": "다시 오신 것을 환영합니다",
+  "subtitle": "계정에 로그인하여 계속하세요",
+  "email": {
+    "label": "이메일 주소",
+    "placeholder": "example@email.com"
+  },
+  "password": {
+    "label": "비밀번호",
+    "placeholder": "비밀번호를 입력하세요"
+  },
+  "emailConfirmed": "이메일 인증이 완료되었습니다. 이제 로그인하실 수 있습니다.",
+  "forgotPassword": "비밀번호를 잊으셨나요?",
+  "submit": {
+    "default": "로그인",
+    "loading": "로그인 중..."
+  },
+  "choices": {
+    "emailPassword": "이메일 / 비밀번호 사용",
+    "google": "Google로 계속하기",
+    "tiktok": "TikTok으로 계속하기",
+    "facebook": "Facebook으로 계속하기"
+  },
+  "terms": {
+    "text": "계속하면 Live Stream Recorder의",
+    "tosLink": "서비스 약관",
+    "and": "에 동의하고",
+    "privacyLink": "개인정보 처리방침"
+  },
+  "errors": {
+    "emailTaken": "이 이메일로 등록된 계정이 이미 있습니다. 기존 방법으로 로그인해 주세요."
+  },
+  "register": {
+    "text": "계정이 없으신가요?",
+    "link": "회원가입"
+  }
+}

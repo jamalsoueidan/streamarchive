@@ -1,0 +1,61 @@
+{
+  "platforms": {
+    "label": "Platform",
+    "all": "Semua",
+    "tiktok": "TikTok",
+    "twitch": "Twitch",
+    "youtube": "YouTube",
+    "kick": "Kick",
+    "afreecatv": "AfreecaTV",
+    "pandalive": "PandaLive",
+    "bigo": "Bigo"
+  },
+  "sort": {
+    "label": "Urutkan berdasarkan",
+    "usernameAsc": "A-Z",
+    "usernameDesc": "Z-A",
+    "createdAtDesc": "Baru ditambahkan",
+    "createdAtAsc": "Pertama ditambahkan",
+    "totalRecordingsDesc": "Rekaman terbanyak",
+    "totalRecordingsAsc": "Rekaman paling sedikit",
+    "latestRecordingDesc": "Baru-baru ini streaming",
+    "latestRecordingAsc": "Stream terlama",
+    "updatedAtDesc": "Terbaru",
+    "updatedAtAsc": "Terlama"
+  },
+  "gender": {
+    "label": "Jenis Kelamin",
+    "all": "Semua",
+    "female": "Perempuan",
+    "male": "Laki-laki",
+    "unknown": "Lainnya"
+  },
+  "dateRange": {
+    "label": "Ditambahkan",
+    "today": "Hari ini",
+    "yesterday": "Kemarin",
+    "thisWeek": "Minggu ini",
+    "lastWeek": "Minggu lalu",
+    "thisMonth": "Bulan ini",
+    "lastMonth": "Bulan lalu"
+  },
+  "country": {
+    "label": "Negara",
+    "placeholder": "Negara lainnya..."
+  },
+  "language": {
+    "label": "Bahasa",
+    "placeholder": "Bahasa lainnya..."
+  },
+  "search": {
+    "placeholder": "Cari username..."
+  },
+  "actions": {
+    "clearAll": "Hapus semua",
+    "filters": "Filter",
+    "done": "Selesai"
+  },
+  "options": {
+    "hasRecordings": "Tampilkan hanya kreator dengan rekaman"
+  }
+}

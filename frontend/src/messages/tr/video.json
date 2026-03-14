@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "title": "{creatorName} Yayını - {recordedDate}",
+    "description": "{creatorName}'in {recordedDate} tarihli kaydedilmiş {platform} canlı yayınını izleyin. Süre: {duration}. Live Stream Recorder ile bir daha yayın kaçırmayın.",
+    "ogTitle": "{creatorName} Yayını - {recordedDate} | Live Stream Recorder",
+    "keywords": "{creatorName} video, {creatorName} yayın {recordedDate}, {creatorName} {platform}, {creatorName} kaydedilmiş yayın, {creatorName} izle"
+  },
+  "jsonLd": {
+    "name": "{creatorName} Yayını - {recordedDate}",
+    "description": "{creatorName}'in {recordedDate} tarihli kaydedilmiş canlı yayını"
+  },
+  "watch": {
+    "title": "{username} video canlı yayınını izle - {date}"
+  },
+  "backToProfile": "{username} profiline dön",
+  "otherRecordingsBy": "{username} diğer kayıtları"
+}

@@ -1,0 +1,103 @@
+{
+  "title": "TikTok Insights",
+  "description": "Platform-wide TikTok Live analytics",
+
+  "globalStats": {
+    "title": "Platform Overview",
+    "totalUsers": "Total Gifters",
+    "totalDiamonds": "Total Diamonds",
+    "totalGifts": "Total Gifts",
+    "totalBattles": "Total Battles"
+  },
+
+  "dailyEarnings": {
+    "title": "Daily Earnings",
+    "seriesLabel": "Diamonds",
+    "empty": "No earnings data available",
+    "allCountries": "All Countries",
+    "allLanguages": "All Languages"
+  },
+
+  "topEarners": {
+    "title": "Top Earners",
+    "username": "Username",
+    "country": "Country",
+    "language": "Language",
+    "diamonds": "Diamonds",
+    "gifts": "Gifts",
+    "gifters": "Gifters",
+    "empty": "No data available",
+    "allCountries": "All Countries",
+    "allLanguages": "All Languages"
+  },
+
+  "mostLive": {
+    "title": "Most Active Streamers",
+    "username": "Username",
+    "country": "Country",
+    "language": "Language",
+    "sessions": "Sessions",
+    "hours": "Hours",
+    "empty": "No data available",
+    "allCountries": "All Countries",
+    "allLanguages": "All Languages"
+  },
+
+  "countryLeaderboard": {
+    "title": "Country Leaderboard",
+    "rank": "#",
+    "country": "Country",
+    "diamonds": "Diamonds",
+    "gifts": "Gifts",
+    "streamers": "Streamers",
+    "gifters": "Gifters",
+    "empty": "No data available",
+    "loadMore": "Load more"
+  },
+
+  "languageLeaderboard": {
+    "title": "Language Leaderboard",
+    "rank": "#",
+    "language": "Language",
+    "diamonds": "Diamonds",
+    "gifts": "Gifts",
+    "streamers": "Streamers",
+    "gifters": "Gifters",
+    "empty": "No data available",
+    "loadMore": "Load more"
+  },
+
+  "topGifters": {
+    "title": "Top Gifters",
+    "description": "Users who have sent the most total diamonds across all streamers on TikTok.",
+    "username": "Username",
+    "diamonds": "Diamonds",
+    "gifts": "Gifts",
+    "streamers": "Streamers Supported",
+    "empty": "No data available"
+  },
+
+  "battleStats": {
+    "title": "Battle Leaderboard",
+    "description": "Streamers ranked by their battle record. Battles are live head-to-head competitions where audience gifts decide the winner.",
+    "username": "Username",
+    "battles": "Battles",
+    "wins": "Wins",
+    "losses": "Losses",
+    "draws": "Draws",
+    "winRate": "Win Rate",
+    "empty": "No data available"
+  },
+
+  "gifterRelationships": {
+    "title": "Gifter Relationships",
+    "description": "Top gifter–streamer pairs ranked by diamonds sent. Reveals who are the most dedicated supporters of individual streamers.",
+    "pair": "Gifter → Streamer",
+    "supported": "supported",
+    "gifter": "Gifter",
+    "streamer": "Streamer",
+    "diamonds": "Diamonds",
+    "gifts": "Gifts",
+    "empty": "No data available"
+  }
+}

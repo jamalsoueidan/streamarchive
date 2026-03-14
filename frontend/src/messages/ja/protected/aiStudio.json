@@ -1,0 +1,91 @@
+{
+  "title": "AI スタジオ",
+  "description": "AI を使って録画からクリップやミームを作成しましょう",
+  "requestDetails": "リクエスト詳細",
+  "createRequest": "リクエストを作成",
+  "unknownCreator": "不明なクリエイター",
+  "unknownRecording": "不明な録画",
+  "recordingDeleted": {
+    "badge": "録画が削除されました"
+  },
+  "viewDetails": "詳細を見る",
+  "state": {
+    "pending": "待機中",
+    "processing": "処理中",
+    "completed": "完了",
+    "failed": "失敗"
+  },
+  "options": {
+    "clips": "クリップ",
+    "memes": "ミーム",
+    "profile": "プロフィール"
+  },
+  "filters": {
+    "all": "すべて",
+    "pending": "待機中",
+    "processing": "処理中",
+    "completed": "完了"
+  },
+  "emptyState": {
+    "title": "まだ AI リクエストはありません",
+    "description": "録画ページに移動して AI ボタンをクリックしてクリップやミームを作成してください"
+  },
+  "create": {
+    "selectOptions": "何を作成しますか？",
+    "options": {
+      "clips": {
+        "label": "クリップを生成",
+        "description": "AI がベストモーメントを見つけてショートクリップを作成します"
+      },
+      "memes": {
+        "label": "ミームを生成",
+        "description": "AI がキャプション付きのミームになるスクリーンショットを作成します"
+      },
+      "profile": {
+        "label": "プロフィールを生成",
+        "description": "AI がプロフィールを分析して改善案を提案します"
+      }
+    },
+    "sizeWarning": {
+      "title": "動画サイズが大きすぎます",
+      "message": "この動画は {size}GB です。2GB を超える動画はパートに分けて処理する必要があります。"
+    },
+    "submit": "処理を開始"
+  },
+  "status": {
+    "progress": "進行状況",
+    "tasks": "タスク",
+    "pendingTitle": "開始を待機中",
+    "pendingMessage": "リクエストはキューに入っており、まもなく処理が始まります。",
+    "clipsCount": "{count} クリップ",
+    "memesCount": "{count} ミーム",
+    "localesCount": "{count} ロケール",
+    "clipFallback": "クリップ {index}",
+    "default": "デフォルト",
+    "tagline": "タグライン",
+    "description": "説明",
+    "state": {
+      "pending": "待機中",
+      "processing": "処理中",
+      "completed": "完了",
+      "failed": "失敗"
+    }
+  },
+  "upgrade": {
+    "title": "AI 動画スタジオ",
+    "features": {
+      "clips": "長い録画からスマートクリップを作成 — シェアの準備完了",
+      "memes": "動画から AI 生成ミームと写真を作成",
+      "viral": "数十の言語への瞬時の動画翻訳"
+    },
+    "upgradeButton": "今すぐアップグレード",
+    "hint": "プレミアムサブスクリプションで AI スタジオをアンロック"
+  },
+  "quota": {
+    "badge": "今月 {used} / {total} 回",
+    "limitReachedNote": "今月の上限に達しました · {date} にリセット",
+    "alertTitle": "今月の上限に達しました",
+    "alertBody": "今月の AI 生成 {total} 回をすべて使い切りました。{date} にリセットされます。",
+    "editButton": "自分で動画を編集"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Keşfet",
+  "description": "Diğer içerik üreticilerinden kayıtlara göz atın",
+  "emptyFiltered": {
+    "title": "Filtrelerinize uyan kayıt yok",
+    "description": "Filtrelerinizi ayarlamayı veya temizlemeyi deneyin"
+  },
+  "emptyDefault": {
+    "title": "Kayıt bulunamadı",
+    "description": "-"
+  },
+  "noMoreToLoad": "Sona ulaştınız"
+}

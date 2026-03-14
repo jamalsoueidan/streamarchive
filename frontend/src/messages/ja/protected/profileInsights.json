@@ -1,0 +1,74 @@
+{
+  "beta": "インサイトは現在ベータ版です。この機能の改善を続けているため、データが不完全または変更される場合があります。",
+  "tabs": {
+    "videos": "動画",
+    "insights": "インサイト"
+  },
+  "stats": {
+    "totalDiamonds": "ダイヤモンド合計",
+    "battleDiamonds": "バトルで獲得したダイヤモンド",
+    "nonBattleDiamonds": "バトル以外で獲得したダイヤモンド",
+    "battles": "バトル",
+    "won": "勝利",
+    "lost": "敗北",
+    "winRate": "勝率",
+    "gifters": "ギフター",
+    "chatParticipants": "チャット参加者"
+  },
+  "battleHistory": {
+    "title": "バトル履歴",
+    "empty": "バトルの記録はまだありません。",
+    "colDate": "日付",
+    "colType": "タイプ",
+    "colOpponents": "対戦相手",
+    "colScore": "スコア",
+    "colDiamonds": "ダイヤモンド",
+    "colResult": "結果",
+    "vs": "vs",
+    "with": "と",
+    "live": "ライブ",
+    "interrupted": "中断",
+    "won": "勝利",
+    "draw": "引き分け",
+    "lost": "敗北"
+  },
+  "streamActivity": {
+    "title": "最近の配信",
+    "empty": "配信セッションのデータはありません。",
+    "colDate": "日付",
+    "colDuration": "配信時間",
+    "colPeakViewers": "最高視聴者数",
+    "colAvgViewers": "平均視聴者数",
+    "colDiamonds": "ダイヤモンド",
+    "colBattles": "バトル",
+    "durationMinutes": "{m}分",
+    "durationHoursMinutes": "{h}時間{m}分"
+  },
+  "topGifters": {
+    "title": "トップギフター",
+    "empty": "ギフターのデータはありません。",
+    "giftCount": "{count} ギフト"
+  },
+  "topOpponents": {
+    "title": "よく対戦する相手",
+    "empty": "バトルデータはありません。",
+    "wins": "{count}勝",
+    "losses": "{count}敗",
+    "battleCount": "{count} バトル"
+  },
+  "earnings": {
+    "title": "収益",
+    "empty": "収益データはありません。",
+    "seriesLabel": "ダイヤモンド"
+  },
+  "schedule": {
+    "title": "配信スケジュール",
+    "mon": "月",
+    "tue": "火",
+    "wed": "水",
+    "thu": "木",
+    "fri": "金",
+    "sat": "土",
+    "sun": "日"
+  }
+}

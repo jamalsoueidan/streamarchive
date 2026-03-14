@@ -1,0 +1,14 @@
+{
+  "title": "Biblioteca ({count})",
+  "description": "Gerencie seus criadores",
+  "disabledHint": "Itens desativados ainda não têm gravações",
+  "emptyFiltered": {
+    "title": "Nenhum criador corresponde aos seus filtros",
+    "description": "Tente ajustar ou limpar os filtros"
+  },
+  "emptyDefault": {
+    "title": "Você ainda não adicionou nenhum criador",
+    "description": "Explore a seção Amigos para descobrir criadores na plataforma"
+  },
+  "noMoreToLoad": "Você chegou ao fim"
+}

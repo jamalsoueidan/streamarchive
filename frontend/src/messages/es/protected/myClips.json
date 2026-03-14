@@ -1,0 +1,94 @@
+{
+  "title": "Clips",
+  "description": "Clips generados por IA de tus grabaciones",
+  "emptyState": {
+    "title": "Sin clips todavía",
+    "description": "Los clips aparecerán aquí una vez que se generen de tus grabaciones"
+  },
+  "share": {
+    "tiktok": "Publicar en TikTok",
+    "uploaded": "Publicado en TikTok",
+    "processing": "Publicando...",
+    "completed": "Publicado en TikTok",
+    "shared": "Publicado",
+    "failed": "Fallido",
+    "retry": "Reintentar",
+    "failedTooltip": "Publicación fallida. Haz clic para reintentar.",
+    "check": "Verificar",
+    "checkStatus": "Verificar estado en TikTok"
+  },
+  "actions": {
+    "edit": "Editar video",
+    "delete": "Eliminar"
+  },
+  "publishPage": {
+    "title": "Publicar en TikTok",
+    "description": "Revisa tu video y elige cómo quieres compartirlo en TikTok",
+    "loadingCreator": "Cargando tu cuenta de TikTok...",
+    "publishingTo": "Publicando en",
+    "descriptionLabel": "Título",
+    "descriptionPlaceholder": "Escribe un título para tu video...",
+    "privacyLabel": "Estado de privacidad",
+    "privacyPlaceholder": "Seleccionar estado de privacidad",
+    "privacy": {
+      "PUBLIC_TO_EVERYONE": "Todos",
+      "MUTUAL_FOLLOW_FRIENDS": "Amigos",
+      "FOLLOWER_OF_CREATOR": "Seguidores",
+      "SELF_ONLY": "Solo yo"
+    },
+    "interactionSettings": "Permitir a los usuarios",
+    "allowComments": "Comentar",
+    "allowDuet": "Dueto",
+    "allowStitch": "Stitch",
+    "disabledByCreator": "Desactivado en tu configuración de TikTok",
+    "commercialContent": "Configuración de divulgación de contenido",
+    "commercialContentDescription": "Activa esto para indicar que este video promociona bienes o servicios a cambio de algo de valor. Tu video puede promoverte a ti, a un tercero, o a ambos.",
+    "brandContentToggle": "Tu marca",
+    "brandContentDescription": "Estás promocionando tu propio negocio o a ti mismo. Este contenido se clasificará como Brand Organic.",
+    "brandOrganicToggle": "Contenido patrocinado",
+    "brandOrganicDescription": "Estás promocionando otra marca o un tercero. Este contenido se clasificará como Branded Content.",
+    "promotionalContentLabel": "Tu video será etiquetado como 'Contenido promocional'.",
+    "paidPartnershipLabel": "Tu video será etiquetado como 'Colaboración pagada'.",
+    "cannotChangeWarning": "Esto no se puede cambiar una vez publicado tu video.",
+    "musicConfirmation": "Al publicar, aceptas la Confirmación de Uso de Música de TikTok",
+    "confirmationPrefix": "Al publicar, aceptas",
+    "termsOfServiceLink": "los Términos de Servicio de LiveStreamRecorder",
+    "musicConfirmationLink": "la Confirmación de Uso de Música de TikTok",
+    "brandedContentPolicyLink": "la Política de Contenido de Marca de TikTok",
+    "andText": "y",
+    "commercialContentToggle": "Este contenido te promueve a ti, una marca, producto o servicio",
+    "commercialContentRequired": "Debes indicar si tu contenido te promueve a ti, a un tercero, o a ambos",
+    "brandedContentPrivacyWarning": "El contenido de marca no puede configurarse como privado",
+    "publishButton": "Publicar en TikTok",
+    "uploadButton": "Publicar",
+    "cancel": "Cancelar",
+    "backToClips": "Volver a Clips",
+    "noTiktokConnection": {
+      "title": "Cuenta de TikTok no conectada",
+      "description": "Para publicar clips en TikTok, ve a Configuración y conecta tu cuenta de TikTok primero.",
+      "goToSettings": "Ir a Configuración",
+      "hint": "Una vez conectado, vuelve aquí para publicar tu clip."
+    },
+    "success": "Publicando",
+    "successMessage": "Tu video está siendo publicado en TikTok. Puede tardar algunos minutos en procesarse y aparecer en tu perfil.",
+    "error": "Error",
+    "errorMessage": "Error al publicar en TikTok",
+    "validation": {
+      "privacyRequired": "Selecciona quién puede ver este video",
+      "musicConfirmationRequired": "Debes aceptar la Confirmación de Uso de Música"
+    },
+    "cannotPostNow": "Alcanzaste tu límite de publicaciones diarias en TikTok. Inténtalo más tarde.",
+    "videoTooLong": "Este video dura {duration} segundos, pero TikTok solo permite videos de hasta {maxDuration} segundos para tu cuenta.",
+    "selfOnlyDisabledBranded": "La visibilidad del contenido de marca no puede configurarse como privada"
+  },
+  "upgrade": {
+    "title": "De grabación a TikTok en segundos",
+    "features": {
+      "publish": "Publica directamente en TikTok, Reels y Shorts",
+      "schedule": "Programa tus clips — mantente consistente en piloto automático",
+      "edit": "Agrega subtítulos, efectos y personalízalo"
+    },
+    "upgradeButton": "Actualizar Ahora",
+    "hint": "Desbloquea la publicación de clips con una suscripción premium"
+  }
+}

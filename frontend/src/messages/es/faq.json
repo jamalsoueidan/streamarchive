@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "title": "FAQ",
+    "description": "Encuentra respuestas a las preguntas frecuentes sobre LiveStreamRecorder"
+  },
+  "title": "Preguntas Frecuentes",
+  "subtitle": "Encuentra respuestas a las preguntas más comunes sobre nuestro servicio.",
+  "faqs": [
+    {
+      "question": "¿Qué es LiveStreamRecorder.com?",
+      "answer": "LiveStreamRecorder.com es un servicio en la nube que graba automáticamente tus propias transmisiones en vivo. Agrega tu nombre de usuario de cualquier plataforma compatible y capturamos cada transmisión — sin instalar nada, sin dejar la computadora encendida. Mira tus grabaciones cuando quieras o conviértelas en clips."
+    },
+    {
+      "question": "¿Cómo funciona?",
+      "answer": "Regístrate gratis y agrega tu nombre de usuario de la plataforma donde haces streams. Cada vez que estés en vivo, nuestro sistema graba automáticamente tu transmisión. Puedes ver las grabaciones directamente en tu navegador, descargarlas o crear clips para compartir en redes sociales."
+    },
+    {
+      "question": "¿Es realmente gratis?",
+      "answer": "¡Sí! Nuestro plan gratuito te permite grabar en hasta 3 plataformas y las grabaciones se conservan por 5 días. Si necesitas más, nuestro plan premium ofrece mejor calidad de video, almacenamiento por 30 días, descarga de videos y la posibilidad de grabar en hasta 100 plataformas."
+    },
+    {
+      "question": "¿Qué plataformas son compatibles?",
+      "answer": "Actualmente soportamos TikTok, Twitch, YouTube, Kick, AfreecaTV y Pandalive. Siempre trabajamos para agregar más plataformas — estate atento a las actualizaciones."
+    },
+    {
+      "question": "¿Cuánto tiempo se guardan las grabaciones?",
+      "answer": "Los usuarios gratuitos tienen 5 días de almacenamiento. Los usuarios premium tienen 30 días. Asegúrate de descargar las grabaciones que quieras conservar antes de que expiren."
+    },
+    {
+      "question": "¿Cómo agrego mi nombre de usuario?",
+      "answer": "Haz clic en Agregar en tu panel, selecciona tu plataforma e ingresa tu nombre de usuario. Una vez agregado, grabaremos automáticamente cada vez que estés en vivo."
+    },
+    {
+      "question": "¿Puedo grabar en varias plataformas?",
+      "answer": "¡Sí! Si transmites en TikTok y Twitch, solo agrega tu nombre de usuario de cada plataforma y todos tus streams se guardan en un solo lugar."
+    },
+    {
+      "question": "¿Puedo descargar mis grabaciones?",
+      "answer": "La descarga está disponible para usuarios premium. Cada grabación tiene un botón de descarga que te permite guardar el archivo de video completo en tu computadora."
+    },
+    {
+      "question": "¿Qué es ClipAI?",
+      "answer": "ClipAI encuentra automáticamente los mejores momentos de tus streams y los convierte en clips cortos — listos para compartir en TikTok, YouTube Shorts o Instagram Reels."
+    },
+    {
+      "question": "¿Qué incluye el plan premium?",
+      "answer": "Premium te ofrece mejor calidad de video, la posibilidad de descargar grabaciones, almacenamiento por 30 días y soporte para hasta 100 creadores — perfecto para agencias y equipos de gestión."
+    },
+    {
+      "question": "¿Cómo actualizo al plan premium?",
+      "answer": "Ve a tu panel y haz clic en Actualizar. Elige el plan que mejor se adapte a ti y completa el pago. Aceptamos tarjetas de crédito, Apple Pay y Google Pay."
+    },
+    {
+      "question": "¿Cómo contacto al soporte?",
+      "answer": "Puedes contactarnos en cualquier momento a través del formulario de contacto en nuestro sitio web. Estamos aquí para ayudarte con cualquier pregunta o problema."
+    },
+    {
+      "question": "¿Cómo elimino mi cuenta?",
+      "answer": "Ve a Configuración y haz clic en Eliminar Cuenta. Tu cuenta y todos los datos se eliminan permanentemente de inmediato. Esta acción no se puede deshacer."
+    },
+    {
+      "question": "¿Mi privacidad está protegida?",
+      "answer": "Sí. Solo almacenamos tu correo electrónico y tus nombres de usuario. Consulta nuestra Política de Privacidad para más detalles."
+    },
+    {
+      "question": "¿Qué pasa si cambio mi nombre de usuario en una plataforma?",
+      "answer": "Si cambias tu nombre de usuario, deberás eliminar el antiguo y agregar el nuevo nombre de usuario."
+    }
+  ]
+}

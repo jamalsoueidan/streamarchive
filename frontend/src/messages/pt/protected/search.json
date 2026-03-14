@@ -1,0 +1,51 @@
+{
+  "title": "Buscar",
+  "description": "Adicione suas lives à sua lista",
+  "platforms": {
+    "tiktok": "TikTok",
+    "twitch": "Twitch",
+    "kick": "Kick",
+    "youtube": "YouTube",
+    "afreecatv": "AfreecaTV",
+    "pandalive": "PandaLive",
+    "bigo": "Bigo"
+  },
+  "search": {
+    "actionButton": "Buscar",
+    "submitButton": "Buscar",
+    "placeholder": "Cole a URL da transmissão ou @usuário",
+    "searching": "Buscando no {platform}...",
+    "pasteButton": "Colar",
+    "pasteError": "Cole manualmente usando Ctrl+V ou pressione e segure",
+    "parseError": "Não foi possível identificar o usuário",
+    "notFound": "Não encontrado...",
+    "autoDetected": "Plataforma detectada automaticamente pela URL",
+    "enterUsername": "Cole a URL da transmissão ou o nome de usuário",
+    "selectPlatform": "Selecione a plataforma onde você transmite",
+    "changeUsername": "Alterar usuário",
+    "newSearch": "Nova Busca"
+  },
+  "hints": {
+    "tryFormats": "Experimente os seguintes formatos:",
+    "enterUsername": "Digite @usuário ou cole o link do perfil"
+  },
+  "actions": {
+    "follow": "Adicionar",
+    "successTitle": "Adicionado!",
+    "successMessage": "{username} foi adicionado",
+    "errorTitle": "Erro",
+    "cancel": "Cancelar",
+    "willRecord": "Será gravado quando entrar ao vivo",
+    "viewPage": "Ver perfil"
+  },
+  "chromeExtension": "Instalar extensão do Chrome",
+  "inputLabel": "Cole aqui o link da transmissão do Twitch, TikTok ou YouTube",
+  "notFollowing": {
+    "title": "Este criador não está na sua lista",
+    "description": "Você está tentando acessar um criador que não está na sua lista.",
+    "followToAccess": "Adicione-o para ver as gravações e receber notificações quando entrar ao vivo.",
+    "notFoundTitle": "Criador não encontrado",
+    "notFoundDescription": "@{username} não existe no {platform} ou a conta é privada.",
+    "trySearch": "Tente buscar outro criador:"
+  }
+}

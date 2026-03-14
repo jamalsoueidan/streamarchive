@@ -1,0 +1,14 @@
+{
+  "title": "Perpustakaan ({count})",
+  "description": "Kelola kreator Anda",
+  "disabledHint": "Item yang dinonaktifkan belum memiliki rekaman",
+  "emptyFiltered": {
+    "title": "Tidak ada kreator yang cocok dengan filter Anda",
+    "description": "Coba sesuaikan atau hapus filter Anda"
+  },
+  "emptyDefault": {
+    "title": "Anda belum menambahkan kreator",
+    "description": "Jelajahi Teman untuk menemukan kreator di platform kami"
+  },
+  "noMoreToLoad": "Anda sudah mencapai akhir"
+}

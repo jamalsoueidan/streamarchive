@@ -1,0 +1,13 @@
+{
+  "title": "Friends",
+  "description": "Discover other creators on the platform",
+  "emptyFiltered": {
+    "title": "No creators match your filters",
+    "description": "Try adjusting or clearing your filters"
+  },
+  "emptyDefault": {
+    "title": "No creators found",
+    "description": "..."
+  },
+  "noMoreToLoad": "You've reached the end"
+}

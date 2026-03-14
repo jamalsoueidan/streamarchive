@@ -1,0 +1,94 @@
+{
+  "title": "クリップ",
+  "description": "録画から AI が生成したクリップ",
+  "emptyState": {
+    "title": "まだクリップはありません",
+    "description": "録画からクリップが生成されるとここに表示されます"
+  },
+  "share": {
+    "tiktok": "TikTok に投稿",
+    "uploaded": "TikTok に投稿済み",
+    "processing": "投稿中...",
+    "completed": "TikTok で公開済み",
+    "shared": "公開済み",
+    "failed": "失敗",
+    "retry": "再試行",
+    "failedTooltip": "投稿に失敗しました。クリックして再試行してください。",
+    "check": "確認",
+    "checkStatus": "TikTok のステータスを確認"
+  },
+  "actions": {
+    "edit": "動画を編集",
+    "delete": "削除"
+  },
+  "publishPage": {
+    "title": "TikTok に投稿",
+    "description": "動画を確認して TikTok でのシェア方法を選択してください",
+    "loadingCreator": "TikTok アカウントを読み込み中...",
+    "publishingTo": "投稿先",
+    "descriptionLabel": "タイトル",
+    "descriptionPlaceholder": "動画のタイトルを入力してください...",
+    "privacyLabel": "公開設定",
+    "privacyPlaceholder": "公開設定を選択してください",
+    "privacy": {
+      "PUBLIC_TO_EVERYONE": "全員",
+      "MUTUAL_FOLLOW_FRIENDS": "フレンド",
+      "FOLLOWER_OF_CREATOR": "フォロワー",
+      "SELF_ONLY": "自分のみ"
+    },
+    "interactionSettings": "ユーザーに許可する",
+    "allowComments": "コメント",
+    "allowDuet": "デュエット",
+    "allowStitch": "スティッチ",
+    "disabledByCreator": "TikTok 設定で無効化されています",
+    "commercialContent": "コンテンツ開示設定",
+    "commercialContentDescription": "この動画が価値のある対価と引き換えに商品やサービスを宣伝している場合はオンにしてください。動画はあなた自身、第三者、またはその両方を宣伝する場合があります。",
+    "brandContentToggle": "自分のブランド",
+    "brandContentDescription": "自分自身または自分のビジネスを宣伝しています。このコンテンツはブランドオーガニックとして分類されます。",
+    "brandOrganicToggle": "ブランドコンテンツ",
+    "brandOrganicDescription": "別のブランドまたは第三者を宣伝しています。このコンテンツはブランドコンテンツとして分類されます。",
+    "promotionalContentLabel": "動画には「プロモーションコンテンツ」のラベルが付きます。",
+    "paidPartnershipLabel": "動画には「有料タイアップ」のラベルが付きます。",
+    "cannotChangeWarning": "動画を投稿後はこの設定を変更できません。",
+    "musicConfirmation": "投稿することで TikTok の音楽使用確認に同意します",
+    "confirmationPrefix": "投稿することで以下に同意します",
+    "termsOfServiceLink": "LiveStreamRecorder 利用規約",
+    "musicConfirmationLink": "TikTok 音楽使用確認",
+    "brandedContentPolicyLink": "TikTok ブランドコンテンツポリシー",
+    "andText": "および",
+    "commercialContentToggle": "このコンテンツは自分自身、ブランド、製品、またはサービスを宣伝しています",
+    "commercialContentRequired": "コンテンツが自分自身、第三者、またはその両方を宣伝しているかどうかを示す必要があります",
+    "brandedContentPrivacyWarning": "ブランドコンテンツは非公開に設定できません",
+    "publishButton": "TikTok に投稿",
+    "uploadButton": "投稿",
+    "cancel": "キャンセル",
+    "backToClips": "クリップに戻る",
+    "noTiktokConnection": {
+      "title": "TikTok アカウントが連携されていません",
+      "description": "TikTok にクリップを投稿するには、設定から TikTok アカウントを連携してください。",
+      "goToSettings": "設定へ",
+      "hint": "連携後にここに戻ってクリップを投稿してください。"
+    },
+    "success": "投稿中",
+    "successMessage": "動画を TikTok に投稿中です。処理してプロフィールに表示されるまで数分かかる場合があります。",
+    "error": "エラー",
+    "errorMessage": "TikTok への投稿に失敗しました",
+    "validation": {
+      "privacyRequired": "この動画を視聴できる相手を選択してください",
+      "musicConfirmationRequired": "音楽使用確認に同意する必要があります"
+    },
+    "cannotPostNow": "TikTok の 1 日あたりの投稿上限に達しました。後でもう一度お試しください。",
+    "videoTooLong": "この動画は {duration} 秒ですが、TikTok ではアカウントに対して最大 {maxDuration} 秒の動画しか許可されていません。",
+    "selfOnlyDisabledBranded": "ブランドコンテンツの公開設定は非公開にできません"
+  },
+  "upgrade": {
+    "title": "録画から TikTok へ、数秒で",
+    "features": {
+      "publish": "TikTok、リール、Shorts に直接投稿",
+      "schedule": "クリップをスケジュール — オートパイロットで一貫性を維持",
+      "edit": "字幕やエフェクトを追加してオリジナルに"
+    },
+    "upgradeButton": "今すぐアップグレード",
+    "hint": "プレミアムサブスクリプションでクリップ投稿機能をアンロック"
+  }
+}

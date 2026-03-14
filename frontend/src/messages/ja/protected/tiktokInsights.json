@@ -1,0 +1,103 @@
+{
+  "title": "TikTok インサイト",
+  "description": "プラットフォーム全体の TikTok ライブアナリティクス",
+
+  "globalStats": {
+    "title": "プラットフォーム概要",
+    "totalUsers": "ギフター合計",
+    "totalDiamonds": "ダイヤモンド合計",
+    "totalGifts": "ギフト合計",
+    "totalBattles": "バトル合計"
+  },
+
+  "dailyEarnings": {
+    "title": "日次収益",
+    "seriesLabel": "ダイヤモンド",
+    "empty": "収益データはありません",
+    "allCountries": "全国",
+    "allLanguages": "全言語"
+  },
+
+  "topEarners": {
+    "title": "トップ収益者",
+    "username": "ユーザー名",
+    "country": "国",
+    "language": "言語",
+    "diamonds": "ダイヤモンド",
+    "gifts": "ギフト",
+    "gifters": "ギフター",
+    "empty": "データはありません",
+    "allCountries": "全国",
+    "allLanguages": "全言語"
+  },
+
+  "mostLive": {
+    "title": "最もアクティブなストリーマー",
+    "username": "ユーザー名",
+    "country": "国",
+    "language": "言語",
+    "sessions": "セッション",
+    "hours": "時間",
+    "empty": "データはありません",
+    "allCountries": "全国",
+    "allLanguages": "全言語"
+  },
+
+  "countryLeaderboard": {
+    "title": "国別ランキング",
+    "rank": "順位",
+    "country": "国",
+    "diamonds": "ダイヤモンド",
+    "gifts": "ギフト",
+    "streamers": "ストリーマー",
+    "gifters": "ギフター",
+    "empty": "データはありません",
+    "loadMore": "もっと読み込む"
+  },
+
+  "languageLeaderboard": {
+    "title": "言語別ランキング",
+    "rank": "順位",
+    "language": "言語",
+    "diamonds": "ダイヤモンド",
+    "gifts": "ギフト",
+    "streamers": "ストリーマー",
+    "gifters": "ギフター",
+    "empty": "データはありません",
+    "loadMore": "もっと読み込む"
+  },
+
+  "topGifters": {
+    "title": "トップギフター",
+    "description": "TikTok 上のすべてのストリーマーへの送付ダイヤモンド合計が最も多いユーザー。",
+    "username": "ユーザー名",
+    "diamonds": "ダイヤモンド",
+    "gifts": "ギフト",
+    "streamers": "支援したストリーマー",
+    "empty": "データはありません"
+  },
+
+  "battleStats": {
+    "title": "バトルランキング",
+    "description": "バトル成績でランク付けされたストリーマー。バトルはオーディエンスのギフトで勝者が決まるライブ対戦です。",
+    "username": "ユーザー名",
+    "battles": "バトル",
+    "wins": "勝利",
+    "losses": "敗北",
+    "draws": "引き分け",
+    "winRate": "勝率",
+    "empty": "データはありません"
+  },
+
+  "gifterRelationships": {
+    "title": "ギフター関係",
+    "description": "送付ダイヤモンド数でランク付けされたギフター＆ストリーマーペア。個々のストリーマーへの最も熱心なサポーターを明らかにします。",
+    "pair": "ギフター → ストリーマー",
+    "supported": "が応援",
+    "gifter": "ギフター",
+    "streamer": "ストリーマー",
+    "diamonds": "ダイヤモンド",
+    "gifts": "ギフト",
+    "empty": "データはありません"
+  }
+}

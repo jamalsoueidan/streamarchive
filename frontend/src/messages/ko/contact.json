@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "title": "문의하기",
+    "description": "연락 주세요"
+  },
+  "header": {
+    "title": "문의하기",
+    "subtitle": "여러분의 의견을 기다립니다"
+  },
+  "form": {
+    "title": "메시지 보내기",
+    "description": "아래 양식을 작성해 주시면 가능한 빨리 답변드리겠습니다.",
+    "name": {
+      "label": "이름",
+      "placeholder": "이름을 입력하세요"
+    },
+    "email": {
+      "label": "이메일",
+      "placeholder": "example@email.com"
+    },
+    "subject": {
+      "label": "제목",
+      "placeholder": "어떤 내용인가요?"
+    },
+    "message": {
+      "label": "메시지",
+      "placeholder": "메시지를 입력하세요..."
+    },
+    "submit": "메시지 보내기"
+  },
+  "submitted": {
+    "title": "메시지가 전송되었습니다!",
+    "description": "문의해 주셔서 감사합니다. 빠른 시일 내에 답변드리겠습니다."
+  }
+}

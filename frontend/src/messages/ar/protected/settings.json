@@ -1,0 +1,47 @@
+{
+  "title": "الإعدادات",
+  "description": "إدارة إعدادات حسابك",
+  "profile": {
+    "title": "الملف الشخصي",
+    "username": "اسم المستخدم",
+    "usernamePlaceholder": "أدخل اسم المستخدم",
+    "usernameMinLength": "يجب أن يكون اسم المستخدم 3 أحرف على الأقل",
+    "usernameMaxLength": "يجب أن يكون اسم المستخدم 30 حرفًا كحد أقصى",
+    "saveChanges": "حفظ التغييرات",
+    "updateSuccess": "تم بنجاح",
+    "usernameUpdated": "تم تحديث اسم المستخدم",
+    "updateError": "خطأ"
+  },
+  "subscription": {
+    "title": "الاشتراك",
+    "currentPlan": "الاشتراك الحالي",
+    "description": "يحدد اشتراكك الميزات التي يمكنك الوصول إليها."
+  },
+  "tiktok": {
+    "title": "تيك توك",
+    "description": "اربط حسابك على تيك توك لنشر المقاطع وتنمية جمهورك.",
+    "descriptionConnected": "حسابك على تيك توك مربوط.",
+    "connect": "ربط تيك توك",
+    "disconnect": "إلغاء الربط",
+    "connected": "متصل",
+    "connectSuccess": "تم بنجاح",
+    "connectSuccessMessage": "تم ربط حسابك على تيك توك",
+    "connectError": "خطأ",
+    "connectErrorMessage": "فشل ربط حساب تيك توك",
+    "disconnectSuccess": "تم إلغاء الربط",
+    "disconnectSuccessMessage": "تم إلغاء ربط حسابك على تيك توك",
+    "disconnectError": "خطأ"
+  },
+  "dangerZone": {
+    "title": "منطقة الخطر",
+    "description": "بمجرد حذف حسابك، لا يمكن التراجع. يرجى التأكد.",
+    "deleteAccount": "حذف الحساب",
+    "deleteConfirm": {
+      "title": "حذف الحساب",
+      "message": "هل أنت متأكد من حذف حسابك؟ لا يمكن التراجع عن هذا الإجراء وسيتم حذف جميع بياناتك نهائيًا.",
+      "confirm": "حذف الحساب",
+      "cancel": "إلغاء"
+    },
+    "deleteError": "خطأ"
+  }
+}

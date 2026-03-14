@@ -1,0 +1,53 @@
+{
+  "brand": "LiveStreamRecorder",
+  "tagline": "Jangan lewatkan satu pun stream",
+  "defaultDescription": "Live stream direkam secara otomatis agar Anda bisa menontonnya kapan saja",
+  "creators": {
+    "title": {
+      "all": "Semua Kreator",
+      "tiktok": "Kreator TikTok",
+      "twitch": "Kreator Twitch",
+      "youtube": "Kreator YouTube",
+      "kick": "Kreator Kick",
+      "pandalive": "Kreator PandaLive",
+      "afreecatv": "Kreator AfreecaTV",
+      "bigo": "Kreator Bigo"
+    },
+    "subtitle": {
+      "all": "Jelajahi semua streamer dan kreator",
+      "tiktok": "Temukan streamer TikTok",
+      "twitch": "Temukan streamer Twitch",
+      "youtube": "Temukan kreator YouTube",
+      "kick": "Temukan streamer Kick",
+      "pandalive": "Temukan kreator PandaLive",
+      "afreecatv": "Temukan kreator AfreecaTV",
+      "bigo": "Temukan kreator Bigo"
+    }
+  },
+  "recordings": {
+    "title": {
+      "all": "Semua Rekaman",
+      "tiktok": "Rekaman TikTok",
+      "twitch": "Rekaman Twitch",
+      "youtube": "Rekaman YouTube",
+      "kick": "Rekaman Kick",
+      "pandalive": "Rekaman PandaLive",
+      "afreecatv": "Rekaman AfreecaTV",
+      "bigo": "Rekaman Bigo"
+    },
+    "subtitle": {
+      "all": "Tonton rekaman live stream",
+      "tiktok": "Tonton live TikTok yang direkam",
+      "twitch": "Tonton stream Twitch yang direkam",
+      "youtube": "Tonton live YouTube yang direkam",
+      "kick": "Tonton stream Kick yang direkam",
+      "pandalive": "Tonton stream PandaLive yang direkam",
+      "afreecatv": "Tonton stream AfreecaTV yang direkam",
+      "bigo": "Tonton stream Bigo yang direkam"
+    }
+  },
+  "home": {
+    "title": "Perekam Live Stream",
+    "subtitle": "Stream favorit Anda direkam secara otomatis"
+  }
+}

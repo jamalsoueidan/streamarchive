@@ -1,0 +1,107 @@
+"use client";
+
+import { Accordion, Alert, Loader, Stack, Text } from "@mantine/core";
+import { useIntersection } from "@mantine/hooks";
+import { useEffect, useState } from "react";
+
+import { useQueryStates } from "nuqs";
+
+import { useInfiniteQuery } from "@tanstack/react-query";
+import { useTranslations } from "next-intl";
+import { EmptyState } from "../../components/empty-state";
+import { fetchFollowers } from "../actions/fetch-followers";
+import { exploreParsers } from "../lib/search-params";
+import FollowerItem from "./follower-item";
+
+export default function CreatorsInfinity() {
+  const t = useTranslations("protected.myList");
+  const [filters] = useQueryStates(exploreParsers);
+  const [openItems, setOpenItems] = useState<string[]>([]);
+
+  const { data, fetchNextPage, hasNextPage, isFetchingNextPage, isLoading } =
+    useInfiniteQuery({
+      queryKey: ["creators", "mylist", filters],
+      queryFn: ({ pageParam }) => fetchFollowers(filters, pageParam),
+      initialPageParam: 1,
+      getNextPageParam: (lastPage) => {
+        const { page = 1, pageCount = 0 } = lastPage.meta?.pagination ?? {};
+        return page < pageCount ? page + 1 : undefined;
+      },
+    });
+
+  const { ref, entry } = useIntersection({
+    threshold: 0.5,
+  });
+
+  useEffect(() => {
+    if (entry?.isIntersecting && hasNextPage && !isFetchingNextPage) {
+      fetchNextPage();
+    }
+  }, [entry?.isIntersecting, hasNextPage, isFetchingNextPage, fetchNextPage]);
+
+  const allFollowers = data?.pages.flatMap((p) => p.data) ?? [];
+
+  if (isLoading) {
+    return (
+      <Stack align="center" py="xl">
+        <Loader size="lg" />
+      </Stack>
+    );
+  }
+
+  const hasActiveFilters = Boolean(
+    filters.gender ||
+    filters.country ||
+    filters.language ||
+    filters.type ||
+    filters.search ||
+    filters.dateRange,
+  );
+
+  if (allFollowers.length === 0) {
+    const key = hasActiveFilters ? "emptyFiltered" : "emptyDefault";
+    return (
+      <EmptyState
+        title={t(`${key}.title`)}
+        description={t(`${key}.description`)}
+      />
+    );
+  }
+
+  return (
+    <>
+      <Alert c="dimmed" mb="xs">
+        {t("disabledHint")}
+      </Alert>
+      <Accordion
+        multiple
+        variant="separated"
+        w="100%"
+        chevronPosition="left"
+        chevronIconSize={28}
+        value={openItems}
+        onChange={setOpenItems}
+      >
+        {allFollowers.map((follower) => (
+          <FollowerItem
+            key={follower.documentId}
+            follower={follower}
+            isOpen={openItems.includes(follower.username)}
+          />
+        ))}
+      </Accordion>
+
+      <div ref={ref} style={{ height: 1 }} />
+
+      {isFetchingNextPage && (
+        <Loader size="sm" style={{ alignSelf: "center" }} />
+      )}
+
+      {!hasNextPage && allFollowers.length > 0 && (
+        <Text ta="center" c="dimmed">
+          {t("noMoreToLoad")}
+        </Text>
+      )}
+    </>
+  );
+}

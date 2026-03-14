@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Verificar Tu Cuenta",
+    "description": "Verifica la propiedad de tu perfil de streaming para reclamar tu cuenta o administrar tu contenido."
+  },
+  "header": {
+    "title": "Verificar Propiedad",
+    "subtitle": "Prueba que eres el dueño de esta cuenta para reclamar tu perfil o administrar tu contenido"
+  },
+  "common": {
+    "copy": "Copiar",
+    "copied": "¡Copiado!"
+  },
+  "steps": {
+    "enterUrl": {
+      "label": "Tu Perfil",
+      "description": "Ingresa la URL de tu perfil de streaming",
+      "intro": "Ingresa la URL de tu perfil de streaming.",
+      "input": {
+        "label": "URL del Perfil",
+        "placeholder": "https://tiktok.com/@tuusuario"
+      },
+      "detected": "Detectado: {platform} - @{username}",
+      "continue": "Continuar",
+      "email": {
+        "label": "Correo Electrónico",
+        "placeholder": "tu@ejemplo.com"
+      },
+      "error": {
+        "required": "Por favor ingresa la URL de tu perfil",
+        "invalid": "No pudimos reconocer esta URL",
+        "emailRequired": "Por favor ingresa tu correo electrónico",
+        "emailInvalid": "Por favor ingresa un correo electrónico válido"
+      }
+    },
+    "verify": {
+      "label": "Verificar",
+      "description": "Agrega el código a tu bio",
+      "intro": "Para probar que eres el dueño de esta cuenta, agrega el código de verificación a continuación a la bio de tu perfil. Puedes eliminarlo después de la verificación.",
+      "codeLabel": "Tu Código de Verificación",
+      "instructions": "Copia este código y agrégalo en cualquier parte de la bio de tu perfil. Puede estar al inicio, al final o en el medio — lo encontraremos.",
+      "openProfile": "Abrir Perfil en {platform}",
+      "verifyButton": "Agregué el Código — Verificar Ahora",
+      "failed": {
+        "title": "No se encontró el código",
+        "message": "No encontramos el código de verificación en tu bio. Asegúrate de haber guardado tu perfil después de agregar el código. Si no puedes agregar el código a tu bio, vuelve y usa el formulario DMCA.",
+        "backToForm": "Volver al Formulario DMCA"
+      }
+    },
+    "complete": {
+      "created": {
+        "title": "¡Bienvenido!",
+        "message": "Tu cuenta ha sido creada y tu perfil está ahora vinculado.",
+        "button": "Panel"
+      },
+      "linked": {
+        "title": "Perfil Vinculado",
+        "message": "Tu perfil ha sido vinculado a tu cuenta. Inicia sesión para acceder a tu panel.",
+        "button": "Ir al Inicio de Sesión"
+      },
+      "notFound": {
+        "title": "Perfil No Encontrado",
+        "message": "Tu propiedad fue verificada, pero este creador no existe en nuestro sistema."
+      }
+    }
+  }
+}

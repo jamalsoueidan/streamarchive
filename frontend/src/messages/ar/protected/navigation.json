@@ -1,0 +1,41 @@
+{
+  "sections": {
+    "home": "الرئيسية",
+    "studio": "الاستوديو",
+    "community": "المجتمع"
+  },
+  "links": {
+    "dashboard": "لوحة التحكم",
+    "premium": "بريميوم",
+    "myRecordings": "تسجيلاتي",
+    "myClips": "المقاطع",
+    "watchLater": "شاهد لاحقاً",
+    "aiStudio": "ستوديو AI",
+    "myList": "قائمتي",
+    "live": "مباشر",
+    "tiktokInsights": "إحصائيات TikTok المباشر",
+    "explore": "استكشف",
+    "friends": "الأصدقاء"
+  },
+  "actions": {
+    "settings": "الإعدادات",
+    "logout": "تسجيل الخروج",
+    "addCreator": "إضافة صانع محتوى",
+    "search": "بحث",
+    "searchPlaceholder": "أدخل رابط البث الخاص بك",
+    "installApp": "تثبيت التطبيق",
+    "more": "المزيد",
+    "language": "اللغة",
+    "collapse": "طي الشريط الجانبي",
+    "expand": "توسيع الشريط الجانبي"
+  },
+  "installModal": {
+    "title": "تثبيت التطبيق",
+    "description": "لتثبيت هذا التطبيق على الآيفون:",
+    "step1": "اضغط على",
+    "shareButton": "زر المشاركة",
+    "step2": "اضغط على",
+    "addToHomeScreen": "إضافة إلى الشاشة الرئيسية",
+    "step3": "اضغط على \"إضافة\""
+  }
+}

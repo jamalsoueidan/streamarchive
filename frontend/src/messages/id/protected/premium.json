@@ -1,0 +1,77 @@
+{
+  "title": "Premium",
+  "descriptionPremium": "Anda memiliki akses ke semua yang ditawarkan LiveStreamRecorder",
+  "descriptionNonPremium": "Dapatkan akses instan ke semua yang ditawarkan LiveStreamRecorder",
+  "descriptionShort": "Dapatkan akses instan ke semuanya",
+
+  "billingPeriodMonthly": "bulanan",
+  "billingPeriodQuarterly": "3 bulanan",
+  "billingPeriodAnnual": "tahunan",
+  "billingPeriodLifetime": "seumur hidup",
+
+  "billing1MonthLabel": "1 Bulan",
+  "billing3MonthsLabel": "3 Bulan",
+  "billing3MonthsSavings": "1 bulan gratis",
+  "billing12MonthsLabel": "12 Bulan",
+  "billing12MonthsSavings": "5 bulan gratis",
+  "billing12MonthsBadge": "Nilai Terbaik",
+  "billingLifetimeLabel": "Seumur Hidup",
+  "billingLifetimeSavings": "Bayar sekali, gunakan selamanya",
+  "billingLifetimeBadge": "Terbatas",
+
+  "currentPlanRecord": "Rekam hingga 3 saluran milik Anda",
+  "currentPlanWatch": "Tonton rekaman Anda",
+
+  "premiumRecord100": "Rekam 100 saluran milik Anda",
+  "premiumFullControl": "Kontrol penuh atas rekaman Anda",
+  "premiumNotifications": "Notifikasi saat siap",
+  "premiumAiHighlights": "Sorotan & klip AI",
+  "premiumAiSubtitles": "Subtitle & terjemahan AI",
+  "premiumAiMemes": "Meme & GIF AI",
+  "premiumPublishSocial": "Terbitkan ke media sosial",
+  "premiumClipEditor": "Editor video",
+  "premiumWatchLater": "Tonton nanti & favorit",
+  "premiumPrioritySupport": "Dukungan prioritas",
+  "premiumTiktokInsights": "Wawasan live TikTok",
+  "premiumDownloadRecordings": "Unduh rekaman Anda",
+
+  "paymentMethod": "Metode Pembayaran",
+  "freemiusDescription": "Kartu Kredit, PayPal, dan lainnya",
+  "stripeDescription": "Kartu Kredit, Google Pay, Apple Pay, dan lainnya",
+
+  "yourCurrentPlan": "Paket Anda Saat Ini",
+  "currentPlan": "Paket Saat Ini",
+  "free": "Gratis",
+  "cancelled": "Dibatalkan",
+  "adminAccess": "Anda memiliki akses premium penuh sebagai admin/champion.",
+  "cancelledMessage": "Langganan {billingPeriod} Anda telah dibatalkan. Anda masih memiliki akses hingga {endDate}.",
+  "activeMessage": "Anda menggunakan paket {billingPeriod}. Tanggal tagihan berikutnya: {renewDate}.",
+  "lifetimeMessage": "Anda memiliki akses seumur hidup ke semua fitur premium. Terima kasih atas dukungan Anda!",
+  "cancelSubscription": "Batalkan langganan",
+  "supportMessage": "LiveStreamRecorder adalah proyek satu orang. Dukungan Anda membantu menjaga server tetap berjalan dan fitur baru terus hadir. Terima kasih!",
+
+  "choosePlan": "Pilih Paket Anda",
+  "perMonth": "${price}/bln",
+  "oneTime": "satu kali",
+
+  "yourPremiumFeatures": "Fitur Premium Anda",
+  "unlockPremiumFeatures": "Buka Fitur Premium",
+  "futureFeatures": "Premium mencakup semua fitur mendatang saat dirilis.",
+  "seeWhatsNew": "Lihat apa yang baru",
+
+  "plan": "Paket",
+  "subtotal": "Subtotal",
+  "discount": "Diskon",
+  "total": "Total",
+
+  "vatNotice": "* Pajak Pertambahan Nilai (PPN) yang berlaku akan dihitung dan ditambahkan ke total Anda selama proses pembayaran akhir.",
+  "subscribe": "Berlangganan Sekarang",
+  "buyNow": "Beli Sekarang",
+  "securePayment": "Pembayaran aman",
+
+  "cancelModalTitle": "Batalkan Langganan",
+  "cancelModalMessage": "Kami menyesal melihat Anda pergi! Jika Anda membatalkan, Anda masih akan memiliki akses ke fitur premium hingga {endDate}.",
+  "cancelModalAfter": "Setelah itu, akun Anda akan kembali ke paket gratis.",
+  "keepSubscription": "Pertahankan langganan",
+  "yesCancel": "Ya, batalkan"
+}

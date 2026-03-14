@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "title": "FAQ",
+    "description": "Temukan jawaban atas pertanyaan yang sering diajukan tentang LiveStreamRecorder"
+  },
+  "title": "Pertanyaan yang Sering Diajukan",
+  "subtitle": "Temukan jawaban atas pertanyaan umum tentang layanan kami.",
+  "faqs": [
+    {
+      "question": "Apa itu LiveStreamRecorder.com?",
+      "answer": "LiveStreamRecorder.com adalah layanan berbasis cloud yang secara otomatis merekam live stream Anda sendiri. Tambahkan username Anda dari platform yang didukung dan kami merekam setiap siaran — tidak perlu instal software, tidak perlu membiarkan komputer Anda menyala. Tonton rekaman kapan saja atau ubah menjadi klip."
+    },
+    {
+      "question": "Bagaimana cara kerjanya?",
+      "answer": "Daftar gratis dan tambahkan username dari platform tempat Anda streaming. Setiap kali Anda live, sistem kami otomatis merekam stream Anda. Anda dapat menonton rekaman langsung di browser, mengunduhnya, atau membuat klip untuk dibagikan di media sosial."
+    },
+    {
+      "question": "Apakah benar-benar gratis?",
+      "answer": "Ya! Paket gratis kami memungkinkan Anda merekam dari hingga 3 platform dan rekaman disimpan selama 5 hari. Jika Anda membutuhkan lebih, paket premium kami memberikan kualitas video yang lebih baik, penyimpanan 30 hari, unduhan video, dan kemampuan merekam dari hingga 100 platform."
+    },
+    {
+      "question": "Platform apa saja yang didukung?",
+      "answer": "Saat ini kami mendukung TikTok, Twitch, YouTube, Kick, AfreecaTV, dan Pandalive. Kami selalu bekerja untuk menambahkan lebih banyak platform — pantau terus untuk pembaruan."
+    },
+    {
+      "question": "Berapa lama rekaman disimpan?",
+      "answer": "Pengguna gratis mendapatkan penyimpanan 5 hari. Pengguna premium mendapatkan 30 hari. Pastikan untuk mengunduh rekaman yang ingin Anda simpan sebelum kedaluwarsa."
+    },
+    {
+      "question": "Bagaimana cara menambahkan username saya?",
+      "answer": "Klik Tambah di dasbor Anda, pilih platform, dan masukkan username Anda. Setelah ditambahkan, kami akan otomatis merekam setiap kali Anda live."
+    },
+    {
+      "question": "Bisakah saya merekam di beberapa platform?",
+      "answer": "Ya! Jika Anda streaming di TikTok dan Twitch, cukup tambahkan username dari masing-masing platform dan semua stream Anda tersimpan di satu tempat."
+    },
+    {
+      "question": "Bisakah saya mengunduh rekaman saya?",
+      "answer": "Pengunduhan tersedia untuk pengguna premium. Setiap rekaman memiliki tombol unduh yang memungkinkan Anda menyimpan file video lengkap ke komputer Anda."
+    },
+    {
+      "question": "Apa itu ClipAI?",
+      "answer": "ClipAI secara otomatis menemukan momen terbaik dari stream Anda dan mengubahnya menjadi klip pendek — siap dibagikan di TikTok, YouTube Shorts, atau Instagram Reels."
+    },
+    {
+      "question": "Apa saja yang termasuk dalam paket premium?",
+      "answer": "Premium memberikan kualitas video yang lebih baik, kemampuan mengunduh rekaman, penyimpanan 30 hari, dan dukungan hingga 100 kreator — sempurna untuk agensi dan tim manajemen."
+    },
+    {
+      "question": "Bagaimana cara upgrade ke premium?",
+      "answer": "Buka dasbor Anda dan klik Upgrade. Pilih paket yang sesuai dan selesaikan pembayaran. Kami menerima kartu kredit, Apple Pay, dan Google Pay."
+    },
+    {
+      "question": "Bagaimana cara menghubungi dukungan?",
+      "answer": "Anda dapat menghubungi kami kapan saja melalui formulir kontak di situs web kami. Kami siap membantu dengan pertanyaan atau masalah apa pun."
+    },
+    {
+      "question": "Bagaimana cara menghapus akun saya?",
+      "answer": "Buka Pengaturan dan klik Hapus Akun. Akun dan semua data Anda akan langsung dihapus secara permanen. Tindakan ini tidak dapat dibatalkan."
+    },
+    {
+      "question": "Apakah privasi saya terlindungi?",
+      "answer": "Ya. Kami hanya menyimpan email dan username Anda. Lihat Kebijakan Privasi kami untuk detail lengkap."
+    },
+    {
+      "question": "Bagaimana jika saya mengubah username di suatu platform?",
+      "answer": "Jika Anda mengubah username, Anda perlu menghapus yang lama dan menambahkan username baru."
+    }
+  ]
+}

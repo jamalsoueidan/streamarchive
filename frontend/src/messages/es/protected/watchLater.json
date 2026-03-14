@@ -1,0 +1,13 @@
+{
+  "title": "Ver Después",
+  "description": "Guardado solo en este dispositivo",
+  "empty": "No hay videos guardados. Agrega videos desde el menú para ver después.",
+  "clear": "Limpiar todo",
+  "clearConfirm": {
+    "title": "Limpiar Ver Después",
+    "message": "¿Estás seguro de que quieres eliminar todos los videos de tu lista de Ver Después?",
+    "confirm": "Limpiar todo",
+    "cancel": "Cancelar"
+  },
+  "loadMore": "Cargar más"
+}

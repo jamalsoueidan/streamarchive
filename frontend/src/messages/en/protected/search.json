@@ -1,0 +1,51 @@
+{
+  "title": "Search",
+  "description": "Add your live streams to your list",
+  "platforms": {
+    "tiktok": "TikTok",
+    "twitch": "Twitch",
+    "kick": "Kick",
+    "youtube": "YouTube",
+    "afreecatv": "AfreecaTV",
+    "pandalive": "PandaLive",
+    "bigo": "Bigo"
+  },
+  "search": {
+    "actionButton": "Search",
+    "submitButton": "Search",
+    "placeholder": "Enter your stream URL or @username",
+    "searching": "Searching on {platform}...",
+    "pasteButton": "Paste",
+    "pasteError": "Paste manually using Ctrl+V or long-press",
+    "parseError": "Could not parse username",
+    "notFound": "Nothing found...",
+    "autoDetected": "Platform auto-detected from URL",
+    "enterUsername": "Enter your stream URL or username",
+    "selectPlatform": "Select the platform you stream on",
+    "changeUsername": "Change username",
+    "newSearch": "New Search"
+  },
+  "hints": {
+    "tryFormats": "Try these examples:",
+    "enterUsername": "Enter a @username or paste a profile URL"
+  },
+  "actions": {
+    "follow": "Add",
+    "successTitle": "Added!",
+    "successMessage": "{username} has been added",
+    "errorTitle": "Error",
+    "cancel": "Cancel",
+    "willRecord": "Will be recorded when they go live",
+    "viewPage": "View page"
+  },
+  "chromeExtension": "Install Chrome Extension",
+  "inputLabel": "Paste a stream link from Twitch, TikTok, or YouTube here",
+  "notFollowing": {
+    "title": "This creator is not in your list",
+    "description": "You tried to access a creator that's not in your list.",
+    "followToAccess": "Add them to see recordings and get notified when they go live.",
+    "notFoundTitle": "Creator not found",
+    "notFoundDescription": "@{username} doesn't exist on {platform} or the account is private.",
+    "trySearch": "Try searching for a different creator:"
+  }
+}

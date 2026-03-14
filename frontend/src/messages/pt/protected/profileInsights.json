@@ -1,0 +1,74 @@
+{
+  "beta": "O Insights está em versão beta. Continuamos melhorando este recurso, por isso os dados podem estar incompletos ou mudar.",
+  "tabs": {
+    "videos": "Vídeos",
+    "insights": "Insights"
+  },
+  "stats": {
+    "totalDiamonds": "Total de Diamantes",
+    "battleDiamonds": "Diamantes em Batalhas",
+    "nonBattleDiamonds": "Diamantes fora de Batalhas",
+    "battles": "Batalhas",
+    "won": "Vitórias",
+    "lost": "Derrotas",
+    "winRate": "Taxa de Vitória",
+    "gifters": "Gifters",
+    "chatParticipants": "Participantes do Chat"
+  },
+  "battleHistory": {
+    "title": "Histórico de Batalhas",
+    "empty": "Nenhuma batalha registrada ainda.",
+    "colDate": "Data",
+    "colType": "Tipo",
+    "colOpponents": "Adversário(s)",
+    "colScore": "Placar",
+    "colDiamonds": "Diamantes",
+    "colResult": "Resultado",
+    "vs": "vs",
+    "with": "com",
+    "live": "Ao vivo",
+    "interrupted": "Interrompida",
+    "won": "Vitória",
+    "draw": "Empate",
+    "lost": "Derrota"
+  },
+  "streamActivity": {
+    "title": "Atividade de Lives",
+    "empty": "Nenhum dado de sessão disponível.",
+    "colDate": "Data",
+    "colDuration": "Duração",
+    "colPeakViewers": "Pico de Espectadores",
+    "colAvgViewers": "Média de Espectadores",
+    "colDiamonds": "Diamantes",
+    "colBattles": "Batalhas",
+    "durationMinutes": "{m}min",
+    "durationHoursMinutes": "{h}h{m}min"
+  },
+  "topGifters": {
+    "title": "Top Gifters",
+    "empty": "Nenhum dado de gifters disponível.",
+    "giftCount": "{count} presentes"
+  },
+  "topOpponents": {
+    "title": "Adversários Frequentes",
+    "empty": "Nenhum dado de batalha disponível.",
+    "wins": "{count} vitória(s)",
+    "losses": "{count} derrota(s)",
+    "battleCount": "{count} batalha(s)"
+  },
+  "earnings": {
+    "title": "Ganhos",
+    "empty": "Nenhum dado de ganhos disponível.",
+    "seriesLabel": "Diamantes"
+  },
+  "schedule": {
+    "title": "Agenda de Lives",
+    "mon": "Seg",
+    "tue": "Ter",
+    "wed": "Qua",
+    "thu": "Qui",
+    "fri": "Sex",
+    "sat": "Sáb",
+    "sun": "Dom"
+  }
+}

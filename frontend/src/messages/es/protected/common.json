@@ -1,0 +1,66 @@
+{
+  "follow": {
+    "tooltip": "Agregar Creador",
+    "successTitle": "¡Agregado!",
+    "successMessage": "{username} ha sido agregado",
+    "errorTitle": "Error"
+  },
+  "unfollow": {
+    "tooltip": "Eliminar Creador",
+    "successTitle": "Eliminado",
+    "successMessage": "Eliminaste a {username}",
+    "successMessageGeneric": "Eliminado correctamente"
+  },
+  "scopeFilter": {
+    "label": "Filtrar:",
+    "following": "Mis Grabaciones",
+    "discover": "Amigos",
+    "all": "Todo"
+  },
+  "recordings": {
+    "liveAgo_context": "Para transmisiones en vivo que muestran cuándo comenzó la grabación. Muestra 'comenzó a grabar hace 15 minutos'",
+    "liveAgo": "comenzó a grabar {time}",
+    "recordedAgo_context": "Para transmisiones grabadas que muestran cuándo se hizo la grabación. Muestra 'grabado hace 3 días'",
+    "recordedAgo": "grabado {time}",
+    "recordCount": "GRAB {count}",
+    "newRecording": "Nuevo",
+    "videoCount": "{count, plural, one {# video} other {# videos}}",
+    "noRecordings": "Has llegado al final",
+    "hide": "Ocultar del público",
+    "show": "Mostrar en público",
+    "delete": "Eliminar video",
+    "deleteConfirm": {
+      "title": "Eliminar video",
+      "message": "¿Estás seguro de que quieres eliminar este video? Esta acción no se puede deshacer.",
+      "confirm": "Eliminar",
+      "cancel": "Cancelar"
+    },
+    "createWithAI": "Crear clips con IA",
+    "addToWatchLater": "Guardar para después",
+    "removeFromWatchLater": "Quitar de Ver Después",
+    "addedToWatchLater": "Guardado para después",
+    "removedFromWatchLater": "Quitado de Ver Después",
+    "videoLimitMessage": "Alcanzaste tu límite gratuito de videos.",
+    "download": "Descargar video",
+    "downloadEmailSent": "El enlace de descarga está en camino a tu correo",
+    "downloadFeatureMessage": "Descargar videos es una función premium.",
+    "editClip": "Editar clip",
+    "deleteSources": "Eliminar fuentes",
+    "deleteSourcesSuccess": "{count} fuentes eliminadas"
+  },
+  "followers": {
+    "addedAgo_context": "Para cuando se agregó un creador a la lista del usuario. Muestra 'Agregado hace 3 días'",
+    "addedAgo": "Agregado {time}",
+    "limitReachedTitle": "Límite de creadores alcanzado",
+    "upgradeModalHeadline": "Nunca te pierdas una transmisión en vivo",
+    "max3Message": "Alcanzaste el límite de 3 creadores del plan gratuito.",
+    "max50Message": "Alcanzaste tu límite de 50 creadores en este plan.",
+    "max100Message": "Alcanzaste tu límite de 100 creadores en este plan.",
+    "upgradeButton": "Actualizar a Premium",
+    "upgradeModalDiscount": "25% de descuento en tu primer mes",
+    "upgradeModalCodeNote": "Aplicar al pagar",
+    "unfollowUpgradeTitle": "Administra tus creadores libremente con premium"
+  },
+  "newest": "Más recientes",
+  "oldest": "Más antiguos"
+}

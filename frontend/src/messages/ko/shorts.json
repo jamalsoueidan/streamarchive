@@ -1,0 +1,13 @@
+{
+  "meta": {
+    "defaultTitle": "숏폼 클립",
+    "defaultDescription": "좋아하는 스트리머의 숏폼 클립을 시청하세요",
+    "title": "{title} - {creatorName} | 숏폼 클립",
+    "description": "{platform}에서 {creatorName}의 {duration} 숏폼 클립을 시청하세요",
+    "keywords": "{creatorName}, 쇼츠, 클립, {platform}, 라이브 방송"
+  },
+  "jsonLd": {
+    "name": "{creatorName} 숏폼 클립 - {createdDate}",
+    "description": "{createdDate}에 녹화된 {creatorName}의 숏폼 클립"
+  }
+}

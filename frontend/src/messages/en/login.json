@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "title": "Sign In",
+    "description": "Sign in to your LiveStreamRecorder account to access your recordings and followed streamers."
+  },
+  "title": "Welcome back",
+  "subtitle": "Sign in to continue to your account",
+  "email": {
+    "label": "Email address",
+    "placeholder": "you@example.com"
+  },
+  "password": {
+    "label": "Password",
+    "placeholder": "Enter your password"
+  },
+  "emailConfirmed": "Your email has been confirmed. You can now sign in.",
+  "forgotPassword": "Forgot password?",
+  "submit": {
+    "default": "Sign in",
+    "loading": "Signing in..."
+  },
+  "choices": {
+    "emailPassword": "Use Email / Password",
+    "google": "Continue with Google",
+    "tiktok": "Continue with TikTok",
+    "facebook": "Continue with Facebook"
+  },
+  "terms": {
+    "text": "By continuing, you agree to Live Stream Recorder's",
+    "tosLink": "Terms of Service",
+    "and": "and confirm that you have read Live Stream Recorder's",
+    "privacyLink": "Privacy Policy"
+  },
+  "errors": {
+    "emailTaken": "An account with this email already exists. Please sign in with your original method."
+  },
+  "register": {
+    "text": "Don't have an account?",
+    "link": "Sign up"
+  }
+}

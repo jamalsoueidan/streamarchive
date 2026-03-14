@@ -1,0 +1,52 @@
+{
+  "tagline": "ライブ配信を見逃さない",
+  "copyright": "Copyright © 2026 LiveStreamRecorder",
+  "copyright_text": "LiveStreamRecorder は、個人的・非公開・非商業目的での配信録画を可能にするクラウドインフラを提供しています。利用者は適用される法律およびサードパーティプラットフォームの利用規約に準拠して使用する責任を負います。",
+  "association": "Twitch、YouTube、TikTok、Kick、AfreecaTV、PandaTV の製品名、ロゴ、ブランドはそれぞれの所有者の財産です。このウェブサイトで使用されているすべての会社名、製品名、サービス名は識別目的のみに使用されています。これらの名称、商標、ブランドの使用は推薦を意味するものではありません。",
+  "header": {
+    "creators": "クリエイター",
+    "recordings": "録画",
+    "shorts": "ショートクリップ",
+    "dashboard": "ダッシュボード",
+    "login": "ログイン",
+    "signUp": "登録",
+    "language": "言語"
+  },
+  "featuredCreators": {
+    "title": "注目のクリエイター",
+    "browse": "クリエイターを探す",
+    "tiktok": "TikTok クリエイター",
+    "twitch": "Twitch クリエイター",
+    "kick": "Kick クリエイター",
+    "youtube": "YouTube クリエイター",
+    "afreecatv": "AfreecaTV クリエイター",
+    "pandalive": "Pandalive クリエイター",
+    "bigo": "Bigo クリエイター"
+  },
+  "watchRecordings": {
+    "title": "録画を視聴",
+    "browse": "録画を探す",
+    "tiktok": "TikTok 録画",
+    "twitch": "Twitch 録画",
+    "kick": "Kick 録画",
+    "youtube": "YouTube 録画",
+    "afreecatv": "AfreecaTV 録画",
+    "pandalive": "Pandalive 録画",
+    "bigo": "Bigo 録画"
+  },
+  "legal": {
+    "title": "法的情報",
+    "privacy": "プライバシーポリシー",
+    "terms": "利用規約",
+    "dmca": "DMCA ポリシー"
+  },
+  "company": {
+    "title": "会社情報",
+    "news": "ニュース",
+    "pricing": "料金",
+    "faq": "よくある質問",
+    "updates": "変更履歴",
+    "sitemap": "サイトマップ",
+    "contact": "お問い合わせ"
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "title": "Termos e Condições",
+    "description": "Leia os termos e condições de uso dos serviços do LiveStreamRecorder."
+  },
+  "header": {
+    "title": "Termos e Condições",
+    "lastUpdated": "Última atualização: {date}"
+  },
+  "introduction": {
+    "title": "Introdução",
+    "content": "Ao usar o LiveStreamRecorder.com e seus serviços, você concorda em estar vinculado a estes Termos e Condições. Por favor, leia-os atentamente antes de usar nossa plataforma. Se você não concordar com estes termos, não poderá usar o Serviço."
+  },
+  "serviceDescription": {
+    "title": "Descrição do Serviço",
+    "content1": "O LiveStreamRecorder fornece uma plataforma na nuvem que permite aos criadores de conteúdo gravar, arquivar e armazenar automaticamente suas lives em plataformas como TikTok, Twitch, YouTube, Kick, AfreecaTV e Pandalive.",
+    "content2": "Ao lidar com a gravação e o armazenamento remotamente em nossos servidores, os usuários se beneficiam de maior comodidade e menor dependência de hardware pessoal — sem precisar instalar software ou deixar seus dispositivos ligados.",
+    "content3": "O LiveStreamRecorder é um provedor de serviços técnicos. Não hospedamos, possuímos nem controlamos o conteúdo de plataformas de streaming de terceiros."
+  },
+  "userContent": {
+    "title": "Conteúdo do Usuário e Licença",
+    "content1": "Você mantém seus direitos de propriedade intelectual sobre o conteúdo que nos envia ou grava através do nosso Serviço. Nunca reivindicaremos a propriedade do seu conteúdo.",
+    "content2": "Ao usar nosso Serviço para gravar, fazer upload ou de outra forma transmitir conteúdo, você concede ao LiveStreamRecorder uma licença não exclusiva, isenta de royalties, transferível, sublicenciável e mundial para usar, hospedar, armazenar, exibir, distribuir e disponibilizar seu conteúdo com a finalidade de operar e fornecer o Serviço.",
+    "content3": "Esta licença continua até você excluir seu conteúdo ou conta. No entanto, o conteúdo que foi compartilhado, baixado ou armazenado em cache por outros usuários pode continuar disponível.",
+    "content4": "Você declara e garante que possui ou tem os direitos necessários sobre todo o conteúdo que grava através do nosso Serviço e que tem autoridade para conceder esta licença."
+  },
+  "contentVisibility": {
+    "title": "Visibilidade do Conteúdo",
+    "content1": "Ao usar o LiveStreamRecorder, você entende e concorda que as gravações feitas através do nosso Serviço podem ser visíveis publicamente para outros usuários na plataforma.",
+    "content2": "Você é o único responsável pelo conteúdo que grava e disponibiliza. Se não quiser que suas gravações sejam públicas, você pode ajustar suas configurações de privacidade onde disponível ou abster-se de usar o Serviço.",
+    "content3": "Você pode solicitar a remoção do seu conteúdo a qualquer momento entrando em contato conosco ou usando os controles disponíveis nas configurações da sua conta."
+  },
+  "ageRequirement": {
+    "title": "Requisito de Idade",
+    "content": "Você deve ter pelo menos 18 anos ou ter atingido a maioridade em sua jurisdição para usar esta plataforma. Ao criar uma conta, você confirma que atende a esse requisito."
+  },
+  "yourAccount": {
+    "title": "Sua Conta",
+    "intro": "Ao se registrar para uma conta, você concorda em:",
+    "items": {
+      "accurate": "Fornecer informações precisas, atuais e completas",
+      "confidential": "Manter a confidencialidade das suas credenciais de login",
+      "noShare": "Não compartilhar sua conta com terceiros",
+      "oneAccount": "Manter apenas uma conta por pessoa",
+      "notify": "Nos notificar imediatamente sobre qualquer acesso não autorizado",
+      "responsibility": "Aceitar responsabilidade por toda a atividade na sua conta"
+    },
+    "footer": "O LiveStreamRecorder não se responsabiliza por qualquer perda ou dano decorrente da sua falha em proteger as credenciais da sua conta."
+  },
+  "intellectualProperty": {
+    "title": "Propriedade Intelectual e Direitos Autorais",
+    "content1": "O LiveStreamRecorder respeita os direitos de propriedade intelectual de terceiros e espera que os usuários façam o mesmo.",
+    "content2": "Ao usar nosso Serviço, você confirma que tem o direito de gravar o conteúdo que adiciona à nossa plataforma. Você é o único responsável por garantir que seu uso esteja em conformidade com as leis de direitos autorais aplicáveis e com os termos de serviço das plataformas de streaming de terceiros.",
+    "content3": "Gravar, reproduzir ou redistribuir conteúdo de lives sem o consentimento do criador pode constituir violação de direitos autorais e pode expô-lo à responsabilidade legal. O LiveStreamRecorder é apenas uma ferramenta técnica — você assume total responsabilidade legal pelo modo como a utiliza.",
+    "content4": "Você concorda em não usar o LiveStreamRecorder para gravar conteúdo que não seja de sua propriedade ou para o qual não tenha autorização explícita para gravar. Se você adicionar um criador à sua conta, você declara que é o criador ou obteve o consentimento dele.",
+    "content5": "Qualquer uso indevido pode resultar no encerramento da sua conta e em possível ação legal pelos detentores dos direitos. O LiveStreamRecorder não assume qualquer responsabilidade pelas gravações não autorizadas feitas pelos usuários.",
+    "content6": "O LiveStreamRecorder reserva-se o direito de remover ou desabilitar o acesso a qualquer conteúdo supostamente infrator e pode encerrar o acesso ao Serviço de infratores recorrentes."
+  },
+  "prohibitedActivities": {
+    "title": "Atividades Proibidas",
+    "intro": "Você não pode usar esta plataforma para:",
+    "items": {
+      "noRights": "Gravar conteúdo que você não possui ou não tem direitos sobre",
+      "minors": "Gravar conteúdo que apresente menores (qualquer pessoa com menos de 18 anos)",
+      "exploit": "Acessar conteúdo que explore, coloque em perigo ou sexualize menores",
+      "illegal": "Praticar qualquer atividade ilegal",
+      "harass": "Assediar, perseguir ou prejudicar outras pessoas",
+      "bots": "Usar bots, scripts ou ferramentas automatizadas para abusar do Serviço",
+      "multipleAccounts": "Criar várias contas para contornar restrições",
+      "malware": "Fazer upload de malware ou software prejudicial",
+      "reverseEngineer": "Fazer engenharia reversa ou adulterar nossos sistemas"
+    },
+    "footer": "Violações podem resultar no encerramento imediato da conta sem aviso prévio e podem acarretar ação legal."
+  },
+  "contentRemoval": {
+    "title": "Remoção de Conteúdo e DMCA",
+    "content1": "Reservamo-nos o direito de remover qualquer conteúdo ou encerrar qualquer conta a nosso critério. Responderemos a reclamações de violação de direitos autorais e tomaremos as medidas adequadas conforme exigido por lei, incluindo remoção de conteúdo infrator e encerramento do acesso para infratores recorrentes.",
+    "content2": "Se você acredita que o conteúdo em nossa plataforma viola seus direitos, envolve um menor ou viola estes termos, entre em contato conosco em contact@livestreamrecorder.com com detalhes completos para resolução imediata.",
+    "footer": "Inclua: uma descrição da obra com direitos autorais, a URL do conteúdo infrator, suas informações de contato e uma declaração de que você tem boa fé de que o uso não é autorizado."
+  },
+  "thirdPartyPlatforms": {
+    "title": "Plataformas de Terceiros",
+    "content1": "Nossos serviços se integram a plataformas de streaming de terceiros. Ao usar nosso Serviço, você reconhece que também está sujeito aos termos e políticas dessas plataformas:",
+    "platforms": {
+      "tiktok": "Termos de Serviço do TikTok",
+      "twitch": "Termos de Serviço da Twitch",
+      "youtube": "Termos de Serviço do YouTube",
+      "kick": "Termos de Serviço do Kick",
+      "google": "Termos de Serviço do Google",
+      "googlePrivacy": "Política de Privacidade do Google"
+    },
+    "content2": "Você é o único responsável por revisar e cumprir esses termos de terceiros. O LiveStreamRecorder não se responsabiliza por quaisquer ações tomadas por plataformas de terceiros, incluindo remoção de conteúdo, alterações de API ou restrições de conta.",
+    "content3": "Alterações ou restrições impostas por plataformas de terceiros podem afetar a disponibilidade ou funcionalidade de nossos serviços. O LiveStreamRecorder não se responsabiliza por quaisquer interrupções causadas por plataformas de terceiros."
+  },
+  "serviceTiers": {
+    "title": "Níveis de Serviço e Acesso",
+    "content1": "O LiveStreamRecorder oferece níveis de acesso gratuito e premium com diferentes recursos e limitações.",
+    "content2": "Usuários gratuitos têm acesso a recursos básicos com limites de uso. Assinantes premium desfrutam de acesso a todos os recursos, incluindo ferramentas de IA, armazenamento estendido e suporte prioritário.",
+    "content3": "Visitantes anônimos podem visualizar um número limitado de gravações antes de serem solicitados a criar uma conta. Usuários gratuitos registrados podem ter limitações adicionais de visualização com base em sua atividade na conta.",
+    "content4": "Reservamo-nos o direito de modificar benefícios, recursos e limitações dos níveis a qualquer momento. Mudanças significativas serão comunicadas aos usuários existentes."
+  },
+  "payments": {
+    "title": "Pagamentos e Assinaturas",
+    "items": {
+      "autoBill": "Planos pagos são cobrados automaticamente até você cancelar",
+      "autoRenew": "As assinaturas são renovadas automaticamente, a menos que sejam canceladas pelo menos 24 horas antes da próxima data de cobrança",
+      "cancelAnytime": "Cancele a qualquer momento nas configurações da sua conta",
+      "noRefunds": "Sem reembolso pelo tempo de assinatura não utilizado",
+      "priceChanges": "Podemos alterar os preços com aviso razoável aos assinantes existentes",
+      "failedPayments": "Pagamentos com falha podem resultar em acesso restrito até que sejam resolvidos",
+      "taxes": "Você é responsável por quaisquer impostos aplicáveis"
+    }
+  },
+  "termination": {
+    "title": "Rescisão",
+    "content1": "Podemos suspender ou encerrar sua conta a qualquer momento se você violar estes termos, praticar atividades proibidas ou não resolver problemas de pagamento.",
+    "content2": "Você pode excluir sua conta a qualquer momento em Configurações. O cancelamento entra em vigor no final do ciclo de faturamento atual.",
+    "content3": "Após o encerramento, o acesso ao Serviço será revogado imediatamente e quaisquer dados armazenados em nossos servidores poderão ser permanentemente excluídos."
+  },
+  "liability": {
+    "title": "Limitação de Responsabilidade",
+    "content": "Esta plataforma é fornecida \"como está\" e \"conforme disponível\", sem garantias de qualquer tipo, expressas ou implícitas. O uso do Serviço é de sua exclusiva responsabilidade.",
+    "intro": "O LiveStreamRecorder não se responsabiliza por:",
+    "items": {
+      "content": "Conteúdo criado, gravado ou acessado pelos usuários",
+      "thirdParty": "Ações de plataformas de streaming de terceiros",
+      "interruptions": "Interrupções do serviço ou problemas técnicos",
+      "indirect": "Danos indiretos, incidentais, especiais ou consequenciais",
+      "lossData": "Perda de dados, lucros ou oportunidades de negócios",
+      "unauthorized": "Acesso não autorizado devido à sua falha em proteger as credenciais"
+    },
+    "footer": "Na máxima extensão permitida pela lei, nossa responsabilidade total não excederá o valor pago por você pelo Serviço durante os doze (12) meses anteriores ao evento que deu origem à reclamação."
+  },
+  "indemnification": {
+    "title": "Indenização",
+    "content": "Você concorda em defender, indenizar e isentar de responsabilidade o LiveStreamRecorder e suas afiliadas, diretores, agentes e funcionários de quaisquer reclamações, danos, perdas, responsabilidades, custos ou despesas (incluindo honorários advocatícios) decorrentes do seu uso da plataforma, da sua violação destes termos, da sua infração de direitos de terceiros ou de quaisquer gravações não autorizadas que você faça usando o Serviço."
+  },
+  "modifications": {
+    "title": "Modificações",
+    "content1": "O LiveStreamRecorder reserva-se o direito de modificar, atualizar ou descontinuar qualquer parte do Serviço a qualquer momento sem aviso prévio. Também podemos atualizar estes termos a qualquer momento.",
+    "content2": "O uso continuado da plataforma após as alterações significa que você aceita os novos termos. Atualizaremos a data de \"Última atualização\" no topo desta página quando forem feitas alterações."
+  },
+  "governingLaw": {
+    "title": "Lei Aplicável",
+    "content": "Estes Termos serão regidos e interpretados de acordo com as leis da Dinamarca, sem considerar suas disposições sobre conflito de leis. Quaisquer disputas decorrentes destes termos ou do seu uso do Serviço estarão sujeitas à jurisdição exclusiva dos tribunais da Dinamarca."
+  },
+  "contact": {
+    "title": "Fale Conosco",
+    "content": "Dúvidas ou preocupações sobre estes termos? Entre em contato conosco em contact@livestreamrecorder.com"
+  },
+  "footerNote": "Ao usar o LiveStreamRecorder, você reconhece que leu, entendeu e concorda em estar vinculado a estes Termos e Condições.",
+  "disclaimer": "Os nomes de produtos, logotipos e marcas do TikTok, Twitch, YouTube, Kick, AfreecaTV e Pandalive são propriedade de seus respectivos proprietários. Todos os nomes de empresas, produtos e serviços usados neste site são apenas para fins de identificação. O uso desses nomes, marcas registradas e marcas não implica endosso. O LiveStreamRecorder não tem nenhuma associação com TikTok, Twitch, YouTube, Kick, AfreecaTV ou Pandalive."
+}

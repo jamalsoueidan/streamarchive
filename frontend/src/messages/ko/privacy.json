@@ -1,0 +1,156 @@
+{
+  "meta": {
+    "title": "개인정보 처리방침",
+    "description": "LiveStreamRecorder의 개인정보 처리방침. 데이터를 수집, 사용, 보호하는 방법을 알아보세요."
+  },
+  "header": {
+    "title": "개인정보 처리방침",
+    "lastUpdated": "최종 수정일: {date}"
+  },
+  "overview": {
+    "title": "개요",
+    "content": "저희는 간단하게 유지합니다. 최소한의 데이터를 수집하며 제3자에게 판매하지 않습니다. 침해적인 분석이나 광고 추적이 없습니다. 개인정보 보호가 저희에게 중요합니다."
+  },
+  "dataController": {
+    "title": "개인정보 처리자",
+    "content": "LiveStreamRecorder.com은 귀하의 개인 데이터를 책임지는 개인정보 처리자입니다. 본 개인정보 처리방침 또는 데이터 관행에 대한 질문이 있으시면 다음으로 연락해 주세요:",
+    "email": "contact@livestreamrecorder.com"
+  },
+  "whatWeCollect": {
+    "title": "수집하는 정보",
+    "intro": "계정을 생성하면 다음을 저장합니다:",
+    "items": {
+      "email": "이메일 주소",
+      "emailDesc": "로그인 및 계정 복구를 위해",
+      "username": "사용자 이름",
+      "usernameDesc": "계정 식별을 위해",
+      "lastLogin": "마지막 로그인 날짜",
+      "lastLoginDesc": "기본 계정 관리를 위해",
+      "streamers": "팔로우하는 스트리머",
+      "streamersDesc": "관심 있는 스트리머의 콘텐츠를 보여드리기 위해"
+    },
+    "footer": "그게 전부입니다. 다른 것은 없습니다."
+  },
+  "legalBasis": {
+    "title": "처리의 법적 근거",
+    "intro": "GDPR에 따라 다음 법적 근거에 기반하여 개인 데이터를 처리합니다:",
+    "items": {
+      "contract": "계약",
+      "contractDesc": "서비스 제공에 필요한 처리",
+      "consent": "동의",
+      "consentDesc": "특정 목적에 대한 동의를 제공함 (예: 마케팅 이메일)",
+      "legitimateInterest": "정당한 이익",
+      "legitimateInterestDesc": "서비스 개선 및 사기 방지를 위해"
+    }
+  },
+  "payment": {
+    "title": "결제 처리",
+    "content": "유료 구독의 경우 결제 처리자 및 판매 대행자로 Freemius를 사용합니다. Freemius가 결제 정보를 직접 수집하고 처리합니다. 저희 서버에 신용카드 정보를 저장하지 않습니다.",
+    "stripePolicy": "Freemius의 개인정보 처리방침은 freemius.com/privacy에서 확인할 수 있습니다."
+  },
+  "analytics": {
+    "title": "분석",
+    "intro": "사이트 사용 방식을 이해하기 위해 개인정보 보호에 초점을 맞춘 분석 도구인 Umami를 사용합니다. 이를 통해 경험을 개선할 수 있습니다.",
+    "notCollect": "Umami가 수집하지 않는 것:",
+    "notCollectItems": {
+      "personal": "개인 정보 없음",
+      "tracking": "교차 사이트 추적 없음"
+    },
+    "collect": "수집하는 것:",
+    "collectItems": {
+      "pageViews": "페이지 조회수",
+      "referrer": "유입 경로 (어디서 왔는지)",
+      "browser": "브라우저 및 기기 유형",
+      "country": "국가 (정확한 위치 아님)"
+    },
+    "footer": "모든 데이터는 익명화되며 유럽에 있는 자체 서버에 저장됩니다."
+  },
+  "accessControl": {
+    "title": "접근 제어 및 사용량 추적",
+    "content1": "조회 제한을 적용하기 위해 공개 방문자(로그인하지 않음)와 기본 사용자(무료 계정으로 로그인)가 처음 조회한 5개의 녹화물을 추적합니다. 이 제한에 도달하면 접근이 제한되고 추가 추적은 발생하지 않습니다.",
+    "content2": "공개 방문자의 경우 쿠키에 저장된 익명 기기 지문을 사용합니다. 팔로우하지 않는 크리에이터의 콘텐츠를 조회하는 기본 사용자의 경우 계정 ID를 사용합니다.",
+    "content3": "프리미엄 구독자는 추적되지 않습니다. 팔로우하는 크리에이터의 콘텐츠를 조회하는 기본 사용자도 추적되지 않습니다. 이 데이터는 프리미엄 서비스 운영에만 사용되며 제3자와 공유되거나 광고 목적으로 사용되지 않습니다."
+  },
+  "dataRetention": {
+    "title": "데이터 보존",
+    "intro": "필요한 기간 동안만 데이터를 보존합니다:",
+    "items": {
+      "account": "계정 데이터",
+      "accountDesc": "계정을 삭제할 때까지",
+      "freeStreams": "녹화된 방송 (무료 플랜)",
+      "freeStreamsDesc": "7일",
+      "premiumStreams": "녹화된 방송 (프리미엄 플랜)",
+      "premiumStreamsDesc": "60일",
+      "analyticsData": "분석 데이터",
+      "analyticsDataDesc": "익명화, 서비스 개선을 위해 보존"
+    }
+  },
+  "dataStorage": {
+    "title": "데이터 저장 위치",
+    "content": "서버는 유럽에 위치합니다. 데이터는 GDPR 요건에 따라 처리 및 저장됩니다. 서비스 제공에 필요한 경우(예: Stripe 결제 처리) 및 적절한 보호 조치가 마련된 경우를 제외하고 유럽경제지역(EEA) 외부로 개인 데이터를 전송하지 않습니다."
+  },
+  "thirdParties": {
+    "title": "제3자",
+    "intro": "데이터를 누구에게도 판매하지 않습니다. 다음과만 데이터를 공유합니다:",
+    "items": {
+      "freemius": "Freemius",
+      "freemiusDesc": "결제 처리 및 구독 관리를 위해 (구독 시)"
+    },
+    "footer": "제3자 광고 네트워크를 사용하거나 개인 정보를 판매하지 않습니다."
+  },
+  "cookies": {
+    "title": "쿠키",
+    "intro": "웹사이트가 제대로 작동하는 데 필요한 필수 쿠키만 사용합니다:",
+    "items": {
+      "session": "세션 쿠키",
+      "sessionDesc": "로그인 상태를 유지하기 위해",
+      "preference": "환경설정 쿠키",
+      "preferenceDesc": "설정을 기억하기 위해",
+      "access": "접근 제어 쿠키",
+      "accessDesc": "무료 사용자의 조회 제한을 적용하기 위해"
+    },
+    "footer": "광고 쿠키나 제3자 추적 쿠키를 사용하지 않습니다. 접근 제어 쿠키는 프리미엄 서비스 운영에 반드시 필요합니다."
+  },
+  "rights": {
+    "title": "귀하의 권리 (GDPR)",
+    "intro": "GDPR에 따라 다음과 같은 권리가 있습니다:",
+    "items": {
+      "access": "접근권",
+      "accessDesc": "개인 데이터 사본 요청",
+      "rectification": "정정권",
+      "rectificationDesc": "부정확하거나 불완전한 데이터 수정",
+      "erasure": "삭제권",
+      "erasureDesc": "데이터 삭제 요청",
+      "restrict": "처리 제한권",
+      "restrictDesc": "데이터 사용 방법 제한",
+      "portability": "데이터 이동권",
+      "portabilityDesc": "이동 가능한 형식으로 데이터 수신",
+      "object": "이의 제기권",
+      "objectDesc": "정당한 이익에 기반한 처리에 이의 제기",
+      "withdraw": "동의 철회권",
+      "withdrawDesc": "언제든지 동의 철회"
+    },
+    "footer": "이러한 권리를 행사하려면 contact@livestreamrecorder.com으로 연락해 주세요."
+  },
+  "children": {
+    "title": "아동의 개인정보 보호",
+    "content": "저희 서비스는 18세 미만을 대상으로 하지 않습니다. 18세 미만 아동의 개인 정보를 고의로 수집하지 않습니다.",
+    "contact": "아동이 저희에게 개인 정보를 제공했다고 생각되시면 즉시 contact@livestreamrecorder.com으로 연락해 주시면 해당 정보를 시스템에서 삭제하는 조치를 취하겠습니다."
+  },
+  "security": {
+    "title": "데이터 보안",
+    "content": "무단 접근, 변경, 공개 또는 파기로부터 개인 데이터를 보호하기 위해 적절한 기술적 및 조직적 조치를 구현합니다. 여기에는 암호화, 보안 서버 및 접근 제어가 포함됩니다. 그러나 인터넷을 통한 전송 방법은 100% 안전하지 않으며 절대적인 보안을 보장할 수 없습니다."
+  },
+  "deleteAccount": {
+    "title": "계정 삭제",
+    "content": "계정을 삭제하려면 설정에서 계정 삭제를 선택하세요.",
+    "footer": "삭제 후 모든 데이터가 서버에서 영구적으로 제거됩니다. 이 작업은 취소할 수 없습니다."
+  },
+  "contact": {
+    "title": "문의하기",
+    "content": "본 개인정보 처리방침, 데이터 또는 권리에 대한 질문이 있으시면 연락해 주세요:",
+    "email": "contact@livestreamrecorder.com",
+    "footer": "데이터 보호 권리가 침해되었다고 생각되시면 감독 기관(예: 덴마크 데이터 보호청 - Datatilsynet)에 불만을 제기할 권리도 있습니다."
+  },
+  "footerNote": "본 정책을 업데이트하면 새 날짜와 함께 여기에 변경 사항을 게시합니다. 변경 후 서비스를 계속 사용하면 업데이트된 정책에 동의하는 것으로 간주됩니다."
+}

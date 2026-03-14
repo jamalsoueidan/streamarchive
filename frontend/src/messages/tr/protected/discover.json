@@ -1,0 +1,13 @@
+{
+  "title": "Arkadaşlar",
+  "description": "Platformdaki diğer içerik üreticilerini keşfedin",
+  "emptyFiltered": {
+    "title": "Filtrelerinize uyan içerik üreticisi yok",
+    "description": "Filtrelerinizi ayarlamayı veya temizlemeyi deneyin"
+  },
+  "emptyDefault": {
+    "title": "İçerik üreticisi bulunamadı",
+    "description": "..."
+  },
+  "noMoreToLoad": "Sona ulaştınız"
+}

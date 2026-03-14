@@ -1,0 +1,13 @@
+{
+  "title": "Gravações",
+  "description": "Gravações dos seus criadores",
+  "emptyFiltered": {
+    "title": "Nenhuma gravação corresponde aos seus filtros",
+    "description": "Tente ajustar ou limpar os filtros"
+  },
+  "emptyDefault": {
+    "title": "Nenhuma gravação ainda",
+    "description": "Suas gravações aparecerão aqui assim que você adicionar um criador"
+  },
+  "noMoreToLoad": "Você chegou ao fim"
+}

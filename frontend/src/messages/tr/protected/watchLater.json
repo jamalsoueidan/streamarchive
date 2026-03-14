@@ -1,0 +1,13 @@
+{
+  "title": "Daha Sonra İzle",
+  "description": "Yalnızca bu cihazda kayıtlı",
+  "empty": "Kayıtlı video yok. Daha sonra izlemek için menüden video ekleyin.",
+  "clear": "Tümünü temizle",
+  "clearConfirm": {
+    "title": "Daha Sonra İzle'yi Temizle",
+    "message": "Daha Sonra İzle listenizdeki tüm videoları kaldırmak istediğinizden emin misiniz?",
+    "confirm": "Tümünü temizle",
+    "cancel": "İptal"
+  },
+  "loadMore": "Daha fazla yükle"
+}

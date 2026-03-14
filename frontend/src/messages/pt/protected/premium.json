@@ -1,0 +1,77 @@
+{
+  "title": "Premium",
+  "descriptionPremium": "Você tem acesso a tudo que o LiveStreamRecorder oferece",
+  "descriptionNonPremium": "Tenha acesso imediato a tudo que o LiveStreamRecorder oferece",
+  "descriptionShort": "Acesso imediato a todos os recursos",
+
+  "billingPeriodMonthly": "mensal",
+  "billingPeriodQuarterly": "trimestral",
+  "billingPeriodAnnual": "anual",
+  "billingPeriodLifetime": "vitalício",
+
+  "billing1MonthLabel": "1 Mês",
+  "billing3MonthsLabel": "3 Meses",
+  "billing3MonthsSavings": "1 mês grátis",
+  "billing12MonthsLabel": "12 Meses",
+  "billing12MonthsSavings": "5 meses grátis",
+  "billing12MonthsBadge": "Melhor Custo-Benefício",
+  "billingLifetimeLabel": "Vitalício",
+  "billingLifetimeSavings": "Pague uma vez, use para sempre",
+  "billingLifetimeBadge": "Limitado",
+
+  "currentPlanRecord": "Grave até 3 canais seus",
+  "currentPlanWatch": "Assista suas gravações",
+
+  "premiumRecord100": "Grave 100 canais seus",
+  "premiumFullControl": "Controle total sobre suas gravações",
+  "premiumNotifications": "Notificações quando estiver pronto",
+  "premiumAiHighlights": "Destaques e clipes com IA",
+  "premiumAiSubtitles": "Legendas e traduções com IA",
+  "premiumAiMemes": "Memes e GIFs com IA",
+  "premiumPublishSocial": "Publique nas redes sociais",
+  "premiumClipEditor": "Editor de vídeo",
+  "premiumWatchLater": "Assistir depois e favoritos",
+  "premiumPrioritySupport": "Suporte prioritário",
+  "premiumTiktokInsights": "TikTok Live Insights",
+  "premiumDownloadRecordings": "Baixe suas gravações",
+
+  "paymentMethod": "Forma de Pagamento",
+  "freemiusDescription": "Cartão de crédito, PayPal e mais",
+  "stripeDescription": "Cartão de crédito, Google Pay, Apple Pay e mais",
+
+  "yourCurrentPlan": "Seu Plano Atual",
+  "currentPlan": "Plano Atual",
+  "free": "Gratuito",
+  "cancelled": "Cancelado",
+  "adminAccess": "Você tem acesso premium completo como admin/champion.",
+  "cancelledMessage": "Sua assinatura {billingPeriod} foi cancelada. Você ainda tem acesso até {endDate}.",
+  "activeMessage": "Você está no plano {billingPeriod}. Próxima cobrança: {renewDate}.",
+  "lifetimeMessage": "Você tem acesso vitalício a todos os recursos premium. Obrigado pelo seu apoio!",
+  "cancelSubscription": "Cancelar assinatura",
+  "supportMessage": "O LiveStreamRecorder é um projeto de uma só pessoa. Seu apoio ajuda a manter os servidores funcionando e novos recursos chegando. Obrigado!",
+
+  "choosePlan": "Escolha seu Plano",
+  "perMonth": "R${price}/mês",
+  "oneTime": "pagamento único",
+
+  "yourPremiumFeatures": "Seus Recursos Premium",
+  "unlockPremiumFeatures": "Ativar Recursos Premium",
+  "futureFeatures": "O Premium inclui todos os novos recursos à medida que são lançados.",
+  "seeWhatsNew": "Ver novidades",
+
+  "plan": "Plano",
+  "subtotal": "Subtotal",
+  "discount": "Desconto",
+  "total": "Total",
+
+  "vatNotice": "* Impostos aplicáveis serão calculados e adicionados ao total durante o checkout.",
+  "subscribe": "Assinar Agora",
+  "buyNow": "Comprar Agora",
+  "securePayment": "Pagamento seguro",
+
+  "cancelModalTitle": "Cancelar Assinatura",
+  "cancelModalMessage": "Sentimos muito ver você ir! Se cancelar, você ainda terá acesso aos recursos premium até {endDate}.",
+  "cancelModalAfter": "Depois disso, sua conta voltará ao plano gratuito.",
+  "keepSubscription": "Manter assinatura",
+  "yesCancel": "Sim, cancelar"
+}

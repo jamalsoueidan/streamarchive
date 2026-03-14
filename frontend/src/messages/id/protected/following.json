@@ -1,0 +1,13 @@
+{
+  "title": "Rekaman",
+  "description": "Rekaman dari kreator Anda",
+  "emptyFiltered": {
+    "title": "Tidak ada rekaman yang cocok dengan filter Anda",
+    "description": "Coba sesuaikan atau hapus filter Anda"
+  },
+  "emptyDefault": {
+    "title": "Belum ada rekaman",
+    "description": "Rekaman Anda akan muncul di sini setelah Anda menambahkan kreator"
+  },
+  "noMoreToLoad": "Anda sudah mencapai akhir"
+}

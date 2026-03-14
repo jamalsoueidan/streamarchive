@@ -1,0 +1,191 @@
+"use server";
+
+import api from "@/lib/api";
+import { deepMerge } from "@mantine/core";
+import { getLocale } from "next-intl/server";
+import { ProfileFilters } from "../lib/search-params";
+
+const defaultOptions = {
+  filters: {
+    // give me all recordings that are done or recording
+    sources: {
+      state: {
+        $ne: "failed",
+      },
+    },
+  },
+  populate: {
+    sources: {
+      fields: ["*"],
+      filters: {
+        // filter out from source
+        state: {
+          $ne: "failed",
+        },
+      },
+    },
+    follower: {
+      fields: ["username", "type"],
+      populate: {
+        avatar: {
+          fields: ["url"],
+        },
+      },
+    },
+  },
+};
+
+export async function getFollower({
+  username,
+  type,
+}: {
+  username: string;
+  type: string;
+}) {
+  const response = await api.follower.getFollowers({
+    filters: {
+      username: username.replace(/^(%40|@)/, ""),
+      type,
+    },
+    populate: ["avatar"],
+  });
+
+  const follower = response.data.data?.at(0);
+
+  if (!follower) {
+    return null;
+  }
+
+  // Check if current user is following
+  const { data: user } =
+    await api.usersPermissionsUsersRoles.getUsersPermissionsUsersRoles({
+      populate: {
+        followers: {
+          fields: ["id"],
+          filters: {
+            documentId: {
+              $eq: follower.documentId,
+            },
+          },
+        },
+      },
+    });
+
+  const followers = user.followers || [];
+  const isFollowing = !!followers.find((f) => f.id === follower.id);
+
+  return {
+    ...follower,
+    isFollowing,
+  };
+}
+
+export async function fetchProfileRecordings(
+  type: string,
+  username: string,
+  filters: ProfileFilters,
+  page: number = 1,
+) {
+  //const locale = await getLocale();
+  const response = await api.recording.browseRecordings(
+    deepMerge(defaultOptions, {
+      filters: {
+        follower: {
+          username: { $eq: username.replace(/^(%40|@)/, "") },
+          type: { $eq: type },
+        },
+      },
+      sort: filters.sort,
+      "pagination[page]": page,
+      "pagination[pageSize]": 15,
+      }),
+  );
+
+  return {
+    data: response.data?.data || [],
+    meta: response.data?.meta,
+  };
+}
+
+// actions.ts
+
+export async function fetchRecordingWithContext(
+  type: string,
+  username: string,
+  filters: ProfileFilters,
+  targetDocumentId: string,
+  pageParam: number,
+  pageSize: number = 15,
+) {
+  const locale = await getLocale();
+  const decodedUsername = username.replace(/^(%40|@)/, "");
+  const isDesc = !filters.sort?.includes(":asc");
+
+  // Special case: pageParam === 1 means "find the target video's page"
+  // Any other pageParam means "fetch that specific page"
+  let actualPage = pageParam;
+
+  if (pageParam === 1) {
+    // 1. Get the target video to find its createdAt
+    const targetResponse = await api.recording.browseRecordings(
+      deepMerge(defaultOptions, {
+        filters: {
+          documentId: { $eq: targetDocumentId },
+        },
+            //locale,
+      }),
+    );
+
+    const targetVideo = targetResponse.data?.data?.[0];
+
+    if (!targetVideo) {
+      return {
+        data: [],
+        meta: { pagination: { page: 1, pageCount: 0, total: 0, pageSize } },
+      };
+    }
+
+    // 2. Count how many videos come BEFORE this one
+    const countResponse = await api.recording.browseRecordings({
+      filters: {
+        follower: {
+          username: { $eq: decodedUsername },
+          type: { $eq: type },
+        },
+        sources: {
+          state: { $ne: "failed" },
+        },
+        createdAt: isDesc
+          ? { $gt: targetVideo.createdAt }
+          : { $lt: targetVideo.createdAt },
+      },
+      "pagination[page]": 1,
+      "pagination[pageSize]": 1,
+      //locale,
+    });
+
+    const countBefore = countResponse.data?.meta?.pagination?.total || 0;
+    actualPage = Math.floor(countBefore / pageSize) + 1;
+  }
+
+  // 3. Fetch the actual page
+  const response = await api.recording.browseRecordings(
+    deepMerge(defaultOptions, {
+      filters: {
+        follower: {
+          username: { $eq: decodedUsername },
+          type: { $eq: type },
+        },
+      },
+      sort: filters.sort,
+      "pagination[page]": actualPage,
+      "pagination[pageSize]": pageSize,
+        //locale,
+    }),
+  );
+
+  return {
+    data: response.data?.data || [],
+    meta: response.data?.meta,
+  };
+}

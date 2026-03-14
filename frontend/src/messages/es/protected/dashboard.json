@@ -1,0 +1,13 @@
+{
+  "title": "Panel",
+  "description": "¡Bienvenido de nuevo! Aquí están las novedades",
+  "greetingMorning": "¡Buenos días, {username}!",
+  "greetingAfternoon": "¡Buenas tardes, {username}!",
+  "greetingEvening": "¡Buenas noches, {username}!",
+  "greetingSubtitle": "Aquí están las novedades de tu feed",
+  "noRecordings": "No hay grabaciones disponibles",
+  "browseAll": "Ver todo",
+  "newCreators": "Nuevos Creadores",
+  "myFeed": "Mi Feed",
+  "discoverSection": "Descubrir"
+}

@@ -1,0 +1,14 @@
+{
+  "title": "ライブラリ（{count}）",
+  "description": "クリエイターを管理する",
+  "disabledHint": "無効な項目はまだ録画がありません",
+  "emptyFiltered": {
+    "title": "フィルターに一致するクリエイターがいません",
+    "description": "フィルターを調整またはクリアしてみてください"
+  },
+  "emptyDefault": {
+    "title": "まだクリエイターを追加していません",
+    "description": "フレンドをブラウズしてプラットフォームのクリエイターを発見しましょう"
+  },
+  "noMoreToLoad": "これ以上ありません"
+}

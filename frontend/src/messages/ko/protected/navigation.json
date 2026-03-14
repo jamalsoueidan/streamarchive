@@ -1,0 +1,41 @@
+{
+  "sections": {
+    "home": "홈",
+    "studio": "스튜디오",
+    "community": "커뮤니티"
+  },
+  "links": {
+    "dashboard": "대시보드",
+    "premium": "프리미엄",
+    "myRecordings": "녹화 영상",
+    "myClips": "클립",
+    "watchLater": "나중에 볼 영상",
+    "aiStudio": "AI 스튜디오",
+    "myList": "라이브러리",
+    "live": "라이브",
+    "tiktokInsights": "TikTok 라이브 분석",
+    "explore": "탐색",
+    "friends": "친구"
+  },
+  "actions": {
+    "settings": "설정",
+    "logout": "로그아웃",
+    "addCreator": "크리에이터 추가",
+    "search": "검색",
+    "searchPlaceholder": "방송 URL을 입력하세요",
+    "installApp": "앱 설치",
+    "more": "더 보기",
+    "language": "언어",
+    "collapse": "사이드바 접기",
+    "expand": "사이드바 펼치기"
+  },
+  "installModal": {
+    "title": "앱 설치",
+    "description": "iPhone에 이 앱을 설치하려면:",
+    "step1": "탭하세요",
+    "shareButton": "공유 버튼",
+    "step2": "탭하세요",
+    "addToHomeScreen": "홈 화면에 추가",
+    "step3": "\"추가\" 탭하세요"
+  }
+}

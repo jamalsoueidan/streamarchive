@@ -1,0 +1,13 @@
+{
+  "title": "친구",
+  "description": "플랫폼의 다른 크리에이터를 찾아보세요",
+  "emptyFiltered": {
+    "title": "필터와 일치하는 크리에이터가 없습니다",
+    "description": "필터를 조정하거나 초기화해 보세요"
+  },
+  "emptyDefault": {
+    "title": "크리에이터를 찾을 수 없습니다",
+    "description": "..."
+  },
+  "noMoreToLoad": "끝에 도달했습니다"
+}

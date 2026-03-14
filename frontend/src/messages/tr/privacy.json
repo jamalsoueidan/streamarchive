@@ -1,0 +1,156 @@
+{
+  "meta": {
+    "title": "Gizlilik Politikası",
+    "description": "LiveStreamRecorder için Gizlilik Politikası. Verilerinizi nasıl topladığımızı, kullandığımızı ve koruduğumuzu öğrenin."
+  },
+  "header": {
+    "title": "Gizlilik Politikası",
+    "lastUpdated": "Son güncelleme: {date}"
+  },
+  "overview": {
+    "title": "Genel Bakış",
+    "content": "İşleri basit tutuyoruz. Minimum düzeyde veri topluyoruz ve üçüncü taraflara satmıyoruz. İnvaziv analitik yok, reklam takibi yok. Gizliliğiniz bizim için önemli."
+  },
+  "dataController": {
+    "title": "Veri Sorumlusu",
+    "content": "LiveStreamRecorder.com, kişisel verilerinizden sorumlu veri sorumlusudur. Bu Gizlilik Politikası veya veri uygulamalarımız hakkında herhangi bir sorunuz varsa, bizimle şu adresten iletişime geçebilirsiniz:",
+    "email": "contact@livestreamrecorder.com"
+  },
+  "whatWeCollect": {
+    "title": "Ne Topluyoruz",
+    "intro": "Bir hesap oluşturduğunuzda şunları saklarız:",
+    "items": {
+      "email": "E-posta adresi",
+      "emailDesc": "giriş yapmanızı ve hesabınızı kurtarmanızı sağlamak için",
+      "username": "Kullanıcı adı",
+      "usernameDesc": "hesabınızı tanımlamak için",
+      "lastLogin": "Son giriş tarihi",
+      "lastLoginDesc": "temel hesap yönetimi için",
+      "streamers": "Takip ettiğiniz yayıncılar",
+      "streamersDesc": "ilgilendiğiniz yayıncılardan içerik göstermek için"
+    },
+    "footer": "Hepsi bu. Başka bir şey yok."
+  },
+  "legalBasis": {
+    "title": "İşleme için Yasal Dayanak",
+    "intro": "GDPR kapsamında, kişisel verilerinizi aşağıdaki yasal gerekçelere dayanarak işliyoruz:",
+    "items": {
+      "contract": "Sözleşme",
+      "contractDesc": "Hizmetlerimizi size sunmak için işleme gereklidir",
+      "consent": "Onay",
+      "consentDesc": "Belirli amaçlar için onay verdiniz (örn. pazarlama e-postaları)",
+      "legitimateInterest": "Meşru Menfaat",
+      "legitimateInterestDesc": "Hizmetlerimizi iyileştirmek ve dolandırıcılığı önlemek için"
+    }
+  },
+  "payment": {
+    "title": "Ödeme İşleme",
+    "content": "Ücretli abonelikler için, ödeme işlemcimiz ve kayıt satıcımız olarak Freemius kullanıyoruz. Freemius, ödeme bilgilerinizi doğrudan toplar ve işler. Kredi kartı bilgilerinizi sunucularımızda saklamıyoruz.",
+    "stripePolicy": "Freemius'un gizlilik politikası şu adreste bulunabilir: freemius.com/privacy"
+  },
+  "analytics": {
+    "title": "Analitik",
+    "intro": "Sitemizin nasıl kullanıldığını anlamak için gizlilik odaklı bir analitik aracı olan Umami kullanıyoruz. Bu, deneyimi iyileştirmemize yardımcı olur.",
+    "notCollect": "Umami'nin TOPLAMADIĞI şeyler:",
+    "notCollectItems": {
+      "personal": "Kişisel bilgi yok",
+      "tracking": "Siteler arası takip yok"
+    },
+    "collect": "Topladıklarımız:",
+    "collectItems": {
+      "pageViews": "Sayfa görüntülemeleri",
+      "referrer": "Yönlendiren (nereden geldiğiniz)",
+      "browser": "Tarayıcı ve cihaz türü",
+      "country": "Ülke (kesin konum değil)"
+    },
+    "footer": "Tüm veriler anonimleştirilir ve Avrupa'daki kendi sunucularımızda saklanır."
+  },
+  "accessControl": {
+    "title": "Erişim Kontrolü ve Kullanım Takibi",
+    "content1": "Görüntüleme limitlerini uygulamak için, genel ziyaretçilerin (giriş yapmamış) ve temel kullanıcıların (ücretsiz hesapla giriş yapmış) görüntülediği ilk 5 kaydı takip ediyoruz. Bu limite ulaşıldıktan sonra erişim kısıtlanır ve daha fazla takip yapılmaz.",
+    "content2": "Genel ziyaretçiler için, bir çerezde saklanan anonim bir cihaz parmak izi kullanıyoruz. Takip etmedikleri içerik üreticilerinin içeriğini görüntüleyen temel kullanıcılar için hesap kimliğinizi kullanıyoruz.",
+    "content3": "Premium aboneler asla takip edilmez. Takip ettikleri içerik üreticilerin içeriğini görüntüleyen temel kullanıcılar da takip edilmez. Bu veriler yalnızca freemium hizmetimizi işletmek için kullanılır ve üçüncü taraflarla paylaşılmaz veya reklam amaçlı kullanılmaz."
+  },
+  "dataRetention": {
+    "title": "Veri Saklama",
+    "intro": "Verilerinizi yalnızca gerekli olduğu sürece saklıyoruz:",
+    "items": {
+      "account": "Hesap verileri",
+      "accountDesc": "Hesabınızı silene kadar",
+      "freeStreams": "Kaydedilmiş yayınlar (Ücretsiz plan)",
+      "freeStreamsDesc": "7 gün",
+      "premiumStreams": "Kaydedilmiş yayınlar (Premium plan)",
+      "premiumStreamsDesc": "60 gün",
+      "analyticsData": "Analitik verileri",
+      "analyticsDataDesc": "Anonimleştirilmiş, hizmet iyileştirmesi için saklanır"
+    }
+  },
+  "dataStorage": {
+    "title": "Verileriniz Nerede Saklanır",
+    "content": "Sunucularımız Avrupa'da bulunmaktadır. Verileriniz GDPR gereksinimlerine uygun olarak işlenir ve saklanır. Kişisel verilerinizi, hizmet sunumu için gerekli olmadıkça (örn. Stripe ödeme işleme) ve uygun güvenceler sağlanmadıkça Avrupa Ekonomik Alanı (AEA) dışına aktarmıyoruz."
+  },
+  "thirdParties": {
+    "title": "Üçüncü Taraflar",
+    "intro": "Verilerinizi kimseye satmıyoruz. Verileri yalnızca şunlarla paylaşıyoruz:",
+    "items": {
+      "freemius": "Freemius",
+      "freemiusDesc": "Ödeme işleme ve abonelik yönetimi için (abone olursanız)"
+    },
+    "footer": "Üçüncü taraf reklam ağları kullanmıyoruz veya kişisel bilgilerinizi satmıyoruz."
+  },
+  "cookies": {
+    "title": "Çerezler",
+    "intro": "Web sitesinin düzgün çalışması için yalnızca gerekli çerezleri kullanıyoruz:",
+    "items": {
+      "session": "Oturum çerezleri",
+      "sessionDesc": "Giriş yapmış kalmanızı sağlamak için",
+      "preference": "Tercih çerezleri",
+      "preferenceDesc": "Ayarlarınızı hatırlamak için",
+      "access": "Erişim kontrolü çerezleri",
+      "accessDesc": "Ücretsiz kullanıcılar için görüntüleme limitlerini uygulamak için"
+    },
+    "footer": "Reklam çerezleri veya üçüncü taraf takip çerezleri kullanmıyoruz. Erişim kontrolü çerezi, freemium hizmetimizi işletmek için kesinlikle gereklidir."
+  },
+  "rights": {
+    "title": "Haklarınız (GDPR)",
+    "intro": "GDPR kapsamında aşağıdaki haklara sahipsiniz:",
+    "items": {
+      "access": "Erişim Hakkı",
+      "accessDesc": "Kişisel verilerinizin bir kopyasını talep edin",
+      "rectification": "Düzeltme Hakkı",
+      "rectificationDesc": "Yanlış veya eksik verileri düzeltin",
+      "erasure": "Silinme Hakkı",
+      "erasureDesc": "Verilerinizin silinmesini talep edin",
+      "restrict": "İşlemeyi Kısıtlama Hakkı",
+      "restrictDesc": "Verilerinizi nasıl kullandığımızı sınırlayın",
+      "portability": "Veri Taşınabilirliği Hakkı",
+      "portabilityDesc": "Verilerinizi taşınabilir bir formatta alın",
+      "object": "İtiraz Hakkı",
+      "objectDesc": "Meşru menfaatlere dayalı işlemeye itiraz edin",
+      "withdraw": "Onayı Geri Çekme Hakkı",
+      "withdrawDesc": "Onayınızı istediğiniz zaman geri çekin"
+    },
+    "footer": "Bu haklardan herhangi birini kullanmak için contact@livestreamrecorder.com adresinden bizimle iletişime geçin"
+  },
+  "children": {
+    "title": "Çocukların Gizliliği",
+    "content": "Hizmetimiz 18 yaşın altındaki kimseye yönelik değildir. 18 yaşın altındaki çocuklardan bilerek kişisel bilgi toplamıyoruz.",
+    "contact": "Bir çocuğun bize kişisel bilgi sağladığına inanıyorsanız, lütfen derhal contact@livestreamrecorder.com adresinden bizimle iletişime geçin ve bu tür bilgileri sistemlerimizden silmek için adımlar atacağız."
+  },
+  "security": {
+    "title": "Veri Güvenliği",
+    "content": "Kişisel verilerinizi yetkisiz erişim, değişiklik, ifşa veya imhaya karşı korumak için uygun teknik ve organizasyonel önlemler uyguluyoruz. Bu, şifreleme, güvenli sunucular ve erişim kontrollerini içerir. Ancak, internet üzerinden hiçbir iletim yöntemi %100 güvenli değildir ve mutlak güvenliği garanti edemeyiz."
+  },
+  "deleteAccount": {
+    "title": "Hesabınızı Silin",
+    "content": "Hesabınızı silmek için Ayarlar'a gidin ve ardından Hesabı Sil'e tıklayın.",
+    "footer": "Silindikten sonra, tüm verileriniz sunucularımızdan kalıcı olarak kaldırılır. Bu işlem geri alınamaz."
+  },
+  "contact": {
+    "title": "Bize Ulaşın",
+    "content": "Bu Gizlilik Politikası, verileriniz veya haklarınız hakkında herhangi bir sorunuz varsa, lütfen bizimle iletişime geçin:",
+    "email": "contact@livestreamrecorder.com",
+    "footer": "Veri koruma haklarınızın ihlal edildiğine inanıyorsanız, denetim makamına (Danimarka Veri Koruma Ajansı - Datatilsynet gibi) şikayette bulunma hakkına da sahipsiniz."
+  },
+  "footerNote": "Bu politikayı güncellersek, değişiklikleri yeni bir tarihle burada yayınlayacağız. Değişikliklerden sonra Hizmeti kullanmaya devam etmeniz, güncellenmiş politikayı kabul ettiğiniz anlamına gelir."
+}

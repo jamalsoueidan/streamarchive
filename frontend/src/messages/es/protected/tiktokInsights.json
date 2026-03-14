@@ -1,0 +1,103 @@
+{
+  "title": "TikTok Insights",
+  "description": "Estadísticas globales de TikTok Live",
+
+  "globalStats": {
+    "title": "Resumen de la Plataforma",
+    "totalUsers": "Total de Gifters",
+    "totalDiamonds": "Total de Diamantes",
+    "totalGifts": "Total de Regalos",
+    "totalBattles": "Total de Batallas"
+  },
+
+  "dailyEarnings": {
+    "title": "Ganancias Diarias",
+    "seriesLabel": "Diamantes",
+    "empty": "No hay datos de ganancias disponibles",
+    "allCountries": "Todos los Países",
+    "allLanguages": "Todos los Idiomas"
+  },
+
+  "topEarners": {
+    "title": "Mayores Ganadores",
+    "username": "Usuario",
+    "country": "País",
+    "language": "Idioma",
+    "diamonds": "Diamantes",
+    "gifts": "Regalos",
+    "gifters": "Gifters",
+    "empty": "No hay datos disponibles",
+    "allCountries": "Todos los Países",
+    "allLanguages": "Todos los Idiomas"
+  },
+
+  "mostLive": {
+    "title": "Streamers Más Activos",
+    "username": "Usuario",
+    "country": "País",
+    "language": "Idioma",
+    "sessions": "Sesiones",
+    "hours": "Horas",
+    "empty": "No hay datos disponibles",
+    "allCountries": "Todos los Países",
+    "allLanguages": "Todos los Idiomas"
+  },
+
+  "countryLeaderboard": {
+    "title": "Ranking por País",
+    "rank": "#",
+    "country": "País",
+    "diamonds": "Diamantes",
+    "gifts": "Regalos",
+    "streamers": "Streamers",
+    "gifters": "Gifters",
+    "empty": "No hay datos disponibles",
+    "loadMore": "Cargar más"
+  },
+
+  "languageLeaderboard": {
+    "title": "Ranking por Idioma",
+    "rank": "#",
+    "language": "Idioma",
+    "diamonds": "Diamantes",
+    "gifts": "Regalos",
+    "streamers": "Streamers",
+    "gifters": "Gifters",
+    "empty": "No hay datos disponibles",
+    "loadMore": "Cargar más"
+  },
+
+  "topGifters": {
+    "title": "Top Gifters",
+    "description": "Usuarios que han enviado más diamantes en total a todos los streamers en TikTok.",
+    "username": "Usuario",
+    "diamonds": "Diamantes",
+    "gifts": "Regalos",
+    "streamers": "Streamers Apoyados",
+    "empty": "No hay datos disponibles"
+  },
+
+  "battleStats": {
+    "title": "Ranking de Batallas",
+    "description": "Streamers clasificados por su historial de batallas. Las batallas son competencias en vivo cara a cara donde los regalos de la audiencia deciden al ganador.",
+    "username": "Usuario",
+    "battles": "Batallas",
+    "wins": "Victorias",
+    "losses": "Derrotas",
+    "draws": "Empates",
+    "winRate": "% Victorias",
+    "empty": "No hay datos disponibles"
+  },
+
+  "gifterRelationships": {
+    "title": "Relaciones Gifter",
+    "description": "Pares gifter–streamer clasificados por diamantes enviados. Revela quiénes son los seguidores más dedicados de cada streamer.",
+    "pair": "Gifter → Streamer",
+    "supported": "apoyó a",
+    "gifter": "Gifter",
+    "streamer": "Streamer",
+    "diamonds": "Diamantes",
+    "gifts": "Regalos",
+    "empty": "No hay datos disponibles"
+  }
+}

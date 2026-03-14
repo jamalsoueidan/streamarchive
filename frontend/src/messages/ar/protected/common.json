@@ -1,0 +1,64 @@
+{
+  "follow": {
+    "tooltip": "إضافة صانع محتوى",
+    "successTitle": "تمت الإضافة!",
+    "successMessage": "تمت إضافة {username}",
+    "errorTitle": "خطأ"
+  },
+  "unfollow": {
+    "tooltip": "إزالة صانع المحتوى",
+    "successTitle": "تمت الإزالة",
+    "successMessage": "تمت إزالة {username}",
+    "successMessageGeneric": "تمت الإزالة بنجاح"
+  },
+  "scopeFilter": {
+    "label": "تصفية:",
+    "following": "تسجيلاتي",
+    "discover": "الأصدقاء",
+    "all": "الكل"
+  },
+  "recordings": {
+    "liveAgo": "بدأ التسجيل {time}",
+    "recordedAgo": "تم التسجيل {time}",
+    "recordCount": "تسجيل {count}",
+    "newRecording": "جديد",
+    "videoCount": "{count, plural, zero {لا فيديوهات} one {فيديو واحد} two {فيديوهان} few {# فيديوهات} many {# فيديو} other {# فيديو}}",
+    "noRecordings": "لقد وصلت إلى النهاية",
+    "hide": "إخفاء من الصفحة العامة",
+    "show": "إظهار في الصفحة العامة",
+    "delete": "حذف الفيديو",
+    "deleteConfirm": {
+      "title": "حذف الفيديو",
+      "message": "هل أنت متأكد من حذف هذا الفيديو؟ لا يمكن التراجع عن هذا الإجراء.",
+      "confirm": "حذف",
+      "cancel": "إلغاء"
+    },
+    "createWithAI": "إنشاء مقاطع بالذكاء الاصطناعي",
+    "addToWatchLater": "حفظ في شاهد لاحقاً",
+    "removeFromWatchLater": "إزالة من شاهد لاحقاً",
+    "addedToWatchLater": "تم الحفظ في شاهد لاحقاً",
+    "removedFromWatchLater": "تمت الإزالة من شاهد لاحقاً",
+    "videoLimitMessage": "وصلت إلى الحد الأقصى لمشاهدات الفيديو المجانية.",
+    "download": "تحميل الفيديو",
+    "downloadEmailSent": "رابط التحميل في طريقه إلى بريدك الإلكتروني",
+    "downloadFeatureMessage": "تحميل الفيديوهات ميزة خاصة بالمشتركين المميزين.",
+    "editClip": "تعديل المقطع",
+    "deleteSources": "حذف المصادر",
+    "deleteSourcesSuccess": "تم حذف {count} مصدر"
+  },
+  "followers": {
+    "addedAgo_context": "For when a creator was added to user's list. Shows 'Added 3 days ago'",
+    "addedAgo": "تم الإضافة {time}",
+    "limitReachedTitle": "وصلت إلى الحد الأقصى للمنشئين",
+    "upgradeModalHeadline": "لا تفوّت أي بث مباشر بعد الآن",
+    "max3Message": "لقد وصلت إلى الحد الأقصى وهو 3 منشئين في الاشتراك المجاني.",
+    "max50Message": "لقد وصلت إلى الحد الأقصى وهو 50 منشئاً في هذا الاشتراك.",
+    "max100Message": "لقد وصلت إلى الحد الأقصى وهو 100 منشئ في هذا الاشتراك.",
+    "upgradeButton": "الترقية إلى Premium",
+    "upgradeModalDiscount": "خصم 25% على شهرك الأول",
+    "upgradeModalCodeNote": "أدخل الكود عند الدفع",
+    "unfollowUpgradeTitle": "أدِر صناع المحتوى بحرية مع الاشتراك المميز"
+  },
+  "newest": "الأحدث",
+  "oldest": "الأقدم"
+}

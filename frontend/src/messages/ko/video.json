@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "title": "{creatorName}의 방송 - {recordedDate}",
+    "description": "{recordedDate}에 녹화된 {creatorName}의 {platform} 라이브 방송을 시청하세요. 재생 시간: {duration}. Live Stream Recorder로 방송을 놓치지 마세요.",
+    "ogTitle": "{creatorName}의 방송 - {recordedDate} | Live Stream Recorder",
+    "keywords": "{creatorName} 영상, {creatorName} 방송 {recordedDate}, {creatorName} {platform}, {creatorName} 녹화 방송, {creatorName} 시청"
+  },
+  "jsonLd": {
+    "name": "{creatorName} 방송 - {recordedDate}",
+    "description": "{recordedDate}에 녹화된 {creatorName}의 라이브 방송"
+  },
+  "watch": {
+    "title": "{username}의 라이브 방송 영상 시청 - {date}"
+  },
+  "backToProfile": "{username} 프로필로 돌아가기",
+  "otherRecordingsBy": "{username}의 다른 녹화 영상"
+}

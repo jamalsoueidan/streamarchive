@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "title": "Changelog",
+    "description": "Fique por dentro dos últimos recursos, melhorias e correções do LiveStreamRecorder."
+  },
+  "title": "Changelog",
+  "subtitle": "Acompanhe os últimos recursos, melhorias e correções.",
+  "empty": {
+    "title": "Nenhuma entrada no changelog ainda",
+    "description": "Volte em breve para ver as novidades."
+  },
+  "noDescription": "Nenhuma descrição fornecida para este lançamento.",
+  "published": "Publicado em {date}"
+}

@@ -1,0 +1,12 @@
+{
+  "title": "En Vivo Ahora",
+  "subtitle": "Transmisiones que se están grabando actualmente",
+  "streamingCount": "{count, plural, one {# en vivo} other {# en vivo}}",
+  "refresh": "Actualizar",
+  "showAll": "Ver todo",
+  "discoverStreamers": "Buscar Amigos",
+  "emptyState": {
+    "title": "No hay transmisiones en vivo ahora",
+    "description": "Cuando tus creadores estén en vivo, sus transmisiones aparecerán aquí"
+  }
+}

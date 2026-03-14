@@ -1,0 +1,335 @@
+{
+  "meta": {
+    "all": {
+      "title": "Kreator di LiveStreamRecorder",
+      "description": "Temukan kreator yang menggunakan LiveStreamRecorder untuk merekam live stream mereka dan mengubahnya menjadi klip pendek. Bergabunglah dengan ribuan kreator di TikTok, Twitch, YouTube, Kick, dan lainnya.",
+      "keywords": [
+        "kreator konten",
+        "live stream",
+        "rekaman stream",
+        "perekam live stream"
+      ]
+    },
+    "tiktok": {
+      "title": "Kreator TikTok",
+      "description": "Temukan kreator TikTok yang merekam Live mereka di LiveStreamRecorder. Jelajahi kreator TikTok terpopuler, tonton rekaman live mereka, dan temukan kreator konten baru untuk diikuti.",
+      "keywords": [
+        "kreator tiktok",
+        "kreator konten tiktok",
+        "kreator-kreator tiktok",
+        "kreator tiktok terbaik",
+        "kreator tiktok populer",
+        "temukan kreator tiktok",
+        "daftar kreator tiktok",
+        "top kreator tiktok",
+        "kreator populer di tiktok",
+        "kreator tiktok terpopuler",
+        "kreator konten tiktok terbaik",
+        "kreator konten tiktok",
+        "tiktok untuk kreator",
+        "halaman kreator tiktok",
+        "jadilah kreator tiktok",
+        "tiktok untuk kreator konten"
+      ],
+      "faqs": [
+        {
+          "question": "Bagaimana cara menemukan kreator TikTok di LiveStreamRecorder?",
+          "answer": "Jelajahi daftar kreator TikTok kami untuk menemukan kreator konten yang merekam Live mereka di LiveStreamRecorder. Anda dapat mencari berdasarkan nama atau menelusuri kreator TikTok populer untuk menemukan streamer baru untuk ditonton."
+        },
+        {
+          "question": "Bagaimana cara mendapatkan halaman kreator TikTok saya di LiveStreamRecorder?",
+          "answer": "Daftar gratis dan tambahkan username TikTok Anda. Halaman kreator TikTok Anda dibuat secara otomatis dan Live Anda mulai direkam. Pengguna lain dapat menjelajahi rekaman Anda dan menemukan konten Anda."
+        },
+        {
+          "question": "Saya seorang kreator konten TikTok — mengapa harus merekam Live saya?",
+          "answer": "Live TikTok Anda hilang begitu berakhir. Sebagai kreator konten TikTok, merekam Live Anda memungkinkan Anda menonton kembali momen terbaik, mengunduhnya untuk diedit, dan menggunakan ClipAI untuk mengubah sorotan menjadi klip TikTok, Reels, atau Shorts. Lebih banyak konten dari setiap Live berarti lebih banyak pertumbuhan."
+        },
+        {
+          "question": "Bagaimana cara menjadi kreator TikTok di LiveStreamRecorder?",
+          "answer": "Cukup daftar gratis dan tambahkan username TikTok Anda. Setiap Live yang Anda lakukan akan direkam secara otomatis. Halaman kreator Anda menampilkan semua rekaman Anda, sehingga mudah bagi penggemar untuk mengejar Live yang terlewat."
+        },
+        {
+          "question": "Bisakah saya melihat daftar kreator TikTok terbaik yang menggunakan LiveStreamRecorder?",
+          "answer": "Ya. Jelajahi halaman ini untuk melihat kreator TikTok populer yang merekam Live mereka di LiveStreamRecorder. Daftar diperbarui seiring lebih banyak kreator bergabung dan melakukan siaran langsung."
+        },
+        {
+          "question": "Apakah LiveStreamRecorder gratis untuk kreator TikTok?",
+          "answer": "Ya. Kreator TikTok dapat mendaftar dan mulai merekam Live mereka secara gratis. Paket premium membuka fitur unduhan rekaman, ClipAI untuk klip sorotan otomatis, dan penyimpanan yang diperluas."
+        },
+        {
+          "question": "Bagaimana kreator TikTok bisa menumbuhkan pengikut mereka dengan LiveStreamRecorder?",
+          "answer": "Rekam Live TikTok Anda secara otomatis, lalu gunakan ClipAI untuk mengubah momen terbaik Anda menjadi klip pendek. Posting sebagai TikTok, YouTube Shorts, atau Reels. Satu Live bisa menjadi banyak konten — lebih banyak postingan, lebih banyak jangkauan, lebih banyak pengikut."
+        },
+        {
+          "question": "Bisakah saya menggunakan rekaman saya untuk kampanye atau iklan kreator TikTok?",
+          "answer": "Ya. Rekaman live Anda adalah konten Anda sendiri. Unduh dan manfaatkan sesuka Anda — untuk kampanye kreator TikTok, konten iklan, reel portofolio, atau posting lintas platform."
+        }
+      ]
+    },
+    "twitch": {
+      "title": "Streamer & Kreator Twitch",
+      "description": "Temukan streamer Twitch yang merekam live stream mereka di LiveStreamRecorder. Jelajahi streamer live Twitch terbaik, tonton rekaman stream mereka, dan temukan streamer baru untuk diikuti.",
+      "keywords": [
+        "streamer live twitch",
+        "streamer twitch",
+        "streamer live di twitch",
+        "streamer live twitch",
+        "streamer twitch sedang live",
+        "streamer live terbaik",
+        "streamer live terpopuler",
+        "streamer sedang live",
+        "streamer twitch tv",
+        "memulai streaming twitch",
+        "memulai twitch",
+        "mulai streaming di twitch",
+        "stream untuk twitch",
+        "streaming di twitch",
+        "stream irl",
+        "stream irl twitch",
+        "untuk streamer"
+      ],
+      "faqs": [
+        {
+          "question": "Bagaimana cara menemukan streamer Twitch di LiveStreamRecorder?",
+          "answer": "Jelajahi halaman streamer Twitch kami untuk menemukan streamer live yang merekam stream mereka di LiveStreamRecorder. Cari berdasarkan nama atau telusuri streamer live Twitch terbaik untuk menemukan saluran baru yang dapat diikuti."
+        },
+        {
+          "question": "Bagaimana cara mendapatkan halaman streamer Twitch saya di LiveStreamRecorder?",
+          "answer": "Daftar gratis dan hubungkan saluran Twitch Anda. Halaman streamer Anda dibuat secara otomatis dan setiap live stream yang Anda lakukan akan direkam. Penggemar dapat menjelajahi semua rekaman stream Anda di satu tempat — bahkan jika VOD Twitch Anda sudah kedaluwarsa."
+        },
+        {
+          "question": "Saya baru mulai streaming di Twitch — haruskah saya merekam stream saya?",
+          "answer": "Tentu saja. Ketika Anda baru memulai streaming Twitch, setiap stream sangat berharga. Merekam live stream Anda memungkinkan Anda menonton kembali konten, meningkatkan performa, dan menggunakan ClipAI untuk mengubah sorotan menjadi klip pendek untuk TikTok, YouTube Shorts, atau Reels. Ini adalah salah satu cara terbaik untuk berkembang sebagai streamer Twitch baru."
+        },
+        {
+          "question": "Bagaimana streamer Twitch bisa menumbuhkan audiens mereka dengan LiveStreamRecorder?",
+          "answer": "Rekam live stream Twitch Anda secara otomatis, lalu gunakan ClipAI untuk membuat klip sorotan dari momen terbaik Anda. Posting di TikTok, YouTube Shorts, dan Reels. Streamer live Twitch terbaik memanfaatkan konten mereka di berbagai platform — LiveStreamRecorder membuat itu menjadi mudah."
+        },
+        {
+          "question": "Apakah LiveStreamRecorder gratis untuk streamer Twitch?",
+          "answer": "Ya. Streamer Twitch dapat mendaftar dan mulai merekam live stream mereka secara gratis. Paket premium membuka fitur unduhan rekaman, ClipAI untuk klip sorotan otomatis, dan penyimpanan yang diperluas."
+        },
+        {
+          "question": "Apakah stream IRL juga direkam?",
+          "answer": "Ya. LiveStreamRecorder menangkap semua stream Twitch Anda — gaming, stream IRL, just chatting, atau kategori lainnya. Setiap kali Anda live di Twitch, stream Anda direkam secara otomatis terlepas dari jenis kontennya."
+        },
+        {
+          "question": "Apa bedanya dengan VOD Twitch?",
+          "answer": "VOD Twitch kedaluwarsa setelah 14–60 hari dan bisa dibisukan. LiveStreamRecorder memberi streamer Twitch cadangan permanen. Rekaman stream Anda tidak pernah kedaluwarsa, tetap dalam kualitas penuh, dan selalu tersedia untuk ditonton atau diunduh."
+        },
+        {
+          "question": "Bisakah streamer Twitch mengubah stream mereka menjadi klip?",
+          "answer": "Ya. Pengguna premium dapat menggunakan ClipAI untuk secara otomatis mengubah rekaman stream Twitch menjadi klip sorotan pendek. Ini adalah cara tercepat bagi streamer live Twitch untuk membuat konten bagi platform lain tanpa menghabiskan berjam-jam untuk mengedit."
+        }
+      ]
+    },
+    "youtube": {
+      "title": "Kreator YouTube",
+      "description": "Temukan kreator YouTube yang merekam live stream mereka di LiveStreamRecorder. Jelajahi kreator konten YouTube, tonton rekaman live mereka, dan temukan saluran baru untuk dilanggani.",
+      "keywords": [
+        "kreator youtube",
+        "kreator konten youtube",
+        "studio kreator youtube",
+        "kreator yt",
+        "pembuat video youtube",
+        "kreator youtube shorts",
+        "pembuat youtube shorts",
+        "pembuat saluran youtube",
+        "pembuat video youtube",
+        "pembuatan konten youtube",
+        "konten untuk youtuber",
+        "youtuber shorts",
+        "konten youtuber"
+      ],
+      "faqs": [
+        {
+          "question": "Bagaimana cara menemukan kreator YouTube di LiveStreamRecorder?",
+          "answer": "Jelajahi halaman kreator YouTube kami untuk menemukan kreator konten yang merekam live stream mereka di LiveStreamRecorder. Cari berdasarkan nama atau telusuri kreator YouTube populer untuk menemukan saluran baru yang layak dilanggani."
+        },
+        {
+          "question": "Bagaimana cara mendapatkan halaman kreator YouTube saya di LiveStreamRecorder?",
+          "answer": "Daftar gratis dan hubungkan saluran YouTube Anda. Halaman kreator Anda disiapkan secara otomatis dan live stream Anda mulai direkam. Penggemar dapat menjelajahi semua Live yang Anda rekam di satu tempat."
+        },
+        {
+          "question": "Saya seorang kreator konten YouTube — mengapa harus merekam Live saya?",
+          "answer": "Sebagai kreator konten YouTube, live stream Anda penuh dengan momen yang layak untuk dimanfaatkan kembali. Merekam Live Anda memungkinkan Anda menonton kembali sorotan, mengunduhnya untuk diedit, dan menggunakan ClipAI untuk mengubah bagian terbaik menjadi YouTube Shorts. Satu Live bisa menjadi bahan konten selama berhari-hari."
+        },
+        {
+          "question": "Bagaimana kreator YouTube bisa mengubah Live menjadi Shorts?",
+          "answer": "ClipAI menganalisis live stream yang Anda rekam dan mengambil klip sorotan yang diformat untuk YouTube Shorts. Bagi kreator YouTube yang ingin menumbuhkan saluran mereka, mengubah satu live stream menjadi beberapa Shorts adalah salah satu strategi pembuatan konten yang paling mudah."
+        },
+        {
+          "question": "Apakah LiveStreamRecorder gratis untuk kreator YouTube?",
+          "answer": "Ya. Kreator YouTube dapat mendaftar dan mulai merekam live stream mereka secara gratis. Paket premium membuka fitur unduhan rekaman, ClipAI untuk pembuatan Shorts otomatis, dan penyimpanan yang diperluas."
+        },
+        {
+          "question": "Apa bedanya dengan YouTube Studio?",
+          "answer": "YouTube Studio memungkinkan Anda mengelola saluran dan mengakses tayangan ulang stream — tetapi tayangan ulang bisa gagal diproses, terhapus, atau kehilangan kualitas. LiveStreamRecorder memberi kreator YouTube cadangan independen. Live stream Anda direkam secara otomatis dan disimpan secara terpisah, sehingga Anda selalu memiliki konten Anda."
+        },
+        {
+          "question": "Bisakah saya menggunakan rekaman saya untuk iklan atau promosi YouTube?",
+          "answer": "Ya. Rekaman live Anda adalah konten Anda sendiri. Unduh dan manfaatkan sesuka Anda — untuk iklan YouTube, trailer saluran, video kompilasi, atau posting lintas platform ke TikTok dan Reels."
+        },
+        {
+          "question": "Bagaimana kreator YouTube bisa menumbuhkan saluran mereka dengan LiveStreamRecorder?",
+          "answer": "Rekam live stream Anda secara otomatis, lalu gunakan ClipAI untuk membuat YouTube Shorts dari momen terbaik Anda. Shorts yang konsisten dari Live Anda menjaga saluran tetap aktif di antara stream — lebih banyak konten untuk pelanggan, lebih banyak kesempatan menjangkau penonton baru."
+        }
+      ]
+    },
+    "kick": {
+      "title": "Kreator Kick",
+      "description": "Temukan kreator Kick yang menggunakan LiveStreamRecorder untuk merekam live stream mereka dan mengubahnya menjadi klip pendek.",
+      "keywords": [
+        "kreator kick",
+        "live stream kick",
+        "rekaman kick",
+        "perekam stream kick"
+      ]
+    },
+    "pandalive": {
+      "title": "Kreator Pandalive",
+      "description": "Temukan kreator Pandalive yang menggunakan LiveStreamRecorder untuk merekam live stream mereka dan mengubahnya menjadi klip pendek.",
+      "keywords": [
+        "kreator pandalive",
+        "live stream korea",
+        "rekaman pandalive",
+        "perekam stream korea"
+      ]
+    },
+    "afreecatv": {
+      "title": "Kreator AfreecaTV",
+      "description": "Temukan kreator AfreecaTV yang menggunakan LiveStreamRecorder untuk merekam live stream mereka dan mengubahnya menjadi klip pendek.",
+      "keywords": [
+        "kreator afreecatv",
+        "live stream korea",
+        "rekaman afreecatv",
+        "perekam stream korea"
+      ]
+    },
+    "bigo": {
+      "title": "Kreator Bigo",
+      "description": "Temukan kreator Bigo yang menggunakan LiveStreamRecorder untuk merekam live stream mereka dan mengubahnya menjadi klip pendek.",
+      "keywords": [
+        "kreator bigo",
+        "live stream bigo",
+        "rekaman bigo",
+        "perekam stream bigo"
+      ]
+    }
+  },
+  "hero": {
+    "title": {
+      "all": "Kreator",
+      "tiktok": "Kreator TikTok",
+      "twitch": "Kreator Twitch",
+      "youtube": "Kreator YouTube",
+      "kick": "Kreator Kick",
+      "pandalive": "Kreator Pandalive",
+      "afreecatv": "Kreator AfreecaTV",
+      "bigo": "Kreator Bigo"
+    },
+    "subtitle": {
+      "all": "Bergabunglah dengan ribuan kreator yang menggunakan LiveStreamRecorder untuk menyimpan stream mereka dan membuat klip pendek.",
+      "tiktok": "Bergabunglah dengan ribuan kreator TikTok yang menggunakan LiveStreamRecorder untuk menyimpan stream mereka dan membuat klip pendek.",
+      "twitch": "Bergabunglah dengan ribuan kreator Twitch yang menggunakan LiveStreamRecorder untuk menyimpan stream mereka dan membuat klip pendek.",
+      "youtube": "Bergabunglah dengan ribuan kreator YouTube yang menggunakan LiveStreamRecorder untuk menyimpan stream mereka dan membuat klip pendek.",
+      "kick": "Bergabunglah dengan ribuan kreator Kick yang menggunakan LiveStreamRecorder untuk menyimpan stream mereka dan membuat klip pendek.",
+      "pandalive": "Bergabunglah dengan ribuan kreator Pandalive yang menggunakan LiveStreamRecorder untuk menyimpan stream mereka dan membuat klip pendek.",
+      "afreecatv": "Bergabunglah dengan ribuan kreator AfreecaTV yang menggunakan LiveStreamRecorder untuk menyimpan stream mereka dan membuat klip pendek.",
+      "bigo": "Bergabunglah dengan ribuan kreator Bigo yang menggunakan LiveStreamRecorder untuk menyimpan stream mereka dan membuat klip pendek."
+    }
+  },
+  "features": {
+    "badge": "Cara Kerjanya",
+    "title": {
+      "all": "Rekam Stream Anda Secara Otomatis",
+      "tiktok": "Rekam Stream TikTok Anda Secara Otomatis",
+      "twitch": "Rekam Stream Twitch Anda Secara Otomatis",
+      "youtube": "Rekam Stream YouTube Anda Secara Otomatis",
+      "kick": "Rekam Stream Kick Anda Secara Otomatis",
+      "pandalive": "Rekam Stream Pandalive Anda Secara Otomatis",
+      "afreecatv": "Rekam Stream AfreecaTV Anda Secara Otomatis",
+      "bigo": "Rekam Stream Bigo Anda Secara Otomatis"
+    },
+    "subtitle": "Dari live stream ke klip pendek dalam hitungan menit",
+    "items": {
+      "add": {
+        "title": "Tambahkan Saluran Anda",
+        "description": "Tempel URL saluran streaming Anda dan kami akan mulai merekam setiap kali Anda live. Tidak perlu instal software apapun."
+      },
+      "watch": {
+        "title": "Tonton Kembali Stream Anda",
+        "description": "Setiap stream disimpan secara otomatis. Tonton rekaman kapan saja atau unduh untuk diedit."
+      },
+      "clip": {
+        "title": "Dapatkan Sorotan dengan ClipAI",
+        "description": "ClipAI menemukan momen terbaik Anda dan mengubahnya menjadi klip pendek — siap dalam hitungan menit."
+      },
+      "edit": {
+        "title": "Edit dan Bagikan ke Mana Saja",
+        "description": "Sesuaikan klip Anda sesuka hati. Tambahkan teks, potong, dan bagikan ke semua platform Anda."
+      }
+    }
+  },
+  "cta": {
+    "title": {
+      "all": "Rekam Live Stream Anda",
+      "tiktok": "Rekam Live TikTok Anda",
+      "twitch": "Rekam Stream Twitch Anda",
+      "youtube": "Rekam Live YouTube Anda",
+      "kick": "Rekam Stream Kick Anda",
+      "afreecatv": "Rekam Stream AfreecaTV Anda",
+      "pandalive": "Rekam Stream Pandalive Anda",
+      "bigo": "Rekam Stream Bigo Anda"
+    },
+    "subtitle": {
+      "all": "Bergabunglah dengan ribuan kreator. Simpan stream Anda, buat klip pendek dengan ClipAI, dan kembangkan audiens Anda.",
+      "tiktok": "Bergabunglah dengan ribuan kreator TikTok. Simpan Live Anda, buat klip pendek dengan ClipAI, dan kembangkan pengikut Anda.",
+      "twitch": "Bergabunglah dengan ribuan streamer Twitch. Simpan VOD Anda, buat klip pendek dengan ClipAI, dan kembangkan saluran Anda.",
+      "youtube": "Bergabunglah dengan ribuan kreator YouTube. Simpan Live Anda, ubah menjadi Shorts dengan ClipAI, dan kembangkan pelanggan Anda.",
+      "kick": "Bergabunglah dengan ribuan streamer Kick. Simpan stream Anda, buat klip pendek dengan ClipAI, dan kembangkan audiens Anda.",
+      "afreecatv": "Bergabunglah dengan ribuan kreator AfreecaTV. Simpan stream Anda dan buat klip pendek dengan ClipAI.",
+      "pandalive": "Bergabunglah dengan ribuan kreator Pandalive. Simpan stream Anda dan buat klip pendek dengan ClipAI.",
+      "bigo": "Bergabunglah dengan ribuan kreator Bigo. Simpan stream Anda dan buat klip pendek dengan ClipAI."
+    },
+    "button": "Mulai Rekam Gratis"
+  },
+  "empty": {
+    "title": "Belum Ada Kreator",
+    "description": {
+      "all": "Jadilah kreator pertama yang bergabung!",
+      "tiktok": "Jadilah kreator TikTok pertama yang bergabung!",
+      "twitch": "Jadilah kreator Twitch pertama yang bergabung!",
+      "youtube": "Jadilah kreator YouTube pertama yang bergabung!",
+      "kick": "Jadilah kreator Kick pertama yang bergabung!",
+      "pandalive": "Jadilah kreator Pandalive pertama yang bergabung!",
+      "afreecatv": "Jadilah kreator AfreecaTV pertama yang bergabung!",
+      "bigo": "Jadilah kreator Bigo pertama yang bergabung!"
+    },
+    "button": "Mulai Sekarang"
+  },
+  "about": {
+    "all": "## Tentang LiveStreamRecorder\n\nJangan biarkan konten terbaik Anda hilang. Kami merekam live stream Anda secara otomatis agar Anda bisa mengubahnya menjadi klip pendek dan menumbuhkan audiens Anda.\n\n### Rekaman Stream Otomatis\n\nCukup tempel URL saluran Anda dan mulai live. Kami menangani rekamannya — tidak perlu instal software, tidak perlu pengaturan apa pun. Setiap stream disimpan secara otomatis.\n\n### Tonton dan Unduh\n\nSelesai streaming? Rekaman Anda sudah siap. Tonton kembali, unduh, atau kirim ke editor Anda.\n\n### ClipAI Menemukan Momen Terbaik Anda\n\nJangan buang waktu berjam-jam memindai rekaman. ClipAI menyorot momen terbaik Anda dan mengubahnya menjadi klip pendek — siap dalam hitungan menit.\n\n### Kembangkan Audiens Anda\n\nUbah satu live stream menjadi puluhan klip. Bagikan di TikTok, YouTube Shorts, Instagram Reels, dan di mana saja. Lebih banyak konten, lebih banyak penonton, lebih banyak pengikut.\n\n### Rekam TikTok, Twitch, YouTube, Kick & Lainnya\n\nStream di mana saja — kami merekam di mana saja. TikTok, Twitch, YouTube, Kick, dan lebih banyak platform segera hadir.\n\n### Gratis untuk Memulai\n\nBuat akun dan mulai rekam hari ini. Tingkatkan untuk kualitas lebih tinggi, lebih banyak rekaman, dan unduhan lebih cepat.",
+    "tiktok": "## Kreator TikTok\n\nTemukan kreator TikTok yang menggunakan LiveStreamRecorder untuk menyimpan Live mereka. Telusuri kreator TikTok populer, tonton rekaman live mereka, dan temukan kreator konten baru untuk diikuti.\n\n### Mengapa Kreator TikTok Merekam Live Mereka\n\nLive TikTok penuh dengan konten luar biasa — momen lucu, interaksi penonton, potensi viral. Tapi begitu berakhir, semuanya hilang. Kreator konten TikTok menggunakan LiveStreamRecorder untuk menyimpan setiap Live secara otomatis agar tidak ada yang terlewat.\n\n### Telusuri Kreator TikTok Terbaik\n\nJelajahi daftar kreator TikTok kami untuk menemukan kreator populer yang merekam live stream mereka. Tonton rekaman mereka, kejar Live yang terlewat, dan temukan kreator konten baru yang layak diikuti.\n\n### Halaman Kreator TikTok Anda\n\nSetiap kreator TikTok di LiveStreamRecorder mendapatkan halaman mereka sendiri di mana penggemar dapat menelusuri semua Live yang direkam. Daftar, tambahkan username TikTok Anda, dan halaman kreator Anda disiapkan secara otomatis.\n\n### Dari Live ke Klip — Kembangkan Pengikut Anda\n\nKreator konten TikTok dapat menggunakan ClipAI untuk mengubah Live yang direkam menjadi klip sorotan pendek. Posting sebagai TikTok, YouTube Shorts, atau Reels. Satu Live menjadi banyak konten — lebih banyak postingan, lebih banyak jangkauan, lebih banyak pengikut.\n\n### Jadilah Kreator TikTok di LiveStreamRecorder\n\nDaftar gratis, tambahkan username TikTok Anda, dan mulai rekam Live Anda hari ini. Setiap Live direkam secara otomatis — tanpa screen recorder, tanpa ponsel menyala semalaman. Bergabunglah dengan kreator TikTok yang sudah menggunakan LiveStreamRecorder untuk menumbuhkan audiens mereka.",
+    "twitch": "## Streamer & Kreator Twitch\n\nTemukan streamer live Twitch yang menggunakan LiveStreamRecorder untuk menyimpan stream mereka. Telusuri streamer Twitch terbaik, tonton rekaman mereka, dan temukan streamer live baru untuk diikuti.\n\n### Mengapa Streamer Twitch Merekam Stream Mereka\n\nVOD Twitch kedaluwarsa, dan momen terbaik dari live stream Anda terkubur dalam berjam-jam rekaman. Streamer Twitch menggunakan LiveStreamRecorder untuk menyimpan setiap stream secara otomatis — agar tidak ada yang hilang dan setiap live stream menjadi konten yang layak dibagikan.\n\n### Telusuri Streamer Live Twitch Terbaik\n\nJelajahi halaman streamer Twitch kami untuk menemukan streamer live yang merekam stream mereka. Tonton rekaman mereka, kejar stream yang terlewat, dan temukan streamer live Twitch terbaik di berbagai kategori gaming, IRL, dan lainnya.\n\n### Halaman Streamer Twitch Anda\n\nSetiap streamer Twitch di LiveStreamRecorder mendapatkan halaman mereka sendiri di mana penggemar dapat menelusuri semua stream yang direkam. Daftar, hubungkan saluran Twitch Anda, dan halaman Anda disiapkan secara otomatis — tempat permanen untuk konten Anda yang tidak kedaluwarsa seperti VOD Twitch.\n\n### Dari Stream ke Klip — Berkembang di Luar Twitch\n\nStreamer live Twitch terbaik menumbuhkan audiens mereka dengan memanfaatkan konten di berbagai platform. ClipAI mengubah stream yang direkam menjadi klip sorotan pendek siap untuk TikTok, YouTube Shorts, atau Reels. Satu live stream menjadi puluhan klip — lebih banyak konten, lebih banyak jangkauan, lebih banyak pengikut.\n\n### Baru Mulai Streaming Twitch? Mulai Rekam.\n\nJika Anda baru mulai streaming di Twitch, merekam setiap stream dari hari pertama adalah salah satu langkah terpintar. Tonton kembali konten Anda untuk berkembang, bangun perpustakaan klip, dan mulai kembangkan kehadiran Anda di berbagai platform. Daftar gratis dan setiap stream direkam secara otomatis.",
+    "youtube": "## Kreator YouTube\n\nTemukan kreator YouTube yang menggunakan LiveStreamRecorder untuk menyimpan live stream mereka. Telusuri kreator konten YouTube, tonton rekaman mereka, dan temukan saluran baru untuk dilanggani.\n\n### Mengapa Kreator YouTube Merekam Live Mereka\n\nLive YouTube bagus untuk keterlibatan, tetapi momen terbaik terkubur dalam berjam-jam rekaman. Kreator konten YouTube menggunakan LiveStreamRecorder untuk menyimpan setiap live stream secara otomatis — agar tidak ada yang hilang dan setiap Live menjadi peluang pembuatan konten.\n\n### Telusuri Kreator YouTube\n\nJelajahi halaman kreator YouTube kami untuk menemukan saluran yang merekam live stream mereka. Tonton rekaman mereka, kejar Live yang terlewat, dan temukan kreator konten YouTube baru yang layak diikuti.\n\n### Halaman Kreator YouTube Anda\n\nSetiap kreator YouTube di LiveStreamRecorder mendapatkan halaman mereka sendiri di mana penggemar dapat menelusuri semua live stream yang direkam. Daftar, hubungkan saluran YouTube Anda, dan halaman Anda disiapkan secara otomatis.\n\n### Dari Live ke YouTube Shorts\n\nKreator YouTube dapat menggunakan ClipAI untuk mengubah Live yang direkam menjadi YouTube Shorts secara otomatis. Satu live stream menjadi banyak konten — strategi pembuatan konten termudah untuk menumbuhkan saluran Anda di antara stream.\n\n### Lebih dari Sekadar YouTube Studio\n\nYouTube Studio menangani pengelolaan saluran Anda, tetapi tayangan ulang stream bisa gagal atau terhapus. LiveStreamRecorder memberi kreator YouTube cadangan independen dari setiap live stream, ditambah alat untuk mengubah konten tersebut menjadi Shorts dan klip.\n\n### Jadilah Kreator YouTube di LiveStreamRecorder\n\nDaftar gratis, hubungkan saluran YouTube Anda, dan mulai rekam Live Anda hari ini. Setiap live stream direkam secara otomatis. Bergabunglah dengan kreator YouTube yang sudah menggunakan LiveStreamRecorder untuk menumbuhkan audiens mereka.",
+    "kick": "## Tentang Rekaman Stream Kick\n\nJangan biarkan stream Kick Anda hilang. Kami merekamnya secara otomatis agar Anda bisa mengubah momen terbaik menjadi klip dan menumbuhkan audiens Anda.\n\n### Mengapa Merekam Stream Kick Anda?\n\nKick berkembang pesat. Konten terbaik Anda berhak untuk hidup lebih dari sekadar stream. Kami menyimpan semuanya agar Anda bisa membuat klip dan membagikannya.\n\n### Rekaman Otomatis\n\nCukup tambahkan saluran Kick Anda dan mulai live. Kami merekam secara otomatis — tidak perlu instal apapun.\n\n### Tonton dan Unduh\n\nSelesai streaming? Rekaman Anda sudah siap. Tonton kembali atau unduh untuk diedit.\n\n### ClipAI Menemukan Momen Terbaik Anda\n\nClipAI memindai stream Anda dan mengambil sorotan. Klip pendek siap dalam hitungan menit.\n\n### Kembangkan Audiens Anda\n\nUbah satu stream menjadi puluhan klip. Bagikan ke mana saja.\n\n### Gratis untuk Memulai\n\nBuat akun dan mulai rekam stream Kick Anda hari ini.",
+    "pandalive": "## Tentang Rekaman Stream Pandalive\n\nJangan biarkan stream Pandalive Anda hilang. Kami merekamnya secara otomatis agar Anda bisa mengubah momen terbaik menjadi klip.\n\n### Mengapa Merekam Stream Pandalive Anda?\n\nKonten terbaik Anda berhak untuk hidup lebih dari sekadar stream. Kami menyimpan semuanya agar Anda bisa membuat klip dan membagikannya.\n\n### Rekaman Otomatis\n\nCukup tambahkan saluran Pandalive Anda dan mulai live. Kami merekam secara otomatis.\n\n### Tonton dan Unduh\n\nSelesai streaming? Rekaman Anda sudah siap. Tonton kembali atau unduh.\n\n### ClipAI Menemukan Momen Terbaik Anda\n\nClipAI memindai stream Anda dan mengambil sorotan. Klip pendek siap dalam hitungan menit.\n\n### Gratis untuk Memulai\n\nBuat akun dan mulai rekam stream Pandalive Anda hari ini.",
+    "afreecatv": "## Tentang Rekaman Stream AfreecaTV\n\nJangan biarkan stream AfreecaTV Anda hilang. Kami merekamnya secara otomatis agar Anda bisa mengubah momen terbaik menjadi klip.\n\n### Mengapa Merekam Stream AfreecaTV Anda?\n\nKonten terbaik Anda berhak untuk hidup lebih dari sekadar stream. Kami menyimpan semuanya agar Anda bisa membuat klip dan membagikannya.\n\n### Rekaman Otomatis\n\nCukup tambahkan saluran AfreecaTV Anda dan mulai live. Kami merekam secara otomatis.\n\n### Tonton dan Unduh\n\nSelesai streaming? Rekaman Anda sudah siap. Tonton kembali atau unduh.\n\n### ClipAI Menemukan Momen Terbaik Anda\n\nClipAI memindai stream Anda dan mengambil sorotan. Klip pendek siap dalam hitungan menit.\n\n### Gratis untuk Memulai\n\nBuat akun dan mulai rekam stream AfreecaTV Anda hari ini.",
+    "bigo": "## Tentang Rekaman Stream Bigo\n\nJangan biarkan stream Bigo Anda hilang. Kami merekamnya secara otomatis agar Anda bisa mengubah momen terbaik menjadi klip.\n\n### Mengapa Merekam Stream Bigo Anda?\n\nKonten terbaik Anda berhak untuk hidup lebih dari sekadar stream. Kami menyimpan semuanya agar Anda bisa membuat klip dan membagikannya.\n\n### Rekaman Otomatis\n\nCukup tambahkan saluran Bigo Anda dan mulai live. Kami merekam secara otomatis.\n\n### Tonton dan Unduh\n\nSelesai streaming? Rekaman Anda sudah siap. Tonton kembali atau unduh.\n\n### ClipAI Menemukan Momen Terbaik Anda\n\nClipAI memindai stream Anda dan mengambil sorotan. Klip pendek siap dalam hitungan menit.\n\n### Gratis untuk Memulai\n\nBuat akun dan mulai rekam stream Bigo Anda hari ini."
+  },
+  "faq": "Pertanyaan yang Sering Diajukan",
+  "country": {
+    "title": "{platform} dari {country}",
+    "description": "Temukan {platform} dari {country} yang merekam live stream mereka di LiveStreamRecorder. Telusuri kreator, tonton rekaman mereka, dan temukan streamer baru untuk diikuti.",
+    "heroTitle": "{platform} di {country}",
+    "heroSubtitle": "Temukan {platform} dari {country} yang menggunakan LiveStreamRecorder untuk menyimpan stream mereka dan membuat klip pendek.",
+    "empty": {
+      "title": "Belum Ada Kreator",
+      "description": "Belum ada {platform} dari {country} yang bergabung. Jadilah yang pertama!"
+    },
+    "browseByCountry": "Jelajahi {platform} berdasarkan Negara",
+    "browseLink": "{platform} dari {country}",
+    "backToPlatform": "Kembali ke semua {platform}"
+  }
+}

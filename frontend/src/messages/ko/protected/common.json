@@ -1,0 +1,66 @@
+{
+  "follow": {
+    "tooltip": "크리에이터 추가",
+    "successTitle": "추가됨!",
+    "successMessage": "{username}님이 추가되었습니다",
+    "errorTitle": "오류"
+  },
+  "unfollow": {
+    "tooltip": "크리에이터 삭제",
+    "successTitle": "삭제됨",
+    "successMessage": "{username}님을 삭제했습니다",
+    "successMessageGeneric": "삭제되었습니다"
+  },
+  "scopeFilter": {
+    "label": "필터:",
+    "following": "내 녹화 영상",
+    "discover": "친구",
+    "all": "전체"
+  },
+  "recordings": {
+    "liveAgo_context": "녹화 시작 시점을 표시하는 라이브 방송용. '15분 전 녹화 시작'으로 표시됨",
+    "liveAgo": "{time} 전 녹화 시작",
+    "recordedAgo_context": "녹화 시점을 표시하는 녹화 방송용. '3일 전 녹화됨'으로 표시됨",
+    "recordedAgo": "{time} 전 녹화됨",
+    "recordCount": "녹화 {count}",
+    "newRecording": "신규",
+    "videoCount": "{count, plural, one {# 영상} other {# 영상}}",
+    "noRecordings": "끝에 도달했습니다",
+    "hide": "공개에서 숨기기",
+    "show": "공개로 표시",
+    "delete": "영상 삭제",
+    "deleteConfirm": {
+      "title": "영상 삭제",
+      "message": "이 영상을 삭제하시겠습니까? 이 작업은 취소할 수 없습니다.",
+      "confirm": "삭제",
+      "cancel": "취소"
+    },
+    "createWithAI": "AI로 클립 만들기",
+    "addToWatchLater": "나중에 볼 동영상에 저장",
+    "removeFromWatchLater": "나중에 볼 목록에서 삭제",
+    "addedToWatchLater": "나중에 볼 동영상에 저장됨",
+    "removedFromWatchLater": "나중에 볼 목록에서 삭제됨",
+    "videoLimitMessage": "무료 동영상 이용 횟수를 모두 사용하셨습니다.",
+    "download": "영상 다운로드",
+    "downloadEmailSent": "다운로드 링크가 이메일로 전송됩니다",
+    "downloadFeatureMessage": "영상 다운로드는 프리미엄 기능입니다.",
+    "editClip": "클립 편집",
+    "deleteSources": "소스 삭제",
+    "deleteSourcesSuccess": "{count}개 소스 삭제됨"
+  },
+  "followers": {
+    "addedAgo_context": "크리에이터가 사용자 목록에 추가된 시점. '3일 전 추가됨'으로 표시됨",
+    "addedAgo": "{time} 전 추가됨",
+    "limitReachedTitle": "크리에이터 한도에 도달했습니다",
+    "upgradeModalHeadline": "다시는 라이브 방송을 놓치지 마세요",
+    "max3Message": "무료 플랜에서 크리에이터 3명 한도에 도달했습니다.",
+    "max50Message": "이 플랜에서 크리에이터 50명 한도에 도달했습니다.",
+    "max100Message": "이 플랜에서 크리에이터 100명 한도에 도달했습니다.",
+    "upgradeButton": "Premium으로 업그레이드",
+    "upgradeModalDiscount": "첫 달 25% 할인",
+    "upgradeModalCodeNote": "결제 시 코드를 입력하세요",
+    "unfollowUpgradeTitle": "프리미엄으로 크리에이터를 자유롭게 관리하세요"
+  },
+  "newest": "최신순",
+  "oldest": "오래된순"
+}

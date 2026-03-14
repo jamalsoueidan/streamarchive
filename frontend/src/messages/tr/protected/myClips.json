@@ -1,0 +1,94 @@
+{
+  "title": "Klipler",
+  "description": "Kayıtlarınızdan AI tarafından oluşturulan klipler",
+  "emptyState": {
+    "title": "Henüz klip yok",
+    "description": "Kayıtlarınızdan klipler oluşturulduğunda burada görünecektir"
+  },
+  "share": {
+    "tiktok": "TikTok'ta paylaş",
+    "uploaded": "TikTok'ta yayınlandı",
+    "processing": "Yayınlanıyor...",
+    "completed": "TikTok'ta yayınlandı",
+    "shared": "Yayınlandı",
+    "failed": "Başarısız",
+    "retry": "Tekrar dene",
+    "failedTooltip": "Yayınlama başarısız. Tekrar denemek için tıklayın.",
+    "check": "Kontrol et",
+    "checkStatus": "TikTok durumunu kontrol et"
+  },
+  "actions": {
+    "edit": "Videoyu düzenle",
+    "delete": "Sil"
+  },
+  "publishPage": {
+    "title": "TikTok'ta Yayınla",
+    "description": "Videonuzu inceleyin ve TikTok'ta nasıl paylaşmak istediğinizi seçin",
+    "loadingCreator": "TikTok hesabınız yükleniyor...",
+    "publishingTo": "Şuraya yayınlanıyor",
+    "descriptionLabel": "Başlık",
+    "descriptionPlaceholder": "Videonuz için bir başlık yazın...",
+    "privacyLabel": "Gizlilik durumu",
+    "privacyPlaceholder": "Gizlilik durumunu seçin",
+    "privacy": {
+      "PUBLIC_TO_EVERYONE": "Herkes",
+      "MUTUAL_FOLLOW_FRIENDS": "Arkadaşlar",
+      "FOLLOWER_OF_CREATOR": "Takipçiler",
+      "SELF_ONLY": "Sadece ben"
+    },
+    "interactionSettings": "Kullanıcıların yapmasına izin ver",
+    "allowComments": "Yorum",
+    "allowDuet": "Düet",
+    "allowStitch": "Stitch",
+    "disabledByCreator": "TikTok ayarlarınızda devre dışı",
+    "commercialContent": "İçerik ifşa ayarı",
+    "commercialContentDescription": "Bu videonun bir değer karşılığında mal veya hizmetleri tanıttığını açıklamak için açın. Videonuz kendinizi, üçüncü bir tarafı veya her ikisini de tanıtabilir.",
+    "brandContentToggle": "Kendi markanız",
+    "brandContentDescription": "Kendinizi veya kendi işinizi tanıtıyorsunuz. Bu içerik Marka Organik olarak sınıflandırılacaktır.",
+    "brandOrganicToggle": "Markalı içerik",
+    "brandOrganicDescription": "Başka bir markayı veya üçüncü bir tarafı tanıtıyorsunuz. Bu içerik Markalı İçerik olarak sınıflandırılacaktır.",
+    "promotionalContentLabel": "Videonuz 'Tanıtım içeriği' olarak etiketlenecektir.",
+    "paidPartnershipLabel": "Videonuz 'Ücretli ortaklık' olarak etiketlenecektir.",
+    "cannotChangeWarning": "Bu, videonuz yayınlandıktan sonra değiştirilemez.",
+    "musicConfirmation": "Yayınlayarak TikTok'un Müzik Kullanım Onayını kabul ediyorsunuz",
+    "confirmationPrefix": "Yayınlayarak şunları kabul ediyorsunuz:",
+    "termsOfServiceLink": "LiveStreamRecorder Kullanım Şartları",
+    "musicConfirmationLink": "TikTok Müzik Kullanım Onayı",
+    "brandedContentPolicyLink": "TikTok Markalı İçerik Politikası",
+    "andText": "ve",
+    "commercialContentToggle": "Bu içerik kendinizi, bir marka, ürün veya hizmeti tanıtıyor",
+    "commercialContentRequired": "İçeriğinizin kendinizi, üçüncü bir tarafı veya her ikisini tanıtıp tanıtmadığını belirtmeniz gerekiyor",
+    "brandedContentPrivacyWarning": "Markalı içerik gizli görünürlüğe ayarlanamaz",
+    "publishButton": "TikTok'ta Yayınla",
+    "uploadButton": "Yayınla",
+    "cancel": "İptal",
+    "backToClips": "Kliplere Dön",
+    "noTiktokConnection": {
+      "title": "TikTok hesabı bağlı değil",
+      "description": "TikTok'ta klip yayınlamak için Ayarlar'a gidin ve önce TikTok hesabınızı bağlayın.",
+      "goToSettings": "Ayarlar'a Git",
+      "hint": "Bağlandıktan sonra klibinizi yayınlamak için buraya geri gelin."
+    },
+    "success": "Yayınlanıyor",
+    "successMessage": "Videonuz TikTok'ta yayınlanıyor. İşlenmesi ve profilinizde görünmesi birkaç dakika sürebilir.",
+    "error": "Hata",
+    "errorMessage": "TikTok'ta yayınlama başarısız",
+    "validation": {
+      "privacyRequired": "Bu videoyu kimlerin görüntüleyebileceğini seçin",
+      "musicConfirmationRequired": "Müzik Kullanım Onayını kabul etmelisiniz"
+    },
+    "cannotPostNow": "TikTok'ta günlük paylaşım limitinize ulaştınız. Lütfen daha sonra tekrar deneyin.",
+    "videoTooLong": "Bu video {duration} saniye uzunluğunda, ancak TikTok hesabınız için yalnızca {maxDuration} saniyeye kadar videolara izin veriyor.",
+    "selfOnlyDisabledBranded": "Markalı içerik görünürlüğü gizli olarak ayarlanamaz"
+  },
+  "upgrade": {
+    "title": "Kayıttan TikTok'a saniyeler içinde",
+    "features": {
+      "publish": "TikTok, Reels ve Shorts'a doğrudan paylaşın",
+      "schedule": "Kliplerinizi planlayın — otomatik pilotta tutarlı kalın",
+      "edit": "Altyazı, efekt ekleyin ve kendinize ait yapın"
+    },
+    "upgradeButton": "Şimdi Yükselt",
+    "hint": "Premium abonelik ile klip paylaşımının kilidini açın"
+  }
+}

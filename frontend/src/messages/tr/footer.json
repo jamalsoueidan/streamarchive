@@ -1,0 +1,52 @@
+{
+  "tagline": "Bir daha canlı yayın kaçırmayın",
+  "copyright": "Telif Hakkı © 2026 LiveStreamRecorder",
+  "copyright_text": "LiveStreamRecorder, kullanıcıların kişisel, özel, ticari olmayan kullanım için yayınları kaydetmelerini sağlayan bulut tabanlı altyapı sunar. Kullanıcılar, kullanımlarının geçerli yasalara ve üçüncü taraf platform şartlarına uygunluğunu sağlamaktan sorumludur.",
+  "association": "Twitch, YouTube, TikTok, Kick, AfreecaTV ve PandaTV ürün adları, logoları ve markaları ilgili sahiplerinin mülkiyetindedir. Bu web sitesinde kullanılan tüm şirket, ürün ve hizmet adları yalnızca tanımlama amaçlıdır. Bu isimlerin, ticari markaların ve markaların kullanılması onay anlamına gelmez.",
+  "header": {
+    "creators": "İçerik Üreticileri",
+    "recordings": "Kayıtlar",
+    "shorts": "Kısa Klipler",
+    "dashboard": "Panel",
+    "login": "Giriş Yap",
+    "signUp": "Kayıt Ol",
+    "language": "Dil"
+  },
+  "featuredCreators": {
+    "title": "Öne Çıkan İçerik Üreticileri",
+    "browse": "İçerik üreticilerine göz at",
+    "tiktok": "TikTok içerik üreticileri",
+    "twitch": "Twitch içerik üreticileri",
+    "kick": "Kick içerik üreticileri",
+    "youtube": "YouTube içerik üreticileri",
+    "afreecatv": "AfreecaTV içerik üreticileri",
+    "pandalive": "Pandalive içerik üreticileri",
+    "bigo": "Bigo içerik üreticileri"
+  },
+  "watchRecordings": {
+    "title": "Kayıtları İzle",
+    "browse": "Kayıtlara göz at",
+    "tiktok": "TikTok kayıtları",
+    "twitch": "Twitch kayıtları",
+    "kick": "Kick kayıtları",
+    "youtube": "YouTube kayıtları",
+    "afreecatv": "AfreecaTV kayıtları",
+    "pandalive": "Pandalive kayıtları",
+    "bigo": "Bigo kayıtları"
+  },
+  "legal": {
+    "title": "Yasal",
+    "privacy": "Gizlilik Politikası",
+    "terms": "Şartlar ve Koşullar",
+    "dmca": "DMCA Politikası"
+  },
+  "company": {
+    "title": "Şirket",
+    "news": "Haberler",
+    "pricing": "Fiyatlandırma",
+    "faq": "SSS",
+    "updates": "Değişiklik Günlüğü",
+    "sitemap": "Site Haritası",
+    "contact": "İletişim"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "platforms": {
+    "label": "플랫폼",
+    "all": "전체",
+    "tiktok": "틱톡",
+    "twitch": "트위치",
+    "youtube": "유튜브",
+    "kick": "키크",
+    "afreecatv": "아프리카TV",
+    "pandalive": "판다라이브",
+    "bigo": "비고"
+  },
+  "sort": {
+    "label": "정렬",
+    "usernameAsc": "가나다순",
+    "usernameDesc": "가나다 역순",
+    "createdAtDesc": "최근 추가",
+    "createdAtAsc": "처음 추가",
+    "totalRecordingsDesc": "녹화 많은 순",
+    "totalRecordingsAsc": "녹화 적은 순",
+    "latestRecordingDesc": "최근 방송",
+    "latestRecordingAsc": "오래된 방송",
+    "updatedAtDesc": "최신순",
+    "updatedAtAsc": "오래된순"
+  },
+  "gender": {
+    "label": "성별",
+    "all": "전체",
+    "female": "여성",
+    "male": "남성",
+    "unknown": "기타"
+  },
+  "dateRange": {
+    "label": "추가된 날짜",
+    "today": "오늘",
+    "yesterday": "어제",
+    "thisWeek": "이번 주",
+    "lastWeek": "지난 주",
+    "thisMonth": "이번 달",
+    "lastMonth": "지난 달"
+  },
+  "country": {
+    "label": "국가",
+    "placeholder": "더 많은 국가..."
+  },
+  "language": {
+    "label": "언어",
+    "placeholder": "더 많은 언어..."
+  },
+  "search": {
+    "placeholder": "사용자 이름 검색..."
+  },
+  "actions": {
+    "clearAll": "전체 초기화",
+    "filters": "필터",
+    "done": "완료"
+  },
+  "options": {
+    "hasRecordings": "녹화 영상이 있는 크리에이터만 표시"
+  }
+}

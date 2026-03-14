@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "title": "Entrar",
+    "description": "Entre na sua conta do LiveStreamRecorder para acessar suas gravações e os streamers que você segue."
+  },
+  "title": "Bem-vindo de volta",
+  "subtitle": "Entre para continuar na sua conta",
+  "email": {
+    "label": "Endereço de e-mail",
+    "placeholder": "voce@exemplo.com"
+  },
+  "password": {
+    "label": "Senha",
+    "placeholder": "Digite sua senha"
+  },
+  "emailConfirmed": "Seu e-mail foi confirmado com sucesso. Agora você já pode entrar.",
+  "forgotPassword": "Esqueceu a senha?",
+  "submit": {
+    "default": "Entrar",
+    "loading": "Entrando..."
+  },
+  "choices": {
+    "emailPassword": "Usar E-mail / Senha",
+    "google": "Continuar com Google",
+    "tiktok": "Continuar com TikTok",
+    "facebook": "Continuar com Facebook"
+  },
+  "terms": {
+    "text": "Ao continuar, você concorda com os",
+    "tosLink": "Termos de Serviço",
+    "and": "e confirma que leu a",
+    "privacyLink": "Política de Privacidade"
+  },
+  "errors": {
+    "emailTaken": "Já existe uma conta com este e-mail. Por favor, entre com seu método original."
+  },
+  "register": {
+    "text": "Ainda não tem conta?",
+    "link": "Criar conta"
+  }
+}

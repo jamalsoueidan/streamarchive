@@ -1,0 +1,13 @@
+{
+  "meta": {
+    "defaultTitle": "ショートクリップ",
+    "defaultDescription": "お気に入りのストリーマーのショートクリップを視聴しましょう",
+    "title": "{title} - {creatorName} | ショートクリップ",
+    "description": "{platform} で {creatorName} が投稿した {duration} のショートクリップを視聴しましょう",
+    "keywords": "{creatorName}, shorts, クリップ, {platform}, ライブ配信"
+  },
+  "jsonLd": {
+    "name": "{creatorName} のショートクリップ - {createdDate}",
+    "description": "{createdDate} に録画された {creatorName} のショートクリップ"
+  }
+}

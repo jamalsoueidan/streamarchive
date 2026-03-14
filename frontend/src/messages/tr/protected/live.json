@@ -1,0 +1,12 @@
+{
+  "title": "Şu An Canlı",
+  "subtitle": "Şu anda kaydedilen yayınlar",
+  "streamingCount": "{count, plural, one {# canlı} other {# canlı}}",
+  "refresh": "Yenile",
+  "showAll": "Tümünü göster",
+  "discoverStreamers": "Arkadaş Bul",
+  "emptyState": {
+    "title": "Şu anda canlı yayın yok",
+    "description": "İçerik üreticileriniz canlı yayına geçtiğinde, yayınları burada görünecektir"
+  }
+}

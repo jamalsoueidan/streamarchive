@@ -1,0 +1,51 @@
+{
+  "title": "Cari",
+  "description": "Tambahkan live stream Anda ke daftar Anda",
+  "platforms": {
+    "tiktok": "TikTok",
+    "twitch": "Twitch",
+    "kick": "Kick",
+    "youtube": "YouTube",
+    "afreecatv": "AfreecaTV",
+    "pandalive": "PandaLive",
+    "bigo": "Bigo"
+  },
+  "search": {
+    "actionButton": "Cari",
+    "submitButton": "Cari",
+    "placeholder": "Masukkan URL stream atau @username Anda",
+    "searching": "Mencari di {platform}...",
+    "pasteButton": "Tempel",
+    "pasteError": "Tempel secara manual menggunakan Ctrl+V atau tekan lama",
+    "parseError": "Tidak dapat membaca username",
+    "notFound": "Tidak ditemukan...",
+    "autoDetected": "Platform terdeteksi otomatis dari URL",
+    "enterUsername": "Masukkan URL stream atau username Anda",
+    "selectPlatform": "Pilih platform tempat Anda streaming",
+    "changeUsername": "Ubah username",
+    "newSearch": "Pencarian Baru"
+  },
+  "hints": {
+    "tryFormats": "Coba contoh berikut:",
+    "enterUsername": "Masukkan @username atau tempel URL profil"
+  },
+  "actions": {
+    "follow": "Tambah",
+    "successTitle": "Ditambahkan!",
+    "successMessage": "{username} telah ditambahkan",
+    "errorTitle": "Galat",
+    "cancel": "Batal",
+    "willRecord": "Akan direkam saat mereka live",
+    "viewPage": "Lihat halaman"
+  },
+  "chromeExtension": "Instal Ekstensi Chrome",
+  "inputLabel": "Tempel tautan stream dari Twitch, TikTok, atau YouTube di sini",
+  "notFollowing": {
+    "title": "Kreator ini tidak ada di daftar Anda",
+    "description": "Anda mencoba mengakses kreator yang tidak ada di daftar Anda.",
+    "followToAccess": "Tambahkan mereka untuk melihat rekaman dan mendapat notifikasi saat mereka live.",
+    "notFoundTitle": "Kreator tidak ditemukan",
+    "notFoundDescription": "@{username} tidak ada di {platform} atau akun bersifat privat.",
+    "trySearch": "Coba cari kreator lain:"
+  }
+}

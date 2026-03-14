@@ -1,0 +1,14 @@
+{
+  "title": "Listem ({count})",
+  "description": "İçerik üreticilerinizi yönetin",
+  "disabledHint": "Devre dışı öğelerin henüz kaydı yok",
+  "emptyFiltered": {
+    "title": "Filtrelerinize uyan içerik üreticisi yok",
+    "description": "Filtrelerinizi ayarlamayı veya temizlemeyi deneyin"
+  },
+  "emptyDefault": {
+    "title": "Henüz içerik üreticisi eklemediniz",
+    "description": "Platformumuzdaki içerik üreticilerini keşfetmek için Arkadaşlar'a göz atın"
+  },
+  "noMoreToLoad": "Sona ulaştınız"
+}

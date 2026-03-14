@@ -1,0 +1,51 @@
+{
+  "title": "検索",
+  "description": "ライブ配信をリストに追加しましょう",
+  "platforms": {
+    "tiktok": "TikTok",
+    "twitch": "Twitch",
+    "kick": "Kick",
+    "youtube": "YouTube",
+    "afreecatv": "AfreecaTV",
+    "pandalive": "PandaLive",
+    "bigo": "Bigo"
+  },
+  "search": {
+    "actionButton": "検索",
+    "submitButton": "検索",
+    "placeholder": "配信 URL または @ユーザー名を入力",
+    "searching": "{platform} を検索中...",
+    "pasteButton": "貼り付け",
+    "pasteError": "Ctrl+V またはロングプレスで手動で貼り付けてください",
+    "parseError": "ユーザー名を解析できませんでした",
+    "notFound": "見つかりませんでした...",
+    "autoDetected": "URL からプラットフォームを自動検出しました",
+    "enterUsername": "配信 URL またはユーザー名を入力してください",
+    "selectPlatform": "配信しているプラットフォームを選択してください",
+    "changeUsername": "ユーザー名を変更",
+    "newSearch": "新しい検索"
+  },
+  "hints": {
+    "tryFormats": "例：",
+    "enterUsername": "@ユーザー名またはプロフィール URL を入力してください"
+  },
+  "actions": {
+    "follow": "追加",
+    "successTitle": "追加しました！",
+    "successMessage": "{username} を追加しました",
+    "errorTitle": "エラー",
+    "cancel": "キャンセル",
+    "willRecord": "ライブ開始時に録画されます",
+    "viewPage": "ページを見る"
+  },
+  "chromeExtension": "Chrome拡張機能をインストール",
+  "inputLabel": "Twitch、TikTok、YouTube の配信リンクをここに貼り付けてください",
+  "notFollowing": {
+    "title": "このクリエイターはリストにいません",
+    "description": "リストに存在しないクリエイターにアクセスしようとしました。",
+    "followToAccess": "追加して録画を見てライブ開始時に通知を受け取りましょう。",
+    "notFoundTitle": "クリエイターが見つかりません",
+    "notFoundDescription": "@{username} は {platform} に存在しないか、アカウントが非公開です。",
+    "trySearch": "別のクリエイターを検索してみてください："
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "title": "ダッシュボード",
+  "description": "おかえりなさい！最新情報をご確認ください",
+  "greetingMorning": "おはようございます、{username}！",
+  "greetingAfternoon": "こんにちは、{username}！",
+  "greetingEvening": "こんばんは、{username}！",
+  "greetingSubtitle": "フィードの最新情報です",
+  "noRecordings": "録画はありません",
+  "browseAll": "すべて見る",
+  "newCreators": "新しいクリエイター",
+  "myFeed": "マイフィード",
+  "discoverSection": "おすすめ"
+}

@@ -1,0 +1,53 @@
+{
+  "brand": "LiveStreamRecorder",
+  "tagline": "Bir daha yayın kaçırmayın",
+  "defaultDescription": "Canlı yayınlar otomatik olarak kaydedilir, istediğiniz zaman izleyebilirsiniz",
+  "creators": {
+    "title": {
+      "all": "Tüm İçerik Üreticileri",
+      "tiktok": "TikTok İçerik Üreticileri",
+      "twitch": "Twitch İçerik Üreticileri",
+      "youtube": "YouTube İçerik Üreticileri",
+      "kick": "Kick İçerik Üreticileri",
+      "pandalive": "PandaLive İçerik Üreticileri",
+      "afreecatv": "AfreecaTV İçerik Üreticileri",
+      "bigo": "Bigo İçerik Üreticileri"
+    },
+    "subtitle": {
+      "all": "Tüm yayıncılara ve içerik üreticilerine göz atın",
+      "tiktok": "TikTok yayıncılarını keşfedin",
+      "twitch": "Twitch yayıncılarını keşfedin",
+      "youtube": "YouTube içerik üreticilerini keşfedin",
+      "kick": "Kick yayıncılarını keşfedin",
+      "pandalive": "PandaLive içerik üreticilerini keşfedin",
+      "afreecatv": "AfreecaTV içerik üreticilerini keşfedin",
+      "bigo": "Bigo içerik üreticilerini keşfedin"
+    }
+  },
+  "recordings": {
+    "title": {
+      "all": "Tüm Kayıtlar",
+      "tiktok": "TikTok Kayıtları",
+      "twitch": "Twitch Kayıtları",
+      "youtube": "YouTube Kayıtları",
+      "kick": "Kick Kayıtları",
+      "pandalive": "PandaLive Kayıtları",
+      "afreecatv": "AfreecaTV Kayıtları",
+      "bigo": "Bigo Kayıtları"
+    },
+    "subtitle": {
+      "all": "Kaydedilmiş canlı yayınları izleyin",
+      "tiktok": "Kaydedilmiş TikTok canlı yayınlarını izleyin",
+      "twitch": "Kaydedilmiş Twitch yayınlarını izleyin",
+      "youtube": "Kaydedilmiş YouTube canlı yayınlarını izleyin",
+      "kick": "Kaydedilmiş Kick yayınlarını izleyin",
+      "pandalive": "Kaydedilmiş PandaLive yayınlarını izleyin",
+      "afreecatv": "Kaydedilmiş AfreecaTV yayınlarını izleyin",
+      "bigo": "Kaydedilmiş Bigo yayınlarını izleyin"
+    }
+  },
+  "home": {
+    "title": "Canlı Yayın Kaydedici",
+    "subtitle": "Favori yayınlarınız otomatik olarak kaydedilir"
+  }
+}

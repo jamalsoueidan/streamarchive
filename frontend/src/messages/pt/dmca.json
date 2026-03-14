@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "title": "Política DMCA",
+    "description": "Envie uma solicitação de remoção DMCA para conteúdo que viola seus direitos autorais."
+  },
+  "header": {
+    "title": "Lei de Direitos Autorais do Milênio Digital",
+    "subtitle": "Política DMCA"
+  },
+  "divider": "Ou assuma o controle e faça você mesmo",
+  "footer": "Respondemos a todas as solicitações DMCA válidas. O abuso deste processo pode resultar em consequências legais.",
+  "partner": {
+    "title": "Espere! Torne-se um Parceiro",
+    "badge": "Recomendado",
+    "subtitle": "Tenha controle total do seu conteúdo e expanda sua audiência",
+    "publicMessage": "Você já transmite publicamente. Ajudamos seus fãs a encontrá-lo no Google e assistir aos seus melhores momentos.",
+    "discovery": {
+      "title": "Pesquisa no Google",
+      "description": "Suas streams aparecem nos resultados de busca e enviamos fãs diretamente para o seu perfil"
+    },
+    "analytics": {
+      "title": "Painel de Análises",
+      "description": "Acompanhe visualizações, tempo de assistência, localização da audiência e tendências de crescimento"
+    },
+    "highlights": {
+      "title": "Destaques com IA",
+      "description": "Encontramos e exibimos automaticamente seus melhores momentos de streaming"
+    },
+    "clips": {
+      "title": "Criador de Clipes",
+      "description": "Baixe clipes para compartilhar no TikTok, YouTube e mais"
+    },
+    "translation": {
+      "title": "Suporte Multilíngue",
+      "description": "Alcance fãs no mundo todo com legendas e descrições traduzidas automaticamente"
+    },
+    "rankings": {
+      "title": "Rankings de Streamers",
+      "description": "Apareça nas listas dos principais streamers e páginas de categorias"
+    },
+    "brands": {
+      "title": "Oportunidades com Marcas",
+      "description": "Seja descoberto por patrocinadores que buscam criadores como você"
+    },
+    "control": {
+      "title": "Controle Total de Privacidade",
+      "description": "Exclua qualquer vídeo, oculte qualquer vídeo, controle suas gravações"
+    },
+    "cta": "Reivindique Seu Perfil e Torne-se Parceiro",
+    "ctaSubtext": "Leva 2 minutos • Controle total sobre seu conteúdo"
+  },
+  "form": {
+    "title": "Notificação de Violação Alegada",
+    "description": "Use este formulário para solicitar a remoção de gravações ao abrigo da DMCA.",
+    "verifyFirst": {
+      "title": "Verificação Rápida",
+      "message": "Verifique a propriedade da conta para remover suas gravações instantaneamente. Se não conseguir verificar, use o formulário DMCA — solicitações manuais são processadas em até 10 dias úteis.",
+      "button": "Verificar e Remover Instantaneamente"
+    },
+    "content": {
+      "label": "O seguinte conteúdo",
+      "description": "Forneça a(s) URL(s) ou descrição do conteúdo infrator",
+      "placeholder": "https://exemplo.com/gravacao/..."
+    },
+    "copyrightType": {
+      "label": "Por favor, escolha uma opção",
+      "personal": "Viola meus direitos autorais pessoais",
+      "authorized": "Viola os direitos autorais de alguém que estou autorizado a representar"
+    },
+    "email": {
+      "label": "Seu endereço de e-mail",
+      "description": "Usaremos isso para responder à sua solicitação",
+      "placeholder": "voce@exemplo.com"
+    },
+    "perjury": {
+      "title": "Ao marcar as caixas a seguir, declaro SOB PENA DE PERJÚRIO que:",
+      "warning": "Por favor, leia cada declaração atentamente antes de marcar.",
+      "goodFaith": "Declaro que tenho boa fé em acreditar que o compartilhamento do material protegido por direitos autorais no local acima não é autorizado pelo detentor dos direitos autorais, seu agente ou a lei (por exemplo, como uso justo).",
+      "accurate": "Declaro que as informações contidas nesta Notificação são precisas e, sob pena de perjúrio, que sou o proprietário ou estou autorizado a agir em nome do proprietário dos direitos autorais ou de um direito exclusivo sob os direitos autorais que são supostamente infringidos.",
+      "acknowledge": "Reconheço que, nos termos da Seção 512(f), qualquer pessoa que intencionalmente declare falsamente que material ou atividade é infratora pode estar sujeita a responsabilidade por danos."
+    },
+    "signature": {
+      "label": "Assinatura Digital",
+      "description": "Digitar seu nome completo nesta caixa servirá como sua assinatura digital",
+      "placeholder": "Seu nome legal completo"
+    },
+    "captcha": {
+      "label": "Verificação",
+      "description": "Qual é {question}?",
+      "placeholder": "Sua resposta",
+      "error": "Resposta errada, tente novamente"
+    },
+    "submit": "Enviar Solicitação DMCA"
+  },
+  "submitted": {
+    "title": "Solicitação DMCA Enviada",
+    "description": "Recebemos sua solicitação de remoção DMCA. Iremos analisá-la e responder ao endereço de e-mail que você forneceu."
+  }
+}

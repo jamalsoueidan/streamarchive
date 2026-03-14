@@ -1,0 +1,12 @@
+{
+  "title": "Sedang Live",
+  "subtitle": "Stream yang sedang direkam",
+  "streamingCount": "{count, plural, one {# streaming} other {# streaming}}",
+  "refresh": "Perbarui",
+  "showAll": "Tampilkan semua",
+  "discoverStreamers": "Temukan Teman",
+  "emptyState": {
+    "title": "Tidak ada live stream saat ini",
+    "description": "Ketika kreator Anda live, stream mereka akan muncul di sini"
+  }
+}

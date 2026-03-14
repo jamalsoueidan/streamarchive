@@ -1,0 +1,13 @@
+{
+  "title": "探索",
+  "description": "他のクリエイターの録画をブラウズしましょう",
+  "emptyFiltered": {
+    "title": "フィルターに一致する録画がありません",
+    "description": "フィルターを調整またはクリアしてみてください"
+  },
+  "emptyDefault": {
+    "title": "録画はありません",
+    "description": "-"
+  },
+  "noMoreToLoad": "これ以上ありません"
+}

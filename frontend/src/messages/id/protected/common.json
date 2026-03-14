@@ -1,0 +1,66 @@
+{
+  "follow": {
+    "tooltip": "Tambah Kreator",
+    "successTitle": "Ditambahkan!",
+    "successMessage": "{username} telah ditambahkan",
+    "errorTitle": "Galat"
+  },
+  "unfollow": {
+    "tooltip": "Hapus Kreator",
+    "successTitle": "Dihapus",
+    "successMessage": "Anda menghapus {username}",
+    "successMessageGeneric": "Berhasil dihapus"
+  },
+  "scopeFilter": {
+    "label": "Filter:",
+    "following": "Rekaman Saya",
+    "discover": "Teman",
+    "all": "Semua"
+  },
+  "recordings": {
+    "liveAgo_context": "Untuk live stream yang menampilkan kapan rekaman dimulai. Menampilkan 'mulai merekam 15 menit lalu'",
+    "liveAgo": "mulai merekam {time}",
+    "recordedAgo_context": "Untuk stream yang direkam yang menampilkan kapan rekaman dibuat. Menampilkan 'direkam 3 hari lalu'",
+    "recordedAgo": "direkam {time}",
+    "recordCount": "REC {count}",
+    "newRecording": "Baru",
+    "videoCount": "{count, plural, one {# video} other {# video}}",
+    "noRecordings": "Anda sudah mencapai akhir",
+    "hide": "Sembunyikan dari publik",
+    "show": "Tampilkan ke publik",
+    "delete": "Hapus video",
+    "deleteConfirm": {
+      "title": "Hapus video",
+      "message": "Apakah Anda yakin ingin menghapus video ini? Tindakan ini tidak dapat dibatalkan.",
+      "confirm": "Hapus",
+      "cancel": "Batal"
+    },
+    "createWithAI": "Buat klip dengan AI",
+    "addToWatchLater": "Simpan ke Tonton Nanti",
+    "removeFromWatchLater": "Hapus dari Tonton Nanti",
+    "addedToWatchLater": "Disimpan ke Tonton Nanti",
+    "removedFromWatchLater": "Dihapus dari Tonton Nanti",
+    "videoLimitMessage": "Anda telah mencapai batas video gratis.",
+    "download": "Unduh video",
+    "downloadEmailSent": "Tautan unduhan sedang dikirim ke email Anda",
+    "downloadFeatureMessage": "Mengunduh video adalah fitur premium.",
+    "editClip": "Edit Klip",
+    "deleteSources": "Hapus sumber",
+    "deleteSourcesSuccess": "{count} sumber dihapus"
+  },
+  "followers": {
+    "addedAgo_context": "Untuk kapan kreator ditambahkan ke daftar pengguna. Menampilkan 'Ditambahkan 3 hari lalu'",
+    "addedAgo": "Ditambahkan {time}",
+    "limitReachedTitle": "Batas kreator tercapai",
+    "upgradeModalHeadline": "Jangan lewatkan satu pun live stream",
+    "max3Message": "Anda telah mencapai batas 3 kreator pada paket gratis.",
+    "max50Message": "Anda telah mencapai batas 50 kreator pada paket ini.",
+    "max100Message": "Anda telah mencapai batas 100 kreator pada paket ini.",
+    "upgradeButton": "Upgrade ke Premium",
+    "upgradeModalDiscount": "Diskon 25% untuk bulan pertama",
+    "upgradeModalCodeNote": "Terapkan saat checkout",
+    "unfollowUpgradeTitle": "Kelola kreator sesukamu dengan premium"
+  },
+  "newest": "Terbaru",
+  "oldest": "Terlama"
+}

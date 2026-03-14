@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "title": "Stream {creatorName} - {recordedDate}",
+    "description": "Tonton live stream {platform} yang direkam dari {creatorName} pada {recordedDate}. Durasi: {duration}. Jangan lewatkan satu pun stream dengan Live Stream Recorder.",
+    "ogTitle": "Stream {creatorName} - {recordedDate} | Live Stream Recorder",
+    "keywords": "video {creatorName}, stream {creatorName} {recordedDate}, {creatorName} {platform}, stream rekaman {creatorName}, tonton {creatorName}"
+  },
+  "jsonLd": {
+    "name": "Stream {creatorName} - {recordedDate}",
+    "description": "Rekaman live stream dari {creatorName} pada {recordedDate}"
+  },
+  "watch": {
+    "title": "Tonton video live stream {username} - {date}"
+  },
+  "backToProfile": "Kembali ke profil {username}",
+  "otherRecordingsBy": "Rekaman lain dari {username}"
+}

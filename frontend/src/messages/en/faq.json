@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "title": "FAQ",
+    "description": "Find answers to frequently asked questions about LiveStreamRecorder"
+  },
+  "title": "Frequently Asked Questions",
+  "subtitle": "Find answers to common questions about our service.",
+  "faqs": [
+    {
+      "question": "What is LiveStreamRecorder.com?",
+      "answer": "LiveStreamRecorder.com is a cloud-based service that automatically records your own live streams. Add your username from any supported platform and we capture every broadcast — no software to install, no need to leave your computer running. Watch your recordings anytime or turn them into clips."
+    },
+    {
+      "question": "How does it work?",
+      "answer": "Sign up for free and add your username from the platform you stream on. Whenever you go live, our system automatically records your stream. You can watch recordings directly in your browser, download them, or create clips to share on social media."
+    },
+    {
+      "question": "Is it really free?",
+      "answer": "Yes! Our free plan lets you record from up to 3 platforms and recordings are kept for 5 days. If you need more, our premium plan gives you better video quality, 30-day storage, video downloads, and the ability to record from up to 100 platforms."
+    },
+    {
+      "question": "Which platforms are supported?",
+      "answer": "We currently support TikTok, Twitch, YouTube, Kick, AfreecaTV, and Pandalive. We are always working on adding more platforms — stay tuned for updates."
+    },
+    {
+      "question": "How long are recordings stored?",
+      "answer": "Free users get 5 days of storage. Premium users get 30 days. Make sure to download any recordings you want to keep before they expire."
+    },
+    {
+      "question": "How do I add my username?",
+      "answer": "Click Add on your dashboard, select your platform, and enter your username. Once added, we will automatically record whenever you go live."
+    },
+    {
+      "question": "Can I record on multiple platforms?",
+      "answer": "Yes! If you stream on TikTok and Twitch, just add your username from each platform and all your streams are saved in one place."
+    },
+    {
+      "question": "Can I download my recordings?",
+      "answer": "Downloading is available for premium users. Every recording has a download button that lets you save the full video file to your computer."
+    },
+    {
+      "question": "What is ClipAI?",
+      "answer": "ClipAI automatically finds the best moments from your streams and turns them into short clips — ready to share on TikTok, YouTube Shorts, or Instagram Reels."
+    },
+    {
+      "question": "What is included in the premium plan?",
+      "answer": "Premium gives you better video quality, the ability to download recordings, 30-day storage, and support for up to 100 creators — perfect for agencies and management teams."
+    },
+    {
+      "question": "How do I upgrade to premium?",
+      "answer": "Go to your dashboard and click Upgrade. Choose the plan that works for you and complete the payment. We accept credit cards, Apple Pay, and Google Pay."
+    },
+    {
+      "question": "How do I contact support?",
+      "answer": "You can reach us anytime through the contact form on our website. We are here to help with any questions or issues."
+    },
+    {
+      "question": "How do I delete my account?",
+      "answer": "Go to Settings and click Delete Account. Your account and all data are permanently removed immediately. This action cannot be undone."
+    },
+    {
+      "question": "Is my privacy protected?",
+      "answer": "Yes. We only store your email and your usernames. Check our Privacy Policy for full details."
+    },
+    {
+      "question": "What if I change my username on a platform?",
+      "answer": "If you change your username, you will need to remove the old one and add the new username."
+    }
+  ]
+}

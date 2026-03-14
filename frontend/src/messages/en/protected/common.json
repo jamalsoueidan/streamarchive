@@ -1,0 +1,66 @@
+{
+  "follow": {
+    "tooltip": "Add Creator",
+    "successTitle": "Added!",
+    "successMessage": "{username} has been added",
+    "errorTitle": "Error"
+  },
+  "unfollow": {
+    "tooltip": "Remove Creator",
+    "successTitle": "Removed",
+    "successMessage": "You removed {username}",
+    "successMessageGeneric": "Successfully removed"
+  },
+  "scopeFilter": {
+    "label": "Filter:",
+    "following": "My Recordings",
+    "discover": "Friends",
+    "all": "All"
+  },
+  "recordings": {
+    "liveAgo_context": "For live streams showing when recording started. Shows 'started recording 15 minutes ago'",
+    "liveAgo": "started recording {time}",
+    "recordedAgo_context": "For recorded streams showing when recording was made. Shows 'recorded 3 days ago'",
+    "recordedAgo": "recorded {time}",
+    "recordCount": "REC {count}",
+    "newRecording": "New",
+    "videoCount": "{count, plural, one {# video} other {# videos}}",
+    "noRecordings": "You've reached the end",
+    "hide": "Hide from public",
+    "show": "Show on public",
+    "delete": "Delete video",
+    "deleteConfirm": {
+      "title": "Delete video",
+      "message": "Are you sure you want to delete this video? This action cannot be undone.",
+      "confirm": "Delete",
+      "cancel": "Cancel"
+    },
+    "createWithAI": "Create clips with AI",
+    "addToWatchLater": "Save to Watch Later",
+    "removeFromWatchLater": "Remove from Watch Later",
+    "addedToWatchLater": "Saved to Watch Later",
+    "removedFromWatchLater": "Removed from Watch Later",
+    "videoLimitMessage": "You've reached your free video limit.",
+    "download": "Download video",
+    "downloadEmailSent": "Download link on its way to your email",
+    "downloadFeatureMessage": "Downloading videos is a premium feature.",
+    "editClip": "Edit Clip",
+    "deleteSources": "Delete sources",
+    "deleteSourcesSuccess": "Deleted {count} sources"
+  },
+  "followers": {
+    "addedAgo_context": "For when a creator was added to user's list. Shows 'Added 3 days ago'",
+    "addedAgo": "Added {time}",
+    "limitReachedTitle": "Creator limit reached",
+    "upgradeModalHeadline": "Never miss a live stream again",
+    "max3Message": "You've reached the 3 creator limit on the free plan.",
+    "max50Message": "You've reached your limit of 50 creators on this plan.",
+    "max100Message": "You've reached your limit of 100 creators on this plan.",
+    "upgradeButton": "Upgrade to Premium",
+    "upgradeModalDiscount": "25% off your first month",
+    "upgradeModalCodeNote": "Apply at checkout",
+    "unfollowUpgradeTitle": "Manage your creators freely with premium"
+  },
+  "newest": "Newest",
+  "oldest": "Oldest"
+}

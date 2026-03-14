@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "title": "Syarat & Ketentuan",
+    "description": "Baca syarat dan ketentuan penggunaan layanan LiveStreamRecorder."
+  },
+  "header": {
+    "title": "Syarat & Ketentuan",
+    "lastUpdated": "Terakhir diperbarui: {date}"
+  },
+  "introduction": {
+    "title": "Pendahuluan",
+    "content": "Dengan menggunakan LiveStreamRecorder.com dan layanannya, Anda setuju untuk terikat oleh Syarat dan Ketentuan ini. Harap baca dengan saksama sebelum menggunakan platform kami. Jika Anda tidak setuju dengan ketentuan ini, Anda tidak dapat menggunakan Layanan."
+  },
+  "serviceDescription": {
+    "title": "Deskripsi Layanan",
+    "content1": "LiveStreamRecorder menyediakan platform berbasis cloud yang memungkinkan kreator konten secara otomatis merekam, mengarsipkan, dan menyimpan live stream mereka dari platform seperti TikTok, Twitch, YouTube, Kick, AfreecaTV, dan Pandalive.",
+    "content2": "Dengan menangani rekaman dan penyimpanan dari jarak jauh di server kami, pengguna mendapatkan kemudahan yang lebih besar dan ketergantungan yang lebih kecil pada perangkat keras pribadi — tanpa perlu menginstal software atau membiarkan perangkat mereka menyala.",
+    "content3": "LiveStreamRecorder adalah penyedia layanan teknis. Kami tidak meng-host, memiliki, atau mengontrol konten platform streaming pihak ketiga."
+  },
+  "userContent": {
+    "title": "Konten Pengguna & Lisensi",
+    "content1": "Anda mempertahankan hak kepemilikan kekayaan intelektual atas konten yang Anda kirimkan kepada kami atau rekam melalui Layanan kami. Kami tidak akan pernah mengklaim kepemilikan atas konten Anda.",
+    "content2": "Dengan menggunakan Layanan kami untuk merekam, mengunggah, atau mengirimkan konten, Anda memberikan LiveStreamRecorder lisensi non-eksklusif, bebas royalti, dapat dialihkan, dapat disublisensikan, dan berlaku di seluruh dunia untuk menggunakan, meng-host, menyimpan, menampilkan, mendistribusikan, dan membuat konten Anda tersedia untuk tujuan mengoperasikan dan menyediakan Layanan.",
+    "content3": "Lisensi ini berlanjut hingga Anda menghapus konten atau akun Anda. Namun, konten yang telah dibagikan, diunduh, atau di-cache oleh pengguna lain mungkin tetap tersedia.",
+    "content4": "Anda menyatakan dan menjamin bahwa Anda memiliki atau memiliki hak yang diperlukan atas semua konten yang Anda rekam melalui Layanan kami, dan bahwa Anda memiliki wewenang untuk memberikan lisensi ini."
+  },
+  "contentVisibility": {
+    "title": "Visibilitas Konten",
+    "content1": "Dengan menggunakan LiveStreamRecorder, Anda memahami dan setuju bahwa rekaman yang dibuat melalui Layanan kami dapat terlihat secara publik oleh pengguna lain di platform.",
+    "content2": "Anda sepenuhnya bertanggung jawab atas konten yang Anda rekam dan sediakan. Jika Anda tidak ingin rekaman Anda bersifat publik, Anda dapat menyesuaikan pengaturan privasi Anda jika tersedia atau tidak menggunakan Layanan.",
+    "content3": "Anda dapat meminta penghapusan konten Anda kapan saja dengan menghubungi kami atau menggunakan kontrol yang tersedia di pengaturan akun Anda."
+  },
+  "ageRequirement": {
+    "title": "Persyaratan Usia",
+    "content": "Anda harus berusia minimal 18 tahun atau telah mencapai usia dewasa di yurisdiksi Anda untuk menggunakan platform ini. Dengan membuat akun, Anda mengonfirmasi bahwa Anda memenuhi persyaratan ini."
+  },
+  "yourAccount": {
+    "title": "Akun Anda",
+    "intro": "Saat mendaftar untuk akun, Anda setuju untuk:",
+    "items": {
+      "accurate": "Memberikan informasi yang akurat, terkini, dan lengkap",
+      "confidential": "Menjaga kerahasiaan kredensial login Anda",
+      "noShare": "Tidak berbagi akun dengan orang lain",
+      "oneAccount": "Mempertahankan hanya satu akun per orang",
+      "notify": "Segera memberi tahu kami tentang akses tidak sah",
+      "responsibility": "Menerima tanggung jawab atas semua aktivitas di bawah akun Anda"
+    },
+    "footer": "LiveStreamRecorder tidak bertanggung jawab atas kerugian atau kerusakan yang timbul akibat kegagalan Anda mengamankan kredensial akun."
+  },
+  "intellectualProperty": {
+    "title": "Kekayaan Intelektual & Hak Cipta",
+    "content1": "LiveStreamRecorder menghormati hak kekayaan intelektual orang lain dan mengharapkan pengguna untuk melakukan hal yang sama.",
+    "content2": "Dengan menggunakan Layanan kami, Anda mengonfirmasi bahwa Anda memiliki hak untuk merekam konten yang Anda tambahkan ke platform kami. Anda sepenuhnya bertanggung jawab untuk memastikan penggunaan Anda sesuai dengan undang-undang hak cipta yang berlaku dan ketentuan layanan platform streaming pihak ketiga.",
+    "content3": "Merekam, memperbanyak, atau mendistribusikan konten live stream tanpa persetujuan kreator dapat merupakan pelanggaran hak cipta dan dapat mengekspos Anda pada tanggung jawab hukum. LiveStreamRecorder hanyalah alat teknis — Anda menanggung tanggung jawab hukum penuh atas cara Anda menggunakannya.",
+    "content4": "Anda setuju untuk tidak menggunakan LiveStreamRecorder untuk merekam konten yang tidak Anda miliki atau tidak memiliki izin eksplisit untuk direkam. Jika Anda menambahkan kreator ke akun Anda, Anda menyatakan bahwa Anda adalah kreator tersebut atau telah mendapatkan persetujuan mereka.",
+    "content5": "Penyalahgunaan dapat mengakibatkan penghentian akun Anda dan kemungkinan tindakan hukum dari pemegang hak. LiveStreamRecorder tidak menanggung kewajiban untuk rekaman tidak sah yang dilakukan pengguna.",
+    "content6": "LiveStreamRecorder berhak untuk menghapus atau menonaktifkan akses ke konten yang diduga melanggar dan dapat menghentikan akses pengguna yang berulang kali melanggar ke Layanan."
+  },
+  "prohibitedActivities": {
+    "title": "Aktivitas yang Dilarang",
+    "intro": "Anda tidak boleh menggunakan platform ini untuk:",
+    "items": {
+      "noRights": "Merekam konten yang tidak Anda miliki atau tidak memiliki hak atasnya",
+      "minors": "Merekam konten yang menampilkan anak di bawah umur (siapa pun di bawah 18 tahun)",
+      "exploit": "Mengakses konten yang mengeksploitasi, membahayakan, atau menseksualisasi anak di bawah umur",
+      "illegal": "Terlibat dalam aktivitas ilegal apa pun",
+      "harass": "Melecehkan, menguntit, atau menyakiti orang lain",
+      "bots": "Menggunakan bot, skrip, atau alat otomatis untuk menyalahgunakan Layanan",
+      "multipleAccounts": "Membuat banyak akun untuk menghindari pembatasan",
+      "malware": "Mengunggah malware atau software berbahaya",
+      "reverseEngineer": "Merekayasa balik atau merusak sistem kami"
+    },
+    "footer": "Pelanggaran dapat mengakibatkan pemutusan akun segera tanpa pemberitahuan dan dapat mengakibatkan tindakan hukum."
+  },
+  "contentRemoval": {
+    "title": "Penghapusan Konten & DMCA",
+    "content1": "Kami berhak untuk menghapus konten apa pun atau menghentikan akun apa pun atas kebijaksanaan kami. Kami akan merespons klaim pelanggaran hak cipta dan mengambil tindakan yang tepat sesuai hukum, termasuk penghapusan konten yang melanggar dan penghentian akses untuk pelanggar berulang.",
+    "content2": "Jika Anda percaya konten di platform kami melanggar hak Anda, melibatkan anak di bawah umur, atau melanggar ketentuan ini, harap hubungi kami di contact@livestreamrecorder.com dengan detail lengkap untuk penyelesaian segera.",
+    "footer": "Harap sertakan: deskripsi karya berhak cipta, URL konten yang melanggar, informasi kontak Anda, dan pernyataan bahwa Anda memiliki keyakinan tulus bahwa penggunaan tersebut tidak diizinkan."
+  },
+  "thirdPartyPlatforms": {
+    "title": "Platform Pihak Ketiga",
+    "content1": "Layanan kami terintegrasi dengan platform streaming pihak ketiga. Dengan menggunakan Layanan kami, Anda mengakui bahwa Anda juga terikat oleh ketentuan dan kebijakan platform-platform ini:",
+    "platforms": {
+      "tiktok": "Ketentuan Layanan TikTok",
+      "twitch": "Ketentuan Layanan Twitch",
+      "youtube": "Ketentuan Layanan YouTube",
+      "kick": "Ketentuan Layanan Kick",
+      "google": "Ketentuan Layanan Google",
+      "googlePrivacy": "Kebijakan Privasi Google"
+    },
+    "content2": "Anda sepenuhnya bertanggung jawab untuk meninjau dan mematuhi ketentuan pihak ketiga ini. LiveStreamRecorder tidak bertanggung jawab atas tindakan yang diambil oleh platform pihak ketiga, termasuk penghapusan konten, perubahan API, atau pembatasan akun.",
+    "content3": "Perubahan atau pembatasan yang diberlakukan oleh platform pihak ketiga dapat mempengaruhi ketersediaan atau fungsionalitas layanan kami. LiveStreamRecorder tidak bertanggung jawab atas gangguan yang disebabkan oleh platform pihak ketiga."
+  },
+  "serviceTiers": {
+    "title": "Tingkatan & Akses Layanan",
+    "content1": "LiveStreamRecorder menawarkan tingkatan akses gratis dan premium dengan fitur dan batasan yang berbeda.",
+    "content2": "Pengguna gratis memiliki akses ke fitur dasar dengan batas penggunaan. Pelanggan premium menikmati akses ke semua fitur termasuk alat AI, penyimpanan diperluas, dan dukungan prioritas.",
+    "content3": "Pengunjung anonim dapat melihat sejumlah rekaman terbatas sebelum diminta untuk membuat akun. Pengguna gratis yang terdaftar mungkin memiliki batasan penayangan tambahan berdasarkan aktivitas akun mereka.",
+    "content4": "Kami berhak untuk mengubah manfaat tingkatan, fitur, dan batasan kapan saja. Perubahan signifikan akan dikomunikasikan kepada pengguna yang ada."
+  },
+  "payments": {
+    "title": "Pembayaran & Langganan",
+    "items": {
+      "autoBill": "Paket berbayar ditagih secara otomatis hingga Anda membatalkan",
+      "autoRenew": "Langganan diperbarui otomatis kecuali dibatalkan setidaknya 24 jam sebelum tanggal penagihan berikutnya",
+      "cancelAnytime": "Batalkan kapan saja di pengaturan akun Anda",
+      "noRefunds": "Tidak ada pengembalian dana untuk waktu langganan yang tidak digunakan",
+      "priceChanges": "Kami dapat mengubah harga dengan pemberitahuan yang wajar kepada pelanggan yang ada",
+      "failedPayments": "Pembayaran yang gagal dapat mengakibatkan akses terbatas hingga diselesaikan",
+      "taxes": "Anda bertanggung jawab atas pajak yang berlaku"
+    }
+  },
+  "termination": {
+    "title": "Pemutusan",
+    "content1": "Kami dapat menangguhkan atau menghentikan akun Anda kapan saja jika Anda melanggar ketentuan ini, terlibat dalam aktivitas yang dilarang, atau gagal menyelesaikan masalah pembayaran.",
+    "content2": "Anda dapat menghapus akun kapan saja di Pengaturan. Pembatalan berlaku pada akhir siklus penagihan saat ini.",
+    "content3": "Setelah pemutusan, akses ke Layanan akan segera dicabut, dan data apa pun yang tersimpan di server kami dapat dihapus secara permanen."
+  },
+  "liability": {
+    "title": "Batasan Tanggung Jawab",
+    "content": "Platform ini disediakan apa adanya dan tersedia tanpa jaminan apa pun, baik tersurat maupun tersirat. Penggunaan Layanan sepenuhnya menjadi risiko Anda sendiri.",
+    "intro": "LiveStreamRecorder tidak bertanggung jawab atas:",
+    "items": {
+      "content": "Konten yang dibuat, direkam, atau diakses oleh pengguna",
+      "thirdParty": "Tindakan platform streaming pihak ketiga",
+      "interruptions": "Gangguan layanan atau masalah teknis",
+      "indirect": "Kerugian tidak langsung, insidental, khusus, atau konsekuensial",
+      "lossData": "Kehilangan data, keuntungan, atau peluang bisnis",
+      "unauthorized": "Akses tidak sah akibat kegagalan Anda mengamankan kredensial"
+    },
+    "footer": "Sejauh diizinkan oleh hukum, total tanggung jawab kami tidak akan melebihi jumlah yang Anda bayarkan untuk Layanan selama dua belas (12) bulan sebelum kejadian yang menimbulkan klaim."
+  },
+  "indemnification": {
+    "title": "Ganti Rugi",
+    "content": "Anda setuju untuk membela, mengganti rugi, dan membebaskan LiveStreamRecorder dan afiliasi, pejabat, agen, serta karyawannya dari klaim, kerusakan, kerugian, kewajiban, biaya, atau pengeluaran (termasuk biaya hukum) yang timbul dari penggunaan platform, pelanggaran ketentuan ini, pelanggaran hak pihak ketiga apa pun, atau rekaman tidak sah yang Anda buat menggunakan Layanan."
+  },
+  "modifications": {
+    "title": "Modifikasi",
+    "content1": "LiveStreamRecorder berhak untuk memodifikasi, memperbarui, atau menghentikan bagian mana pun dari Layanan kapan saja tanpa pemberitahuan sebelumnya. Kami juga dapat memperbarui ketentuan ini kapan saja.",
+    "content2": "Penggunaan platform yang berkelanjutan setelah perubahan berarti Anda menerima ketentuan baru. Kami akan memperbarui tanggal \"Terakhir diperbarui\" di bagian atas halaman ini ketika perubahan dilakukan."
+  },
+  "governingLaw": {
+    "title": "Hukum yang Berlaku",
+    "content": "Ketentuan ini diatur dan ditafsirkan sesuai dengan hukum Denmark, tanpa memperhatikan ketentuan benturan hukumnya. Setiap perselisihan yang timbul dari ketentuan ini atau penggunaan Layanan akan tunduk pada yurisdiksi eksklusif pengadilan Denmark."
+  },
+  "contact": {
+    "title": "Hubungi Kami",
+    "content": "Ada pertanyaan atau kekhawatiran tentang ketentuan ini? Hubungi kami di contact@livestreamrecorder.com"
+  },
+  "footerNote": "Dengan menggunakan LiveStreamRecorder, Anda mengakui bahwa Anda telah membaca, memahami, dan setuju untuk terikat oleh Syarat dan Ketentuan ini.",
+  "disclaimer": "Nama produk, logo, dan merek TikTok, Twitch, YouTube, Kick, AfreecaTV, dan Pandalive adalah milik pemilik masing-masing. Semua nama perusahaan, produk, dan layanan yang digunakan di situs web ini hanya untuk tujuan identifikasi. Penggunaan nama, merek dagang, dan merek ini tidak menyiratkan dukungan. LiveStreamRecorder tidak berafiliasi dengan TikTok, Twitch, YouTube, Kick, AfreecaTV, atau Pandalive."
+}

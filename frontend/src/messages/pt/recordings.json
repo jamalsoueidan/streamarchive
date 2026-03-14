@@ -1,0 +1,379 @@
+{
+  "meta": {
+    "all": {
+      "title": "Gravações de Lives",
+      "description": "Assista gravações de lives de criadores no LiveStreamRecorder. Gravações do TikTok, Twitch, YouTube, Kick salvas e prontas para assistir.",
+      "keywords": [
+        "gravações de live",
+        "gravações de stream",
+        "gravação live tiktok",
+        "vod twitch",
+        "gravador de live",
+        "arquivo de stream"
+      ]
+    },
+    "tiktok": {
+      "title": "Gravações de Lives do TikTok",
+      "description": "Assista e baixe gravações de lives do TikTok no LiveStreamRecorder. Cada live do TikTok é capturada automaticamente — sem gravador de tela. Assista lives salvas dos seus criadores favoritos.",
+      "keywords": [
+        "gravação live tiktok",
+        "live stream tiktok",
+        "gravar live tiktok",
+        "gravador tiktok",
+        "como gravar live tiktok",
+        "gravador de tela para tiktok",
+        "dá para gravar live tiktok",
+        "como gravar uma live no tiktok",
+        "vod tiktok",
+        "salvar live tiktok",
+        "gravar tela live tiktok",
+        "gravar tiktok no computador",
+        "dá para gravar tela da live tiktok"
+      ],
+      "faqs": [
+        {
+          "question": "Como gravo minhas lives do TikTok?",
+          "answer": "Com o LiveStreamRecorder, suas lives do TikTok são gravadas automaticamente na nuvem. Basta se cadastrar, adicionar seu nome de usuário do TikTok e cada live que você faz é capturada — sem precisar de gravador de tela para TikTok, sem ficar com o celular ligado a noite toda."
+        },
+        {
+          "question": "Preciso de um gravador de tela para lives do TikTok?",
+          "answer": "Não. O LiveStreamRecorder captura suas lives do TikTok no servidor em alta qualidade, então não há necessidade de gravar a tela no TikTok. Sem frames perdidos, sem notificações atrapalhando, sem gravação pelo celular que falha. Suas lives são salvas automaticamente na sua conta."
+        },
+        {
+          "question": "Posso gravar minhas lives do TikTok em um computador ou notebook?",
+          "answer": "Sim. O LiveStreamRecorder funciona inteiramente na nuvem, então você pode gravar suas lives do TikTok de qualquer dispositivo com navegador — PC, notebook ou celular. Sem nada para instalar, sem gravador de tela ou extensão de navegador. Basta adicionar seu nome de usuário e suas lives são gravadas automaticamente."
+        },
+        {
+          "question": "Como baixo minhas gravações de lives do TikTok?",
+          "answer": "Todas as suas gravações de lives do TikTok no LiveStreamRecorder podem ser assistidas instantaneamente no navegador. Usuários premium podem baixar suas gravações como arquivos de vídeo para visualização offline — sem marca d'água nos seus downloads."
+        },
+        {
+          "question": "As lives do TikTok desaparecem depois que terminam?",
+          "answer": "Sim, o TikTok não salva as lives após o fim da transmissão. É por isso que criadores usam o LiveStreamRecorder como seu gravador do TikTok — cada live é capturada e armazenada para que você possa assistir, baixar ou reutilizar seu conteúdo depois."
+        },
+        {
+          "question": "Qual é a melhor forma de gravar minhas lives do TikTok?",
+          "answer": "A melhor forma de gravar suas lives do TikTok é com um gravador na nuvem como o LiveStreamRecorder. Ao contrário de gravar a tela pelo celular ou software de captura no desktop, a gravação na nuvem captura sua stream completa em alta qualidade mesmo se seu celular desligar ou você perder a conexão. É a melhor alternativa ao gravador de tela para lives do TikTok."
+        },
+        {
+          "question": "Posso transformar minhas lives gravadas do TikTok em clipes curtos?",
+          "answer": "Sim. Usuários premium podem usar o ClipAI para transformar automaticamente suas gravações de lives do TikTok em clipes curtos de destaque. É uma ótima forma de reutilizar suas lives em vídeos do TikTok, Reels ou Shorts para aumentar seus seguidores."
+        }
+      ]
+    },
+    "twitch": {
+      "title": "Gravações e VODs de Streams da Twitch",
+      "description": "Assista e baixe gravações de streams da Twitch no LiveStreamRecorder. Suas streams da Twitch são capturadas automaticamente — sem gravador de tela. O melhor gravador da Twitch para criadores que querem VODs permanentes.",
+      "keywords": [
+        "gravador twitch",
+        "gravador de stream twitch",
+        "gravador de vod twitch",
+        "gravar stream twitch",
+        "capturar stream twitch",
+        "gravador live twitch",
+        "gravar minha stream twitch",
+        "gravar sua stream twitch",
+        "gravar stream twitch automaticamente",
+        "gravador de tela para twitch",
+        "melhor gravador de tela para twitch",
+        "gravador de vídeo twitch",
+        "salvar streams twitch",
+        "captura de stream twitch",
+        "gravar live twitch",
+        "gravar stream na twitch",
+        "vod twitch",
+        "salvar stream twitch"
+      ],
+      "faqs": [
+        {
+          "question": "Como gravo minhas streams da Twitch automaticamente?",
+          "answer": "O LiveStreamRecorder é um gravador da Twitch na nuvem que captura suas streams automaticamente. Cadastre-se, adicione seu canal da Twitch e cada vez que você entra ao vivo sua stream é gravada. Sem gravador de tela para Twitch — tudo acontece no servidor."
+        },
+        {
+          "question": "Os VODs da Twitch expiram?",
+          "answer": "Sim. Os VODs da Twitch expiram após 14 dias para streamers regulares e 60 dias para Partners e usuários Turbo. O LiveStreamRecorder salva suas streams da Twitch permanentemente — suas gravações nunca expiram e estão sempre disponíveis para assistir ou baixar."
+        },
+        {
+          "question": "Qual é o melhor gravador de stream da Twitch para criadores?",
+          "answer": "Para gravação automática, um gravador da Twitch na nuvem como o LiveStreamRecorder é a melhor opção. Gravadores de tela tradicionais para Twitch exigem que seu PC fique ligado com software de gravação rodando em segundo plano. O LiveStreamRecorder captura suas streams da Twitch na nuvem — mesmo se o OBS travar ou seu PC reiniciar, sua gravação está segura."
+        },
+        {
+          "question": "Preciso de um gravador de tela para salvar minhas streams da Twitch?",
+          "answer": "Não. O LiveStreamRecorder captura suas streams da Twitch no servidor, então não há necessidade de software de captura de tela. Sem Bandicam, sem aplicativo desktop, sem uso extra de CPU enquanto você transmite. Suas streams são salvas automaticamente em alta qualidade na nuvem."
+        },
+        {
+          "question": "Posso gravar minhas streams da Twitch gratuitamente?",
+          "answer": "Sim. Cadastre-se no LiveStreamRecorder gratuitamente e comece a gravar suas streams da Twitch agora mesmo. Os planos premium desbloqueiam download das suas gravações, ClipAI para clipes de destaques automáticos e armazenamento estendido."
+        },
+        {
+          "question": "Qual é a diferença em relação ao sistema de VOD nativo da Twitch?",
+          "answer": "Os VODs da Twitch expiram após 14 a 60 dias e são excluídos se você deletar seu canal. O LiveStreamRecorder oferece um backup independente das suas streams da Twitch. Suas gravações são armazenadas separadamente, nunca expiram e ficam disponíveis mesmo se algo acontecer com sua conta da Twitch."
+        },
+        {
+          "question": "Posso transformar minhas gravações da Twitch em clipes?",
+          "answer": "Sim. Usuários premium podem usar o ClipAI para transformar automaticamente suas gravações da Twitch em clipes curtos de destaque. Publique-os como YouTube Shorts, vídeos do TikTok ou Reels para crescer sua audiência em outras plataformas."
+        },
+        {
+          "question": "O LiveStreamRecorder captura minha stream da Twitch mesmo se eu esquecer de salvar o VOD?",
+          "answer": "Sim. Depois que seu canal é conectado, o LiveStreamRecorder grava cada live da Twitch automaticamente — independente das suas configurações de VOD da Twitch. Mesmo que você tenha os VODs desativados na Twitch, suas streams ainda são capturadas e salvas na sua conta."
+        }
+      ]
+    },
+    "youtube": {
+      "title": "Gravações de Lives do YouTube",
+      "description": "Assista e baixe gravações de lives do YouTube no LiveStreamRecorder. Suas lives do YouTube são capturadas automaticamente — sem gravador de tela. O gravador de lives do YouTube mais fácil para criadores.",
+      "keywords": [
+        "gravação live youtube",
+        "live stream youtube",
+        "gravar live stream youtube",
+        "gravador youtube",
+        "gravador de tela para youtube",
+        "gravação youtube",
+        "gravar live youtube",
+        "capturar live youtube",
+        "captura live stream youtube",
+        "melhor gravador de tela para youtube",
+        "gravar live stream youtube",
+        "gravador de vídeo youtube",
+        "gravador youtube online",
+        "salvar live youtube"
+      ],
+      "faqs": [
+        {
+          "question": "Como gravo minhas lives do YouTube?",
+          "answer": "Com o LiveStreamRecorder, suas lives do YouTube são gravadas automaticamente na nuvem. Cadastre-se, adicione seu canal do YouTube e cada live que você inicia é capturada. Sem software de gravação do YouTube para instalar, sem salvar manualmente — simplesmente funciona."
+        },
+        {
+          "question": "Preciso de um gravador de tela para lives do YouTube?",
+          "answer": "Não. O LiveStreamRecorder é um gravador do YouTube na nuvem que captura suas lives no servidor. Ao contrário de software de gravação de tela para YouTube, sem frames perdidos, sem aplicativo desktop rodando em segundo plano e sem armazenamento consumindo seu HD. Suas lives são salvas automaticamente em alta qualidade."
+        },
+        {
+          "question": "Qual é o melhor software de gravação para lives do YouTube?",
+          "answer": "Para lives especificamente, um gravador do YouTube na nuvem como o LiveStreamRecorder é a melhor opção. Gravadores de tela tradicionais para YouTube exigem que seu computador fique ligado durante toda a stream. O LiveStreamRecorder captura suas lives do YouTube na nuvem — mesmo se seu PC travar ou você perder energia, sua gravação está segura."
+        },
+        {
+          "question": "Posso gravar minhas lives do YouTube gratuitamente?",
+          "answer": "Sim. Você pode se cadastrar no LiveStreamRecorder gratuitamente e começar a gravar suas lives do YouTube agora mesmo. Os planos premium desbloqueiam download das suas gravações, ClipAI para clipes de destaques automáticos e armazenamento estendido."
+        },
+        {
+          "question": "O YouTube salva as lives automaticamente?",
+          "answer": "O YouTube pode salvar replays de lives no seu canal, mas criadores às vezes os excluem, ou as streams falham no processamento, ou os canais ficam privados. O LiveStreamRecorder oferece um backup independente — suas gravações de lives do YouTube são capturadas e armazenadas separadamente para que você sempre tenha uma cópia do seu conteúdo."
+        },
+        {
+          "question": "Posso transformar minhas gravações de lives do YouTube em Shorts?",
+          "answer": "Sim. Usuários premium podem usar o ClipAI para transformar automaticamente gravações de lives do YouTube em clipes curtos de destaque perfeitos para YouTube Shorts, TikTok ou Reels. É a forma mais fácil de reutilizar seu conteúdo ao vivo e aumentar seus inscritos."
+        },
+        {
+          "question": "O LiveStreamRecorder é um gravador online do YouTube?",
+          "answer": "Sim. O LiveStreamRecorder é um gravador do YouTube totalmente online — tudo funciona na nuvem. Sem software para baixar, sem extensão de navegador. Basta conectar seu canal e suas lives do YouTube são gravadas automaticamente de qualquer dispositivo."
+        },
+        {
+          "question": "Como capturo minha live do YouTube se esquecer de pressionar gravar?",
+          "answer": "É exatamente isso que o LiveStreamRecorder resolve. Depois que seu canal é conectado, cada live do YouTube que você inicia é capturada automaticamente. Você nunca precisa se lembrar de pressionar gravar — suas lives sempre ficam salvas."
+        }
+      ]
+    },
+    "kick": {
+      "title": "Gravações de Streams do Kick",
+      "description": "Assista gravações de streams do Kick de criadores no LiveStreamRecorder. Assista VODs do Kick, baixe streams e descubra novos streamers.",
+      "keywords": [
+        "gravação kick",
+        "vod kick",
+        "download stream kick",
+        "gravar stream kick",
+        "arquivo kick",
+        "salvar stream kick"
+      ]
+    },
+    "afreecatv": {
+      "title": "Gravações de Streams da AfreecaTV",
+      "description": "Assista gravações de streams da AfreecaTV de criadores no LiveStreamRecorder. Assista VODs da AfreecaTV e baixe streams coreanas.",
+      "keywords": [
+        "gravação afreecatv",
+        "vod afreecatv",
+        "download afreecatv",
+        "gravação stream coreana",
+        "arquivo afreecatv",
+        "salvar stream afreecatv"
+      ]
+    },
+    "pandalive": {
+      "title": "Gravações de Streams do Pandalive",
+      "description": "Assista gravações de streams do Pandalive de criadores no LiveStreamRecorder. Assista VODs do Pandalive e baixe streams coreanas.",
+      "keywords": [
+        "gravação pandalive",
+        "vod pandalive",
+        "download pandalive",
+        "gravação stream coreana",
+        "arquivo pandalive",
+        "salvar stream pandalive"
+      ]
+    },
+    "bigo": {
+      "title": "Gravações do Bigo Live",
+      "description": "Assista e baixe gravações do Bigo Live no LiveStreamRecorder. Suas lives do Bigo são capturadas automaticamente na nuvem — sem tela preta, sem gravador de tela. O gravador do Bigo Live mais fácil para criadores.",
+      "keywords": [
+        "gravador bigo",
+        "gravador bigo live",
+        "gravar bigo live",
+        "gravador de tela bigo live",
+        "gravar tela bigo live",
+        "gravador de tela para bigo live",
+        "gravar tela bigo",
+        "tela preta gravação bigo",
+        "gravador bigo live tela preta",
+        "gravar bigo tela preta",
+        "gravador de tela bigo tela preta",
+        "gravar bigo tela preta",
+        "salvar bigo live"
+      ],
+      "faqs": [
+        {
+          "question": "Como gravo minhas lives do Bigo?",
+          "answer": "Com o LiveStreamRecorder, suas lives do Bigo são gravadas automaticamente na nuvem. Cadastre-se, adicione seu nome de usuário do Bigo Live e cada vez que você entra ao vivo é capturado. Sem APK de gravador do Bigo Live para instalar, sem gravar a tela — tudo acontece no servidor."
+        },
+        {
+          "question": "Por que aparece tela preta ao gravar o Bigo Live?",
+          "answer": "Problemas de tela preta são comuns ao usar gravadores de tela no Bigo Live. O LiveStreamRecorder evita isso completamente porque captura suas lives do Bigo diretamente na nuvem — sem tela preta, sem gambiarras, sem aplicativos de gravação de tela não confiáveis."
+        },
+        {
+          "question": "Como resolvo o problema de tela preta do gravador de tela do Bigo Live?",
+          "answer": "A solução mais fácil é abandonar a gravação de tela de vez. O LiveStreamRecorder é um gravador do Bigo na nuvem que captura suas lives no servidor em alta qualidade. Sem problemas de tela preta, sem aplicativos para configurar — basta adicionar seu nome de usuário e suas lives do Bigo são gravadas automaticamente."
+        },
+        {
+          "question": "Preciso de um gravador de tela para o Bigo Live?",
+          "answer": "Não. Gravadores de tela para Bigo Live frequentemente resultam em tela preta ou capturas de baixa qualidade. O LiveStreamRecorder é um gravador do Bigo Live na nuvem que captura suas streams automaticamente em alta qualidade — sem aplicativo para instalar, sem tela preta."
+        },
+        {
+          "question": "Posso gravar minhas lives do Bigo gratuitamente?",
+          "answer": "Sim. Cadastre-se no LiveStreamRecorder gratuitamente e comece a gravar suas lives do Bigo agora mesmo. Os planos premium desbloqueiam download das suas gravações, ClipAI para clipes de destaques automáticos e armazenamento estendido."
+        },
+        {
+          "question": "Posso baixar minhas gravações do Bigo Live?",
+          "answer": "Sim. Usuários premium podem baixar suas gravações do Bigo Live como arquivos de vídeo para visualização offline. Cada gravação também pode ser assistida instantaneamente no navegador sem precisar baixar."
+        },
+        {
+          "question": "Posso transformar minhas gravações do Bigo Live em clipes curtos?",
+          "answer": "Sim. Usuários premium podem usar o ClipAI para transformar automaticamente suas gravações do Bigo Live em clipes curtos de destaque prontos para TikTok, YouTube Shorts ou Reels. É uma ótima forma de reutilizar seu conteúdo ao vivo e crescer seus seguidores em outras plataformas."
+        }
+      ]
+    }
+  },
+  "hero": {
+    "title": {
+      "all": "Gravações",
+      "tiktok": "Gravações do TikTok",
+      "twitch": "Gravações da Twitch",
+      "youtube": "Gravações do YouTube",
+      "kick": "Gravações do Kick",
+      "afreecatv": "Gravações da AfreecaTV",
+      "pandalive": "Gravações do Pandalive",
+      "bigo": "Gravações do Bigo"
+    },
+    "subtitle": {
+      "all": "Assista gravações de lives de criadores na nossa plataforma. Baixe e descubra novos conteúdos.",
+      "tiktok": "Assista gravações de lives do TikTok de criadores na nossa plataforma. Baixe e descubra novos conteúdos.",
+      "twitch": "Assista gravações de streams da Twitch de criadores na nossa plataforma. Baixe e descubra novos conteúdos.",
+      "youtube": "Assista gravações de lives do YouTube de criadores na nossa plataforma. Baixe e descubra novos conteúdos.",
+      "kick": "Assista gravações de streams do Kick de criadores na nossa plataforma. Baixe e descubra novos conteúdos.",
+      "afreecatv": "Assista gravações da AfreecaTV de criadores na nossa plataforma. Baixe e descubra novos conteúdos.",
+      "pandalive": "Assista gravações do Pandalive de criadores na nossa plataforma. Baixe e descubra novos conteúdos.",
+      "bigo": "Assista gravações do Bigo de criadores na nossa plataforma. Baixe e descubra novos conteúdos."
+    }
+  },
+  "cta": {
+    "title": {
+      "all": "Grave Suas Lives Hoje",
+      "tiktok": "Grave Lives do TikTok",
+      "twitch": "Grave Streams e VODs da Twitch",
+      "youtube": "Grave Lives do YouTube",
+      "kick": "Grave Streams do Kick",
+      "pandalive": "Grave Streams do Pandalive",
+      "afreecatv": "Grave Streams da AfreecaTV",
+      "bigo": "Grave Streams do Bigo"
+    },
+    "subtitle": {
+      "all": "Salve automaticamente suas streams do TikTok, Twitch, YouTube e Kick. Baixe gravações, crie clipes curtos e faça sua audiência crescer.",
+      "tiktok": "Salve automaticamente suas lives do TikTok. Baixe gravações, crie clipes curtos com o ClipAI e aumente seus seguidores.",
+      "twitch": "Salve automaticamente suas streams da Twitch. Baixe VODs, crie clipes curtos com o ClipAI e faça seu canal crescer.",
+      "youtube": "Salve automaticamente suas lives do YouTube. Baixe gravações, transforme-as em Shorts com o ClipAI e aumente seus inscritos.",
+      "kick": "Salve automaticamente suas streams do Kick. Baixe gravações, crie clipes curtos com o ClipAI e faça sua audiência crescer.",
+      "pandalive": "Salve automaticamente suas streams do Pandalive. Baixe gravações e crie clipes curtos com o ClipAI.",
+      "afreecatv": "Salve automaticamente suas streams da AfreecaTV. Baixe gravações e crie clipes curtos com o ClipAI.",
+      "bigo": "Salve automaticamente suas streams do Bigo. Baixe gravações e crie clipes curtos com o ClipAI."
+    },
+    "button": "Comece a Gravar Grátis"
+  },
+  "empty": {
+    "title": "Nenhuma gravação ainda",
+    "description": {
+      "all": "Seja o primeiro criador a gravar uma stream!",
+      "tiktok": "Seja o primeiro criador a gravar uma live do TikTok!",
+      "twitch": "Seja o primeiro criador a gravar uma stream da Twitch!",
+      "youtube": "Seja o primeiro criador a gravar uma live do YouTube!",
+      "kick": "Seja o primeiro criador a gravar uma stream do Kick!",
+      "afreecatv": "Seja o primeiro criador a gravar uma stream da AfreecaTV!",
+      "pandalive": "Seja o primeiro criador a gravar uma stream do Pandalive!",
+      "bigo": "Seja o primeiro criador a gravar uma stream do Bigo!"
+    },
+    "button": "Começar"
+  },
+  "about": {
+    "all": "## Gravações de Lives\n\nAssista gravações de criadores que usam o LiveStreamRecorder para salvar suas lives.\n\n### O Que Você Encontra Aqui\n\nCriadores usam nossa plataforma para gravar automaticamente suas lives do TikTok, streams da Twitch, transmissões do YouTube e streams do Kick. Assista ao conteúdo deles e descubra novos criadores.\n\n### Assista e Baixe\n\nCada gravação está disponível para assistir instantaneamente. Usuários premium podem baixar gravações para visualização offline.\n\n### Para Criadores\n\nQuer suas streams aqui? Cadastre-se gratuitamente e comece a gravar. Cole a URL do seu canal, entre ao vivo e salvamos tudo automaticamente. Use o ClipAI para transformar suas streams em clipes curtos e fazer sua audiência crescer.\n\n### Plataformas Suportadas\n\nSuportamos gravação de lives do TikTok, salvamento de VODs da Twitch, gravação de lives do YouTube, gravação de streams do Kick, gravação da AfreecaTV e gravação do Pandalive. Mais plataformas em breve.",
+    "tiktok": "## Gravações de Lives do TikTok\n\nAssista gravações de lives do TikTok de criadores que usam o LiveStreamRecorder para salvar suas próprias lives. Cada live do TikTok é capturada automaticamente e armazenada para visualização sob demanda.\n\n### Lives do TikTok Salvas Automaticamente\n\nAs lives do TikTok desaparecem no momento em que terminam — não há forma nativa de salvá-las. Criadores usam nosso gravador do TikTok para capturar suas próprias lives automaticamente na nuvem. Sem gravador de tela para TikTok, sem celular ligado a noite toda. Basta adicionar seu nome de usuário e suas lives são gravadas.\n\n### Assista e Baixe Suas Gravações do TikTok\n\nCada gravação de live do TikTok está disponível para assistir instantaneamente no navegador. Usuários premium podem baixar suas gravações do TikTok como arquivos de vídeo para visualização offline — ideal para reutilizar seu próprio conteúdo ou manter um arquivo pessoal.\n\n### Grave Suas Lives do TikTok em Qualquer Dispositivo\n\nQuer saber como gravar suas lives do TikTok em um computador ou notebook? O LiveStreamRecorder funciona inteiramente na nuvem. Sem nada para instalar — sem aplicativo desktop, sem extensão de navegador. Seja no PC, notebook ou celular, suas lives do TikTok são capturadas em alta qualidade automaticamente.\n\n### Transforme Suas Lives em Clipes com o ClipAI\n\nQuer transformar suas gravações de lives do TikTok em clipes curtos? O ClipAI analisa suas lives gravadas e cria clipes de destaque que você pode publicar como vídeos do TikTok, Reels ou Shorts. É a melhor forma de crescer seus seguidores com seu conteúdo ao vivo.\n\n### Seu Gravador do TikTok — Sem Precisar Gravar a Tela\n\nEsqueça aplicativos de gravação de tela não confiáveis e ferramentas de captura no desktop. O LiveStreamRecorder é um gravador do TikTok desenvolvido especificamente para isso, que captura suas lives no servidor. Cadastre-se gratuitamente, adicione seu nome de usuário do TikTok e nunca mais perca uma live.",
+    "twitch": "## Gravações de Streams da Twitch\n\nAssista gravações de streams da Twitch de criadores que usam o LiveStreamRecorder para salvar suas próprias streams. Cada live da Twitch é capturada automaticamente e armazenada permanentemente.\n\n### VODs da Twitch Que Nunca Expiram\n\nOs VODs da Twitch expiram após 14 a 60 dias e são excluídos se você deletar seu canal. Nosso gravador da Twitch salva suas streams permanentemente na nuvem — sem expiração, sem arquivos excluídos. Seu conteúdo continua sendo seu.\n\n### Assista e Baixe Suas Gravações da Twitch\n\nCada gravação de stream da Twitch está disponível para assistir instantaneamente no navegador — sem anúncios, sem interrupções. Usuários premium podem baixar suas gravações da Twitch como arquivos de vídeo para visualização offline ou reutilização de conteúdo.\n\n### Grave Suas Streams da Twitch — Sem Gravador de Tela\n\nEsqueça rodar software de captura de tela junto com o OBS. O LiveStreamRecorder é um gravador de streams da Twitch na nuvem que captura suas lives no servidor. Sem carga extra na CPU, sem aplicativo desktop, sem Bandicam rodando em segundo plano. Seja transmitindo do PC, console ou celular, suas streams da Twitch são gravadas automaticamente em alta qualidade.\n\n### Transforme Suas Streams em Clipes com o ClipAI\n\nQuer transformar suas gravações da Twitch em clipes curtos? O ClipAI analisa suas streams gravadas e cria clipes de destaque prontos para publicar como YouTube Shorts, vídeos do TikTok ou Reels. Faça sua audiência crescer em outras plataformas com seu conteúdo da Twitch.\n\n### O Melhor Gravador da Twitch para Criadores\n\nO LiveStreamRecorder foi desenvolvido especificamente para salvar streams da Twitch. Cadastre-se gratuitamente, conecte seu canal e nunca mais perca uma stream por VODs expirados. Cada live é gravada automaticamente — seu arquivo permanente da Twitch.",
+    "youtube": "## Gravações de Lives do YouTube\n\nAssista gravações de lives do YouTube de criadores que usam o LiveStreamRecorder para salvar suas próprias lives. Cada live do YouTube é capturada automaticamente e armazenada para visualização sob demanda.\n\n### Lives do YouTube Salvas Automaticamente\n\nReplays de lives do YouTube podem desaparecer — criadores as excluem, streams falham no processamento ou canais ficam privados. Nosso gravador do YouTube captura suas lives automaticamente na nuvem para que você sempre tenha uma cópia do seu conteúdo.\n\n### Assista e Baixe Suas Gravações do YouTube\n\nCada gravação de live do YouTube está disponível para assistir instantaneamente no navegador. Usuários premium podem baixar suas gravações como arquivos de vídeo para visualização offline — ideal para reutilizar seu conteúdo ao vivo.\n\n### Grave Suas Lives do YouTube — Sem Gravador de Tela\n\nEsqueça software tradicional de gravação de tela para YouTube. O LiveStreamRecorder é um gravador online do YouTube que captura suas lives no servidor. Sem aplicativo desktop, sem extensão de navegador, sem computador ligado a noite toda. Seja no PC, notebook ou celular, suas lives do YouTube são gravadas em alta qualidade.\n\n### Transforme Suas Lives em YouTube Shorts com o ClipAI\n\nQuer transformar suas gravações de lives do YouTube em Shorts? O ClipAI analisa suas lives gravadas e cria clipes de destaque prontos para publicar. É a melhor forma de crescer seus inscritos com seu conteúdo ao vivo.\n\n### O Melhor Gravador de Lives do YouTube para Criadores\n\nO LiveStreamRecorder foi desenvolvido especificamente para capturar lives do YouTube. Cadastre-se gratuitamente, conecte seu canal e nunca mais perca uma live. Cada stream é gravada automaticamente — mesmo se você esquecer de pressionar gravar.",
+    "kick": "## Gravações de Streams do Kick\n\nAssista gravações do Kick de criadores que usam o LiveStreamRecorder para salvar suas streams.\n\n### VODs do Kick Salvos\n\nO Kick está crescendo rápido. Criadores usam nosso gravador do Kick para salvar suas streams e construir sua biblioteca de conteúdo. Assista ao conteúdo deles aqui.\n\n### Assista Gravações do Kick\n\nCada gravação do Kick está disponível para assistir instantaneamente. Usuários premium podem baixar VODs do Kick para visualização offline.\n\n### Grave Suas Streams do Kick\n\nQuer suas streams do Kick aqui? Cadastre-se gratuitamente e adicione seu canal. Gravamos cada transmissão automaticamente. Use o ClipAI para transformar suas streams em clipes curtos e fazer sua audiência crescer.\n\n### Gravador de Streams do Kick\n\nGravação automática para cada stream do Kick. Sem precisar de software. Basta entrar ao vivo e salvamos tudo.",
+    "pandalive": "## Gravações do Pandalive\n\nAssista gravações do Pandalive de criadores que usam o LiveStreamRecorder para salvar suas streams.\n\n### Streams Coreanas Salvas\n\nCriadores do Pandalive usam nosso gravador para salvar suas transmissões. Assista conteúdo coreano aqui.\n\n### Assista Gravações do Pandalive\n\nCada gravação do Pandalive está disponível para assistir instantaneamente. Usuários premium podem baixar gravações para visualização offline.\n\n### Grave Suas Streams do Pandalive\n\nQuer suas streams aqui? Cadastre-se gratuitamente e adicione seu canal. Gravamos cada transmissão automaticamente.",
+    "afreecatv": "## Gravações da AfreecaTV\n\nAssista gravações da AfreecaTV de criadores que usam o LiveStreamRecorder para salvar suas streams.\n\n### Streams Coreanas Salvas\n\nCriadores da AfreecaTV usam nosso gravador para salvar suas transmissões. Assista conteúdo coreano aqui.\n\n### Assista Gravações da AfreecaTV\n\nCada gravação da AfreecaTV está disponível para assistir instantaneamente. Usuários premium podem baixar gravações para visualização offline.\n\n### Grave Suas Streams da AfreecaTV\n\nQuer suas streams aqui? Cadastre-se gratuitamente e adicione seu canal. Gravamos cada transmissão automaticamente.",
+    "bigo": "## Gravações do Bigo Live\n\nAssista gravações do Bigo Live de criadores que usam o LiveStreamRecorder para salvar suas próprias lives. Cada live do Bigo é capturada automaticamente na nuvem e armazenada para visualização sob demanda.\n\n### Lives do Bigo Salvas Automaticamente\n\nAs lives do Bigo desaparecem quando terminam, e aplicativos de gravação de tela frequentemente causam tela preta. Nosso gravador do Bigo Live captura suas lives diretamente na nuvem — sem tela preta, sem aplicativos de gravação de tela, sem complicação. Basta adicionar seu nome de usuário e suas lives são gravadas.\n\n### Assista e Baixe Suas Gravações do Bigo\n\nCada gravação do Bigo Live está disponível para assistir instantaneamente no navegador. Usuários premium podem baixar suas gravações como arquivos de vídeo para visualização offline — ideal para reutilizar seu conteúdo ao vivo.\n\n### Sem Tela Preta — Nunca\n\nCansado de problemas de tela preta ao tentar gravar suas lives do Bigo? O LiveStreamRecorder captura tudo no servidor em alta qualidade. Sem gravador de tela para Bigo Live, sem downloads de APK, sem frustração com tela preta. Simplesmente funciona.\n\n### Transforme Suas Lives do Bigo em Clipes com o ClipAI\n\nQuer transformar suas gravações do Bigo Live em clipes curtos? O ClipAI analisa suas lives gravadas e cria destaques prontos para publicar como vídeos do TikTok, YouTube Shorts ou Reels. Faça sua audiência crescer além do Bigo.\n\n### O Gravador do Bigo Live Mais Fácil para Criadores\n\nO LiveStreamRecorder é um gravador do Bigo na nuvem — sem aplicativo para instalar, sem celular ligado, sem tela preta. Cadastre-se gratuitamente, adicione seu nome de usuário do Bigo e nunca mais perca uma live."
+  },
+  "jsonLd": {
+    "name": {
+      "all": "Gravações de Lives",
+      "tiktok": "Gravações de Lives do TikTok",
+      "twitch": "Gravações de Streams da Twitch",
+      "youtube": "Gravações de Lives do YouTube",
+      "kick": "Gravações de Streams do Kick",
+      "afreecatv": "Gravações de Streams da AfreecaTV",
+      "pandalive": "Gravações de Streams do Pandalive",
+      "bigo": "Gravações de Streams do Bigo"
+    },
+    "description": {
+      "all": "Assista gravações de lives de criadores no LiveStreamRecorder.",
+      "tiktok": "Assista gravações de lives do TikTok de criadores no LiveStreamRecorder.",
+      "twitch": "Assista gravações de streams da Twitch de criadores no LiveStreamRecorder.",
+      "youtube": "Assista gravações de lives do YouTube de criadores no LiveStreamRecorder.",
+      "kick": "Assista gravações de streams do Kick de criadores no LiveStreamRecorder.",
+      "afreecatv": "Assista gravações da AfreecaTV de criadores no LiveStreamRecorder.",
+      "pandalive": "Assista gravações do Pandalive de criadores no LiveStreamRecorder.",
+      "bigo": "Assista gravações do Bigo de criadores no LiveStreamRecorder."
+    },
+    "streamTitle": "Stream de {nickname} - {date}",
+    "streamDescription": {
+      "tiktok": "Gravação de live do TikTok de {nickname}",
+      "twitch": "Gravação de stream da Twitch de {nickname}",
+      "youtube": "Gravação de live do YouTube de {nickname}",
+      "kick": "Gravação de stream do Kick de {nickname}",
+      "afreecatv": "Gravação da AfreecaTV de {nickname}",
+      "pandalive": "Gravação do Pandalive de {nickname}",
+      "bigo": "Gravação do Bigo de {nickname}",
+      "unknown": "Gravação de live de {nickname}"
+    }
+  },
+  "recordedOn": "Gravado em {date}",
+  "faq": "Perguntas Frequentes",
+  "country": {
+    "title": "{platform} de {country}",
+    "description": "Assista {platform} de {country} que gravam suas lives no LiveStreamRecorder. Assista às gravações e descubra novos conteúdos.",
+    "heroTitle": "{platform} em {country}",
+    "heroSubtitle": "Assista os últimos vídeos de {platform} de {country}.",
+    "empty": {
+      "title": "Nenhuma Gravação Ainda",
+      "description": "Nenhum {platform} de {country} tem gravações ainda."
+    },
+    "browseByCountry": "Assistir {platform} por País",
+    "browseLink": "Assista os últimos vídeos de {platform} de {country}",
+    "backToPlatform": "Voltar para todos os {platform}"
+  }
+}

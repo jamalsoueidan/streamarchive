@@ -1,0 +1,13 @@
+{
+  "title": "Explorar",
+  "description": "Explora grabaciones de otros creadores",
+  "emptyFiltered": {
+    "title": "Ninguna grabación coincide con tus filtros",
+    "description": "Intenta ajustar o limpiar tus filtros"
+  },
+  "emptyDefault": {
+    "title": "No hay grabaciones disponibles",
+    "description": "-"
+  },
+  "noMoreToLoad": "Has llegado al final"
+}

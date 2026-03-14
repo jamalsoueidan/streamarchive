@@ -1,0 +1,14 @@
+{
+  "title": "Library ({count})",
+  "description": "Manage your creators",
+  "disabledHint": "Disabled items have no recordings yet",
+  "emptyFiltered": {
+    "title": "No creators match your filters",
+    "description": "Try adjusting or clearing your filters"
+  },
+  "emptyDefault": {
+    "title": "You haven't added any creators yet",
+    "description": "Browse Friends to discover creators on our platform"
+  },
+  "noMoreToLoad": "You've reached the end"
+}

@@ -1,0 +1,13 @@
+{
+  "title": "フレンド",
+  "description": "プラットフォームの他のクリエイターを発見しましょう",
+  "emptyFiltered": {
+    "title": "フィルターに一致するクリエイターがいません",
+    "description": "フィルターを調整またはクリアしてみてください"
+  },
+  "emptyDefault": {
+    "title": "クリエイターが見つかりません",
+    "description": "..."
+  },
+  "noMoreToLoad": "これ以上ありません"
+}

@@ -1,7 +1,7 @@
 {
   "title": "Premium",
-  "descriptionPremium": "You have access to everything LiveStreamRecorder has to offer",
-  "descriptionNonPremium": "Get instant access to everything LiveStreamRecorder has to offer",
+  "descriptionPremium": "You have access to everything StreamArchive has to offer",
+  "descriptionNonPremium": "Get instant access to everything StreamArchive has to offer",
   "descriptionShort": "Get instant access to everything",
 
   "billingPeriodMonthly": "monthly",
@@ -48,7 +48,7 @@
   "activeMessage": "You are on the {billingPeriod} plan. Next billing date: {renewDate}.",
   "lifetimeMessage": "You have lifetime access to all premium features. Thank you for your support!",
   "cancelSubscription": "Cancel subscription",
-  "supportMessage": "LiveStreamRecorder is a one-person project. Your support helps keep the servers running and new features coming. Thank you!",
+  "supportMessage": "StreamArchive is a one-person project. Your support helps keep the servers running and new features coming. Thank you!",
 
   "choosePlan": "Choose Your Plan",
   "perMonth": "${price}/mo",

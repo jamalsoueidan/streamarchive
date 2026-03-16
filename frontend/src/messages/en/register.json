@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Create Account",
-    "description": "Create a free LiveStreamRecorder account to automatically record live streams from your favorite creators."
+    "description": "Create a free StreamArchive account to automatically record live streams from your favorite creators."
   },
   "title": "Create an account",
   "subtitle": "Join us and start exploring",
@@ -27,9 +27,9 @@
   "terms": {
     "agree": "I agree to the",
     "link": "Terms and Conditions",
-    "text": "By continuing, you agree to Live Stream Recorder's",
+    "text": "By continuing, you agree to Stream Archive's",
     "tosLink": "Terms of Service",
-    "and": "and confirm that you have read Live Stream Recorder's",
+    "and": "and confirm that you have read Stream Archive's",
     "privacyLink": "Privacy Policy"
   },
   "submit": {

@@ -8,20 +8,16 @@ import {
   Drawer,
   Flex,
   Group,
-  Menu,
   NavLink,
   Stack,
   Title,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-import { IconChevronDown, IconWorld } from "@tabler/icons-react";
 import { useLocale, useTranslations } from "next-intl";
-import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { redirectLoginUri } from "../login/components/login-form";
-import { navConfig } from "./nav";
 
 export function Header() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -74,7 +70,7 @@ export function Header() {
                     display: "inline-flex",
                     alignItems: "center",
                     gap: 4,
-                    background: "#e53935",
+                    background: "#52FF94",
                     color: "white",
                     padding: "1px 6px",
                     borderRadius: 4,
@@ -132,7 +128,7 @@ export function Header() {
             </Group>
 
             <Group gap={12} visibleFrom="md">
-              <Menu>
+              {/*<Menu>
                 <Menu.Target>
                   <Button
                     variant="subtle"
@@ -164,7 +160,7 @@ export function Header() {
                       </Menu.Item>
                     ))}
                 </Menu.Dropdown>
-              </Menu>
+              </Menu> */}
 
               {isLoggedIn ? (
                 <Button
@@ -172,8 +168,7 @@ export function Header() {
                   href={redirectLoginUri}
                   onClick={handleDashboardClick}
                   loading={dashboardLoading}
-                  variant="gradient"
-                  gradient={{ from: "#6366f1", to: "#a855f7", deg: 135 }}
+                  color="#1f1f1f"
                   radius="md"
                 >
                   {t("header.dashboard")}
@@ -286,7 +281,7 @@ export function Header() {
             onClick={closeDrawer}
           />
 
-          <NavLink
+          {/*<NavLink
             label={t("header.language")}
             childrenOffset={28}
             defaultOpened={false}
@@ -311,7 +306,7 @@ export function Header() {
                 active={locale === lang.code}
               />
             ))}
-          </NavLink>
+          </NavLink> */}
 
           <Group gap={12} mt="xl">
             {isLoggedIn ? (

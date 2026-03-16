@@ -179,7 +179,7 @@ export default async function LandingPage() {
                 fontSize: "clamp(2.2rem, 6vw, 4.4rem)",
                 fontWeight: 700,
                 letterSpacing: "-0.03em",
-                background: "linear-gradient(135deg, #6366f1, #a855f7)",
+                background: "linear-gradient(135deg, #54ff5b, #b7ff6b)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
               }}
@@ -207,7 +207,8 @@ export default async function LandingPage() {
             href="/register"
             size="responsive"
             variant="gradient"
-            gradient={{ from: "#6366f1", to: "#a855f7", deg: 135 }}
+            c="black"
+            gradient={{ from: "#54ff5b", to: "#b7ff6b", deg: 135 }}
             radius="lg"
             style={{
               outline: "2px solid rgba(168, 85, 247, 0.5)",

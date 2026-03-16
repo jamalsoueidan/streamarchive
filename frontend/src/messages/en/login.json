@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Sign In",
-    "description": "Sign in to your LiveStreamRecorder account to access your recordings and followed streamers."
+    "description": "Sign in to your StreamArchive account to access your recordings and followed streamers."
   },
   "title": "Welcome back",
   "subtitle": "Sign in to continue to your account",
@@ -26,9 +26,9 @@
     "facebook": "Continue with Facebook"
   },
   "terms": {
-    "text": "By continuing, you agree to Live Stream Recorder's",
+    "text": "By continuing, you agree to Stream Archive's",
     "tosLink": "Terms of Service",
-    "and": "and confirm that you have read Live Stream Recorder's",
+    "and": "and confirm that you have read Stream Archive's",
     "privacyLink": "Privacy Policy"
   },
   "errors": {

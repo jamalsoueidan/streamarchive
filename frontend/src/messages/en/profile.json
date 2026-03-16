@@ -3,8 +3,8 @@
     "title": "{nickname} (@{username}) Videos & Recordings",
     "notFoundTitle": "Creator Not Found",
     "notFoundDescription": "This creator profile could not be found.",
-    "description": "Watch {nickname}'s {platform} live recordings and clips. {nickname} uses Live Stream Recorder to save and share their live streams.",
-    "ogTitle": "{nickname} — Videos & Clips | Live Stream Recorder",
+    "description": "Watch {nickname}'s {platform} live recordings and clips. {nickname} uses Stream Archive to save and share their live streams.",
+    "ogTitle": "{nickname} — Videos & Clips | Stream Archive",
     "twitterTitle": "{nickname} — {platform} Videos & Clips",
     "keywords": "{nickname} videos, {nickname} clips, {nickname} {platform}, watch {nickname}, {nickname} live stream, {nickname} recordings"
   },

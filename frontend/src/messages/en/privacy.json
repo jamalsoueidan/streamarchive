@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Privacy Policy",
-    "description": "Privacy Policy for LiveStreamRecorder. Learn how we collect, use, and protect your data."
+    "description": "Privacy Policy for StreamArchive. Learn how we collect, use, and protect your data."
   },
   "header": {
     "title": "Privacy Policy",
@@ -13,8 +13,8 @@
   },
   "dataController": {
     "title": "Data Controller",
-    "content": "LiveStreamRecorder.com is the data controller responsible for your personal data. If you have any questions about this Privacy Policy or our data practices, you can contact us at:",
-    "email": "contact@livestreamrecorder.com"
+    "content": "StreamArchive.com is the data controller responsible for your personal data. If you have any questions about this Privacy Policy or our data practices, you can contact us at:",
+    "email": "contact@streamarchive.com"
   },
   "whatWeCollect": {
     "title": "What We Collect",
@@ -130,12 +130,12 @@
       "withdraw": "Right to Withdraw Consent",
       "withdrawDesc": "Withdraw consent at any time"
     },
-    "footer": "To exercise any of these rights, contact us at contact@livestreamrecorder.com"
+    "footer": "To exercise any of these rights, contact us at contact@streamarchive.com"
   },
   "children": {
     "title": "Children's Privacy",
     "content": "Our Service is not intended for anyone under the age of 18 years old. We do not knowingly collect personal information from children under 18.",
-    "contact": "If you believe that a child has provided us with personal information, please contact us immediately at contact@livestreamrecorder.com, and we will take steps to delete such information from our systems."
+    "contact": "If you believe that a child has provided us with personal information, please contact us immediately at contact@streamarchive.com, and we will take steps to delete such information from our systems."
   },
   "security": {
     "title": "Data Security",
@@ -149,7 +149,7 @@
   "contact": {
     "title": "Contact Us",
     "content": "If you have any questions about this Privacy Policy, your data, or your rights, please contact us:",
-    "email": "contact@livestreamrecorder.com",
+    "email": "contact@streamarchive.com",
     "footer": "You also have the right to lodge a complaint with a supervisory authority (such as the Danish Data Protection Agency - Datatilsynet) if you believe your data protection rights have been violated."
   },
   "footerNote": "If we update this policy, we will post changes here with a new date. Continued use of the Service after changes constitutes acceptance of the updated policy."

@@ -1,6 +1,7 @@
 import { DeploymentChecker } from "@/app/components/deployment-checker";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
+import "../globals.css";
 
 export default async function LocaleLayout({
   children,

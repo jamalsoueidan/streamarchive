@@ -1,3 +1,4 @@
+import "@mantine/charts/styles.css";
 import {
   ColorSchemeScript,
   DirectionProvider,
@@ -9,13 +10,12 @@ import "@mantine/core/styles.css";
 import { ModalsProvider } from "@mantine/modals";
 import { Notifications } from "@mantine/notifications";
 import "@mantine/notifications/styles.css";
-import '@mantine/charts/styles.css';
 import { isbot } from "isbot";
 import type { Metadata, Viewport } from "next";
 import { headers } from "next/headers";
 import Script from "next/script";
 import { NuqsAdapter } from "nuqs/adapters/next/app";
-import "./globals.css";
+
 import { FingerprintProvider } from "./providers/fingerprint-provider";
 
 export const theme = createTheme({

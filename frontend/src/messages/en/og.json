@@ -1,5 +1,5 @@
 {
-  "brand": "LiveStreamRecorder",
+  "brand": "StreamArchive",
   "tagline": "Never miss a stream",
   "defaultDescription": "Live streams are recorded automatically so you can watch anytime",
   "creators": {
@@ -47,7 +47,7 @@
     }
   },
   "home": {
-    "title": "Live Stream Recorder",
+    "title": "Stream Archive",
     "subtitle": "Your favorite streams recorded automatically"
   }
 }

@@ -20,8 +20,7 @@ import {
   getLatestRecordings,
   getRandomClips,
 } from "./cache";
-import { ClipSlider } from "./components/clip-slider";
-import { PlatformBadges } from "./components/platform-badge";
+import { PlatformAnimation } from "./components/platform-animation";
 import { CreatorsSlider } from "./creators/components/creators-slider";
 import { RecordingsSimpleGrid } from "./recordings/components/recordings-simple-grid";
 
@@ -138,6 +137,7 @@ export default async function LandingPage() {
             height: 700,
             zIndex: 0,
             pointerEvents: "none",
+            border: "1px solid rgba(99, 102, 241, 0.2)",
           }}
         >
           <Image
@@ -149,79 +149,79 @@ export default async function LandingPage() {
           />
         </div>
 
-        <PlatformBadges href={`/recordings/`} activePlatform={"type"} />
+        <div style={{ position: "relative" }}>
+          <PlatformAnimation />
 
-        <Stack
-          align="center"
-          style={{ position: "relative", zIndex: 1 }}
-          mt="md"
-        >
-          <div>
-            <Title
-              order={1}
+          <Stack
+            align="center"
+            style={{ position: "relative", zIndex: 1 }}
+            mt="md"
+          >
+            <div>
+              <Title
+                order={1}
+                ta="center"
+                style={{
+                  fontSize: "clamp(1rem, 6vw, 1.4rem)",
+                  fontWeight: 700,
+                  letterSpacing: "-0.03em",
+                  background:
+                    "linear-gradient(135deg, #ffffff 0%, #e2e8f0 50%, #94a3b8 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                }}
+              >
+                #1 {t("hero.title")}
+              </Title>
+              <Title
+                order={2}
+                ta="center"
+                style={{
+                  fontSize: "clamp(2.2rem, 6vw, 4.4rem)",
+                  fontWeight: 700,
+                  letterSpacing: "-0.03em",
+                  background: "linear-gradient(135deg, #54ff5b, #b7ff6b)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                }}
+              >
+                {t("hero.subtitle")}
+              </Title>
+            </div>
+
+            <Text
+              size="xl"
               ta="center"
+              c="#cbd5e1"
+              maw={800}
               style={{
-                fontSize: "clamp(2.4rem, 6vw, 5.4rem)",
-                fontWeight: 700,
-                letterSpacing: "-0.03em",
-                background:
-                  "linear-gradient(135deg, #ffffff 0%, #e2e8f0 50%, #94a3b8 100%)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
+                fontSize: "clamp(1rem, 2vw, 1.45rem)",
+                lineHeight: 1.7,
+                color: "#94a3b8",
               }}
             >
-              {t("hero.title")}
-            </Title>
-            <Title
-              order={2}
-              ta="center"
+              {t("hero.description")}
+            </Text>
+
+            <Button
+              component="a"
+              href="/register"
+              size="responsive"
+              variant="gradient"
+              c="black"
+              gradient={{ from: "#54ff5b", to: "#b7ff6b", deg: 135 }}
+              radius="lg"
               style={{
-                fontSize: "clamp(2.2rem, 6vw, 4.4rem)",
-                fontWeight: 700,
-                letterSpacing: "-0.03em",
-                background: "linear-gradient(135deg, #54ff5b, #b7ff6b)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
+                outline: "2px solid rgba(168, 85, 247, 0.5)",
+                outlineOffset: "3px",
               }}
+              mt="lg"
             >
-              {t("hero.subtitle")}
-            </Title>
-          </div>
-
-          <Text
-            size="xl"
-            ta="center"
-            c="#cbd5e1"
-            maw={800}
-            style={{
-              fontSize: "clamp(1rem, 2vw, 1.45rem)",
-              lineHeight: 1.7,
-              color: "#94a3b8",
-            }}
-          >
-            {t("hero.description")}
-          </Text>
-
-          <Button
-            component="a"
-            href="/register"
-            size="responsive"
-            variant="gradient"
-            c="black"
-            gradient={{ from: "#54ff5b", to: "#b7ff6b", deg: 135 }}
-            radius="lg"
-            style={{
-              outline: "2px solid rgba(168, 85, 247, 0.5)",
-              outlineOffset: "3px",
-            }}
-            mt="lg"
-          >
-            {t("cta.button")}
-          </Button>
-        </Stack>
+              {t("cta.button")}
+            </Button>
+          </Stack>
+        </div>
       </Container>
-
-      {clips ? <ClipSlider clips={clips} /> : null}
 
       <Container size="xl">
         <div style={{ marginTop: 100 }}>

@@ -1,0 +1,190 @@
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.card {
+  position: absolute;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+}
+
+/* Left side: 1, 2, 3 */
+.card:nth-child(1) {
+  top: 15%;
+  left: 5%;
+  animation: floatGentle 12s ease-in-out infinite, fade1 8s ease-in-out infinite;
+}
+
+.card:nth-child(2) {
+  top: 40%;
+  left: 3%;
+  animation: float2 14s ease-in-out infinite, fade2 10s ease-in-out infinite;
+}
+
+.card:nth-child(3) {
+  top: 70%;
+  left: 6%;
+  animation: float3 10s ease-in-out infinite, fade1 12s ease-in-out infinite;
+}
+
+/* Right side: 4, 5, 6 */
+.card:nth-child(4) {
+  top: 10%;
+  right: 5%;
+  left: auto;
+  animation: float4 16s ease-in-out infinite, fade2 9s ease-in-out infinite;
+}
+
+.card:nth-child(5) {
+  top: 40%;
+  right: 3%;
+  left: auto;
+  animation: float1 11s ease-in-out infinite 2s, fade1 7s ease-in-out infinite 1s;
+}
+
+.card:nth-child(6) {
+  top: 70%;
+  right: 6%;
+  left: auto;
+  animation: float2 13s ease-in-out infinite 1s, fade2 11s ease-in-out infinite;
+}
+
+/* Mobile: horizontal row below hero */
+@media (max-width: 48em) {
+  .container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+    overflow: visible;
+  }
+
+  .card {
+    position: relative;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    animation: none !important;
+  }
+
+  .icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(6px, 5px) rotate(2deg);
+  }
+  50% {
+    transform: translate(-4px, 10px) rotate(-1deg);
+  }
+  75% {
+    transform: translate(8px, 3px) rotate(3deg);
+  }
+}
+
+@keyframes float1 {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(8px, -12px) rotate(3deg);
+  }
+  50% {
+    transform: translate(-5px, -20px) rotate(-2deg);
+  }
+  75% {
+    transform: translate(10px, -8px) rotate(4deg);
+  }
+}
+
+@keyframes float2 {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(-10px, 8px) rotate(-3deg);
+  }
+  50% {
+    transform: translate(6px, 15px) rotate(2deg);
+  }
+  75% {
+    transform: translate(-12px, 5px) rotate(-4deg);
+  }
+}
+
+@keyframes float3 {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  33% {
+    transform: translate(12px, -10px) rotate(5deg);
+  }
+  66% {
+    transform: translate(-8px, 12px) rotate(-3deg);
+  }
+}
+
+@keyframes float4 {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  20% {
+    transform: translate(-6px, 10px) rotate(-2deg);
+  }
+  40% {
+    transform: translate(10px, -5px) rotate(3deg);
+  }
+  60% {
+    transform: translate(-12px, -8px) rotate(-4deg);
+  }
+  80% {
+    transform: translate(5px, 12px) rotate(2deg);
+  }
+}
+
+@keyframes fade1 {
+  0%, 100% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade2 {
+  0%, 100% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 1;
+  }
+}

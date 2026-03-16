@@ -5,6 +5,7 @@ import {
   Burger,
   Button,
   Container,
+  Divider,
   Drawer,
   Flex,
   Group,
@@ -55,48 +56,29 @@ export function Header() {
       <header>
         <Container size="xl" py={12}>
           <Flex justify="space-between" align="center">
-            <Group gap={50}>
-              <Link
-                href="/"
+            <Link
+              href="/"
+              style={{
+                textDecoration: "none",
+                display: "flex",
+                alignItems: "center",
+                gap: 5,
+              }}
+            >
+              <span
                 style={{
-                  textDecoration: "none",
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 5,
+                  fontFamily: "var(--font-logo)",
+                  fontSize: "1.6rem",
+                  fontWeight: 700,
+                  color: "white",
+                  letterSpacing: "-0.02em",
                 }}
               >
-                <span
-                  style={{
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: 4,
-                    background: "#52FF94",
-                    color: "white",
-                    padding: "1px 6px",
-                    borderRadius: 4,
-                    fontSize: "var(--mantine-font-size-md)",
-                    fontWeight: 700,
-                    textTransform: "uppercase",
-                    letterSpacing: "0.5px",
-                  }}
-                >
-                  <span
-                    style={{
-                      width: 8,
-                      height: 8,
-                      borderRadius: "50%",
-                      background: "#ffffff",
-                      animation: "blink 1s ease-in-out infinite",
-                    }}
-                  />
-                  Live
-                </span>
-                <Title order={2} size="lg" c="white" fw={700}>
-                  Stream Recorder
-                </Title>
-              </Link>
+                Stream<span style={{ color: "#52FF94" }}>Archive</span>
+              </span>
+            </Link>
 
-              <Group gap={8} visibleFrom="md">
+            <Group gap={8} visibleFrom="md">
                 <Button
                   variant="subtle"
                   c="white"
@@ -124,7 +106,6 @@ export function Header() {
                 >
                   {t("header.shorts")}
                 </Button>
-              </Group>
             </Group>
 
             <Group gap={12} visibleFrom="md">
@@ -210,6 +191,7 @@ export function Header() {
             </Group>
           </Flex>
         </Container>
+        <Divider />
       </header>
 
       <Drawer
@@ -230,33 +212,15 @@ export function Header() {
           >
             <span
               style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: 4,
-                background: "#e53935",
-                color: "white",
-                padding: "4px 10px",
-                borderRadius: 4,
-                fontSize: "0.8rem",
+                fontFamily: "var(--font-logo)",
+                fontSize: "1.6rem",
                 fontWeight: 700,
-                textTransform: "uppercase",
-                letterSpacing: "0.5px",
+                color: "white",
+                letterSpacing: "-0.02em",
               }}
             >
-              <span
-                style={{
-                  width: 6,
-                  height: 6,
-                  borderRadius: "50%",
-                  background: "#ffffff",
-                  animation: "blink 1s ease-in-out infinite",
-                }}
-              />
-              Live
+              Stream<span style={{ color: "#52FF94" }}>Archive</span>
             </span>
-            <Title order={2} size="lg" c="white" fw={700}>
-              Stream Recorder
-            </Title>
           </Link>
         }
       >

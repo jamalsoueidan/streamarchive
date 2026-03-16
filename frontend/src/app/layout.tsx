@@ -12,11 +12,18 @@ import { Notifications } from "@mantine/notifications";
 import "@mantine/notifications/styles.css";
 import { isbot } from "isbot";
 import type { Metadata, Viewport } from "next";
+import { Space_Grotesk } from "next/font/google";
 import { headers } from "next/headers";
 import Script from "next/script";
 import { NuqsAdapter } from "nuqs/adapters/next/app";
 
 import { FingerprintProvider } from "./providers/fingerprint-provider";
+
+const logoFont = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["700"],
+  variable: "--font-logo",
+});
 
 export const theme = createTheme({
   components: {
@@ -61,7 +68,7 @@ export default async function RootLayout({
   const dir = locale === "ar" ? "rtl" : "ltr";
 
   return (
-    <html lang={locale} dir={dir} {...mantineHtmlProps}>
+    <html lang={locale} dir={dir} className={logoFont.variable} {...mantineHtmlProps}>
       <head>
         <ColorSchemeScript defaultColorScheme="dark" />
         {!isbot(userAgent) ? (

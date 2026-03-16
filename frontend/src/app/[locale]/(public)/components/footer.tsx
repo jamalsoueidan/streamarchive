@@ -2,15 +2,11 @@
 
 import {
   Anchor,
-  Badge,
   Container,
-  Divider,
-  Group,
   Image,
   SimpleGrid,
   Stack,
   Text,
-  Title,
 } from "@mantine/core";
 import { useTranslations } from "next-intl";
 import { navConfig } from "./nav";
@@ -69,55 +65,23 @@ export function Footer() {
   ));
 
   return (
-    <footer>
+    <footer style={{ marginTop: "30px" }}>
       <Image src="/logo2.svg" alt="Logo" maw="100%" mt={30} />
-      <Divider c="white" size="xl" mb={20} visibleFrom="sm" />
-      <Container size="xl" py="xl" mt={20}>
+      <Container size="xl" pb="xl">
         <SimpleGrid cols={{ base: 1, sm: 3, md: 5 }} mb="xl">
           <Stack>
             <Anchor component="a" href="/" c="white" underline="never">
-              <Group gap="xs">
-                <Badge
-                  size="md"
-                  c="white"
-                  bg="red"
-                  radius="xs"
-                  style={{
-                    animation: "pulse 2s ease-in-out infinite",
-                  }}
-                >
-                  <span
-                    style={{
-                      display: "inline-flex",
-                      alignItems: "center",
-                      gap: 4,
-                    }}
-                  >
-                    <span
-                      style={{
-                        width: 6,
-                        height: 6,
-                        borderRadius: "50%",
-                        background: "#ffffff",
-                        animation: "blink 1s ease-in-out infinite",
-                      }}
-                    />
-                    <span
-                      style={{
-                        letterSpacing: "0.5px",
-                        fontWeight: 700,
-                        textTransform: "uppercase",
-                        textShadow: "0 0 1px rgba(255,255,255,0.5)",
-                      }}
-                    >
-                      Live
-                    </span>
-                  </span>
-                </Badge>
-                <Title order={2} size="h4">
-                  StreamRecorder
-                </Title>
-              </Group>
+              <span
+                style={{
+                  fontFamily: "var(--font-logo)",
+                  fontSize: "1.6rem",
+                  fontWeight: 700,
+                  color: "white",
+                  letterSpacing: "-0.02em",
+                }}
+              >
+                Stream<span style={{ color: "#52FF94" }}>Archive</span>
+              </span>
             </Anchor>
             <Text size="sm" c="dimmed">
               {t("tagline")}

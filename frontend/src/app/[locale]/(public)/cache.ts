@@ -33,7 +33,7 @@ export const getLatestRecordings = unstable_cache(
           },
         },
       },
-      "pagination[limit]": 8,
+      "pagination[limit]": 20,
       sort: "createdAt:desc",
       populate: {
         sources: {

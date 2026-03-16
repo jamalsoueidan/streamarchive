@@ -24,7 +24,7 @@ export async function RecordingsSimpleGrid({
   const format = await getFormatter();
 
   return (
-    <SimpleGrid cols={{ base: 1, sm: 4 }}>
+    <SimpleGrid cols={{ base: 1, sm: 5 }}>
       {recordings?.map((recording) => {
         const totalDuration =
           recording.sources?.reduce((sum, s) => sum + (s.duration || 0), 0) ||
@@ -45,7 +45,7 @@ export async function RecordingsSimpleGrid({
                 style={{
                   background: "rgba(255, 255, 255, 0.02)",
                   border: "1px solid rgba(255, 255, 255, 0.06)",
-                  borderRadius: "16px",
+                  borderRadius: "8px",
                   overflow: "hidden",
                   cursor: "pointer",
                 }}
@@ -98,7 +98,7 @@ export async function RecordingsSimpleGrid({
                       top: "50%",
                       left: "50%",
                       transform: "translate(-50%, -50%)",
-                      background: "rgba(99, 102, 241, 0.9)",
+                      background: "rgba(27, 147, 69, 0.9)",
                       opacity: 0.9,
                     }}
                   >

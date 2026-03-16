@@ -15,11 +15,7 @@ import { Metadata } from "next";
 import { getLocale, getTranslations } from "next-intl/server";
 import Image from "next/image";
 import ReactMarkdown from "react-markdown";
-import {
-  getFeaturedFollowers,
-  getLatestRecordings,
-  getRandomClips,
-} from "./cache";
+import { getFeaturedFollowers, getLatestRecordings } from "./cache";
 import { PlatformAnimation } from "./components/platform-animation";
 import { CreatorsSlider } from "./creators/components/creators-slider";
 import { RecordingsSimpleGrid } from "./recordings/components/recordings-simple-grid";
@@ -77,7 +73,6 @@ export default async function LandingPage() {
 
   const followers = await getFeaturedFollowers();
   const recordings = await getLatestRecordings();
-  const clips = await getRandomClips();
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -137,7 +132,6 @@ export default async function LandingPage() {
             height: 700,
             zIndex: 0,
             pointerEvents: "none",
-            border: "1px solid rgba(99, 102, 241, 0.2)",
           }}
         >
           <Image
@@ -149,7 +143,7 @@ export default async function LandingPage() {
           />
         </div>
 
-        <div style={{ position: "relative" }}>
+        <div style={{ position: "relative", paddingBottom: 80 }}>
           <PlatformAnimation />
 
           <Stack
@@ -165,13 +159,35 @@ export default async function LandingPage() {
                   fontSize: "clamp(1rem, 6vw, 1.4rem)",
                   fontWeight: 700,
                   letterSpacing: "-0.03em",
-                  background:
-                    "linear-gradient(135deg, #ffffff 0%, #e2e8f0 50%, #94a3b8 100%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
                 }}
               >
-                #1 {t("hero.title")}
+                <span
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: 8,
+                    background: "rgba(27, 147, 69, 0.15)",
+                    border: "1px solid rgba(82, 255, 148, 0.3)",
+                    borderRadius: 20,
+                    padding: "4px 16px",
+                    fontSize: "clamp(0.85rem, 2vw, 1rem)",
+                    color: "#52FF94",
+                    fontWeight: 600,
+                  }}
+                >
+                  <span
+                    style={{
+                      width: 8,
+                      height: 8,
+                      borderRadius: "50%",
+                      background: "#ff4444",
+                      boxShadow: "0 0 6px #ff4444",
+                      animation: "pulse 2s ease-in-out infinite",
+                      flexShrink: 0,
+                    }}
+                  />
+                  {t("hero.title")}
+                </span>
               </Title>
               <Title
                 order={2}
@@ -224,6 +240,10 @@ export default async function LandingPage() {
       </Container>
 
       <Container size="xl">
+        <div style={{ marginTop: 40 }}>
+          <RecordingsSimpleGrid recordings={recordings} />
+        </div>
+
         <div style={{ marginTop: 100 }}>
           <Flex
             gap={60}
@@ -300,76 +320,27 @@ export default async function LandingPage() {
             </div>
           </Flex>
         </div>
-
-        <div style={{ marginTop: 120 }}>
-          <Flex justify="space-between" align="center" mb={40}>
-            <Stack gap={8}>
-              <Title
-                order={2}
-                style={{
-                  fontSize: "clamp(1.5rem, 3vw, 2rem)",
-                  fontWeight: 700,
-                  color: "#f1f5f9",
-                }}
-              >
-                {t("latestRecordings.title")}
-              </Title>
-              <Text size="md" c="dimmed">
-                {t("latestRecordings.subtitle")}
-              </Text>
-            </Stack>
-            <Button
-              component="a"
-              variant="subtle"
-              color="gray"
-              rightSection={<IconArrowRight size={16} />}
-              style={{ color: "#94a3b8" }}
-              href="/recordings"
-            >
-              {t("latestRecordings.browseAll")}
-            </Button>
-          </Flex>
-
-          <RecordingsSimpleGrid recordings={recordings} />
-        </div>
-
-        <div style={{ marginTop: 100, marginBottom: 50 }}>
-          <Flex gap={8} align="center" direction="column">
-            <Title
-              order={2}
-              style={{
-                fontSize: "clamp(1.5rem, 3vw, 2.5rem)",
-                fontWeight: 700,
-                color: "#f1f5f9",
-                letterSpacing: "-0.03em",
-                background:
-                  "linear-gradient(135deg, #ffffff 0%, #e2e8f0 50%, #94a3b8 100%)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                maxWidth: "800px",
-              }}
-            >
-              {t("featuredCreators.title")}
-            </Title>
-            <Text size="xl" c="#cbd5e1">
-              {t("featuredCreators.subtitle")}
-            </Text>
-
-            <Button
-              component="a"
-              variant="subtle"
-              size="compact-lg"
-              color="gray"
-              href="/creators"
-              rightSection={<IconArrowRight size={16} />}
-              style={{ color: "#94a3b8" }}
-            >
-              {t("featuredCreators.browseAll")}
-            </Button>
-          </Flex>
-        </div>
       </Container>
 
+      <div style={{ marginTop: 100, marginBottom: 50 }}>
+        <Flex gap={8} align="center" direction="column">
+          <Text size="xl" c="#cbd5e1">
+            {t("featuredCreators.subtitle")}
+          </Text>
+
+          <Button
+            component="a"
+            variant="subtle"
+            size="compact-lg"
+            color="gray"
+            href="/creators"
+            rightSection={<IconArrowRight size={16} />}
+            style={{ color: "#94a3b8" }}
+          >
+            {t("featuredCreators.browseAll")}
+          </Button>
+        </Flex>
+      </div>
       <CreatorsSlider followers={followers} />
 
       <Container size="xl">

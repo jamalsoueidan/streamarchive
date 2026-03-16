@@ -1,4 +1,3 @@
-import { CountryFlag } from "@/app/[locale]/(protected)/components/country-flag";
 import { getProfileUrl } from "@/app/components/open-social";
 
 import { generateAvatarUrl } from "@/app/lib/avatar-url";
@@ -54,14 +53,6 @@ export function CreatorsSlider({
                     <Text size="xs" style={{ color: "#64748b" }}>
                       @{decodeURIComponent(creator.username)}
                     </Text>
-                  </div>
-                  <div style={{ minHeight: 24 }}>
-                    {creator.countryCode && (
-                      <CountryFlag
-                        countryCode={creator.countryCode}
-                        size={20}
-                      />
-                    )}
                   </div>
                 </Stack>
               </Flex>

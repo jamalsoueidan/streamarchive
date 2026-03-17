@@ -26,6 +26,21 @@ const logoFont = Space_Grotesk({
 });
 
 export const theme = createTheme({
+  colors: {
+    dark: [
+      "#c1c2c5",
+      "#a6a7ab",
+      "#909296",
+      "#5c5f66",
+      "#373a40",
+      "#2c2e33",
+      "#1a1a2e",
+      "#01010c",
+      "#070710",
+      "#01010c",
+    ],
+  },
+  primaryColor: "green",
   components: {
     Notification: {
       styles: {
@@ -42,7 +57,7 @@ export async function generateMetadata(): Promise<Metadata> {
     appleWebApp: {
       capable: true,
       statusBarStyle: "black-translucent",
-      title: "Live Stream Recorder",
+      title: "StreamArchive",
     },
   };
 }

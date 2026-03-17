@@ -35,33 +35,26 @@ export function DangerZoneCard() {
   };
 
   return (
-    <Card
-      withBorder
-      p="xl"
-      style={{ borderColor: "var(--mantine-color-red-6)" }}
-    >
-      <Stack gap="lg">
-        <Group>
-          <IconAlertTriangle size={28} color="var(--mantine-color-red-6)" />
-          <Title order={2} c="red">
-            {t("dangerZone.title")}
-          </Title>
-        </Group>
-
-        <Text size="md" c="dimmed">
-          {t("dangerZone.description")}
-        </Text>
-
-        <Button
-          size="md"
-          color="red"
-          variant="outline"
-          leftSection={<IconTrash size={18} />}
-          onClick={handleDeleteAccount}
-        >
-          {t("dangerZone.deleteAccount")}
-        </Button>
-      </Stack>
-    </Card>
+    <Stack gap="xs">
+      <Title order={4} c="red">
+        {t("dangerZone.title")}
+      </Title>
+      <Card p="md" radius="md" bg="gray.9">
+        <Stack gap="md">
+          <Text size="md" c="dimmed">
+            {t("dangerZone.description")}
+          </Text>
+          <Button
+            size="md"
+            color="red"
+            variant="outline"
+            leftSection={<IconTrash size={18} />}
+            onClick={handleDeleteAccount}
+          >
+            {t("dangerZone.deleteAccount")}
+          </Button>
+        </Stack>
+      </Card>
+    </Stack>
   );
 }

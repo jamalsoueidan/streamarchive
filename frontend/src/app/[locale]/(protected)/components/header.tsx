@@ -7,7 +7,8 @@ import { useUser } from "@/app/providers/user-provider";
 import * as Sentry from "@sentry/nextjs";
 
 export const Header = () => {
-  const t = useTranslations("protected.premium");
+  const tPremium = useTranslations("protected.premium");
+  const tNavigation = useTranslations("protected.navigation");
   const user = useUser();
 
   return (
@@ -44,7 +45,7 @@ export const Header = () => {
           color="white"
           rightSection={<IconCrown color="gold" />}
         >
-          {t("title")}
+          {tPremium("title")}
         </Button>
 
         <Menu trigger="click">
@@ -64,7 +65,7 @@ export const Header = () => {
               href="/settings"
               leftSection={<IconSettings size={16} />}
             >
-              {t("actions.settings")}
+              {tNavigation("actions.settings")}
             </Menu.Item>
             <Menu.Item
               onClick={async () => {
@@ -74,7 +75,7 @@ export const Header = () => {
               }}
               leftSection={<IconLogout size={16} />}
             >
-              {t("actions.logout")}
+              {tNavigation("actions.logout")}
             </Menu.Item>
           </Menu.Dropdown>
         </Menu>

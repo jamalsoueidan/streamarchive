@@ -50,14 +50,14 @@ export function Shell({
           collapsed: { mobile: !opened },
         }}
         withBorder={false}
-        pl="md"
-        pr="md"
+        pl="lg"
+        pr="lg"
       >
         <AppShell.Header bg="#030a06" px="lg">
           <Header />
         </AppShell.Header>
 
-        <AppShell.Navbar pl="md">
+        <AppShell.Navbar pl="lg">
           <Navbar opened={opened} close={close} collapsed={collapsed} />
         </AppShell.Navbar>
         <AppShell.Main>{children}</AppShell.Main>

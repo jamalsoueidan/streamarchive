@@ -1,5 +1,4 @@
-import { Divider, Group, Stack, Text, Title } from "@mantine/core";
-import { IconClock } from "@tabler/icons-react";
+import { Stack, Tabs, TabsList, TabsTab } from "@mantine/core";
 import {
   dehydrate,
   HydrationBoundary,
@@ -30,21 +29,26 @@ export default async function Page() {
   return (
     <HydrationBoundary state={dehydrate(queryClient)}>
       <Stack w="100%">
-        <Group justify="space-between" w="100%">
-          <Stack gap={2}>
-            <Group gap="xs">
-              <IconClock size={32} />
-              <Title order={1} size="h3">
-                {t("title")}
-              </Title>
-            </Group>
-            <Text size="xs" c="dimmed">
-              {t("description")}
-            </Text>
-          </Stack>
-          <ClearWatchLaterButton initialCount={watchLaterIds.length} />
-        </Group>
-        <Divider mx={{ base: "-xs", sm: "-md" }} />
+        <Tabs
+          defaultValue="default"
+          styles={{
+            list: {
+              borderBottomWidth: 4,
+            },
+            tab: {
+              fontSize: "var(--mantine-font-size-lg)",
+              fontWeight: 600,
+              padding: "var(--mantine-spacing-sm) var(--mantine-spacing-md)",
+              borderBottomWidth: 4,
+            },
+          }}
+        >
+          <TabsList>
+            <TabsTab value="default">{t("title")}</TabsTab>
+          </TabsList>
+        </Tabs>
+
+        <ClearWatchLaterButton initialCount={watchLaterIds.length} />
         <WatchLaterList initialIds={watchLaterIds} />
       </Stack>
     </HydrationBoundary>

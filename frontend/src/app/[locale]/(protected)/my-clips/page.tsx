@@ -1,10 +1,11 @@
 import {
   ActionIcon,
   Center,
-  Divider,
-  Flex,
   SimpleGrid,
   Stack,
+  Tabs,
+  TabsList,
+  TabsTab,
   Text,
   Title,
 } from "@mantine/core";
@@ -50,21 +51,24 @@ export default async function Page({ searchParams }: PageProps) {
 
   return (
     <Stack w="100%">
-      <Flex justify="space-between" align="center">
-        <Stack gap={2}>
-          <Flex gap="xs" align="center">
-            <IconScissors size={32} />
-            <Title order={1} size="h3">
-              {t("title")}
-            </Title>
-          </Flex>
-          <Text size="sm" c="dimmed">
-            {t("description")}
-          </Text>
-        </Stack>
-      </Flex>
-
-      <Divider mx={{ base: "-xs", sm: "-md" }} />
+      <Tabs
+        defaultValue="default"
+        styles={{
+          list: {
+            borderBottomWidth: 4,
+          },
+          tab: {
+            fontSize: "var(--mantine-font-size-lg)",
+            fontWeight: 600,
+            padding: "var(--mantine-spacing-sm) var(--mantine-spacing-md)",
+            borderBottomWidth: 4,
+          },
+        }}
+      >
+        <TabsList>
+          <TabsTab value="default">{t("title")}</TabsTab>
+        </TabsList>
+      </Tabs>
 
       <MyClipsGuard>
         {!clips || clips.length === 0 ? (

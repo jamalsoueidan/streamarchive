@@ -53,15 +53,11 @@ export function ProfileCard() {
   };
 
   return (
-    <Card withBorder p="xl">
-      <Stack gap="lg">
-        <Group>
-          <IconUser size={28} />
-          <Title order={2}>{t("profile.title")}</Title>
-        </Group>
-
+    <Stack gap="xs">
+      <Title order={4}>{t("profile.title")}</Title>
+      <Card p="md" radius="md" bg="gray.9">
         <form onSubmit={form.onSubmit(handleUpdateUsername)}>
-          <Stack gap="lg">
+          <Stack gap="md">
             <TextInput
               size="md"
               label={t("profile.username")}
@@ -78,7 +74,7 @@ export function ProfileCard() {
             </Button>
           </Stack>
         </form>
-      </Stack>
-    </Card>
+      </Card>
+    </Stack>
   );
 }

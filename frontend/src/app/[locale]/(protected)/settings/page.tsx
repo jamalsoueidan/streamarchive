@@ -1,8 +1,7 @@
 "use client";
 
 import { Can, Role } from "@/app/providers/ability-provider";
-import { Divider, Flex, SimpleGrid, Stack, Text, Title } from "@mantine/core";
-import { IconSettings } from "@tabler/icons-react";
+import { SimpleGrid, Stack, Tabs } from "@mantine/core";
 import { useTranslations } from "next-intl";
 import { DangerZoneCard } from "./components/danger-zone-card";
 import { ProfileCard } from "./components/profile-card";
@@ -14,23 +13,26 @@ export default function SettingsPage() {
 
   return (
     <Stack w="100%">
-      <Flex justify="space-between" align="center">
-        <Stack gap={2}>
-          <Flex gap="xs" align="center">
-            <IconSettings size={32} />
-            <Title order={1} size="h3">
-              {t("title")}
-            </Title>
-          </Flex>
-          <Text size="sm" c="dimmed">
-            {t("description")}
-          </Text>
-        </Stack>
-      </Flex>
+      <Tabs
+        defaultValue="default"
+        styles={{
+          list: {
+            borderBottomWidth: 4,
+          },
+          tab: {
+            fontSize: "var(--mantine-font-size-lg)",
+            fontWeight: 600,
+            padding: "var(--mantine-spacing-sm) var(--mantine-spacing-md)",
+            borderBottomWidth: 4,
+          },
+        }}
+      >
+        <Tabs.List>
+          <Tabs.Tab value="default">{t("title")}</Tabs.Tab>
+        </Tabs.List>
+      </Tabs>
 
-      <Divider mx={{ base: "-xs", sm: "-md" }} />
-
-      <SimpleGrid cols={{ sm: 1, md: 2 }}>
+      <SimpleGrid cols={{ sm: 1 }} spacing="md">
         <ProfileCard />
         <SubscriptionCard />
         <Can I="meCreate" a="SocialAccount">

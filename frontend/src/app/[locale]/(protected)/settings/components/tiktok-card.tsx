@@ -7,7 +7,6 @@ import {
   Card,
   Group,
   Loader,
-  Paper,
   Stack,
   Text,
   Title,
@@ -113,23 +112,19 @@ export function TikTokCard() {
   };
 
   return (
-    <Card withBorder p="xl">
-      <Stack gap="lg">
-        <Group>
-          <IconBrandTiktok size={28} />
-          <Title order={2}>{t("tiktok.title")}</Title>
-        </Group>
+    <Stack gap="xs">
+      <Title order={4}>{t("tiktok.title")}</Title>
+      <Card p="md" radius="md" bg="gray.9">
+        <Stack gap="md">
+          <Text size="md" c="dimmed">
+            {tiktokConnection
+              ? t("tiktok.descriptionConnected")
+              : t("tiktok.description")}
+          </Text>
 
-        <Text size="md" c="dimmed">
-          {tiktokConnection
-            ? t("tiktok.descriptionConnected")
-            : t("tiktok.description")}
-        </Text>
-
-        {tiktokLoading ? (
-          <Loader size="sm" />
-        ) : tiktokConnection ? (
-          <Paper withBorder p="md" radius="md">
+          {tiktokLoading ? (
+            <Loader size="sm" />
+          ) : tiktokConnection ? (
             <Group justify="space-between">
               <Group gap="sm">
                 <Avatar src={creatorInfo?.avatarUrl} size="lg" radius="xl">
@@ -160,18 +155,18 @@ export function TikTokCard() {
                 {t("tiktok.disconnect")}
               </Button>
             </Group>
-          </Paper>
-        ) : (
-          <Button
-            size="lg"
-            radius="sm"
-            rightSection={<IconPlus />}
-            onClick={handleConnectTikTok}
-          >
-            {t("tiktok.connect")}
-          </Button>
-        )}
-      </Stack>
-    </Card>
+          ) : (
+            <Button
+              size="lg"
+              radius="sm"
+              rightSection={<IconPlus />}
+              onClick={handleConnectTikTok}
+            >
+              {t("tiktok.connect")}
+            </Button>
+          )}
+        </Stack>
+      </Card>
+    </Stack>
   );
 }

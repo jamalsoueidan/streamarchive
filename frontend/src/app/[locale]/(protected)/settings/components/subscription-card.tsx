@@ -10,24 +10,21 @@ export function SubscriptionCard() {
   const t = useTranslations("protected.settings");
 
   return (
-    <Card withBorder p="xl">
-      <Stack gap="lg">
-        <Group>
-          <IconCrown size={28} />
-          <Title order={2}>{t("subscription.title")}</Title>
-        </Group>
-
-        <Group justify="space-between">
-          <Text size="lg">{t("subscription.currentPlan")}</Text>
-          <Badge size="xl" variant="light" color="blue">
-            {user?.role?.name || "Free"}
-          </Badge>
-        </Group>
-
-        <Text size="md" c="dimmed">
-          {t("subscription.description")}
-        </Text>
-      </Stack>
-    </Card>
+    <Stack gap="xs">
+      <Title order={4}>{t("subscription.title")}</Title>
+      <Card p="md" radius="md" bg="gray.9">
+        <Stack gap="md">
+          <Group justify="space-between">
+            <Text size="lg">{t("subscription.currentPlan")}</Text>
+            <Badge size="xl" variant="light" color="blue">
+              {user?.role?.name || "Free"}
+            </Badge>
+          </Group>
+          <Text size="md" c="dimmed">
+            {t("subscription.description")}
+          </Text>
+        </Stack>
+      </Card>
+    </Stack>
   );
 }

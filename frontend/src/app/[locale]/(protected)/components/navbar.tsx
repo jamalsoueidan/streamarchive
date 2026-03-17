@@ -23,7 +23,6 @@ import { usePathname } from "next/navigation";
 import { useRouter } from "next/navigation";
 
 import { useTranslations } from "next-intl";
-import classes from "./navbar.module.css";
 
 export const navigation = [
   {
@@ -107,18 +106,30 @@ export function Navbar({
 
     const linkContent = (
       <Link
-        className={classes.link}
-        data-active={isActive || undefined}
-        data-collapsed={collapsed || undefined}
         key={item.labelKey}
         href={item.url || "#"}
         onClick={(e) => handleLinkClick(e, item.url || "#")}
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          textDecoration: "none",
+          color: isActive ? "#52FF94" : "white",
+          padding: "var(--mantine-spacing-xs)",
+          borderRadius: "var(--mantine-radius-sm)",
+          fontWeight: 500,
+          width: "100%",
+          fontSize: "var(--mantine-font-size-sm)",
+        }}
       >
         <Icon
-          className={classes.linkIcon}
           stroke={2}
-          style={{ width: "34px", height: "34px" }}
-          color={item.color ? item.color : undefined}
+          style={{
+            width: "34px",
+            height: "34px",
+            color: isActive ? "#52FF94" : item.color || undefined,
+          }}
         />
         {!collapsed && (
           <Text size="sm" ta="center" mt={2} lh={1.2}>
@@ -146,7 +157,14 @@ export function Navbar({
 
   return (
     <AppShell.Section grow component={ScrollArea}>
-      <Card radius="lg" p="xs" withBorder={false} bg="gray.9" h="100%" w="100%">
+      <Card
+        radius="lg"
+        p="xs"
+        withBorder={false}
+        bg="gray.9"
+        h="100%"
+        w="100%"
+      >
         <Stack gap={collapsed ? 4 : 8} align="center">
           {links}
         </Stack>

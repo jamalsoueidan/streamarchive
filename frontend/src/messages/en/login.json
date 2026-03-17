@@ -3,8 +3,8 @@
     "title": "Sign In",
     "description": "Sign in to your StreamArchive account to access your recordings and followed streamers."
   },
-  "title": "Welcome back",
-  "subtitle": "Sign in to continue to your account",
+  "title": "Pick up right where you left off",
+  "subtitle": "Good to see you again",
   "email": {
     "label": "Email address",
     "placeholder": "you@example.com"
@@ -23,7 +23,8 @@
     "emailPassword": "Use Email / Password",
     "google": "Continue with Google",
     "tiktok": "Continue with TikTok",
-    "facebook": "Continue with Facebook"
+    "facebook": "Continue with Facebook",
+    "or": "OR"
   },
   "terms": {
     "text": "By continuing, you agree to Stream Archive's",

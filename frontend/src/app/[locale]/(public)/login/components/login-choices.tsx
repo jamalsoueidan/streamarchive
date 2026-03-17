@@ -1,5 +1,6 @@
 "use client";
 
+import { login } from "@/app/actions/auth";
 import { getFacebookAuthUrl } from "@/app/actions/facebook";
 import { getGoogleAuthUrl } from "@/app/actions/google";
 import { getTikTokAuthUrl } from "@/app/actions/tiktok";
@@ -8,21 +9,26 @@ import {
   Anchor,
   Button,
   Container,
+  Divider,
+  Flex,
   Paper,
+  PasswordInput,
   Stack,
   Text,
+  TextInput,
   Title,
 } from "@mantine/core";
 import {
   IconBrandFacebook,
   IconBrandGoogle,
   IconBrandTiktok,
+  IconLock,
   IconMail,
 } from "@tabler/icons-react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { useState } from "react";
+import { useActionState, useState } from "react";
 
 export function LoginChoices() {
   const t = useTranslations("login");
@@ -31,6 +37,8 @@ export function LoginChoices() {
   const [googleLoading, setGoogleLoading] = useState(false);
   const [facebookLoading, setFacebookLoading] = useState(false);
   const error = searchParams.get("error");
+  const emailConfirmed = searchParams.get("email-confirmed") === "true";
+  const [state, formAction, pending] = useActionState(login, null);
 
   const handleTikTokLogin = async () => {
     trackEvent("login_method", { method: "tiktok" });
@@ -69,7 +77,7 @@ export function LoginChoices() {
                 "linear-gradient(135deg, #ffffff 0%, #e2e8f0 50%, #94a3b8 100%)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
-              filter: "drop-shadow(0 0 40px rgba(99, 102, 241, 0.3))",
+              filter: "drop-shadow(0 0 40px rgba(82, 255, 148, 0.3))",
             }}
           >
             {t("title")}
@@ -110,20 +118,114 @@ export function LoginChoices() {
                 {t("errors.emailTaken")}
               </Text>
             )}
-            <Button
-              component={Link}
-              href="/login/email-password"
-              onClick={() => trackEvent("login_method", { method: "email" })}
-              size="lg"
-              radius="md"
-              variant="gradient"
-              gradient={{ from: "#6366f1", to: "#a855f7", deg: 135 }}
-              fullWidth
-              leftSection={<IconMail />}
-              style={{ fontWeight: 600, height: 48 }}
-            >
-              {t("choices.emailPassword")}
-            </Button>
+
+            {emailConfirmed && (
+              <Paper
+                p="md"
+                radius="md"
+                style={{
+                  background: "rgba(16, 185, 129, 0.1)",
+                  border: "1px solid rgba(16, 185, 129, 0.2)",
+                }}
+              >
+                <Text size="sm" style={{ color: "#6ee7b7" }}>
+                  {t("emailConfirmed")}
+                </Text>
+              </Paper>
+            )}
+
+            {state?.error && (
+              <Paper
+                p="md"
+                radius="md"
+                style={{
+                  background: "rgba(239, 68, 68, 0.1)",
+                  border: "1px solid rgba(239, 68, 68, 0.2)",
+                }}
+              >
+                <Text size="sm" style={{ color: "#fca5a5" }}>
+                  {state.error}
+                </Text>
+              </Paper>
+            )}
+
+            <form action={formAction}>
+              <Stack gap="lg">
+                <TextInput
+                  name="email"
+                  type="email"
+                  label={t("email.label")}
+                  placeholder={t("email.placeholder")}
+                  required
+                  leftSection={
+                    <IconMail size={18} style={{ color: "#64748b" }} />
+                  }
+                  styles={{
+                    label: { color: "#f1f5f9", marginBottom: 8 },
+                    input: {
+                      background: "rgba(255, 255, 255, 0.03)",
+                      border: "1px solid rgba(255, 255, 255, 0.1)",
+                      color: "#f1f5f9",
+                      height: 48,
+                    },
+                  }}
+                />
+
+                <PasswordInput
+                  name="password"
+                  label={t("password.label")}
+                  placeholder={t("password.placeholder")}
+                  required
+                  leftSection={
+                    <IconLock size={18} style={{ color: "#64748b" }} />
+                  }
+                  styles={{
+                    label: { color: "#f1f5f9", marginBottom: 8 },
+                    input: {
+                      background: "rgba(255, 255, 255, 0.03)",
+                      border: "1px solid rgba(255, 255, 255, 0.1)",
+                      color: "#f1f5f9",
+                      height: 48,
+                    },
+                    innerInput: {
+                      color: "#f1f5f9",
+                    },
+                  }}
+                />
+
+                <Flex justify="flex-end">
+                  <Anchor
+                    component={Link}
+                    href="/forgot-password"
+                    size="sm"
+                    style={{ color: "#52FF94" }}
+                  >
+                    {t("forgotPassword")}
+                  </Anchor>
+                </Flex>
+
+                <Button
+                  type="submit"
+                  size="lg"
+                  radius="md"
+                  loading={pending}
+                  variant="gradient"
+                  gradient={{ from: "#54ff5b", to: "#b7ff6b", deg: 135 }}
+                  c="black"
+                  fullWidth
+                  style={{ fontWeight: 600, height: 48 }}
+                >
+                  {pending ? t("submit.loading") : t("submit.default")}
+                </Button>
+              </Stack>
+            </form>
+
+            <Divider
+              label={t("choices.or") || "OR"}
+              labelPosition="center"
+              color="dark.4"
+              my="xs"
+            />
 
             <Button
               size="lg"
@@ -184,7 +286,7 @@ export function LoginChoices() {
               <Anchor
                 component={Link}
                 href="/register"
-                style={{ color: "#a5b4fc", fontWeight: 500 }}
+                style={{ color: "#52FF94", fontWeight: 500 }}
               >
                 {t("register.link")}
               </Anchor>
@@ -201,11 +303,11 @@ export function LoginChoices() {
           style={{ color: "#64748b", lineHeight: 1.6 }}
         >
           {t("terms.text")}{" "}
-          <Anchor component={Link} href="/terms" style={{ color: "#a5b4fc" }}>
+          <Anchor component={Link} href="/terms" style={{ color: "#52FF94" }}>
             {t("terms.tosLink")}
           </Anchor>{" "}
           {t("terms.and")}{" "}
-          <Anchor component={Link} href="/privacy" style={{ color: "#a5b4fc" }}>
+          <Anchor component={Link} href="/privacy" style={{ color: "#52FF94" }}>
             {t("terms.privacyLink")}
           </Anchor>
         </Text>

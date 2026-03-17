@@ -26,6 +26,7 @@ const logoFont = Space_Grotesk({
 });
 
 export const theme = createTheme({
+  primaryColor: "green",
   colors: {
     dark: [
       "#c1c2c5",
@@ -34,13 +35,12 @@ export const theme = createTheme({
       "#5c5f66",
       "#373a40",
       "#2c2e33",
-      "#1a1a2e",
-      "#01010c",
-      "#070710",
-      "#01010c",
+      "#25262b",
+      "#1a1b1e",
+      "#141517",
+      "#101113",
     ],
   },
-  primaryColor: "green",
   components: {
     Notification: {
       styles: {
@@ -83,7 +83,12 @@ export default async function RootLayout({
   const dir = locale === "ar" ? "rtl" : "ltr";
 
   return (
-    <html lang={locale} dir={dir} className={logoFont.variable} {...mantineHtmlProps}>
+    <html
+      lang={locale}
+      dir={dir}
+      className={logoFont.variable}
+      {...mantineHtmlProps}
+    >
       <head>
         <ColorSchemeScript defaultColorScheme="dark" />
         {!isbot(userAgent) ? (

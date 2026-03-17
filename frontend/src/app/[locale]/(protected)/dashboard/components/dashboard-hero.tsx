@@ -1,22 +1,11 @@
 "use client";
 
-import { Button, Flex, Stack, Text, TextInput, Title } from "@mantine/core";
-import { IconSearch } from "@tabler/icons-react";
+import { Stack, Text, Title } from "@mantine/core";
 import { useTranslations } from "next-intl";
-import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { SearchCreator } from "../../components/search-creator";
 
 export function DashboardHero() {
   const t = useTranslations("protected.dashboard");
-  const router = useRouter();
-  const [query, setQuery] = useState("");
-
-  const handleSearch = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (query.trim()) {
-      router.push(`/search?q=${encodeURIComponent(query.trim())}`);
-    }
-  };
 
   return (
     <Stack align="center" gap="md" py="xl">
@@ -87,36 +76,9 @@ export function DashboardHero() {
         {t("heroDescription")}
       </Text>
 
-      <form onSubmit={handleSearch} style={{ width: "100%", maxWidth: 500 }}>
-        <Flex gap="sm">
-          <TextInput
-            placeholder={t("searchPlaceholder")}
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            leftSection={<IconSearch size={18} />}
-            size="md"
-            radius="md"
-            style={{ flex: 1 }}
-            styles={{
-              input: {
-                background: "rgba(255, 255, 255, 0.03)",
-                border: "1px solid rgba(255, 255, 255, 0.1)",
-                color: "#f1f5f9",
-              },
-            }}
-          />
-          <Button
-            type="submit"
-            size="md"
-            radius="md"
-            variant="gradient"
-            gradient={{ from: "#54ff5b", to: "#b7ff6b", deg: 135 }}
-            c="black"
-          >
-            {t("searchButton")}
-          </Button>
-        </Flex>
-      </form>
+      <div style={{ width: "100%", maxWidth: 600 }}>
+        <SearchCreator />
+      </div>
     </Stack>
   );
 }

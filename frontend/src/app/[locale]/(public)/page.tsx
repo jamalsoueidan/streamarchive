@@ -10,7 +10,6 @@ import {
   Text,
   Title,
 } from "@mantine/core";
-import { IconArrowRight } from "@tabler/icons-react";
 import { Metadata } from "next";
 import { getLocale, getTranslations } from "next-intl/server";
 import Image from "next/image";
@@ -35,7 +34,7 @@ export async function generateMetadata(): Promise<Metadata> {
       title: t("ogTitle"),
       description: t("ogDescription"),
       type: "website",
-      siteName: "Live Stream Recorder",
+      siteName: "StreamArchive",
       locale: getOgLocale(locale),
       alternateLocale: getAlternateOgLocales(locale),
       images: [
@@ -80,14 +79,14 @@ export default async function LandingPage() {
       {
         "@type": "WebSite",
         "@id": `${process.env.NEXT_PUBLIC_BASE_URL}/#website`,
-        name: "Live Stream Recorder",
+        name: "StreamArchive",
         url: process.env.NEXT_PUBLIC_BASE_URL,
         description: t("hero.description"),
       },
       {
         "@type": "Organization",
         "@id": `${process.env.NEXT_PUBLIC_BASE_URL}/#organization`,
-        name: "Live Stream Recorder",
+        name: "StreamArchive",
         url: process.env.NEXT_PUBLIC_BASE_URL,
         logo: `${process.env.NEXT_PUBLIC_BASE_URL}/og-image.png`,
       },
@@ -143,7 +142,7 @@ export default async function LandingPage() {
           />
         </div>
 
-        <div style={{ position: "relative", paddingBottom: 80 }}>
+        <div style={{ position: "relative", paddingBottom: 40 }}>
           <PlatformAnimation />
 
           <Stack
@@ -228,7 +227,7 @@ export default async function LandingPage() {
               gradient={{ from: "#54ff5b", to: "#b7ff6b", deg: 135 }}
               radius="lg"
               style={{
-                outline: "2px solid rgba(168, 85, 247, 0.5)",
+                outline: "2px solid rgba(82, 255, 148, 0.4)",
                 outlineOffset: "3px",
               }}
               mt="lg"
@@ -270,7 +269,7 @@ export default async function LandingPage() {
                       fontSize: "clamp(1.75rem, 4vw, 2.3rem)",
                       fontWeight: 700,
                       lineHeight: 1.4,
-                      background: "linear-gradient(135deg, #6366f1, #a855f7)",
+                      background: "linear-gradient(135deg, #52FF94, #b7ff6b)",
                       WebkitBackgroundClip: "text",
                       WebkitTextFillColor: "transparent",
                     }}
@@ -288,11 +287,11 @@ export default async function LandingPage() {
               <Paper
                 style={{
                   background:
-                    "linear-gradient(145deg, rgba(99, 102, 241, 0.1) 0%, rgba(168, 85, 247, 0.05) 100%)",
-                  border: "1px solid rgba(99, 102, 241, 0.2)",
+                    "linear-gradient(145deg, rgba(27, 147, 69, 0.1) 0%, rgba(82, 255, 148, 0.05) 100%)",
+                  border: "1px solid rgba(82, 255, 148, 0.2)",
                   borderRadius: "24px",
                   padding: "8px",
-                  boxShadow: "0 25px 80px -12px rgba(99, 102, 241, 0.25)",
+                  boxShadow: "0 25px 80px -12px rgba(27, 147, 69, 0.25)",
                 }}
               >
                 <div
@@ -322,25 +321,6 @@ export default async function LandingPage() {
         </div>
       </Container>
 
-      <div style={{ marginTop: 100, marginBottom: 50 }}>
-        <Flex gap={8} align="center" direction="column">
-          <Text size="xl" c="#cbd5e1">
-            {t("featuredCreators.subtitle")}
-          </Text>
-
-          <Button
-            component="a"
-            variant="subtle"
-            size="compact-lg"
-            color="gray"
-            href="/creators"
-            rightSection={<IconArrowRight size={16} />}
-            style={{ color: "#94a3b8" }}
-          >
-            {t("featuredCreators.browseAll")}
-          </Button>
-        </Flex>
-      </div>
       <CreatorsSlider followers={followers} />
 
       <Container size="xl">
@@ -349,8 +329,8 @@ export default async function LandingPage() {
             p={60}
             style={{
               background:
-                "linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(168, 85, 247, 0.1) 100%)",
-              border: "1px solid rgba(99, 102, 241, 0.2)",
+                "linear-gradient(135deg, rgba(27, 147, 69, 0.15) 0%, rgba(82, 255, 148, 0.1) 100%)",
+              border: "1px solid rgba(82, 255, 148, 0.2)",
               borderRadius: "32px",
               textAlign: "center",
               position: "relative",
@@ -366,7 +346,7 @@ export default async function LandingPage() {
                 width: "100%",
                 height: "200%",
                 background:
-                  "radial-gradient(ellipse at center, rgba(99, 102, 241, 0.1) 0%, transparent 50%)",
+                  "radial-gradient(ellipse at center, rgba(27, 147, 69, 0.1) 0%, transparent 50%)",
                 pointerEvents: "none",
               }}
             />
@@ -398,10 +378,11 @@ export default async function LandingPage() {
                 href="/register"
                 size="responsive"
                 variant="gradient"
-                gradient={{ from: "#6366f1", to: "#a855f7", deg: 135 }}
+                c="black"
+                gradient={{ from: "#54ff5b", to: "#b7ff6b", deg: 135 }}
                 radius="lg"
                 style={{
-                  outline: "2px solid rgba(168, 85, 247, 0.5)",
+                  outline: "2px solid rgba(82, 255, 148, 0.4)",
                   outlineOffset: "3px",
                 }}
                 mt="lg"

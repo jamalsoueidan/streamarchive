@@ -1,0 +1,84 @@
+import { Button, Flex, Group, Menu } from "@mantine/core";
+import { IconCrown, IconLogout, IconSettings } from "@tabler/icons-react";
+import { useTranslations } from "next-intl";
+import Link from "next/link";
+
+import { useUser } from "@/app/providers/user-provider";
+import * as Sentry from "@sentry/nextjs";
+
+export const Header = () => {
+  const t = useTranslations("protected.premium");
+  const user = useUser();
+
+  return (
+    <Flex justify="space-between" align="center" m="md">
+      <Link
+        href="/"
+        style={{
+          textDecoration: "none",
+          display: "flex",
+          alignItems: "center",
+          gap: 5,
+        }}
+      >
+        <span
+          style={{
+            fontFamily: "var(--font-logo)",
+            fontSize: "1.6rem",
+            fontWeight: 700,
+            color: "white",
+            letterSpacing: "-0.02em",
+          }}
+        >
+          Stream<span style={{ color: "#52FF94" }}>Archive</span>
+        </span>
+      </Link>
+
+      <Group gap="md">
+        <Button
+          component={Link}
+          href="/premium"
+          variant="outline"
+          radius="md"
+          size="sm"
+          color="white"
+          rightSection={<IconCrown color="gold" />}
+        >
+          {t("title")}
+        </Button>
+
+        <Menu trigger="click">
+          <Menu.Target>
+            <Button
+              variant="subtle"
+              c="white"
+              color="gray"
+              leftSection={<IconSettings size={18} />}
+            >
+              {user?.username}
+            </Button>
+          </Menu.Target>
+          <Menu.Dropdown>
+            <Menu.Item
+              component={Link}
+              href="/settings"
+              leftSection={<IconSettings size={16} />}
+            >
+              {t("actions.settings")}
+            </Menu.Item>
+            <Menu.Item
+              onClick={async () => {
+                Sentry.setUser(null);
+                await fetch("/api/logout", { method: "POST" });
+                window.location.href = "/";
+              }}
+              leftSection={<IconLogout size={16} />}
+            >
+              {t("actions.logout")}
+            </Menu.Item>
+          </Menu.Dropdown>
+        </Menu>
+      </Group>
+    </Flex>
+  );
+};

@@ -15,7 +15,7 @@ export function CreatorsSlider({
   if (!followers?.length) return null;
 
   return (
-    <div style={{ overflowX: "clip" }}>
+    <div style={{ overflowX: "clip", marginTop: "80px" }}>
       <div className={styles.sliderContainer}>
         <div className={styles.sliderTrack}>
           {followers.map((creator, index) => (

@@ -32,43 +32,55 @@
 
 /* Left side: 1, 2, 3 */
 .card:nth-child(1) {
-  top: 15%;
+  top: 5%;
   left: 5%;
-  animation: floatGentle 12s ease-in-out infinite, fade1 8s ease-in-out infinite;
+  animation:
+    floatGentle 12s ease-in-out infinite,
+    fade1 8s ease-in-out infinite;
 }
 
 .card:nth-child(2) {
   top: 40%;
   left: 3%;
-  animation: float2 14s ease-in-out infinite, fade2 10s ease-in-out infinite;
+  animation:
+    float2 14s ease-in-out infinite,
+    fade2 10s ease-in-out infinite;
 }
 
 .card:nth-child(3) {
   top: 70%;
   left: 6%;
-  animation: float3 10s ease-in-out infinite, fade1 12s ease-in-out infinite;
+  animation:
+    float3 10s ease-in-out infinite,
+    fade1 12s ease-in-out infinite;
 }
 
 /* Right side: 4, 5, 6 */
 .card:nth-child(4) {
-  top: 10%;
+  top: 2%;
   right: 5%;
   left: auto;
-  animation: float4 16s ease-in-out infinite, fade2 9s ease-in-out infinite;
+  animation:
+    float4 16s ease-in-out infinite,
+    fade2 9s ease-in-out infinite;
 }
 
 .card:nth-child(5) {
   top: 40%;
   right: 3%;
   left: auto;
-  animation: float1 11s ease-in-out infinite 2s, fade1 7s ease-in-out infinite 1s;
+  animation:
+    float1 11s ease-in-out infinite 2s,
+    fade1 7s ease-in-out infinite 1s;
 }
 
 .card:nth-child(6) {
   top: 70%;
   right: 6%;
   left: auto;
-  animation: float2 13s ease-in-out infinite 1s, fade2 11s ease-in-out infinite;
+  animation:
+    float2 13s ease-in-out infinite 1s,
+    fade2 11s ease-in-out infinite;
 }
 
 /* Mobile: horizontal row below hero */
@@ -80,6 +92,7 @@
     justify-content: center;
     gap: 8px;
     margin-top: 16px;
+    margin-bottom: 30px;
     overflow: visible;
   }
 
@@ -98,7 +111,8 @@
 }
 
 @keyframes floatGentle {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(0, 0) rotate(0deg);
   }
   25% {
@@ -113,7 +127,8 @@
 }
 
 @keyframes float1 {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(0, 0) rotate(0deg);
   }
   25% {
@@ -128,7 +143,8 @@
 }
 
 @keyframes float2 {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(0, 0) rotate(0deg);
   }
   25% {
@@ -143,7 +159,8 @@
 }
 
 @keyframes float3 {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(0, 0) rotate(0deg);
   }
   33% {
@@ -155,7 +172,8 @@
 }
 
 @keyframes float4 {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(0, 0) rotate(0deg);
   }
   20% {
@@ -173,7 +191,8 @@
 }
 
 @keyframes fade1 {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0.8;
   }
   50% {
@@ -182,7 +201,8 @@
 }
 
 @keyframes fade2 {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0.75;
   }
   50% {

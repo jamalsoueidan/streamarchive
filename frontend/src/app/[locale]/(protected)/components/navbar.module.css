@@ -4,68 +4,35 @@
   padding: var(--mantine-spacing-md);
   display: flex;
   flex-direction: column;
-  transition: padding 200ms ease;
-}
-
-.navbar[data-collapsed] {
-  padding: var(--mantine-spacing-sm);
-  align-items: center;
-}
-
-.navbarMain {
-  flex: 1;
-}
-
-.header {
-  padding-bottom: var(--mantine-spacing-md);
-  margin-bottom: var(--mantine-spacing-sm);
-  border-bottom: 1px solid
-    light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
-}
-
-.footer {
-  padding-top: var(--mantine-spacing-md);
-  margin-top: var(--mantine-spacing-md);
-  border-top: 1px solid
-    light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
-  display: flex;
-  justify-content: center;
 }
 
 .link {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-decoration: none;
-  font-size: var(--mantine-font-size-lg);
+  font-size: var(--mantine-font-size-sm);
   color: white;
-  padding: var(--mantine-spacing-xs) var(--mantine-spacing-sm);
+  padding: var(--mantine-spacing-xs);
   border-radius: var(--mantine-radius-sm);
   font-weight: 500;
-  transition:
-    padding 200ms ease,
-    justify-content 200ms ease;
+  width: 100%;
+  transition: background-color 200ms ease;
 
   @mixin hover {
-    background-color: light-dark(
-      var(--mantine-color-gray-0),
-      var(--mantine-color-dark-6)
-    );
-    color: var(--mantine-color-red-7);
+    color: #52ff94;
 
     .linkIcon {
-      color: var(--mantine-color-red-7);
+      color: #52ff94;
     }
   }
 }
 
 .link[data-active] {
-  background-color: light-dark(
-    var(--mantine-color-gray-0),
-    var(--mantine-color-dark-6)
-  );
-  color: var(--mantine-color-red-7);
+  color: #52ff94;
 }
 
 .link[data-active] .linkIcon {
-  color: var(--mantine-color-red-7);
+  color: #52ff94;
 }

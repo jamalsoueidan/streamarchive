@@ -133,7 +133,7 @@ export default function FollowerItem({ follower, isOpen }: Props) {
             <Stack gap="0">
               <Text size="xs" c="dimmed" suppressHydrationWarning>
                 {t("recordings.lastCheckedAgo", {
-                  time: safeRelativeTime(format, follower.lastCheckedAt),
+                  time: safeRelativeTime(format, follower.lastCheckedAt, { now }),
                 })}
               </Text>
               <Text size="xs" c="dimmed" suppressHydrationWarning>

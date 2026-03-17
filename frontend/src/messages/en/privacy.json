@@ -13,8 +13,8 @@
   },
   "dataController": {
     "title": "Data Controller",
-    "content": "StreamArchive.com is the data controller responsible for your personal data. If you have any questions about this Privacy Policy or our data practices, you can contact us at:",
-    "email": "contact@streamarchive.com"
+    "content": "StreamArchive is the data controller responsible for your personal data. If you have any questions about this Privacy Policy or our data practices, you can contact us at:",
+    "email": "contact@streamarchive.io"
   },
   "whatWeCollect": {
     "title": "What We Collect",
@@ -130,12 +130,12 @@
       "withdraw": "Right to Withdraw Consent",
       "withdrawDesc": "Withdraw consent at any time"
     },
-    "footer": "To exercise any of these rights, contact us at contact@streamarchive.com"
+    "footer": "To exercise any of these rights, contact us at contact@streamarchive.io"
   },
   "children": {
     "title": "Children's Privacy",
     "content": "Our Service is not intended for anyone under the age of 18 years old. We do not knowingly collect personal information from children under 18.",
-    "contact": "If you believe that a child has provided us with personal information, please contact us immediately at contact@streamarchive.com, and we will take steps to delete such information from our systems."
+    "contact": "If you believe that a child has provided us with personal information, please contact us immediately at contact@streamarchive.io, and we will take steps to delete such information from our systems."
   },
   "security": {
     "title": "Data Security",
@@ -149,7 +149,7 @@
   "contact": {
     "title": "Contact Us",
     "content": "If you have any questions about this Privacy Policy, your data, or your rights, please contact us:",
-    "email": "contact@streamarchive.com",
+    "email": "contact@streamarchive.io",
     "footer": "You also have the right to lodge a complaint with a supervisory authority (such as the Danish Data Protection Agency - Datatilsynet) if you believe your data protection rights have been violated."
   },
   "footerNote": "If we update this policy, we will post changes here with a new date. Continued use of the Service after changes constitutes acceptance of the updated policy."

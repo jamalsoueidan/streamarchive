@@ -8,7 +8,6 @@ import {
 import { getFollowerFilters } from "@/app/actions/followers";
 import { getTranslations } from "next-intl/server";
 import { fetchRecordings } from "./actions/fetch-recordings";
-import Filters from "./components/filters";
 import FollowingInfinity from "./components/following-infinity";
 import { FollowingFilters, followingParamsCache } from "./lib/search-params";
 
@@ -51,7 +50,7 @@ export default async function Page({
             <TabsTab value="default">{t("title")}</TabsTab>
           </TabsList>
         </Tabs>
-        <Filters filterOptions={filterOptions} />
+
         <FollowingInfinity />
       </Stack>
     </HydrationBoundary>

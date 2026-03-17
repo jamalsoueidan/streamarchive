@@ -8,7 +8,6 @@ import {
 import {
   Accordion,
   AccordionControlProps,
-  Anchor,
   Avatar,
   Box,
   Center,
@@ -21,7 +20,6 @@ import {
   Text,
   useMatches,
 } from "@mantine/core";
-import Link from "next/link";
 
 import { ImageSpritePreview } from "@/app/[locale]/(protected)/components/image-sprite-preview";
 import { generateAvatarUrl } from "@/app/lib/avatar-url";
@@ -32,7 +30,6 @@ import { useQuery } from "@tanstack/react-query";
 import { useFormatter, useNow, useTranslations } from "next-intl";
 import Image from "next/image";
 import { useRef, useState } from "react";
-import { getProfileUrl } from "../../../../components/open-social";
 import { CountryFlag } from "../../components/country-flag";
 import FollowButton from "../../components/follow-button";
 import { FollowerTypeIcon } from "../../components/follower-type-icon";
@@ -124,11 +121,10 @@ export default function FollowerItem({ follower, isOpen }: Props) {
 
           <Stack gap={2}>
             <Group gap="xs">
-              <Anchor component={Link} href={getProfileUrl(follower)} size="md">
-                <Text size="lg" truncate maw={isMobile ? 100 : 200} fw="bold">
-                  {decodeURIComponent(follower.username)}
-                </Text>
-              </Anchor>
+              <Text size="lg" truncate maw={isMobile ? 100 : 200} fw="bold">
+                {decodeURIComponent(follower.username)}
+              </Text>
+
               {follower.countryCode ? (
                 <CountryFlag countryCode={follower?.countryCode} />
               ) : null}
@@ -136,10 +132,8 @@ export default function FollowerItem({ follower, isOpen }: Props) {
 
             <Stack gap="0">
               <Text size="xs" c="dimmed" suppressHydrationWarning>
-                {t("followers.addedAgo", {
-                  time: safeRelativeTime(format, follower.createdAt, {
-                    now,
-                  }),
+                {t("recordings.lastCheckedAgo", {
+                  time: safeRelativeTime(format, follower.lastCheckedAt),
                 })}
               </Text>
               <Text size="xs" c="dimmed" suppressHydrationWarning>
@@ -158,7 +152,7 @@ export default function FollowerItem({ follower, isOpen }: Props) {
           </Stack>
         ) : recordings.length > 0 ? (
           <Stack mt="lg" gap="lg">
-            <SimpleGrid cols={{ sm: 2, md: 3, xl: 4 }} spacing="lg">
+            <SimpleGrid cols={{ base: 2, sm: 4, md: 6, xl: 8 }} spacing="sm">
               {recordings.map((rec) => {
                 const isRecording = rec.sources?.some(
                   (s) =>
@@ -191,8 +185,13 @@ export default function FollowerItem({ follower, isOpen }: Props) {
                       )}
                     </Box>
 
-                    <Group justify="space-between" align="center">
-                      <Text size="sm" suppressHydrationWarning>
+                    <Group gap={4} wrap="nowrap" justify="space-between">
+                      <Text
+                        size="xs"
+                        c="dimmed"
+                        truncate
+                        suppressHydrationWarning
+                      >
                         {isRecording
                           ? t("recordings.liveAgo", {
                               time: safeRelativeTime(format, rec.createdAt, {
@@ -201,7 +200,7 @@ export default function FollowerItem({ follower, isOpen }: Props) {
                               }),
                             })
                           : format.dateTime(new Date(rec.createdAt || ""), {
-                              dateStyle: "medium",
+                              dateStyle: "short",
                               timeStyle: "short",
                             })}
                       </Text>

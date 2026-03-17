@@ -112,7 +112,7 @@ export default function FollowerItem({ follower }: Props) {
         </Flex>
         {follower.recordings && follower.recordings?.length > 0 ? (
           <Box mt="xs">
-            <SimpleGrid cols={{ base: 1, sm: 2, md: 3, xl: 4 }} spacing="lg">
+            <SimpleGrid cols={{ base: 2, sm: 4, md: 6, xl: 8 }} spacing="sm">
               {follower.recordings?.map((rec, index) => {
                 const isRecording = rec.sources?.some(
                   (s) =>

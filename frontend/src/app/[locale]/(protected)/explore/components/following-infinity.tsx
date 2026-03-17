@@ -70,7 +70,7 @@ export default function FollowingInfinity() {
 
   return (
     <>
-      <SimpleGrid cols={{ base: 1, sm: 2, md: 3, xl: 4 }} spacing="lg">
+      <SimpleGrid cols={{ base: 2, sm: 4, md: 6, xl: 8 }} spacing="sm">
         {recordings?.map((rec) => (
           <RecordingItem key={rec.id} recording={rec} />
         ))}

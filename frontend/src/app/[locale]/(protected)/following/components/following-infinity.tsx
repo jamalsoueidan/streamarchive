@@ -10,9 +10,9 @@ import { useInfiniteQuery } from "@tanstack/react-query";
 
 import { useTranslations } from "next-intl";
 import { EmptyState } from "../../components/empty-state";
-import RecordingItem from "./recording-item";
 import { fetchRecordings } from "../actions/fetch-recordings";
 import { followingParsers } from "../lib/search-params";
+import RecordingItem from "./recording-item";
 
 export default function FollowingInfinity() {
   const [filters] = useQueryStates(followingParsers);
@@ -70,7 +70,7 @@ export default function FollowingInfinity() {
 
   return (
     <>
-      <SimpleGrid cols={{ base: 1, sm: 2, md: 3, xl: 4 }} spacing="lg">
+      <SimpleGrid cols={{ base: 2, sm: 4, md: 6, xl: 8 }} spacing="sm">
         {recordings?.map((rec) => (
           <RecordingItem key={rec.id} recording={rec} />
         ))}

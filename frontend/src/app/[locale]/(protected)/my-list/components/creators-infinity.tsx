@@ -1,6 +1,6 @@
 "use client";
 
-import { Accordion, Alert, Loader, Stack, Text } from "@mantine/core";
+import { Accordion, Loader, Stack, Text } from "@mantine/core";
 import { useIntersection } from "@mantine/hooks";
 import { useEffect, useState } from "react";
 
@@ -70,9 +70,6 @@ export default function CreatorsInfinity() {
 
   return (
     <>
-      <Alert c="dimmed" mb="xs">
-        {t("disabledHint")}
-      </Alert>
       <Accordion
         multiple
         variant="separated"

@@ -173,7 +173,7 @@ export default function LiveInfinity({ scope }: Props) {
 
       <Divider />
 
-      <SimpleGrid cols={{ base: 1, sm: 2, md: 3, xl: 4 }} spacing="lg">
+      <SimpleGrid cols={{ base: 2, sm: 4, md: 6, xl: 8 }} spacing="sm">
         {recordings.map((rec) => (
           <Grid gutter="xs" key={rec.documentId} w="100%">
             {rec.follower && (

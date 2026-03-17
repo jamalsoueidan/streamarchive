@@ -89,7 +89,8 @@ export function ImageSpritePreview({ recording, type, username }: Props) {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       style={{
-        aspectRatio: "16/9",
+        aspectRatio: "1/2",
+        maxHeight: 300,
         position: "relative",
         overflow: "hidden",
         borderRadius: "var(--mantine-radius-md)",
@@ -119,9 +120,7 @@ export function ImageSpritePreview({ recording, type, username }: Props) {
           alt=""
           src={
             hasSources
-              ? isRecording
-                ? uri + "screenshot.jpg"
-                : uri + "preview.jpg"
+              ? uri + "screenshot.jpg"
               : "/assets/placeholder/180x280/black/white?text=Recording started"
           }
           unoptimized

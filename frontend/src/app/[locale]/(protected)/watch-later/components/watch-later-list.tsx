@@ -68,7 +68,7 @@ export default function WatchLaterList({ initialIds }: Props) {
 
   return (
     <Stack gap="lg">
-      <SimpleGrid cols={{ base: 1, sm: 2, md: 3, xl: 4 }} spacing="lg">
+      <SimpleGrid cols={{ base: 2, sm: 4, md: 6, xl: 8 }} spacing="sm">
         {sortedRecordings.map((rec) => {
           const isRecording = rec.sources?.some(
             (s) =>

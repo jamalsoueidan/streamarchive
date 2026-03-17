@@ -51,7 +51,7 @@ export async function DiscoverSection({
         </Link>
       </Flex>
 
-      <SimpleGrid cols={{ base: 2, sm: 2, md: 5 }} spacing="md">
+      <SimpleGrid cols={{ base: 3, sm: 4, md: 8 }} spacing="sm">
         {recordings.map((rec) => (
           <Stack key={rec.documentId} gap="4">
             <Box pos="relative" style={{ opacity: rec.hidden ? 0.5 : 1 }}>

@@ -10,6 +10,7 @@ import {
   HlsVideo,
   MediaControlBar,
   MediaController,
+  MediaFullscreenButton,
   MediaLoadingIndicator,
   MediaMuteButton,
   MediaPlayButton,
@@ -128,13 +129,16 @@ export function VideoPlayer({
         media-controller[mediapaused] media-loading-indicator[slot="centered-chrome"] {
           display: none !important;
         }
+        media-controller video, media-controller hls-video {
+          object-fit: contain;
+        }
       `}</style>
       <MediaController
         ref={controllerRef}
         onDoubleClick={handleDoubleClick}
         style={{
           width: "100%",
-          height: "100%",
+          height: "75vh",
           background: "#000",
         }}
       >
@@ -192,6 +196,7 @@ export function VideoPlayer({
             <MediaVolumeRange />
             <MediaMuteButton title="" />
           </div>
+          <MediaFullscreenButton />
         </MediaControlBar>
       </MediaController>
     </>

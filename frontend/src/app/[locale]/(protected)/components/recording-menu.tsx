@@ -157,15 +157,6 @@ export function RecordingMenu({
           >
             {inWatchLater ? t("removeFromWatchLater") : t("addToWatchLater")}
           </Menu.Item>
-          {isFollowing && (
-            <Menu.Item
-              component={Link}
-              href={`/ai-studio/create/${recording.documentId}`}
-              leftSection={<IconSparkles />}
-            >
-              {t("createWithAI")}
-            </Menu.Item>
-          )}
           <Menu.Divider />
           <Menu.Item
             leftSection={<IconScissors />}

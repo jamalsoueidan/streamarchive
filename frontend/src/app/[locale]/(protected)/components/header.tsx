@@ -11,7 +11,7 @@ export const Header = () => {
   const user = useUser();
 
   return (
-    <Flex justify="space-between" align="center" m="md">
+    <Flex justify="space-between" h="100%" align="center">
       <Link
         href="/"
         style={{

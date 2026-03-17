@@ -32,16 +32,13 @@ export function Shell({
   return (
     <IsNewProvider>
       <AppShell
-        header={{ height: 50 }}
+        header={{ height: 60 }}
         styles={{
           footer: !headerHeight
             ? {
                 display: "none",
               }
             : {},
-          navbar: {
-            transition: "width 200ms ease",
-          },
         }}
         footer={{
           height: mounted ? headerHeight : 0,
@@ -53,17 +50,17 @@ export function Shell({
           collapsed: { mobile: !opened },
         }}
         withBorder={false}
+        pl="md"
+        pr="md"
       >
-        <AppShell.Header bg="unset">
+        <AppShell.Header bg="#030a06" px="lg">
           <Header />
         </AppShell.Header>
 
-        <AppShell.Navbar>
+        <AppShell.Navbar pl="md">
           <Navbar opened={opened} close={close} collapsed={collapsed} />
         </AppShell.Navbar>
-        <AppShell.Main mt="md" pr="md">
-          {children}
-        </AppShell.Main>
+        <AppShell.Main>{children}</AppShell.Main>
         <AppShell.Footer>
           <MobileBar />
         </AppShell.Footer>

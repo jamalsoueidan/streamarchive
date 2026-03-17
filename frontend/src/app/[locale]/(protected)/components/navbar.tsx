@@ -145,21 +145,12 @@ export function Navbar({
   });
 
   return (
-    <nav className={classes.navbar} data-collapsed={collapsed || undefined}>
-      <AppShell.Section grow component={ScrollArea}>
-        <Card
-          radius="lg"
-          p="xs"
-          withBorder={false}
-          bg="gray.9"
-          h="100%"
-          w="100%"
-        >
-          <Stack gap={collapsed ? 4 : 8} align="center">
-            {links}
-          </Stack>
-        </Card>
-      </AppShell.Section>
-    </nav>
+    <AppShell.Section grow component={ScrollArea}>
+      <Card radius="lg" p="xs" withBorder={false} bg="gray.9" h="100%" w="100%">
+        <Stack gap={collapsed ? 4 : 8} align="center">
+          {links}
+        </Stack>
+      </Card>
+    </AppShell.Section>
   );
 }

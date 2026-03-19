@@ -16,7 +16,7 @@ export async function GET(request: NextRequest) {
 
   const clientKey = process.env.TIKTOK_CLIENT_KEY;
   const redirectUri = `${process.env.NEXT_PUBLIC_BASE_URL}/callback/tiktok`;
-  const scope = "user.info.basic,video.publish,video.upload";
+  const scope = "user.info.basic";
 
   const random = crypto.randomBytes(16).toString("hex");
   const state = `${action}:${random}`;

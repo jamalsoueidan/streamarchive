@@ -3,10 +3,7 @@
 import { SearchCreatorModal } from "@/app/[locale]/(protected)/components/search-creator-modal";
 import { SegmentedControl, Stack, Text } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-import {
-  IconPlayerPlayFilled,
-  IconSearch,
-} from "@tabler/icons-react";
+import { IconPlayerPlayFilled } from "@tabler/icons-react";
 import { useTranslations } from "next-intl";
 import { usePathname, useRouter } from "next/navigation";
 import { useTransition } from "react";
@@ -19,12 +16,6 @@ export function MobileBar() {
   const pathname = usePathname();
   const router = useRouter();
   const t = useTranslations("protected.navigation");
-
-  const iconProps = {
-    style: { display: "block" },
-    size: 20,
-    stroke: 1.5,
-  };
 
   const handleChange = (value: string) => {
     startTransition(() => {
@@ -43,16 +34,26 @@ export function MobileBar() {
     .filter((item) => item.url !== "/live")
     .map((item) => {
       const Icon = item.icon || IconPlayerPlayFilled;
+      const isActive = pathname.startsWith(item.url || "");
       return {
         value: item.url,
         label: (
           <Stack gap={2} align="center">
             <Icon
-              {...iconProps}
-              style={{ width: "18px", height: "18px" }}
-              color={item.color ? item.color : undefined}
+              stroke={2}
+              style={{
+                width: "24px",
+                height: "24px",
+                color: isActive ? "#52FF94" : item.color || undefined,
+              }}
             />
-            <Text c="dimmed" size="xs">
+            <Text
+              size="xs"
+              ta="center"
+              lh={1.2}
+              fw={500}
+              c={isActive ? "#52FF94" : "dimmed"}
+            >
               {t(item.labelKey)}
             </Text>
           </Stack>
@@ -68,30 +69,14 @@ export function MobileBar() {
         fullWidth
         value={currentValue}
         onChange={(value) => {
-          if (value === "search") {
+          if (value === "/search") {
             openSearch();
             return;
           }
           handleChange(value);
         }}
         styles={{ label: { height: 46, padding: "4px" } }}
-        data={[
-          ...links,
-          {
-            value: "search",
-            label: (
-              <Stack gap={2} align="center">
-                <IconSearch
-                  {...iconProps}
-                  style={{ width: "18px", height: "18px" }}
-                />
-                <Text c="dimmed" size="xs">
-                  {t("actions.search")}
-                </Text>
-              </Stack>
-            ),
-          },
-        ]}
+        data={links}
       />
     </>
   );

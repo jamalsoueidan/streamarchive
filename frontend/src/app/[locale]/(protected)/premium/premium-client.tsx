@@ -19,8 +19,8 @@ import {
   Paper,
   Radio,
   Stack,
+  Tabs,
   Text,
-  Title,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import {
@@ -31,15 +31,11 @@ import {
   IconBrandMastercard,
   IconBrandPaypal,
   IconBrandVisa,
-  IconChartBar,
   IconCheck,
   IconCrown,
   IconDownload,
   IconHeadset,
-  IconLanguage,
-  IconMovie,
   IconScissors,
-  IconShare,
   IconSparkles,
   IconUsers,
   IconVideo,
@@ -127,23 +123,17 @@ export default function PremiumClient() {
       : BILLING_OPTIONS.filter((o) => !o.stripeOnly);
 
   const PREMIUM_FEATURES = [
-    { icon: IconUsers, label: t("premiumRecord100"), color: "#a78bfa" },
-    { icon: IconDownload, label: t("premiumFullControl"), color: "#60a5fa" },
-    { icon: IconBell, label: t("premiumNotifications"), color: "#fbbf24" },
-    { icon: IconMovie, label: t("premiumAiHighlights"), color: "#34d399" },
-    { icon: IconLanguage, label: t("premiumAiSubtitles"), color: "#f472b6" },
-    { icon: IconSparkles, label: t("premiumAiMemes"), color: "#fb923c" },
-    { icon: IconShare, label: t("premiumPublishSocial"), color: "#38bdf8" },
-    { icon: IconScissors, label: t("premiumClipEditor"), color: "#ef4444" },
-    { icon: IconVideo, label: t("premiumWatchLater"), color: "#c084fc" },
-
-    { icon: IconChartBar, label: t("premiumTiktokInsights"), color: "#22d3ee" },
+    { icon: IconUsers, label: t("premiumRecord100"), color: "#52FF94" },
+    { icon: IconDownload, label: t("premiumFullControl"), color: "#34d399" },
+    { icon: IconBell, label: t("premiumNotifications"), color: "#6ee7b7" },
+    { icon: IconScissors, label: t("premiumClipEditor"), color: "#a7f3d0" },
+    { icon: IconVideo, label: t("premiumWatchLater"), color: "#52FF94" },
     {
       icon: IconDownload,
       label: t("premiumDownloadRecordings"),
-      color: "#4ade80",
+      color: "#34d399",
     },
-    { icon: IconHeadset, label: t("premiumPrioritySupport"), color: "#a78bfa" },
+    { icon: IconHeadset, label: t("premiumPrioritySupport"), color: "#6ee7b7" },
   ];
 
   const selectedPlan = filteredBillingOptions.find(
@@ -209,17 +199,29 @@ export default function PremiumClient() {
   return (
     <Stack w="100%">
       {/* Header */}
-      <Stack gap={4}>
-        <Group gap="xs">
-          <IconCrown size={28} color="#fbbf24" />
-          <Title order={2}>{t("title")}</Title>
-        </Group>
-        <Text size="sm" c="dimmed">
-          {isPremium ? t("descriptionPremium") : t("descriptionNonPremium")}
-        </Text>
-      </Stack>
-
-      <Divider mx={{ base: "-xs", sm: "-md" }} />
+      <Tabs
+        defaultValue="default"
+        styles={{
+          list: {
+            borderBottomWidth: 4,
+          },
+          tab: {
+            fontSize: "var(--mantine-font-size-lg)",
+            fontWeight: 600,
+            padding: "var(--mantine-spacing-sm) var(--mantine-spacing-md)",
+            borderBottomWidth: 4,
+          },
+        }}
+      >
+        <Tabs.List>
+          <Tabs.Tab
+            value="default"
+            leftSection={<IconCrown size={20} color="#fbbf24" />}
+          >
+            {t("title")}
+          </Tabs.Tab>
+        </Tabs.List>
+      </Tabs>
 
       <Grid gutter="md" overflow="hidden">
         {/* Left Column - Plan & Features */}
@@ -233,8 +235,8 @@ export default function PremiumClient() {
                 withBorder
                 style={{
                   background:
-                    "linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, rgba(124, 58, 237, 0.08) 100%)",
-                  borderColor: "rgba(139, 92, 246, 0.35)",
+                    "linear-gradient(135deg, rgba(27, 147, 69, 0.15) 0%, rgba(22, 163, 74, 0.08) 100%)",
+                  borderColor: "rgba(82, 255, 148, 0.3)",
                 }}
               >
                 <Stack gap="md">
@@ -250,7 +252,7 @@ export default function PremiumClient() {
                     )}
                   </Group>
 
-                  <Alert color="violet" variant="light">
+                  <Alert color="green" variant="light">
                     <Text size="sm">
                       {isPremiumRole
                         ? t("adminAccess")
@@ -328,11 +330,11 @@ export default function PremiumClient() {
                           cursor: "pointer",
                           borderColor:
                             selectedBilling === option.id
-                              ? "var(--mantine-color-violet-6)"
+                              ? "var(--mantine-color-green-6)"
                               : undefined,
                           background:
                             selectedBilling === option.id
-                              ? "rgba(139, 92, 246, 0.08)"
+                              ? "rgba(27, 147, 69, 0.08)"
                               : undefined,
                         }}
                         onClick={() => handlePlanSelect(option.id)}
@@ -347,7 +349,7 @@ export default function PremiumClient() {
                                   <Badge
                                     size="xs"
                                     variant="filled"
-                                    color="violet"
+                                    color="green"
                                   >
                                     {option.badge}
                                   </Badge>
@@ -396,13 +398,13 @@ export default function PremiumClient() {
               withBorder
               style={{
                 background:
-                  "linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, rgba(124, 58, 237, 0.08) 100%)",
-                borderColor: "rgba(139, 92, 246, 0.35)",
+                  "linear-gradient(135deg, rgba(27, 147, 69, 0.15) 0%, rgba(22, 163, 74, 0.08) 100%)",
+                borderColor: "rgba(82, 255, 148, 0.3)",
               }}
             >
               <Stack gap="md">
                 <Group gap="xs">
-                  <IconSparkles size={20} color="#a78bfa" />
+                  <IconSparkles size={20} color="#52FF94" />
                   <Text fw={600} size="lg">
                     {isPremium
                       ? t("yourPremiumFeatures")
@@ -647,7 +649,7 @@ export default function PremiumClient() {
                   <Divider my="xs" />
                   <Group justify="space-between">
                     <Text fw={600}>{t("total")}</Text>
-                    <Text fw={700} size="xl" c="violet">
+                    <Text fw={700} size="xl" c="green">
                       ${selectedPlan?.price}
                     </Text>
                   </Group>
@@ -671,7 +673,7 @@ export default function PremiumClient() {
                     disabled={!selectedPayment}
                     style={{
                       background:
-                        "linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%)",
+                        "linear-gradient(135deg, #22c55e 0%, #16a34a 100%)",
                     }}
                   >
                     {selectedBilling === "lifetime"
@@ -688,7 +690,7 @@ export default function PremiumClient() {
                     disabled={!selectedPayment}
                     style={{
                       background:
-                        "linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%)",
+                        "linear-gradient(135deg, #22c55e 0%, #16a34a 100%)",
                     }}
                   >
                     {selectedBilling === "lifetime"

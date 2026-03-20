@@ -14,6 +14,7 @@ import {
   IconLibrary,
   IconPlayerRecordFilled,
   IconScissors,
+  IconSearch,
   IconVideo,
 } from "@tabler/icons-react";
 
@@ -60,6 +61,12 @@ export const navigation = [
     url: "/live",
     icon: IconPlayerRecordFilled,
     color: "red",
+  },
+  {
+    labelKey: "actions.search",
+    url: "/search",
+    icon: IconSearch,
+    color: null,
   },
 ];
 

@@ -14,13 +14,21 @@ export function SearchCreator() {
     <>
       <TextInput
         placeholder={t("search.enterUsername")}
-        leftSection={<IconSearch size={16} />}
-        size="sm"
-        radius="md"
+        leftSection={<IconSearch size={16} color="#52FF94" />}
+        size="md"
         readOnly
         onClick={open}
         style={{ cursor: "pointer" }}
-        styles={{ input: { cursor: "pointer" } }}
+        styles={{
+          input: {
+            cursor: "pointer",
+            borderRadius: 9999,
+            border: "1px solid #54ff5b",
+            "--input-placeholder-color": "#54ff5b",
+            background:
+              "linear-gradient(70deg, #262626 40.41%, #1ed760 216.15%)",
+          } as React.CSSProperties,
+        }}
       />
       <SearchCreatorModal opened={opened} onClose={close} />
     </>

@@ -15,7 +15,6 @@ import { getLocale, getTranslations } from "next-intl/server";
 import PaginationControls from "@/app/components/pagination";
 import api from "@/lib/api";
 import { ClipCard } from "./components/clip-card";
-import { MyClipsGuard } from "./components/my-clips-guard";
 
 interface PageProps {
   searchParams: Promise<{
@@ -70,29 +69,27 @@ export default async function Page({ searchParams }: PageProps) {
         </TabsList>
       </Tabs>
 
-      <MyClipsGuard>
-        {!clips || clips.length === 0 ? (
-          <EmptyState />
-        ) : (
-          <Stack gap="md">
-            {totalPages > 1 && (
-              <Center>
-                <PaginationControls total={totalPages} size="lg" />
-              </Center>
-            )}
-            <SimpleGrid cols={{ base: 1, md: 2 }}>
-              {clips?.map((clip) => (
-                <ClipCard key={clip.documentId} clip={clip} locale={locale} />
-              ))}
-            </SimpleGrid>
-            {totalPages > 1 && (
-              <Center>
-                <PaginationControls total={totalPages} size="lg" />
-              </Center>
-            )}
-          </Stack>
-        )}
-      </MyClipsGuard>
+      {!clips || clips.length === 0 ? (
+        <EmptyState />
+      ) : (
+        <Stack gap="md">
+          {totalPages > 1 && (
+            <Center>
+              <PaginationControls total={totalPages} size="lg" />
+            </Center>
+          )}
+          <SimpleGrid cols={{ base: 1, md: 2 }}>
+            {clips?.map((clip) => (
+              <ClipCard key={clip.documentId} clip={clip} locale={locale} />
+            ))}
+          </SimpleGrid>
+          {totalPages > 1 && (
+            <Center>
+              <PaginationControls total={totalPages} size="lg" />
+            </Center>
+          )}
+        </Stack>
+      )}
     </Stack>
   );
 }

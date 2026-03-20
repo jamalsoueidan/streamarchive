@@ -1,12 +1,11 @@
 "use client";
 
-import { Can, Role } from "@/app/providers/ability-provider";
+import { Role } from "@/app/providers/ability-provider";
 import { SimpleGrid, Stack, Tabs } from "@mantine/core";
 import { useTranslations } from "next-intl";
 import { DangerZoneCard } from "./components/danger-zone-card";
 import { ProfileCard } from "./components/profile-card";
 import { SubscriptionCard } from "./components/subscription-card";
-import { TikTokCard } from "./components/tiktok-card";
 
 export default function SettingsPage() {
   const t = useTranslations("protected.settings");
@@ -35,9 +34,6 @@ export default function SettingsPage() {
       <SimpleGrid cols={{ sm: 1 }} spacing="md">
         <ProfileCard />
         <SubscriptionCard />
-        <Can I="meCreate" a="SocialAccount">
-          <TikTokCard />
-        </Can>
         <Role is="admin" not>
           <DangerZoneCard />
         </Role>

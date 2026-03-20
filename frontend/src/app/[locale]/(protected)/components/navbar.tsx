@@ -26,52 +26,40 @@ import { useTranslations } from "next-intl";
 
 export const navigation = [
   {
-    titleKey: "sections.home",
+    labelKey: "sections.home",
+    url: "/dashboard",
     icon: IconHome,
-    links: [
-      {
-        labelKey: "links.dashboard",
-        url: "/dashboard",
-        icon: IconHome,
-        color: null,
-      },
-    ],
+    color: null,
   },
   {
-    titleKey: "sections.studio",
+    labelKey: "links.myList",
+    url: "/my-list",
+    icon: IconLibrary,
+    color: null,
+  },
+  {
+    labelKey: "links.myRecordings",
+    url: "/following",
     icon: IconVideo,
-    links: [
-      {
-        labelKey: "links.myList",
-        url: "/my-list",
-        icon: IconLibrary,
-        color: null,
-      },
-      {
-        labelKey: "links.myRecordings",
-        url: "/following",
-        icon: IconVideo,
-        color: null,
-      },
-      {
-        labelKey: "links.myClips",
-        url: "/my-clips",
-        icon: IconScissors,
-        color: null,
-      },
-      {
-        labelKey: "links.watchLater",
-        url: "/watch-later",
-        icon: IconClock,
-        color: null,
-      },
-      {
-        labelKey: "links.live",
-        url: "/live",
-        icon: IconPlayerRecordFilled,
-        color: "red",
-      },
-    ],
+    color: null,
+  },
+  {
+    labelKey: "links.myClips",
+    url: "/my-clips",
+    icon: IconScissors,
+    color: null,
+  },
+  {
+    labelKey: "links.watchLater",
+    url: "/watch-later",
+    icon: IconClock,
+    color: null,
+  },
+  {
+    labelKey: "links.live",
+    url: "/live",
+    icon: IconPlayerRecordFilled,
+    color: "red",
   },
 ];
 
@@ -98,9 +86,7 @@ export function Navbar({
     }
   };
 
-  const allLinks = navigation.flatMap((section) => section.links);
-
-  const links = allLinks.map((item) => {
+  const links = navigation.map((item) => {
     const Icon = item.icon || IconPlayerRecordFilled;
     const isActive = pathname.includes(item.url || "");
 
@@ -157,14 +143,7 @@ export function Navbar({
 
   return (
     <AppShell.Section grow component={ScrollArea}>
-      <Card
-        radius="lg"
-        p="xs"
-        withBorder={false}
-        bg="gray.9"
-        h="100%"
-        w="100%"
-      >
+      <Card radius="lg" p="xs" withBorder={false} bg="gray.9" h="100%" w="100%">
         <Stack gap={collapsed ? 4 : 8} align="center">
           {links}
         </Stack>

@@ -10,7 +10,6 @@ import { MobileBar } from "./mobilebar";
 import { Navbar } from "./navbar";
 
 const NAVBAR_WIDTH_EXPANDED = 120;
-const ANDROID_TEST_CUTOFF = new Date("2026-03-10T00:00:00Z");
 
 export function Shell({
   children,
@@ -50,10 +49,10 @@ export function Shell({
           collapsed: { mobile: !opened },
         }}
         withBorder={false}
-        pl="lg"
-        pr="lg"
+        pl={{ base: "sm", sm: "lg" }}
+        pr={{ base: "sm", sm: "lg" }}
       >
-        <AppShell.Header bg="#030a06" px="lg">
+        <AppShell.Header bg="#030a06" px={{ base: "sm", sm: "lg" }}>
           <Header />
         </AppShell.Header>
 

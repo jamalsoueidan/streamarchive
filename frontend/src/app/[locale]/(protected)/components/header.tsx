@@ -1,4 +1,11 @@
-import { Button, Flex, Group, Menu } from "@mantine/core";
+import {
+  ActionIcon,
+  Button,
+  Flex,
+  Group,
+  Menu,
+  useMatches,
+} from "@mantine/core";
 import { IconCrown, IconLogout, IconSettings } from "@tabler/icons-react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
@@ -10,6 +17,10 @@ export const Header = () => {
   const tPremium = useTranslations("protected.premium");
   const tNavigation = useTranslations("protected.navigation");
   const user = useUser();
+  const isMobile = useMatches({
+    base: true,
+    sm: false,
+  });
 
   return (
     <Flex justify="space-between" h="100%" align="center">
@@ -25,7 +36,7 @@ export const Header = () => {
         <span
           style={{
             fontFamily: "var(--font-logo)",
-            fontSize: "1.6rem",
+            fontSize: isMobile ? "1.4rem" : "1.6rem",
             fontWeight: 700,
             color: "white",
             letterSpacing: "-0.02em",
@@ -35,18 +46,31 @@ export const Header = () => {
         </span>
       </Link>
 
-      <Group gap="md">
-        <Button
-          component={Link}
-          href="/premium"
-          variant="outline"
-          radius="md"
-          size="sm"
-          color="white"
-          rightSection={<IconCrown color="gold" />}
-        >
-          {tPremium("title")}
-        </Button>
+      <Group gap="xs">
+        {isMobile ? (
+          <ActionIcon
+            component={Link}
+            href="/premium"
+            variant="outline"
+            radius="md"
+            size="lg"
+            color="white"
+          >
+            <IconCrown size={18} color="gold" />
+          </ActionIcon>
+        ) : (
+          <Button
+            component={Link}
+            href="/premium"
+            variant="outline"
+            radius="md"
+            size="sm"
+            color="white"
+            rightSection={<IconCrown color="gold" />}
+          >
+            {tPremium("title")}
+          </Button>
+        )}
 
         <Menu trigger="click">
           <Menu.Target>
@@ -54,6 +78,8 @@ export const Header = () => {
               variant="subtle"
               c="white"
               color="gray"
+              radius="md"
+              size="sm"
               leftSection={<IconSettings size={18} />}
             >
               {user?.username}

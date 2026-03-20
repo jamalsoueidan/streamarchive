@@ -1,38 +1,24 @@
 "use client";
 
-import { useChangeLanguage } from "@/app/hooks/use-change-language";
-import { useUser } from "@/app/providers/user-provider";
-import { Menu, SegmentedControl, Stack, Text } from "@mantine/core";
-import * as Sentry from "@sentry/nextjs";
+import { SearchCreatorModal } from "@/app/[locale]/(protected)/components/search-creator-modal";
+import { SegmentedControl, Stack, Text } from "@mantine/core";
+import { useDisclosure } from "@mantine/hooks";
 import {
-  IconDotsVertical,
-  IconDownload,
-  IconLink,
-  IconLogout,
   IconPlayerPlayFilled,
-  IconSettings,
-  IconUser,
-  IconWorldSearch,
+  IconSearch,
 } from "@tabler/icons-react";
-import { useLocale, useTranslations } from "next-intl";
-import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { usePathname, useRouter } from "next/navigation";
 import { useTransition } from "react";
-import { usePWAInstall } from "react-use-pwa-install";
-import { navConfig } from "../../(public)/components/nav";
 import { navigation } from "./navbar";
 
 export function MobileBar() {
+  const [searchOpened, { open: openSearch, close: closeSearch }] =
+    useDisclosure(false);
   const [, startTransition] = useTransition();
-  const user = useUser();
   const pathname = usePathname();
   const router = useRouter();
   const t = useTranslations("protected.navigation");
-  const locale = useLocale();
-  const { switchLocale } = useChangeLanguage();
-
-  // null = not supported OR already installed OR doesn't meet PWA criteria
-  const install = usePWAInstall();
 
   const iconProps = {
     style: { display: "block" },
@@ -41,182 +27,72 @@ export function MobileBar() {
   };
 
   const handleChange = (value: string) => {
-    if (value.substring(0, 4) === "menu") return;
     startTransition(() => {
       router.push(value);
     });
   };
 
   const currentValue = (() => {
-    if (pathname.startsWith("/search")) return "/search";
-
-    const section = navigation.find((section) =>
-      section.links?.some((link) => pathname.startsWith(link.url || "")),
+    const item = navigation.find((item) =>
+      pathname.startsWith(item.url || ""),
     );
-    return section ? "menu" + section.titleKey : "";
+    return item?.url || "";
   })();
 
-  const links =
-    navigation.map((section) => {
-      const Icon = section.icon || IconPlayerPlayFilled;
+  const links = navigation
+    .filter((item) => item.url !== "/live")
+    .map((item) => {
+      const Icon = item.icon || IconPlayerPlayFilled;
       return {
-        value: "menu" + section.titleKey,
+        value: item.url,
         label: (
-          <Menu position="top-start" offset={15}>
-            <Menu.Target>
+          <Stack gap={2} align="center">
+            <Icon
+              {...iconProps}
+              style={{ width: "18px", height: "18px" }}
+              color={item.color ? item.color : undefined}
+            />
+            <Text c="dimmed" size="xs">
+              {t(item.labelKey)}
+            </Text>
+          </Stack>
+        ),
+      };
+    });
+
+  return (
+    <>
+      <SearchCreatorModal opened={searchOpened} onClose={closeSearch} />
+      <SegmentedControl
+        size="xl"
+        fullWidth
+        value={currentValue}
+        onChange={(value) => {
+          if (value === "search") {
+            openSearch();
+            return;
+          }
+          handleChange(value);
+        }}
+        styles={{ label: { height: 46, padding: "4px" } }}
+        data={[
+          ...links,
+          {
+            value: "search",
+            label: (
               <Stack gap={2} align="center">
-                <Icon
+                <IconSearch
                   {...iconProps}
                   style={{ width: "18px", height: "18px" }}
                 />
                 <Text c="dimmed" size="xs">
-                  {t(section.titleKey)}
+                  {t("actions.search")}
                 </Text>
               </Stack>
-            </Menu.Target>
-
-            <Menu.Dropdown>
-              {section.links.map((item) => {
-                const Icon = item.icon || IconPlayerPlayFilled;
-
-                return (
-                  <Menu.Item
-                    key={item.labelKey}
-                    leftSection={
-                      <Icon
-                        {...iconProps}
-                        style={{ width: "18px", height: "18px" }}
-                        color={item.color ? item.color : undefined}
-                      />
-                    }
-                    onClick={() => handleChange(item.url || "#")}
-                  >
-                    {t(item.labelKey)}
-                  </Menu.Item>
-                );
-              })}
-            </Menu.Dropdown>
-          </Menu>
-        ),
-      };
-    }) || [];
-
-  return (
-    <SegmentedControl
-      size="xl"
-      fullWidth
-      value={currentValue}
-      onChange={handleChange}
-      styles={{ label: { height: 46, padding: "4px" } }}
-      data={[
-        ...links,
-        {
-          value: "/search",
-          label: (
-            <Stack gap={2} align="center">
-              <IconLink
-                {...iconProps}
-                style={{ width: "18px", height: "18px" }}
-              />
-              <Text c="dimmed" size="xs">
-                {t("actions.search")}
-              </Text>
-            </Stack>
-          ),
-        },
-        {
-          value: "menu",
-          label: (
-            <Menu offset={15} position="top-start">
-              <Menu.Target>
-                <Stack gap={2} align="center">
-                  <IconDotsVertical
-                    {...iconProps}
-                    style={{ width: "18px", height: "18px" }}
-                  />
-                  <Text c="dimmed" size="xs">
-                    {t("actions.more")}
-                  </Text>
-                </Stack>
-              </Menu.Target>
-
-              <Menu.Dropdown>
-                <Menu.Label>
-                  <IconUser
-                    size={14}
-                    style={{ marginRight: 8, verticalAlign: "middle" }}
-                  />
-                  {user?.username || t("actions.guest")}
-                </Menu.Label>
-
-                <Menu.Divider />
-
-                {/* Only show if install is available (not null) */}
-                {install && (
-                  <>
-                    <Menu.Item
-                      leftSection={<IconDownload size={16} />}
-                      onClick={install}
-                    >
-                      {t("actions.installApp")}
-                    </Menu.Item>
-                    <Menu.Divider />
-                  </>
-                )}
-
-                <Menu.Item
-                  leftSection={<IconSettings size={16} />}
-                  onClick={() => handleChange("/settings")}
-                >
-                  {t("actions.settings")}
-                </Menu.Item>
-
-                <Menu.Sub openDelay={120} closeDelay={150}>
-                  <Menu.Sub.Target>
-                    <Menu.Sub.Item leftSection={<IconWorldSearch size={16} />}>
-                      {t("actions.language")} {locale.toUpperCase()}
-                    </Menu.Sub.Item>
-                  </Menu.Sub.Target>
-
-                  <Menu.Sub.Dropdown>
-                    {navConfig.languages
-                      .filter((lang) => locale !== lang.code)
-                      .map((lang) => (
-                        <Menu.Item
-                          key={lang.code}
-                          onClick={() => switchLocale(lang.code)}
-                          leftSection={
-                            <Image
-                              src={`https://flagcdn.com/w40/${lang.flag}.png`}
-                              width={20}
-                              height={15}
-                              alt={lang.label}
-                              style={{ borderRadius: 2, objectFit: "cover" }}
-                            />
-                          }
-                        >
-                          {lang.label}
-                        </Menu.Item>
-                      ))}
-                  </Menu.Sub.Dropdown>
-                </Menu.Sub>
-                <Menu.Divider />
-                <Menu.Item
-                  color="red"
-                  leftSection={<IconLogout size={16} />}
-                  onClick={async () => {
-                    Sentry.setUser(null);
-                    await fetch("/api/logout", { method: "POST" });
-                    window.location.href = "/";
-                  }}
-                >
-                  {t("actions.logout")}
-                </Menu.Item>
-              </Menu.Dropdown>
-            </Menu>
-          ),
-        },
-      ]}
-    />
+            ),
+          },
+        ]}
+      />
+    </>
   );
 }

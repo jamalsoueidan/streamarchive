@@ -17,10 +17,10 @@ import {
   Group,
   Modal,
   Paper,
-  Radio,
+  SegmentedControl,
   Stack,
-  Tabs,
   Text,
+  Title,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import {
@@ -36,7 +36,6 @@ import {
   IconDownload,
   IconHeadset,
   IconScissors,
-  IconSparkles,
   IconUsers,
   IconVideo,
 } from "@tabler/icons-react";
@@ -105,16 +104,6 @@ export default function PremiumClient() {
       billingCycle: "annual" as const,
       stripeOnly: false,
     },
-    /*{
-      id: "lifetime",
-      label: t("billingLifetimeLabel"),
-      price: 199,
-      perMonth: null,
-      savings: t("billingLifetimeSavings"),
-      badge: t("billingLifetimeBadge"),
-      billingCycle: "lifetime" as const,
-      stripeOnly: false,
-    },*/
   ];
 
   const filteredBillingOptions =
@@ -177,7 +166,6 @@ export default function PremiumClient() {
       });
     }
     setSelectedBilling(planId);
-    // 3 months is only available via Stripe, so auto-switch payment method
     if (plan?.stripeOnly && selectedPayment !== "stripe") {
       setSelectedPayment("stripe");
     }
@@ -197,520 +185,343 @@ export default function PremiumClient() {
   };
 
   return (
-    <Stack w="100%">
-      {/* Header */}
-      <Tabs
-        defaultValue="default"
-        styles={{
-          list: {
-            borderBottomWidth: 4,
-          },
-          tab: {
-            fontSize: "var(--mantine-font-size-lg)",
-            fontWeight: 600,
-            padding: "var(--mantine-spacing-sm) var(--mantine-spacing-md)",
-            borderBottomWidth: 4,
-          },
-        }}
-      >
-        <Tabs.List>
-          <Tabs.Tab
-            value="default"
-            leftSection={<IconCrown size={20} color="#fbbf24" />}
-          >
-            {t("title")}
-          </Tabs.Tab>
-        </Tabs.List>
-      </Tabs>
+    <Stack w="100%" maw={600} mx="auto">
+      {/* Hero */}
+      <Stack align="center" gap={4} py="xl">
+        <Paper
+          radius="xl"
+          px="md"
+          py={6}
+          style={{
+            background: "rgba(27, 147, 69, 0.15)",
+            border: "1px solid rgba(82, 255, 148, 0.3)",
+          }}
+        >
+          <Group gap={8}>
+            <IconCrown size={18} color="#fbbf24" />
+            <Text size="sm" fw={600} c="#52FF94">
+              {t("title")}
+            </Text>
+          </Group>
+        </Paper>
 
-      <Grid gutter="md" overflow="hidden">
-        {/* Left Column - Plan & Features */}
-        <GridCol span={{ base: 12, md: isPremium ? 12 : 7 }}>
-          <Stack gap="lg">
-            {/* Current Plan (premium users) */}
-            {isPremium && (
-              <Card
-                padding="lg"
-                radius="md"
-                withBorder
-                style={{
-                  background:
-                    "linear-gradient(135deg, rgba(27, 147, 69, 0.15) 0%, rgba(22, 163, 74, 0.08) 100%)",
-                  borderColor: "rgba(82, 255, 148, 0.3)",
-                }}
+        <Title
+          order={2}
+          ta="center"
+          style={{
+            fontSize: "clamp(1.8rem, 5vw, 2.4rem)",
+            fontWeight: 700,
+            letterSpacing: "-0.03em",
+            background: "linear-gradient(135deg, #54ff5b, #b7ff6b)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+          }}
+        >
+          {isPremium
+            ? t("yourPremiumFeatures")
+            : t("unlockPremiumFeatures")}
+        </Title>
+
+        <Text size="sm" c="dimmed" ta="center" maw={400}>
+          {isPremium ? t("descriptionPremium") : t("descriptionNonPremium")}
+        </Text>
+      </Stack>
+
+      {/* Premium user: current plan info */}
+      {isPremium && (
+        <Card
+          padding="lg"
+          radius="md"
+          withBorder
+          style={{
+            background:
+              "linear-gradient(135deg, rgba(27, 147, 69, 0.15) 0%, rgba(22, 163, 74, 0.08) 100%)",
+            borderColor: "rgba(82, 255, 148, 0.3)",
+          }}
+        >
+          <Stack gap="md">
+            <Group gap="xs">
+              <IconCrown size={20} color="#fbbf24" />
+              <Text fw={600} size="lg">
+                {isPremiumRole ? role?.name : t("title")}
+              </Text>
+              {user?.subscriptionStatus === "cancelled" && (
+                <Badge size="sm" variant="light" color="orange">
+                  {t("cancelled")}
+                </Badge>
+              )}
+            </Group>
+
+            <Alert color="green" variant="light">
+              <Text size="sm">
+                {isPremiumRole
+                  ? t("adminAccess")
+                  : user?.subscriptionStatus === "cancelled"
+                    ? t("cancelledMessage", {
+                        billingPeriod: getTranslatedBillingPeriod(
+                          user?.billingPeriod,
+                        ),
+                        endDate: new Date(
+                          user.subscriptionEndDate!,
+                        ).toLocaleDateString(),
+                      })
+                    : user?.billingPeriod === "lifetime"
+                      ? t("lifetimeMessage")
+                      : t("activeMessage", {
+                          billingPeriod: getTranslatedBillingPeriod(
+                            user?.billingPeriod,
+                          ),
+                          renewDate: new Date(
+                            user?.subscriptionEndDate || "",
+                          ).toLocaleDateString(),
+                        })}
+              </Text>
+            </Alert>
+
+            {canCancel && (
+              <Button
+                variant="subtle"
+                color="gray"
+                size="xs"
+                onClick={openCancelModal}
               >
-                <Stack gap="md">
-                  <Group gap="xs">
-                    <IconCrown size={20} color="#fbbf24" />
-                    <Text fw={600} size="lg">
-                      {isPremiumRole ? role?.name : t("title")}
+                {t("cancelSubscription")}
+              </Button>
+            )}
+          </Stack>
+        </Card>
+      )}
+
+      {/* Features checklist */}
+      <Grid gutter="sm">
+        {PREMIUM_FEATURES.map((feature) => (
+          <GridCol span={6} key={feature.label}>
+            <Group gap="xs" wrap="nowrap">
+              <IconCheck size={16} color="#52FF94" />
+              <Text size="sm">{feature.label}</Text>
+            </Group>
+          </GridCol>
+        ))}
+      </Grid>
+
+      <Text size="xs" c="dimmed" ta="center">
+        {t("futureFeatures")}{" "}
+        <Anchor href="/changelog" size="xs">
+          {t("seeWhatsNew")}
+        </Anchor>
+      </Text>
+
+      {/* Non-premium: pricing + payment */}
+      {!isPremium && (
+        <>
+          {/* Billing toggle */}
+          <SegmentedControl
+            fullWidth
+            value={selectedBilling}
+            onChange={handlePlanSelect}
+            data={filteredBillingOptions.map((option) => ({
+              value: option.id,
+              label: (
+                <Stack gap={0} align="center">
+                  <Group gap={4}>
+                    <Text size="sm" fw={600}>
+                      {option.label}
                     </Text>
-                    {user?.subscriptionStatus === "cancelled" && (
-                      <Badge size="sm" variant="light" color="orange">
-                        {t("cancelled")}
+                    {option.badge && (
+                      <Badge size="xs" variant="filled" color="green">
+                        {option.badge}
                       </Badge>
                     )}
                   </Group>
+                  <Text size="xs" c="dimmed">
+                    ${option.perMonth}/mo
+                  </Text>
+                </Stack>
+              ),
+            }))}
+            styles={{
+              root: {
+                background: "rgba(255,255,255,0.03)",
+                border: "1px solid rgba(82, 255, 148, 0.15)",
+                borderRadius: "var(--mantine-radius-md)",
+              },
+              label: {
+                padding: "var(--mantine-spacing-sm) var(--mantine-spacing-xs)",
+              },
+              indicator: {
+                background: "rgba(27, 147, 69, 0.2)",
+                borderRadius: "var(--mantine-radius-sm)",
+              },
+            }}
+          />
 
-                  <Alert color="green" variant="light">
-                    <Text size="sm">
-                      {isPremiumRole
-                        ? t("adminAccess")
-                        : user?.subscriptionStatus === "cancelled"
-                          ? t("cancelledMessage", {
-                              billingPeriod: getTranslatedBillingPeriod(
-                                user?.billingPeriod,
-                              ),
-                              endDate: new Date(
-                                user.subscriptionEndDate!,
-                              ).toLocaleDateString(),
-                            })
-                          : user?.billingPeriod === "lifetime"
-                            ? t("lifetimeMessage")
-                            : t("activeMessage", {
-                                billingPeriod: getTranslatedBillingPeriod(
-                                  user?.billingPeriod,
-                                ),
-                                renewDate: new Date(
-                                  user?.subscriptionEndDate || "",
-                                ).toLocaleDateString(),
-                              })}
-                    </Text>
-                  </Alert>
+          {/* Price display */}
+          <Stack align="center" gap={0}>
+            <Group gap={4} align="baseline">
+              <Text
+                fw={700}
+                style={{
+                  fontSize: "3rem",
+                  letterSpacing: "-0.03em",
+                  color: "#52FF94",
+                }}
+              >
+                ${selectedPlan?.perMonth}
+              </Text>
+              <Text size="lg" c="dimmed">
+                /mo
+              </Text>
+            </Group>
+            {selectedPlan?.savings && (
+              <Text size="sm" c="green">
+                {selectedPlan.savings}
+              </Text>
+            )}
+            {selectedPlan && selectedPlan.price !== selectedPlan.perMonth && (
+              <Text size="xs" c="dimmed">
+                ${selectedPlan.price} {t("total").toLowerCase()}
+              </Text>
+            )}
+          </Stack>
 
-                  {canCancel && (
-                    <Button
-                      variant="subtle"
-                      color="gray"
-                      size="xs"
-                      onClick={openCancelModal}
-                    >
-                      {t("cancelSubscription")}
-                    </Button>
-                  )}
+          {/* Payment methods side by side */}
+          <Grid gutter="sm">
+            <GridCol span={{ base: 12, xs: 6 }}>
+              <Card
+                padding="md"
+                radius="md"
+                withBorder
+                h="100%"
+                style={{
+                  borderColor:
+                    selectedPayment === "stripe"
+                      ? "rgba(82, 255, 148, 0.4)"
+                      : "rgba(255,255,255,0.1)",
+                  background:
+                    selectedPayment === "stripe"
+                      ? "rgba(27, 147, 69, 0.08)"
+                      : "rgba(255,255,255,0.02)",
+                  cursor: "pointer",
+                }}
+                onClick={() => handlePaymentChange("stripe")}
+              >
+                <Stack gap="sm" align="center">
+                  <Text size="sm" fw={600}>
+                    Stripe
+                  </Text>
+                  <Text size="xs" c="dimmed" ta="center">
+                    {t("stripeDescription")}
+                  </Text>
+                  <Group gap="xs" justify="center" wrap="wrap">
+                    <IconBrandVisa size={24} stroke={1.2} color="#94a3b8" />
+                    <IconBrandMastercard
+                      size={24}
+                      stroke={1.2}
+                      color="#94a3b8"
+                    />
+                    <IconBrandApple size={24} stroke={1.2} color="#94a3b8" />
+                    <IconBrandGoogle size={24} stroke={1.2} color="#94a3b8" />
+                    <IconBrandAmazon size={24} stroke={1.2} color="#94a3b8" />
+                  </Group>
                 </Stack>
               </Card>
-            )}
+            </GridCol>
 
-            {/* Choose Plan (non-premium users) */}
-            {!isPremium && (
-              <Stack gap="sm">
-                {/* Free tier - current plan */}
-                <Paper
-                  p="md"
-                  radius="md"
-                  withBorder
-                  style={{
-                    borderColor: "rgba(100, 116, 139, 0.4)",
-                    background: "rgba(100, 116, 139, 0.06)",
-                  }}
-                >
-                  <Group justify="space-between" wrap="nowrap">
-                    <Group gap="md" wrap="nowrap" ml="xl">
-                      <Text fw={500}>{t("currentPlan")}</Text>
-                    </Group>
-                    <Text fw={700} size="lg" c="dimmed">
-                      {t("free")}
-                    </Text>
-                  </Group>
-                </Paper>
-
-                <Radio.Group
-                  value={selectedBilling}
-                  onChange={handlePlanSelect}
-                >
-                  <Stack gap="sm">
-                    {filteredBillingOptions.map((option) => (
-                      <Paper
-                        key={option.id}
-                        p="md"
-                        radius="md"
-                        withBorder
-                        style={{
-                          cursor: "pointer",
-                          borderColor:
-                            selectedBilling === option.id
-                              ? "var(--mantine-color-green-6)"
-                              : undefined,
-                          background:
-                            selectedBilling === option.id
-                              ? "rgba(27, 147, 69, 0.08)"
-                              : undefined,
-                        }}
-                        onClick={() => handlePlanSelect(option.id)}
-                      >
-                        <Group justify="space-between" wrap="nowrap">
-                          <Group gap="md" wrap="nowrap">
-                            <Radio value={option.id} />
-                            <div>
-                              <Group gap="xs">
-                                <Text fw={500}>{option.label}</Text>
-                                {option.badge && (
-                                  <Badge
-                                    size="xs"
-                                    variant="filled"
-                                    color="green"
-                                  >
-                                    {option.badge}
-                                  </Badge>
-                                )}
-                              </Group>
-                              {option.savings && (
-                                <Text size="xs" c="green">
-                                  {option.savings}
-                                </Text>
-                              )}
-                            </div>
-                          </Group>
-                          <div style={{ textAlign: "right" }}>
-                            {option.perMonth ? (
-                              <>
-                                <Text fw={700} size="lg">
-                                  ${option.perMonth}/month
-                                </Text>
-                                <Text size="xs" c="dimmed">
-                                  ${option.price} total
-                                </Text>
-                              </>
-                            ) : (
-                              <>
-                                <Text fw={700} size="lg">
-                                  ${option.price}
-                                </Text>
-                                <Text size="xs" c="dimmed">
-                                  {t("oneTime")}
-                                </Text>
-                              </>
-                            )}
-                          </div>
-                        </Group>
-                      </Paper>
-                    ))}
-                  </Stack>
-                </Radio.Group>
-              </Stack>
-            )}
-
-            {/* Premium Features */}
-            <Card
-              padding="lg"
-              radius="md"
-              withBorder
-              style={{
-                background:
-                  "linear-gradient(135deg, rgba(27, 147, 69, 0.15) 0%, rgba(22, 163, 74, 0.08) 100%)",
-                borderColor: "rgba(82, 255, 148, 0.3)",
-              }}
-            >
-              <Stack gap="md">
-                <Group gap="xs">
-                  <IconSparkles size={20} color="#52FF94" />
-                  <Text fw={600} size="lg">
-                    {isPremium
-                      ? t("yourPremiumFeatures")
-                      : t("unlockPremiumFeatures")}
+            <GridCol span={{ base: 12, xs: 6 }}>
+              <Card
+                padding="md"
+                radius="md"
+                withBorder
+                h="100%"
+                style={{
+                  borderColor:
+                    selectedPayment === "freemius"
+                      ? "rgba(82, 255, 148, 0.4)"
+                      : "rgba(255,255,255,0.1)",
+                  background:
+                    selectedPayment === "freemius"
+                      ? "rgba(27, 147, 69, 0.08)"
+                      : "rgba(255,255,255,0.02)",
+                  cursor: "pointer",
+                }}
+                onClick={() => handlePaymentChange("freemius")}
+              >
+                <Stack gap="sm" align="center">
+                  <Text size="sm" fw={600}>
+                    Freemius
                   </Text>
-                </Group>
-
-                <Grid gutter="sm">
-                  {PREMIUM_FEATURES.map((feature) => (
-                    <GridCol span={6} key={feature.label}>
-                      <Group gap="xs" wrap="nowrap">
-                        <feature.icon size={18} color={feature.color} />
-                        <Text size="sm">{feature.label}</Text>
-                      </Group>
-                    </GridCol>
-                  ))}
-                </Grid>
-
-                <Text size="xs" c="dimmed">
-                  {t("futureFeatures")}{" "}
-                  <Anchor href="/changelog" size="xs">
-                    {t("seeWhatsNew")}
-                  </Anchor>
-                </Text>
-
-                <Text size="xs" c="dimmed">
-                  {t("supportMessage")}
-                </Text>
-              </Stack>
-            </Card>
-          </Stack>
-        </GridCol>
-
-        {/* Right Column - Payment (only for non-premium users) */}
-        {!isPremium && (
-          <GridCol span={{ base: 12, md: 5 }}>
-            <Card
-              padding="lg"
-              radius="md"
-              withBorder
-              style={{
-                background:
-                  "linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(22, 163, 74, 0.05) 100%)",
-                borderColor: "rgba(34, 197, 94, 0.3)",
-              }}
-            >
-              <Stack gap="lg">
-                <Group gap="xs">
-                  <IconCrown size={20} color="#fbbf24" />
-                  <Text fw={600} size="lg">
-                    {t("paymentMethod")}
+                  <Text size="xs" c="dimmed" ta="center">
+                    {t("freemiusDescription")}
                   </Text>
-                </Group>
-
-                <Radio.Group
-                  value={selectedPayment}
-                  onChange={handlePaymentChange}
-                >
-                  <Stack gap="sm">
-                    {/* Stripe Option */}
-                    <Paper
-                      p="md"
-                      radius="md"
-                      withBorder
-                      style={{
-                        cursor: "pointer",
-                        borderColor:
-                          selectedPayment === "stripe"
-                            ? "var(--mantine-color-green-6)"
-                            : "rgba(255,255,255,0.1)",
-                        background:
-                          selectedPayment === "stripe"
-                            ? "rgba(34, 197, 94, 0.1)"
-                            : "rgba(0,0,0,0.2)",
-                      }}
-                      onClick={() => handlePaymentChange("stripe")}
-                    >
-                      <Stack gap="sm">
-                        <Group justify="space-between" wrap="nowrap">
-                          <Group gap="md" wrap="nowrap">
-                            <Radio value="stripe" color="green" />
-                            <div>
-                              <Text fw={500}>Stripe</Text>
-                              <Text size="xs" c="dimmed">
-                                {t("stripeDescription")}
-                              </Text>
-                            </div>
-                          </Group>
-                        </Group>
-
-                        <Group gap="xs" mt="xs" wrap="wrap">
-                          <Card
-                            withBorder
-                            radius="sm"
-                            bg="transparent"
-                            c="green"
-                            py={2}
-                            px="xs"
-                          >
-                            <IconBrandVisa stroke={1.5} />
-                          </Card>
-                          <Card
-                            withBorder
-                            radius="sm"
-                            bg="transparent"
-                            c="green"
-                            py={2}
-                            px="xs"
-                          >
-                            <IconBrandMastercard stroke={1.5} />
-                          </Card>
-                          <Card
-                            withBorder
-                            radius="sm"
-                            bg="transparent"
-                            c="green"
-                            py={2}
-                            px="xs"
-                          >
-                            <IconBrandApple stroke={1.5} />
-                          </Card>
-                          <Card
-                            withBorder
-                            radius="sm"
-                            bg="transparent"
-                            c="green"
-                            py={2}
-                            px="xs"
-                          >
-                            <IconBrandGoogle stroke={1.5} />
-                          </Card>
-                          <Card
-                            withBorder
-                            radius="sm"
-                            bg="transparent"
-                            c="green"
-                            py={2}
-                            px="xs"
-                          >
-                            <IconBrandAmazon stroke={1.5} />
-                          </Card>
-                        </Group>
-                      </Stack>
-                    </Paper>
-
-                    {/* Freemius Option - hidden when 3 months (Stripe-only) is selected */}
-                    {selectedBilling !== "3months" && (
-                      <Paper
-                        p="md"
-                        radius="md"
-                        withBorder
-                        style={{
-                          cursor: "pointer",
-                          borderColor:
-                            selectedPayment === "freemius"
-                              ? "var(--mantine-color-green-6)"
-                              : "rgba(255,255,255,0.1)",
-                          background:
-                            selectedPayment === "freemius"
-                              ? "rgba(34, 197, 94, 0.1)"
-                              : "rgba(0,0,0,0.2)",
-                        }}
-                        onClick={() => handlePaymentChange("freemius")}
-                      >
-                        <Stack gap="sm">
-                          <Group justify="space-between" wrap="nowrap">
-                            <Group gap="md" wrap="nowrap">
-                              <Radio value="freemius" color="green" />
-                              <div>
-                                <Text fw={500}>Freemius</Text>
-                                <Text size="xs" c="dimmed">
-                                  {t("freemiusDescription")}
-                                </Text>
-                              </div>
-                            </Group>
-                          </Group>
-
-                          <Group gap="xs" mt="xs" wrap="wrap">
-                            <Card
-                              withBorder
-                              radius="sm"
-                              bg="transparent"
-                              c="green"
-                              py={2}
-                              px="xs"
-                            >
-                              <IconBrandVisa stroke={1.5} />
-                            </Card>
-                            <Card
-                              withBorder
-                              radius="sm"
-                              bg="transparent"
-                              c="green"
-                              py={2}
-                              px="xs"
-                            >
-                              <IconBrandMastercard stroke={1.5} />
-                            </Card>
-                            <Card
-                              withBorder
-                              radius="sm"
-                              bg="transparent"
-                              c="green"
-                              py={2}
-                              px="xs"
-                            >
-                              <IconBrandPaypal stroke={1.5} />
-                            </Card>
-                          </Group>
-                        </Stack>
-                      </Paper>
-                    )}
-                  </Stack>
-                </Radio.Group>
-
-                <Divider />
-
-                {/* Order Summary */}
-                <Stack gap="xs">
-                  <Group justify="space-between">
-                    <Text size="sm" c="dimmed">
-                      {t("plan")}
-                    </Text>
-                    <Text size="sm">{selectedPlan?.label}</Text>
-                  </Group>
-                  <Group justify="space-between">
-                    <Text size="sm" c="dimmed">
-                      {t("subtotal")}
-                    </Text>
-                    <Text size="sm">${selectedPlan?.price}</Text>
-                  </Group>
-                  {selectedPlan?.savings && (
-                    <Group justify="space-between">
-                      <Text size="sm" c="dimmed">
-                        {t("discount")}
-                      </Text>
-                      <Text size="sm" c="green">
-                        {selectedPlan.savings}
-                      </Text>
-                    </Group>
-                  )}
-                  <Divider my="xs" />
-                  <Group justify="space-between">
-                    <Text fw={600}>{t("total")}</Text>
-                    <Text fw={700} size="xl" c="green">
-                      ${selectedPlan?.price}
-                    </Text>
+                  <Group gap="xs" justify="center" wrap="wrap">
+                    <IconBrandVisa size={24} stroke={1.2} color="#94a3b8" />
+                    <IconBrandMastercard
+                      size={24}
+                      stroke={1.2}
+                      color="#94a3b8"
+                    />
+                    <IconBrandPaypal size={24} stroke={1.2} color="#94a3b8" />
                   </Group>
                 </Stack>
+              </Card>
+            </GridCol>
+          </Grid>
 
-                {/* VAT Notice */}
-                <Text size="xs" c="dimmed" ta="center">
-                  {t("vatNotice")}
-                </Text>
+          {/* Single CTA Button */}
+          {selectedPayment === "stripe" ? (
+            <StripePaymentButton
+              billingCycle={selectedPlan?.billingCycle || "annual"}
+              planLabel={selectedPlan?.label || "Premium"}
+              userEmail={user?.email || ""}
+              userId={String(user?.id || "")}
+              fullWidth
+              size="lg"
+              radius="xl"
+              style={{
+                background:
+                  "linear-gradient(135deg, #22c55e 0%, #16a34a 100%)",
+              }}
+            >
+              {selectedBilling === "lifetime"
+                ? t("buyNow")
+                : t("subscribe")}
+            </StripePaymentButton>
+          ) : (
+            <FreemiusPaymentButton
+              billingCycle={selectedPlan?.billingCycle || "annual"}
+              planLabel={selectedPlan?.label || "Premium"}
+              fullWidth
+              size="lg"
+              radius="xl"
+              style={{
+                background:
+                  "linear-gradient(135deg, #22c55e 0%, #16a34a 100%)",
+              }}
+            >
+              {selectedBilling === "lifetime"
+                ? t("buyNow")
+                : t("subscribe")}
+            </FreemiusPaymentButton>
+          )}
 
-                {/* Pay Button */}
-                {selectedPayment === "stripe" ? (
-                  <StripePaymentButton
-                    billingCycle={selectedPlan?.billingCycle || "annual"}
-                    planLabel={selectedPlan?.label || "Premium"}
-                    userEmail={user?.email || ""}
-                    userId={String(user?.id || "")}
-                    fullWidth
-                    size="lg"
-                    radius="md"
-                    disabled={!selectedPayment}
-                    style={{
-                      background:
-                        "linear-gradient(135deg, #22c55e 0%, #16a34a 100%)",
-                    }}
-                  >
-                    {selectedBilling === "lifetime"
-                      ? t("buyNow")
-                      : t("subscribe")}
-                  </StripePaymentButton>
-                ) : (
-                  <FreemiusPaymentButton
-                    billingCycle={selectedPlan?.billingCycle || "annual"}
-                    planLabel={selectedPlan?.label || "Premium"}
-                    fullWidth
-                    size="lg"
-                    radius="md"
-                    disabled={!selectedPayment}
-                    style={{
-                      background:
-                        "linear-gradient(135deg, #22c55e 0%, #16a34a 100%)",
-                    }}
-                  >
-                    {selectedBilling === "lifetime"
-                      ? t("buyNow")
-                      : t("subscribe")}
-                  </FreemiusPaymentButton>
-                )}
+          <Flex gap="xs" align="center" justify="center">
+            <IconCheck size={14} color="var(--mantine-color-green-6)" />
+            <Text size="xs" c="dimmed">
+              {t("securePayment")}
+            </Text>
+          </Flex>
 
-                {/* Security Note */}
-                <Flex gap="xs" align="center" justify="center">
-                  <IconCheck size={14} color="var(--mantine-color-green-6)" />
-                  <Text size="xs" c="dimmed">
-                    {t("securePayment")}
-                  </Text>
-                </Flex>
-              </Stack>
-            </Card>
-          </GridCol>
-        )}
-      </Grid>
+          <Text size="xs" c="dimmed" ta="center">
+            {t("vatNotice")}
+          </Text>
+        </>
+      )}
+
+      <Divider color="dark.6" />
+
+      <Text size="xs" c="dimmed" ta="center">
+        {t("supportMessage")}
+      </Text>
 
       {/* Cancel Subscription Modal */}
       <Modal

@@ -37,7 +37,7 @@ export async function MyFeedSection({ myFeedPromise }: MyFeedSectionProps) {
         </Flex>
       </Flex>
 
-      <SimpleGrid cols={{ base: 3, sm: 4, md: 8 }} spacing="sm">
+      <SimpleGrid cols={{ base: 3, sm: 4, md: 6 }} spacing="sm">
         {recordings.map((rec) => (
           <Stack key={rec.documentId} gap="4">
             <Box pos="relative" style={{ opacity: rec.hidden ? 0.5 : 1 }}>

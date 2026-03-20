@@ -89,8 +89,8 @@ export function ImageSpritePreview({ recording, type, username }: Props) {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       style={{
-        aspectRatio: "1/2",
-        maxHeight: 300,
+        aspectRatio: "9/16",
+        width: "100%",
         position: "relative",
         overflow: "hidden",
         borderRadius: "var(--mantine-radius-md)",

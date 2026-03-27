@@ -133,7 +133,9 @@ export default function FollowerItem({ follower, isOpen }: Props) {
             <Stack gap="0">
               <Text size="xs" c="dimmed" suppressHydrationWarning>
                 {t("recordings.lastCheckedAgo", {
-                  time: safeRelativeTime(format, follower.lastCheckedAt, { now }),
+                  time: safeRelativeTime(format, follower.lastCheckedAt, {
+                    now,
+                  }),
                 })}
               </Text>
               <Text size="xs" c="dimmed" suppressHydrationWarning>
@@ -259,7 +261,7 @@ function AccordionControl({
 }: AccordionControlProps & { follower: FollowerWithMeta }) {
   return (
     <Center>
-      <Accordion.Control {...props} disabled={follower.totalRecordings === 0} />
+      <Accordion.Control {...props} />
       <Flex gap="xs" align="center" mx="md">
         {follower.isFollowing ? (
           <>

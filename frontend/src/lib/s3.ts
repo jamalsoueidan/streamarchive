@@ -1,4 +1,12 @@
 import { S3Client } from "@aws-sdk/client-s3";
+import { NodeHttpHandler } from "@smithy/node-http-handler";
+import https from "https";
+
+const agent = new https.Agent({
+  maxSockets: 200,
+  keepAlive: true,
+  keepAliveMsecs: 1000,
+});
 
 export const s3Fsn1 = new S3Client({
   region: "fsn1",
@@ -7,6 +15,11 @@ export const s3Fsn1 = new S3Client({
     accessKeyId: process.env.S3_ACCESS_KEY!,
     secretAccessKey: process.env.S3_SECRET_KEY!,
   },
+  requestHandler: new NodeHttpHandler({
+    httpsAgent: agent,
+    connectionTimeout: 5000,
+    requestTimeout: 15000,
+  }),
 });
 
 export const s3Nbg1 = new S3Client({
@@ -16,6 +29,11 @@ export const s3Nbg1 = new S3Client({
     accessKeyId: process.env.S3_ACCESS_KEY!,
     secretAccessKey: process.env.S3_SECRET_KEY!,
   },
+  requestHandler: new NodeHttpHandler({
+    httpsAgent: agent,
+    connectionTimeout: 5000,
+    requestTimeout: 15000,
+  }),
 });
 
 const S3_CUTOFF = new Date("2026-03-04T15:00:00Z");

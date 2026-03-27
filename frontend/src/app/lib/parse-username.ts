@@ -107,6 +107,17 @@ export function parseUsername(input: string): ParsedUsername {
     };
   }
 
+  // Tango URL pattern
+  const tangoRegex = /(?:https?:\/\/)?(?:www\.)?tango\.me\/([^\/\s?]+)/i;
+  const tangoMatch = trimmed.match(tangoRegex);
+
+  if (tangoMatch) {
+    return {
+      username: tangoMatch[1],
+      platform: "tango",
+    };
+  }
+
   // Plain username - remove @ if present
   const username = trimmed.startsWith("@") ? trimmed.slice(1) : trimmed;
 

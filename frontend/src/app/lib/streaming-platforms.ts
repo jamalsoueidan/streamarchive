@@ -35,4 +35,10 @@ export const streamingPlatforms = [
     name: "Bigo",
     file: "/simple/bigo.svg",
   },
+  {
+    color: "orange.5",
+    colorCss: "var(--mantine-color-orange-5)",
+    name: "Tango",
+    file: "/simple/tango.svg",
+  },
 ];

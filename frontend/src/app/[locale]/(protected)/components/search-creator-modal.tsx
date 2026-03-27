@@ -48,8 +48,8 @@ const ALL_PLATFORMS: PlatformType[] = [
   "kick",
   "youtube",
   "afreecatv",
-  "pandalive",
   "bigo",
+  "tango",
 ];
 
 type Step = "search" | "platform" | "result";
@@ -234,13 +234,36 @@ export function SearchCreatorModal({
         <Text fw={500}>{t("search.enterUsername")}</Text>
       );
     }
+    if (step === "platform") {
+      return (
+        <Group gap="xs">
+          <UnstyledButton onClick={handleBack} style={{ display: "flex" }}>
+            <IconArrowLeft size={18} />
+          </UnstyledButton>
+          <Text fw={500}>{t("search.selectPlatform")}</Text>
+          <Badge variant="outline" size="sm">
+            @{parsedUsername}
+          </Badge>
+        </Group>
+      );
+    }
+    const platformInfo = selectedPlatform ? getPlatformInfo(selectedPlatform) : null;
     return (
       <Group gap="xs">
         <UnstyledButton onClick={handleBack} style={{ display: "flex" }}>
           <IconArrowLeft size={18} />
         </UnstyledButton>
+        {platformInfo && (
+          <Image
+            src={platformInfo.file}
+            alt={platformInfo.name}
+            w={20}
+            h={20}
+            style={{ filter: "brightness(0) invert(1)" }}
+          />
+        )}
         <Text fw={500}>
-          {step === "platform" ? t("search.selectPlatform") : t("search.selectPlatform")}
+          {selectedPlatform ? t(`platforms.${selectedPlatform}`) : ""}
         </Text>
         <Badge variant="outline" size="sm">
           @{parsedUsername}

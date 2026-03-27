@@ -18,6 +18,7 @@ export enum FollowerTypeEnum {
   Afreecatv = "afreecatv",
   Pandalive = "pandalive",
   Bigo = "bigo",
+  Tango = "tango",
 }
 
 /** Filter by follow status */
@@ -294,6 +295,7 @@ export interface Activity {
     /** @format date-time */
     lastCheckedAt?: string;
     protected?: boolean;
+    blocked?: boolean;
     pause?: boolean;
     description?: string;
     tagline?: string;
@@ -435,6 +437,8 @@ export interface Activity {
         documentId?: string;
       }[];
     };
+    lsr?: boolean;
+    sar?: boolean;
     /** @format date-time */
     createdAt?: string;
     /** @format date-time */
@@ -771,6 +775,7 @@ export interface AiRequest {
     /** @format date-time */
     lastCheckedAt?: string;
     protected?: boolean;
+    blocked?: boolean;
     pause?: boolean;
     description?: string;
     tagline?: string;
@@ -912,6 +917,8 @@ export interface AiRequest {
         documentId?: string;
       }[];
     };
+    lsr?: boolean;
+    sar?: boolean;
     /** @format date-time */
     createdAt?: string;
     /** @format date-time */
@@ -1385,6 +1392,7 @@ export interface AiTask {
       /** @format date-time */
       lastCheckedAt?: string;
       protected?: boolean;
+      blocked?: boolean;
       pause?: boolean;
       description?: string;
       tagline?: string;
@@ -1526,6 +1534,8 @@ export interface AiTask {
           documentId?: string;
         }[];
       };
+      lsr?: boolean;
+      sar?: boolean;
       /** @format date-time */
       createdAt?: string;
       /** @format date-time */
@@ -2317,6 +2327,7 @@ export interface Clip {
     /** @format date-time */
     lastCheckedAt?: string;
     protected?: boolean;
+    blocked?: boolean;
     pause?: boolean;
     description?: string;
     tagline?: string;
@@ -2458,6 +2469,8 @@ export interface Clip {
         documentId?: string;
       }[];
     };
+    lsr?: boolean;
+    sar?: boolean;
     /** @format date-time */
     createdAt?: string;
     /** @format date-time */
@@ -2887,6 +2900,7 @@ export interface ClipShare {
       /** @format date-time */
       lastCheckedAt?: string;
       protected?: boolean;
+      blocked?: boolean;
       pause?: boolean;
       description?: string;
       tagline?: string;
@@ -3028,6 +3042,8 @@ export interface ClipShare {
           documentId?: string;
         }[];
       };
+      lsr?: boolean;
+      sar?: boolean;
       /** @format date-time */
       createdAt?: string;
       /** @format date-time */
@@ -3392,6 +3408,7 @@ export interface FollowerRequest {
     /** @format date-time */
     lastCheckedAt?: string;
     protected?: boolean;
+    blocked?: boolean;
     pause?: boolean;
     description?: string;
     tagline?: string;
@@ -3400,6 +3417,8 @@ export interface FollowerRequest {
     migration?: number;
     /** @example "string or id" */
     owner?: number | string;
+    lsr?: boolean;
+    sar?: boolean;
     locale?: string;
     localizations?: (number | string)[];
   };
@@ -3651,6 +3670,7 @@ export interface Follower {
   /** @format date-time */
   lastCheckedAt?: string;
   protected?: boolean;
+  blocked?: boolean;
   pause?: boolean;
   description?: string;
   tagline?: string;
@@ -3790,6 +3810,7 @@ export interface Follower {
       /** @format date-time */
       lastCheckedAt?: string;
       protected?: boolean;
+      blocked?: boolean;
       pause?: boolean;
       description?: string;
       tagline?: string;
@@ -3800,6 +3821,8 @@ export interface Follower {
         id?: string | number;
         documentId?: string;
       };
+      lsr?: boolean;
+      sar?: boolean;
       /** @format date-time */
       createdAt?: string;
       /** @format date-time */
@@ -3882,6 +3905,8 @@ export interface Follower {
       documentId?: string;
     }[];
   };
+  lsr?: boolean;
+  sar?: boolean;
   /** @format date-time */
   createdAt?: string;
   /** @format date-time */
@@ -4190,6 +4215,7 @@ export interface Meme {
       /** @format date-time */
       lastCheckedAt?: string;
       protected?: boolean;
+      blocked?: boolean;
       pause?: boolean;
       description?: string;
       tagline?: string;
@@ -4331,6 +4357,8 @@ export interface Meme {
           documentId?: string;
         }[];
       };
+      lsr?: boolean;
+      sar?: boolean;
       /** @format date-time */
       createdAt?: string;
       /** @format date-time */
@@ -4741,6 +4769,7 @@ export interface Recording {
     /** @format date-time */
     lastCheckedAt?: string;
     protected?: boolean;
+    blocked?: boolean;
     pause?: boolean;
     description?: string;
     tagline?: string;
@@ -4882,6 +4911,8 @@ export interface Recording {
         documentId?: string;
       }[];
     };
+    lsr?: boolean;
+    sar?: boolean;
     /** @format date-time */
     createdAt?: string;
     /** @format date-time */
@@ -5449,6 +5480,7 @@ export interface SocialAccount {
       /** @format date-time */
       lastCheckedAt?: string;
       protected?: boolean;
+      blocked?: boolean;
       pause?: boolean;
       description?: string;
       tagline?: string;
@@ -5459,6 +5491,8 @@ export interface SocialAccount {
         id?: string | number;
         documentId?: string;
       };
+      lsr?: boolean;
+      sar?: boolean;
       /** @format date-time */
       createdAt?: string;
       /** @format date-time */
@@ -5852,6 +5886,7 @@ export interface Source {
       /** @format date-time */
       lastCheckedAt?: string;
       protected?: boolean;
+      blocked?: boolean;
       pause?: boolean;
       description?: string;
       tagline?: string;
@@ -5993,6 +6028,8 @@ export interface Source {
           documentId?: string;
         }[];
       };
+      lsr?: boolean;
+      sar?: boolean;
       /** @format date-time */
       createdAt?: string;
       /** @format date-time */
@@ -6363,6 +6400,7 @@ export interface VisitorView {
       /** @format date-time */
       lastCheckedAt?: string;
       protected?: boolean;
+      blocked?: boolean;
       pause?: boolean;
       description?: string;
       tagline?: string;
@@ -6504,6 +6542,8 @@ export interface VisitorView {
           documentId?: string;
         }[];
       };
+      lsr?: boolean;
+      sar?: boolean;
       /** @format date-time */
       createdAt?: string;
       /** @format date-time */
@@ -6769,6 +6809,7 @@ export enum ActivityTypeEnum {
   Afreecatv = "afreecatv",
   Pandalive = "pandalive",
   Bigo = "bigo",
+  Tango = "tango",
 }
 
 export enum ActivityGenderEnum {
@@ -6811,6 +6852,7 @@ export enum AiRequestTypeEnum {
   Afreecatv = "afreecatv",
   Pandalive = "pandalive",
   Bigo = "bigo",
+  Tango = "tango",
 }
 
 export enum AiRequestGenderEnum {
@@ -6881,6 +6923,7 @@ export enum AiTaskTypeEnum {
   Afreecatv = "afreecatv",
   Pandalive = "pandalive",
   Bigo = "bigo",
+  Tango = "tango",
 }
 
 export enum AiTaskGenderEnum {
@@ -6944,6 +6987,7 @@ export enum ClipTypeEnum {
   Afreecatv = "afreecatv",
   Pandalive = "pandalive",
   Bigo = "bigo",
+  Tango = "tango",
 }
 
 export enum ClipGenderEnum {
@@ -6992,6 +7036,7 @@ export enum ClipShareTypeEnum {
   Afreecatv = "afreecatv",
   Pandalive = "pandalive",
   Bigo = "bigo",
+  Tango = "tango",
 }
 
 export enum ClipShareGenderEnum {
@@ -7046,6 +7091,7 @@ export enum FollowerRequestTypeEnum {
   Afreecatv = "afreecatv",
   Pandalive = "pandalive",
   Bigo = "bigo",
+  Tango = "tango",
 }
 
 export enum FollowerRequestGenderEnum {
@@ -7103,6 +7149,7 @@ export enum MemeTypeEnum1 {
   Afreecatv = "afreecatv",
   Pandalive = "pandalive",
   Bigo = "bigo",
+  Tango = "tango",
 }
 
 export enum MemeGenderEnum {
@@ -7189,6 +7236,7 @@ export enum SocialAccountTypeEnum {
   Afreecatv = "afreecatv",
   Pandalive = "pandalive",
   Bigo = "bigo",
+  Tango = "tango",
 }
 
 export enum SocialAccountGenderEnum {
@@ -7238,6 +7286,7 @@ export enum SourceTypeEnum {
   Afreecatv = "afreecatv",
   Pandalive = "pandalive",
   Bigo = "bigo",
+  Tango = "tango",
 }
 
 export enum SourceGenderEnum {
@@ -7280,6 +7329,7 @@ export enum VisitorViewTypeEnum {
   Afreecatv = "afreecatv",
   Pandalive = "pandalive",
   Bigo = "bigo",
+  Tango = "tango",
 }
 
 export enum VisitorViewGenderEnum {
@@ -11303,7 +11353,7 @@ export class Api<
      * @secure
      */
     getActivitiesId: (
-      { id, ...query }: GetActivitiesIdParams,
+      { id }: GetActivitiesIdParams,
       params: RequestParams = {},
     ) =>
       this.request<GetActivitiesIdData, Error>({
@@ -11323,7 +11373,7 @@ export class Api<
      * @secure
      */
     putActivitiesId: (
-      { id, ...query }: PutActivitiesIdParams,
+      { id }: PutActivitiesIdParams,
       data: ActivityRequest,
       params: RequestParams = {},
     ) =>
@@ -11346,7 +11396,7 @@ export class Api<
      * @secure
      */
     deleteActivitiesId: (
-      { id, ...query }: DeleteActivitiesIdParams,
+      { id }: DeleteActivitiesIdParams,
       params: RequestParams = {},
     ) =>
       this.request<DeleteActivitiesIdData, Error>({
@@ -11404,7 +11454,7 @@ export class Api<
      * @secure
      */
     getAiRequestsId: (
-      { id, ...query }: GetAiRequestsIdParams,
+      { id }: GetAiRequestsIdParams,
       params: RequestParams = {},
     ) =>
       this.request<GetAiRequestsIdData, Error>({
@@ -11424,7 +11474,7 @@ export class Api<
      * @secure
      */
     putAiRequestsId: (
-      { id, ...query }: PutAiRequestsIdParams,
+      { id }: PutAiRequestsIdParams,
       data: AiRequestRequest,
       params: RequestParams = {},
     ) =>
@@ -11447,7 +11497,7 @@ export class Api<
      * @secure
      */
     deleteAiRequestsId: (
-      { id, ...query }: DeleteAiRequestsIdParams,
+      { id }: DeleteAiRequestsIdParams,
       params: RequestParams = {},
     ) =>
       this.request<DeleteAiRequestsIdData, Error>({
@@ -11510,7 +11560,7 @@ export class Api<
      * @secure
      */
     meGetAiRequestsId: (
-      { id, ...query }: MeGetAiRequestsIdParams,
+      { id }: MeGetAiRequestsIdParams,
       params: RequestParams = {},
     ) =>
       this.request<MeGetAiRequestsIdData, Error | void>({
@@ -11567,10 +11617,7 @@ export class Api<
      * @request GET:/ai-tasks/{id}
      * @secure
      */
-    getAiTasksId: (
-      { id, ...query }: GetAiTasksIdParams,
-      params: RequestParams = {},
-    ) =>
+    getAiTasksId: ({ id }: GetAiTasksIdParams, params: RequestParams = {}) =>
       this.request<GetAiTasksIdData, Error>({
         path: `/ai-tasks/${id}`,
         method: "GET",
@@ -11588,7 +11635,7 @@ export class Api<
      * @secure
      */
     putAiTasksId: (
-      { id, ...query }: PutAiTasksIdParams,
+      { id }: PutAiTasksIdParams,
       data: AiTaskRequest,
       params: RequestParams = {},
     ) =>
@@ -11611,7 +11658,7 @@ export class Api<
      * @secure
      */
     deleteAiTasksId: (
-      { id, ...query }: DeleteAiTasksIdParams,
+      { id }: DeleteAiTasksIdParams,
       params: RequestParams = {},
     ) =>
       this.request<DeleteAiTasksIdData, Error>({
@@ -11668,10 +11715,7 @@ export class Api<
      * @request GET:/articles/{id}
      * @secure
      */
-    getArticlesId: (
-      { id, ...query }: GetArticlesIdParams,
-      params: RequestParams = {},
-    ) =>
+    getArticlesId: ({ id }: GetArticlesIdParams, params: RequestParams = {}) =>
       this.request<GetArticlesIdData, Error>({
         path: `/articles/${id}`,
         method: "GET",
@@ -11689,7 +11733,7 @@ export class Api<
      * @secure
      */
     putArticlesId: (
-      { id, ...query }: PutArticlesIdParams,
+      { id }: PutArticlesIdParams,
       data: ArticleRequest,
       params: RequestParams = {},
     ) =>
@@ -11712,7 +11756,7 @@ export class Api<
      * @secure
      */
     deleteArticlesId: (
-      { id, ...query }: DeleteArticlesIdParams,
+      { id }: DeleteArticlesIdParams,
       params: RequestParams = {},
     ) =>
       this.request<DeleteArticlesIdData, Error>({
@@ -11770,7 +11814,7 @@ export class Api<
      * @secure
      */
     getChangeLogsId: (
-      { id, ...query }: GetChangeLogsIdParams,
+      { id }: GetChangeLogsIdParams,
       params: RequestParams = {},
     ) =>
       this.request<GetChangeLogsIdData, Error>({
@@ -11790,7 +11834,7 @@ export class Api<
      * @secure
      */
     putChangeLogsId: (
-      { id, ...query }: PutChangeLogsIdParams,
+      { id }: PutChangeLogsIdParams,
       data: ChangeLogRequest,
       params: RequestParams = {},
     ) =>
@@ -11813,7 +11857,7 @@ export class Api<
      * @secure
      */
     deleteChangeLogsId: (
-      { id, ...query }: DeleteChangeLogsIdParams,
+      { id }: DeleteChangeLogsIdParams,
       params: RequestParams = {},
     ) =>
       this.request<DeleteChangeLogsIdData, Error>({
@@ -11870,10 +11914,7 @@ export class Api<
      * @request GET:/clips/{id}
      * @secure
      */
-    getClipsId: (
-      { id, ...query }: GetClipsIdParams,
-      params: RequestParams = {},
-    ) =>
+    getClipsId: ({ id }: GetClipsIdParams, params: RequestParams = {}) =>
       this.request<GetClipsIdData, Error>({
         path: `/clips/${id}`,
         method: "GET",
@@ -11891,7 +11932,7 @@ export class Api<
      * @secure
      */
     putClipsId: (
-      { id, ...query }: PutClipsIdParams,
+      { id }: PutClipsIdParams,
       data: ClipRequest,
       params: RequestParams = {},
     ) =>
@@ -11913,10 +11954,7 @@ export class Api<
      * @request DELETE:/clips/{id}
      * @secure
      */
-    deleteClipsId: (
-      { id, ...query }: DeleteClipsIdParams,
-      params: RequestParams = {},
-    ) =>
+    deleteClipsId: ({ id }: DeleteClipsIdParams, params: RequestParams = {}) =>
       this.request<DeleteClipsIdData, Error>({
         path: `/clips/${id}`,
         method: "DELETE",
@@ -11953,10 +11991,7 @@ export class Api<
      * @request GET:/clips/me/{id}
      * @secure
      */
-    meGetClipOne: (
-      { id, ...query }: MeGetClipOneParams,
-      params: RequestParams = {},
-    ) =>
+    meGetClipOne: ({ id }: MeGetClipOneParams, params: RequestParams = {}) =>
       this.request<MeGetClipOneData, void>({
         path: `/clips/me/${id}`,
         method: "GET",
@@ -12031,7 +12066,7 @@ export class Api<
      * @secure
      */
     getClipSharesId: (
-      { id, ...query }: GetClipSharesIdParams,
+      { id }: GetClipSharesIdParams,
       params: RequestParams = {},
     ) =>
       this.request<GetClipSharesIdData, Error>({
@@ -12051,7 +12086,7 @@ export class Api<
      * @secure
      */
     putClipSharesId: (
-      { id, ...query }: PutClipSharesIdParams,
+      { id }: PutClipSharesIdParams,
       data: ClipShareRequest,
       params: RequestParams = {},
     ) =>
@@ -12074,7 +12109,7 @@ export class Api<
      * @secure
      */
     deleteClipSharesId: (
-      { id, ...query }: DeleteClipSharesIdParams,
+      { id }: DeleteClipSharesIdParams,
       params: RequestParams = {},
     ) =>
       this.request<DeleteClipSharesIdData, Error>({
@@ -12115,7 +12150,7 @@ export class Api<
      * @secure
      */
     mePutClipSharesId: (
-      { id, ...query }: MePutClipSharesIdParams,
+      { id }: MePutClipSharesIdParams,
       data: ClipShareRequest,
       params: RequestParams = {},
     ) =>
@@ -12139,7 +12174,7 @@ export class Api<
      * @secure
      */
     meDeleteClipSharesId: (
-      { id, ...query }: MeDeleteClipSharesIdParams,
+      { id }: MeDeleteClipSharesIdParams,
       params: RequestParams = {},
     ) =>
       this.request<MeDeleteClipSharesIdData, Error | void>({
@@ -12203,7 +12238,7 @@ export class Api<
      * @secure
      */
     getEmailTemplatesId: (
-      { id, ...query }: GetEmailTemplatesIdParams,
+      { id }: GetEmailTemplatesIdParams,
       params: RequestParams = {},
     ) =>
       this.request<GetEmailTemplatesIdData, Error>({
@@ -12223,7 +12258,7 @@ export class Api<
      * @secure
      */
     putEmailTemplatesId: (
-      { id, ...query }: PutEmailTemplatesIdParams,
+      { id }: PutEmailTemplatesIdParams,
       data: EmailTemplateRequest,
       params: RequestParams = {},
     ) =>
@@ -12246,7 +12281,7 @@ export class Api<
      * @secure
      */
     deleteEmailTemplatesId: (
-      { id, ...query }: DeleteEmailTemplatesIdParams,
+      { id }: DeleteEmailTemplatesIdParams,
       params: RequestParams = {},
     ) =>
       this.request<DeleteEmailTemplatesIdData, Error>({
@@ -12304,7 +12339,7 @@ export class Api<
      * @secure
      */
     getFollowersId: (
-      { id, ...query }: GetFollowersIdParams,
+      { id }: GetFollowersIdParams,
       params: RequestParams = {},
     ) =>
       this.request<GetFollowersIdData, Error>({
@@ -12324,7 +12359,7 @@ export class Api<
      * @secure
      */
     putFollowersId: (
-      { id, ...query }: PutFollowersIdParams,
+      { id }: PutFollowersIdParams,
       data: FollowerRequest,
       params: RequestParams = {},
     ) =>
@@ -12347,7 +12382,7 @@ export class Api<
      * @secure
      */
     deleteFollowersId: (
-      { id, ...query }: DeleteFollowersIdParams,
+      { id }: DeleteFollowersIdParams,
       params: RequestParams = {},
     ) =>
       this.request<DeleteFollowersIdData, Error>({
@@ -12368,7 +12403,7 @@ export class Api<
      * @secure
      */
     connectUserWithFollower: (
-      { userDocumentId, ...query }: ConnectUserWithFollowerParams,
+      { userDocumentId }: ConnectUserWithFollowerParams,
       data: ConnectUserWithFollowerPayload,
       params: RequestParams = {},
     ) =>
@@ -12530,10 +12565,7 @@ export class Api<
      * @request GET:/memes/{id}
      * @secure
      */
-    getMemesId: (
-      { id, ...query }: GetMemesIdParams,
-      params: RequestParams = {},
-    ) =>
+    getMemesId: ({ id }: GetMemesIdParams, params: RequestParams = {}) =>
       this.request<GetMemesIdData, Error>({
         path: `/memes/${id}`,
         method: "GET",
@@ -12551,7 +12583,7 @@ export class Api<
      * @secure
      */
     putMemesId: (
-      { id, ...query }: PutMemesIdParams,
+      { id }: PutMemesIdParams,
       data: MemeRequest,
       params: RequestParams = {},
     ) =>
@@ -12573,10 +12605,7 @@ export class Api<
      * @request DELETE:/memes/{id}
      * @secure
      */
-    deleteMemesId: (
-      { id, ...query }: DeleteMemesIdParams,
-      params: RequestParams = {},
-    ) =>
+    deleteMemesId: ({ id }: DeleteMemesIdParams, params: RequestParams = {}) =>
       this.request<DeleteMemesIdData, Error>({
         path: `/memes/${id}`,
         method: "DELETE",
@@ -12653,7 +12682,7 @@ export class Api<
      * @secure
      */
     putRecordingsId: (
-      { id, ...query }: PutRecordingsIdParams,
+      { id }: PutRecordingsIdParams,
       data: RecordingRequest,
       params: RequestParams = {},
     ) =>
@@ -12676,7 +12705,7 @@ export class Api<
      * @secure
      */
     deleteRecordingsId: (
-      { id, ...query }: DeleteRecordingsIdParams,
+      { id }: DeleteRecordingsIdParams,
       params: RequestParams = {},
     ) =>
       this.request<DeleteRecordingsIdData, Error>({
@@ -12755,10 +12784,7 @@ export class Api<
      * @request GET:/reports/{id}
      * @secure
      */
-    getReportsId: (
-      { id, ...query }: GetReportsIdParams,
-      params: RequestParams = {},
-    ) =>
+    getReportsId: ({ id }: GetReportsIdParams, params: RequestParams = {}) =>
       this.request<GetReportsIdData, Error>({
         path: `/reports/${id}`,
         method: "GET",
@@ -12776,7 +12802,7 @@ export class Api<
      * @secure
      */
     putReportsId: (
-      { id, ...query }: PutReportsIdParams,
+      { id }: PutReportsIdParams,
       data: ReportRequest,
       params: RequestParams = {},
     ) =>
@@ -12799,7 +12825,7 @@ export class Api<
      * @secure
      */
     deleteReportsId: (
-      { id, ...query }: DeleteReportsIdParams,
+      { id }: DeleteReportsIdParams,
       params: RequestParams = {},
     ) =>
       this.request<DeleteReportsIdData, Error>({
@@ -12863,7 +12889,7 @@ export class Api<
      * @secure
      */
     getSocialAccountsId: (
-      { id, ...query }: GetSocialAccountsIdParams,
+      { id }: GetSocialAccountsIdParams,
       params: RequestParams = {},
     ) =>
       this.request<GetSocialAccountsIdData, Error>({
@@ -12883,7 +12909,7 @@ export class Api<
      * @secure
      */
     putSocialAccountsId: (
-      { id, ...query }: PutSocialAccountsIdParams,
+      { id }: PutSocialAccountsIdParams,
       data: SocialAccountRequest,
       params: RequestParams = {},
     ) =>
@@ -12906,7 +12932,7 @@ export class Api<
      * @secure
      */
     deleteSocialAccountsId: (
-      { id, ...query }: DeleteSocialAccountsIdParams,
+      { id }: DeleteSocialAccountsIdParams,
       params: RequestParams = {},
     ) =>
       this.request<DeleteSocialAccountsIdData, Error>({
@@ -12972,7 +12998,7 @@ export class Api<
      * @secure
      */
     mePutSocialAccountsId: (
-      { id, ...query }: MePutSocialAccountsIdParams,
+      { id }: MePutSocialAccountsIdParams,
       data: SocialAccountRequest,
       params: RequestParams = {},
     ) =>
@@ -12996,7 +13022,7 @@ export class Api<
      * @secure
      */
     meDeleteSocialAccountsId: (
-      { id, ...query }: MeDeleteSocialAccountsIdParams,
+      { id }: MeDeleteSocialAccountsIdParams,
       params: RequestParams = {},
     ) =>
       this.request<MeDeleteSocialAccountsIdData, Error | void>({
@@ -13053,10 +13079,7 @@ export class Api<
      * @request GET:/sources/{id}
      * @secure
      */
-    getSourcesId: (
-      { id, ...query }: GetSourcesIdParams,
-      params: RequestParams = {},
-    ) =>
+    getSourcesId: ({ id }: GetSourcesIdParams, params: RequestParams = {}) =>
       this.request<GetSourcesIdData, Error>({
         path: `/sources/${id}`,
         method: "GET",
@@ -13074,7 +13097,7 @@ export class Api<
      * @secure
      */
     putSourcesId: (
-      { id, ...query }: PutSourcesIdParams,
+      { id }: PutSourcesIdParams,
       data: SourceRequest,
       params: RequestParams = {},
     ) =>
@@ -13097,7 +13120,7 @@ export class Api<
      * @secure
      */
     deleteSourcesId: (
-      { id, ...query }: DeleteSourcesIdParams,
+      { id }: DeleteSourcesIdParams,
       params: RequestParams = {},
     ) =>
       this.request<DeleteSourcesIdData, Error>({
@@ -13158,7 +13181,7 @@ export class Api<
      * @secure
      */
     getVisitorViewsId: (
-      { id, ...query }: GetVisitorViewsIdParams,
+      { id }: GetVisitorViewsIdParams,
       params: RequestParams = {},
     ) =>
       this.request<GetVisitorViewsIdData, Error>({
@@ -13178,7 +13201,7 @@ export class Api<
      * @secure
      */
     putVisitorViewsId: (
-      { id, ...query }: PutVisitorViewsIdParams,
+      { id }: PutVisitorViewsIdParams,
       data: VisitorViewRequest,
       params: RequestParams = {},
     ) =>
@@ -13201,7 +13224,7 @@ export class Api<
      * @secure
      */
     deleteVisitorViewsId: (
-      { id, ...query }: DeleteVisitorViewsIdParams,
+      { id }: DeleteVisitorViewsIdParams,
       params: RequestParams = {},
     ) =>
       this.request<DeleteVisitorViewsIdData, Error>({
@@ -13281,10 +13304,7 @@ export class Api<
      * @request GET:/upload/files/{id}
      * @secure
      */
-    filesDetail: (
-      { id, ...query }: FilesDetailParams,
-      params: RequestParams = {},
-    ) =>
+    filesDetail: ({ id }: FilesDetailParams, params: RequestParams = {}) =>
       this.request<FilesDetailData, any>({
         path: `/upload/files/${id}`,
         method: "GET",
@@ -13301,10 +13321,7 @@ export class Api<
      * @request DELETE:/upload/files/{id}
      * @secure
      */
-    filesDelete: (
-      { id, ...query }: FilesDeleteParams,
-      params: RequestParams = {},
-    ) =>
+    filesDelete: ({ id }: FilesDeleteParams, params: RequestParams = {}) =>
       this.request<FilesDeleteData, any>({
         path: `/upload/files/${id}`,
         method: "DELETE",
@@ -13324,7 +13341,7 @@ export class Api<
      * @secure
      */
     connectDetail: (
-      { provider, ...query }: ConnectDetailParams,
+      { provider }: ConnectDetailParams,
       params: RequestParams = {},
     ) =>
       this.request<any, void | Error>({
@@ -13387,7 +13404,7 @@ export class Api<
      * @secure
      */
     callbackList: (
-      { provider, ...query }: CallbackListParams,
+      { provider }: CallbackListParams,
       params: RequestParams = {},
     ) =>
       this.request<CallbackListData, Error>({
@@ -13584,10 +13601,7 @@ export class Api<
      * @request GET:/users-permissions/roles/{id}
      * @secure
      */
-    rolesDetail: (
-      { id, ...query }: RolesDetailParams,
-      params: RequestParams = {},
-    ) =>
+    rolesDetail: ({ id }: RolesDetailParams, params: RequestParams = {}) =>
       this.request<RolesDetailData, Error>({
         path: `/users-permissions/roles/${id}`,
         method: "GET",
@@ -13606,7 +13620,7 @@ export class Api<
      * @secure
      */
     rolesUpdate: (
-      { role, ...query }: RolesUpdateParams,
+      { role }: RolesUpdateParams,
       data: {
         name?: string;
         description?: string;
@@ -13633,10 +13647,7 @@ export class Api<
      * @request DELETE:/users-permissions/roles/{role}
      * @secure
      */
-    rolesDelete: (
-      { role, ...query }: RolesDeleteParams,
-      params: RequestParams = {},
-    ) =>
+    rolesDelete: ({ role }: RolesDeleteParams, params: RequestParams = {}) =>
       this.request<RolesDeleteData, Error>({
         path: `/users-permissions/roles/${role}`,
         method: "DELETE",
@@ -13692,10 +13703,7 @@ export class Api<
      * @request GET:/users/{id}
      * @secure
      */
-    usersDetail: (
-      { id, ...query }: UsersDetailParams,
-      params: RequestParams = {},
-    ) =>
+    usersDetail: ({ id }: UsersDetailParams, params: RequestParams = {}) =>
       this.request<UsersDetailData, Error>({
         path: `/users/${id}`,
         method: "GET",
@@ -13714,7 +13722,7 @@ export class Api<
      * @secure
      */
     usersUpdate: (
-      { id, ...query }: UsersUpdateParams,
+      { id }: UsersUpdateParams,
       data: UsersUpdatePayload,
       params: RequestParams = {},
     ) =>
@@ -13737,10 +13745,7 @@ export class Api<
      * @request DELETE:/users/{id}
      * @secure
      */
-    usersDelete: (
-      { id, ...query }: UsersDeleteParams,
-      params: RequestParams = {},
-    ) =>
+    usersDelete: ({ id }: UsersDeleteParams, params: RequestParams = {}) =>
       this.request<UsersDeleteData, Error>({
         path: `/users/${id}`,
         method: "DELETE",

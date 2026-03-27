@@ -1,4 +1,4 @@
-import { s3Fsn1, s3Nbg1 } from "@/lib/s3";
+import { s3Avatar } from "@/lib/s3";
 import { GetObjectCommand } from "@aws-sdk/client-s3";
 
 export async function GET(
@@ -7,19 +7,15 @@ export async function GET(
 ) {
   const { path } = await params;
   const filePath = path.join("/");
-  const location = new URL(request.url).searchParams.get("location");
-
-  const isNbg = location === "nbg1";
-  const s3 = isNbg ? s3Nbg1 : s3Fsn1;
-  const bucket = isNbg
-    ? `${process.env.AVATAR_BUCKET!}-nbg`
-    : process.env.AVATAR_BUCKET!;
 
   const abortController = new AbortController();
 
   try {
-    const command = new GetObjectCommand({ Bucket: bucket, Key: filePath });
-    const response = await s3.send(command, {
+    const command = new GetObjectCommand({
+      Bucket: process.env.HEXABYTE_BUCKET!,
+      Key: filePath,
+    });
+    const response = await s3Avatar.send(command, {
       abortSignal: abortController.signal,
     });
 

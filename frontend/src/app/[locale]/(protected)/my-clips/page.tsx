@@ -1,19 +1,17 @@
 import {
-  ActionIcon,
   Center,
   SimpleGrid,
   Stack,
   Tabs,
   TabsList,
   TabsTab,
-  Text,
-  Title,
 } from "@mantine/core";
 import { IconScissors } from "@tabler/icons-react";
 import { getLocale, getTranslations } from "next-intl/server";
 
 import PaginationControls from "@/app/components/pagination";
 import api from "@/lib/api";
+import { EmptyState } from "../components/empty-state";
 import { ClipCard } from "./components/clip-card";
 
 interface PageProps {
@@ -70,7 +68,11 @@ export default async function Page({ searchParams }: PageProps) {
       </Tabs>
 
       {!clips || clips.length === 0 ? (
-        <EmptyState />
+        <EmptyState
+          title={t("emptyState.title")}
+          description={t("emptyState.description")}
+          icon={<IconScissors size={90} stroke={2} />}
+        />
       ) : (
         <Stack gap="md">
           {totalPages > 1 && (
@@ -90,26 +92,6 @@ export default async function Page({ searchParams }: PageProps) {
           )}
         </Stack>
       )}
-    </Stack>
-  );
-}
-
-async function EmptyState() {
-  const t = await getTranslations("protected.myClips");
-
-  return (
-    <Stack align="center" justify="center" py={80} gap="lg">
-      <ActionIcon variant="transparent" size={120} radius="xl" color="white">
-        <IconScissors size={90} stroke={2} />
-      </ActionIcon>
-      <Stack align="center" gap={12}>
-        <Title order={2} fw={600}>
-          {t("emptyState.title")}
-        </Title>
-        <Text size="xl" c="dimmed" maw={450} ta="center">
-          {t("emptyState.description")}
-        </Text>
-      </Stack>
     </Stack>
   );
 }

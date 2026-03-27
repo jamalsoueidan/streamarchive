@@ -1,20 +1,27 @@
-// components/empty-state.tsx
-import { Stack, Text } from "@mantine/core";
+import { ActionIcon, Stack, Text, Title } from "@mantine/core";
+import { IconMoodEmpty } from "@tabler/icons-react";
+import { ReactNode } from "react";
 
 interface EmptyStateProps {
   title: string;
   description: string;
+  icon?: ReactNode;
 }
 
-export function EmptyState({ title, description }: EmptyStateProps) {
+export function EmptyState({ title, description, icon }: EmptyStateProps) {
   return (
-    <Stack align="center" py="xl" gap="xs">
-      <Text size="lg" fw={500}>
-        {title}
-      </Text>
-      <Text size="sm" c="dimmed">
-        {description}
-      </Text>
+    <Stack align="center" justify="center" py={80} gap="lg">
+      <ActionIcon variant="transparent" size={120} radius="xl" color="white">
+        {icon || <IconMoodEmpty size={90} stroke={2} />}
+      </ActionIcon>
+      <Stack align="center" gap={12}>
+        <Title order={2} fw={600}>
+          {title}
+        </Title>
+        <Text size="xl" c="dimmed" maw={450} ta="center">
+          {description}
+        </Text>
+      </Stack>
     </Stack>
   );
 }

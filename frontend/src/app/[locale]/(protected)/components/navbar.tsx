@@ -8,6 +8,7 @@ import {
   Text,
   Tooltip,
 } from "@mantine/core";
+import { useDisclosure } from "@mantine/hooks";
 import {
   IconClock,
   IconHome,
@@ -24,6 +25,7 @@ import { usePathname } from "next/navigation";
 import { useRouter } from "next/navigation";
 
 import { useTranslations } from "next-intl";
+import { SearchCreatorModal } from "./search-creator-modal";
 
 export const navigation = [
   {
@@ -80,11 +82,19 @@ export function Navbar({
   collapsed: boolean;
 }) {
   const router = useRouter();
+  const [searchOpened, { open: openSearch, close: closeSearch }] =
+    useDisclosure(false);
 
   const pathname = usePathname();
   const t = useTranslations("protected.navigation");
 
   const handleLinkClick = (e: React.MouseEvent, url: string) => {
+    if (url === "/search") {
+      e.preventDefault();
+      if (opened) close();
+      openSearch();
+      return;
+    }
     if (opened) {
       // only mobile
       e.preventDefault();
@@ -149,12 +159,15 @@ export function Navbar({
   });
 
   return (
-    <AppShell.Section grow component={ScrollArea}>
-      <Card radius="lg" p="xs" withBorder={false} bg="gray.9" h="100%" w="100%">
-        <Stack gap={collapsed ? 4 : 8} align="center">
-          {links}
-        </Stack>
-      </Card>
-    </AppShell.Section>
+    <>
+      <SearchCreatorModal opened={searchOpened} onClose={closeSearch} />
+      <AppShell.Section grow component={ScrollArea}>
+        <Card radius="lg" p="xs" withBorder={false} bg="gray.9" h="100%" w="100%">
+          <Stack gap={collapsed ? 4 : 8} align="center">
+            {links}
+          </Stack>
+        </Card>
+      </AppShell.Section>
+    </>
   );
 }

@@ -41,22 +41,16 @@ export default function LiveInfinity({ scope }: Props) {
   const now = useNow({ updateInterval: 1000 * 30 });
   const isFetchingRef = useRef(false);
 
-  const {
-    data,
-    fetchNextPage,
-    hasNextPage,
-    isFetchingNextPage,
-    isLoading,
-    refetch,
-  } = useInfiniteQuery({
-    queryKey: ["live-recordings", scope],
-    queryFn: ({ pageParam }) => fetchLiveRecordings(scope, pageParam),
-    initialPageParam: 1,
-    getNextPageParam: (lastPage) => {
-      const { page = 1, pageCount = 0 } = lastPage.meta?.pagination ?? {};
-      return page < pageCount ? page + 1 : undefined;
-    },
-  });
+  const { data, fetchNextPage, hasNextPage, isFetchingNextPage, isLoading } =
+    useInfiniteQuery({
+      queryKey: ["live-recordings", scope],
+      queryFn: ({ pageParam }) => fetchLiveRecordings(scope, pageParam),
+      initialPageParam: 1,
+      getNextPageParam: (lastPage) => {
+        const { page = 1, pageCount = 0 } = lastPage.meta?.pagination ?? {};
+        return page < pageCount ? page + 1 : undefined;
+      },
+    });
 
   const { ref, entry } = useIntersection({
     threshold: 0.5,
@@ -76,7 +70,6 @@ export default function LiveInfinity({ scope }: Props) {
   }, [entry?.isIntersecting, hasNextPage, fetchNextPage]);
 
   const recordings = data?.pages.flatMap((p) => p.data) ?? [];
-  const total = data?.pages[0]?.meta?.pagination?.total ?? 0;
 
   if (isLoading) {
     return (

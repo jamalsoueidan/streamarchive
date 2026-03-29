@@ -4,6 +4,7 @@ import { Anchor, Stack, Tabs, TabsList, TabsTab } from "@mantine/core";
 import {
   dehydrate,
   HydrationBoundary,
+  InfiniteData,
   QueryClient,
 } from "@tanstack/react-query";
 import { getTranslations } from "next-intl/server";
@@ -28,13 +29,18 @@ export default async function LivePage({ searchParams }: PageProps) {
     initialPageParam: 1,
   });
 
-  const isAll = scope === "all";
+  const initialData = queryClient.getQueryData<
+    InfiniteData<Awaited<ReturnType<typeof fetchLiveRecordings>>>
+  >(["live-recordings", scope]);
+
+  const total = initialData?.pages?.[0]?.meta?.pagination?.total ?? 0;
 
   return (
     <HydrationBoundary state={dehydrate(queryClient)}>
       <Stack w="100%">
         <Tabs
-          value={isAll ? "showAll" : "default"}
+          defaultValue="default"
+          value="default"
           styles={{
             list: {
               borderBottomWidth: 4,
@@ -48,7 +54,9 @@ export default async function LivePage({ searchParams }: PageProps) {
           }}
         >
           <TabsList>
-            <TabsTab value="default">{t("title")}</TabsTab>
+            <TabsTab value="default">
+              {t("title")} ({total})
+            </TabsTab>
             <Role is={["admin", "moderator"]}>
               <TabsTab value="showAll" ml="auto">
                 <Anchor href="/live?scope=all" underline="never" c="inherit">

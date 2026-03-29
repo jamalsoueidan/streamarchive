@@ -6,9 +6,7 @@ import {
   ActionIcon,
   Anchor,
   Avatar,
-  Badge,
   Button,
-  Divider,
   Grid,
   Group,
   Loader,
@@ -16,23 +14,15 @@ import {
   Stack,
   Text,
   Title,
-  Tooltip,
 } from "@mantine/core";
 import { useIntersection } from "@mantine/hooks";
-import {
-  IconPlayerRecord,
-  IconPlayerRecordFilled,
-  IconRefresh,
-  IconVideo,
-  IconWorldSearch,
-} from "@tabler/icons-react";
+import { IconVideo, IconWorldSearch } from "@tabler/icons-react";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { useFormatter, useNow, useTranslations } from "next-intl";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
 
 import { generateAvatarUrl } from "@/app/lib/avatar-url";
-import { Role } from "@/app/providers/ability-provider";
 
 import { getProfileUrl } from "@/app/components/open-social";
 import { safeRelativeTime } from "@/app/lib/safe-relative-time";
@@ -124,55 +114,7 @@ export default function LiveInfinity({ scope }: Props) {
   }
 
   return (
-    <Stack gap="sm">
-      <Group justify="space-between" align="flex-start">
-        <Stack gap={2}>
-          <Group gap="xs">
-            <IconPlayerRecordFilled color="red" size="32px" />
-            <Title order={1} size="h3">
-              {t("title")}
-            </Title>
-            <Badge
-              size="lg"
-              color="red"
-              variant="dot"
-              styles={{
-                root: {
-                  animation: "pulse 2s infinite",
-                },
-              }}
-            >
-              {t("streamingCount", { count: total })}
-            </Badge>
-          </Group>
-          <Text c="dimmed" size="sm">
-            {t("subtitle")}
-          </Text>
-        </Stack>
-
-        <Group gap="xs">
-          <Tooltip label={t("refresh")}>
-            <ActionIcon variant="subtle" size={50} onClick={() => refetch()}>
-              <IconRefresh size={20} />
-            </ActionIcon>
-          </Tooltip>
-          <Role is={["admin", "moderator"]}>
-            <Button
-              component={Link}
-              color="yellow"
-              variant="light"
-              leftSection={<IconPlayerRecord size={18} />}
-              size="lg"
-              href={"?scope=all"}
-            >
-              {t("showAll")}
-            </Button>
-          </Role>
-        </Group>
-      </Group>
-
-      <Divider />
-
+    <>
       <SimpleGrid cols={{ base: 2, sm: 4, md: 6, xl: 8 }} spacing="sm">
         {recordings.map((rec) => (
           <Grid gutter="xs" key={rec.documentId} w="100%">
@@ -234,6 +176,6 @@ export default function LiveInfinity({ scope }: Props) {
       {isFetchingNextPage && (
         <Loader size="sm" style={{ alignSelf: "center" }} />
       )}
-    </Stack>
+    </>
   );
 }

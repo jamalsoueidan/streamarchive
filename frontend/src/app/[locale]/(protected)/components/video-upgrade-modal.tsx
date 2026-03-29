@@ -20,14 +20,11 @@ import {
 } from "@mantine/core";
 import {
   IconBell,
-  IconChartBar,
+  IconCheck,
   IconCrown,
   IconDownload,
-  IconLanguage,
-  IconMovie,
+  IconHeadset,
   IconScissors,
-  IconShare,
-  IconSparkles,
   IconUsers,
   IconVideo,
   IconX,
@@ -53,20 +50,13 @@ export function VideoUpgradeModal({ opened, onClose }: VideoUpgradeModalProps) {
   };
 
   const features = [
-    { icon: IconUsers, label: tp("premiumRecord100"), color: "#a78bfa" },
-    { icon: IconDownload, label: tp("premiumFullControl"), color: "#60a5fa" },
-    { icon: IconBell, label: tp("premiumNotifications"), color: "#fbbf24" },
-    { icon: IconMovie, label: tp("premiumAiHighlights"), color: "#34d399" },
-    { icon: IconLanguage, label: tp("premiumAiSubtitles"), color: "#f472b6" },
-    { icon: IconShare, label: tp("premiumPublishSocial"), color: "#38bdf8" },
-    { icon: IconVideo, label: tp("premiumWatchLater"), color: "#c084fc" },
-    { icon: IconSparkles, label: tp("premiumAiMemes"), color: "#fb923c" },
-    { icon: IconScissors, label: tp("premiumClipEditor"), color: "#ef4444" },
-    {
-      icon: IconChartBar,
-      label: tp("premiumTiktokInsights"),
-      color: "#22d3ee",
-    },
+    { icon: IconUsers, label: tp("premiumRecord100") },
+    { icon: IconDownload, label: tp("premiumFullControl") },
+    { icon: IconBell, label: tp("premiumNotifications") },
+    { icon: IconScissors, label: tp("premiumClipEditor") },
+    { icon: IconVideo, label: tp("premiumWatchLater") },
+    { icon: IconDownload, label: tp("premiumDownloadRecordings") },
+    { icon: IconHeadset, label: tp("premiumPrioritySupport") },
   ];
 
   return (
@@ -80,7 +70,7 @@ export function VideoUpgradeModal({ opened, onClose }: VideoUpgradeModalProps) {
       centered
       styles={{
         content: {
-          border: "1px solid rgba(139, 92, 246, 0.45)",
+          border: "1px solid rgba(82, 255, 148, 0.3)",
         },
       }}
     >
@@ -88,7 +78,7 @@ export function VideoUpgradeModal({ opened, onClose }: VideoUpgradeModalProps) {
       <Box
         p={isMobile ? "md" : "xl"}
         style={{
-          background: "linear-gradient(135deg, #6366f1 0%, #a855f7 100%)",
+          background: "linear-gradient(135deg, #22c55e 0%, #16a34a 100%)",
           borderRadius: "var(--mantine-radius-lg) var(--mantine-radius-lg) 0 0",
           position: "relative",
         }}
@@ -123,7 +113,7 @@ export function VideoUpgradeModal({ opened, onClose }: VideoUpgradeModalProps) {
             {features.map((f) => (
               <GridCol span={6} key={f.label}>
                 <Group gap={6} wrap="nowrap">
-                  <f.icon size={15} color={f.color} style={{ flexShrink: 0 }} />
+                  <IconCheck size={16} color="#52FF94" style={{ flexShrink: 0 }} />
                   <Text size="xs">{f.label}</Text>
                 </Group>
               </GridCol>
@@ -136,15 +126,15 @@ export function VideoUpgradeModal({ opened, onClose }: VideoUpgradeModalProps) {
           p="sm"
           radius="md"
           style={{
-            background: "rgba(99, 102, 241, 0.08)",
-            border: "1px solid rgba(99, 102, 241, 0.3)",
+            background: "rgba(27, 147, 69, 0.08)",
+            border: "1px solid rgba(82, 255, 148, 0.3)",
           }}
         >
           <Flex justify="space-between" align="center" gap="sm" wrap="nowrap">
             <Stack gap={2}>
               <Group gap="xs">
                 {!isMobile ? (
-                  <Badge color="violet" variant="filled" size="sm">
+                  <Badge color="green" variant="filled" size="sm">
                     25% OFF
                   </Badge>
                 ) : null}
@@ -161,15 +151,15 @@ export function VideoUpgradeModal({ opened, onClose }: VideoUpgradeModalProps) {
               py={6}
               radius="sm"
               style={{
-                background: "rgba(99, 102, 241, 0.15)",
-                border: "1px dashed rgba(139, 92, 246, 0.6)",
+                background: "rgba(27, 147, 69, 0.15)",
+                border: "1px dashed rgba(82, 255, 148, 0.6)",
                 flexShrink: 0,
               }}
             >
               <Text
                 fw={700}
                 size="sm"
-                c="violet"
+                c="green"
                 style={{ fontFamily: "monospace", letterSpacing: "0.12em" }}
               >
                 {DISCOUNT_CODE}
@@ -188,10 +178,10 @@ export function VideoUpgradeModal({ opened, onClose }: VideoUpgradeModalProps) {
           }}
           fullWidth
           size={isMobile ? "md" : "lg"}
-          radius="md"
+          radius={isMobile ? "lg" : "xl"}
           leftSection={<IconCrown size={18} color="#fbbf24" />}
           style={{
-            background: "linear-gradient(135deg, #6366f1 0%, #a855f7 100%)",
+            background: "linear-gradient(135deg, #22c55e 0%, #16a34a 100%)",
           }}
         >
           {t("followers.upgradeButton")}

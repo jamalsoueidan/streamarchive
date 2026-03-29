@@ -41,7 +41,7 @@ const buildPlaylist = unstable_cache(
     if (!sources.length) return null;
 
     const s3Client = getS3(sources[0].createdAt);
-    const bucket = getBucket(process.env.MEDIA_BUCKET!, sources[0].createdAt);
+    const bucket = getBucket(process.env.MEDIA_BUCKET!, sources[0].createdAt, sources[0].path);
     const sourcesWithPlaylists = await fetchPlaylistsFromS3(
       s3Client,
       bucket,

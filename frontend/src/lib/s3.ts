@@ -37,6 +37,17 @@ export const s3Avatar = new S3Client({
   }),
 });
 
+const PLATFORM_BUCKETS = new Set([
+  "tiktok",
+  "bigo",
+  "twitch",
+  "kick",
+  "youtube",
+  "afreecatv",
+  "pandalive",
+  "tango",
+]);
+
 export function getS3(_createdAt?: Date | string | null): S3Client {
   return s3Nbg1;
 }
@@ -44,6 +55,13 @@ export function getS3(_createdAt?: Date | string | null): S3Client {
 export function getBucket(
   bucket: string,
   _createdAt?: Date | string | null,
+  path?: string | null,
 ): string {
+  if (path) {
+    const platform = path.split("/").filter(Boolean)[0];
+    if (platform && PLATFORM_BUCKETS.has(platform)) {
+      return `${bucket}-${platform}`;
+    }
+  }
   return `${bucket}-nbg1`;
 }

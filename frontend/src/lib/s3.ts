@@ -45,5 +45,5 @@ export function getBucket(
   bucket: string,
   _createdAt?: Date | string | null,
 ): string {
-  return `${bucket}-nbg`;
+  return `${bucket}-nbg1`;
 }

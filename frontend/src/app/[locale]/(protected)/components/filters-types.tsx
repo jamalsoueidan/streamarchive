@@ -125,6 +125,11 @@ export const PLATFORM_OPTIONS = [
     labelKey: "platforms.bigo",
     icon: IconBrandFunimation,
   },
+  {
+    value: "tango",
+    labelKey: "platforms.tango",
+    icon: IconBrandFunimation,
+  },
 ];
 
 export const typeIcons: Record<string, React.ReactNode> = {

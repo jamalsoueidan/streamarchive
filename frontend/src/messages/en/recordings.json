@@ -257,6 +257,17 @@
           "answer": "Yes. Premium users can use ClipAI to automatically turn their Bigo Live recordings into short highlight clips ready for TikTok, YouTube Shorts, or Reels. It's a great way to repurpose your live content and grow your following across platforms."
         }
       ]
+    },
+    "tango": {
+      "title": "Tango Live Recordings",
+      "description": "Watch and download Tango Live recordings on StreamArchive. Your Tango Lives are captured automatically in the cloud.",
+      "keywords": [
+        "tango recorder",
+        "tango live recorder",
+        "tango live record",
+        "tango stream recorder",
+        "save tango live"
+      ]
     }
   },
   "hero": {
@@ -268,7 +279,8 @@
       "kick": "Kick Recordings",
       "afreecatv": "AfreecaTV Recordings",
       "pandalive": "Pandalive Recordings",
-      "bigo": "Bigo Recordings"
+      "bigo": "Bigo Recordings",
+      "tango": "Tango Recordings"
     },
     "subtitle": {
       "all": "Watch live stream recordings from creators on our platform. Download and discover new content.",
@@ -278,7 +290,8 @@
       "kick": "Watch Kick stream recordings from creators on our platform. Download and discover new content.",
       "afreecatv": "Watch AfreecaTV recordings from creators on our platform. Download and discover new content.",
       "pandalive": "Watch Pandalive recordings from creators on our platform. Download and discover new content.",
-      "bigo": "Watch Bigo recordings from creators on our platform. Download and discover new content."
+      "bigo": "Watch Bigo recordings from creators on our platform. Download and discover new content.",
+      "tango": "Watch Tango recordings from creators on our platform. Download and discover new content."
     }
   },
   "cta": {
@@ -290,7 +303,8 @@
       "kick": "Record Kick Streams",
       "pandalive": "Record Pandalive Streams",
       "afreecatv": "Record AfreecaTV Streams",
-      "bigo": "Record Bigo Streams"
+      "bigo": "Record Bigo Streams",
+      "tango": "Record Tango Streams"
     },
     "subtitle": {
       "all": "Automatically save your TikTok, Twitch, YouTube, and Kick streams. Download recordings, create short clips, and grow your audience.",
@@ -300,7 +314,8 @@
       "kick": "Automatically save your Kick streams. Download recordings, create short clips with ClipAI, and grow your audience.",
       "pandalive": "Automatically save your Pandalive streams. Download recordings and create short clips with ClipAI.",
       "afreecatv": "Automatically save your AfreecaTV streams. Download recordings and create short clips with ClipAI.",
-      "bigo": "Automatically save your Bigo streams. Download recordings and create short clips with ClipAI."
+      "bigo": "Automatically save your Bigo streams. Download recordings and create short clips with ClipAI.",
+      "tango": "Automatically save your Tango streams. Download recordings and create short clips with ClipAI."
     },
     "button": "Start Recording Free"
   },
@@ -314,7 +329,8 @@
       "kick": "Be the first creator to record a Kick stream!",
       "afreecatv": "Be the first creator to record an AfreecaTV stream!",
       "pandalive": "Be the first creator to record a Pandalive stream!",
-      "bigo": "Be the first creator to record a Bigo stream!"
+      "bigo": "Be the first creator to record a Bigo stream!",
+      "tango": "Be the first creator to record a Tango stream!"
     },
     "button": "Get Started"
   },
@@ -326,7 +342,8 @@
     "kick": "## Kick Stream Recordings\n\nWatch Kick recordings from creators who use StreamArchive to save their streams.\n\n### Kick VODs Saved\n\nKick is growing fast. Creators use our Kick recorder to save their streams and build their content library. Watch their content here.\n\n### Watch Kick Recordings\n\nEvery Kick recording is available to watch instantly. Premium users can download Kick VODs for offline viewing.\n\n### Record Your Kick Streams\n\nWant your Kick streams here? Sign up free and add your channel. We record every broadcast automatically. Use ClipAI to turn your streams into short clips and grow your audience.\n\n### Kick Stream Recorder\n\nAutomatic recording for every Kick stream. No software needed. Just go live and we save everything.",
     "pandalive": "## Pandalive Recordings\n\nWatch Pandalive recordings from creators who use StreamArchive to save their streams.\n\n### Korean Streams Saved\n\nPandalive creators use our recorder to save their broadcasts. Watch Korean content here.\n\n### Watch Pandalive Recordings\n\nEvery Pandalive recording is available to watch instantly. Premium users can download recordings for offline viewing.\n\n### Record Your Pandalive Streams\n\nWant your streams here? Sign up free and add your channel. We record every broadcast automatically.",
     "afreecatv": "## AfreecaTV Recordings\n\nWatch AfreecaTV recordings from creators who use StreamArchive to save their streams.\n\n### Korean Streams Saved\n\nAfreecaTV creators use our recorder to save their broadcasts. Watch Korean content here.\n\n### Watch AfreecaTV Recordings\n\nEvery AfreecaTV recording is available to watch instantly. Premium users can download recordings for offline viewing.\n\n### Record Your AfreecaTV Streams\n\nWant your streams here? Sign up free and add your channel. We record every broadcast automatically.",
-    "bigo": "## Bigo Live Recordings\n\nWatch Bigo Live recordings from creators who use StreamArchive to save their own Lives. Every Bigo Live is captured automatically in the cloud and stored for on-demand viewing.\n\n### Bigo Lives Saved Automatically\n\nBigo Lives disappear when they end, and screen recording apps often cause black screen issues. Our Bigo Live recorder captures your Lives directly from the cloud — no black screen, no screen recording apps, no hassle. Just add your username and your Lives are recorded.\n\n### Watch and Download Your Bigo Recordings\n\nEvery Bigo Live recording is available to watch instantly in your browser. Premium users can download their recordings as video files for offline viewing — perfect for repurposing your live content.\n\n### No Black Screen — Ever\n\nTired of black screen issues when trying to record your Bigo Lives? StreamArchive captures everything server-side in high quality. No screen recorder for Bigo Live needed, no APK downloads, no black screen frustration. It just works.\n\n### Turn Your Bigo Lives Into Clips with ClipAI\n\nWant to turn your Bigo Live recordings into short clips? ClipAI analyzes your recorded Lives and creates highlights ready to post as TikTok videos, YouTube Shorts, or Reels. Grow your audience beyond Bigo.\n\n### The Easiest Bigo Live Recorder for Creators\n\nStreamArchive is a cloud-based Bigo recorder — no app to install, no phone left running, no black screen to deal with. Sign up free, add your Bigo username, and never lose a Live again."
+    "bigo": "## Bigo Live Recordings\n\nWatch Bigo Live recordings from creators who use StreamArchive to save their own Lives. Every Bigo Live is captured automatically in the cloud and stored for on-demand viewing.\n\n### Bigo Lives Saved Automatically\n\nBigo Lives disappear when they end, and screen recording apps often cause black screen issues. Our Bigo Live recorder captures your Lives directly from the cloud — no black screen, no screen recording apps, no hassle. Just add your username and your Lives are recorded.\n\n### Watch and Download Your Bigo Recordings\n\nEvery Bigo Live recording is available to watch instantly in your browser. Premium users can download their recordings as video files for offline viewing — perfect for repurposing your live content.\n\n### No Black Screen — Ever\n\nTired of black screen issues when trying to record your Bigo Lives? StreamArchive captures everything server-side in high quality. No screen recorder for Bigo Live needed, no APK downloads, no black screen frustration. It just works.\n\n### Turn Your Bigo Lives Into Clips with ClipAI\n\nWant to turn your Bigo Live recordings into short clips? ClipAI analyzes your recorded Lives and creates highlights ready to post as TikTok videos, YouTube Shorts, or Reels. Grow your audience beyond Bigo.\n\n### The Easiest Bigo Live Recorder for Creators\n\nStreamArchive is a cloud-based Bigo recorder — no app to install, no phone left running, no black screen to deal with. Sign up free, add your Bigo username, and never lose a Live again.",
+    "tango": "## Tango Live Recordings\n\nWatch Tango Live recordings from creators who use StreamArchive to save their streams. Every Tango Live is captured automatically in the cloud.\n\n### Tango Streams Saved Automatically\n\nTango streams disappear when they end. Our Tango recorder captures your streams directly from the cloud. Just add your username and your streams are recorded.\n\n### Watch and Download Your Tango Recordings\n\nEvery Tango recording is available to watch instantly in your browser. Premium users can download their recordings as video files.\n\n### Turn Your Tango Streams Into Clips with ClipAI\n\nClipAI analyzes your recorded streams and creates highlight clips ready to post as TikTok videos, YouTube Shorts, or Reels.\n\n### Free to Start\n\nSign up free, add your Tango username, and never lose a stream again."
   },
   "jsonLd": {
     "name": {
@@ -337,7 +354,8 @@
       "kick": "Kick Stream Recordings",
       "afreecatv": "AfreecaTV Stream Recordings",
       "pandalive": "Pandalive Stream Recordings",
-      "bigo": "Bigo Stream Recordings"
+      "bigo": "Bigo Stream Recordings",
+      "tango": "Tango Stream Recordings"
     },
     "description": {
       "all": "Watch live stream recordings from creators on StreamArchive.",
@@ -347,7 +365,8 @@
       "kick": "Watch Kick stream recordings from creators on StreamArchive.",
       "afreecatv": "Watch AfreecaTV recordings from creators on StreamArchive.",
       "pandalive": "Watch Pandalive recordings from creators on StreamArchive.",
-      "bigo": "Watch Bigo recordings from creators on StreamArchive."
+      "bigo": "Watch Bigo recordings from creators on StreamArchive.",
+      "tango": "Watch Tango recordings from creators on StreamArchive."
     },
     "streamTitle": "{nickname} Stream - {date}",
     "streamDescription": {
@@ -358,6 +377,7 @@
       "afreecatv": "AfreecaTV recording from {nickname}",
       "pandalive": "Pandalive recording from {nickname}",
       "bigo": "Bigo recording from {nickname}",
+      "tango": "Tango recording from {nickname}",
       "unknown": "Live stream recording from {nickname}"
     }
   },

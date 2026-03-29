@@ -1,6 +1,6 @@
 import dayjs from "@/app/lib/dayjs";
-import { ActionIcon, Anchor, Button, Stack, Text, Title } from "@mantine/core";
-import { IconClock, IconVideo, IconWorldSearch } from "@tabler/icons-react";
+import { ActionIcon, Stack, Text, Title } from "@mantine/core";
+import { IconClock, IconVideo } from "@tabler/icons-react";
 import {
   dehydrate,
   HydrationBoundary,
@@ -109,15 +109,6 @@ async function EmptyState({ follower }: { follower: Follower }) {
           {t("emptyDefault.description", { username: follower.username })}
         </Text>
       </Stack>
-      <Anchor href="/discover" underline="never">
-        <Button
-          size="lg"
-          radius="md"
-          leftSection={<IconWorldSearch size={20} />}
-        >
-          {t("discoverStreamers")}
-        </Button>
-      </Anchor>
     </Stack>
   );
 }

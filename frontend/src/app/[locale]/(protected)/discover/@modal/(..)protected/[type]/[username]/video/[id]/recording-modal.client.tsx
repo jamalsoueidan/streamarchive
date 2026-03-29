@@ -10,7 +10,7 @@ import { useCallback } from "react";
 
 export default function DiscoverRecordingModalClient() {
   const router = useRouter();
-  const params = useParams<{ id: string }>();
+  const params = useParams<{ id: string; username: string; type: string }>();
 
   const { data: recording, isLoading } = useQuery({
     queryKey: ["recording", params.id],
@@ -35,7 +35,7 @@ export default function DiscoverRecordingModalClient() {
     <VideoModal
       recording={recording}
       isLoading={isLoading || isAccessLoading}
-      fallbackUrl="/discover"
+      fallbackUrl={`/${params.type}/${decodeURIComponent(params.username)}`}
       accessDenied={accessDenied}
     />
   );

@@ -6,14 +6,12 @@ import {
   fetchRecordings,
 } from "./actions/fetch-recordings";
 import { DashboardHero } from "./components/dashboard-hero";
-import { DiscoverSection } from "./components/discover-section";
 import { LatestFollowersSection } from "./components/latest-followers-section";
 import { MyFeedSection } from "./components/my-feed-section";
 
 export default async function Page() {
   const followersPromise = fetchLatestFollowers();
   const myFeedPromise = fetchRecordings(ScopeEnum.Following);
-  const discoverPromise = fetchRecordings(ScopeEnum.Discover);
 
   return (
     <Stack w="100%" gap="xl">
@@ -25,10 +23,6 @@ export default async function Page() {
 
       <Suspense fallback={<Skeleton h={360} radius="md" />}>
         <MyFeedSection myFeedPromise={myFeedPromise} />
-      </Suspense>
-
-      <Suspense fallback={<Skeleton h={360} radius="md" />}>
-        <DiscoverSection discoverPromise={discoverPromise} />
       </Suspense>
     </Stack>
   );

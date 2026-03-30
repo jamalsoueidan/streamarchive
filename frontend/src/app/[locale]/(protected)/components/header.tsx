@@ -6,7 +6,7 @@ import {
   Menu,
   useMatches,
 } from "@mantine/core";
-import { IconCrown, IconLogout, IconSettings } from "@tabler/icons-react";
+import { IconStar, IconLogout, IconSettings } from "@tabler/icons-react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 
@@ -56,7 +56,7 @@ export const Header = () => {
             size="lg"
             color="white"
           >
-            <IconCrown size={18} color="gold" />
+            <IconStar size={18} color="gold" />
           </ActionIcon>
         ) : (
           <Button
@@ -66,7 +66,7 @@ export const Header = () => {
             radius="md"
             size="sm"
             color="white"
-            rightSection={<IconCrown color="gold" />}
+            rightSection={<IconStar color="gold" />}
           >
             {tPremium("title")}
           </Button>

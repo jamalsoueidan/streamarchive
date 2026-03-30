@@ -11,7 +11,7 @@ import {
   ThemeIcon,
   Title,
 } from "@mantine/core";
-import { IconCheck, IconCrown, IconScissors } from "@tabler/icons-react";
+import { IconCheck, IconStar, IconScissors } from "@tabler/icons-react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 
@@ -100,7 +100,7 @@ export function UpgradeOverlay() {
             component={Link}
             href="/premium"
             size="lg"
-            leftSection={<IconCrown size={20} />}
+            leftSection={<IconStar size={20} />}
             variant="gradient"
             gradient={{ from: "pink", to: "violet" }}
             fullWidth

@@ -2,7 +2,7 @@
 
 import { useUser } from "@/app/providers/user-provider";
 import { Badge, Card, Group, Stack, Text, Title } from "@mantine/core";
-import { IconCrown } from "@tabler/icons-react";
+import { IconStar } from "@tabler/icons-react";
 import { useTranslations } from "next-intl";
 
 export function SubscriptionCard() {

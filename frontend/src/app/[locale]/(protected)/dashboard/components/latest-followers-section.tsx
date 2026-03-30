@@ -12,7 +12,7 @@ import {
   Text,
   Title,
 } from "@mantine/core";
-import { IconUsers } from "@tabler/icons-react";
+import { IconUsersGroup } from "@tabler/icons-react";
 import { getTranslations } from "next-intl/server";
 import NextImage from "next/image";
 
@@ -33,7 +33,7 @@ export async function LatestFollowersSection({
   return (
     <Stack gap="md">
       <Flex gap="xs" align="center">
-        <IconUsers size={24} />
+        <IconUsersGroup size={24} />
         <Title order={2} size="h4">
           {t("newCreators")}
         </Title>

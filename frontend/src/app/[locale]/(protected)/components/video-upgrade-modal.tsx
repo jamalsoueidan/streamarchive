@@ -21,7 +21,7 @@ import {
 import {
   IconBell,
   IconCheck,
-  IconCrown,
+  IconStar,
   IconDownload,
   IconHeadset,
   IconScissors,
@@ -95,7 +95,7 @@ export function VideoUpgradeModal({ opened, onClose }: VideoUpgradeModalProps) {
         </ActionIcon>
 
         <Stack align="center" gap="xs">
-          <IconCrown size={44} color="#fbbf24" />
+          <IconStar size={44} color="#fbbf24" />
           <Title order={2} c="white" ta="center" size={isMobile ? "h4" : "h3"}>
             {t("recordings.videoLimitMessage")}
           </Title>
@@ -179,7 +179,7 @@ export function VideoUpgradeModal({ opened, onClose }: VideoUpgradeModalProps) {
           fullWidth
           size={isMobile ? "md" : "lg"}
           radius={isMobile ? "lg" : "xl"}
-          leftSection={<IconCrown size={18} color="#fbbf24" />}
+          leftSection={<IconStar size={18} color="#fbbf24" />}
           style={{
             background: "linear-gradient(135deg, #22c55e 0%, #16a34a 100%)",
           }}

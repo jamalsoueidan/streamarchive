@@ -32,7 +32,7 @@ import {
   IconBrandPaypal,
   IconBrandVisa,
   IconCheck,
-  IconCrown,
+  IconStar,
   IconDownload,
   IconHeadset,
   IconScissors,
@@ -198,7 +198,7 @@ export default function PremiumClient() {
           }}
         >
           <Group gap={8}>
-            <IconCrown size={18} color="#fbbf24" />
+            <IconStar size={18} color="#fbbf24" />
             <Text size="sm" fw={600} c="#52FF94">
               {t("title")}
             </Text>
@@ -241,7 +241,7 @@ export default function PremiumClient() {
         >
           <Stack gap="md">
             <Group gap="xs">
-              <IconCrown size={20} color="#fbbf24" />
+              <IconStar size={20} color="#fbbf24" />
               <Text fw={600} size="lg">
                 {isPremiumRole ? role?.name : t("title")}
               </Text>

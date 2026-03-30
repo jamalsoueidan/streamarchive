@@ -10,13 +10,13 @@ import {
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import {
-  IconClock,
+  IconBookmark,
   IconHome,
-  IconLibrary,
+  IconUsersGroup,
   IconPlayerRecordFilled,
-  IconScissors,
+  IconCut,
   IconSearch,
-  IconVideo,
+  IconPlayerPlay,
 } from "@tabler/icons-react";
 
 import Link from "next/link";
@@ -35,27 +35,27 @@ export const navigation = [
     color: null,
   },
   {
-    labelKey: "links.myList",
+    labelKey: "links.following",
     url: "/my-list",
-    icon: IconLibrary,
+    icon: IconUsersGroup,
     color: null,
   },
   {
     labelKey: "links.myRecordings",
     url: "/following",
-    icon: IconVideo,
+    icon: IconPlayerPlay,
     color: null,
   },
   {
     labelKey: "links.myClips",
     url: "/my-clips",
-    icon: IconScissors,
+    icon: IconCut,
     color: null,
   },
   {
     labelKey: "links.watchLater",
     url: "/watch-later",
-    icon: IconClock,
+    icon: IconBookmark,
     color: null,
   },
   {

@@ -10,7 +10,7 @@ import {
   Text,
   Title,
 } from "@mantine/core";
-import { IconBrandSafari } from "@tabler/icons-react";
+import { IconPlayerPlay } from "@tabler/icons-react";
 import { getFormatter, getTranslations } from "next-intl/server";
 
 interface DiscoverSectionProps {
@@ -32,7 +32,7 @@ export async function DiscoverSection({
     <Stack gap="md">
       <Flex justify="space-between" align="center">
         <Flex gap="xs" align="center">
-          <IconBrandSafari size={24} />
+          <IconPlayerPlay size={24} />
           <Title order={2} size="h4">
             {t("discoverSection")}
           </Title>

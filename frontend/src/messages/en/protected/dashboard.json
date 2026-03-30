@@ -2,12 +2,12 @@
   "title": "Dashboard",
   "heroTitle": "Stream Recorder",
   "heroSubtitle": "Save Your Favourite Streams",
-  "heroDescription": "Never miss a moment from your favourite creators. Automatically record and save live streams — ready to rewatch anytime.",
-  "searchPlaceholder": "Search creators or recordings...",
+  "heroDescription": "Live streams from TikTok, Tango, Bigo, Twitch, and YouTube are recorded and saved automatically — ready to download and rewatch anytime.",
+  "searchPlaceholder": "Search streamers or recordings...",
   "searchButton": "Search",
   "noRecordings": "No recordings available",
   "browseAll": "Browse all",
-  "newCreators": "New Creators",
+  "newCreators": "New Streamers",
   "myFeed": "My Feed",
   "discoverSection": "Discover"
 }

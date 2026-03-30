@@ -7,17 +7,17 @@
     "ogTitle": "Stream Archive | Never Miss Your Favourite Streams",
     "ogDescription": "Automatically record and save your favourite live streams. Cloud-based archiving for TikTok, Twitch, YouTube & more.",
     "ogAlt": "Stream Archive - Save Streams from TikTok, Twitch, YouTube & More",
-    "twitterDescription": "Save your favourite live streams automatically. Never miss a moment from your favourite creators. Free to start."
+    "twitterDescription": "Save your favourite live streams automatically. Never miss a moment from your favourite streamers. Free to start."
   },
   "hero": {
     "title": "Stream Recorder",
     "subtitle": "Save Your Favourite Streams",
-    "description": "Never miss a moment from your favourite creators. Automatically record and save live streams from TikTok, Twitch, Kick, and YouTube — ready to rewatch anytime."
+    "description": "Live streams from TikTok, Tango, Bigo, Twitch, and YouTube are recorded and saved automatically — ready to download and rewatch anytime."
   },
   "feature": {
     "title": "Your Stream Library",
     "subtitle": "Recorded & Ready to Watch",
-    "description": "Add your favourite streamers and we'll automatically record and save their live streams. Come back whenever you're ready to rewatch, download, or enjoy the content you love."
+    "description": "Add your favourite streamers and their live streams are recorded and saved automatically. Come back whenever you're ready to rewatch, download, or enjoy the content you love."
   },
   "latestRecordings": {
     "title": "Latest Archives",
@@ -27,12 +27,12 @@
   "featuredCreators": {
     "title": "Join 10,000+ Users",
     "subtitle": "People who never miss their favourite live streams",
-    "browseAll": "Browse all creators"
+    "browseAll": "Browse all streamers"
   },
   "cta": {
     "title": "Never Miss a Stream Again",
-    "description": "Add your favourite streamers and we'll record every live stream automatically. Rewatch anytime from TikTok, Twitch, Kick, and YouTube — all in one place.",
+    "description": "Add your favourite streamers and every live stream is recorded automatically. Rewatch anytime from TikTok, Twitch, Bigo, Tango, and YouTube — all in one place.",
     "button": "Start for free today"
   },
-  "about": "## About Stream Archive\n\nYour favourite live streams are content gold — don't let them disappear. Our cloud-based platform automatically records and saves broadcasts so you can rewatch them anytime.\n\n### Automatic Stream Recording\n\nAdd your favourite streamers and we handle the rest. Stream recording happens automatically in the background — no software to install, no manual scheduling. Streams are captured and saved to the cloud as they happen.\n\n### Watch & Download Anytime\n\nAll your saved streams are stored securely on our servers. Access your recordings through our built-in player, download them for offline viewing, or share them with friends.\n\n### Record TikTok, Twitch, YouTube & More\n\nWhether you watch streams on TikTok, Twitch, YouTube, Kick, AfreecaTV, or Pandalive — our cloud-based service has you covered. Record across multiple platforms, all organized in one place.\n\n### No Screen Recorder Needed\n\nUnlike a screen recorder that requires your computer to stay on, our cloud service runs 24/7. No software needed. Streams are recorded automatically even when you're not watching.\n\n### Free to Get Started\n\nCreate an account and start saving your favourite streams today. Upgrade to premium for higher quality recordings, unlimited storage, and more features."
+  "about": "## About Stream Archive\n\nYour favourite live streams disappear when they end. Stream Archive is a cloud-based tool that records and saves live broadcasts automatically so you can rewatch them anytime.\n\n### Automatic Stream Recording\n\nAdd your favourite streamers and recording happens automatically in the background — no software to install, no manual scheduling. Streams are captured and saved to the cloud as they happen.\n\n### Watch & Download Anytime\n\nAll saved streams are stored securely and ready to watch. Access recordings through the built-in player, download them for offline viewing, or share them with friends.\n\n### TikTok, Twitch, YouTube, Bigo, Tango & More\n\nWhether you watch streams on TikTok, Twitch, YouTube, Bigo, Tango, Kick, AfreecaTV, or Pandalive — Stream Archive supports them all. Record across multiple platforms, all organized in one place.\n\n### No Screen Recorder Needed\n\nUnlike a screen recorder that requires your computer to stay on, Stream Archive runs in the cloud 24/7. No software needed. Streams are recorded automatically even when you're not watching.\n\n### Free to Get Started\n\nCreate an account and start saving your favourite streams today. Upgrade to premium for downloading recordings, extended storage, and more features."
 }

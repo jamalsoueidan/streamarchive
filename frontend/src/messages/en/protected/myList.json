@@ -1,14 +1,14 @@
 {
-  "title": "Library ({count})",
-  "description": "Manage your creators",
+  "title": "Following ({count})",
+  "description": "Manage your streamers",
   "disabledHint": "Disabled items have no recordings yet",
   "emptyFiltered": {
-    "title": "No creators match your filters",
+    "title": "No streamers match your filters",
     "description": "Try adjusting or clearing your filters"
   },
   "emptyDefault": {
-    "title": "You haven't added any creators yet",
-    "description": "Browse Friends to discover creators on our platform"
+    "title": "You haven't added any streamers yet",
+    "description": "Search for your favourite streamers to start saving their live streams"
   },
   "noMoreToLoad": "You've reached the end"
 }

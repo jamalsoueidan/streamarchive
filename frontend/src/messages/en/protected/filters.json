@@ -57,6 +57,6 @@
     "done": "Done"
   },
   "options": {
-    "hasRecordings": "Only show creators with recordings"
+    "hasRecordings": "Only show streamers with recordings"
   }
 }

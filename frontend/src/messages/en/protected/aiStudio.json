@@ -3,7 +3,7 @@
   "description": "Create clips and memes from your recordings with AI",
   "requestDetails": "Request Details",
   "createRequest": "Create Request",
-  "unknownCreator": "Unknown Creator",
+  "unknownCreator": "Unknown Streamer",
   "unknownRecording": "Unknown Recording",
   "recordingDeleted": {
     "badge": "Recording deleted"

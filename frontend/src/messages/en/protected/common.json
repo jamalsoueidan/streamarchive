@@ -1,12 +1,12 @@
 {
   "follow": {
-    "tooltip": "Add Creator",
+    "tooltip": "Add Streamer",
     "successTitle": "Added!",
     "successMessage": "{username} has been added",
     "errorTitle": "Error"
   },
   "unfollow": {
-    "tooltip": "Remove Creator",
+    "tooltip": "Remove Streamer",
     "successTitle": "Removed",
     "successMessage": "You removed {username}",
     "successMessageGeneric": "Successfully removed"
@@ -50,17 +50,17 @@
     "deleteSourcesSuccess": "Deleted {count} sources"
   },
   "followers": {
-    "addedAgo_context": "For when a creator was added to user's list. Shows 'Added 3 days ago'",
+    "addedAgo_context": "For when a streamer was added to user's list. Shows 'Added 3 days ago'",
     "addedAgo": "Added {time}",
-    "limitReachedTitle": "Creator limit reached",
+    "limitReachedTitle": "Streamer limit reached",
     "upgradeModalHeadline": "Never miss a live stream again",
-    "max3Message": "You've reached the 3 creator limit on the free plan.",
-    "max50Message": "You've reached your limit of 50 creators on this plan.",
-    "max100Message": "You've reached your limit of 100 creators on this plan.",
+    "max3Message": "You've reached the 3 streamer limit on the free plan.",
+    "max50Message": "You've reached your limit of 50 streamers on this plan.",
+    "max100Message": "You've reached your limit of 100 streamers on this plan.",
     "upgradeButton": "Upgrade to Premium",
     "upgradeModalDiscount": "25% off your first month",
     "upgradeModalCodeNote": "Apply at checkout",
-    "unfollowUpgradeTitle": "Manage your creators freely with premium"
+    "unfollowUpgradeTitle": "Manage your streamers freely with premium"
   },
   "newest": "Newest",
   "oldest": "Oldest"

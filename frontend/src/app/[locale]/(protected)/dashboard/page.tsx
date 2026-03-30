@@ -9,7 +9,6 @@ import { DashboardHero } from "./components/dashboard-hero";
 import { DiscoverSection } from "./components/discover-section";
 import { LatestFollowersSection } from "./components/latest-followers-section";
 import { MyFeedSection } from "./components/my-feed-section";
-import { UnpauseFollowers } from "./components/unpause-followers";
 
 export default async function Page() {
   const followersPromise = fetchLatestFollowers();
@@ -18,8 +17,6 @@ export default async function Page() {
 
   return (
     <Stack w="100%" gap="xl">
-      <UnpauseFollowers />
-
       <DashboardHero />
 
       <Suspense fallback={<Skeleton h={120} radius="md" />}>

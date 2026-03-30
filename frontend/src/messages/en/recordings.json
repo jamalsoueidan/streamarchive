@@ -2,7 +2,7 @@
   "meta": {
     "all": {
       "title": "Live Stream Recordings",
-      "description": "Watch live stream recordings from creators on StreamArchive. TikTok, Twitch, YouTube, Kick recordings saved and ready to watch.",
+      "description": "Watch saved live stream recordings on StreamArchive. TikTok, Twitch, YouTube, Bigo, Tango, and Kick recordings — saved automatically and ready to rewatch or download.",
       "keywords": [
         "live stream recordings",
         "stream recordings",
@@ -14,192 +14,153 @@
     },
     "tiktok": {
       "title": "TikTok Live Recordings",
-      "description": "Watch and download TikTok live recordings on StreamArchive. Every TikTok Live is captured automatically — no screen recorder needed. Watch saved TikTok Lives from your favorite creators.",
+      "description": "Watch and download saved TikTok live recordings on StreamArchive. Add your favourite TikTok streamers and their Lives are recorded automatically — no screen recorder needed.",
       "keywords": [
         "tiktok live recording",
-        "tiktok live stream",
+        "save tiktok live",
         "record tiktok live",
         "tiktok recorder",
-        "how to record tiktok live",
-        "screen recorder for tiktok",
-        "can you record tiktok live",
-        "how to record a live on tiktok",
-        "tiktok vod",
-        "save tiktok live",
-        "screen record tiktok live",
-        "record tiktok on computer",
-        "can you screen record tiktok live"
+        "tiktok live saver",
+        "watch tiktok live later",
+        "tiktok live replay",
+        "tiktok live download",
+        "tiktok stream recorder",
+        "tiktok VOD",
+        "tiktok live archive"
       ],
       "faqs": [
         {
-          "question": "How do I record my TikTok Lives?",
-          "answer": "With StreamArchive, your TikTok Lives are recorded automatically in the cloud. Just sign up, add your TikTok username, and every Live you go on is captured — no screen recorder for TikTok needed, no phone running overnight."
+          "question": "How do I save TikTok Lives?",
+          "answer": "Add the TikTok username of any streamer you want to follow on Stream Archive. Their TikTok Lives are recorded automatically every time they go live — no screen recorder needed, everything is saved in the cloud."
         },
         {
-          "question": "Do I need a screen recorder for TikTok Lives?",
-          "answer": "No. StreamArchive captures your TikTok Lives server-side in high quality, so there's no need to screen record on TikTok at all. No dropped frames, no notifications interrupting, no unreliable phone recording. Your Lives are saved automatically to your account."
+          "question": "Do I need a screen recorder to save TikTok Lives?",
+          "answer": "No. Stream Archive is a cloud-based TikTok live recorder. There's no app to install, no phone left running, and no black screen issues. TikTok Lives are captured server-side in high quality automatically."
         },
         {
-          "question": "Can I record my TikTok Lives on a computer or laptop?",
-          "answer": "Yes. StreamArchive works entirely in the cloud, so you can record your TikTok Lives from any device with a browser — PC, laptop, or mobile. There's nothing to install, no desktop screen recorder or browser extension needed. Just add your username and your Lives are recorded automatically."
+          "question": "Can I watch TikTok Lives I missed?",
+          "answer": "Yes. Once you add a TikTok streamer on Stream Archive, all their Lives are recorded and saved. You can rewatch any TikTok Live recording anytime — even if the original broadcast has ended."
         },
         {
-          "question": "How do I download my TikTok Live recordings?",
-          "answer": "All your TikTok live recordings on StreamArchive can be watched instantly in your browser. Premium users can download their recordings as video files for offline viewing — no watermark added to your downloads."
+          "question": "Can I download TikTok live recordings?",
+          "answer": "Yes. Premium users can download any TikTok live recording as a video file for offline viewing — no watermark added."
         },
         {
           "question": "Do TikTok Lives disappear after they end?",
-          "answer": "Yes, TikTok does not save Lives after the broadcast ends. That's why creators use StreamArchive as their TikTok recorder — every Live is captured and stored so you can watch, download, or repurpose your content later."
+          "answer": "Yes, TikTok does not save Lives after the broadcast ends. That's why Stream Archive exists — add your favourite TikTok streamers and their Lives are captured and stored so you can watch them later."
         },
         {
-          "question": "What's the best way to record my TikTok Lives?",
-          "answer": "The best way to record your TikTok Lives is with a cloud-based recorder like StreamArchive. Unlike phone screen recording or desktop capture software, cloud recording captures your full stream in high quality even if your phone dies or you lose connection. It's the best screen recorder alternative for TikTok Lives."
-        },
-        {
-          "question": "Can I turn my recorded TikTok Lives into short clips?",
-          "answer": "Yes. Premium users can use ClipAI to automatically turn their TikTok live recordings into short highlight clips. This is a great way to repurpose your Lives into TikTok videos, Reels, or Shorts to grow your following."
+          "question": "Is Stream Archive free for saving TikTok Lives?",
+          "answer": "Yes. Sign up free and start saving TikTok Lives from your favourite streamers. Premium plans unlock downloading recordings and extended storage."
         }
       ]
     },
     "twitch": {
       "title": "Twitch Stream Recordings & VODs",
-      "description": "Watch and download Twitch stream recordings on StreamArchive. Your Twitch streams are captured automatically — no screen recorder needed. The best Twitch recorder for creators who want permanent VODs.",
+      "description": "Watch and download saved Twitch stream recordings on StreamArchive. Add your favourite Twitch streamers and their streams are saved automatically — a permanent Twitch VOD archive.",
       "keywords": [
         "twitch recorder",
         "twitch stream recorder",
-        "twitch vod recorder",
-        "record twitch stream",
-        "capture twitch stream",
-        "twitch live recorder",
-        "record my twitch stream",
-        "record your twitch stream",
-        "record twitch stream automatically",
-        "screen recorder for twitch",
-        "best screen recorder for twitch",
-        "twitch video recorder",
-        "saving twitch streams",
-        "twitch stream capture",
-        "twitch record live stream",
-        "record stream on twitch",
-        "twitch vod",
-        "save twitch stream"
+        "twitch VOD downloader",
+        "save twitch streams",
+        "twitch VOD archive",
+        "twitch live recording",
+        "download twitch VODs",
+        "twitch stream saver",
+        "watch twitch streams later",
+        "twitch VOD save"
       ],
       "faqs": [
         {
-          "question": "How do I record my Twitch streams automatically?",
-          "answer": "StreamArchive is a cloud-based Twitch recorder that captures your streams automatically. Sign up, add your Twitch channel, and every time you go live your stream is recorded. No screen recorder for Twitch needed — everything happens server-side."
+          "question": "How do I save Twitch streams?",
+          "answer": "Add the Twitch username of any streamer you want to follow on Stream Archive. Their streams are recorded automatically every time they go live — no software needed, everything is saved in the cloud."
         },
         {
           "question": "Do Twitch VODs expire?",
-          "answer": "Yes. Twitch VODs expire after 14 days for regular streamers and 60 days for Partners and Turbo users. StreamArchive saves your Twitch streams permanently — your recordings never expire and are always available to watch or download."
+          "answer": "Yes. Twitch VODs expire after 14 days for regular streamers and 60 days for Partners. Stream Archive saves Twitch streams permanently — recordings never expire and are always available to watch or download."
         },
         {
-          "question": "What's the best Twitch stream recorder for creators?",
-          "answer": "For automatic recording, a cloud-based Twitch recorder like StreamArchive is the best option. Traditional screen recorders for Twitch require your PC to stay on and recording software running in the background. StreamArchive captures your Twitch streams from the cloud — even if OBS crashes or your PC restarts, your recording is safe."
+          "question": "Can I download Twitch stream recordings?",
+          "answer": "Yes. Premium users can download any Twitch stream recording as a video file for offline viewing. A built-in Twitch VOD downloader."
         },
         {
-          "question": "Do I need a screen recorder to save my Twitch streams?",
-          "answer": "No. StreamArchive captures your Twitch streams server-side, so there's no need for screen capture software. No Bandicam, no desktop app, no extra CPU usage while streaming. Your streams are saved automatically in high quality to the cloud."
+          "question": "How is this different from Twitch VODs?",
+          "answer": "Twitch VODs expire after 14–60 days and can get muted or deleted. Stream Archive saves Twitch streams as a permanent backup — recordings never expire, stay in full quality, and are available even if the streamer deletes their VODs."
         },
         {
-          "question": "Can I record my Twitch streams for free?",
-          "answer": "Yes. Sign up for StreamArchive free and start recording your Twitch streams right away. Premium plans unlock downloading your recordings, ClipAI for automatic highlight clips, and extended storage."
+          "question": "Is Stream Archive free for saving Twitch streams?",
+          "answer": "Yes. Sign up free and start saving Twitch streams from your favourite streamers. Premium plans unlock downloading recordings and extended storage."
         },
         {
-          "question": "How is this different from Twitch's built-in VOD system?",
-          "answer": "Twitch VODs expire after 14-60 days and are deleted if you delete your channel. StreamArchive gives you an independent backup of your Twitch streams. Your recordings are stored separately, never expire, and stay available even if something happens to your Twitch account."
-        },
-        {
-          "question": "Can I turn my Twitch recordings into clips?",
-          "answer": "Yes. Premium users can use ClipAI to automatically turn their Twitch stream recordings into short highlight clips. Post them as YouTube Shorts, TikTok videos, or Reels to grow your audience across platforms."
-        },
-        {
-          "question": "Does StreamArchive capture my Twitch stream even if I forget to save the VOD?",
-          "answer": "Yes. Once your channel is connected, StreamArchive records every Twitch live stream automatically — regardless of your Twitch VOD settings. Even if you have VODs disabled on Twitch, your streams are still captured and saved to your account."
+          "question": "Does it record all types of Twitch streams?",
+          "answer": "Yes. Gaming, IRL streams, Just Chatting, or any other category — every Twitch stream is recorded automatically regardless of content type."
         }
       ]
     },
     "youtube": {
       "title": "YouTube Live Recordings",
-      "description": "Watch and download YouTube live recordings on StreamArchive. Your YouTube Lives are captured automatically — no screen recorder for YouTube needed. The easiest YouTube live recorder for creators.",
+      "description": "Watch and download saved YouTube live recordings on StreamArchive. Add your favourite YouTube channels and their Lives are saved automatically — a reliable backup when replays disappear.",
       "keywords": [
         "youtube live recording",
-        "youtube live stream",
+        "save youtube live",
         "record youtube live stream",
-        "youtube recorder",
-        "screen recorder for youtube",
-        "youtube recording",
-        "youtube live record",
-        "capture live youtube stream",
-        "youtube live stream capture",
-        "best screen recorder for youtube",
-        "recording live youtube stream",
-        "youtube video recorder",
-        "online youtube recorder",
-        "save youtube live"
+        "youtube live recorder",
+        "youtube live saver",
+        "youtube live replay",
+        "youtube live download",
+        "youtube live archive",
+        "watch youtube live later"
       ],
       "faqs": [
         {
-          "question": "How do I record my YouTube Live streams?",
-          "answer": "With StreamArchive, your YouTube Lives are recorded automatically in the cloud. Sign up, add your YouTube channel, and every live stream you start is captured. No YouTube recording software to install, no manual saving — it just works."
+          "question": "How do I save YouTube Lives?",
+          "answer": "Add the YouTube channel of any streamer you want to follow on Stream Archive. Their Lives are recorded automatically every time they go live — no software needed."
         },
         {
-          "question": "Do I need a screen recorder for YouTube Lives?",
-          "answer": "No. StreamArchive is a cloud-based YouTube recorder that captures your live streams server-side. Unlike screen recording software for YouTube, there are no dropped frames, no desktop app running in the background, and no storage eating up your hard drive. Your Lives are saved automatically in high quality."
+          "question": "Can I watch YouTube Lives I missed?",
+          "answer": "Yes. Once you add a YouTube channel, all their Lives are recorded and saved. You can rewatch any YouTube live recording anytime — even if the original replay was deleted or failed to process."
         },
         {
-          "question": "What's the best recording software for YouTube Lives?",
-          "answer": "For live streams specifically, a cloud-based YouTube recorder like StreamArchive is the best option. Traditional screen recorders for YouTube require your computer to stay on during the entire stream. StreamArchive captures your YouTube Lives from the cloud — even if your PC crashes or you lose power, your recording is safe."
+          "question": "How is this different from YouTube replays?",
+          "answer": "YouTube replays can fail to process, get deleted, or go private. Stream Archive saves YouTube Lives as an independent backup — recordings are always available regardless of what happens to the original."
         },
         {
-          "question": "Can I record my YouTube Lives for free?",
-          "answer": "Yes. You can sign up for StreamArchive free and start recording your YouTube live streams right away. Premium plans unlock downloading your recordings, ClipAI for automatic highlight clips, and extended storage."
+          "question": "Can I download YouTube live recordings?",
+          "answer": "Yes. Premium users can download any YouTube live recording as a video file for offline viewing."
         },
         {
-          "question": "Do YouTube Lives get saved automatically by YouTube?",
-          "answer": "YouTube can save live stream replays to your channel, but creators sometimes delete them, or streams can fail to process. StreamArchive gives you an independent backup — your YouTube live recordings are captured and stored separately so you always have a copy of your content."
-        },
-        {
-          "question": "Can I turn my YouTube Live recordings into Shorts?",
-          "answer": "Yes. Premium users can use ClipAI to automatically turn YouTube live recordings into short highlight clips perfect for YouTube Shorts, TikTok, or Reels. It's the easiest way to repurpose your live content and grow your subscribers."
-        },
-        {
-          "question": "Is StreamArchive an online YouTube recorder?",
-          "answer": "Yes. StreamArchive is a fully online YouTube recorder — everything runs in the cloud. No software to download, no browser extension. Just connect your channel and your YouTube Lives are recorded automatically from any device."
-        },
-        {
-          "question": "How do I capture my YouTube live stream if I forget to hit record?",
-          "answer": "That's exactly what StreamArchive solves. Once your channel is connected, every YouTube live stream you start is captured automatically. You never need to remember to hit record — your Lives are always saved."
+          "question": "Is Stream Archive free for saving YouTube Lives?",
+          "answer": "Yes. Sign up free and start saving YouTube Lives from your favourite channels. Premium plans unlock downloading recordings and extended storage."
         }
       ]
     },
     "kick": {
       "title": "Kick Stream Recordings",
-      "description": "Watch Kick stream recordings from creators on StreamArchive. Watch Kick VODs, download streams, and discover new streamers.",
+      "description": "Watch saved Kick stream recordings on StreamArchive. Add your favourite Kick streamers and their broadcasts are saved automatically.",
       "keywords": [
         "kick recording",
-        "kick vod",
+        "kick VOD",
         "kick stream download",
-        "record kick stream",
+        "save kick stream",
         "kick archive",
-        "save kick stream"
+        "kick stream recorder"
       ]
     },
     "afreecatv": {
       "title": "AfreecaTV Stream Recordings",
-      "description": "Watch AfreecaTV stream recordings from creators on StreamArchive. Watch AfreecaTV VODs and download Korean streams.",
+      "description": "Watch saved AfreecaTV recordings on StreamArchive. Add your favourite AfreecaTV streamers and their Korean live streams are saved automatically.",
       "keywords": [
         "afreecatv recording",
-        "afreecatv vod",
+        "afreecatv VOD",
         "afreecatv download",
         "korean stream recording",
-        "afreecatv archive",
+        "SOOP recording",
         "save afreecatv stream"
       ]
     },
     "pandalive": {
       "title": "Pandalive Stream Recordings",
-      "description": "Watch Pandalive stream recordings from creators on StreamArchive. Watch Pandalive VODs and download Korean streams.",
+      "description": "Watch saved Pandalive recordings on StreamArchive. Add your favourite Pandalive streamers and their Korean live streams are saved automatically.",
       "keywords": [
         "pandalive recording",
         "pandalive vod",
@@ -211,7 +172,7 @@
     },
     "bigo": {
       "title": "Bigo Live Recordings",
-      "description": "Watch and download Bigo Live recordings on StreamArchive. Your Bigo Lives are captured automatically in the cloud — no black screen issues, no screen recorder needed. The easiest Bigo Live recorder for creators.",
+      "description": "Watch and download saved Bigo Live recordings on StreamArchive. Add your favourite Bigo streamers and their Lives are saved automatically — no black screen issues, no screen recorder needed.",
       "keywords": [
         "bigo recorder",
         "bigo live recorder",
@@ -229,44 +190,41 @@
       ],
       "faqs": [
         {
-          "question": "How do I record my Bigo Lives?",
-          "answer": "With StreamArchive, your Bigo Lives are recorded automatically in the cloud. Sign up, add your Bigo Live username, and every time you go live it's captured. No Bigo Live recorder APK to install, no screen recording — everything happens server-side."
+          "question": "How do I save Bigo Lives?",
+          "answer": "Add the Bigo username of any streamer you want to follow on Stream Archive. Their Lives are recorded automatically every time they go live — no Bigo Live recorder APK needed, no screen recording."
         },
         {
           "question": "Why do I get a black screen when recording Bigo Live?",
-          "answer": "Black screen issues are common when using screen recorders on Bigo Live. StreamArchive avoids this entirely because it captures your Bigo Lives directly from the cloud — no black screen, no workarounds, no unreliable screen recording apps."
+          "answer": "Black screen issues are common with Bigo Live screen recorder apps. Stream Archive avoids this entirely — Bigo Lives are captured directly from the cloud, so there's no black screen, no workarounds needed."
         },
         {
-          "question": "How do I fix the Bigo Live screen recorder black screen?",
-          "answer": "The easiest fix is to skip screen recording altogether. StreamArchive is a cloud-based Bigo recorder that captures your Lives server-side in high quality. No black screen problems, no apps to configure — just add your username and your Bigo Lives are recorded automatically."
+          "question": "How do I fix the Bigo Live black screen?",
+          "answer": "The easiest fix is to skip screen recording altogether. Stream Archive is a cloud-based Bigo recorder that captures Lives server-side in high quality. No black screen problems, no apps to configure."
         },
         {
           "question": "Do I need a screen recorder for Bigo Live?",
-          "answer": "No. Screen recorders for Bigo Live often result in black screen issues or low quality captures. StreamArchive is a cloud-based Bigo Live recorder that captures your streams automatically in high quality — no app to install, no black screen."
+          "answer": "No. Screen recorders for Bigo Live often cause black screen issues or low quality captures. Stream Archive is a cloud-based Bigo Live recorder — no app to install, no black screen."
         },
         {
-          "question": "Can I record my Bigo Lives for free?",
-          "answer": "Yes. Sign up for StreamArchive free and start recording your Bigo Lives right away. Premium plans unlock downloading your recordings, ClipAI for automatic highlight clips, and extended storage."
+          "question": "Can I download Bigo Live recordings?",
+          "answer": "Yes. Premium users can download any Bigo Live recording as a video file for offline viewing. Every recording can also be watched instantly in the browser."
         },
         {
-          "question": "Can I download my Bigo Live recordings?",
-          "answer": "Yes. Premium users can download their Bigo Live recordings as video files for offline viewing. Every recording can also be watched instantly in your browser without downloading."
-        },
-        {
-          "question": "Can I turn my Bigo Live recordings into short clips?",
-          "answer": "Yes. Premium users can use ClipAI to automatically turn their Bigo Live recordings into short highlight clips ready for TikTok, YouTube Shorts, or Reels. It's a great way to repurpose your live content and grow your following across platforms."
+          "question": "Is Stream Archive free for saving Bigo Lives?",
+          "answer": "Yes. Sign up free and start saving Bigo Lives from your favourite streamers. Premium plans unlock downloading recordings and extended storage."
         }
       ]
     },
     "tango": {
       "title": "Tango Live Recordings",
-      "description": "Watch and download Tango Live recordings on StreamArchive. Your Tango Lives are captured automatically in the cloud.",
+      "description": "Watch and download saved Tango live recordings on StreamArchive. Add your favourite Tango streamers and their streams are saved automatically.",
       "keywords": [
         "tango recorder",
         "tango live recorder",
-        "tango live record",
+        "save tango live",
         "tango stream recorder",
-        "save tango live"
+        "tango live saver",
+        "tango live download"
       ]
     }
   },
@@ -283,67 +241,67 @@
       "tango": "Tango Recordings"
     },
     "subtitle": {
-      "all": "Watch live stream recordings from creators on our platform. Download and discover new content.",
-      "tiktok": "Watch TikTok live recordings from creators on our platform. Download and discover new content.",
-      "twitch": "Watch Twitch stream recordings from creators on our platform. Download and discover new content.",
-      "youtube": "Watch YouTube live recordings from creators on our platform. Download and discover new content.",
-      "kick": "Watch Kick stream recordings from creators on our platform. Download and discover new content.",
-      "afreecatv": "Watch AfreecaTV recordings from creators on our platform. Download and discover new content.",
-      "pandalive": "Watch Pandalive recordings from creators on our platform. Download and discover new content.",
-      "bigo": "Watch Bigo recordings from creators on our platform. Download and discover new content.",
-      "tango": "Watch Tango recordings from creators on our platform. Download and discover new content."
+      "all": "Browse recorded live streams from your favourite streamers. Rewatch and download anytime.",
+      "tiktok": "Browse recorded TikTok Lives from your favourite streamers. Rewatch and download anytime.",
+      "twitch": "Browse recorded Twitch streams from your favourite streamers. Rewatch and download anytime.",
+      "youtube": "Browse recorded YouTube Lives from your favourite streamers. Rewatch and download anytime.",
+      "kick": "Browse recorded Kick streams from your favourite streamers. Rewatch and download anytime.",
+      "afreecatv": "Browse recorded AfreecaTV streams from your favourite streamers. Rewatch and download anytime.",
+      "pandalive": "Browse recorded Pandalive streams from your favourite streamers. Rewatch and download anytime.",
+      "bigo": "Browse recorded Bigo streams from your favourite streamers. Rewatch and download anytime.",
+      "tango": "Browse recorded Tango streams from your favourite streamers. Rewatch and download anytime."
     }
   },
   "cta": {
     "title": {
-      "all": "Record Your Live Streams Today",
-      "tiktok": "Record TikTok Live Streams",
-      "twitch": "Record Twitch Streams & VODs",
-      "youtube": "Record YouTube Live Streams",
-      "kick": "Record Kick Streams",
-      "pandalive": "Record Pandalive Streams",
-      "afreecatv": "Record AfreecaTV Streams",
-      "bigo": "Record Bigo Streams",
-      "tango": "Record Tango Streams"
+      "all": "Never Miss a Live Stream",
+      "tiktok": "Never Miss a TikTok Live",
+      "twitch": "Never Miss a Twitch Stream",
+      "youtube": "Never Miss a YouTube Live",
+      "kick": "Never Miss a Kick Stream",
+      "pandalive": "Never Miss a Pandalive Stream",
+      "afreecatv": "Never Miss an AfreecaTV Stream",
+      "bigo": "Never Miss a Bigo Stream",
+      "tango": "Never Miss a Tango Stream"
     },
     "subtitle": {
-      "all": "Automatically save your TikTok, Twitch, YouTube, and Kick streams. Download recordings, create short clips, and grow your audience.",
-      "tiktok": "Automatically save your TikTok Lives. Download recordings, create short clips with ClipAI, and grow your following.",
-      "twitch": "Automatically save your Twitch streams. Download VODs, create short clips with ClipAI, and grow your channel.",
-      "youtube": "Automatically save your YouTube Lives. Download recordings, turn them into Shorts with ClipAI, and grow your subscribers.",
-      "kick": "Automatically save your Kick streams. Download recordings, create short clips with ClipAI, and grow your audience.",
-      "pandalive": "Automatically save your Pandalive streams. Download recordings and create short clips with ClipAI.",
-      "afreecatv": "Automatically save your AfreecaTV streams. Download recordings and create short clips with ClipAI.",
-      "bigo": "Automatically save your Bigo streams. Download recordings and create short clips with ClipAI.",
-      "tango": "Automatically save your Tango streams. Download recordings and create short clips with ClipAI."
+      "all": "Add your favourite streamers and their live streams are saved automatically. Rewatch or download anytime.",
+      "tiktok": "Add your favourite TikTok streamers and their Lives are saved automatically. Rewatch or download anytime.",
+      "twitch": "Add your favourite Twitch streamers and their streams are saved automatically. Rewatch or download anytime.",
+      "youtube": "Add your favourite YouTube streamers and their Lives are saved automatically. Rewatch or download anytime.",
+      "kick": "Add your favourite Kick streamers and their streams are saved automatically. Rewatch or download anytime.",
+      "pandalive": "Add your favourite Pandalive streamers and their streams are saved automatically. Rewatch or download anytime.",
+      "afreecatv": "Add your favourite AfreecaTV streamers and their streams are saved automatically. Rewatch or download anytime.",
+      "bigo": "Add your favourite Bigo streamers and their streams are saved automatically. Rewatch or download anytime.",
+      "tango": "Add your favourite Tango streamers and their streams are saved automatically. Rewatch or download anytime."
     },
     "button": "Start Recording Free"
   },
   "empty": {
     "title": "No recordings yet",
     "description": {
-      "all": "Be the first creator to record a stream!",
-      "tiktok": "Be the first creator to record a TikTok Live!",
-      "twitch": "Be the first creator to record a Twitch stream!",
-      "youtube": "Be the first creator to record a YouTube Live!",
-      "kick": "Be the first creator to record a Kick stream!",
-      "afreecatv": "Be the first creator to record an AfreecaTV stream!",
-      "pandalive": "Be the first creator to record a Pandalive stream!",
-      "bigo": "Be the first creator to record a Bigo stream!",
-      "tango": "Be the first creator to record a Tango stream!"
+      "all": "No recordings yet. Add a streamer to start saving their live streams!",
+      "tiktok": "No TikTok recordings yet. Add a streamer to start saving their Lives!",
+      "twitch": "No Twitch recordings yet. Add a streamer to start saving their streams!",
+      "youtube": "No YouTube recordings yet. Add a streamer to start saving their Lives!",
+      "kick": "No Kick recordings yet. Add a streamer to start saving their streams!",
+      "afreecatv": "No AfreecaTV recordings yet. Add a streamer to start saving their streams!",
+      "pandalive": "No Pandalive recordings yet. Add a streamer to start saving their streams!",
+      "bigo": "No Bigo recordings yet. Add a streamer to start saving their streams!",
+      "tango": "No Tango recordings yet. Add a streamer to start saving their streams!"
     },
     "button": "Get Started"
   },
   "about": {
-    "all": "## Live Stream Recordings\n\nWatch recordings from creators who use StreamArchive to save their live streams.\n\n### What You'll Find Here\n\nCreators use our platform to automatically record their TikTok Lives, Twitch streams, YouTube broadcasts, and Kick streams. Watch their content, watch recordings, and discover new creators.\n\n### Watch and Download\n\nEvery recording is available to watch instantly. Premium users can download recordings for offline viewing.\n\n### For Creators\n\nWant your streams here? Sign up free and start recording. Paste your channel URL, go live, and we save everything automatically. Use ClipAI to turn your streams into short clips and grow your audience.\n\n### Supported Platforms\n\nWe support TikTok live recording, Twitch VOD saving, YouTube live recording, Kick stream recording, AfreecaTV recording, and Pandalive recording. More platforms coming soon.",
-    "tiktok": "## TikTok Live Recordings\n\nWatch TikTok live recordings from creators who use StreamArchive to save their own Lives. Every TikTok Live is captured automatically and stored for on-demand viewing.\n\n### TikTok Lives Saved Automatically\n\nTikTok Lives disappear the moment they end — there's no built-in way to save them. Creators use our TikTok recorder to capture their own TikTok Lives automatically in the cloud. No screen recorder for TikTok needed, no phone left running all night. Just add your username and your Lives are recorded.\n\n### Watch and Download Your TikTok Recordings\n\nEvery TikTok live recording is available to watch instantly in your browser. Premium users can download their TikTok recordings as video files for offline viewing — perfect for repurposing your own content or keeping a personal archive.\n\n### Record Your TikTok Lives on Any Device\n\nWondering how to record your TikTok Lives on a computer or laptop? StreamArchive works entirely in the cloud. There's nothing to install — no desktop app, no browser extension. Whether you're on PC, laptop, or mobile, your TikTok Lives are captured in high quality automatically.\n\n### Turn Your Lives Into Clips with ClipAI\n\nWant to turn your TikTok live recordings into short clips? ClipAI analyzes your recorded Lives and creates highlight clips you can post as TikTok videos, Reels, or Shorts. It's the best way to grow your following from your live content.\n\n### Your TikTok Recorder — No Screen Recording Required\n\nForget unreliable screen recording apps and desktop capture tools. StreamArchive is a purpose-built TikTok recorder that captures your Lives server-side. Sign up free, add your TikTok username, and never lose a Live again.",
-    "twitch": "## Twitch Stream Recordings\n\nWatch Twitch stream recordings from creators who use StreamArchive to save their own streams. Every Twitch live stream is captured automatically and stored permanently.\n\n### Twitch VODs That Never Expire\n\nTwitch VODs expire after 14–60 days and are deleted if you delete your channel. Our Twitch recorder saves your streams permanently in the cloud — no expiry, no deleted archives. Your content stays yours.\n\n### Watch and Download Your Twitch Recordings\n\nEvery Twitch stream recording is available to watch instantly in your browser — no ads, no interruptions. Premium users can download their Twitch recordings as video files for offline viewing or content repurposing.\n\n### Record Your Twitch Streams — No Screen Recorder Needed\n\nForget running screen capture software alongside OBS. StreamArchive is a cloud-based Twitch stream recorder that captures your live streams server-side. No extra CPU load, no desktop app, no Bandicam running in the background. Whether you stream from PC, console, or mobile, your Twitch streams are recorded automatically in high quality.\n\n### Turn Your Streams Into Clips with ClipAI\n\nWant to turn your Twitch stream recordings into short clips? ClipAI analyzes your recorded streams and creates highlight clips ready to post as YouTube Shorts, TikTok videos, or Reels. Grow your audience across platforms from your Twitch content.\n\n### The Best Twitch Recorder for Creators\n\nStreamArchive is purpose-built for saving Twitch streams. Sign up free, connect your channel, and never lose a stream to expired VODs again. Every live stream is recorded automatically — your permanent Twitch archive.",
-    "youtube": "## YouTube Live Recordings\n\nWatch YouTube live recordings from creators who use StreamArchive to save their own live streams. Every YouTube Live is captured automatically and stored for on-demand viewing.\n\n### YouTube Lives Saved Automatically\n\nYouTube live stream replays can disappear — creators delete them, streams fail to process, or channels go private. Our YouTube recorder captures your Lives automatically in the cloud so you always have a copy of your content.\n\n### Watch and Download Your YouTube Recordings\n\nEvery YouTube live recording is available to watch instantly in your browser. Premium users can download their recordings as video files for offline viewing — perfect for repurposing your live content.\n\n### Record Your YouTube Lives — No Screen Recorder Needed\n\nForget traditional screen recording software for YouTube. StreamArchive is an online YouTube recorder that captures your live streams server-side. No desktop app, no browser extension, no computer left running all night. Whether you're on PC, laptop, or mobile, your YouTube Lives are recorded in high quality.\n\n### Turn Your Lives Into YouTube Shorts with ClipAI\n\nWant to turn your YouTube live recordings into Shorts? ClipAI analyzes your recorded Lives and creates highlight clips ready to post. It's the best way to grow your subscribers from your live content.\n\n### The Best YouTube Live Recorder for Creators\n\nStreamArchive is purpose-built for capturing YouTube live streams. Sign up free, connect your channel, and never lose a Live again. Every stream is recorded automatically — even if you forget to hit record.",
-    "kick": "## Kick Stream Recordings\n\nWatch Kick recordings from creators who use StreamArchive to save their streams.\n\n### Kick VODs Saved\n\nKick is growing fast. Creators use our Kick recorder to save their streams and build their content library. Watch their content here.\n\n### Watch Kick Recordings\n\nEvery Kick recording is available to watch instantly. Premium users can download Kick VODs for offline viewing.\n\n### Record Your Kick Streams\n\nWant your Kick streams here? Sign up free and add your channel. We record every broadcast automatically. Use ClipAI to turn your streams into short clips and grow your audience.\n\n### Kick Stream Recorder\n\nAutomatic recording for every Kick stream. No software needed. Just go live and we save everything.",
-    "pandalive": "## Pandalive Recordings\n\nWatch Pandalive recordings from creators who use StreamArchive to save their streams.\n\n### Korean Streams Saved\n\nPandalive creators use our recorder to save their broadcasts. Watch Korean content here.\n\n### Watch Pandalive Recordings\n\nEvery Pandalive recording is available to watch instantly. Premium users can download recordings for offline viewing.\n\n### Record Your Pandalive Streams\n\nWant your streams here? Sign up free and add your channel. We record every broadcast automatically.",
-    "afreecatv": "## AfreecaTV Recordings\n\nWatch AfreecaTV recordings from creators who use StreamArchive to save their streams.\n\n### Korean Streams Saved\n\nAfreecaTV creators use our recorder to save their broadcasts. Watch Korean content here.\n\n### Watch AfreecaTV Recordings\n\nEvery AfreecaTV recording is available to watch instantly. Premium users can download recordings for offline viewing.\n\n### Record Your AfreecaTV Streams\n\nWant your streams here? Sign up free and add your channel. We record every broadcast automatically.",
-    "bigo": "## Bigo Live Recordings\n\nWatch Bigo Live recordings from creators who use StreamArchive to save their own Lives. Every Bigo Live is captured automatically in the cloud and stored for on-demand viewing.\n\n### Bigo Lives Saved Automatically\n\nBigo Lives disappear when they end, and screen recording apps often cause black screen issues. Our Bigo Live recorder captures your Lives directly from the cloud — no black screen, no screen recording apps, no hassle. Just add your username and your Lives are recorded.\n\n### Watch and Download Your Bigo Recordings\n\nEvery Bigo Live recording is available to watch instantly in your browser. Premium users can download their recordings as video files for offline viewing — perfect for repurposing your live content.\n\n### No Black Screen — Ever\n\nTired of black screen issues when trying to record your Bigo Lives? StreamArchive captures everything server-side in high quality. No screen recorder for Bigo Live needed, no APK downloads, no black screen frustration. It just works.\n\n### Turn Your Bigo Lives Into Clips with ClipAI\n\nWant to turn your Bigo Live recordings into short clips? ClipAI analyzes your recorded Lives and creates highlights ready to post as TikTok videos, YouTube Shorts, or Reels. Grow your audience beyond Bigo.\n\n### The Easiest Bigo Live Recorder for Creators\n\nStreamArchive is a cloud-based Bigo recorder — no app to install, no phone left running, no black screen to deal with. Sign up free, add your Bigo username, and never lose a Live again.",
-    "tango": "## Tango Live Recordings\n\nWatch Tango Live recordings from creators who use StreamArchive to save their streams. Every Tango Live is captured automatically in the cloud.\n\n### Tango Streams Saved Automatically\n\nTango streams disappear when they end. Our Tango recorder captures your streams directly from the cloud. Just add your username and your streams are recorded.\n\n### Watch and Download Your Tango Recordings\n\nEvery Tango recording is available to watch instantly in your browser. Premium users can download their recordings as video files.\n\n### Turn Your Tango Streams Into Clips with ClipAI\n\nClipAI analyzes your recorded streams and creates highlight clips ready to post as TikTok videos, YouTube Shorts, or Reels.\n\n### Free to Start\n\nSign up free, add your Tango username, and never lose a stream again."
+    "all": "## Live Stream Recordings\n\nBrowse saved live stream recordings from streamers on StreamArchive. Add your favourite streamers and their live streams are recorded automatically — rewatch or download anytime.\n\n### What You'll Find Here\n\nRecordings from TikTok Lives, Twitch streams, YouTube broadcasts, Bigo Lives, Tango streams, Kick streams, and more. All saved automatically and ready to watch on demand.\n\n### Watch and Download\n\nEvery recording is available to watch instantly through the built-in player. Premium users can download recordings as video files for offline viewing.\n\n### Supported Platforms\n\nStream Archive supports TikTok live recording, Twitch VOD saving, YouTube live recording, Bigo Live recording, Tango recording, Kick stream recording, AfreecaTV recording, and Pandalive recording.",
+    "tiktok": "## TikTok Live Recordings\n\nWatch saved TikTok live recordings on StreamArchive. TikTok Lives disappear the moment they end — Stream Archive is a TikTok live recorder that saves them automatically so you can rewatch anytime.\n\n### TikTok Lives Saved Automatically\n\nAdd your favourite TikTok streamers and their Lives are recorded automatically in the cloud. No TikTok screen recorder needed, no phone left running overnight. Every TikTok Live is captured in high quality.\n\n### Watch and Download TikTok Recordings\n\nEvery TikTok live recording is available to watch instantly in your browser. Premium users can download TikTok recordings as video files for offline viewing.\n\n### TikTok Live Recorder — No Screen Recording Required\n\nForget unreliable screen recording apps that cause black screens or dropped frames. Stream Archive is a cloud-based TikTok recorder that captures Lives server-side. No app to install, no storage issues on your device.\n\n### Record TikTok Lives on Any Device\n\nStream Archive works entirely in the cloud. There's nothing to install — no desktop app, no browser extension. Whether you're on PC, laptop, or mobile, TikTok Lives from your favourite streamers are captured automatically.\n\n### Free TikTok Live Recorder\n\nSign up free and start saving TikTok Lives from your favourite streamers. Upgrade to premium for downloading recordings and extended storage.",
+    "twitch": "## Twitch Stream Recordings\n\nWatch saved Twitch stream recordings on StreamArchive. Twitch VODs expire — Stream Archive saves them permanently so you never lose your favourite streams.\n\n### Twitch VODs That Never Expire\n\nTwitch VODs expire after 14–60 days. Stream Archive is a Twitch stream recorder that saves streams permanently in the cloud — no expiry, no deleted archives. Your favourite Twitch content is preserved.\n\n### Watch and Download Twitch Recordings\n\nEvery Twitch stream recording is available to watch instantly — no ads, no interruptions. Premium users can download Twitch VODs as video files for offline viewing.\n\n### Twitch Stream Recorder — No Screen Capture Needed\n\nForget screen capture software or desktop recording tools. Stream Archive is a cloud-based Twitch recorder that captures streams server-side. No extra CPU load, no Bandicam, no OBS recording required.\n\n### Twitch VOD Downloader\n\nPremium users can download any Twitch stream recording. A built-in Twitch VOD downloader — save your favourite streams as video files.\n\n### Free Twitch Stream Recorder\n\nSign up free and start saving Twitch streams from your favourite streamers. Upgrade to premium for Twitch VOD downloads and extended storage.",
+    "youtube": "## YouTube Live Recordings\n\nWatch saved YouTube live recordings on StreamArchive. YouTube replays can disappear — Stream Archive saves them automatically so you always have access.\n\n### YouTube Lives Saved Automatically\n\nYouTube live stream replays can fail to process, get deleted, or go private. Stream Archive is a YouTube live recorder that captures Lives automatically — a reliable backup that's always available.\n\n### Watch and Download YouTube Recordings\n\nEvery YouTube live recording is available to watch instantly in your browser. Premium users can download recordings as video files for offline viewing.\n\n### YouTube Live Recorder — No Screen Recording Needed\n\nForget traditional screen recording software. Stream Archive is an online YouTube recorder that captures live streams in the cloud. No desktop app, no browser extension, no computer left running overnight.\n\n### Free YouTube Live Recorder\n\nSign up free and start saving YouTube Lives from your favourite channels. Upgrade to premium for downloading recordings and extended storage.",
+    "kick": "## Kick Stream Recordings\n\nWatch saved Kick stream recordings on StreamArchive. Add your favourite Kick streamers and their broadcasts are recorded automatically.\n\n### Kick VODs Saved Automatically\n\nKick is growing fast. Stream Archive is a Kick stream recorder that saves streams automatically. Browse Kick recordings and watch your favourite streamers' content anytime.\n\n### Watch and Download Kick Recordings\n\nEvery Kick recording is available to watch instantly. Premium users can download Kick VODs for offline viewing.\n\n### Free Kick Stream Recorder\n\nSign up free and start saving Kick streams from your favourite streamers.",
+    "pandalive": "## Pandalive Recordings\n\nWatch saved Pandalive recordings on StreamArchive. Add your favourite Pandalive streamers and their broadcasts are recorded automatically.\n\n### Korean Streams Saved\n\nStream Archive is a Pandalive recorder that saves Korean live streams automatically. Browse Pandalive recordings and rewatch anytime.\n\n### Watch and Download\n\nEvery Pandalive recording is available to watch instantly. Premium users can download recordings for offline viewing.\n\n### Free to Start\n\nSign up free and start saving Pandalive streams from your favourite streamers.",
+    "afreecatv": "## AfreecaTV Recordings\n\nWatch saved AfreecaTV recordings on StreamArchive. Add your favourite AfreecaTV streamers and their broadcasts are recorded automatically.\n\n### Korean Streams Saved\n\nStream Archive is an AfreecaTV recorder that saves Korean live streams automatically. Browse AfreecaTV recordings and rewatch anytime.\n\n### Watch and Download\n\nEvery AfreecaTV recording is available to watch instantly. Premium users can download recordings for offline viewing.\n\n### Free to Start\n\nSign up free and start saving AfreecaTV streams from your favourite streamers.",
+    "bigo": "## Bigo Live Recordings\n\nWatch saved Bigo Live recordings on StreamArchive. Bigo Lives disappear when they end — Stream Archive is a Bigo Live recorder that saves them automatically, with no black screen issues.\n\n### Bigo Lives Saved Automatically\n\nAdd your favourite Bigo streamers and their Lives are recorded automatically in the cloud. No Bigo Live screen recorder APK needed, no black screen problems. Streams are captured server-side in high quality.\n\n### Watch and Download Bigo Recordings\n\nEvery Bigo Live recording is available to watch instantly in your browser. Premium users can download recordings as video files for offline viewing.\n\n### No Black Screen — Ever\n\nScreen recording apps for Bigo Live often cause black screen issues. Stream Archive captures everything server-side — no screen recorder needed, no APK downloads, no black screen frustration.\n\n### Free Bigo Live Recorder\n\nSign up free and start saving Bigo Lives from your favourite streamers. No app to install, no black screen — just automatic cloud recording.",
+    "tango": "## Tango Live Recordings\n\nWatch saved Tango live recordings on StreamArchive. Add your favourite Tango streamers and their streams are recorded automatically in the cloud.\n\n### Tango Streams Saved Automatically\n\nTango streams disappear when they end. Stream Archive is a Tango recorder that captures streams automatically. Browse Tango recordings and rewatch anytime.\n\n### Watch and Download Tango Recordings\n\nEvery Tango recording is available to watch instantly. Premium users can download recordings as video files.\n\n### Free to Start\n\nSign up free and start saving Tango streams from your favourite streamers."
   },
   "jsonLd": {
     "name": {

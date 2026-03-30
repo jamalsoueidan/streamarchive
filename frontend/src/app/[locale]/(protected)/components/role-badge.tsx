@@ -1,7 +1,7 @@
 import { Badge, MantineColor, MantineGradient, Tooltip } from "@mantine/core";
 import {
   IconAward,
-  IconCrown,
+  IconStar,
   IconShield,
   IconUser,
   IconWorld,
@@ -45,7 +45,7 @@ const roleStyles: Record<string, RoleStyle> = {
   premium: {
     variant: "gradient",
     gradient: { from: "violet", to: "grape", deg: 90 },
-    icon: <IconCrown size={16} />,
+    icon: <IconStar size={16} />,
     size: "md",
   },
   basic: {

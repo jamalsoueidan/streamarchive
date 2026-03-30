@@ -12,6 +12,7 @@
     "watchLater": "Watch Later",
     "aiStudio": "AI Studio",
     "myList": "Library",
+    "following": "Following",
     "live": "Live",
     "tiktokInsights": "TikTok Insights",
     "explore": "Explore",
@@ -20,7 +21,7 @@
   "actions": {
     "settings": "Settings",
     "logout": "Logout",
-    "addCreator": "Add Creator",
+    "addCreator": "Add Streamer",
     "search": "Search",
     "searchPlaceholder": "Enter your stream URL",
     "installApp": "Install App",

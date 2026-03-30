@@ -10,7 +10,7 @@ import {
   Text,
   Title,
 } from "@mantine/core";
-import { IconVideo } from "@tabler/icons-react";
+import { IconPlayerPlay } from "@tabler/icons-react";
 import { getFormatter, getTranslations } from "next-intl/server";
 
 interface MyFeedSectionProps {
@@ -30,7 +30,7 @@ export async function MyFeedSection({ myFeedPromise }: MyFeedSectionProps) {
     <Stack gap="md">
       <Flex justify="space-between" align="center">
         <Flex gap="xs" align="center">
-          <IconVideo size={24} />
+          <IconPlayerPlay size={24} />
           <Title order={2} size="h4">
             {t("myFeed")}
           </Title>

@@ -44,7 +44,7 @@ export async function getFollower({
 }) {
   const response = await api.follower.getFollowers({
     filters: {
-      username: username.replace(/^(%40|@)/, ""),
+      username: { $eqi: decodeURIComponent(username).replace(/^@/, "") },
       type,
     },
     populate: ["avatar"],
@@ -91,7 +91,7 @@ export async function fetchProfileRecordings(
     deepMerge(defaultOptions, {
       filters: {
         follower: {
-          username: { $eq: username.replace(/^(%40|@)/, "") },
+          username: { $eqi: decodeURIComponent(username).replace(/^@/, "") },
           type: { $eq: type },
         },
       },
@@ -149,7 +149,7 @@ export async function fetchRecordingWithContext(
     const countResponse = await api.recording.browseRecordings({
       filters: {
         follower: {
-          username: { $eq: decodedUsername },
+          username: { $eqi: decodedUsername },
           type: { $eq: type },
         },
         sources: {
@@ -173,7 +173,7 @@ export async function fetchRecordingWithContext(
     deepMerge(defaultOptions, {
       filters: {
         follower: {
-          username: { $eq: decodedUsername },
+          username: { $eqi: decodedUsername },
           type: { $eq: type },
         },
       },

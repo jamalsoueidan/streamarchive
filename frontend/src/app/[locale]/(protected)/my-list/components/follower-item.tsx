@@ -207,11 +207,13 @@ export default function FollowerItem({ follower, isOpen }: Props) {
                             })}
                       </Text>
 
-                      <RecordingMenu
-                        recording={rec}
-                        username={follower.username}
-                        type={follower.type}
-                      />
+                      {!isRecording ? (
+                        <RecordingMenu
+                          recording={rec}
+                          username={follower.username}
+                          type={follower.type}
+                        />
+                      ) : null}
                     </Group>
                   </Stack>
                 );

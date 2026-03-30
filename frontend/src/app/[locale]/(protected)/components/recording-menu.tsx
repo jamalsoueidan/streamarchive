@@ -21,12 +21,10 @@ import {
   IconEye,
   IconEyeOff,
   IconScissors,
-  IconSparkles,
   IconTrash,
 } from "@tabler/icons-react";
 import { useQueryClient } from "@tanstack/react-query";
 import { useLocale, useTranslations } from "next-intl";
-import Link from "next/link";
 import { useState } from "react";
 import { DownloadUpgradeModal } from "./download-upgrade-modal";
 import { VideoEditorModal } from "./video-editor-modal";

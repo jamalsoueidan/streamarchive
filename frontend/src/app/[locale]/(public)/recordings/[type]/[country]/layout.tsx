@@ -67,7 +67,7 @@ export default async function Layout({ params, children }: LayoutProps) {
         }}
       >
         <Image
-          src="/recordings.svg"
+          src="/background.svg"
           alt="background"
           fill
           priority

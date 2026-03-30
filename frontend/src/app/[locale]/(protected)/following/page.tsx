@@ -1,4 +1,4 @@
-import { Stack, Tabs, TabsList, TabsTab } from "@mantine/core";
+import { Anchor, Stack, Tabs, TabsList, TabsTab } from "@mantine/core";
 import {
   dehydrate,
   HydrationBoundary,
@@ -18,6 +18,7 @@ export default async function Page({
   searchParams: Promise<FollowingFilters>;
 }) {
   const t = await getTranslations("protected.following");
+  const tWatchLater = await getTranslations("protected.watchLater");
   const filters = await followingParamsCache.parse(searchParams);
 
   const queryClient = new QueryClient();
@@ -34,7 +35,7 @@ export default async function Page({
     <HydrationBoundary state={dehydrate(queryClient)}>
       <Stack w="100%">
         <Tabs
-          defaultValue="default"
+          value="recordings"
           styles={{
             list: {
               borderBottomWidth: 4,
@@ -48,7 +49,12 @@ export default async function Page({
           }}
         >
           <TabsList>
-            <TabsTab value="default">{t("title")}</TabsTab>
+            <TabsTab value="recordings">{t("title")}</TabsTab>
+            <TabsTab value="watchLater">
+              <Anchor href="/watch-later" underline="never" c="inherit">
+                {tWatchLater("title")}
+              </Anchor>
+            </TabsTab>
           </TabsList>
         </Tabs>
         <Filters filterOptions={filterOptions} />

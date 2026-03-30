@@ -10,13 +10,12 @@ import {
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import {
-  IconBookmark,
-  IconHome,
-  IconUsersGroup,
-  IconPlayerRecordFilled,
   IconCut,
-  IconSearch,
+  IconHome,
   IconPlayerPlay,
+  IconPlayerRecordFilled,
+  IconSearch,
+  IconUsersGroup,
 } from "@tabler/icons-react";
 
 import Link from "next/link";
@@ -50,12 +49,6 @@ export const navigation = [
     labelKey: "links.myClips",
     url: "/my-clips",
     icon: IconCut,
-    color: null,
-  },
-  {
-    labelKey: "links.watchLater",
-    url: "/watch-later",
-    icon: IconBookmark,
     color: null,
   },
   {
@@ -162,7 +155,14 @@ export function Navbar({
     <>
       <SearchCreatorModal opened={searchOpened} onClose={closeSearch} />
       <AppShell.Section grow component={ScrollArea}>
-        <Card radius="lg" p="xs" withBorder={false} bg="gray.9" h="100%" w="100%">
+        <Card
+          radius="lg"
+          p="xs"
+          withBorder={false}
+          bg="gray.9"
+          h="100%"
+          w="100%"
+        >
           <Stack gap={collapsed ? 4 : 8} align="center">
             {links}
           </Stack>

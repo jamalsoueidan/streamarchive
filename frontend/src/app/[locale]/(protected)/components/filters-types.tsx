@@ -80,6 +80,24 @@ export const usePlatformOptions = () => {
         </Center>
       ),
     },
+    {
+      value: "bigo",
+      label: (
+        <Center style={{ gap: 8 }}>
+          <IconBrandFunimation size={18} />
+          <Text size="sm">{t("platforms.bigo")}</Text>
+        </Center>
+      ),
+    },
+    {
+      value: "tango",
+      label: (
+        <Center style={{ gap: 8 }}>
+          <IconBrandFunimation size={18} />
+          <Text size="sm">{t("platforms.tango")}</Text>
+        </Center>
+      ),
+    },
   ];
 };
 
@@ -138,4 +156,7 @@ export const typeIcons: Record<string, React.ReactNode> = {
   youtube: <IconBrandYoutube size={20} />,
   kick: <IconBrandKick size={20} />,
   afreecatv: <IconAlphabetKorean size={20} />,
+  pandalive: <IconBrandFunimation size={20} />,
+  bigo: <IconBrandFunimation size={20} />,
+  tango: <IconBrandFunimation size={20} />,
 };

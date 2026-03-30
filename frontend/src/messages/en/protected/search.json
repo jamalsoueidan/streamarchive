@@ -40,7 +40,7 @@
     "viewPage": "View page"
   },
   "chromeExtension": "Install Chrome Extension",
-  "inputLabel": "Paste a stream link from Twitch, TikTok, or YouTube here",
+  "inputLabel": "Paste a stream link from TikTok, Twitch, YouTube, Bigo, Tango, or more",
   "notFollowing": {
     "title": "This streamer is not in your list",
     "description": "You tried to access a streamer that's not in your list.",

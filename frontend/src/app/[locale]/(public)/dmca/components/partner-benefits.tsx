@@ -84,8 +84,8 @@ export function PartnerBenefits() {
       p="xl"
       radius="lg"
       style={{
-        background: "linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%)",
-        border: "1px solid rgba(99, 102, 241, 0.2)",
+        background: "linear-gradient(135deg, rgba(27, 147, 69, 0.1) 0%, rgba(82, 255, 148, 0.05) 100%)",
+        border: "1px solid rgba(82, 255, 148, 0.2)",
       }}
     >
       <Stack gap="lg">

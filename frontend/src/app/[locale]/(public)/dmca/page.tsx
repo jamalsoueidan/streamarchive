@@ -29,10 +29,9 @@ export default async function DMCAPolicy() {
               lineHeight: 1.2,
               letterSpacing: "-0.03em",
               background:
-                "linear-gradient(135deg, #ffffff 0%, #e2e8f0 50%, #94a3b8 100%)",
+                "linear-gradient(135deg, #54ff5b, #b7ff6b)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
-              filter: "drop-shadow(0 0 40px rgba(82, 255, 148, 0.3))",
             }}
           >
             {t("header.title")}

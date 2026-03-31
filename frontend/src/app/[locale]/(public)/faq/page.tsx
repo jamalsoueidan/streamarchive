@@ -50,7 +50,7 @@ export default function FAQPage() {
                 width: 48,
                 height: 48,
                 borderRadius: 12,
-                background: "rgba(99, 102, 241, 0.2)",
+                background: "rgba(82, 255, 148, 0.2)",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -67,7 +67,7 @@ export default function FAQPage() {
                 lineHeight: 1.3,
                 letterSpacing: "-0.03em",
                 background:
-                  "linear-gradient(135deg, #ffffff 0%, #e2e8f0 50%, #94a3b8 100%)",
+                  "linear-gradient(135deg, #54ff5b, #b7ff6b)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 paddingBottom: "0.1em",

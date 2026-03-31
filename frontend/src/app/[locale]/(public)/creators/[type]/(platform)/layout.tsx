@@ -87,7 +87,7 @@ export default async function Layout({ params, children }: PageProps) {
             lineHeight: 1.2,
             letterSpacing: "-0.03em",
             background:
-              "linear-gradient(135deg, #ffffff 0%, #e2e8f0 50%, #94a3b8 100%)",
+              "linear-gradient(135deg, #54ff5b, #b7ff6b)",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
             paddingBottom: "0.1em",
@@ -116,8 +116,8 @@ export default async function Layout({ params, children }: PageProps) {
           p={60}
           style={{
             background:
-              "linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(168, 85, 247, 0.1) 100%)",
-            border: "1px solid rgba(99, 102, 241, 0.2)",
+              "linear-gradient(135deg, rgba(27, 147, 69, 0.15) 0%, rgba(82, 255, 148, 0.1) 100%)",
+            border: "1px solid rgba(82, 255, 148, 0.2)",
             borderRadius: "32px",
             textAlign: "center",
             position: "relative",
@@ -133,7 +133,7 @@ export default async function Layout({ params, children }: PageProps) {
               width: "100%",
               height: "200%",
               background:
-                "radial-gradient(ellipse at center, rgba(99, 102, 241, 0.1) 0%, transparent 50%)",
+                "radial-gradient(ellipse at center, rgba(27, 147, 69, 0.1) 0%, transparent 50%)",
               pointerEvents: "none",
             }}
           />

@@ -234,8 +234,8 @@ export function VerificationFlow({ intent }: { intent: string }) {
               padding="lg"
               radius="md"
               style={{
-                background: "rgba(99, 102, 241, 0.1)",
-                border: "1px solid rgba(99, 102, 241, 0.2)",
+                background: "rgba(82, 255, 148, 0.1)",
+                border: "1px solid rgba(82, 255, 148, 0.2)",
               }}
             >
               <Stack gap="md">

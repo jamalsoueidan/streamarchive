@@ -2,9 +2,9 @@ import api from "@/lib/api";
 import createMollieClient, { SequenceType } from "@mollie/api-client";
 import { NextRequest, NextResponse } from "next/server";
 
-const mollieClient = createMollieClient({
-  apiKey: process.env.MOLLIE_API_KEY!,
-});
+function getMollieClient() {
+  return createMollieClient({ apiKey: process.env.MOLLIE_API_KEY! });
+}
 
 const PRICES: Record<
   string,
@@ -55,7 +55,7 @@ export async function POST(request: NextRequest) {
 
     // Find or create Mollie customer
     let customer: { id: string } | undefined;
-    const customers = await mollieClient.customers.page();
+    const customers = await getMollieClient().customers.page();
     for (const c of customers) {
       if ((c.metadata as { userId?: string })?.userId === userId) {
         customer = c;
@@ -64,7 +64,7 @@ export async function POST(request: NextRequest) {
     }
 
     if (!customer) {
-      customer = await mollieClient.customers.create({
+      customer = await getMollieClient().customers.create({
         name: userEmail,
         email: userEmail,
         metadata: { userId },
@@ -74,7 +74,7 @@ export async function POST(request: NextRequest) {
     console.log(`[mollie] customer: ${customer.id} for user ${userId}`);
 
     // Create first payment to get a mandate
-    const payment = await mollieClient.payments.create({
+    const payment = await getMollieClient().payments.create({
       amount: { currency: "USD", value: plan.amount },
       description: plan.description,
       redirectUrl: `${baseUrl}/premium?success=true&provider=mollie&mc=${customer.id}`,

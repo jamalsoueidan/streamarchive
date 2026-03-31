@@ -4,9 +4,9 @@ import createMollieClient from "@mollie/api-client";
 import { NextRequest, NextResponse } from "next/server";
 import { getRoleIdByName, updateUserSubscription } from "../../freemius/utils";
 
-const mollieClient = createMollieClient({
-  apiKey: process.env.MOLLIE_API_KEY!,
-});
+function getMollieClient() {
+  return createMollieClient({ apiKey: process.env.MOLLIE_API_KEY! });
+}
 
 function findUserByMollieCustomerId(customerId: string) {
   return publicApi.usersPermissionsUsersRoles
@@ -50,7 +50,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Missing id" }, { status: 400 });
     }
 
-    const payment = await mollieClient.payments.get(paymentId);
+    const payment = await getMollieClient().payments.get(paymentId);
 
     console.log(
       `[mollie-webhook] payment ${paymentId} status=${payment.status} seq=${payment.sequenceType}`,
@@ -82,7 +82,7 @@ export async function POST(request: NextRequest) {
       const baseUrl =
         process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
-      const subscription = await mollieClient.customerSubscriptions.create({
+      const subscription = await getMollieClient().customerSubscriptions.create({
         customerId,
         amount: { currency: "USD", value: prices[billingCycle] || "15.00" },
         interval,

@@ -6,9 +6,9 @@ import publicApi from "@/lib/public-api";
 import createMollieClient from "@mollie/api-client";
 import { revalidatePath } from "next/cache";
 
-const mollieClient = createMollieClient({
-  apiKey: process.env.MOLLIE_API_KEY!,
-});
+function getMollieClient() {
+  return createMollieClient({ apiKey: process.env.MOLLIE_API_KEY! });
+}
 
 interface ActivateMollieResult {
   success: boolean;
@@ -46,7 +46,7 @@ export async function activateMolliePremium(
     }
 
     // Find the paid first payment using SDK
-    const payments = await mollieClient.customerPayments.page({
+    const payments = await getMollieClient().customerPayments.page({
       customerId: mollieCustomerId,
     });
 
@@ -80,7 +80,7 @@ export async function activateMolliePremium(
     const interval = metadata?.interval || "1 month";
 
     // Check if subscription already exists
-    const subs = await mollieClient.customerSubscriptions.page({
+    const subs = await getMollieClient().customerSubscriptions.page({
       customerId: mollieCustomerId,
     });
     let subscriptionId = subs.find((s) => s.status === "active")?.id;
@@ -95,7 +95,7 @@ export async function activateMolliePremium(
           annual: "96.00",
         };
         try {
-          const sub = await mollieClient.customerSubscriptions.create({
+          const sub = await getMollieClient().customerSubscriptions.create({
             customerId: mollieCustomerId,
             amount: {
               currency: "USD",
@@ -177,7 +177,7 @@ export async function cancelMollieSubscription(): Promise<{
     }
 
     console.log("[mollie-cancel] cancelling subscription:", mollieData.subscriptionId);
-    await mollieClient.customerSubscriptions.cancel(
+    await getMollieClient().customerSubscriptions.cancel(
       mollieData.subscriptionId,
       { customerId: mollieData.customerId },
     );

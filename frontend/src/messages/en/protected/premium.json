@@ -69,6 +69,11 @@
   "buyNow": "Buy Now",
   "securePayment": "Secure payment",
 
+  "paymentFailed": "Payment failed. Please try again or use a different payment method.",
+  "paymentCancelled": "Payment was not completed. Please try again when you're ready.",
+  "paymentExpired": "Payment session expired. Please try again.",
+  "paymentError": "Something went wrong with the payment. Please try again.",
+
   "cancelModalTitle": "Cancel Subscription",
   "cancelModalMessage": "We're sorry to see you go! If you cancel, you'll still have access to premium features until {endDate}.",
   "cancelModalAfter": "After that, your account will return to the free plan.",

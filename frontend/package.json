@@ -25,6 +25,7 @@
     "@mantine/notifications": "^8.3.18",
     "@mantine/nprogress": "^8.3.18",
     "@mantine/spotlight": "^8.3.18",
+    "@mollie/api-client": "^4.4.0",
     "@next/env": "^16.2.0",
     "@sentry/nextjs": "10",
     "@serwist/turbopack": "^9.5.0",

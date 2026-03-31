@@ -10,7 +10,6 @@ import {
   Badge,
   Button,
   Card,
-  Divider,
   Flex,
   Grid,
   GridCol,
@@ -25,17 +24,15 @@ import {
 import { useDisclosure } from "@mantine/hooks";
 import {
   IconBell,
-  IconBrandAmazon,
   IconBrandApple,
-  IconBrandGoogle,
   IconBrandMastercard,
   IconBrandPaypal,
   IconBrandVisa,
   IconCheck,
-  IconStar,
   IconDownload,
   IconHeadset,
   IconScissors,
+  IconStar,
   IconUsers,
   IconVideo,
 } from "@tabler/icons-react";
@@ -43,8 +40,7 @@ import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { cancelSubscription } from "./actions";
-import { FreemiusPaymentButton } from "./components/freemius-payment-button";
-import { StripePaymentButton } from "./components/stripe-payment-button";
+import { MolliePaymentButton } from "./components/mollie-payment-button";
 
 // Extend user type with subscription fields from schema
 type UserWithSubscription = GetUsersPermissionsUsersRolesData & {
@@ -53,16 +49,14 @@ type UserWithSubscription = GetUsersPermissionsUsersRolesData & {
   billingPeriod?: string;
 };
 
-export default function PremiumClient() {
+export default function PremiumClient({
+  paymentError,
+}: {
+  paymentError?: string;
+}) {
   const t = useTranslations("protected.premium");
   const [selectedBilling, setSelectedBilling] = useState("12months");
-  const [selectedPayment, setSelectedPayment] = useState<string | null>(
-    "stripe",
-  );
-
-  const handlePaymentChange = (value: string | null) => {
-    setSelectedPayment(value);
-  };
+  const selectedPayment = "mollie";
 
   const user = useUser() as UserWithSubscription | null;
   const role = useRole();
@@ -106,10 +100,7 @@ export default function PremiumClient() {
     },
   ];
 
-  const filteredBillingOptions =
-    selectedPayment === "stripe"
-      ? BILLING_OPTIONS
-      : BILLING_OPTIONS.filter((o) => !o.stripeOnly);
+  const filteredBillingOptions = BILLING_OPTIONS;
 
   const PREMIUM_FEATURES = [
     { icon: IconUsers, label: t("premiumRecord100"), color: "#52FF94" },
@@ -166,9 +157,6 @@ export default function PremiumClient() {
       });
     }
     setSelectedBilling(planId);
-    if (plan?.stripeOnly && selectedPayment !== "stripe") {
-      setSelectedPayment("stripe");
-    }
   };
 
   const handleCancelSubscription = async () => {
@@ -186,8 +174,22 @@ export default function PremiumClient() {
 
   return (
     <Stack w="100%" maw={600} mx="auto">
+      {paymentError && (
+        <Alert color="red" variant="light" withCloseButton>
+          <Text size="sm">
+            {paymentError === "Payment failed"
+              ? t("paymentFailed")
+              : paymentError === "Payment open"
+                ? t("paymentCancelled")
+                : paymentError === "Payment expired"
+                  ? t("paymentExpired")
+                  : t("paymentError")}
+          </Text>
+        </Alert>
+      )}
+
       {/* Hero */}
-      <Stack align="center" gap={4} py="xl">
+      <Stack align="center" gap={4} pb="xl">
         <Paper
           radius="xl"
           px="md"
@@ -217,9 +219,7 @@ export default function PremiumClient() {
             WebkitTextFillColor: "transparent",
           }}
         >
-          {isPremium
-            ? t("yourPremiumFeatures")
-            : t("unlockPremiumFeatures")}
+          {isPremium ? t("yourPremiumFeatures") : t("unlockPremiumFeatures")}
         </Title>
 
         <Text size="sm" c="dimmed" ta="center" maw={400}>
@@ -263,7 +263,7 @@ export default function PremiumClient() {
                         ),
                         endDate: new Date(
                           user.subscriptionEndDate!,
-                        ).toLocaleDateString(),
+                        ).toLocaleDateString("en-GB"),
                       })
                     : user?.billingPeriod === "lifetime"
                       ? t("lifetimeMessage")
@@ -273,7 +273,7 @@ export default function PremiumClient() {
                           ),
                           renewDate: new Date(
                             user?.subscriptionEndDate || "",
-                          ).toLocaleDateString(),
+                          ).toLocaleDateString("en-GB"),
                         })}
               </Text>
             </Alert>
@@ -384,125 +384,27 @@ export default function PremiumClient() {
             )}
           </Stack>
 
-          {/* Payment methods side by side */}
-          <Grid gutter="sm">
-            <GridCol span={{ base: 12, xs: 6 }}>
-              <Card
-                padding="md"
-                radius="md"
-                withBorder
-                h="100%"
-                style={{
-                  borderColor:
-                    selectedPayment === "stripe"
-                      ? "rgba(82, 255, 148, 0.4)"
-                      : "rgba(255,255,255,0.1)",
-                  background:
-                    selectedPayment === "stripe"
-                      ? "rgba(27, 147, 69, 0.08)"
-                      : "rgba(255,255,255,0.02)",
-                  cursor: "pointer",
-                }}
-                onClick={() => handlePaymentChange("stripe")}
-              >
-                <Stack gap="sm" align="center">
-                  <Text size="sm" fw={600}>
-                    Stripe
-                  </Text>
-                  <Text size="xs" c="dimmed" ta="center">
-                    {t("stripeDescription")}
-                  </Text>
-                  <Group gap="xs" justify="center" wrap="wrap">
-                    <IconBrandVisa size={24} stroke={1.2} color="#94a3b8" />
-                    <IconBrandMastercard
-                      size={24}
-                      stroke={1.2}
-                      color="#94a3b8"
-                    />
-                    <IconBrandApple size={24} stroke={1.2} color="#94a3b8" />
-                    <IconBrandGoogle size={24} stroke={1.2} color="#94a3b8" />
-                    <IconBrandAmazon size={24} stroke={1.2} color="#94a3b8" />
-                  </Group>
-                </Stack>
-              </Card>
-            </GridCol>
+          {/* Payment method icons */}
+          <Group gap="xs" justify="center" wrap="wrap">
+            <IconBrandVisa size={28} stroke={1.2} color="#94a3b8" />
+            <IconBrandMastercard size={28} stroke={1.2} color="#94a3b8" />
+            <IconBrandApple size={28} stroke={1.2} color="#94a3b8" />
+            <IconBrandPaypal size={28} stroke={1.2} color="#94a3b8" />
+          </Group>
 
-            <GridCol span={{ base: 12, xs: 6 }}>
-              <Card
-                padding="md"
-                radius="md"
-                withBorder
-                h="100%"
-                style={{
-                  borderColor:
-                    selectedPayment === "freemius"
-                      ? "rgba(82, 255, 148, 0.4)"
-                      : "rgba(255,255,255,0.1)",
-                  background:
-                    selectedPayment === "freemius"
-                      ? "rgba(27, 147, 69, 0.08)"
-                      : "rgba(255,255,255,0.02)",
-                  cursor: "pointer",
-                }}
-                onClick={() => handlePaymentChange("freemius")}
-              >
-                <Stack gap="sm" align="center">
-                  <Text size="sm" fw={600}>
-                    Freemius
-                  </Text>
-                  <Text size="xs" c="dimmed" ta="center">
-                    {t("freemiusDescription")}
-                  </Text>
-                  <Group gap="xs" justify="center" wrap="wrap">
-                    <IconBrandVisa size={24} stroke={1.2} color="#94a3b8" />
-                    <IconBrandMastercard
-                      size={24}
-                      stroke={1.2}
-                      color="#94a3b8"
-                    />
-                    <IconBrandPaypal size={24} stroke={1.2} color="#94a3b8" />
-                  </Group>
-                </Stack>
-              </Card>
-            </GridCol>
-          </Grid>
-
-          {/* Single CTA Button */}
-          {selectedPayment === "stripe" ? (
-            <StripePaymentButton
-              billingCycle={selectedPlan?.billingCycle || "annual"}
-              planLabel={selectedPlan?.label || "Premium"}
-              userEmail={user?.email || ""}
-              userId={String(user?.id || "")}
-              fullWidth
-              size="lg"
-              radius="xl"
-              style={{
-                background:
-                  "linear-gradient(135deg, #22c55e 0%, #16a34a 100%)",
-              }}
-            >
-              {selectedBilling === "lifetime"
-                ? t("buyNow")
-                : t("subscribe")}
-            </StripePaymentButton>
-          ) : (
-            <FreemiusPaymentButton
-              billingCycle={selectedPlan?.billingCycle || "annual"}
-              planLabel={selectedPlan?.label || "Premium"}
-              fullWidth
-              size="lg"
-              radius="xl"
-              style={{
-                background:
-                  "linear-gradient(135deg, #22c55e 0%, #16a34a 100%)",
-              }}
-            >
-              {selectedBilling === "lifetime"
-                ? t("buyNow")
-                : t("subscribe")}
-            </FreemiusPaymentButton>
-          )}
+          {/* CTA Button */}
+          <MolliePaymentButton
+            billingCycle={selectedPlan?.billingCycle || "annual"}
+            planLabel={selectedPlan?.label || "Premium"}
+            fullWidth
+            size="lg"
+            radius="xl"
+            style={{
+              background: "linear-gradient(135deg, #22c55e 0%, #16a34a 100%)",
+            }}
+          >
+            {t("subscribe")}
+          </MolliePaymentButton>
 
           <Flex gap="xs" align="center" justify="center">
             <IconCheck size={14} color="var(--mantine-color-green-6)" />
@@ -517,12 +419,6 @@ export default function PremiumClient() {
         </>
       )}
 
-      <Divider color="dark.6" />
-
-      <Text size="xs" c="dimmed" ta="center">
-        {t("supportMessage")}
-      </Text>
-
       {/* Cancel Subscription Modal */}
       <Modal
         opened={cancelModalOpened}
@@ -534,7 +430,7 @@ export default function PremiumClient() {
           <Text size="sm">
             {t("cancelModalMessage", {
               endDate: user?.subscriptionEndDate
-                ? new Date(user.subscriptionEndDate).toLocaleDateString()
+                ? new Date(user.subscriptionEndDate).toLocaleDateString("en-GB")
                 : "",
             })}
           </Text>

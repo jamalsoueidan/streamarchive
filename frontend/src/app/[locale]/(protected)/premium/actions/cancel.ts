@@ -2,6 +2,7 @@
 
 import api from "@/lib/api";
 import { cancelFreemiusSubscription } from "./freemius";
+import { cancelMollieSubscription } from "./mollie";
 import { cancelStripeSubscription } from "./stripe";
 
 // Generic cancel that detects provider
@@ -21,6 +22,8 @@ export async function cancelSubscription(): Promise<{
 
     if (provider === "stripe") {
       return cancelStripeSubscription();
+    } else if (provider === "mollie") {
+      return cancelMollieSubscription();
     } else {
       // Default to freemius for backwards compatibility
       return cancelFreemiusSubscription();

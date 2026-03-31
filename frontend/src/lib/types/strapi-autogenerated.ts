@@ -415,6 +415,7 @@ export interface Activity {
       subscriptionEndDate?: string;
       freemius?: string;
       stripe?: string;
+      mollie?: string;
       paymentProvider?: ActivityPaymentProviderEnum;
       trialClaimed?: boolean;
       /** @format date-time */
@@ -895,6 +896,7 @@ export interface AiRequest {
       subscriptionEndDate?: string;
       freemius?: string;
       stripe?: string;
+      mollie?: string;
       paymentProvider?: AiRequestPaymentProviderEnum;
       trialClaimed?: boolean;
       /** @format date-time */
@@ -1512,6 +1514,7 @@ export interface AiTask {
         subscriptionEndDate?: string;
         freemius?: string;
         stripe?: string;
+        mollie?: string;
         paymentProvider?: AiTaskPaymentProviderEnum;
         trialClaimed?: boolean;
         /** @format date-time */
@@ -2619,6 +2622,7 @@ export interface Clip {
       subscriptionEndDate?: string;
       freemius?: string;
       stripe?: string;
+      mollie?: string;
       paymentProvider?: ClipPaymentProviderEnum;
       trialClaimed?: boolean;
       /** @format date-time */
@@ -3192,6 +3196,7 @@ export interface ClipShare {
         subscriptionEndDate?: string;
         freemius?: string;
         stripe?: string;
+        mollie?: string;
         paymentProvider?: ClipSharePaymentProviderEnum;
         trialClaimed?: boolean;
         /** @format date-time */
@@ -4055,6 +4060,7 @@ export interface Follower {
     subscriptionEndDate?: string;
     freemius?: string;
     stripe?: string;
+    mollie?: string;
     paymentProvider?: FollowerPaymentProviderEnum;
     trialClaimed?: boolean;
     /** @format date-time */
@@ -4507,6 +4513,7 @@ export interface Meme {
         subscriptionEndDate?: string;
         freemius?: string;
         stripe?: string;
+        mollie?: string;
         paymentProvider?: MemePaymentProviderEnum;
         trialClaimed?: boolean;
         /** @format date-time */
@@ -5061,6 +5068,7 @@ export interface Recording {
       subscriptionEndDate?: string;
       freemius?: string;
       stripe?: string;
+      mollie?: string;
       paymentProvider?: RecordingPaymentProviderEnum;
       trialClaimed?: boolean;
       /** @format date-time */
@@ -5725,6 +5733,7 @@ export interface SocialAccount {
     subscriptionEndDate?: string;
     freemius?: string;
     stripe?: string;
+    mollie?: string;
     paymentProvider?: SocialAccountPaymentProviderEnum;
     trialClaimed?: boolean;
     /** @format date-time */
@@ -6178,6 +6187,7 @@ export interface Source {
         subscriptionEndDate?: string;
         freemius?: string;
         stripe?: string;
+        mollie?: string;
         paymentProvider?: SourcePaymentProviderEnum;
         trialClaimed?: boolean;
         /** @format date-time */
@@ -6692,6 +6702,7 @@ export interface VisitorView {
         subscriptionEndDate?: string;
         freemius?: string;
         stripe?: string;
+        mollie?: string;
         paymentProvider?: VisitorViewPaymentProviderEnum;
         trialClaimed?: boolean;
         /** @format date-time */
@@ -7007,6 +7018,7 @@ export enum ActivitySubscriptionStatusEnum {
 export enum ActivityPaymentProviderEnum {
   Freemius = "freemius",
   Stripe = "stripe",
+  Mollie = "mollie",
 }
 
 export enum AiRequestRequestStateEnum {
@@ -7050,6 +7062,7 @@ export enum AiRequestSubscriptionStatusEnum {
 export enum AiRequestPaymentProviderEnum {
   Freemius = "freemius",
   Stripe = "stripe",
+  Mollie = "mollie",
 }
 
 export enum AiRequestStateEnum {
@@ -7121,6 +7134,7 @@ export enum AiTaskSubscriptionStatusEnum {
 export enum AiTaskPaymentProviderEnum {
   Freemius = "freemius",
   Stripe = "stripe",
+  Mollie = "mollie",
 }
 
 export enum AiTaskStateEnum {
@@ -7185,6 +7199,7 @@ export enum ClipSubscriptionStatusEnum {
 export enum ClipPaymentProviderEnum {
   Freemius = "freemius",
   Stripe = "stripe",
+  Mollie = "mollie",
 }
 
 export enum ClipStateEnum {
@@ -7234,6 +7249,7 @@ export enum ClipShareSubscriptionStatusEnum {
 export enum ClipSharePaymentProviderEnum {
   Freemius = "freemius",
   Stripe = "stripe",
+  Mollie = "mollie",
 }
 
 export enum ClipShareStateEnum {
@@ -7301,6 +7317,7 @@ export enum FollowerSubscriptionStatusEnum {
 export enum FollowerPaymentProviderEnum {
   Freemius = "freemius",
   Stripe = "stripe",
+  Mollie = "mollie",
 }
 
 export enum MemeRequestTypeEnum {
@@ -7347,6 +7364,7 @@ export enum MemeSubscriptionStatusEnum {
 export enum MemePaymentProviderEnum {
   Freemius = "freemius",
   Stripe = "stripe",
+  Mollie = "mollie",
 }
 
 export enum MemeStateEnum {
@@ -7384,6 +7402,7 @@ export enum RecordingSubscriptionStatusEnum {
 export enum RecordingPaymentProviderEnum {
   Freemius = "freemius",
   Stripe = "stripe",
+  Mollie = "mollie",
 }
 
 export enum SocialAccountRequestProviderEnum {
@@ -7434,6 +7453,7 @@ export enum SocialAccountSubscriptionStatusEnum {
 export enum SocialAccountPaymentProviderEnum {
   Freemius = "freemius",
   Stripe = "stripe",
+  Mollie = "mollie",
 }
 
 export enum SourceRequestStateEnum {
@@ -7484,6 +7504,7 @@ export enum SourceSubscriptionStatusEnum {
 export enum SourcePaymentProviderEnum {
   Freemius = "freemius",
   Stripe = "stripe",
+  Mollie = "mollie",
 }
 
 export enum SourceStateEnum1 {
@@ -7527,6 +7548,7 @@ export enum VisitorViewSubscriptionStatusEnum {
 export enum VisitorViewPaymentProviderEnum {
   Freemius = "freemius",
   Stripe = "stripe",
+  Mollie = "mollie",
 }
 
 export enum VisitorViewStateEnum {

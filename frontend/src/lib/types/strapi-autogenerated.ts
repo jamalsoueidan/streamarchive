@@ -1879,6 +1879,178 @@ export interface ArticleResponse {
   meta?: object;
 }
 
+export interface BlogRequest {
+  data: {
+    title?: string;
+    short?: string;
+    content?: string;
+    slug?: string;
+    locale?: string;
+    localizations?: (number | string)[];
+  };
+}
+
+export interface BlogListResponse {
+  data?: Blog[];
+  meta?: {
+    pagination?: {
+      page?: number;
+      /** @min 25 */
+      pageSize?: number;
+      /** @max 1 */
+      pageCount?: number;
+      total?: number;
+    };
+  };
+}
+
+export interface Blog {
+  id?: string | number;
+  documentId?: string;
+  title?: string;
+  short?: string;
+  content?: string;
+  slug?: string;
+  /** @format date-time */
+  createdAt?: string;
+  /** @format date-time */
+  updatedAt?: string;
+  /** @format date-time */
+  publishedAt?: string;
+  createdBy?: {
+    id?: string | number;
+    documentId?: string;
+    firstname?: string;
+    lastname?: string;
+    username?: string;
+    /** @format email */
+    email?: string;
+    resetPasswordToken?: string;
+    registrationToken?: string;
+    isActive?: boolean;
+    roles?: {
+      id?: string | number;
+      documentId?: string;
+      name?: string;
+      code?: string;
+      description?: string;
+      users?: {
+        id?: string | number;
+        documentId?: string;
+      }[];
+      permissions?: {
+        id?: string | number;
+        documentId?: string;
+        action?: string;
+        actionParameters?: any;
+        subject?: string;
+        properties?: any;
+        conditions?: any;
+        role?: {
+          id?: string | number;
+          documentId?: string;
+        };
+        /** @format date-time */
+        createdAt?: string;
+        /** @format date-time */
+        updatedAt?: string;
+        /** @format date-time */
+        publishedAt?: string;
+        createdBy?: {
+          id?: string | number;
+          documentId?: string;
+        };
+        updatedBy?: {
+          id?: string | number;
+          documentId?: string;
+        };
+        locale?: string;
+        localizations?: {
+          id?: string | number;
+          documentId?: string;
+        }[];
+      }[];
+      /** @format date-time */
+      createdAt?: string;
+      /** @format date-time */
+      updatedAt?: string;
+      /** @format date-time */
+      publishedAt?: string;
+      createdBy?: {
+        id?: string | number;
+        documentId?: string;
+      };
+      updatedBy?: {
+        id?: string | number;
+        documentId?: string;
+      };
+      locale?: string;
+      localizations?: {
+        id?: string | number;
+        documentId?: string;
+      }[];
+    }[];
+    blocked?: boolean;
+    preferedLanguage?: string;
+    /** @format date-time */
+    createdAt?: string;
+    /** @format date-time */
+    updatedAt?: string;
+    /** @format date-time */
+    publishedAt?: string;
+    createdBy?: {
+      id?: string | number;
+      documentId?: string;
+    };
+    updatedBy?: {
+      id?: string | number;
+      documentId?: string;
+    };
+    locale?: string;
+    localizations?: {
+      id?: string | number;
+      documentId?: string;
+    }[];
+  };
+  updatedBy?: {
+    id?: string | number;
+    documentId?: string;
+  };
+  locale?: string;
+  localizations?: {
+    id?: string | number;
+    documentId?: string;
+    title?: string;
+    short?: string;
+    content?: string;
+    slug?: string;
+    /** @format date-time */
+    createdAt?: string;
+    /** @format date-time */
+    updatedAt?: string;
+    /** @format date-time */
+    publishedAt?: string;
+    createdBy?: {
+      id?: string | number;
+      documentId?: string;
+    };
+    updatedBy?: {
+      id?: string | number;
+      documentId?: string;
+    };
+    locale?: string;
+    localizations?: {
+      id?: string | number;
+      documentId?: string;
+    }[];
+  }[];
+}
+
+export interface BlogResponse {
+  data?: Blog;
+  meta?: object;
+}
+
 export interface ChangeLogRequest {
   data: {
     version?: string;
@@ -7548,6 +7720,52 @@ export interface DeleteArticlesIdParams {
 /** @format int64 */
 export type DeleteArticlesIdData = number;
 
+export interface GetBlogsParams {
+  /** Sort by attributes ascending (asc) or descending (desc) */
+  sort?: string;
+  /** Return page/pageSize (default: true) */
+  "pagination[withCount]"?: boolean;
+  /** Page number (default: 0) */
+  "pagination[page]"?: number;
+  /** Page size (default: 25) */
+  "pagination[pageSize]"?: number;
+  /** Offset value (default: 0) */
+  "pagination[start]"?: number;
+  /** Number of entities to return (default: 25) */
+  "pagination[limit]"?: number;
+  /** Fields to return (ex: title,author) */
+  fields?: string;
+  /** Relations to return */
+  populate?: string | string[] | object;
+  /** Filters to apply */
+  filters?: Record<string, any>;
+  /** Locale to apply */
+  locale?: string;
+}
+
+export type GetBlogsData = BlogListResponse;
+
+export type PostBlogsData = BlogResponse;
+
+export interface GetBlogsIdParams {
+  id: string;
+}
+
+export type GetBlogsIdData = BlogResponse;
+
+export interface PutBlogsIdParams {
+  id: string;
+}
+
+export type PutBlogsIdData = BlogResponse;
+
+export interface DeleteBlogsIdParams {
+  id: string;
+}
+
+/** @format int64 */
+export type DeleteBlogsIdData = number;
+
 export interface GetChangeLogsParams {
   /** Sort by attributes ascending (asc) or descending (desc) */
   sort?: string;
@@ -9066,6 +9284,110 @@ export namespace Article {
     export type RequestBody = never;
     export type RequestHeaders = {};
     export type ResponseBody = DeleteArticlesIdData;
+  }
+}
+
+export namespace Blog {
+  /**
+   * No description
+   * @tags Blog
+   * @name GetBlogs
+   * @request GET:/blogs
+   * @secure
+   */
+  export namespace GetBlogs {
+    export type RequestParams = {};
+    export type RequestQuery = {
+      /** Sort by attributes ascending (asc) or descending (desc) */
+      sort?: string;
+      /** Return page/pageSize (default: true) */
+      "pagination[withCount]"?: boolean;
+      /** Page number (default: 0) */
+      "pagination[page]"?: number;
+      /** Page size (default: 25) */
+      "pagination[pageSize]"?: number;
+      /** Offset value (default: 0) */
+      "pagination[start]"?: number;
+      /** Number of entities to return (default: 25) */
+      "pagination[limit]"?: number;
+      /** Fields to return (ex: title,author) */
+      fields?: string;
+      /** Relations to return */
+      populate?: string | string[] | object;
+      /** Filters to apply */
+      filters?: Record<string, any>;
+      /** Locale to apply */
+      locale?: string;
+    };
+    export type RequestBody = never;
+    export type RequestHeaders = {};
+    export type ResponseBody = GetBlogsData;
+  }
+
+  /**
+   * No description
+   * @tags Blog
+   * @name PostBlogs
+   * @request POST:/blogs
+   * @secure
+   */
+  export namespace PostBlogs {
+    export type RequestParams = {};
+    export type RequestQuery = {};
+    export type RequestBody = BlogRequest;
+    export type RequestHeaders = {};
+    export type ResponseBody = PostBlogsData;
+  }
+
+  /**
+   * No description
+   * @tags Blog
+   * @name GetBlogsId
+   * @request GET:/blogs/{id}
+   * @secure
+   */
+  export namespace GetBlogsId {
+    export type RequestParams = {
+      id: string;
+    };
+    export type RequestQuery = {};
+    export type RequestBody = never;
+    export type RequestHeaders = {};
+    export type ResponseBody = GetBlogsIdData;
+  }
+
+  /**
+   * No description
+   * @tags Blog
+   * @name PutBlogsId
+   * @request PUT:/blogs/{id}
+   * @secure
+   */
+  export namespace PutBlogsId {
+    export type RequestParams = {
+      id: string;
+    };
+    export type RequestQuery = {};
+    export type RequestBody = BlogRequest;
+    export type RequestHeaders = {};
+    export type ResponseBody = PutBlogsIdData;
+  }
+
+  /**
+   * No description
+   * @tags Blog
+   * @name DeleteBlogsId
+   * @request DELETE:/blogs/{id}
+   * @secure
+   */
+  export namespace DeleteBlogsId {
+    export type RequestParams = {
+      id: string;
+    };
+    export type RequestQuery = {};
+    export type RequestBody = never;
+    export type RequestHeaders = {};
+    export type ResponseBody = DeleteBlogsIdData;
   }
 }
 
@@ -11761,6 +12083,101 @@ export class Api<
     ) =>
       this.request<DeleteArticlesIdData, Error>({
         path: `/articles/${id}`,
+        method: "DELETE",
+        secure: true,
+        format: "json",
+        ...params,
+      }),
+  };
+  blog = {
+    /**
+     * No description
+     *
+     * @tags Blog
+     * @name GetBlogs
+     * @request GET:/blogs
+     * @secure
+     */
+    getBlogs: (query: GetBlogsParams, params: RequestParams = {}) =>
+      this.request<GetBlogsData, Error>({
+        path: `/blogs`,
+        method: "GET",
+        query: query,
+        secure: true,
+        format: "json",
+        ...params,
+      }),
+
+    /**
+     * No description
+     *
+     * @tags Blog
+     * @name PostBlogs
+     * @request POST:/blogs
+     * @secure
+     */
+    postBlogs: (data: BlogRequest, params: RequestParams = {}) =>
+      this.request<PostBlogsData, Error>({
+        path: `/blogs`,
+        method: "POST",
+        body: data,
+        secure: true,
+        type: ContentType.Json,
+        format: "json",
+        ...params,
+      }),
+
+    /**
+     * No description
+     *
+     * @tags Blog
+     * @name GetBlogsId
+     * @request GET:/blogs/{id}
+     * @secure
+     */
+    getBlogsId: ({ id }: GetBlogsIdParams, params: RequestParams = {}) =>
+      this.request<GetBlogsIdData, Error>({
+        path: `/blogs/${id}`,
+        method: "GET",
+        secure: true,
+        format: "json",
+        ...params,
+      }),
+
+    /**
+     * No description
+     *
+     * @tags Blog
+     * @name PutBlogsId
+     * @request PUT:/blogs/{id}
+     * @secure
+     */
+    putBlogsId: (
+      { id }: PutBlogsIdParams,
+      data: BlogRequest,
+      params: RequestParams = {},
+    ) =>
+      this.request<PutBlogsIdData, Error>({
+        path: `/blogs/${id}`,
+        method: "PUT",
+        body: data,
+        secure: true,
+        type: ContentType.Json,
+        format: "json",
+        ...params,
+      }),
+
+    /**
+     * No description
+     *
+     * @tags Blog
+     * @name DeleteBlogsId
+     * @request DELETE:/blogs/{id}
+     * @secure
+     */
+    deleteBlogsId: ({ id }: DeleteBlogsIdParams, params: RequestParams = {}) =>
+      this.request<DeleteBlogsIdData, Error>({
+        path: `/blogs/${id}`,
         method: "DELETE",
         secure: true,
         format: "json",

@@ -1,5 +1,5 @@
 import { Flex, Stack, Text, Title } from "@mantine/core";
-import { IconChevronDown, IconQuestionMark } from "@tabler/icons-react";
+import { IconChevronDown } from "@tabler/icons-react";
 import styles from "./faq-section.module.css";
 
 interface FAQ {
@@ -26,40 +26,24 @@ export function FAQSection({ faqs, title, subtitle }: FAQSectionProps) {
     <Stack gap={32}>
       {(title || subtitle) && (
         <Stack align="center" gap={12} mb={24}>
-          <Flex gap={12} align="center" justify="center">
-            <div
+          {title && (
+            <Title
+              order={2}
               style={{
-                width: 48,
-                height: 48,
-                borderRadius: 12,
-                background: "rgba(82, 255, 148, 0.2)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                color: "#52FF94",
+                fontSize: "clamp(1.5rem, 4vw, 2.5rem)",
+                fontWeight: 800,
+                lineHeight: 1.3,
+                letterSpacing: "-0.03em",
+                background:
+                  "linear-gradient(135deg, #54ff5b, #b7ff6b)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                paddingBottom: "0.1em",
               }}
             >
-              <IconQuestionMark size={24} />
-            </div>
-            {title && (
-              <Title
-                order={2}
-                style={{
-                  fontSize: "clamp(1.5rem, 4vw, 2.5rem)",
-                  fontWeight: 800,
-                  lineHeight: 1.3,
-                  letterSpacing: "-0.03em",
-                  background:
-                    "linear-gradient(135deg, #54ff5b, #b7ff6b)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  paddingBottom: "0.1em",
-                }}
-              >
-                {title}
-              </Title>
-            )}
-          </Flex>
+              {title}
+            </Title>
+          )}
           {subtitle && (
             <Text size="md" style={{ color: "#64748b" }}>
               {subtitle}

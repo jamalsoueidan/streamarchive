@@ -1,8 +1,8 @@
+import { generateAlternates } from "@/app/lib/seo";
 import { Container, Flex, Paper, Stack, Text, Title } from "@mantine/core";
-import { IconChevronDown, IconQuestionMark } from "@tabler/icons-react";
+import { IconChevronDown } from "@tabler/icons-react";
 import { useTranslations } from "next-intl";
 import { getLocale, getTranslations } from "next-intl/server";
-import { generateAlternates } from "@/app/lib/seo";
 
 export async function generateMetadata() {
   const t = await getTranslations("faq");
@@ -45,20 +45,6 @@ export default function FAQPage() {
         {/* Header */}
         <Stack align="center" gap={12} mb={24}>
           <Flex gap={12} align="center" justify="center">
-            <div
-              style={{
-                width: 48,
-                height: 48,
-                borderRadius: 12,
-                background: "rgba(82, 255, 148, 0.2)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                color: "#52FF94",
-              }}
-            >
-              <IconQuestionMark size={24} />
-            </div>
             <Title
               order={1}
               style={{
@@ -66,8 +52,7 @@ export default function FAQPage() {
                 fontWeight: 800,
                 lineHeight: 1.3,
                 letterSpacing: "-0.03em",
-                background:
-                  "linear-gradient(135deg, #54ff5b, #b7ff6b)",
+                background: "linear-gradient(135deg, #54ff5b, #b7ff6b)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 paddingBottom: "0.1em",

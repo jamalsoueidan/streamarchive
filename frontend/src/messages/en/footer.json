@@ -44,6 +44,7 @@
   },
   "company": {
     "title": "Company",
+    "blog": "Blog",
     "news": "News",
     "pricing": "Pricing",
     "faq": "FAQ",

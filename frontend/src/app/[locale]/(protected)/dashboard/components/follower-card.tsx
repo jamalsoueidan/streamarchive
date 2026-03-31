@@ -12,9 +12,9 @@ import Image from "next/image";
 
 export function FollowerCard({ follower }: { follower: Follower }) {
   const user = useUser();
-  const userFollowers = (user as any)?.followers || [];
+  const userFollowers = user?.followers || [];
   const isFollowing = userFollowers.some(
-    (f: any) => f.id === follower.id || f.documentId === follower.documentId,
+    (f) => f.id === follower.id || f.documentId === follower.documentId,
   );
 
   return (
@@ -65,10 +65,7 @@ export function FollowerCard({ follower }: { follower: Follower }) {
           </Text>
         </div>
         {!isFollowing && (
-          <FollowButton
-            username={follower.username!}
-            type={follower.type}
-          />
+          <FollowButton username={follower.username!} type={follower.type} />
         )}
       </Stack>
     </Card>

@@ -57,6 +57,16 @@ export const getLatestRecordings = unstable_cache(
   { revalidate: REVALIDATE },
 );
 
+export const getLatestBlogs = async () => {
+  const {
+    data: { data: blogs },
+  } = await publicApi.blog.getBlogs({
+    "pagination[limit]": 6,
+    sort: "createdAt:desc",
+  });
+  return blogs;
+};
+
 export const getRandomClips = unstable_cache(
   async () => {
     const {

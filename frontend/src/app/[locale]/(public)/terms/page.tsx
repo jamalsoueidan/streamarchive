@@ -1,3 +1,4 @@
+import { generateAlternates } from "@/app/lib/seo";
 import {
   Anchor,
   Container,
@@ -28,7 +29,6 @@ import {
 } from "@tabler/icons-react";
 import { useTranslations } from "next-intl";
 import { getLocale, getTranslations } from "next-intl/server";
-import { generateAlternates } from "@/app/lib/seo";
 
 export async function generateMetadata() {
   const t = await getTranslations("terms");
@@ -42,7 +42,7 @@ export async function generateMetadata() {
 
 export default function TermsAndConditions() {
   const t = useTranslations("terms");
-  const lastUpdated = "February 20, 2026";
+  const lastUpdated = "March 31, 2026";
 
   return (
     <Container size="md" style={{ position: "relative", zIndex: 1 }}>
@@ -57,8 +57,7 @@ export default function TermsAndConditions() {
               fontWeight: 800,
               lineHeight: 1.3,
               letterSpacing: "-0.03em",
-              background:
-                "linear-gradient(135deg, #54ff5b, #b7ff6b)",
+              background: "linear-gradient(135deg, #54ff5b, #b7ff6b)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
               paddingBottom: "0.1em",

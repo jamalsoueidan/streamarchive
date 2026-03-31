@@ -13,7 +13,7 @@
   },
   "serviceDescription": {
     "title": "Service Description",
-    "content1": "StreamArchive provides a cloud-based platform that enables content creators to automatically record, archive, and store their live streams from platforms such as TikTok, Twitch, YouTube, Kick, AfreecaTV, and Pandalive.",
+    "content1": "StreamArchive provides a cloud-based platform that enables content creators to automatically record, archive, and store their live streams from platforms such as TikTok, Twitch, YouTube, Kick, AfreecaTV, Pandalive, Bigo, and Tango.",
     "content2": "By handling the recording and storage remotely on our servers, users benefit from enhanced convenience and reduced reliance on personal hardware — without needing to install software or leave their devices running.",
     "content3": "StreamArchive is a technical service provider. We do not host, own, or control the content of third-party streaming platforms."
   },
@@ -149,5 +149,5 @@
     "content": "Questions or concerns about these terms? Contact us at contact@streamarchive.io"
   },
   "footerNote": "By using StreamArchive, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions.",
-  "disclaimer": "TikTok, Twitch, YouTube, Kick, AfreecaTV, and Pandalive product names, logos, and brands are property of their respective owners. All company, product and service names used in this website are for identification purposes only. Use of these names, trademarks and brands does not imply endorsement. StreamArchive is in no way associated with TikTok, Twitch, YouTube, Kick, AfreecaTV, or Pandalive."
+  "disclaimer": "TikTok, Twitch, YouTube, Kick, AfreecaTV, Pandalive, Bigo, and Tango product names, logos, and brands are property of their respective owners. All company, product and service names used in this website are for identification purposes only. Use of these names, trademarks and brands does not imply endorsement. StreamArchive is in no way associated with TikTok, Twitch, YouTube, Kick, AfreecaTV, Pandalive, Bigo, or Tango."
 }

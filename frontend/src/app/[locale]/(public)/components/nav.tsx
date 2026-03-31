@@ -53,6 +53,7 @@ export const navConfig = {
     { key: "dmca", label: "DMCA", href: "/dmca" },
   ],
   company: [
+    { key: "blog", label: "Blog", href: "/blog" },
     { key: "news", label: "News", href: "/news" },
     { key: "faq", label: "FAQ", href: "/faq" },
     { key: "updates", label: "Updates", href: "/changelog" },

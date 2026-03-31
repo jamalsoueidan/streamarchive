@@ -1,3 +1,4 @@
+import dayjs from "@/app/lib/dayjs";
 import { generateProfileUrl } from "@/app/lib/profile-url";
 import { generateAlternates } from "@/app/lib/seo";
 import { getAlternateOgLocales, getOgLocale } from "@/i18n/routing";
@@ -6,6 +7,7 @@ import {
   Container,
   Flex,
   Paper,
+  SimpleGrid,
   Stack,
   Text,
   Title,
@@ -13,10 +15,16 @@ import {
 import { Metadata } from "next";
 import { getLocale, getTranslations } from "next-intl/server";
 import Image from "next/image";
+import Link from "next/link";
 import ReactMarkdown from "react-markdown";
-import { getFeaturedFollowers, getLatestRecordings } from "./cache";
+import {
+  getFeaturedFollowers,
+  getLatestBlogs,
+  getLatestRecordings,
+} from "./cache";
+import { FAQSection } from "./components/faq-section";
 import { PlatformAnimation } from "./components/platform-animation";
-import { CreatorsSlider } from "./creators/components/creators-slider";
+
 import { RecordingsSimpleGrid } from "./recordings/components/recordings-simple-grid";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -69,9 +77,11 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function LandingPage() {
   const t = await getTranslations("home");
+  const tFaq = await getTranslations("faq");
 
   const followers = await getFeaturedFollowers();
   const recordings = await getLatestRecordings();
+  const blogs = await getLatestBlogs();
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -321,7 +331,87 @@ export default async function LandingPage() {
         </div>
       </Container>
 
-      <CreatorsSlider followers={followers} />
+      {blogs && blogs.length > 0 && (
+        <Container size="xl">
+          <div style={{ marginTop: 100 }}>
+            <Stack gap={32}>
+              <Flex justify="space-between" align="center">
+                <Title
+                  order={2}
+                  style={{
+                    fontSize: "clamp(1.75rem, 4vw, 2.3rem)",
+                    fontWeight: 700,
+                    color: "#f1f5f9",
+                  }}
+                >
+                  {t("blog.title")}
+                </Title>
+                <Link
+                  href="/blog"
+                  style={{
+                    color: "#52FF94",
+                    fontWeight: 500,
+                    textDecoration: "none",
+                  }}
+                >
+                  {t("blog.viewAll")}
+                </Link>
+              </Flex>
+
+              <SimpleGrid cols={{ base: 1, sm: 2, md: 3 }} spacing="lg">
+                {blogs.map((blog) => (
+                  <Paper
+                    key={blog.documentId}
+                    p="lg"
+                    radius="lg"
+                    h="100%"
+                    style={{
+                      background: "rgba(255, 255, 255, 0.02)",
+                      border: "1px solid rgba(255, 255, 255, 0.06)",
+                    }}
+                  >
+                    <Stack gap="sm" justify="space-between" h="100%">
+                      <div>
+                        <Text size="xs" mb="xs" style={{ color: "#64748b" }}>
+                          {dayjs(blog.createdAt).format("MMMM D, YYYY")}
+                        </Text>
+                        <Title
+                          order={4}
+                          mb="xs"
+                          style={{ color: "#f1f5f9" }}
+                          lineClamp={2}
+                        >
+                          {blog.title}
+                        </Title>
+                        {blog.short && (
+                          <Text
+                            size="sm"
+                            style={{ color: "#94a3b8", lineHeight: 1.6 }}
+                            lineClamp={3}
+                          >
+                            {blog.short}
+                          </Text>
+                        )}
+                      </div>
+                      <Link
+                        href={`/blog/${blog.slug}`}
+                        style={{
+                          color: "#52FF94",
+                          fontWeight: 500,
+                          textDecoration: "none",
+                          fontSize: "var(--mantine-font-size-sm)",
+                        }}
+                      >
+                        {t("blog.readMore")} →
+                      </Link>
+                    </Stack>
+                  </Paper>
+                ))}
+              </SimpleGrid>
+            </Stack>
+          </div>
+        </Container>
+      )}
 
       <Container size="xl">
         <div style={{ marginTop: 100 }}>
@@ -358,20 +448,13 @@ export default async function LandingPage() {
               <Title
                 order={2}
                 style={{
-                  fontSize: "clamp(1.75rem, 4vw, 2.5rem)",
-                  fontWeight: 700,
+                  fontSize: "clamp(1.2rem, 4vw, 1.8rem)",
+                  fontWeight: 500,
                   color: "#f1f5f9",
                 }}
               >
-                {t("cta.title")}
-              </Title>
-              <Text
-                size="lg"
-                style={{ color: "#94a3b8", lineHeight: 1.7 }}
-                maw={700}
-              >
                 {t("cta.description")}
-              </Text>
+              </Title>
 
               <Button
                 component="a"
@@ -391,6 +474,16 @@ export default async function LandingPage() {
               </Button>
             </Stack>
           </Paper>
+        </div>
+
+        <div style={{ marginTop: 100 }}>
+          <FAQSection
+            faqs={Array.from({ length: 6 }, (_, i) => ({
+              question: tFaq(`faqs.${i}.question`),
+              answer: tFaq(`faqs.${i}.answer`),
+            }))}
+            title={tFaq("title")}
+          />
         </div>
 
         <div style={{ marginTop: 100 }}>

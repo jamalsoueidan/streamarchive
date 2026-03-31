@@ -19,6 +19,11 @@
     "subtitle": "Recorded & Ready to Watch",
     "description": "Add your favourite streamers and their live streams are recorded and saved automatically. Come back whenever you're ready to rewatch, download, or enjoy the content you love."
   },
+  "blog": {
+    "title": "From the Blog",
+    "viewAll": "View all posts",
+    "readMore": "Read more"
+  },
   "latestRecordings": {
     "title": "Latest Archives",
     "subtitle": "Streams saved in the last 24 hours",

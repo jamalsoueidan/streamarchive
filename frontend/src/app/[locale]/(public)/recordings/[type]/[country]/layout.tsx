@@ -155,7 +155,7 @@ export default async function Layout({ params, children }: LayoutProps) {
                     borderRadius: 4,
                     overflow: "hidden",
                     border: isActive
-                      ? "2px solid #6366f1"
+                      ? "2px solid #52FF94"
                       : "2px solid transparent",
                     opacity: isActive ? 1 : 0.7,
                     transition: "all 0.2s ease",

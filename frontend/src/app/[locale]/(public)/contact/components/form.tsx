@@ -167,7 +167,8 @@ export function ContactForm() {
             disabled={!isFormValid}
             loading={loading}
             variant="gradient"
-            gradient={{ from: "#6366f1", to: "#a855f7", deg: 135 }}
+            gradient={{ from: "#54ff5b", to: "#b7ff6b", deg: 135 }}
+              c="black"
             style={{ fontWeight: 600 }}
           >
             {t("submit")}

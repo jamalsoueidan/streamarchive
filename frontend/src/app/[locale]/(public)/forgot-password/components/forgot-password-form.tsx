@@ -120,7 +120,8 @@ export function ForgotPasswordForm() {
                 radius="md"
                 loading={pending}
                 variant="gradient"
-                gradient={{ from: "#6366f1", to: "#a855f7", deg: 135 }}
+                gradient={{ from: "#54ff5b", to: "#b7ff6b", deg: 135 }}
+                c="black"
                 fullWidth
                 style={{ fontWeight: 600, height: 48 }}
               >
@@ -135,7 +136,7 @@ export function ForgotPasswordForm() {
         <Anchor
           component={Link}
           href="/login"
-          style={{ color: "#a5b4fc", fontWeight: 500 }}
+          style={{ color: "#52FF94", fontWeight: 500 }}
         >
           <IconArrowLeft
             size={16}

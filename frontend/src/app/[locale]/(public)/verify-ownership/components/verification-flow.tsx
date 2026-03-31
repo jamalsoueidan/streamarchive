@@ -212,7 +212,8 @@ export function VerificationFlow({ intent }: { intent: string }) {
             <Button
               size="md"
               variant="gradient"
-              gradient={{ from: "#6366f1", to: "#a855f7" }}
+              gradient={{ from: "#54ff5b", to: "#b7ff6b" }}
+              c="black"
               onClick={handleContinueToStep2}
               disabled={!profileUrl.trim() || !email.trim()}
             >
@@ -247,7 +248,7 @@ export function VerificationFlow({ intent }: { intent: string }) {
                       size="xl"
                       fw={700}
                       style={{
-                        color: "#a5b4fc",
+                        color: "#52FF94",
                         fontFamily: "monospace",
                         letterSpacing: "0.1em",
                       }}
@@ -360,7 +361,8 @@ export function VerificationFlow({ intent }: { intent: string }) {
                   href="/login"
                   size="md"
                   variant="gradient"
-                  gradient={{ from: "#6366f1", to: "#a855f7" }}
+                  gradient={{ from: "#54ff5b", to: "#b7ff6b" }}
+              c="black"
                 >
                   {t("steps.complete.linked.button")}
                 </Button>
@@ -391,7 +393,8 @@ export function VerificationFlow({ intent }: { intent: string }) {
                   href="/my-list"
                   size="md"
                   variant="gradient"
-                  gradient={{ from: "#6366f1", to: "#a855f7" }}
+                  gradient={{ from: "#54ff5b", to: "#b7ff6b" }}
+              c="black"
                 >
                   {t("steps.complete.created.button")}
                 </Button>

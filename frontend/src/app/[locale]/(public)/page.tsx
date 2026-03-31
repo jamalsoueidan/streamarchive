@@ -225,6 +225,7 @@ export default async function LandingPage() {
               variant="gradient"
               c="black"
               gradient={{ from: "#54ff5b", to: "#b7ff6b", deg: 135 }}
+              c="black"
               radius="lg"
               style={{
                 outline: "2px solid rgba(82, 255, 148, 0.4)",
@@ -380,6 +381,7 @@ export default async function LandingPage() {
                 variant="gradient"
                 c="black"
                 gradient={{ from: "#54ff5b", to: "#b7ff6b", deg: 135 }}
+              c="black"
                 radius="lg"
                 style={{
                   outline: "2px solid rgba(82, 255, 148, 0.4)",

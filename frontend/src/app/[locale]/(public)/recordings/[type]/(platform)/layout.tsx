@@ -164,7 +164,8 @@ export default async function RecordingPage({ params, children }: PageProps) {
               size="responsive"
               radius="lg"
               variant="gradient"
-              gradient={{ from: "#6366f1", to: "#a855f7", deg: 135 }}
+              gradient={{ from: "#54ff5b", to: "#b7ff6b", deg: 135 }}
+              c="black"
               style={{ fontWeight: 600 }}
             >
               {t("cta.button")}

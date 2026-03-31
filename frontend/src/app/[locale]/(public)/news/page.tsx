@@ -110,7 +110,7 @@ export default async function NewsPage() {
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    color: "#6366f1",
+                    color: "#52FF94",
                     flexShrink: 0,
                   }}
                 >

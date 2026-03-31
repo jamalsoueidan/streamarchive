@@ -66,7 +66,7 @@ const benefits = [
     icon: IconUsers,
     titleKey: "brands.title",
     descKey: "brands.description",
-    color: "#6366f1",
+    color: "#52FF94",
   },
   {
     icon: IconLock,
@@ -94,7 +94,7 @@ export function PartnerBenefits() {
             <Title order={2} style={{ color: "#f1f5f9", fontWeight: 700 }}>
               {t("title")}
             </Title>
-            <Badge variant="gradient" gradient={{ from: "#6366f1", to: "#a855f7" }}>
+            <Badge variant="gradient" gradient={{ from: "#52FF94", to: "#b7ff6b" }}>
               {t("badge")}
             </Badge>
           </Flex>
@@ -165,7 +165,7 @@ export function PartnerBenefits() {
             href="/verify-ownership?intent=partnership"
             size="lg"
             variant="gradient"
-            gradient={{ from: "#6366f1", to: "#a855f7", deg: 135 }}
+            gradient={{ from: "#52FF94", to: "#b7ff6b", deg: 135 }}
             leftSection={<IconMicrophone2 size={20} />}
             style={{ fontWeight: 600 }}
           >

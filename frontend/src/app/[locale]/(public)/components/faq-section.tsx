@@ -36,7 +36,7 @@ export function FAQSection({ faqs, title, subtitle }: FAQSectionProps) {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                color: "#6366f1",
+                color: "#52FF94",
               }}
             >
               <IconQuestionMark size={24} />

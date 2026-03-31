@@ -150,7 +150,7 @@ export default function PrivacyPolicy() {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                color: "#6366f1",
+                color: "#52FF94",
               }}
             >
               <IconDatabase size={20} />
@@ -531,7 +531,7 @@ export default function PrivacyPolicy() {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                color: "#a855f7",
+                color: "#b7ff6b",
               }}
             >
               <IconServer size={20} />
@@ -893,7 +893,7 @@ export default function PrivacyPolicy() {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                color: "#6366f1",
+                color: "#52FF94",
               }}
             >
               <IconMail size={20} />

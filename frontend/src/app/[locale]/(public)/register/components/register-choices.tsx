@@ -99,7 +99,8 @@ export function RegisterChoices() {
               size="lg"
               radius="md"
               variant="gradient"
-              gradient={{ from: "#6366f1", to: "#10b981", deg: 135 }}
+              gradient={{ from: "#54ff5b", to: "#b7ff6b", deg: 135 }}
+              c="black"
               fullWidth
               leftSection={<IconMail />}
               style={{ fontWeight: 600, height: 48 }}
@@ -166,7 +167,7 @@ export function RegisterChoices() {
               <Anchor
                 component={Link}
                 href="/login"
-                style={{ color: "#a5b4fc", fontWeight: 500 }}
+                style={{ color: "#52FF94", fontWeight: 500 }}
               >
                 {t("login.link")}
               </Anchor>
@@ -183,11 +184,11 @@ export function RegisterChoices() {
           style={{ color: "#64748b", lineHeight: 1.6 }}
         >
           {t("terms.text")}{" "}
-          <Anchor component={Link} href="/terms" style={{ color: "#a5b4fc" }}>
+          <Anchor component={Link} href="/terms" style={{ color: "#52FF94" }}>
             {t("terms.tosLink")}
           </Anchor>{" "}
           {t("terms.and")}{" "}
-          <Anchor component={Link} href="/privacy" style={{ color: "#a5b4fc" }}>
+          <Anchor component={Link} href="/privacy" style={{ color: "#52FF94" }}>
             {t("terms.privacyLink")}
           </Anchor>
         </Text>

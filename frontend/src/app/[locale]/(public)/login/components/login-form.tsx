@@ -149,7 +149,7 @@ export function LoginForm() {
                 component={Link}
                 href="/forgot-password"
                 size="sm"
-                style={{ color: "#a5b4fc" }}
+                style={{ color: "#52FF94" }}
               >
                 {t("forgotPassword")}
               </Anchor>
@@ -161,7 +161,8 @@ export function LoginForm() {
               radius="md"
               loading={pending}
               variant="gradient"
-              gradient={{ from: "#6366f1", to: "#a855f7", deg: 135 }}
+              gradient={{ from: "#54ff5b", to: "#b7ff6b", deg: 135 }}
+              c="black"
               fullWidth
               style={{ fontWeight: 600, height: 48 }}
             >
@@ -176,7 +177,7 @@ export function LoginForm() {
         <Anchor
           component={Link}
           href="/register"
-          style={{ color: "#a5b4fc", fontWeight: 500 }}
+          style={{ color: "#52FF94", fontWeight: 500 }}
         >
           {t("register.link")}
         </Anchor>

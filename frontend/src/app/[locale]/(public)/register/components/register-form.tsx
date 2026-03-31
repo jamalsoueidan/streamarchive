@@ -89,7 +89,7 @@ export function RegisterForm() {
             <Anchor
               component={Link}
               href="/login"
-              style={{ color: "#a5b4fc", fontWeight: 500 }}
+              style={{ color: "#52FF94", fontWeight: 500 }}
             >
               {t("checkEmail.loginLink")}
             </Anchor>
@@ -192,7 +192,7 @@ export function RegisterForm() {
                   <Anchor
                     component={Link}
                     href="/terms"
-                    style={{ color: "#a5b4fc" }}
+                    style={{ color: "#52FF94" }}
                   >
                     {t("terms.link")}
                   </Anchor>
@@ -213,7 +213,8 @@ export function RegisterForm() {
               loading={pending}
               disabled={!acceptedTerms}
               variant="gradient"
-              gradient={{ from: "#6366f1", to: "#10b981", deg: 135 }}
+              gradient={{ from: "#54ff5b", to: "#b7ff6b", deg: 135 }}
+              c="black"
               fullWidth
               style={{ fontWeight: 600, height: 48 }}
             >
@@ -229,7 +230,7 @@ export function RegisterForm() {
         <Anchor
           component={Link}
           href="/login"
-          style={{ color: "#a5b4fc", fontWeight: 500 }}
+          style={{ color: "#52FF94", fontWeight: 500 }}
         >
           {t("login.link")}
         </Anchor>

@@ -124,38 +124,34 @@ export default function LiveInfinity({ scope }: Props) {
             <Grid.Col span={12}>
               <Group gap="xs">
                 <Anchor component={Link} href={getProfileUrl(rec.follower)}>
-                  <Avatar size="md">
+                  <Avatar size="sm">
                     {rec.follower?.avatar?.url && (
                       <Image
                         src={generateAvatarUrl(rec.follower?.avatar?.url)}
                         alt={"Avatar"}
-                        width={38}
-                        height={38}
+                        width={24}
+                        height={24}
                       />
                     )}
                   </Avatar>
                 </Anchor>
-
-                <Stack gap="0">
-                  <Anchor
-                    component={Link}
-                    href={getProfileUrl(rec.follower)}
-                    size="md"
-                    truncate
-                    maw={110}
-                    display="inline-block"
-                  >
-                    {rec.follower?.username}
-                  </Anchor>
-                  <Text size="xs" suppressHydrationWarning>
-                    {tc("recordings.liveAgo", {
-                      time: safeRelativeTime(format, rec.updatedAt, {
-                        now,
-                      }),
-                    })}
-                  </Text>
-                </Stack>
+                <Anchor
+                  component={Link}
+                  href={getProfileUrl(rec.follower)}
+                  size="sm"
+                  truncate
+                  display="inline-block"
+                >
+                  {rec.follower?.username}
+                </Anchor>
               </Group>
+              <Text size="xs" suppressHydrationWarning>
+                {tc("recordings.liveAgo", {
+                  time: safeRelativeTime(format, rec.updatedAt, {
+                    now,
+                  }),
+                })}
+              </Text>
             </Grid.Col>
           </Grid>
         ))}

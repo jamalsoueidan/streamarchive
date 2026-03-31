@@ -139,7 +139,7 @@ export default function LiveInfinity({ scope }: Props) {
                   component={Link}
                   href={getProfileUrl(rec.follower)}
                   size="sm"
-                  truncate
+                  truncate="end"
                   display="inline-block"
                 >
                   {rec.follower?.username}

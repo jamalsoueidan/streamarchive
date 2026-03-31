@@ -1,5 +1,5 @@
 import api from "@/lib/api";
-import createMollieClient from "@mollie/api-client";
+import createMollieClient, { SequenceType } from "@mollie/api-client";
 import { NextRequest, NextResponse } from "next/server";
 
 const mollieClient = createMollieClient({
@@ -79,7 +79,7 @@ export async function POST(request: NextRequest) {
       description: plan.description,
       redirectUrl: `${baseUrl}/premium?success=true&provider=mollie&mc=${customer.id}`,
       customerId: customer.id,
-      sequenceType: "first",
+      sequenceType: SequenceType.first,
       metadata: {
         userId,
         billingCycle,

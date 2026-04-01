@@ -54,6 +54,7 @@
   "actions": {
     "clearAll": "Clear all",
     "filters": "Filters",
+    "favorites": "Favorites",
     "done": "Done"
   },
   "options": {

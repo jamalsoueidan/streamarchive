@@ -10,5 +10,8 @@
     "title": "You haven't added any streamers yet",
     "description": "Search for your favourite streamers to start saving their live streams"
   },
-  "noMoreToLoad": "You've reached the end"
+  "noMoreToLoad": "You've reached the end",
+  "favorites": "Favorites",
+  "favorite": "Add to favorites",
+  "unfavorite": "Remove from favorites"
 }

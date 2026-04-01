@@ -4,9 +4,11 @@
     "description": "Trim and export a clip from {username}"
   },
   "actions": {
+    "saveClip": "Save clip",
     "downloadClip": "Download clip",
     "export": "Export"
   },
+  "maxDuration": "Maximum clip duration: {minutes} minutes",
   "notifications": {
     "exportStarted": {
       "title": "Export started",

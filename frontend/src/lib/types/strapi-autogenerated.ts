@@ -375,6 +375,10 @@ export interface Activity {
         id?: string | number;
         documentId?: string;
       }[];
+      favorites?: {
+        id?: string | number;
+        documentId?: string;
+      }[];
       socialAccounts?: {
         id?: string | number;
         documentId?: string;
@@ -853,6 +857,10 @@ export interface AiRequest {
         }[];
       };
       followers?: {
+        id?: string | number;
+        documentId?: string;
+      }[];
+      favorites?: {
         id?: string | number;
         documentId?: string;
       }[];
@@ -1471,6 +1479,10 @@ export interface AiTask {
           }[];
         };
         followers?: {
+          id?: string | number;
+          documentId?: string;
+        }[];
+        favorites?: {
           id?: string | number;
           documentId?: string;
         }[];
@@ -2582,6 +2594,10 @@ export interface Clip {
         id?: string | number;
         documentId?: string;
       }[];
+      favorites?: {
+        id?: string | number;
+        documentId?: string;
+      }[];
       socialAccounts?: {
         id?: string | number;
         documentId?: string;
@@ -3153,6 +3169,10 @@ export interface ClipShare {
           }[];
         };
         followers?: {
+          id?: string | number;
+          documentId?: string;
+        }[];
+        favorites?: {
           id?: string | number;
           documentId?: string;
         }[];
@@ -4020,6 +4040,10 @@ export interface Follower {
         documentId?: string;
       }[];
     }[];
+    favorites?: {
+      id?: string | number;
+      documentId?: string;
+    }[];
     socialAccounts?: {
       id?: string | number;
       documentId?: string;
@@ -4470,6 +4494,10 @@ export interface Meme {
           }[];
         };
         followers?: {
+          id?: string | number;
+          documentId?: string;
+        }[];
+        favorites?: {
           id?: string | number;
           documentId?: string;
         }[];
@@ -5025,6 +5053,10 @@ export interface Recording {
         }[];
       };
       followers?: {
+        id?: string | number;
+        documentId?: string;
+      }[];
+      favorites?: {
         id?: string | number;
         documentId?: string;
       }[];
@@ -5693,6 +5725,10 @@ export interface SocialAccount {
         documentId?: string;
       }[];
     }[];
+    favorites?: {
+      id?: string | number;
+      documentId?: string;
+    }[];
     socialAccounts?: {
       id?: string | number;
       documentId?: string;
@@ -6144,6 +6180,10 @@ export interface Source {
           }[];
         };
         followers?: {
+          id?: string | number;
+          documentId?: string;
+        }[];
+        favorites?: {
           id?: string | number;
           documentId?: string;
         }[];
@@ -6662,6 +6702,10 @@ export interface VisitorView {
           id?: string | number;
           documentId?: string;
         }[];
+        favorites?: {
+          id?: string | number;
+          documentId?: string;
+        }[];
         socialAccounts?: {
           id?: string | number;
           documentId?: string;
@@ -6947,6 +6991,7 @@ export type ClipWithShare = Clip & {
 
 export type FollowerWithMeta = {
   isFollowing?: boolean;
+  isFavorite?: boolean;
   totalRecordings?: number;
   recordings?: Recording[];
 } & Follower;
@@ -8538,6 +8583,7 @@ export type GetUsersPermissionsUsersRolesData = UsersPermissionsUser & {
     type?: string;
   };
   followers?: Follower[];
+  favorites?: Follower[];
   socialAccounts?: SocialAccount[];
   subscriptionStatus?: SubscriptionStatusEnum;
   billingPeriod?: string | null;
@@ -8775,6 +8821,8 @@ export interface BrowseFollowersParams {
   scope?: ScopeEnum;
   /** Filter to only return followers with at least 1 recording */
   hasRecordings?: boolean;
+  /** Filter to only return favorited followers */
+  favorites?: boolean;
 }
 
 export type BrowseFollowersData = BrowseFollowersResponse;
@@ -8802,6 +8850,8 @@ export interface BrowseRecordingsParams {
   locale?: string;
   /** Filter by follow status: 'following' (only followed), 'discover' (not followed), or omit for all */
   scope?: ScopeEnum;
+  /** Filter to only return favorited followers */
+  favorites?: boolean;
 }
 
 export type BrowseRecordingsData = RecordingListResponse;
@@ -8811,6 +8861,22 @@ export interface FollowCreateData {
 }
 
 export interface UnfollowCreateData {
+  success?: boolean;
+}
+
+export interface FavoriteFollowerPayload {
+  documentId: string;
+}
+
+export interface FavoriteFollowerData {
+  success?: boolean;
+}
+
+export interface UnfavoriteFollowerPayload {
+  documentId: string;
+}
+
+export interface UnfavoriteFollowerData {
   success?: boolean;
 }
 
@@ -10118,6 +10184,8 @@ export namespace Follower {
       scope?: ScopeEnum;
       /** Filter to only return followers with at least 1 recording */
       hasRecordings?: boolean;
+      /** Filter to only return favorited followers */
+      favorites?: boolean;
     };
     export type RequestBody = never;
     export type RequestHeaders = {};
@@ -10154,6 +10222,38 @@ export namespace Follower {
     export type RequestBody = FollowRequestBody;
     export type RequestHeaders = {};
     export type ResponseBody = UnfollowCreateData;
+  }
+
+  /**
+   * No description
+   * @tags Follower
+   * @name FavoriteFollower
+   * @summary Add a follower to favorites
+   * @request POST:/followers/favorite
+   * @secure
+   */
+  export namespace FavoriteFollower {
+    export type RequestParams = {};
+    export type RequestQuery = {};
+    export type RequestBody = FavoriteFollowerPayload;
+    export type RequestHeaders = {};
+    export type ResponseBody = FavoriteFollowerData;
+  }
+
+  /**
+   * No description
+   * @tags Follower
+   * @name UnfavoriteFollower
+   * @summary Remove a follower from favorites
+   * @request POST:/followers/unfavorite
+   * @secure
+   */
+  export namespace UnfavoriteFollower {
+    export type RequestParams = {};
+    export type RequestQuery = {};
+    export type RequestBody = UnfavoriteFollowerPayload;
+    export type RequestHeaders = {};
+    export type ResponseBody = UnfavoriteFollowerData;
   }
 
   /**
@@ -10435,6 +10535,8 @@ export namespace Recording {
       locale?: string;
       /** Filter by follow status: 'following' (only followed), 'discover' (not followed), or omit for all */
       scope?: ScopeEnum;
+      /** Filter to only return favorited followers */
+      favorites?: boolean;
     };
     export type RequestBody = never;
     export type RequestHeaders = {};
@@ -11477,10 +11579,8 @@ import axios from "axios";
 
 export type QueryParamsType = Record<string | number, any>;
 
-export interface FullRequestParams extends Omit<
-  AxiosRequestConfig,
-  "data" | "params" | "url" | "responseType"
-> {
+export interface FullRequestParams
+  extends Omit<AxiosRequestConfig, "data" | "params" | "url" | "responseType"> {
   /** set parameter to `true` for call `securityWorker` for this request */
   secure?: boolean;
   /** request path */
@@ -11500,10 +11600,8 @@ export type RequestParams = Omit<
   "body" | "method" | "query" | "path"
 >;
 
-export interface ApiConfig<SecurityDataType = unknown> extends Omit<
-  AxiosRequestConfig,
-  "data" | "cancelToken"
-> {
+export interface ApiConfig<SecurityDataType = unknown>
+  extends Omit<AxiosRequestConfig, "data" | "cancelToken"> {
   securityWorker?: (
     securityData: SecurityDataType | null,
   ) => Promise<AxiosRequestConfig | void> | AxiosRequestConfig | void;
@@ -12917,6 +13015,52 @@ export class Api<
     unfollowCreate: (data: FollowRequestBody, params: RequestParams = {}) =>
       this.request<UnfollowCreateData, void>({
         path: `/followers/unfollow`,
+        method: "POST",
+        body: data,
+        secure: true,
+        type: ContentType.Json,
+        format: "json",
+        ...params,
+      }),
+
+    /**
+     * No description
+     *
+     * @tags Follower
+     * @name FavoriteFollower
+     * @summary Add a follower to favorites
+     * @request POST:/followers/favorite
+     * @secure
+     */
+    favoriteFollower: (
+      data: FavoriteFollowerPayload,
+      params: RequestParams = {},
+    ) =>
+      this.request<FavoriteFollowerData, void>({
+        path: `/followers/favorite`,
+        method: "POST",
+        body: data,
+        secure: true,
+        type: ContentType.Json,
+        format: "json",
+        ...params,
+      }),
+
+    /**
+     * No description
+     *
+     * @tags Follower
+     * @name UnfavoriteFollower
+     * @summary Remove a follower from favorites
+     * @request POST:/followers/unfavorite
+     * @secure
+     */
+    unfavoriteFollower: (
+      data: UnfavoriteFollowerPayload,
+      params: RequestParams = {},
+    ) =>
+      this.request<UnfavoriteFollowerData, void>({
+        path: `/followers/unfavorite`,
         method: "POST",
         body: data,
         secure: true,

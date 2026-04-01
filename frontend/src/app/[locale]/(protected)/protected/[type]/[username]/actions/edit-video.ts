@@ -18,10 +18,11 @@ async function checkNotBasic(): Promise<boolean> {
 export async function cropExportVideo(
   videoDocumentId: string,
   userId: number,
+  locale: string,
   startTime: number,
   endTime: number,
 ): Promise<void> {
-  await fetch(process.env.N8N_URL + "/webhook/clip", {
+  await fetch(process.env.N8N_URL + "/webhook/save-clip", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -30,9 +31,9 @@ export async function cropExportVideo(
     body: JSON.stringify({
       videoDocumentId,
       userId,
+      locale,
       startTime,
-      endTime,
-      action: "export",
+      duration: endTime - startTime,
       platform: process.env.NEXT_PUBLIC_PLATFORM!,
     }),
   });

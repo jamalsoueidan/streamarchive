@@ -19,6 +19,7 @@ export async function fetchFollowers(filters: CreatorFilters, page: number) {
       filters: buildCreatorsFilters(filters),
       sort: filters.sort,
       hasRecordings: filters.hasRecordings,
+      favorites: filters.favorites,
       "pagination[page]": page,
     }),
   );

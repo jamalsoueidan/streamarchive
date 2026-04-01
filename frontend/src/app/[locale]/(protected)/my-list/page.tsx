@@ -1,5 +1,5 @@
 import { getFollowerFilters } from "@/app/actions/followers";
-import { Stack, Tabs, TabsList, TabsTab } from "@mantine/core";
+import { Stack } from "@mantine/core";
 import {
   dehydrate,
   HydrationBoundary,
@@ -10,6 +10,7 @@ import { getTranslations } from "next-intl/server";
 import { fetchFollowers } from "./actions/fetch-followers";
 import CreatorsInfinity from "./components/creators-infinity";
 import Filters from "./components/filters";
+import { MyListTabs } from "./components/my-list-tabs";
 import { CreatorFilters, creatorsParamsCache } from "./lib/search-params";
 
 export default async function Page({
@@ -39,24 +40,7 @@ export default async function Page({
   return (
     <HydrationBoundary state={dehydrate(queryClient)}>
       <Stack w="100%">
-        <Tabs
-          defaultValue="default"
-          styles={{
-            list: {
-              borderBottomWidth: 4,
-            },
-            tab: {
-              fontSize: "var(--mantine-font-size-lg)",
-              fontWeight: 600,
-              padding: "var(--mantine-spacing-sm) var(--mantine-spacing-md)",
-              borderBottomWidth: 4,
-            },
-          }}
-        >
-          <TabsList>
-            <TabsTab value="default">{t("title", { count })}</TabsTab>
-          </TabsList>
-        </Tabs>
+        <MyListTabs count={count} />
         <Filters filterOptions={filterOptions} />
 
         <CreatorsInfinity />

@@ -36,6 +36,7 @@ import { FollowerTypeIcon } from "../../components/follower-type-icon";
 import { RecordingMenu } from "../../components/recording-menu";
 import UnfollowButton from "../../components/unfollow-button";
 import { getRecordings } from "../actions/fetch-followers";
+import { FavoriteButton } from "./favorite-button";
 
 interface Props {
   follower: FollowerWithMeta;
@@ -78,6 +79,14 @@ export default function FollowerItem({ follower, isOpen }: Props) {
       ref={accordionRef}
       key={follower.documentId}
       value={follower.username}
+      style={
+        follower.isFavorite ?? false
+          ? {
+              borderColor: "rgba(251, 191, 36, 0.4)",
+              background: "rgba(251, 191, 36, 0.03)",
+            }
+          : undefined
+      }
     >
       <AccordionControl follower={follower}>
         <Group gap="xs">
@@ -265,10 +274,14 @@ function AccordionControl({
     <Center>
       <Accordion.Control {...props} />
       <Flex gap="xs" align="center" mx="md">
+        {follower.isFollowing && (
+          <FavoriteButton
+            documentId={follower.documentId!}
+            isFavorite={follower.isFavorite ?? false}
+          />
+        )}
         {follower.isFollowing ? (
-          <>
-            <UnfollowButton username={follower.username} type={follower.type} />
-          </>
+          <UnfollowButton username={follower.username} type={follower.type} />
         ) : (
           <FollowButton username={follower.username} type={follower.type} />
         )}

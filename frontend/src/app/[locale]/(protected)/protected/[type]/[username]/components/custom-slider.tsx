@@ -20,6 +20,7 @@ interface CustomSliderProps {
   currentTime: number;
   startTime: number;
   endTime: number;
+  maxRange?: number;
   onRangeChange: (start: number, end: number) => void;
   onSeek: (time: number) => void;
   formatTime: (seconds: number) => string;
@@ -74,6 +75,7 @@ export function CustomSlider({
   onSeek,
   formatTime,
   vttUrl,
+  maxRange,
 }: CustomSliderProps) {
   const [thumbnailCues, setThumbnailCues] = useState<ThumbnailCue[]>([]);
   const [containerWidth, setContainerWidth] = useState(800);
@@ -137,11 +139,19 @@ export function CustomSlider({
 
     if (activeGrip.current === "start") {
       const newStart = Math.floor(clamp(x * duration, 0, endTimeRef.current - 1));
-      onRangeChange(newStart, endTimeRef.current);
+      let newEnd = endTimeRef.current;
+      if (maxRange && newEnd - newStart > maxRange) {
+        newEnd = Math.min(newStart + maxRange, duration);
+      }
+      onRangeChange(newStart, newEnd);
       onSeek(newStart);
     } else if (activeGrip.current === "end") {
       const newEnd = Math.floor(clamp(x * duration, startTimeRef.current + 1, duration));
-      onRangeChange(startTimeRef.current, newEnd);
+      let newStart = startTimeRef.current;
+      if (maxRange && newEnd - newStart > maxRange) {
+        newStart = Math.max(newEnd - maxRange, 0);
+      }
+      onRangeChange(newStart, newEnd);
     } else if (activeGrip.current === "track") {
       const delta = x - dragStartX.current;
       const deltaTime = Math.floor(delta * duration);

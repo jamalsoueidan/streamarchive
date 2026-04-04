@@ -1,5 +1,6 @@
 "use server";
 
+import { usernameOrFilter } from "@/app/lib/username-filter";
 import api from "@/lib/api";
 import { deepMerge } from "@mantine/core";
 import { getLocale } from "next-intl/server";
@@ -44,7 +45,7 @@ export async function getFollower({
 }) {
   const response = await api.follower.getFollowers({
     filters: {
-      username: { $eqi: decodeURIComponent(username).replace(/^@/, "") },
+      ...usernameOrFilter(username),
       type,
     },
     populate: ["avatar"],
@@ -91,7 +92,7 @@ export async function fetchProfileRecordings(
     deepMerge(defaultOptions, {
       filters: {
         follower: {
-          username: { $eqi: decodeURIComponent(username).replace(/^@/, "") },
+          ...usernameOrFilter(username),
           type: { $eq: type },
         },
       },

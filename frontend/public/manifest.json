@@ -1,6 +1,6 @@
 {
-  "name": "Live Stream Recorder",
-  "short_name": "LSR",
+  "name": "StreamArchive",
+  "short_name": "SAR",
   "description": "Never miss a live stream again",
   "start_url": "/following",
   "display": "standalone",

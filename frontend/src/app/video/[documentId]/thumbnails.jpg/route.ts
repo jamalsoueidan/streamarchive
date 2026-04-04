@@ -47,7 +47,7 @@ export async function GET(
     const s3 = getS3(source.createdAt);
     const command = new GetObjectCommand({
       Bucket: getBucket(process.env.MEDIA_BUCKET!, source.createdAt, source.path),
-      Key: decodeURIComponent(`${source.path.substring(1)}thumbnails.jpg`),
+      Key: `${source.path.substring(1)}thumbnails.jpg`,
     });
     const response = await s3.send(command, {
       abortSignal: abortController.signal,

@@ -304,7 +304,7 @@ async function fetchPlaylistsFromS3(
         ? fetchFromS3(
             s3Client,
             bucket,
-            `${decodeURIComponent(source.path.substring(1))}${filename}`,
+            `${source.path.substring(1)}${filename}`,
           )
         : Promise.resolve(null),
     ),
@@ -339,7 +339,7 @@ async function combinePlaylistsWithSignedUrls(
           seen.add(mapKey);
           toSign.push({
             mapKey,
-            s3Key: decodeURIComponent(`${source.path.substring(1)}${filename}`),
+            s3Key: `${source.path.substring(1)}${filename}`,
           });
         }
       }

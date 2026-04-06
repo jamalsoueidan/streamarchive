@@ -1,4 +1,4 @@
-import { Anchor, Stack, Tabs, TabsList, TabsTab } from "@mantine/core";
+import { Stack } from "@mantine/core";
 import {
   dehydrate,
   HydrationBoundary,
@@ -6,9 +6,9 @@ import {
 } from "@tanstack/react-query";
 
 import { getFollowerFilters } from "@/app/actions/followers";
-import { getTranslations } from "next-intl/server";
 import { fetchRecordings } from "./actions/fetch-recordings";
 import Filters from "./components/filters";
+import { FollowingTabs } from "./components/following-tabs";
 import FollowingInfinity from "./components/following-infinity";
 import { FollowingFilters, followingParamsCache } from "./lib/search-params";
 
@@ -17,8 +17,6 @@ export default async function Page({
 }: {
   searchParams: Promise<FollowingFilters>;
 }) {
-  const t = await getTranslations("protected.following");
-  const tWatchLater = await getTranslations("protected.watchLater");
   const filters = await followingParamsCache.parse(searchParams);
 
   const queryClient = new QueryClient();
@@ -34,31 +32,8 @@ export default async function Page({
   return (
     <HydrationBoundary state={dehydrate(queryClient)}>
       <Stack w="100%">
-        <Tabs
-          value="recordings"
-          styles={{
-            list: {
-              borderBottomWidth: 4,
-            },
-            tab: {
-              fontSize: "var(--mantine-font-size-lg)",
-              fontWeight: 600,
-              padding: "var(--mantine-spacing-sm) var(--mantine-spacing-md)",
-              borderBottomWidth: 4,
-            },
-          }}
-        >
-          <TabsList>
-            <TabsTab value="recordings">{t("title")}</TabsTab>
-            <TabsTab value="watchLater">
-              <Anchor href="/watch-later" underline="never" c="inherit">
-                {tWatchLater("title")}
-              </Anchor>
-            </TabsTab>
-          </TabsList>
-        </Tabs>
+        <FollowingTabs />
         <Filters filterOptions={filterOptions} />
-
         <FollowingInfinity />
       </Stack>
     </HydrationBoundary>

@@ -1,7 +1,6 @@
 "use client";
 
-import { Button, Card, Group, Image, Select, SelectProps } from "@mantine/core";
-import { IconStarFilled } from "@tabler/icons-react";
+import { Card, Group, Image, Select, SelectProps } from "@mantine/core";
 import { useTranslations } from "next-intl";
 import { useQueryStates } from "nuqs";
 import { PLATFORM_OPTIONS } from "../../components/filters-types";
@@ -89,15 +88,6 @@ export default function Filters({ filterOptions }: Props) {
   return (
     <Card bg="gray.9" radius="md" p="sm" withBorder={false}>
       <Group gap="sm" wrap="wrap">
-        <Button
-          variant={filters.favorites ? "filled" : "light"}
-          color={filters.favorites ? "yellow" : "gray"}
-          size="sm"
-          leftSection={<IconStarFilled size={16} />}
-          onClick={() => setFilters({ favorites: !filters.favorites })}
-        >
-          {t("actions.favorites")}
-        </Button>
         <Select
           size="sm"
           placeholder={t("sort.label")}

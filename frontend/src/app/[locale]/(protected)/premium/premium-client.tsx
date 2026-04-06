@@ -189,7 +189,7 @@ export default function PremiumClient({
       )}
 
       {/* Hero */}
-      <Stack align="center" gap={4} pb="xl">
+      <Stack align="center" gap={4} pb="md">
         <Paper
           radius="xl"
           px="md"
@@ -295,7 +295,7 @@ export default function PremiumClient({
       {/* Features checklist */}
       <Grid gutter="sm">
         {PREMIUM_FEATURES.map((feature) => (
-          <GridCol span={6} key={feature.label}>
+          <GridCol span={{ base: 12, sm: 6 }} key={feature.label}>
             <Group gap="xs" wrap="nowrap">
               <IconCheck size={16} color="#52FF94" />
               <Text size="sm">{feature.label}</Text>
@@ -328,7 +328,12 @@ export default function PremiumClient({
                       {option.label}
                     </Text>
                     {option.badge && (
-                      <Badge size="xs" variant="filled" color="green">
+                      <Badge
+                        size="xs"
+                        variant="filled"
+                        color="green"
+                        visibleFrom="sm"
+                      >
                         {option.badge}
                       </Badge>
                     )}

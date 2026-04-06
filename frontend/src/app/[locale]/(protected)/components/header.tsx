@@ -6,7 +6,7 @@ import {
   Menu,
   useMatches,
 } from "@mantine/core";
-import { IconStar, IconLogout, IconSettings } from "@tabler/icons-react";
+import { IconLogout, IconSettings, IconStar } from "@tabler/icons-react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 
@@ -56,7 +56,7 @@ export const Header = () => {
             size="lg"
             color="white"
           >
-            <IconStar size={18} color="gold" />
+            <IconStar size={24} color="gold" />
           </ActionIcon>
         ) : (
           <Button
@@ -74,22 +74,28 @@ export const Header = () => {
 
         <Menu trigger="click">
           <Menu.Target>
-            <Button
-              variant="subtle"
-              c="white"
-              color="gray"
-              radius="md"
-              size="sm"
-              leftSection={<IconSettings size={18} />}
-            >
-              {user?.username}
-            </Button>
+            {isMobile ? (
+              <ActionIcon variant="outline" radius="md" size="lg" color="white">
+                <IconSettings size={24} />
+              </ActionIcon>
+            ) : (
+              <Button
+                variant="filled"
+                c="white"
+                color="gray.9"
+                radius="md"
+                size="sm"
+                leftSection={<IconSettings size={24} />}
+              >
+                {user?.username}
+              </Button>
+            )}
           </Menu.Target>
           <Menu.Dropdown>
             <Menu.Item
               component={Link}
               href="/settings"
-              leftSection={<IconSettings size={16} />}
+              leftSection={<IconSettings size={24} />}
             >
               {tNavigation("actions.settings")}
             </Menu.Item>
@@ -99,7 +105,7 @@ export const Header = () => {
                 await fetch("/api/logout", { method: "POST" });
                 window.location.href = "/";
               }}
-              leftSection={<IconLogout size={16} />}
+              leftSection={<IconLogout size={24} />}
             >
               {tNavigation("actions.logout")}
             </Menu.Item>

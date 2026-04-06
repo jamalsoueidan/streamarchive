@@ -1,6 +1,6 @@
 import dayjs from "@/app/lib/dayjs";
 import { ActionIcon, Stack, Text, Title } from "@mantine/core";
-import { IconClock, IconVideo } from "@tabler/icons-react";
+import { IconClock, IconPlayerPlay } from "@tabler/icons-react";
 import {
   dehydrate,
   HydrationBoundary,
@@ -99,7 +99,7 @@ async function EmptyState({ follower }: { follower: Follower }) {
   return (
     <Stack align="center" justify="center" py={80} gap="lg">
       <ActionIcon variant="transparent" size={120} radius="xl" color="white">
-        <IconVideo size={90} stroke={2} />
+        <IconPlayerPlay size={90} stroke={2} />
       </ActionIcon>
       <Stack align="center" gap={12}>
         <Title order={2} fw={600}>

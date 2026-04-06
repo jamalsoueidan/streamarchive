@@ -1,6 +1,6 @@
 "use client";
 
-import { Accordion, Loader, Stack, Text } from "@mantine/core";
+import { Accordion, Divider, Loader, Stack } from "@mantine/core";
 import { useIntersection } from "@mantine/hooks";
 import { useEffect, useState } from "react";
 
@@ -8,7 +8,7 @@ import { useQueryStates } from "nuqs";
 
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { useTranslations } from "next-intl";
-import { usePathname } from "next/navigation";
+
 import { EmptyState } from "../../components/empty-state";
 import { fetchFollowers } from "../actions/fetch-followers";
 import { exploreParsers } from "../lib/search-params";
@@ -18,7 +18,6 @@ export default function CreatorsInfinity() {
   const t = useTranslations("protected.myList");
   const [filters] = useQueryStates(exploreParsers);
   const [openItems, setOpenItems] = useState<string[]>([]);
-  const pathname = usePathname();
 
   const { data, fetchNextPage, hasNextPage, isFetchingNextPage, isLoading } =
     useInfiniteQuery({
@@ -42,7 +41,7 @@ export default function CreatorsInfinity() {
     // intersection observer, falsely triggering fetchNextPage and loading new
     // creators (and their preview images) while the user is watching a video.
     // Checking pathname prevents this.
-    const isOnPage = pathname.endsWith("/my-list");
+    const isOnPage = window.location.pathname.endsWith("/my-list");
     if (
       entry?.isIntersecting &&
       hasNextPage &&
@@ -51,13 +50,7 @@ export default function CreatorsInfinity() {
     ) {
       fetchNextPage();
     }
-  }, [
-    entry?.isIntersecting,
-    hasNextPage,
-    isFetchingNextPage,
-    fetchNextPage,
-    pathname,
-  ]);
+  }, [entry?.isIntersecting, hasNextPage, isFetchingNextPage, fetchNextPage]);
 
   const allFollowers = data?.pages.flatMap((p) => p.data) ?? [];
 
@@ -115,9 +108,7 @@ export default function CreatorsInfinity() {
       )}
 
       {!hasNextPage && allFollowers.length > 0 && (
-        <Text ta="center" c="dimmed">
-          {t("noMoreToLoad")}
-        </Text>
+        <Divider my="xs" label={t("noMoreToLoad")} labelPosition="center" />
       )}
     </>
   );

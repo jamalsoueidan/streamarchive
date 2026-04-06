@@ -4,7 +4,9 @@ import { IconWindowMaximize } from "@tabler/icons-react";
 
 type UrlPattern = (username: string) => string;
 
-export const SOCIAL_URL_PATTERNS: Partial<Record<FollowerTypeEnum, UrlPattern>> = {
+export const SOCIAL_URL_PATTERNS: Partial<
+  Record<FollowerTypeEnum, UrlPattern>
+> = {
   [FollowerTypeEnum.Tiktok]: (username) =>
     `https://www.tiktok.com/@${decodeURIComponent(username).replace(
       /^@/,
@@ -55,7 +57,13 @@ export default function OpenSocial({ follower }: { follower: Follower }) {
 
   return (
     <Tooltip label={`Go to ${follower.type}`}>
-      <ActionIcon component="a" size="lg" href={href} target="_blank">
+      <ActionIcon
+        variant="subtle"
+        component="a"
+        size="lg"
+        href={href}
+        target="_blank"
+      >
         <IconWindowMaximize size={24} />
       </ActionIcon>
     </Tooltip>

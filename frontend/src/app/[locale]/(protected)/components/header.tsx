@@ -6,7 +6,7 @@ import {
   Menu,
   useMatches,
 } from "@mantine/core";
-import { IconLogout, IconSettings, IconStar } from "@tabler/icons-react";
+import { IconAwardFilled, IconLogout, IconSettings } from "@tabler/icons-react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 
@@ -52,21 +52,29 @@ export const Header = () => {
             component={Link}
             href="/premium"
             variant="outline"
-            radius="md"
+            radius="lg"
             size="lg"
-            color="white"
+            color="#52FF94"
+            style={{
+              background: "rgba(27, 147, 69, 0.15)",
+              border: "1px solid rgba(82, 255, 148, 0.3)",
+            }}
           >
-            <IconStar size={24} color="gold" />
+            <IconAwardFilled size={24} color="gold" />
           </ActionIcon>
         ) : (
           <Button
             component={Link}
             href="/premium"
             variant="outline"
-            radius="md"
+            radius="lg"
             size="sm"
-            color="white"
-            rightSection={<IconStar color="gold" />}
+            color="#52FF94"
+            style={{
+              background: "rgba(27, 147, 69, 0.15)",
+              border: "1px solid rgba(82, 255, 148, 0.3)",
+            }}
+            rightSection={<IconAwardFilled color="gold" />}
           >
             {tPremium("title")}
           </Button>
@@ -75,7 +83,13 @@ export const Header = () => {
         <Menu trigger="click">
           <Menu.Target>
             {isMobile ? (
-              <ActionIcon variant="outline" radius="md" size="lg" color="white">
+              <ActionIcon
+                variant="filled"
+                radius="lg"
+                size="lg"
+                color="white"
+                bg="gray.9"
+              >
                 <IconSettings size={24} />
               </ActionIcon>
             ) : (
@@ -83,7 +97,7 @@ export const Header = () => {
                 variant="filled"
                 c="white"
                 color="gray.9"
-                radius="md"
+                radius="lg"
                 size="sm"
                 leftSection={<IconSettings size={24} />}
               >

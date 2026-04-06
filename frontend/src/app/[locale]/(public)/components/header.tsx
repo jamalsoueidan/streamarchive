@@ -1,4 +1,4 @@
-import { Button, Container, Divider, Flex, Group } from "@mantine/core";
+import { Container, Divider, Flex, Group } from "@mantine/core";
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 import { AuthButtons } from "./header-auth";

@@ -15,7 +15,6 @@ import {
   GridCol,
   Group,
   Modal,
-  Paper,
   SegmentedControl,
   Stack,
   Text,
@@ -190,23 +189,6 @@ export default function PremiumClient({
 
       {/* Hero */}
       <Stack align="center" gap={4} pb="md">
-        <Paper
-          radius="xl"
-          px="md"
-          py={6}
-          style={{
-            background: "rgba(27, 147, 69, 0.15)",
-            border: "1px solid rgba(82, 255, 148, 0.3)",
-          }}
-        >
-          <Group gap={8}>
-            <IconStar size={18} color="#fbbf24" />
-            <Text size="sm" fw={600} c="#52FF94">
-              {t("title")}
-            </Text>
-          </Group>
-        </Paper>
-
         <Title
           order={2}
           ta="center"

@@ -51,7 +51,7 @@ export function FollowingTabs() {
         <TabsTab value="recordings">{t("title")}</TabsTab>
         <TabsTab
           value="favorites"
-          leftSection={<IconStarFilled size={14} />}
+          leftSection={<IconStarFilled size={18} color="#fbbf24" />}
         >
           {tFilters("actions.favorites")}
         </TabsTab>

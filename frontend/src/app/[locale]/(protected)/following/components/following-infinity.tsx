@@ -10,6 +10,7 @@ import { useInfiniteQuery } from "@tanstack/react-query";
 
 import { useTranslations } from "next-intl";
 
+import { IconPlayerPlay } from "@tabler/icons-react";
 import { EmptyState } from "../../components/empty-state";
 import { fetchRecordings } from "../actions/fetch-recordings";
 import { followingParsers } from "../lib/search-params";
@@ -77,6 +78,7 @@ export default function FollowingInfinity() {
       <EmptyState
         title={t(`${key}.title`)}
         description={t(`${key}.description`)}
+        icon={<IconPlayerPlay size={90} stroke={2} />}
       />
     );
   }

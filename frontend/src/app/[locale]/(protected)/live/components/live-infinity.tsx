@@ -6,7 +6,6 @@ import {
   ActionIcon,
   Anchor,
   Avatar,
-  Button,
   Grid,
   Group,
   Loader,
@@ -16,7 +15,7 @@ import {
   Title,
 } from "@mantine/core";
 import { useIntersection } from "@mantine/hooks";
-import { IconVideo, IconWorldSearch } from "@tabler/icons-react";
+import { IconPlayerRecordFilled } from "@tabler/icons-react";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { useFormatter, useNow, useTranslations } from "next-intl";
 import Link from "next/link";
@@ -83,7 +82,7 @@ export default function LiveInfinity({ scope }: Props) {
     return (
       <Stack align="center" justify="center" py={80} gap="lg">
         <ActionIcon variant="transparent" size={120} radius="xl" color="white">
-          <IconVideo size={90} stroke={2} />
+          <IconPlayerRecordFilled size={90} stroke={2} />
         </ActionIcon>
         <Stack align="center" gap={12}>
           <Title order={2} fw={600}>
@@ -93,15 +92,6 @@ export default function LiveInfinity({ scope }: Props) {
             {t("emptyState.description")}
           </Text>
         </Stack>
-        <Anchor href="/discover" underline="never">
-          <Button
-            size="lg"
-            radius="md"
-            leftSection={<IconWorldSearch size={20} />}
-          >
-            {t("discoverStreamers")}
-          </Button>
-        </Anchor>
       </Stack>
     );
   }

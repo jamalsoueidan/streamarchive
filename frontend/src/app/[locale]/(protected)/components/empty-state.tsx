@@ -1,5 +1,5 @@
 import { ActionIcon, Stack, Text, Title } from "@mantine/core";
-import { IconMoodEmpty } from "@tabler/icons-react";
+import { IconCut } from "@tabler/icons-react";
 import { ReactNode } from "react";
 
 interface EmptyStateProps {
@@ -12,7 +12,7 @@ export function EmptyState({ title, description, icon }: EmptyStateProps) {
   return (
     <Stack align="center" justify="center" py={80} gap="lg">
       <ActionIcon variant="transparent" size={120} radius="xl" color="white">
-        {icon || <IconMoodEmpty size={90} stroke={2} />}
+        {icon || <IconCut size={90} stroke={2} />}
       </ActionIcon>
       <Stack align="center" gap={12}>
         <Title order={2} fw={600}>

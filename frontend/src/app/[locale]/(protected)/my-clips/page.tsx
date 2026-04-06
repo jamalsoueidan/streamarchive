@@ -6,7 +6,7 @@ import {
   TabsList,
   TabsTab,
 } from "@mantine/core";
-import { IconScissors } from "@tabler/icons-react";
+import { IconCut } from "@tabler/icons-react";
 import { getLocale, getTranslations } from "next-intl/server";
 
 import PaginationControls from "@/app/components/pagination";
@@ -71,7 +71,7 @@ export default async function Page({ searchParams }: PageProps) {
         <EmptyState
           title={t("emptyState.title")}
           description={t("emptyState.description")}
-          icon={<IconScissors size={90} stroke={2} />}
+          icon={<IconCut size={90} stroke={2} />}
         />
       ) : (
         <Stack gap="md">

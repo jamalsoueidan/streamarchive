@@ -18,6 +18,12 @@ export const streamingPlatforms = [
     file: "/simple/kick.svg",
   },
   {
+    color: "red.6",
+    colorCss: "var(--mantine-color-red-6)",
+    name: "YouTube",
+    file: "/simple/youtube.svg",
+  },
+  {
     color: "red.4",
     colorCss: "var(--mantine-color-red-4)",
     name: "AfreecaTV",

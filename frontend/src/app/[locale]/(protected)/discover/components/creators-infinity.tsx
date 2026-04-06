@@ -1,6 +1,6 @@
 "use client";
 
-import { Divider, Grid, Loader, Stack } from "@mantine/core";
+import { Divider, Grid, Loader, Stack, Text } from "@mantine/core";
 import { useIntersection } from "@mantine/hooks";
 import { useEffect } from "react";
 

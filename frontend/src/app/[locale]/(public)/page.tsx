@@ -372,12 +372,12 @@ export default async function LandingPage() {
                     }}
                   >
                     {blog.card_image?.url && (
-                      <Image
-                        src={blog.card_image.url}
-                        alt={
-                          blog.card_image.alternativeText || blog.title || ""
-                        }
-                      />
+                      <Link href={`/blog/${blog.slug}`}>
+                        <Image
+                          src={blog.card_image.url}
+                          alt={blog.title || ""}
+                        />
+                      </Link>
                     )}
                     <Stack
                       gap="sm"
@@ -389,14 +389,19 @@ export default async function LandingPage() {
                         <Text size="xs" mb="xs" style={{ color: "#64748b" }}>
                           {dayjs(blog.createdAt).format("MMMM D, YYYY")}
                         </Text>
-                        <Title
-                          order={4}
-                          mb="xs"
-                          style={{ color: "#f1f5f9" }}
-                          lineClamp={2}
+                        <Link
+                          href={`/blog/${blog.slug}`}
+                          style={{ textDecoration: "none" }}
                         >
-                          {blog.title}
-                        </Title>
+                          <Title
+                            order={4}
+                            mb="xs"
+                            style={{ color: "#f1f5f9" }}
+                            lineClamp={2}
+                          >
+                            {blog.title}
+                          </Title>
+                        </Link>
                         {blog.excerpt && (
                           <Text
                             size="sm"

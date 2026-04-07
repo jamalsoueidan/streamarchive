@@ -299,6 +299,7 @@ export interface Activity {
     pause?: boolean;
     description?: string;
     tagline?: string;
+    encode?: boolean;
     faq?: any;
     category?: string;
     migration?: number;
@@ -784,6 +785,7 @@ export interface AiRequest {
     pause?: boolean;
     description?: string;
     tagline?: string;
+    encode?: boolean;
     faq?: any;
     category?: string;
     migration?: number;
@@ -1406,6 +1408,7 @@ export interface AiTask {
       pause?: boolean;
       description?: string;
       tagline?: string;
+      encode?: boolean;
       faq?: any;
       category?: string;
       migration?: number;
@@ -1897,9 +1900,14 @@ export interface ArticleResponse {
 export interface BlogRequest {
   data: {
     title?: string;
-    short?: string;
+    excerpt?: string;
     content?: string;
     slug?: string;
+    keywords?: string;
+    /** @example "string or id" */
+    cover_image?: number | string;
+    /** @example "string or id" */
+    card_image?: number | string;
     locale?: string;
     localizations?: (number | string)[];
   };
@@ -1923,48 +1931,72 @@ export interface Blog {
   id?: string | number;
   documentId?: string;
   title?: string;
-  short?: string;
+  excerpt?: string;
   content?: string;
   slug?: string;
-  /** @format date-time */
-  createdAt?: string;
-  /** @format date-time */
-  updatedAt?: string;
-  /** @format date-time */
-  publishedAt?: string;
-  createdBy?: {
+  keywords?: string;
+  cover_image?: {
     id?: string | number;
     documentId?: string;
-    firstname?: string;
-    lastname?: string;
-    username?: string;
-    /** @format email */
-    email?: string;
-    resetPasswordToken?: string;
-    registrationToken?: string;
-    isActive?: boolean;
-    roles?: {
+    name?: string;
+    alternativeText?: string;
+    caption?: string;
+    width?: number;
+    height?: number;
+    formats?: any;
+    hash?: string;
+    ext?: string;
+    mime?: string;
+    /** @format float */
+    size?: number;
+    url?: string;
+    previewUrl?: string;
+    provider?: string;
+    provider_metadata?: any;
+    related?: {
+      id?: string | number;
+      documentId?: string;
+    }[];
+    folder?: {
       id?: string | number;
       documentId?: string;
       name?: string;
-      code?: string;
-      description?: string;
-      users?: {
+      pathId?: number;
+      parent?: {
+        id?: string | number;
+        documentId?: string;
+      };
+      children?: {
         id?: string | number;
         documentId?: string;
       }[];
-      permissions?: {
+      files?: {
         id?: string | number;
         documentId?: string;
-        action?: string;
-        actionParameters?: any;
-        subject?: string;
-        properties?: any;
-        conditions?: any;
-        role?: {
+        name?: string;
+        alternativeText?: string;
+        caption?: string;
+        width?: number;
+        height?: number;
+        formats?: any;
+        hash?: string;
+        ext?: string;
+        mime?: string;
+        /** @format float */
+        size?: number;
+        url?: string;
+        previewUrl?: string;
+        provider?: string;
+        provider_metadata?: any;
+        related?: {
+          id?: string | number;
+          documentId?: string;
+        }[];
+        folder?: {
           id?: string | number;
           documentId?: string;
         };
+        folderPath?: string;
         /** @format date-time */
         createdAt?: string;
         /** @format date-time */
@@ -1974,6 +2006,97 @@ export interface Blog {
         createdBy?: {
           id?: string | number;
           documentId?: string;
+          firstname?: string;
+          lastname?: string;
+          username?: string;
+          /** @format email */
+          email?: string;
+          resetPasswordToken?: string;
+          registrationToken?: string;
+          isActive?: boolean;
+          roles?: {
+            id?: string | number;
+            documentId?: string;
+            name?: string;
+            code?: string;
+            description?: string;
+            users?: {
+              id?: string | number;
+              documentId?: string;
+            }[];
+            permissions?: {
+              id?: string | number;
+              documentId?: string;
+              action?: string;
+              actionParameters?: any;
+              subject?: string;
+              properties?: any;
+              conditions?: any;
+              role?: {
+                id?: string | number;
+                documentId?: string;
+              };
+              /** @format date-time */
+              createdAt?: string;
+              /** @format date-time */
+              updatedAt?: string;
+              /** @format date-time */
+              publishedAt?: string;
+              createdBy?: {
+                id?: string | number;
+                documentId?: string;
+              };
+              updatedBy?: {
+                id?: string | number;
+                documentId?: string;
+              };
+              locale?: string;
+              localizations?: {
+                id?: string | number;
+                documentId?: string;
+              }[];
+            }[];
+            /** @format date-time */
+            createdAt?: string;
+            /** @format date-time */
+            updatedAt?: string;
+            /** @format date-time */
+            publishedAt?: string;
+            createdBy?: {
+              id?: string | number;
+              documentId?: string;
+            };
+            updatedBy?: {
+              id?: string | number;
+              documentId?: string;
+            };
+            locale?: string;
+            localizations?: {
+              id?: string | number;
+              documentId?: string;
+            }[];
+          }[];
+          blocked?: boolean;
+          preferedLanguage?: string;
+          /** @format date-time */
+          createdAt?: string;
+          /** @format date-time */
+          updatedAt?: string;
+          /** @format date-time */
+          publishedAt?: string;
+          createdBy?: {
+            id?: string | number;
+            documentId?: string;
+          };
+          updatedBy?: {
+            id?: string | number;
+            documentId?: string;
+          };
+          locale?: string;
+          localizations?: {
+            id?: string | number;
+            documentId?: string;
+          }[];
         };
         updatedBy?: {
           id?: string | number;
@@ -1985,6 +2108,7 @@ export interface Blog {
           documentId?: string;
         }[];
       }[];
+      path?: string;
       /** @format date-time */
       createdAt?: string;
       /** @format date-time */
@@ -2004,9 +2128,8 @@ export interface Blog {
         id?: string | number;
         documentId?: string;
       }[];
-    }[];
-    blocked?: boolean;
-    preferedLanguage?: string;
+    };
+    folderPath?: string;
     /** @format date-time */
     createdAt?: string;
     /** @format date-time */
@@ -2027,6 +2150,63 @@ export interface Blog {
       documentId?: string;
     }[];
   };
+  card_image?: {
+    id?: string | number;
+    documentId?: string;
+    name?: string;
+    alternativeText?: string;
+    caption?: string;
+    width?: number;
+    height?: number;
+    formats?: any;
+    hash?: string;
+    ext?: string;
+    mime?: string;
+    /** @format float */
+    size?: number;
+    url?: string;
+    previewUrl?: string;
+    provider?: string;
+    provider_metadata?: any;
+    related?: {
+      id?: string | number;
+      documentId?: string;
+    }[];
+    folder?: {
+      id?: string | number;
+      documentId?: string;
+    };
+    folderPath?: string;
+    /** @format date-time */
+    createdAt?: string;
+    /** @format date-time */
+    updatedAt?: string;
+    /** @format date-time */
+    publishedAt?: string;
+    createdBy?: {
+      id?: string | number;
+      documentId?: string;
+    };
+    updatedBy?: {
+      id?: string | number;
+      documentId?: string;
+    };
+    locale?: string;
+    localizations?: {
+      id?: string | number;
+      documentId?: string;
+    }[];
+  };
+  /** @format date-time */
+  createdAt?: string;
+  /** @format date-time */
+  updatedAt?: string;
+  /** @format date-time */
+  publishedAt?: string;
+  createdBy?: {
+    id?: string | number;
+    documentId?: string;
+  };
   updatedBy?: {
     id?: string | number;
     documentId?: string;
@@ -2036,9 +2216,104 @@ export interface Blog {
     id?: string | number;
     documentId?: string;
     title?: string;
-    short?: string;
+    excerpt?: string;
     content?: string;
     slug?: string;
+    keywords?: string;
+    cover_image?: {
+      id?: string | number;
+      documentId?: string;
+      name?: string;
+      alternativeText?: string;
+      caption?: string;
+      width?: number;
+      height?: number;
+      formats?: any;
+      hash?: string;
+      ext?: string;
+      mime?: string;
+      /** @format float */
+      size?: number;
+      url?: string;
+      previewUrl?: string;
+      provider?: string;
+      provider_metadata?: any;
+      related?: {
+        id?: string | number;
+        documentId?: string;
+      }[];
+      folder?: {
+        id?: string | number;
+        documentId?: string;
+      };
+      folderPath?: string;
+      /** @format date-time */
+      createdAt?: string;
+      /** @format date-time */
+      updatedAt?: string;
+      /** @format date-time */
+      publishedAt?: string;
+      createdBy?: {
+        id?: string | number;
+        documentId?: string;
+      };
+      updatedBy?: {
+        id?: string | number;
+        documentId?: string;
+      };
+      locale?: string;
+      localizations?: {
+        id?: string | number;
+        documentId?: string;
+      }[];
+    };
+    card_image?: {
+      id?: string | number;
+      documentId?: string;
+      name?: string;
+      alternativeText?: string;
+      caption?: string;
+      width?: number;
+      height?: number;
+      formats?: any;
+      hash?: string;
+      ext?: string;
+      mime?: string;
+      /** @format float */
+      size?: number;
+      url?: string;
+      previewUrl?: string;
+      provider?: string;
+      provider_metadata?: any;
+      related?: {
+        id?: string | number;
+        documentId?: string;
+      }[];
+      folder?: {
+        id?: string | number;
+        documentId?: string;
+      };
+      folderPath?: string;
+      /** @format date-time */
+      createdAt?: string;
+      /** @format date-time */
+      updatedAt?: string;
+      /** @format date-time */
+      publishedAt?: string;
+      createdBy?: {
+        id?: string | number;
+        documentId?: string;
+      };
+      updatedBy?: {
+        id?: string | number;
+        documentId?: string;
+      };
+      locale?: string;
+      localizations?: {
+        id?: string | number;
+        documentId?: string;
+      }[];
+    };
     /** @format date-time */
     createdAt?: string;
     /** @format date-time */
@@ -2518,6 +2793,7 @@ export interface Clip {
     pause?: boolean;
     description?: string;
     tagline?: string;
+    encode?: boolean;
     faq?: any;
     category?: string;
     migration?: number;
@@ -3096,6 +3372,7 @@ export interface ClipShare {
       pause?: boolean;
       description?: string;
       tagline?: string;
+      encode?: boolean;
       faq?: any;
       category?: string;
       migration?: number;
@@ -3609,6 +3886,7 @@ export interface FollowerRequest {
     pause?: boolean;
     description?: string;
     tagline?: string;
+    encode?: boolean;
     faq?: any;
     category?: string;
     migration?: number;
@@ -3871,6 +4149,7 @@ export interface Follower {
   pause?: boolean;
   description?: string;
   tagline?: string;
+  encode?: boolean;
   faq?: any;
   category?: string;
   migration?: number;
@@ -4011,6 +4290,7 @@ export interface Follower {
       pause?: boolean;
       description?: string;
       tagline?: string;
+      encode?: boolean;
       faq?: any;
       category?: string;
       migration?: number;
@@ -4421,6 +4701,7 @@ export interface Meme {
       pause?: boolean;
       description?: string;
       tagline?: string;
+      encode?: boolean;
       faq?: any;
       category?: string;
       migration?: number;
@@ -4980,6 +5261,7 @@ export interface Recording {
     pause?: boolean;
     description?: string;
     tagline?: string;
+    encode?: boolean;
     faq?: any;
     category?: string;
     migration?: number;
@@ -5696,6 +5978,7 @@ export interface SocialAccount {
       pause?: boolean;
       description?: string;
       tagline?: string;
+      encode?: boolean;
       faq?: any;
       category?: string;
       migration?: number;
@@ -6107,6 +6390,7 @@ export interface Source {
       pause?: boolean;
       description?: string;
       tagline?: string;
+      encode?: boolean;
       faq?: any;
       category?: string;
       migration?: number;
@@ -6626,6 +6910,7 @@ export interface VisitorView {
       pause?: boolean;
       description?: string;
       tagline?: string;
+      encode?: boolean;
       faq?: any;
       category?: string;
       migration?: number;

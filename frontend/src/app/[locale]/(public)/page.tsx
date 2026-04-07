@@ -362,15 +362,29 @@ export default async function LandingPage() {
                 {blogs.map((blog) => (
                   <Paper
                     key={blog.documentId}
-                    p="lg"
+                    p={0}
                     radius="lg"
                     h="100%"
                     style={{
                       background: "rgba(255, 255, 255, 0.02)",
                       border: "1px solid rgba(255, 255, 255, 0.06)",
+                      overflow: "hidden",
                     }}
                   >
-                    <Stack gap="sm" justify="space-between" h="100%">
+                    {blog.card_image?.url && (
+                      <Image
+                        src={blog.card_image.url}
+                        alt={
+                          blog.card_image.alternativeText || blog.title || ""
+                        }
+                      />
+                    )}
+                    <Stack
+                      gap="sm"
+                      justify="space-between"
+                      p="lg"
+                      style={{ flex: 1 }}
+                    >
                       <div>
                         <Text size="xs" mb="xs" style={{ color: "#64748b" }}>
                           {dayjs(blog.createdAt).format("MMMM D, YYYY")}
@@ -383,13 +397,13 @@ export default async function LandingPage() {
                         >
                           {blog.title}
                         </Title>
-                        {blog.short && (
+                        {blog.excerpt && (
                           <Text
                             size="sm"
                             style={{ color: "#94a3b8", lineHeight: 1.6 }}
                             lineClamp={3}
                           >
-                            {blog.short}
+                            {blog.excerpt}
                           </Text>
                         )}
                       </div>

@@ -1,8 +1,8 @@
-import dayjs from "@/app/lib/dayjs";
 import { generateAlternates } from "@/app/lib/seo";
 import publicApi from "@/lib/public-api";
 import {
   Container,
+  Image,
   Paper,
   SimpleGrid,
   Stack,
@@ -10,7 +10,11 @@ import {
   Title,
 } from "@mantine/core";
 import { IconArticle } from "@tabler/icons-react";
-import { getLocale, getTranslations } from "next-intl/server";
+import {
+  getFormatter,
+  getLocale,
+  getTranslations,
+} from "next-intl/server";
 import Link from "next/link";
 
 export async function generateMetadata() {
@@ -26,11 +30,15 @@ export async function generateMetadata() {
 export default async function BlogPage() {
   const t = await getTranslations("blog");
   const locale = await getLocale();
+  const format = await getFormatter();
 
   const response = await publicApi.blog.getBlogs({
     "pagination[limit]": 50,
     sort: "createdAt:desc",
     locale: locale,
+    populate: {
+      card_image: { fields: ["url", "width", "height", "alternativeText"] },
+    },
   });
 
   const blogs = response.data?.data || [];
@@ -103,32 +111,43 @@ export default async function BlogPage() {
               style={{ textDecoration: "none" }}
             >
               <Paper
-                p="lg"
+                p={0}
                 radius="lg"
                 h="100%"
                 style={{
                   background: "rgba(255, 255, 255, 0.02)",
                   border: "1px solid rgba(255, 255, 255, 0.06)",
                   cursor: "pointer",
+                  overflow: "hidden",
                 }}
               >
-                <Stack gap="sm" justify="space-between" h="100%">
+                {blog.card_image?.url && (
+                  <Image
+                    src={blog.card_image.url}
+                    alt={blog.card_image.alternativeText || blog.title || ""}
+                    h={200}
+                    fit="cover"
+                  />
+                )}
+                <Stack gap="sm" justify="space-between" p="lg" style={{ flex: 1 }}>
                   <div>
                     <Title order={4} mb="xs" style={{ color: "#f1f5f9" }}>
                       {blog.title}
                     </Title>
-                    {blog.short && (
+                    {blog.excerpt && (
                       <Text
                         size="sm"
                         style={{ color: "#94a3b8", lineHeight: 1.6 }}
                         lineClamp={3}
                       >
-                        {blog.short}
+                        {blog.excerpt}
                       </Text>
                     )}
                   </div>
                   <Text size="xs" style={{ color: "#64748b" }}>
-                    {dayjs(blog.createdAt).fromNow()}
+                    {blog.createdAt
+                      ? format.relativeTime(new Date(blog.createdAt))
+                      : ""}
                   </Text>
                 </Stack>
               </Paper>

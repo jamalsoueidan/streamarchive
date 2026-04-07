@@ -62,6 +62,7 @@ export const getLatestBlogs = async () => {
     data: { data: blogs },
   } = await publicApi.blog.getBlogs({
     "pagination[limit]": 6,
+    populate: "card_image",
     sort: "createdAt:desc",
   });
   return blogs;

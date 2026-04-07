@@ -53,6 +53,7 @@
     "react-svg-credit-card-payment-icons": "^5.1.2",
     "react-use-pwa-install": "^1.0.3",
     "recharts": "^3.7.0",
+    "remark-gfm": "^4.0.1",
     "serwist": "^9.5.0",
     "stripe": "^20.3.1",
     "swagger-typescript-api": "^13.2.16",

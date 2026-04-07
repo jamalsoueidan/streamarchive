@@ -1,13 +1,13 @@
 {
-  "title": "Recordings",
-  "description": "Recordings from your streamers",
+  "title": "My Streams",
+  "description": "VODs from creators you follow",
   "emptyFiltered": {
-    "title": "No recordings match your filters",
+    "title": "Nothing matches your filters",
     "description": "Try adjusting or clearing your filters"
   },
   "emptyDefault": {
-    "title": "No recordings yet",
-    "description": "Your recordings will appear here once you add a streamer"
+    "title": "No streams yet",
+    "description": "Add a creator and their streams will show up here automatically"
   },
   "noMoreToLoad": "You've reached the end"
 }

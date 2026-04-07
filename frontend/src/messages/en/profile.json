@@ -1,28 +1,28 @@
 {
   "meta": {
-    "title": "{nickname} (@{username}) Videos & Recordings",
-    "notFoundTitle": "Streamer Not Found",
-    "notFoundDescription": "This streamer profile could not be found.",
-    "description": "Watch {nickname}'s {platform} live recordings and clips. {nickname} uses Stream Archive to save and share their live streams.",
-    "ogTitle": "{nickname} — Videos & Clips | Stream Archive",
-    "twitterTitle": "{nickname} — {platform} Videos & Clips",
-    "keywords": "{nickname} videos, {nickname} clips, {nickname} {platform}, watch {nickname}, {nickname} live stream, {nickname} recordings"
+    "title": "{nickname} (@{username}) — VODs, Clips & Stream History",
+    "notFoundTitle": "Creator Not Found",
+    "notFoundDescription": "We couldn't find this creator's profile.",
+    "description": "Browse {nickname}'s full {platform} stream history. Every live session is preserved automatically on Stream Archive — watch VODs and clips on your schedule.",
+    "ogTitle": "{nickname} — Stream History & VODs | Stream Archive",
+    "twitterTitle": "{nickname} — {platform} VODs & Clips",
+    "keywords": "{nickname} recordings, {nickname} download, {nickname} {platform}, {nickname} recorded streams, {nickname} past streams, {nickname} stream recorder, {nickname} VODs"
   },
-  "defaultTagline": "{nickname} saves their live streams here. Watch recordings and clips anytime.",
+  "defaultTagline": "Every time {nickname} goes live, it's saved here. Browse their full stream history anytime.",
   "about": "About {nickname}",
   "faq": "FAQ",
-  "recorded": "Recorded on {date}",
+  "recorded": "Streamed on {date}",
   "emptyState": {
-    "title": "No recordings yet",
-    "description": "This streamer hasn't been recorded yet. Check back later!"
+    "title": "Nothing here yet",
+    "description": "We haven't captured any streams from this creator yet. Check back soon!"
   },
   "jsonLd": {
-    "streamTitle": "{nickname}'s Stream - {date}"
+    "streamTitle": "{nickname}'s Live Session — {date}"
   },
   "report": "Report",
   "cta": {
-    "title": "You're only seeing a preview from @{username}",
-    "description": "@{username} shares their recordings here. Sign up to save and share your own streams.",
+    "title": "Want to see more from @{username}?",
+    "description": "Sign up for free to browse the full stream history, create clips, and never miss a live moment.",
     "button": "Create Free Account"
   }
 }

@@ -32,7 +32,7 @@
   },
 
   "mostLive": {
-    "title": "Most Active Streamers",
+    "title": "Most Active Creators",
     "username": "Username",
     "country": "Country",
     "language": "Language",
@@ -49,7 +49,7 @@
     "country": "Country",
     "diamonds": "Diamonds",
     "gifts": "Gifts",
-    "streamers": "Streamers",
+    "streamers": "Creators",
     "gifters": "Gifters",
     "empty": "No data available",
     "loadMore": "Load more"
@@ -61,7 +61,7 @@
     "language": "Language",
     "diamonds": "Diamonds",
     "gifts": "Gifts",
-    "streamers": "Streamers",
+    "streamers": "Creators",
     "gifters": "Gifters",
     "empty": "No data available",
     "loadMore": "Load more"
@@ -69,17 +69,17 @@
 
   "topGifters": {
     "title": "Top Gifters",
-    "description": "Users who have sent the most total diamonds across all streamers on TikTok.",
+    "description": "Users who have sent the most total diamonds across all creators on TikTok.",
     "username": "Username",
     "diamonds": "Diamonds",
     "gifts": "Gifts",
-    "streamers": "Streamers Supported",
+    "streamers": "Creators Supported",
     "empty": "No data available"
   },
 
   "battleStats": {
     "title": "Battle Leaderboard",
-    "description": "Streamers ranked by their battle record. Battles are live head-to-head competitions where audience gifts decide the winner.",
+    "description": "Creators ranked by their battle record. Battles are live head-to-head competitions where audience gifts decide the winner.",
     "username": "Username",
     "battles": "Battles",
     "wins": "Wins",
@@ -91,11 +91,11 @@
 
   "gifterRelationships": {
     "title": "Gifter Relationships",
-    "description": "Top gifter–streamer pairs ranked by diamonds sent. Reveals who are the most dedicated supporters of individual streamers.",
-    "pair": "Gifter → Streamer",
+    "description": "Top gifter–creator pairs ranked by diamonds sent. Reveals who are the most dedicated supporters of individual creators.",
+    "pair": "Gifter → Creator",
     "supported": "supported",
     "gifter": "Gifter",
-    "streamer": "Streamer",
+    "streamer": "Creator",
     "diamonds": "Diamonds",
     "gifts": "Gifts",
     "empty": "No data available"

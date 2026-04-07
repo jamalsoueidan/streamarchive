@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Privacy Policy",
-    "description": "Privacy Policy for StreamArchive. Learn how we collect, use, and protect your data."
+    "description": "Privacy Policy for Stream Archive. Learn how we collect, use, and protect your data."
   },
   "header": {
     "title": "Privacy Policy",
@@ -13,7 +13,7 @@
   },
   "dataController": {
     "title": "Data Controller",
-    "content": "StreamArchive is the data controller responsible for your personal data. If you have any questions about this Privacy Policy or our data practices, you can contact us at:",
+    "content": "Stream Archive is the data controller responsible for your personal data. If you have any questions about this Privacy Policy or our data practices, you can contact us at:",
     "email": "contact@streamarchive.io"
   },
   "whatWeCollect": {
@@ -26,8 +26,8 @@
       "usernameDesc": "to identify your account",
       "lastLogin": "Last login date",
       "lastLoginDesc": "for basic account management",
-      "streamers": "Streamers you follow",
-      "streamersDesc": "to show you content from streamers you are interested in"
+      "streamers": "Creators you follow",
+      "streamersDesc": "to show you content from creators you are interested in"
     },
     "footer": "That is it. Nothing else."
   },
@@ -67,7 +67,7 @@
   },
   "accessControl": {
     "title": "Access Control & Usage Tracking",
-    "content1": "To enforce viewing limits, we track the first 5 recordings viewed by public visitors (not logged in) and basic users (logged in with a free account). After reaching this limit, access is restricted and no further tracking occurs.",
+    "content1": "To enforce viewing limits, we track the first 5 VODs viewed by public visitors (not logged in) and basic users (logged in with a free account). After reaching this limit, access is restricted and no further tracking occurs.",
     "content2": "For public visitors, we use an anonymous device fingerprint stored in a cookie. For basic users viewing content from creators they do not follow, we use your account ID.",
     "content3": "Premium subscribers are never tracked. Basic users viewing content from creators they follow are also not tracked. This data is used solely to operate our freemium service and is not shared with third parties or used for advertising purposes."
   },
@@ -77,9 +77,9 @@
     "items": {
       "account": "Account data",
       "accountDesc": "Until you delete your account",
-      "freeStreams": "Recorded streams (Free plan)",
+      "freeStreams": "Saved streams (Free plan)",
       "freeStreamsDesc": "7 days",
-      "premiumStreams": "Recorded streams (Premium plan)",
+      "premiumStreams": "Saved streams (Premium plan)",
       "premiumStreamsDesc": "60 days",
       "analyticsData": "Analytics data",
       "analyticsDataDesc": "Anonymized, retained for service improvement"

@@ -4,11 +4,11 @@
   "discoverStreamers": "Find Friends",
   "emptyNewlyAdded": {
     "title": "{username} has been added!",
-    "description": "Their streams will be recorded automatically when they go live."
+    "description": "Next time they go live, the stream will be saved here automatically."
   },
-  "paused": "Recording is paused — this streamer needs a premium supporter to stay active.",
+  "paused": "This creator needs a premium supporter to keep their streams being saved.",
   "emptyDefault": {
-    "title": "No recordings yet",
-    "description": "No recordings from {username} yet. Check back later!"
+    "title": "No streams yet",
+    "description": "Nothing from {username} yet — their next live session will appear here."
   }
 }

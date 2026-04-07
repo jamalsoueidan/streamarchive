@@ -1,6 +1,6 @@
 {
   "title": "Search",
-  "description": "Add your favourite streamers to your list",
+  "description": "Find creators and start building your stream library",
   "platforms": {
     "tiktok": "TikTok",
     "twitch": "Twitch",
@@ -22,7 +22,7 @@
     "notFound": "Nothing found...",
     "autoDetected": "Platform auto-detected from URL",
     "enterUsername": "Enter a stream URL or username",
-    "selectPlatform": "Select the streaming platform",
+    "selectPlatform": "Which platform do they stream on?",
     "changeUsername": "Change username",
     "newSearch": "New Search"
   },
@@ -36,17 +36,17 @@
     "successMessage": "{username} has been added",
     "errorTitle": "Error",
     "cancel": "Cancel",
-    "willRecord": "Will be recorded when they go live",
+    "willRecord": "Their streams will be saved automatically when they go live",
     "viewPage": "View page"
   },
   "chromeExtension": "Install Chrome Extension",
   "inputLabel": "Paste a stream link from TikTok, Twitch, YouTube, Bigo, Tango, or more",
   "notFollowing": {
-    "title": "This streamer is not in your list",
-    "description": "You tried to access a streamer that's not in your list.",
-    "followToAccess": "Add them to see recordings and get notified when they go live.",
-    "notFoundTitle": "Streamer not found",
+    "title": "This creator is not in your library",
+    "description": "You tried to access a creator that's not in your library.",
+    "followToAccess": "Add them to browse their VODs and get notified when they go live.",
+    "notFoundTitle": "Creator not found",
     "notFoundDescription": "@{username} doesn't exist on {platform} or the account is private.",
-    "trySearch": "Try searching for a different streamer:"
+    "trySearch": "Try searching for a different creator:"
   }
 }

@@ -1,12 +1,12 @@
 {
   "title": "Friends",
-  "description": "Discover other streamers on the platform",
+  "description": "Discover other creators on the platform",
   "emptyFiltered": {
-    "title": "No streamers match your filters",
+    "title": "No creators match your filters",
     "description": "Try adjusting or clearing your filters"
   },
   "emptyDefault": {
-    "title": "No streamers found",
+    "title": "No creators found",
     "description": "..."
   },
   "noMoreToLoad": "You've reached the end"

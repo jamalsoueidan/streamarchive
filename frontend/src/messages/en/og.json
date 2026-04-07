@@ -1,57 +1,57 @@
 {
-  "brand": "StreamArchive",
-  "tagline": "Never miss a stream",
-  "defaultDescription": "Live streams are recorded automatically so you can watch anytime",
+  "brand": "Stream Archive",
+  "tagline": "Every stream, preserved forever",
+  "defaultDescription": "Your favorite live streams — saved automatically and ready to watch whenever you want",
   "creators": {
     "title": {
-      "all": "All Streamers",
-      "tiktok": "TikTok Streamers",
-      "twitch": "Twitch Streamers",
-      "youtube": "YouTube Streamers",
-      "kick": "Kick Streamers",
-      "pandalive": "PandaLive Streamers",
-      "afreecatv": "AfreecaTV Streamers",
-      "bigo": "Bigo Streamers",
-      "tango": "Tango Streamers"
+      "all": "All Creators",
+      "tiktok": "TikTok Creators",
+      "twitch": "Twitch Creators",
+      "youtube": "YouTube Creators",
+      "kick": "Kick Creators",
+      "pandalive": "PandaLive Creators",
+      "afreecatv": "AfreecaTV Creators",
+      "bigo": "Bigo Creators",
+      "tango": "Tango Creators"
     },
     "subtitle": {
-      "all": "Browse all streamers",
-      "tiktok": "Discover TikTok streamers",
-      "twitch": "Discover Twitch streamers",
-      "youtube": "Discover YouTube streamers",
-      "kick": "Discover Kick streamers",
-      "pandalive": "Discover PandaLive streamers",
-      "afreecatv": "Discover AfreecaTV streamers",
-      "bigo": "Discover Bigo streamers",
-      "tango": "Discover Tango streamers"
+      "all": "Explore creators across all platforms",
+      "tiktok": "Explore TikTok creators",
+      "twitch": "Explore Twitch creators",
+      "youtube": "Explore YouTube creators",
+      "kick": "Explore Kick creators",
+      "pandalive": "Explore PandaLive creators",
+      "afreecatv": "Explore AfreecaTV creators",
+      "bigo": "Explore Bigo creators",
+      "tango": "Explore Tango creators"
     }
   },
   "recordings": {
     "title": {
-      "all": "All Recordings",
-      "tiktok": "TikTok Recordings",
-      "twitch": "Twitch Recordings",
-      "youtube": "YouTube Recordings",
-      "kick": "Kick Recordings",
-      "pandalive": "PandaLive Recordings",
-      "afreecatv": "AfreecaTV Recordings",
-      "bigo": "Bigo Recordings",
-      "tango": "Tango Recordings"
+      "all": "Stream Library",
+      "tiktok": "TikTok VODs",
+      "twitch": "Twitch VODs",
+      "youtube": "YouTube VODs",
+      "kick": "Kick VODs",
+      "pandalive": "PandaLive VODs",
+      "afreecatv": "AfreecaTV VODs",
+      "bigo": "Bigo VODs",
+      "tango": "Tango VODs"
     },
     "subtitle": {
-      "all": "Watch recorded live streams",
-      "tiktok": "Watch recorded TikTok Lives",
-      "twitch": "Watch recorded Twitch streams",
-      "youtube": "Watch recorded YouTube Lives",
-      "kick": "Watch recorded Kick streams",
-      "pandalive": "Watch recorded PandaLive streams",
-      "afreecatv": "Watch recorded AfreecaTV streams",
-      "bigo": "Watch recorded Bigo streams",
-      "tango": "Watch recorded Tango streams"
+      "all": "Browse the full stream library",
+      "tiktok": "Browse saved TikTok Lives",
+      "twitch": "Browse saved Twitch VODs",
+      "youtube": "Browse saved YouTube Lives",
+      "kick": "Browse saved Kick VODs",
+      "pandalive": "Browse saved PandaLive streams",
+      "afreecatv": "Browse saved AfreecaTV streams",
+      "bigo": "Browse saved Bigo streams",
+      "tango": "Browse saved Tango streams"
     }
   },
   "home": {
     "title": "Stream Archive",
-    "subtitle": "Your favourite streams recorded automatically"
+    "subtitle": "Every stream, preserved and ready to watch"
   }
 }

@@ -1,17 +1,17 @@
 {
   "meta": {
-    "title": "{creatorName}'s Stream - {recordedDate}",
-    "description": "Watch {creatorName}'s recorded {platform} live stream from {recordedDate}. Duration: {duration}. Never miss a stream with Stream Archive.",
-    "ogTitle": "{creatorName}'s Stream - {recordedDate} | Stream Archive",
-    "keywords": "{creatorName} video, {creatorName} stream {recordedDate}, {creatorName} {platform}, {creatorName} recorded stream, watch {creatorName}"
+    "title": "{creatorName} — Live Stream VOD from {recordedDate}",
+    "description": "Watch {creatorName}'s {platform} live stream from {recordedDate}. {duration} of content preserved on Stream Archive — watch the full VOD anytime.",
+    "ogTitle": "{creatorName} — VOD from {recordedDate} | Stream Archive",
+    "keywords": "{creatorName} recorded stream, {creatorName} download, {creatorName} recording {recordedDate}, {creatorName} {platform}, {creatorName} past broadcast, watch {creatorName} live"
   },
   "jsonLd": {
-    "name": "{creatorName} Stream - {recordedDate}",
-    "description": "Recorded live stream from {creatorName} on {recordedDate}"
+    "name": "{creatorName} — Live Stream VOD ({recordedDate})",
+    "description": "Full VOD of {creatorName}'s live stream from {recordedDate}, preserved on Stream Archive"
   },
   "watch": {
-    "title": "Watch {username} video live stream - {date}"
+    "title": "Watch {username} — Live Stream from {date}"
   },
-  "backToProfile": "Back to {username} profile",
-  "otherRecordingsBy": "Other recordings by {username}"
+  "backToProfile": "Back to {username}",
+  "otherRecordingsBy": "More from {username}"
 }

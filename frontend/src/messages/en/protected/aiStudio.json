@@ -1,12 +1,12 @@
 {
   "title": "AI Studio",
-  "description": "Create clips and memes from your recordings with AI",
+  "description": "Create clips and memes from your saved streams with AI",
   "requestDetails": "Request Details",
   "createRequest": "Create Request",
-  "unknownCreator": "Unknown Streamer",
-  "unknownRecording": "Unknown Recording",
+  "unknownCreator": "Unknown Creator",
+  "unknownRecording": "Unknown VOD",
   "recordingDeleted": {
-    "badge": "Recording deleted"
+    "badge": "VOD deleted"
   },
   "viewDetails": "View Details",
   "state": {
@@ -28,7 +28,7 @@
   },
   "emptyState": {
     "title": "No AI requests yet",
-    "description": "Go to your recordings and click the AI button to create clips and memes"
+    "description": "Go to your saved streams and click the AI button to create clips and memes"
   },
   "create": {
     "selectOptions": "What would you like to create?",
@@ -74,7 +74,7 @@
   "upgrade": {
     "title": "Your AI Video Studio",
     "features": {
-      "clips": "Smart clips from long recordings — ready to share",
+      "clips": "Smart clips from long streams — ready to share",
       "memes": "AI-generated memes and photos from your videos",
       "viral": "Instant video translation in dozens of languages"
     },

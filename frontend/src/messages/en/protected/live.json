@@ -1,12 +1,12 @@
 {
   "title": "Live Now",
-  "subtitle": "Streams currently being recorded",
+  "subtitle": "Streams currently being saved",
   "streamingCount": "{count, plural, one {# streaming} other {# streaming}}",
   "refresh": "Refresh",
   "showAll": "Show all",
   "discoverStreamers": "Find Friends",
   "emptyState": {
     "title": "No live streams right now",
-    "description": "When your streamers go live, their streams will appear here"
+    "description": "When your creators go live, their streams will appear here"
   }
 }

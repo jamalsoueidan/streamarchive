@@ -1,13 +1,13 @@
 {
   "meta": {
     "defaultTitle": "Short clips",
-    "defaultDescription": "Watch short clips from your favorite streamers",
+    "defaultDescription": "Watch short clips from your favorite creators",
     "title": "{title} - {creatorName} | Short clips",
     "description": "Watch this {duration} short clip by {creatorName} on {platform}",
-    "keywords": "{creatorName}, shorts, clips, {platform}, live stream"
+    "keywords": "{creatorName}, shorts, clips, {platform}, live stream, recorded stream, stream recorder, download"
   },
   "jsonLd": {
     "name": "{creatorName} short clip - {createdDate}",
-    "description": "Short clip by {creatorName} recorded on {createdDate}"
+    "description": "Short clip by {creatorName} from {createdDate}"
   }
 }

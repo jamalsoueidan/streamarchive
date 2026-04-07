@@ -1,13 +1,13 @@
 {
   "title": "Dashboard",
-  "heroTitle": "Stream Recorder",
-  "heroSubtitle": "Save Your Favourite Streams",
-  "heroDescription": "Live streams from TikTok, Tango, Bigo, Twitch, and YouTube are recorded and saved automatically — ready to download and rewatch anytime.",
-  "searchPlaceholder": "Search streamers or recordings...",
+  "heroTitle": "Stream Archive",
+  "heroSubtitle": "Every Stream, Preserved",
+  "heroDescription": "Your favorite creators on TikTok, Tango, Bigo, Twitch, and YouTube — every live session is captured and waiting for you.",
+  "searchPlaceholder": "Search creators or VODs...",
   "searchButton": "Search",
-  "noRecordings": "No recordings available",
+  "noRecordings": "Nothing here yet",
   "browseAll": "Browse all",
-  "newCreators": "New Streamers",
+  "newCreators": "New Creators",
   "myFeed": "My Feed",
   "discoverSection": "Discover"
 }

@@ -1,200 +1,192 @@
 {
   "meta": {
     "all": {
-      "title": "Streamers on StreamArchive",
-      "description": "Browse streamers on StreamArchive. Add your favourites and their live streams are recorded automatically. Watch TikTok, Twitch, YouTube, Bigo, Tango, and Kick recordings anytime.",
+      "title": "Creators on Stream Archive — Record & Download Live Streams",
+      "description": "Browse creators on Stream Archive. Add your favourites and their live streams are recorded automatically. Record and download TikTok, Twitch, YouTube, Bigo, Tango, Kick, and more.",
       "keywords": [
-        "stream recorder",
-        "live stream archive",
-        "save live streams",
+        "live stream recorder",
         "record live streams",
-        "stream archiving",
-        "VOD downloader"
+        "download live streams",
+        "stream recorder",
+        "tiktok live recorder",
+        "twitch stream recorder",
+        "live stream recordings",
+        "live stream download"
       ]
     },
     "tiktok": {
-      "title": "TikTok Streamers",
-      "description": "Browse TikTok streamers on StreamArchive. Add your favourites and their TikTok Lives are recorded automatically. Watch TikTok live recordings anytime — no screen recorder needed.",
+      "title": "TikTok Creators — Record & Download TikTok Lives",
+      "description": "Browse TikTok creators on Stream Archive. Add your favourites and their TikTok Lives are recorded automatically. TikTok live recorder — download TikTok live recordings without screen capture.",
       "keywords": [
         "tiktok live recorder",
-        "save tiktok live",
+        "download tiktok live",
+        "save tiktok live stream",
+        "tiktok live recordings",
         "record tiktok live",
-        "tiktok live recording",
         "tiktok stream recorder",
-        "tiktok live saver",
-        "watch tiktok live later",
+        "tiktok live download",
+        "tiktok live record",
         "tiktok live replay",
-        "tiktok live archive",
-        "save tiktok streams",
-        "tiktok VOD",
-        "tiktok live download"
+        "tiktok VOD download"
       ],
       "faqs": [
         {
-          "question": "How do I save TikTok Lives on StreamArchive?",
-          "answer": "Sign up free, add the TikTok username of any streamer you want to follow, and their TikTok Lives are recorded automatically every time they go live. No screen recorder needed — everything is saved in the cloud."
+          "question": "How do I start recording TikTok Lives on Stream Archive?",
+          "answer": "Sign up for a free account and add the TikTok username of any creator you want to follow. From that moment, every TikTok Live they broadcast is recorded automatically by the cloud-based TikTok live recorder. No screen capture app needed and no device left running."
         },
         {
-          "question": "Can I watch TikTok Lives I missed?",
-          "answer": "Yes. Once you add a TikTok streamer, all their Lives are recorded and saved to your account. You can rewatch any TikTok Live recording anytime through the built-in player."
+          "question": "Can I rewatch TikTok Lives that already ended?",
+          "answer": "Yes. Once a TikTok creator is added to your account, all their Lives are recorded and stored in your library. You can rewatch any TikTok live recording at any time, even months after the original broadcast ended."
         },
         {
-          "question": "Do I need a TikTok screen recorder?",
-          "answer": "No. Stream Archive is a cloud-based TikTok live recorder. There's no app to install, no phone left running, and no black screen issues. TikTok Lives are captured server-side in high quality."
+          "question": "Do I need a screen capture tool for TikTok?",
+          "answer": "No. Screen capture apps for TikTok are unreliable and produce low quality footage. Stream Archive records TikTok Lives server-side in the cloud, which gives you high quality recordings with no app to install and no black screen issues."
         },
         {
-          "question": "Can I download TikTok live recordings?",
-          "answer": "Yes. Premium users can download any TikTok live recording as a video file for offline viewing."
+          "question": "Can I download TikTok live recordings from Stream Archive?",
+          "answer": "Yes. Premium members can download any TikTok live recording as a full video file with no watermark. Free users can stream all recordings through the built-in browser player."
         },
         {
-          "question": "Is Stream Archive free for saving TikTok Lives?",
-          "answer": "Yes. You can sign up free and start saving TikTok Lives from your favourite streamers. Premium plans unlock downloading recordings and extended storage."
-        },
-        {
-          "question": "How many TikTok streamers can I add?",
-          "answer": "Free users can add up to 3 streamers. Premium users can add up to 100 streamers across all platforms."
+          "question": "How many TikTok creators can I follow?",
+          "answer": "Free users can add up to 3 creators. Premium users can follow up to 100 creators across all supported platforms, so you can record TikTok Lives alongside streams from other platforms in one library."
         }
       ]
     },
     "twitch": {
-      "title": "Twitch Streamers",
-      "description": "Browse Twitch streamers on StreamArchive. Add your favourites and their streams are recorded automatically. Save Twitch VODs, download recordings, and never miss a stream.",
+      "title": "Twitch Creators — Record Twitch Streams & Download VODs",
+      "description": "Browse Twitch creators on Stream Archive. Add your favourites and their streams are recorded automatically. Twitch stream recorder and Twitch VOD downloader — recordings that never expire.",
       "keywords": [
         "twitch stream recorder",
-        "twitch VOD downloader",
+        "twitch vod download",
+        "twitch vod downloader",
+        "download twitch vod",
+        "record twitch stream",
+        "twitch stream recordings",
+        "twitch live recorder",
+        "download twitch streams",
         "save twitch streams",
-        "record twitch streams",
-        "twitch VOD save",
-        "twitch live recording",
-        "twitch archive",
-        "twitch stream saver",
-        "download twitch VODs",
-        "twitch VOD archive",
-        "watch twitch streams later"
+        "twitch stream download"
       ],
       "faqs": [
         {
-          "question": "How do I save Twitch streams on StreamArchive?",
-          "answer": "Sign up free, add the Twitch username of any streamer you want to follow, and their streams are recorded automatically every time they go live. No software needed — recordings are saved in the cloud."
+          "question": "How do I record Twitch streams on Stream Archive?",
+          "answer": "Sign up for a free account and add any Twitch username. Every time that streamer goes live, the cloud-based Twitch stream recorder captures the full broadcast. No OBS, no desktop app, no browser running in the background."
         },
         {
-          "question": "Can I watch Twitch streams I missed?",
-          "answer": "Yes. Once you add a Twitch streamer, all their streams are recorded and saved. You can rewatch any Twitch recording anytime — unlike Twitch VODs, these recordings never expire."
+          "question": "Do Twitch VODs expire on Stream Archive?",
+          "answer": "No. Twitch deletes its own VODs after 14 to 60 days, but recordings on Stream Archive are kept permanently. You can watch or download Twitch VODs from your library no matter how old they are."
         },
         {
-          "question": "How is this different from Twitch VODs?",
-          "answer": "Twitch VODs expire after 14–60 days and can get muted or deleted. Stream Archive saves Twitch streams permanently — recordings never expire, stay in full quality, and are always available to watch or download."
+          "question": "Can I use Stream Archive as a Twitch VOD downloader?",
+          "answer": "Yes. Premium members can download any Twitch stream recording as a video file with a single click. It works as a built-in Twitch VOD downloader without the need for third-party tools that constantly break."
         },
         {
-          "question": "Can I download Twitch stream recordings?",
-          "answer": "Yes. Premium users can download any Twitch stream recording as a video file for offline viewing. A Twitch VOD downloader built into your account."
+          "question": "Can I record streams from any Twitch category?",
+          "answer": "Yes. Gaming, Just Chatting, IRL, music, creative content, and every other Twitch category is recorded automatically. The Twitch stream recorder does not filter by content type."
         },
         {
-          "question": "Is Stream Archive free for saving Twitch streams?",
-          "answer": "Yes. You can sign up free and start saving Twitch streams from your favourite streamers. Premium plans unlock downloading recordings and extended storage."
-        },
-        {
-          "question": "Does it record all types of Twitch streams?",
-          "answer": "Yes. Gaming, IRL streams, Just Chatting, or any other category — every Twitch stream is recorded automatically regardless of content type."
+          "question": "Is it free to record Twitch streams?",
+          "answer": "Yes. Create a free account and start recording Twitch streams immediately. Premium plans unlock the ability to download Twitch VODs as video files and provide extended storage for your library."
         }
       ]
     },
     "youtube": {
-      "title": "YouTube Streamers",
-      "description": "Browse YouTube streamers on StreamArchive. Add your favourites and their YouTube Lives are recorded automatically. Watch YouTube live recordings anytime — save streams that replays miss.",
+      "title": "YouTube Creators — Record & Download YouTube Live Streams",
+      "description": "Browse YouTube creators on Stream Archive. Add your favourite channels and their YouTube Lives are recorded automatically. YouTube live recorder — download live stream recordings even when replays fail.",
       "keywords": [
         "youtube live recorder",
-        "save youtube live",
-        "record youtube live stream",
-        "youtube live recording",
+        "download youtube live stream",
+        "record youtube live",
+        "youtube live recordings",
         "youtube stream recorder",
-        "youtube live saver",
-        "watch youtube live later",
+        "youtube live download",
         "youtube live replay",
-        "youtube live archive",
-        "youtube live download"
+        "youtube live record",
+        "download youtube live"
       ],
       "faqs": [
         {
-          "question": "How do I save YouTube Lives on StreamArchive?",
-          "answer": "Sign up free, add the YouTube channel of any streamer you want to follow, and their Lives are recorded automatically every time they go live. No software needed."
+          "question": "How do I record YouTube live streams?",
+          "answer": "Add any YouTube channel on Stream Archive and every live broadcast is recorded automatically in the cloud. The YouTube live recorder runs around the clock, so you do not need to be online when the stream happens. Recordings appear in your library as soon as the broadcast ends."
         },
         {
-          "question": "Can I watch YouTube Lives I missed?",
-          "answer": "Yes. Once you add a YouTube streamer, all their Lives are recorded and saved. You can rewatch any YouTube live recording anytime — even if the original replay was deleted or failed to process."
-        },
-        {
-          "question": "How is this different from YouTube replays?",
-          "answer": "YouTube replays can fail to process, get deleted, or go private. Stream Archive saves YouTube Lives as an independent backup — recordings are always available regardless of what happens to the original."
+          "question": "Why use Stream Archive instead of YouTube replays?",
+          "answer": "YouTube replays frequently fail to process, get deleted by creators, or go private without notice. Stream Archive records YouTube live streams independently, so your recordings exist regardless of what happens on YouTube. Think of it as a reliable backup you can always download."
         },
         {
           "question": "Can I download YouTube live recordings?",
-          "answer": "Yes. Premium users can download any YouTube live recording as a video file for offline viewing."
+          "answer": "Yes. Premium members can download any YouTube live recording as a video file for offline viewing. Free users can stream all recordings through the browser player."
         },
         {
-          "question": "Is Stream Archive free for saving YouTube Lives?",
-          "answer": "Yes. You can sign up free and start saving YouTube Lives from your favourite channels. Premium plans unlock downloading recordings and extended storage."
+          "question": "Is it free to start recording YouTube Lives?",
+          "answer": "Yes. Sign up free and add your favourite YouTube channels. Every live broadcast is recorded automatically and available to watch in your library. Upgrade to premium when you want to download YouTube live stream recordings."
         }
       ]
     },
     "kick": {
-      "title": "Kick Streamers",
-      "description": "Browse Kick streamers on StreamArchive. Add your favourites and their Kick streams are recorded automatically. Save Kick VODs and watch recordings anytime.",
+      "title": "Kick Creators — Record & Download Kick Streams",
+      "description": "Browse Kick creators on Stream Archive. Add your favourites and their Kick streams are recorded automatically. Kick stream recorder — capture and download every broadcast.",
       "keywords": [
         "kick stream recorder",
-        "save kick streams",
-        "kick VOD downloader",
-        "kick live recording",
-        "kick stream saver",
-        "record kick streams"
+        "kick live stream record",
+        "record kick stream",
+        "download kick stream",
+        "kick stream recordings",
+        "kick live recorder",
+        "kick stream download"
       ]
     },
     "pandalive": {
-      "title": "Pandalive Streamers",
-      "description": "Browse Pandalive streamers on StreamArchive. Add your favourites and their streams are recorded automatically. Save Korean live stream recordings.",
+      "title": "Pandalive Creators — Record & Download Pandalive Streams",
+      "description": "Browse Pandalive creators on Stream Archive. Add your favourites and their streams are recorded automatically. Pandalive recorder — capture and download Korean live streams.",
       "keywords": [
         "pandalive recorder",
-        "save pandalive streams",
-        "korean live stream recorder",
-        "pandalive recording",
-        "korean stream archive"
+        "record pandalive stream",
+        "download pandalive",
+        "pandalive recordings",
+        "pandalive stream recorder",
+        "korean live stream recorder"
       ]
     },
     "afreecatv": {
-      "title": "AfreecaTV Streamers",
-      "description": "Browse AfreecaTV streamers on StreamArchive. Add your favourites and their streams are recorded automatically. Save Korean live stream recordings.",
+      "title": "AfreecaTV Creators — Record & Download AfreecaTV Streams",
+      "description": "Browse AfreecaTV creators on Stream Archive. Add your favourites and their streams are recorded automatically. AfreecaTV recorder — capture and download Korean live streams.",
       "keywords": [
         "afreecatv recorder",
-        "save afreecatv streams",
-        "korean live stream recorder",
-        "afreecatv recording",
+        "download afreecatv stream",
+        "record afreecatv",
+        "afreecatv recordings",
         "SOOP recorder",
-        "korean stream archive"
+        "korean stream recorder",
+        "afreecatv stream recorder"
       ]
     },
     "bigo": {
-      "title": "Bigo Streamers",
-      "description": "Browse Bigo streamers on StreamArchive. Add your favourites and their Bigo Lives are recorded automatically — no black screen, no screen recorder needed.",
+      "title": "Bigo Creators — Record & Download Bigo Lives",
+      "description": "Browse Bigo creators on Stream Archive. Add your favourites and their Bigo Lives are recorded automatically. Bigo live recorder — no screen capture, no black screen. Download Bigo live recordings anytime.",
       "keywords": [
+        "recorder bigo live",
+        "bigo live record",
+        "download bigo live",
         "bigo live recorder",
-        "save bigo live",
         "record bigo live",
-        "bigo live recording",
+        "bigo live recordings",
         "bigo stream recorder",
-        "bigo live screen recorder",
-        "bigo black screen recording",
-        "bigo live saver"
+        "bigo black screen",
+        "bigo live download"
       ]
     },
     "tango": {
-      "title": "Tango Streamers",
-      "description": "Browse Tango streamers on StreamArchive. Add your favourites and their Tango streams are recorded automatically. Watch Tango live recordings anytime.",
+      "title": "Tango Creators — Record & Download Tango Streams",
+      "description": "Browse Tango creators on Stream Archive. Add your favourites and their Tango streams are recorded automatically. Tango live recorder — download Tango live recordings anytime.",
       "keywords": [
-        "tango recorder",
-        "save tango live",
-        "tango live recording",
+        "tango live recorder",
+        "download tango live",
+        "save tango stream",
+        "record tango live",
+        "tango live recordings",
         "tango stream recorder",
-        "tango live saver"
+        "tango live download"
       ]
     }
   },
@@ -211,47 +203,47 @@
       "tango": "Tango Creators"
     },
     "subtitle": {
-      "all": "Browse streamers and add your favourites. Their live streams are recorded automatically so you never miss a moment.",
-      "tiktok": "Browse TikTok streamers and add your favourites. Their Lives are recorded automatically so you never miss a moment.",
-      "twitch": "Browse Twitch streamers and add your favourites. Their streams are recorded automatically so you never miss a moment.",
-      "youtube": "Browse YouTube streamers and add your favourites. Their Lives are recorded automatically so you never miss a moment.",
-      "kick": "Browse Kick streamers and add your favourites. Their streams are recorded automatically so you never miss a moment.",
-      "pandalive": "Browse Pandalive streamers and add your favourites. Their streams are recorded automatically so you never miss a moment.",
-      "afreecatv": "Browse AfreecaTV streamers and add your favourites. Their streams are recorded automatically so you never miss a moment.",
-      "bigo": "Browse Bigo streamers and add your favourites. Their streams are recorded automatically so you never miss a moment.",
-      "tango": "Browse Tango streamers and add your favourites. Their streams are recorded automatically so you never miss a moment."
+      "all": "Browse creators and add your favourites. Their live streams are captured and preserved automatically.",
+      "tiktok": "Browse TikTok creators and add your favourites. Their Lives are captured and saved to your library automatically.",
+      "twitch": "Browse Twitch creators and add your favourites. Their streams are preserved in your library automatically.",
+      "youtube": "Browse YouTube creators and add your favourites. Their Lives are captured and saved to your library automatically.",
+      "kick": "Browse Kick creators and add your favourites. Their streams are preserved in your library automatically.",
+      "pandalive": "Browse Pandalive creators and add your favourites. Their streams are captured and saved to your library automatically.",
+      "afreecatv": "Browse AfreecaTV creators and add your favourites. Their streams are preserved in your library automatically.",
+      "bigo": "Browse Bigo creators and add your favourites. Their Lives are captured and saved to your library automatically.",
+      "tango": "Browse Tango creators and add your favourites. Their streams are preserved in your library automatically."
     }
   },
   "features": {
     "badge": "How It Works",
     "title": {
-      "all": "Save Your Favourite Streams Automatically",
-      "tiktok": "Save Your Favourite TikTok Lives",
-      "twitch": "Save Your Favourite Twitch Streams",
-      "youtube": "Save Your Favourite YouTube Lives",
-      "kick": "Save Your Favourite Kick Streams",
+      "all": "Capture Your Favourite Streams Automatically",
+      "tiktok": "Capture Your Favourite TikTok Lives",
+      "twitch": "Preserve Your Favourite Twitch Streams",
+      "youtube": "Capture Your Favourite YouTube Lives",
+      "kick": "Preserve Your Favourite Kick Streams",
       "pandalive": "Save Your Favourite Pandalive Streams",
-      "afreecatv": "Save Your Favourite AfreecaTV Streams",
-      "bigo": "Save Your Favourite Bigo Streams",
-      "tango": "Save Your Favourite Tango Streams"
+      "afreecatv": "Capture Your Favourite AfreecaTV Streams",
+      "bigo": "Save Your Favourite Bigo Lives",
+      "tango": "Capture Your Favourite Tango Streams"
     },
     "subtitle": "Never miss a live stream again",
     "items": {
       "add": {
-        "title": "Add Your Favourite Streamer",
-        "description": "Paste the URL of any streamer you follow. Their live streams are recorded automatically every time they go live."
+        "title": "Add Your Favourite Creator",
+        "description": "Paste the URL of any creator you follow. Their live streams are captured automatically every time they go live."
       },
       "watch": {
         "title": "Rewatch Anytime",
-        "description": "Every live stream is saved and ready to watch. Catch up on streams you missed, on your own schedule."
+        "description": "Every live stream is preserved and ready to watch. Catch up on streams you missed, on your own schedule."
       },
       "clip": {
-        "title": "Download Recordings",
-        "description": "Download any recording to watch offline. Keep your favourite moments forever."
+        "title": "Download VODs",
+        "description": "Download any VOD to watch offline. Keep your favourite moments in your library forever."
       },
       "edit": {
         "title": "Build Your Library",
-        "description": "All your favourite streamers in one place. Browse recordings, discover new content, and never lose a stream."
+        "description": "All your favourite creators in one place. Browse VODs, discover new content, and never lose a stream."
       }
     }
   },
@@ -268,52 +260,52 @@
       "tango": "Never Miss a Tango Stream"
     },
     "subtitle": {
-      "all": "Add your favourite streamers and their live streams are saved automatically. Rewatch or download anytime.",
-      "tiktok": "Add your favourite TikTok streamers and their Lives are saved automatically. Rewatch or download anytime.",
-      "twitch": "Add your favourite Twitch streamers and their streams are saved automatically. Rewatch or download anytime.",
-      "youtube": "Add your favourite YouTube streamers and their Lives are saved automatically. Rewatch or download anytime.",
-      "kick": "Add your favourite Kick streamers and their streams are saved automatically. Rewatch or download anytime.",
-      "afreecatv": "Add your favourite AfreecaTV streamers and their streams are saved automatically. Rewatch or download anytime.",
-      "pandalive": "Add your favourite Pandalive streamers and their streams are saved automatically. Rewatch or download anytime.",
-      "bigo": "Add your favourite Bigo streamers and their streams are saved automatically. Rewatch or download anytime.",
-      "tango": "Add your favourite Tango streamers and their streams are saved automatically. Rewatch or download anytime."
+      "all": "Add your favourite creators and their live streams are captured automatically. Rewatch or download from your library anytime.",
+      "tiktok": "Add your favourite TikTok creators and their Lives are preserved automatically. Rewatch or download from your library anytime.",
+      "twitch": "Add your favourite Twitch creators and their streams are saved automatically. Rewatch or download from your library anytime.",
+      "youtube": "Add your favourite YouTube creators and their Lives are captured automatically. Rewatch or download from your library anytime.",
+      "kick": "Add your favourite Kick creators and their streams are preserved automatically. Rewatch or download from your library anytime.",
+      "afreecatv": "Add your favourite AfreecaTV creators and their streams are captured automatically. Rewatch or download from your library anytime.",
+      "pandalive": "Add your favourite Pandalive creators and their streams are saved automatically. Rewatch or download from your library anytime.",
+      "bigo": "Add your favourite Bigo creators and their Lives are preserved automatically. Rewatch or download from your library anytime.",
+      "tango": "Add your favourite Tango creators and their streams are saved automatically. Rewatch or download from your library anytime."
     },
-    "button": "Start Recording Free"
+    "button": "Start Saving Free"
   },
   "empty": {
     "title": "No Creators Yet",
     "description": {
-      "all": "No streamers added yet. Add your first favourite streamer!",
-      "tiktok": "No TikTok streamers added yet. Add your first favourite!",
-      "twitch": "No Twitch streamers added yet. Add your first favourite!",
-      "youtube": "No YouTube streamers added yet. Add your first favourite!",
-      "kick": "No Kick streamers added yet. Add your first favourite!",
-      "pandalive": "No Pandalive streamers added yet. Add your first favourite!",
-      "afreecatv": "No AfreecaTV streamers added yet. Add your first favourite!",
-      "bigo": "No Bigo streamers added yet. Add your first favourite!",
-      "tango": "No Tango streamers added yet. Add your first favourite!"
+      "all": "No creators added yet. Add your first favourite creator to start building your library!",
+      "tiktok": "No TikTok creators added yet. Add your first favourite to start capturing their Lives!",
+      "twitch": "No Twitch creators added yet. Add your first favourite to start preserving their streams!",
+      "youtube": "No YouTube creators added yet. Add your first favourite to start saving their Lives!",
+      "kick": "No Kick creators added yet. Add your first favourite to start capturing their streams!",
+      "pandalive": "No Pandalive creators added yet. Add your first favourite to start saving their streams!",
+      "afreecatv": "No AfreecaTV creators added yet. Add your first favourite to start capturing their streams!",
+      "bigo": "No Bigo creators added yet. Add your first favourite to start preserving their Lives!",
+      "tango": "No Tango creators added yet. Add your first favourite to start saving their streams!"
     },
     "button": "Get Started"
   },
   "about": {
-    "all": "## Save Your Favourite Live Streams\n\nLive streams disappear when they end. Stream Archive is a cloud-based stream recorder that automatically saves live broadcasts from your favourite streamers — so you can rewatch and download them anytime.\n\n### Automatic Stream Recording\n\nAdd your favourite streamers and their live streams are recorded automatically. No screen recorder needed, no software to install. Cloud recording runs 24/7 — streams are captured even when you're not watching.\n\n### Rewatch and Download\n\nEvery recording is available instantly through the built-in player. Premium users can download recordings as video files for offline viewing.\n\n### Multi-Platform Stream Recorder\n\nRecord live streams from TikTok, Twitch, YouTube, Kick, Bigo, Tango, AfreecaTV, and Pandalive — all saved in one place. The easiest way to archive your favourite streams across every platform.\n\n### No Screen Recorder Needed\n\nUnlike screen recording apps that require your device to stay on, Stream Archive records in the cloud. No dropped frames, no black screen issues, no storage filling up on your phone or computer.\n\n### Free to Get Started\n\nCreate an account and start saving your favourite live streams today. Upgrade to premium to download recordings and unlock extended storage.",
-    "tiktok": "## Save TikTok Live Streams\n\nTikTok Lives disappear the moment they end — there's no built-in way to save or rewatch them. Stream Archive is a TikTok live recorder that automatically saves TikTok Lives from your favourite streamers so you can rewatch them anytime.\n\n### TikTok Live Recording — Automatic & Cloud-Based\n\nAdd any TikTok streamer and their Lives are recorded automatically in the cloud. No TikTok screen recorder needed, no phone left running overnight. Every TikTok Live is captured in high quality and saved to your account.\n\n### Rewatch TikTok Lives Anytime\n\nMissed a TikTok Live? No problem. Browse all saved TikTok live recordings, watch them instantly in your browser, or download them for offline viewing. Never miss your favourite TikTok streamer again.\n\n### TikTok Live Recorder — No Screen Recording Required\n\nForget unreliable TikTok screen recording apps that cause black screens or low quality captures. Stream Archive records TikTok Lives server-side — no app to install, no storage issues, no screen recorder for TikTok needed.\n\n### Browse TikTok Streamers\n\nDiscover popular TikTok streamers on Stream Archive. Browse their recorded Lives, catch up on streams you missed, and find new TikTok content worth watching.\n\n### Free TikTok Live Recorder\n\nSign up free and start saving TikTok Lives from your favourite streamers today. Upgrade to premium for downloading TikTok recordings and extended storage.",
-    "twitch": "## Save Twitch Streams & VODs\n\nTwitch VODs expire after 14–60 days and highlights get buried in hours of footage. Stream Archive is a Twitch stream recorder that automatically saves live streams from your favourite Twitch streamers — a permanent VOD archive that never expires.\n\n### Twitch VOD Downloader & Stream Recorder\n\nAdd your favourite Twitch streamers and their live streams are recorded automatically. Every Twitch stream is saved to the cloud in high quality — no Twitch VOD expiry, no deleted archives. Your favourite Twitch content is preserved permanently.\n\n### Rewatch Twitch Streams Anytime\n\nMissed a Twitch stream? Browse all saved Twitch recordings, watch them instantly — no ads, no interruptions. Premium users can download Twitch VODs as video files for offline viewing.\n\n### Twitch Stream Recorder — No Screen Capture Needed\n\nForget running screen capture software or desktop recording tools. Stream Archive is a cloud-based Twitch recorder that captures streams server-side. No extra CPU load, no Bandicam, no OBS recording. Twitch streams are saved automatically in high quality.\n\n### Browse Top Twitch Streamers\n\nDiscover popular Twitch streamers on Stream Archive. Browse their recorded streams across gaming, IRL, and every category. Catch up on streams you missed and find new Twitch streamers to follow.\n\n### Free Twitch Stream Recorder\n\nSign up free and start saving Twitch streams from your favourite streamers today. Upgrade to premium for downloading Twitch recordings and extended VOD storage.",
-    "youtube": "## Save YouTube Live Streams\n\nYouTube live stream replays can disappear — streams fail to process, get deleted, or channels go private. Stream Archive is a YouTube live recorder that automatically saves live streams from your favourite YouTube channels so you can rewatch them anytime.\n\n### YouTube Live Recording — Automatic & Cloud-Based\n\nAdd your favourite YouTube channels and their live streams are recorded automatically. Every YouTube Live is captured in high quality and saved to your account — even if the original replay gets deleted or fails to process.\n\n### Rewatch YouTube Lives Anytime\n\nMissed a YouTube Live? Browse all saved YouTube live recordings, watch them instantly in your browser, or download them for offline viewing. A reliable backup of every live stream.\n\n### YouTube Live Recorder — No Screen Recording Needed\n\nForget traditional screen recording software for YouTube. Stream Archive is an online YouTube recorder that captures live streams server-side. No desktop app, no browser extension, no computer left running overnight.\n\n### Browse YouTube Streamers\n\nDiscover popular YouTube streamers on Stream Archive. Browse their recorded Lives, catch up on streams you missed, and find new YouTube channels worth subscribing to.\n\n### Free YouTube Live Recorder\n\nSign up free and start saving YouTube Lives from your favourite channels today. Upgrade to premium for downloading YouTube recordings and extended storage.",
-    "kick": "## Save Kick Streams\n\nKick is growing fast and the best streams deserve to be saved. Stream Archive is a Kick stream recorder that automatically saves live streams from your favourite Kick streamers.\n\n### Automatic Kick Stream Recording\n\nAdd your favourite Kick streamers and their streams are recorded automatically in the cloud. No software to install, no screen recorder needed. Every Kick broadcast is captured and saved.\n\n### Rewatch & Download Kick VODs\n\nEvery Kick recording is available to watch instantly. Premium users can download Kick VODs as video files for offline viewing.\n\n### Browse Kick Streamers\n\nDiscover Kick streamers on Stream Archive, watch their recorded streams, and find new channels to follow.\n\n### Free to Start\n\nCreate an account and start saving Kick streams from your favourite streamers today.",
-    "pandalive": "## Save Pandalive Streams\n\nStream Archive is a Pandalive recorder that automatically saves live streams from your favourite Pandalive streamers. Watch Korean live stream recordings anytime.\n\n### Automatic Pandalive Recording\n\nAdd your favourite Pandalive streamers and their broadcasts are recorded automatically. Cloud-based recording — no software needed.\n\n### Rewatch & Download\n\nEvery Pandalive recording is available to watch instantly. Premium users can download recordings for offline viewing.\n\n### Free to Start\n\nCreate an account and start saving Pandalive streams today.",
-    "afreecatv": "## Save AfreecaTV Streams\n\nStream Archive is an AfreecaTV recorder that automatically saves live streams from your favourite AfreecaTV streamers. Watch Korean live stream recordings anytime.\n\n### Automatic AfreecaTV Recording\n\nAdd your favourite AfreecaTV streamers and their broadcasts are recorded automatically. Cloud-based recording — no software needed.\n\n### Rewatch & Download\n\nEvery AfreecaTV recording is available to watch instantly. Premium users can download recordings for offline viewing.\n\n### Free to Start\n\nCreate an account and start saving AfreecaTV streams today.",
-    "bigo": "## Save Bigo Live Streams\n\nBigo Lives disappear when they end, and screen recording apps often cause black screen issues. Stream Archive is a Bigo Live recorder that automatically saves streams from your favourite Bigo streamers — no black screen, no screen recorder needed.\n\n### Bigo Live Recorder — No Black Screen\n\nAdd your favourite Bigo streamers and their Lives are recorded automatically in the cloud. No Bigo Live screen recorder APK needed, no black screen issues. Streams are captured server-side in high quality.\n\n### Rewatch & Download Bigo Recordings\n\nEvery Bigo Live recording is available to watch instantly. Premium users can download recordings as video files for offline viewing.\n\n### Browse Bigo Streamers\n\nDiscover Bigo streamers on Stream Archive, watch their recorded Lives, and find new streamers to follow.\n\n### Free Bigo Live Recorder\n\nCreate an account and start saving Bigo Lives from your favourite streamers today. No app to install, no black screen — just automatic cloud recording.",
-    "tango": "## Save Tango Live Streams\n\nStream Archive is a Tango recorder that automatically saves live streams from your favourite Tango streamers. Never miss a Tango broadcast again.\n\n### Automatic Tango Recording\n\nAdd your favourite Tango streamers and their live streams are recorded automatically. Cloud-based recording — no software needed, no screen recorder required.\n\n### Rewatch & Download\n\nEvery Tango recording is available to watch instantly. Premium users can download recordings for offline viewing.\n\n### Free to Start\n\nCreate an account and start saving Tango streams today."
+    "all": "## Your Favourite Creators, All in One Library\n\nLive streaming is scattered across dozens of platforms, and keeping up with every creator you follow is a full-time job. Different time zones, overlapping schedules, and streams that vanish the moment they end all work against you. Stream Archive brings everything together. Add your favourite creators from any supported platform and their live streams are recorded automatically in the cloud. No more missed broadcasts, no more expired VODs, no more scrambling to find a replay.\n\n### Add a Creator, Start Recording\n\nPaste any creator's profile URL and Stream Archive begins monitoring for live broadcasts. When they go live on TikTok, Twitch, YouTube, Bigo, Tango, Kick, AfreecaTV, or Pandalive, recording starts immediately. The entire process is automatic — you do not need to be online, and there is no software to run on your end.\n\n### Your Library Grows While You Sleep\n\nEvery recorded broadcast is stored in your personal library. Watch recordings instantly through the built-in player or download them as video files with a premium account. Your library is searchable and organized by creator, platform, and date.\n\n### One Place for Every Platform\n\nInstead of managing separate tools for each streaming platform, Stream Archive handles TikTok live recording, Twitch stream recording, YouTube live recording, Bigo live recording, Tango stream recording, and more from a single dashboard. Add creators from any platform and everything ends up in the same library.\n\n### No Screen Capture, No Extra Software\n\nStream Archive records streams in the cloud. There is no app to install, no screen capture software, no browser extension, and no device that needs to stay on. Recording happens server-side in high quality, regardless of your internet connection or device.\n\n### Free to Get Started\n\nCreate an account and start following your favourite creators today. Recordings begin automatically the next time they go live.",
+    "tiktok": "## TikTok Creators on Stream Archive\n\nTikTok has become one of the biggest live streaming platforms in the world, but it treats live content as completely disposable. When a TikTok Live ends, it is gone. There is no replay feature, no archive, no way to go back. For fans who follow creators across different time zones or who simply cannot watch every broadcast in real time, this means constantly missing content from people they care about.\n\nStream Archive changes that equation. It works as a TikTok live recorder that monitors your followed creators around the clock. The moment someone starts a TikTok Live, recording begins automatically in the cloud. When the broadcast ends, the full recording is stored in your library where you can watch it at your own pace or download it to keep.\n\n### Why TikTok Lives Need to Be Recorded\n\nUnlike YouTube or Twitch, TikTok offers zero replay functionality for live content. Creators cannot save their own Lives, and viewers cannot go back to watch something they missed. This makes TikTok Lives some of the most ephemeral content on the internet. A dedicated TikTok live recorder is the only way to preserve broadcasts that would otherwise disappear permanently.\n\n### Discover and Follow TikTok Creators\n\nBrowse TikTok creators already being recorded on Stream Archive. See their recent Live recordings, check how often they stream, and add them to your follow list with one click. You can also add any TikTok creator by pasting their username, even if nobody else follows them on Stream Archive yet.\n\n### No Phone Needed, No Screen Capture\n\nTraditional methods of saving TikTok Lives involve screen recording on your phone, which drains battery, uses storage, produces low quality footage, and fails if you get a phone call. Stream Archive records TikTok Lives server-side, so you get high quality recordings without touching your phone.\n\n### Free to Start\n\nSign up free, add your favourite TikTok creators, and their Lives are recorded automatically from that point on. Premium plans unlock the ability to download TikTok live recordings and provide extended storage.",
+    "twitch": "## Twitch Creators on Stream Archive\n\nTwitch is the go-to platform for live streaming, but its VOD system has a well-known problem: expiration. Regular streamers lose their VODs after 14 days, and even Twitch Partners only get 60 days before recordings are wiped. Factor in DMCA muting, manual deletions by streamers, and the occasional Twitch outage, and relying on the platform to preserve streams is a gamble.\n\nStream Archive operates as an independent Twitch stream recorder. When you follow a Twitch creator, every broadcast is recorded in the cloud and stored permanently in your library. Recordings do not expire after 14 days, they are not subject to DMCA muting, and they remain available even if the streamer deletes their channel or Twitch removes the VOD.\n\n### The Twitch VOD Problem\n\nTwitch's VOD system was designed for short-term replays, not long-term preservation. Most viewers do not realize a favourite VOD has expired until they go looking for it and find it gone. Highlights help, but they require the streamer to manually clip them, and most streamers do not bother. A Twitch stream recorder that keeps recordings permanently solves this problem at the root.\n\n### Built-In Twitch VOD Downloader\n\nDownloading Twitch VODs through third-party tools is an exercise in frustration. Tools break after every Twitch update, require browser extensions, and often produce incomplete downloads. Stream Archive includes a built-in Twitch VOD downloader for premium users. Click download on any recording and get a complete video file.\n\n### Discover Twitch Creators\n\nBrowse Twitch creators on Stream Archive, filter by category, and see their recent recordings. Follow new streamers and start building a library of their content. Whether they stream gaming, IRL, Just Chatting, or creative content, everything is recorded automatically.\n\n### Free to Start\n\nCreate a free account and start following Twitch creators. Their streams are recorded automatically and stored in your library. Upgrade to premium for Twitch VOD downloads and extended storage.",
+    "youtube": "## YouTube Creators on Stream Archive\n\nYouTube creators go live for product launches, Q&A sessions, gaming marathons, and community hangouts. But YouTube's live replay system is not as reliable as most people assume. Replays can take hours to process, fail to generate entirely, or get pulled down by the creator after the fact. Channels go private, videos get region-locked, and sometimes an entire channel disappears overnight.\n\nStream Archive provides a YouTube live recorder that works independently from YouTube's infrastructure. When you add a YouTube channel, every live broadcast is recorded in the cloud and stored in your library. If the YouTube replay fails, gets deleted, or goes private, your recording is still there.\n\n### YouTube Replays Fail More Than You Think\n\nLong streams are especially prone to replay processing failures on YouTube. Multi-hour broadcasts sometimes result in a broken replay or no replay at all. Stream Archive captures the full broadcast as it happens, so you get a complete recording regardless of what YouTube's system does afterward.\n\n### Follow Your Favourite YouTube Channels\n\nBrowse YouTube creators already on Stream Archive. See their recorded Lives, check their streaming schedule, and add them to your library with one click. Add any YouTube channel by pasting the URL, and recording begins the next time they go live.\n\n### Download YouTube Live Recordings\n\nPremium members can download any YouTube live recording as a video file. Long streams, short streams, any length. Keep a local copy for offline viewing during travel or whenever you want it.\n\n### Free to Start\n\nSign up free and add your favourite YouTube channels. Every live broadcast is recorded automatically and waiting in your library. Upgrade to premium to download YouTube live stream recordings.",
+    "kick": "## Kick Creators on Stream Archive\n\nKick is attracting a wave of creators looking for a new home, and the platform is growing fast. But growth also means you are constantly discovering new streamers, and it is impossible to watch every broadcast live. Stream Archive is a Kick stream recorder that captures every broadcast from the creators you follow, so you can catch up on your own time.\n\n### Follow Kick Creators and Record Automatically\n\nAdd any Kick creator on Stream Archive and their streams are recorded automatically in the cloud. There is nothing to install, no software to configure, and no device that needs to stay on. Your library fills up with Kick recordings while you go about your day.\n\n### Watch or Download Kick Recordings\n\nEvery Kick recording is available to stream instantly. Premium users can download Kick recordings as video files for offline viewing. Keep your favourite streams permanently in your library.\n\n### Free to Start\n\nCreate a free account and start following your favourite Kick creators today.",
+    "pandalive": "## Pandalive Creators on Stream Archive\n\nPandalive is home to a vibrant community of Korean live streamers, but broadcasts disappear once they end. If you follow Pandalive creators from a different time zone, you are almost certainly missing streams on a regular basis. Stream Archive works as a Pandalive recorder that captures every broadcast automatically, so you can watch Korean live streams on your own schedule.\n\n### Follow Pandalive Creators\n\nBrowse Pandalive creators already being recorded on Stream Archive. See their recent broadcasts, check how often they stream, and add them to your follow list. You can also add any Pandalive creator by pasting their username.\n\n### Cloud-Based Pandalive Recorder\n\nRecording happens entirely in the cloud. No desktop software, no browser extension, no device left running. Every Pandalive broadcast from your followed creators is captured and stored in your library automatically.\n\n### Download Pandalive Recordings\n\nPremium members can download any Pandalive recording as a video file. Free users can watch all recordings through the browser player.\n\n### Free to Start\n\nSign up free and start following your favourite Pandalive creators.",
+    "afreecatv": "## AfreecaTV Creators on Stream Archive\n\nAfreecaTV, recently rebranded as SOOP, has been the dominant Korean live streaming platform for years. From competitive gaming and esports to talk shows and mukbang, the platform hosts an enormous variety of content. But keeping up with your favourite AfreecaTV creators across time zones is nearly impossible. Stream Archive is an AfreecaTV recorder that captures every broadcast from the creators you follow, so you never miss a stream.\n\n### Follow AfreecaTV Creators\n\nBrowse AfreecaTV creators already on Stream Archive. See their recent recordings, check their streaming patterns, and add them to your follow list with one click. Add any AfreecaTV creator by pasting their username, even if nobody else follows them yet.\n\n### Automatic AfreecaTV Recording\n\nThe AfreecaTV recorder runs in the cloud around the clock. When a creator you follow goes live, recording begins automatically. When the broadcast ends, the recording appears in your library. No software to install, no manual intervention needed.\n\n### Download AfreecaTV Recordings\n\nEvery AfreecaTV recording is available to watch instantly through the browser player. Premium users can download recordings as video files to watch offline.\n\n### Free to Start\n\nCreate a free account and start following your favourite AfreecaTV creators today.",
+    "bigo": "## Bigo Creators on Stream Archive\n\nBigo Live is one of the most popular mobile-first live streaming platforms in the world, but it comes with a unique set of frustrations for anyone who wants to save content. Broadcasts vanish the moment they end with no replay option. And if you have tried screen capture apps, you have probably run into the infamous black screen problem. Bigo actively blocks screen recording tools, which means most APKs and overlay apps simply do not work.\n\nStream Archive sidesteps all of this. It is a Bigo live recorder that captures broadcasts directly from the server, completely bypassing screen capture. No black screen, no APK to install, no permissions to grant. Every Bigo Live from your followed creators is recorded in full quality and stored in your library.\n\n### The Bigo Black Screen Problem, Solved\n\nThe black screen issue happens because Bigo's app detects screen capture overlays and blocks them. No amount of settings tweaking or APK sideloading reliably fixes it. Stream Archive does not use screen capture at all, so the black screen problem simply does not exist. Recordings are captured server-side in the cloud.\n\n### Discover Bigo Creators\n\nBrowse Bigo creators already being recorded on Stream Archive. See their recent Lives, check how often they stream, and add them to your follow list. You can also add any Bigo creator by pasting their username.\n\n### Download Bigo Live Recordings\n\nPremium members can download any Bigo Live recording as a video file. Free users can watch all recordings through the browser player. Either way, your Bigo recordings are available indefinitely.\n\n### Free to Start\n\nSign up free and start recording Bigo Lives right away. No screen capture, no black screen, no APK. Upgrade to premium to download Bigo live recordings.",
+    "tango": "## Tango Creators on Stream Archive\n\nTango is a social live streaming platform known for its interactive broadcasts and creator community. But like most live platforms, Tango does not keep recordings after a broadcast ends. Streams are live-only, which means if you miss someone's broadcast, there is no replay to fall back on.\n\nStream Archive is a Tango live recorder that solves this by capturing every broadcast from your followed creators automatically. Add a Tango creator once and every future stream is recorded in the cloud, stored in your library, and available to watch or download whenever you want.\n\n### Follow Tango Creators\n\nBrowse Tango creators already on Stream Archive. See their recent recordings, discover new creators worth following, and add anyone by pasting their username. Your library grows automatically as they stream.\n\n### Automatic Tango Stream Recording\n\nThe Tango live recorder runs in the cloud around the clock. When a creator you follow goes live, recording begins immediately. When the broadcast ends, the full recording appears in your library. No app on your phone, no browser extension, nothing to configure.\n\n### Download Tango Live Recordings\n\nPremium members can download Tango live recordings as video files for offline viewing. Save the streams that matter most and keep them permanently. Free users can watch all recordings through the browser player.\n\n### Free to Start\n\nSign up free and add your favourite Tango creators. Their streams are recorded automatically from that moment on."
   },
   "faq": "Frequently Asked Questions",
   "country": {
     "title": "{platform} from {country}",
-    "description": "Browse {platform} from {country} on StreamArchive. Watch their recorded live streams, catch up on streams you missed, and discover new streamers to follow.",
+    "description": "Browse {platform} from {country} on Stream Archive. Watch their saved live streams, catch up on streams you missed, and discover new creators to follow.",
     "heroTitle": "{platform} in {country}",
-    "heroSubtitle": "Browse {platform} from {country}. Their live streams are recorded and saved automatically.",
+    "heroSubtitle": "Browse {platform} from {country}. Their live streams are saved and preserved automatically.",
     "empty": {
-      "title": "No Streamers Yet",
+      "title": "No Creators Yet",
       "description": "No {platform} from {country} have been added yet."
     },
     "browseByCountry": "Browse {platform} by Country",

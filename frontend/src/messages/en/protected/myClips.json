@@ -1,9 +1,9 @@
 {
   "title": "Clips",
-  "description": "AI-generated clips from your recordings",
+  "description": "AI-generated clips from your saved streams",
   "emptyState": {
     "title": "No clips yet",
-    "description": "Clips will appear here once they are generated from your recordings"
+    "description": "Clips will appear here once they are generated from your saved streams"
   },
   "share": {
     "tiktok": "Publish to TikTok",
@@ -52,7 +52,7 @@
     "cannotChangeWarning": "This cannot be changed once your video is posted.",
     "musicConfirmation": "By posting, you agree to TikTok's Music Usage Confirmation",
     "confirmationPrefix": "By posting, you agree to",
-    "termsOfServiceLink": "StreamArchive's Terms of Service",
+    "termsOfServiceLink": "Stream Archive's Terms of Service",
     "musicConfirmationLink": "TikTok's Music Usage Confirmation",
     "brandedContentPolicyLink": "TikTok's Branded Content Policy",
     "andText": "and",
@@ -82,7 +82,7 @@
     "selfOnlyDisabledBranded": "Branded content visibility cannot be set to private"
   },
   "upgrade": {
-    "title": "From recording to TikTok in seconds",
+    "title": "From stream to TikTok in seconds",
     "features": {
       "publish": "Post directly to TikTok, Reels, and Shorts",
       "schedule": "Schedule your clips — stay consistent on autopilot",

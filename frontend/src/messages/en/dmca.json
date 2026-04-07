@@ -35,8 +35,8 @@
       "description": "Reach global fans with auto-translated subtitles and descriptions"
     },
     "rankings": {
-      "title": "Streamer Rankings",
-      "description": "Get featured in top streamer lists and category pages"
+      "title": "Creator Rankings",
+      "description": "Get featured in top creator lists and category pages"
     },
     "brands": {
       "title": "Brand Opportunities",
@@ -44,17 +44,17 @@
     },
     "control": {
       "title": "Full Privacy Control",
-      "description": "Delete any video, hide any video, control your recordings"
+      "description": "Delete any video, hide any video, control your VODs"
     },
     "cta": "Claim Your Profile & Become a Partner",
     "ctaSubtext": "Takes 2 minutes • Full control over your content"
   },
   "form": {
     "title": "Notification of Claimed Infringement",
-    "description": "Please use this form to request the removal of recordings under the DMCA.",
+    "description": "Please use this form to request the removal of content under the DMCA.",
     "verifyFirst": {
       "title": "Quick Verification",
-      "message": "Verify account ownership to instantly remove your recordings. If you can't verify, use the DMCA form — manual requests are processed within 10 business days.",
+      "message": "Verify account ownership to instantly remove your VODs. If you can't verify, use the DMCA form — manual requests are processed within 10 business days.",
       "button": "Verify & Remove Instantly"
     },
     "content": {

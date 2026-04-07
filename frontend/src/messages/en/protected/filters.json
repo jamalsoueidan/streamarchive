@@ -17,8 +17,8 @@
     "usernameDesc": "Z-A",
     "createdAtDesc": "Recently added",
     "createdAtAsc": "First added",
-    "totalRecordingsDesc": "Most recordings",
-    "totalRecordingsAsc": "Fewest recordings",
+    "totalRecordingsDesc": "Most VODs",
+    "totalRecordingsAsc": "Fewest VODs",
     "latestRecordingDesc": "Recently Streamed",
     "latestRecordingAsc": "Oldest Stream",
     "updatedAtDesc": "Newest",
@@ -58,6 +58,6 @@
     "done": "Done"
   },
   "options": {
-    "hasRecordings": "Only show streamers with recordings"
+    "hasRecordings": "Only show creators with VODs"
   }
 }

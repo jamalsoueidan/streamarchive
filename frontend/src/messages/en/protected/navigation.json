@@ -7,8 +7,8 @@
   "links": {
     "dashboard": "Dashboard",
     "premium": "Premium",
-    "myRecordings": "Recordings",
-    "myClips": "Clips",
+    "myRecordings": "My Streams",
+    "myClips": "My Clips",
     "watchLater": "Watch Later",
     "aiStudio": "AI Studio",
     "myList": "Library",
@@ -21,9 +21,9 @@
   "actions": {
     "settings": "Settings",
     "logout": "Logout",
-    "addCreator": "Add Streamer",
+    "addCreator": "Add Creator",
     "search": "Search",
-    "searchPlaceholder": "Enter your stream URL",
+    "searchPlaceholder": "Find a creator",
     "installApp": "Install App",
     "more": "More",
     "language": "Language",

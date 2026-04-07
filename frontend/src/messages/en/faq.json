@@ -1,70 +1,74 @@
 {
   "meta": {
-    "title": "FAQ",
-    "description": "Find answers to frequently asked questions about StreamArchive"
+    "title": "FAQ — Stream Archive | Live Stream Recorder & Downloader",
+    "description": "Common questions about Stream Archive — a cloud-based service that automatically records and downloads live streams from TikTok, Twitch, YouTube, Bigo, Tango, Kick, AfreecaTV and Pandalive."
   },
   "title": "Frequently Asked Questions",
-  "subtitle": "Find answers to common questions about our service.",
+  "subtitle": "Everything you need to know about Stream Archive.",
   "faqs": [
     {
-      "question": "What is StreamArchive?",
-      "answer": "StreamArchive is a cloud-based service that automatically records your own live streams. Add your username from any supported platform and we capture every broadcast — no software to install, no need to leave your computer running. Watch your recordings anytime or turn them into clips."
+      "question": "What is Stream Archive?",
+      "answer": "Stream Archive is a cloud-based service that captures live streams from your favourite creators automatically. Think of it as a DVR for live streams — add the creators you care about, and every time they go live, the full broadcast is saved for you. No screen recorder, no browser extensions, no leaving your computer running. Just sign up, add creators, and we handle the rest."
     },
     {
-      "question": "How does it work?",
-      "answer": "Sign up for free and add your username from the platform you stream on. Whenever you go live, our system automatically records your stream. You can watch recordings directly in your browser, download them, or create clips to share on social media."
+      "question": "How does Stream Archive work?",
+      "answer": "Create a free account and add creators by pasting their profile URL or username. Our system monitors them around the clock. The moment they start streaming, recording begins automatically in the cloud. When the stream ends, the full recording appears in your library — ready to watch, download, or clip."
     },
     {
-      "question": "Is it really free?",
-      "answer": "Yes! Our free plan lets you record from up to 3 platforms and recordings are kept for 5 days. If you need more, our premium plan gives you better video quality, 30-day storage, video downloads, and the ability to record from up to 100 platforms."
+      "question": "Is Stream Archive free?",
+      "answer": "Yes — the free plan lets you follow up to 3 creators across any platform, with recordings stored for 5 days. You can watch everything in your browser using our built-in player. Premium unlocks downloads, longer storage (30 days), AI-generated clips, and support for up to 100 creators."
     },
     {
-      "question": "Which platforms are supported?",
-      "answer": "Stream Archive supports TikTok, Twitch, YouTube, Kick, Bigo, Tango, AfreecaTV, and Pandalive. More platforms are added regularly."
+      "question": "Which streaming platforms are supported?",
+      "answer": "We currently support TikTok, Twitch, YouTube, Kick, Bigo, Tango, AfreecaTV, and Pandalive. Whether you need a TikTok live recorder, a way to download Twitch VODs, or a Bigo live recorder — Stream Archive covers all of them from a single dashboard. More platforms are added regularly."
     },
     {
-      "question": "How long are recordings stored?",
-      "answer": "Free users get 5 days of storage. Premium users get 30 days. Make sure to download any recordings you want to keep before they expire."
+      "question": "How long are streams stored?",
+      "answer": "Free accounts keep streams for 5 days. Premium accounts get 30 days of storage. If there's a recording you want to keep forever, download it to your device before it expires."
     },
     {
-      "question": "How do I add my username?",
-      "answer": "Click Add on your dashboard, select your platform, and enter your username. Once added, we will automatically record whenever you go live."
+      "question": "How do I start recording a creator?",
+      "answer": "From your dashboard, click the search button and enter the creator's username or paste their profile URL. Select the correct platform, confirm, and you're done. The next time they go live, recording starts automatically — you don't need to do anything else."
     },
     {
-      "question": "Can I record on multiple platforms?",
-      "answer": "Yes! Add streamers from TikTok, Twitch, YouTube, Bigo, Tango, and more — all their recordings are saved in one place."
+      "question": "Can I record creators from different platforms at the same time?",
+      "answer": "Absolutely. Add creators from TikTok, Twitch, Bigo, YouTube, Tango, and any other supported platform — they all appear in one unified library. No switching between apps or services."
     },
     {
-      "question": "Can I download my recordings?",
-      "answer": "Downloading is available for premium users. Every recording has a download button that lets you save the full video file to your computer."
+      "question": "Can I download recordings?",
+      "answer": "Yes — downloading is available on our Premium plan. Every recording has a download button that saves the full video file directly to your device."
     },
     {
       "question": "What is ClipAI?",
-      "answer": "ClipAI automatically finds the best moments from your streams and turns them into short clips — ready to share on TikTok, YouTube Shorts, or Instagram Reels."
+      "answer": "ClipAI is our AI-powered tool that watches your recorded streams and automatically finds the most interesting moments. It turns them into short, shareable clips — perfect for posting on TikTok, YouTube Shorts, or Instagram Reels."
     },
     {
-      "question": "What is included in the premium plan?",
-      "answer": "Premium gives you better video quality, the ability to download recordings, 30-day storage, and support for up to 100 creators — perfect for agencies and management teams."
+      "question": "What does Premium include?",
+      "answer": "Premium gives you full video downloads, better recording quality, 30-day storage, AI-generated clips, video editing tools, and the ability to follow up to 100 creators. It's designed for power users, agencies, and creator management teams."
     },
     {
-      "question": "How do I upgrade to premium?",
-      "answer": "Go to your dashboard and click Upgrade. Choose the plan that works for you and complete the payment. We accept credit cards, Apple Pay, and Google Pay."
+      "question": "How do I upgrade to Premium?",
+      "answer": "Head to the Premium page from your dashboard. Pick the plan that suits you — monthly or yearly — and complete the payment. We accept credit cards, Apple Pay, Google Pay, and PayPal."
+    },
+    {
+      "question": "Can the creator see that I'm recording their stream?",
+      "answer": "No. Stream Archive operates entirely in the cloud and never interacts with the creator's account. The recording process is completely invisible — no notifications are sent, no trace is left."
     },
     {
       "question": "How do I contact support?",
-      "answer": "You can reach us anytime through the contact form on our website. We are here to help with any questions or issues."
+      "answer": "Use the contact form on our website anytime. We read every message and aim to respond within 24 hours."
     },
     {
       "question": "How do I delete my account?",
-      "answer": "Go to Settings and click Delete Account. Your account and all data are permanently removed immediately. This action cannot be undone."
+      "answer": "Go to Settings and click Delete Account. All your data is permanently removed immediately. This cannot be undone."
     },
     {
       "question": "Is my privacy protected?",
-      "answer": "Yes. We only store your email and your usernames. Check our Privacy Policy for full details."
+      "answer": "Yes. We only store your email address and the creator usernames you add. We don't sell or share your data. Full details are in our Privacy Policy."
     },
     {
-      "question": "What if I change my username on a platform?",
-      "answer": "If you change your username, you will need to remove the old one and add the new username."
+      "question": "What happens if a creator changes their username?",
+      "answer": "Our system can't detect username changes automatically. If a creator changes their name, remove the old entry and add them again with their new username."
     }
   ]
 }

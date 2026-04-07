@@ -1,12 +1,12 @@
 {
   "title": "Explore",
-  "description": "Browse recordings from other streamers",
+  "description": "Discover VODs from creators across all platforms",
   "emptyFiltered": {
-    "title": "No recordings match your filters",
+    "title": "Nothing matches your filters",
     "description": "Try adjusting or clearing your filters"
   },
   "emptyDefault": {
-    "title": "No recordings available",
+    "title": "Nothing to explore yet",
     "description": "-"
   },
   "noMoreToLoad": "You've reached the end"

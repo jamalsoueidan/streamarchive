@@ -25,7 +25,6 @@ Just add the creators you want to follow and every live session is captured and 
 - **Cloud-based** — No software, no extensions, works on any device
 - **Built-in player** — Watch saved streams directly in your browser
 - **Video downloads** — Download full recordings to your device (Premium)
-- **AI Clips** — Automatically generate highlights and short clips
 - **Multi-platform** — All your creators in one library, regardless of platform
 
 ## Getting Started

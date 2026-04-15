@@ -11,14 +11,15 @@ const agent = new https.Agent({
 export const s3Nbg1 = new S3Client({
   region: "nbg1",
   endpoint: "https://nbg1.your-objectstorage.com",
+  forcePathStyle: true,
   credentials: {
     accessKeyId: process.env.S3_ACCESS_KEY!,
     secretAccessKey: process.env.S3_SECRET_KEY!,
   },
   requestHandler: new NodeHttpHandler({
     httpsAgent: agent,
-    connectionTimeout: 5000,
-    requestTimeout: 15000,
+    connectionTimeout: 10000,
+    requestTimeout: 30000,
   }),
 });
 
@@ -37,6 +38,9 @@ export const s3Avatar = new S3Client({
   }),
 });
 
+const S3_CUTOFF_2 = new Date("2026-03-24T12:00:00Z");
+const S3_PLATFORM_CUTOFF = new Date("2026-03-29T15:05:00Z");
+
 const PLATFORM_BUCKETS = new Set([
   "tiktok",
   "bigo",
@@ -48,20 +52,36 @@ const PLATFORM_BUCKETS = new Set([
   "tango",
 ]);
 
-export function getS3(_createdAt?: Date | string | null): S3Client {
+export function getS3(): S3Client {
   return s3Nbg1;
+}
+
+const MEDIA_PROXY_HOST = process.env.MEDIA_PROXY_HOST;
+
+export function proxySignedUrl(url: string): string {
+  if (!MEDIA_PROXY_HOST) return url;
+  return url.replace("nbg1.your-objectstorage.com", MEDIA_PROXY_HOST);
 }
 
 export function getBucket(
   bucket: string,
-  _createdAt?: Date | string | null,
+  createdAt?: Date | string | null,
   path?: string | null,
+  sourceBucket?: string | null,
 ): string {
-  if (path) {
+  if (sourceBucket) return sourceBucket;
+
+  if (!createdAt) return `${bucket}-nbg`;
+  const date = new Date(createdAt);
+
+  // New recordings go to platform-specific buckets
+  if (path && date >= S3_PLATFORM_CUTOFF) {
     const platform = path.split("/").filter(Boolean)[0];
     if (platform && PLATFORM_BUCKETS.has(platform)) {
       return `${bucket}-${platform}`;
     }
   }
-  return `${bucket}-nbg1`;
+
+  if (date >= S3_CUTOFF_2) return `${bucket}-nbg1`;
+  return `${bucket}-nbg`;
 }

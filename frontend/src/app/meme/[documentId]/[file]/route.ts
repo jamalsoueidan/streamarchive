@@ -36,7 +36,7 @@ export async function GET(
   }
 
   const clip = data.data;
-  const s3 = getS3(clip.createdAt);
+  const s3 = getS3();
   const bucket = getBucket(process.env.CLIP_BUCKET!, clip.createdAt);
   const key = `${clip.path?.substring(1)}${documentId}/${file}`;
   const command = new GetObjectCommand({ Bucket: bucket, Key: key });

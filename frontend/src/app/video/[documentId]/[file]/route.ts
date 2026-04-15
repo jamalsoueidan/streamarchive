@@ -44,9 +44,9 @@ export async function GET(
   const abortController = new AbortController();
 
   try {
-    const s3 = getS3(source.createdAt);
+    const s3 = getS3();
     const command = new GetObjectCommand({
-      Bucket: getBucket(process.env.MEDIA_BUCKET!, source.createdAt, source.path),
+      Bucket: getBucket(process.env.MEDIA_BUCKET!, source.createdAt, source.path, source.bucket),
       Key: `${source.path.substring(1)}${file}`,
     });
     const response = await s3.send(command, {

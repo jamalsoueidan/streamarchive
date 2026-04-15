@@ -19,6 +19,7 @@ export enum FollowerTypeEnum {
   Pandalive = "pandalive",
   Bigo = "bigo",
   Tango = "tango",
+  Buzzcast = "buzzcast",
 }
 
 /** Filter by follow status */
@@ -972,6 +973,7 @@ export interface AiRequest {
       duration?: number;
       thumbnailInterval?: number;
       thumbnailCols?: number;
+      bucket?: string;
       videoOriginal?: VideosVideoComponent;
       videoSmall?: VideosVideoComponent;
       recording?: {
@@ -999,6 +1001,7 @@ export interface AiRequest {
       }[];
     }[];
     hidden?: boolean;
+    totalDuration?: number;
     /** @format date-time */
     createdAt?: string;
     /** @format date-time */
@@ -1595,6 +1598,7 @@ export interface AiTask {
         duration?: number;
         thumbnailInterval?: number;
         thumbnailCols?: number;
+        bucket?: string;
         videoOriginal?: VideosVideoComponent;
         videoSmall?: VideosVideoComponent;
         recording?: {
@@ -1622,6 +1626,7 @@ export interface AiTask {
         }[];
       }[];
       hidden?: boolean;
+      totalDuration?: number;
       /** @format date-time */
       createdAt?: string;
       /** @format date-time */
@@ -2980,6 +2985,7 @@ export interface Clip {
       duration?: number;
       thumbnailInterval?: number;
       thumbnailCols?: number;
+      bucket?: string;
       videoOriginal?: VideosVideoComponent;
       videoSmall?: VideosVideoComponent;
       recording?: {
@@ -3007,6 +3013,7 @@ export interface Clip {
       }[];
     }[];
     hidden?: boolean;
+    totalDuration?: number;
     /** @format date-time */
     createdAt?: string;
     /** @format date-time */
@@ -3559,6 +3566,7 @@ export interface ClipShare {
         duration?: number;
         thumbnailInterval?: number;
         thumbnailCols?: number;
+        bucket?: string;
         videoOriginal?: VideosVideoComponent;
         videoSmall?: VideosVideoComponent;
         recording?: {
@@ -3586,6 +3594,7 @@ export interface ClipShare {
         }[];
       }[];
       hidden?: boolean;
+      totalDuration?: number;
       /** @format date-time */
       createdAt?: string;
       /** @format date-time */
@@ -4879,6 +4888,7 @@ export interface Meme {
       duration?: number;
       thumbnailInterval?: number;
       thumbnailCols?: number;
+      bucket?: string;
       videoOriginal?: VideosVideoComponent;
       videoSmall?: VideosVideoComponent;
       recording?: {
@@ -4906,6 +4916,7 @@ export interface Meme {
       }[];
     }[];
     hidden?: boolean;
+    totalDuration?: number;
     /** @format date-time */
     createdAt?: string;
     /** @format date-time */
@@ -5001,6 +5012,7 @@ export interface RecordingRequest {
     follower?: number | string;
     sources?: (number | string)[];
     hidden?: boolean;
+    totalDuration?: number;
     locale?: string;
     localizations?: (number | string)[];
   };
@@ -5428,6 +5440,7 @@ export interface Recording {
     }[];
   };
   hidden?: boolean;
+  totalDuration?: number;
   /** @format date-time */
   createdAt?: string;
   /** @format date-time */
@@ -6112,6 +6125,7 @@ export interface SourceRequest {
     duration: number;
     thumbnailInterval?: number;
     thumbnailCols?: number;
+    bucket?: string;
     videoOriginal?: VideosVideoComponent;
     videoSmall?: VideosVideoComponent;
     /** @example "string or id" */
@@ -6147,6 +6161,7 @@ export interface Source {
   duration: number;
   thumbnailInterval?: number;
   thumbnailCols?: number;
+  bucket?: string;
   videoOriginal?: VideosVideoComponent;
   videoSmall?: VideosVideoComponent;
   recording?: {
@@ -6568,6 +6583,7 @@ export interface Source {
       duration?: number;
       thumbnailInterval?: number;
       thumbnailCols?: number;
+      bucket?: string;
       videoOriginal?: VideosVideoComponent;
       videoSmall?: VideosVideoComponent;
       recording?: {
@@ -6595,6 +6611,7 @@ export interface Source {
       }[];
     }[];
     hidden?: boolean;
+    totalDuration?: number;
     /** @format date-time */
     createdAt?: string;
     /** @format date-time */
@@ -7088,6 +7105,7 @@ export interface VisitorView {
       duration?: number;
       thumbnailInterval?: number;
       thumbnailCols?: number;
+      bucket?: string;
       videoOriginal?: VideosVideoComponent;
       videoSmall?: VideosVideoComponent;
       recording?: {
@@ -7115,6 +7133,7 @@ export interface VisitorView {
       }[];
     }[];
     hidden?: boolean;
+    totalDuration?: number;
     /** @format date-time */
     createdAt?: string;
     /** @format date-time */
@@ -7323,6 +7342,7 @@ export enum ActivityTypeEnum {
   Pandalive = "pandalive",
   Bigo = "bigo",
   Tango = "tango",
+  Buzzcast = "buzzcast",
 }
 
 export enum ActivityGenderEnum {
@@ -7336,6 +7356,7 @@ export enum ActivityProviderEnum {
   Apple = "apple",
   Facebook = "facebook",
   Tiktok = "tiktok",
+  Youtube = "youtube",
 }
 
 export enum ActivitySubscriptionStatusEnum {
@@ -7367,6 +7388,7 @@ export enum AiRequestTypeEnum {
   Pandalive = "pandalive",
   Bigo = "bigo",
   Tango = "tango",
+  Buzzcast = "buzzcast",
 }
 
 export enum AiRequestGenderEnum {
@@ -7380,6 +7402,7 @@ export enum AiRequestProviderEnum {
   Apple = "apple",
   Facebook = "facebook",
   Tiktok = "tiktok",
+  Youtube = "youtube",
 }
 
 export enum AiRequestSubscriptionStatusEnum {
@@ -7439,6 +7462,7 @@ export enum AiTaskTypeEnum {
   Pandalive = "pandalive",
   Bigo = "bigo",
   Tango = "tango",
+  Buzzcast = "buzzcast",
 }
 
 export enum AiTaskGenderEnum {
@@ -7452,6 +7476,7 @@ export enum AiTaskProviderEnum {
   Apple = "apple",
   Facebook = "facebook",
   Tiktok = "tiktok",
+  Youtube = "youtube",
 }
 
 export enum AiTaskSubscriptionStatusEnum {
@@ -7504,6 +7529,7 @@ export enum ClipTypeEnum {
   Pandalive = "pandalive",
   Bigo = "bigo",
   Tango = "tango",
+  Buzzcast = "buzzcast",
 }
 
 export enum ClipGenderEnum {
@@ -7517,6 +7543,7 @@ export enum ClipProviderEnum {
   Apple = "apple",
   Facebook = "facebook",
   Tiktok = "tiktok",
+  Youtube = "youtube",
 }
 
 export enum ClipSubscriptionStatusEnum {
@@ -7554,6 +7581,7 @@ export enum ClipShareTypeEnum {
   Pandalive = "pandalive",
   Bigo = "bigo",
   Tango = "tango",
+  Buzzcast = "buzzcast",
 }
 
 export enum ClipShareGenderEnum {
@@ -7567,6 +7595,7 @@ export enum ClipShareProviderEnum {
   Apple = "apple",
   Facebook = "facebook",
   Tiktok = "tiktok",
+  Youtube = "youtube",
 }
 
 export enum ClipShareSubscriptionStatusEnum {
@@ -7610,6 +7639,7 @@ export enum FollowerRequestTypeEnum {
   Pandalive = "pandalive",
   Bigo = "bigo",
   Tango = "tango",
+  Buzzcast = "buzzcast",
 }
 
 export enum FollowerRequestGenderEnum {
@@ -7635,6 +7665,7 @@ export enum FollowerProviderEnum {
   Apple = "apple",
   Facebook = "facebook",
   Tiktok = "tiktok",
+  Youtube = "youtube",
 }
 
 export enum FollowerSubscriptionStatusEnum {
@@ -7669,6 +7700,7 @@ export enum MemeTypeEnum1 {
   Pandalive = "pandalive",
   Bigo = "bigo",
   Tango = "tango",
+  Buzzcast = "buzzcast",
 }
 
 export enum MemeGenderEnum {
@@ -7682,6 +7714,7 @@ export enum MemeProviderEnum {
   Apple = "apple",
   Facebook = "facebook",
   Tiktok = "tiktok",
+  Youtube = "youtube",
 }
 
 export enum MemeSubscriptionStatusEnum {
@@ -7720,6 +7753,7 @@ export enum RecordingProviderEnum {
   Apple = "apple",
   Facebook = "facebook",
   Tiktok = "tiktok",
+  Youtube = "youtube",
 }
 
 export enum RecordingSubscriptionStatusEnum {
@@ -7740,6 +7774,7 @@ export enum SocialAccountRequestProviderEnum {
   Apple = "apple",
   Facebook = "facebook",
   Tiktok = "tiktok",
+  Youtube = "youtube",
 }
 
 export enum SocialAccountProviderEnum {
@@ -7747,6 +7782,7 @@ export enum SocialAccountProviderEnum {
   Apple = "apple",
   Facebook = "facebook",
   Tiktok = "tiktok",
+  Youtube = "youtube",
 }
 
 export enum SocialAccountTypeEnum {
@@ -7758,6 +7794,7 @@ export enum SocialAccountTypeEnum {
   Pandalive = "pandalive",
   Bigo = "bigo",
   Tango = "tango",
+  Buzzcast = "buzzcast",
 }
 
 export enum SocialAccountGenderEnum {
@@ -7771,6 +7808,7 @@ export enum SocialAccountProviderEnum1 {
   Apple = "apple",
   Facebook = "facebook",
   Tiktok = "tiktok",
+  Youtube = "youtube",
 }
 
 export enum SocialAccountSubscriptionStatusEnum {
@@ -7809,6 +7847,7 @@ export enum SourceTypeEnum {
   Pandalive = "pandalive",
   Bigo = "bigo",
   Tango = "tango",
+  Buzzcast = "buzzcast",
 }
 
 export enum SourceGenderEnum {
@@ -7822,6 +7861,7 @@ export enum SourceProviderEnum {
   Apple = "apple",
   Facebook = "facebook",
   Tiktok = "tiktok",
+  Youtube = "youtube",
 }
 
 export enum SourceSubscriptionStatusEnum {
@@ -7853,6 +7893,7 @@ export enum VisitorViewTypeEnum {
   Pandalive = "pandalive",
   Bigo = "bigo",
   Tango = "tango",
+  Buzzcast = "buzzcast",
 }
 
 export enum VisitorViewGenderEnum {
@@ -7866,6 +7907,7 @@ export enum VisitorViewProviderEnum {
   Apple = "apple",
   Facebook = "facebook",
   Tiktok = "tiktok",
+  Youtube = "youtube",
 }
 
 export enum VisitorViewSubscriptionStatusEnum {

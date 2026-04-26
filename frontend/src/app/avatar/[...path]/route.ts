@@ -1,4 +1,4 @@
-import { s3Avatar } from "@/lib/s3";
+import { s3Nbg1 } from "@/lib/s3";
 import { GetObjectCommand } from "@aws-sdk/client-s3";
 
 export async function GET(
@@ -12,10 +12,10 @@ export async function GET(
 
   try {
     const command = new GetObjectCommand({
-      Bucket: process.env.HEXABYTE_BUCKET!,
+      Bucket: process.env.AVATAR_BUCKET || "streamarchive-avatars",
       Key: filePath,
     });
-    const response = await s3Avatar.send(command, {
+    const response = await s3Nbg1.send(command, {
       abortSignal: abortController.signal,
     });
 

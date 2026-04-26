@@ -23,21 +23,6 @@ export const s3Nbg1 = new S3Client({
   }),
 });
 
-export const s3Avatar = new S3Client({
-  region: process.env.HEXABYTE_REGION || "ume1",
-  endpoint: process.env.HEXABYTE_ENDPOINT || "https://s3.hexabyte.se",
-  forcePathStyle: true,
-  credentials: {
-    accessKeyId: process.env.HEXABYTE_ACCESS_KEY!,
-    secretAccessKey: process.env.HEXABYTE_SECRET_KEY!,
-  },
-  requestHandler: new NodeHttpHandler({
-    httpsAgent: agent,
-    connectionTimeout: 5000,
-    requestTimeout: 15000,
-  }),
-});
-
 const S3_CUTOFF_2 = new Date("2026-03-24T12:00:00Z");
 const S3_PLATFORM_CUTOFF = new Date("2026-03-29T15:05:00Z");
 

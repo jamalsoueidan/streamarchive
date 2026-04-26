@@ -6,7 +6,10 @@ import { Flex, Loader, Modal } from "@mantine/core";
 import { useRouter } from "next/navigation";
 import { useCallback } from "react";
 import { VideoPlayer } from "./video-player";
+import { configureHls } from "@/lib/configure-hls";
 
+
+configureHls();
 interface VideoModalProps {
   recording: Recording | undefined | null;
   isLoading?: boolean;

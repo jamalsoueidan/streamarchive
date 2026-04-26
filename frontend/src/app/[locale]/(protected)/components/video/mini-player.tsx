@@ -2,6 +2,7 @@
 
 import "hls-video-element";
 import "media-chrome";
+import { configureHls } from "@/lib/configure-hls";
 import {
   HlsVideo,
   MediaControlBar,
@@ -15,6 +16,8 @@ import {
   MediaTimeRange,
   MediaVolumeRange,
 } from "./media-chrome";
+
+configureHls();
 
 interface Props {
   documentId: string;

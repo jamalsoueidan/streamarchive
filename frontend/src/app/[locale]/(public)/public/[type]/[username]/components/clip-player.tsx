@@ -15,7 +15,10 @@ import { useEffect, useRef } from "react";
 
 import "hls-video-element";
 import "media-chrome";
+import { configureHls } from "@/lib/configure-hls";
 
+
+configureHls();
 // Global set of all video pause functions
 const activeVideos = new Set<() => void>();
 

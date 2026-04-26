@@ -17,7 +17,10 @@ import { Box } from "@mantine/core";
 
 import "hls-video-element";
 import "media-chrome";
+import { configureHls } from "@/lib/configure-hls";
 
+
+configureHls();
 interface VideoPlayerProps {
   src: string;
   previewUrl: string;

@@ -21,7 +21,10 @@ import { useEffect, useRef, useState } from "react";
 
 import "hls-video-element";
 import "media-chrome";
+import { configureHls } from "@/lib/configure-hls";
 
+
+configureHls();
 const activeVideos = new Set<() => void>();
 
 interface Props {

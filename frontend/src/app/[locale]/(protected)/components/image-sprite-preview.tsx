@@ -1,5 +1,6 @@
 "use client";
 
+import { useWatched } from "@/app/hooks/use-watched";
 import { useUser } from "@/app/providers/user-provider";
 import {
   FollowerTypeEnum,
@@ -30,7 +31,9 @@ interface Props {
 
 export function ImageSpritePreview({ recording, type, username }: Props) {
   const { isNew } = useIsNew();
+  const { isWatched } = useWatched();
   const t = useTranslations("protected.common");
+  const watched = recording.documentId ? isWatched(recording.documentId) : false;
 
   const user = useUser();
   const searchParams = useSearchParams();
@@ -173,7 +176,21 @@ export function ImageSpritePreview({ recording, type, username }: Props) {
         </Badge>
       )}
 
-      {isNew(recording) ? (
+      {watched ? (
+        <Badge
+          radius="md"
+          variant="filled"
+          size="sm"
+          color="violet"
+          style={{
+            position: "absolute",
+            bottom: 8,
+            left: 8,
+          }}
+        >
+          Watched
+        </Badge>
+      ) : isNew(recording) ? (
         <Badge
           radius="md"
           variant="outline"

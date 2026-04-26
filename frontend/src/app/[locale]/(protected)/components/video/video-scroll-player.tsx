@@ -63,11 +63,10 @@ export function VideoScrollPlayer({
   const slideRefs = useRef<Map<number, HTMLDivElement>>(new Map());
   const [visibleIndex, setVisibleIndex] = useState<number | null>(null);
   const hasScrolledToInitial = useRef(false);
-  const [isSafari] = useState(
-    () => typeof navigator !== "undefined" && /^((?!chrome|android).)*safari/i.test(navigator.userAgent),
-  );
-  const [isMuted, setIsMuted] = useState(isSafari);
-  const [hasPlayed, setHasPlayed] = useState(!isSafari);
+  // Start muted for everyone — browsers only allow unattended autoplay
+  // when muted + playsinline. User can unmute; state persists across videos.
+  const [isMuted, setIsMuted] = useState(true);
+  const [hasPlayed, setHasPlayed] = useState(true);
 
   // Track the currently visible video's documentId (not index, since index can shift)
   const visibleDocumentId = useRef<string | null>(null);

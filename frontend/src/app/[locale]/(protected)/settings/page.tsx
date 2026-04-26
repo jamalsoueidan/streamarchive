@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import { DangerZoneCard } from "./components/danger-zone-card";
 import { ProfileCard } from "./components/profile-card";
 import { SubscriptionCard } from "./components/subscription-card";
+import { WatchedHistoryCard } from "./components/watched-history-card";
 
 export default function SettingsPage() {
   const t = useTranslations("protected.settings");
@@ -34,6 +35,7 @@ export default function SettingsPage() {
       <SimpleGrid cols={{ sm: 1 }} spacing="md">
         <ProfileCard />
         <SubscriptionCard />
+        <WatchedHistoryCard />
         <Role is="admin" not>
           <DangerZoneCard />
         </Role>

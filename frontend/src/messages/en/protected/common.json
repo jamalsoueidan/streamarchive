@@ -47,7 +47,9 @@
     "downloadFeatureMessage": "Downloading videos is a premium feature.",
     "editClip": "Edit Clip",
     "deleteSources": "Delete sources",
-    "deleteSourcesSuccess": "Deleted {count} sources"
+    "deleteSourcesSuccess": "Deleted {count} sources",
+    "downloadPart": "Part {part}",
+    "sendToEmail": "Send to email"
   },
   "followers": {
     "addedAgo_context": "For when a creator was added to user's list. Shows 'Added 3 days ago'",

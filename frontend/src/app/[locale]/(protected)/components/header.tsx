@@ -11,7 +11,6 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 import { useUser } from "@/app/providers/user-provider";
-import * as Sentry from "@sentry/nextjs";
 
 export const Header = () => {
   const tPremium = useTranslations("protected.premium");
@@ -115,7 +114,6 @@ export const Header = () => {
             </Menu.Item>
             <Menu.Item
               onClick={async () => {
-                Sentry.setUser(null);
                 await fetch("/api/logout", { method: "POST" });
                 window.location.href = "/";
               }}

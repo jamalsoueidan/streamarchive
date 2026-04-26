@@ -4,7 +4,6 @@ import { login } from "@/app/actions/auth";
 import { getFacebookAuthUrl } from "@/app/actions/facebook";
 import { getGoogleAuthUrl } from "@/app/actions/google";
 import { getTikTokAuthUrl } from "@/app/actions/tiktok";
-import { trackEvent } from "@/app/lib/analytics";
 import {
   Anchor,
   Button,
@@ -41,21 +40,18 @@ export function LoginChoices() {
   const [state, formAction, pending] = useActionState(login, null);
 
   const handleTikTokLogin = async () => {
-    trackEvent("login_method", { method: "tiktok" });
     setTiktokLoading(true);
     const url = await getTikTokAuthUrl("login");
     window.location.href = url;
   };
 
   const handleGoogleLogin = async () => {
-    trackEvent("login_method", { method: "google" });
     setGoogleLoading(true);
     const url = await getGoogleAuthUrl("login");
     window.location.href = url;
   };
 
   const handleFacebookLogin = async () => {
-    trackEvent("login_method", { method: "facebook" });
     setFacebookLoading(true);
     const url = await getFacebookAuthUrl("login");
     window.location.href = url;

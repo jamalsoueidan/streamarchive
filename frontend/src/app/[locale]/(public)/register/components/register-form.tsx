@@ -1,7 +1,6 @@
 "use client";
 
 import { register } from "@/app/actions/auth";
-import { trackEvent } from "@/app/lib/analytics";
 import {
   Anchor,
   Button,
@@ -26,10 +25,6 @@ export function RegisterForm() {
 
   useEffect(() => {
     if (state?.success) {
-      trackEvent("signup", {
-        language: navigator.language,
-        timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
-      });
     }
   }, [state]);
 

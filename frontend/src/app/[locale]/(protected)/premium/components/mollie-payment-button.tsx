@@ -1,6 +1,5 @@
 "use client";
 
-import { trackEvent } from "@/app/lib/analytics";
 import { Button, ButtonProps } from "@mantine/core";
 import { useState } from "react";
 
@@ -22,11 +21,6 @@ export function MolliePaymentButton({
   const handleCheckout = async () => {
     setLoading(true);
 
-    trackEvent("premium_checkout_opened", {
-      plan: planLabel,
-      billing_cycle: billingCycle,
-      provider: "mollie",
-    });
 
     try {
       const response = await fetch("/api/mollie/checkout", {
@@ -48,11 +42,6 @@ export function MolliePaymentButton({
       }
     } catch (error) {
       console.error("Mollie checkout error:", error);
-      trackEvent("premium_checkout_error", {
-        plan: planLabel,
-        provider: "mollie",
-        error: error instanceof Error ? error.message : "Unknown error",
-      });
       onError?.(
         error instanceof Error ? error.message : "Failed to start checkout",
       );

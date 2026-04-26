@@ -3,7 +3,6 @@
 import { getFacebookAuthUrl } from "@/app/actions/facebook";
 import { getGoogleAuthUrl } from "@/app/actions/google";
 import { getTikTokAuthUrl } from "@/app/actions/tiktok";
-import { trackEvent } from "@/app/lib/analytics";
 import {
   Anchor,
   Button,
@@ -30,21 +29,18 @@ export function RegisterChoices() {
   const [facebookLoading, setFacebookLoading] = useState(false);
 
   const handleTikTokSignup = async () => {
-    trackEvent("signup_method", { method: "tiktok" });
     setTiktokLoading(true);
     const url = await getTikTokAuthUrl("signup");
     window.location.href = url;
   };
 
   const handleGoogleSignup = async () => {
-    trackEvent("signup_method", { method: "google" });
     setGoogleLoading(true);
     const url = await getGoogleAuthUrl("signup");
     window.location.href = url;
   };
 
   const handleFacebookSignup = async () => {
-    trackEvent("signup_method", { method: "facebook" });
     setFacebookLoading(true);
     const url = await getFacebookAuthUrl("signup");
     window.location.href = url;
@@ -94,7 +90,6 @@ export function RegisterChoices() {
             <Button
               component={Link}
               href="/register/email-password"
-              onClick={() => trackEvent("signup_method", { method: "email" })}
               size="lg"
               radius="md"
               variant="gradient"

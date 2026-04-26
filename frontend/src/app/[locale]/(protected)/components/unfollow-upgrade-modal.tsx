@@ -1,6 +1,5 @@
 "use client";
 
-import { trackEvent } from "@/app/lib/analytics";
 import { Link } from "@/i18n/navigation";
 import {
   ActionIcon,
@@ -47,7 +46,6 @@ export function UnfollowUpgradeModal({
 
   const isMobile = useMatches({ base: true, sm: false });
   const handleClose = () => {
-    trackEvent("unfollow_upgrade_modal_close");
     onClose();
   };
 
@@ -170,7 +168,6 @@ export function UnfollowUpgradeModal({
           component={Link}
           href="/premium"
           onClick={() => {
-            trackEvent("unfollow_upgrade_modal_click");
             onClose();
           }}
           fullWidth

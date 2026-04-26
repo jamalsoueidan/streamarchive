@@ -1,6 +1,5 @@
 "use client";
 
-import { trackEvent } from "@/app/lib/analytics";
 import { Link } from "@/i18n/navigation";
 import {
   ActionIcon,
@@ -47,7 +46,6 @@ export function CreatorUpgradeModal({
 
   const isMobile = useMatches({ base: true, sm: false });
   const handleClose = () => {
-    trackEvent("creator_upgrade_modal_close");
     onClose();
   };
 
@@ -175,7 +173,6 @@ export function CreatorUpgradeModal({
           component={Link}
           href="/premium"
           onClick={() => {
-            trackEvent("creator_upgrade_modal_click");
             onClose();
           }}
           fullWidth

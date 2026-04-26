@@ -1,6 +1,5 @@
 "use client";
 
-import { trackEvent } from "@/app/lib/analytics";
 import { Link } from "@/i18n/navigation";
 import {
   ActionIcon,
@@ -45,7 +44,6 @@ export function VideoUpgradeModal({ opened, onClose }: VideoUpgradeModalProps) {
   const isMobile = useMatches({ base: true, sm: false });
 
   const handleClose = () => {
-    trackEvent("video_upgrade_modal_close");
     onClose();
   };
 
@@ -173,7 +171,6 @@ export function VideoUpgradeModal({ opened, onClose }: VideoUpgradeModalProps) {
           component={Link}
           href="/premium"
           onClick={() => {
-            trackEvent("video_upgrade_modal_click");
             onClose();
           }}
           fullWidth

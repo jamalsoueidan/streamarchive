@@ -14,7 +14,6 @@ import {
 import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
 import { Metadata } from "next";
 import { getFormatter, getLocale, getTranslations } from "next-intl/server";
-import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 import {
   fetchProfileRecordings,
@@ -117,9 +116,6 @@ export async function generateMetadata({
 }
 
 export default async function VideoPage({ params }: PageProps) {
-  const headersList = await headers();
-  const userAgent = headersList.get("user-agent") || "";
-
   const { id, type, username } = await params;
   const locale = await getLocale();
   const tp = await getTranslations("profile");
@@ -244,7 +240,6 @@ export default async function VideoPage({ params }: PageProps) {
             previewUrl={previewUrl}
             src={`/video/${data.documentId}/playlist.m3u8`}
             thumbnailsUrl={`/video/${data.documentId}/thumbnails.vtt`}
-            userAgent={userAgent}
           />
 
           <Title order={1} c="dimmed" size="xl" fw="400">

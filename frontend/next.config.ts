@@ -1,5 +1,4 @@
 import { loadEnvConfig } from "@next/env";
-import { withSentryConfig } from "@sentry/nextjs";
 import type { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
 
@@ -49,14 +48,6 @@ const nextConfig: NextConfig = {
         destination: process.env.STRAPI_URL + "/uploads/:path*",
       },
       {
-        source: "/script.js",
-        destination: `${process.env.NEXT_PUBLIC_UMAMI_URL}/script.js`,
-      },
-      {
-        source: "/api/send",
-        destination: `${process.env.NEXT_PUBLIC_UMAMI_URL}/api/send`,
-      },
-      {
         source: "/assets/placeholder/:path*",
         destination: "https://placehold.co/:path*",
       },
@@ -66,11 +57,4 @@ const nextConfig: NextConfig = {
 
 const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
-export default withSentryConfig(withNextIntl(nextConfig), {
-  sentryUrl: "https://glitchtip.livestreamrecorder.com",
-  org: process.env.GLITCHTIP_ORG,
-  project: process.env.GLITCHTIP_PROJECT,
-  authToken: process.env.GLITCHTIP_AUTH_TOKEN,
-  silent: !process.env.CI,
-  widenClientFileUpload: true,
-});
+export default withNextIntl(nextConfig);

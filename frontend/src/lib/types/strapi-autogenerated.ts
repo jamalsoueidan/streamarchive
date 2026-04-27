@@ -20,6 +20,7 @@ export enum FollowerTypeEnum {
   Bigo = "bigo",
   Tango = "tango",
   Buzzcast = "buzzcast",
+  Liveme = "liveme",
 }
 
 /** Filter by follow status */
@@ -84,6 +85,7 @@ export interface Activity {
       name?: string;
       alternativeText?: string;
       caption?: string;
+      focalPoint?: any;
       width?: number;
       height?: number;
       formats?: any;
@@ -119,6 +121,7 @@ export interface Activity {
           name?: string;
           alternativeText?: string;
           caption?: string;
+          focalPoint?: any;
           width?: number;
           height?: number;
           formats?: any;
@@ -295,6 +298,9 @@ export interface Activity {
     };
     /** @format date-time */
     lastCheckedAt?: string;
+    recordingsCount?: number;
+    /** @format date-time */
+    lastRecordingAt?: string;
     protected?: boolean;
     blocked?: boolean;
     pause?: boolean;
@@ -446,6 +452,7 @@ export interface Activity {
     };
     lsr?: boolean;
     sar?: boolean;
+    profileFilled?: boolean;
     /** @format date-time */
     createdAt?: string;
     /** @format date-time */
@@ -570,6 +577,7 @@ export interface AiRequest {
       name?: string;
       alternativeText?: string;
       caption?: string;
+      focalPoint?: any;
       width?: number;
       height?: number;
       formats?: any;
@@ -605,6 +613,7 @@ export interface AiRequest {
           name?: string;
           alternativeText?: string;
           caption?: string;
+          focalPoint?: any;
           width?: number;
           height?: number;
           formats?: any;
@@ -781,6 +790,9 @@ export interface AiRequest {
     };
     /** @format date-time */
     lastCheckedAt?: string;
+    recordingsCount?: number;
+    /** @format date-time */
+    lastRecordingAt?: string;
     protected?: boolean;
     blocked?: boolean;
     pause?: boolean;
@@ -932,6 +944,7 @@ export interface AiRequest {
     };
     lsr?: boolean;
     sar?: boolean;
+    profileFilled?: boolean;
     /** @format date-time */
     createdAt?: string;
     /** @format date-time */
@@ -1195,6 +1208,7 @@ export interface AiTask {
         name?: string;
         alternativeText?: string;
         caption?: string;
+        focalPoint?: any;
         width?: number;
         height?: number;
         formats?: any;
@@ -1230,6 +1244,7 @@ export interface AiTask {
             name?: string;
             alternativeText?: string;
             caption?: string;
+            focalPoint?: any;
             width?: number;
             height?: number;
             formats?: any;
@@ -1406,6 +1421,9 @@ export interface AiTask {
       };
       /** @format date-time */
       lastCheckedAt?: string;
+      recordingsCount?: number;
+      /** @format date-time */
+      lastRecordingAt?: string;
       protected?: boolean;
       blocked?: boolean;
       pause?: boolean;
@@ -1557,6 +1575,7 @@ export interface AiTask {
       };
       lsr?: boolean;
       sar?: boolean;
+      profileFilled?: boolean;
       /** @format date-time */
       createdAt?: string;
       /** @format date-time */
@@ -1733,6 +1752,172 @@ export interface AiTask {
 
 export interface AiTaskResponse {
   data?: AiTask;
+  meta?: object;
+}
+
+export interface AnnouncementRequest {
+  data: {
+    message: string;
+    type?: AnnouncementRequestTypeEnum;
+    locale?: string;
+    localizations?: (number | string)[];
+  };
+}
+
+export interface AnnouncementListResponse {
+  data?: Announcement[];
+  meta?: {
+    pagination?: {
+      page?: number;
+      /** @min 25 */
+      pageSize?: number;
+      /** @max 1 */
+      pageCount?: number;
+      total?: number;
+    };
+  };
+}
+
+export interface Announcement {
+  id?: string | number;
+  documentId?: string;
+  message: string;
+  type?: AnnouncementTypeEnum;
+  /** @format date-time */
+  createdAt?: string;
+  /** @format date-time */
+  updatedAt?: string;
+  /** @format date-time */
+  publishedAt?: string;
+  createdBy?: {
+    id?: string | number;
+    documentId?: string;
+    firstname?: string;
+    lastname?: string;
+    username?: string;
+    /** @format email */
+    email?: string;
+    resetPasswordToken?: string;
+    registrationToken?: string;
+    isActive?: boolean;
+    roles?: {
+      id?: string | number;
+      documentId?: string;
+      name?: string;
+      code?: string;
+      description?: string;
+      users?: {
+        id?: string | number;
+        documentId?: string;
+      }[];
+      permissions?: {
+        id?: string | number;
+        documentId?: string;
+        action?: string;
+        actionParameters?: any;
+        subject?: string;
+        properties?: any;
+        conditions?: any;
+        role?: {
+          id?: string | number;
+          documentId?: string;
+        };
+        /** @format date-time */
+        createdAt?: string;
+        /** @format date-time */
+        updatedAt?: string;
+        /** @format date-time */
+        publishedAt?: string;
+        createdBy?: {
+          id?: string | number;
+          documentId?: string;
+        };
+        updatedBy?: {
+          id?: string | number;
+          documentId?: string;
+        };
+        locale?: string;
+        localizations?: {
+          id?: string | number;
+          documentId?: string;
+        }[];
+      }[];
+      /** @format date-time */
+      createdAt?: string;
+      /** @format date-time */
+      updatedAt?: string;
+      /** @format date-time */
+      publishedAt?: string;
+      createdBy?: {
+        id?: string | number;
+        documentId?: string;
+      };
+      updatedBy?: {
+        id?: string | number;
+        documentId?: string;
+      };
+      locale?: string;
+      localizations?: {
+        id?: string | number;
+        documentId?: string;
+      }[];
+    }[];
+    blocked?: boolean;
+    preferedLanguage?: string;
+    /** @format date-time */
+    createdAt?: string;
+    /** @format date-time */
+    updatedAt?: string;
+    /** @format date-time */
+    publishedAt?: string;
+    createdBy?: {
+      id?: string | number;
+      documentId?: string;
+    };
+    updatedBy?: {
+      id?: string | number;
+      documentId?: string;
+    };
+    locale?: string;
+    localizations?: {
+      id?: string | number;
+      documentId?: string;
+    }[];
+  };
+  updatedBy?: {
+    id?: string | number;
+    documentId?: string;
+  };
+  locale?: string;
+  localizations?: {
+    id?: string | number;
+    documentId?: string;
+    message?: string;
+    type?: AnnouncementTypeEnum1;
+    /** @format date-time */
+    createdAt?: string;
+    /** @format date-time */
+    updatedAt?: string;
+    /** @format date-time */
+    publishedAt?: string;
+    createdBy?: {
+      id?: string | number;
+      documentId?: string;
+    };
+    updatedBy?: {
+      id?: string | number;
+      documentId?: string;
+    };
+    locale?: string;
+    localizations?: {
+      id?: string | number;
+      documentId?: string;
+    }[];
+  }[];
+}
+
+export interface AnnouncementResponse {
+  data?: Announcement;
   meta?: object;
 }
 
@@ -1946,6 +2131,7 @@ export interface Blog {
     name?: string;
     alternativeText?: string;
     caption?: string;
+    focalPoint?: any;
     width?: number;
     height?: number;
     formats?: any;
@@ -1981,6 +2167,7 @@ export interface Blog {
         name?: string;
         alternativeText?: string;
         caption?: string;
+        focalPoint?: any;
         width?: number;
         height?: number;
         formats?: any;
@@ -2161,6 +2348,7 @@ export interface Blog {
     name?: string;
     alternativeText?: string;
     caption?: string;
+    focalPoint?: any;
     width?: number;
     height?: number;
     formats?: any;
@@ -2231,6 +2419,7 @@ export interface Blog {
       name?: string;
       alternativeText?: string;
       caption?: string;
+      focalPoint?: any;
       width?: number;
       height?: number;
       formats?: any;
@@ -2278,6 +2467,7 @@ export interface Blog {
       name?: string;
       alternativeText?: string;
       caption?: string;
+      focalPoint?: any;
       width?: number;
       height?: number;
       formats?: any;
@@ -2582,6 +2772,7 @@ export interface Clip {
       name?: string;
       alternativeText?: string;
       caption?: string;
+      focalPoint?: any;
       width?: number;
       height?: number;
       formats?: any;
@@ -2617,6 +2808,7 @@ export interface Clip {
           name?: string;
           alternativeText?: string;
           caption?: string;
+          focalPoint?: any;
           width?: number;
           height?: number;
           formats?: any;
@@ -2793,6 +2985,9 @@ export interface Clip {
     };
     /** @format date-time */
     lastCheckedAt?: string;
+    recordingsCount?: number;
+    /** @format date-time */
+    lastRecordingAt?: string;
     protected?: boolean;
     blocked?: boolean;
     pause?: boolean;
@@ -2944,6 +3139,7 @@ export interface Clip {
     };
     lsr?: boolean;
     sar?: boolean;
+    profileFilled?: boolean;
     /** @format date-time */
     createdAt?: string;
     /** @format date-time */
@@ -3163,6 +3359,7 @@ export interface ClipShare {
         name?: string;
         alternativeText?: string;
         caption?: string;
+        focalPoint?: any;
         width?: number;
         height?: number;
         formats?: any;
@@ -3198,6 +3395,7 @@ export interface ClipShare {
             name?: string;
             alternativeText?: string;
             caption?: string;
+            focalPoint?: any;
             width?: number;
             height?: number;
             formats?: any;
@@ -3374,6 +3572,9 @@ export interface ClipShare {
       };
       /** @format date-time */
       lastCheckedAt?: string;
+      recordingsCount?: number;
+      /** @format date-time */
+      lastRecordingAt?: string;
       protected?: boolean;
       blocked?: boolean;
       pause?: boolean;
@@ -3525,6 +3726,7 @@ export interface ClipShare {
       };
       lsr?: boolean;
       sar?: boolean;
+      profileFilled?: boolean;
       /** @format date-time */
       createdAt?: string;
       /** @format date-time */
@@ -3890,6 +4092,9 @@ export interface FollowerRequest {
     avatar?: number | string;
     /** @format date-time */
     lastCheckedAt?: string;
+    recordingsCount?: number;
+    /** @format date-time */
+    lastRecordingAt?: string;
     protected?: boolean;
     blocked?: boolean;
     pause?: boolean;
@@ -3903,6 +4108,7 @@ export interface FollowerRequest {
     owner?: number | string;
     lsr?: boolean;
     sar?: boolean;
+    profileFilled?: boolean;
     locale?: string;
     localizations?: (number | string)[];
   };
@@ -3942,6 +4148,7 @@ export interface Follower {
     name?: string;
     alternativeText?: string;
     caption?: string;
+    focalPoint?: any;
     width?: number;
     height?: number;
     formats?: any;
@@ -3977,6 +4184,7 @@ export interface Follower {
         name?: string;
         alternativeText?: string;
         caption?: string;
+        focalPoint?: any;
         width?: number;
         height?: number;
         formats?: any;
@@ -4153,6 +4361,9 @@ export interface Follower {
   };
   /** @format date-time */
   lastCheckedAt?: string;
+  recordingsCount?: number;
+  /** @format date-time */
+  lastRecordingAt?: string;
   protected?: boolean;
   blocked?: boolean;
   pause?: boolean;
@@ -4251,6 +4462,7 @@ export interface Follower {
         name?: string;
         alternativeText?: string;
         caption?: string;
+        focalPoint?: any;
         width?: number;
         height?: number;
         formats?: any;
@@ -4294,6 +4506,9 @@ export interface Follower {
       };
       /** @format date-time */
       lastCheckedAt?: string;
+      recordingsCount?: number;
+      /** @format date-time */
+      lastRecordingAt?: string;
       protected?: boolean;
       blocked?: boolean;
       pause?: boolean;
@@ -4309,6 +4524,7 @@ export interface Follower {
       };
       lsr?: boolean;
       sar?: boolean;
+      profileFilled?: boolean;
       /** @format date-time */
       createdAt?: string;
       /** @format date-time */
@@ -4398,6 +4614,7 @@ export interface Follower {
   };
   lsr?: boolean;
   sar?: boolean;
+  profileFilled?: boolean;
   /** @format date-time */
   createdAt?: string;
   /** @format date-time */
@@ -4494,6 +4711,7 @@ export interface Meme {
         name?: string;
         alternativeText?: string;
         caption?: string;
+        focalPoint?: any;
         width?: number;
         height?: number;
         formats?: any;
@@ -4529,6 +4747,7 @@ export interface Meme {
             name?: string;
             alternativeText?: string;
             caption?: string;
+            focalPoint?: any;
             width?: number;
             height?: number;
             formats?: any;
@@ -4705,6 +4924,9 @@ export interface Meme {
       };
       /** @format date-time */
       lastCheckedAt?: string;
+      recordingsCount?: number;
+      /** @format date-time */
+      lastRecordingAt?: string;
       protected?: boolean;
       blocked?: boolean;
       pause?: boolean;
@@ -4856,6 +5078,7 @@ export interface Meme {
       };
       lsr?: boolean;
       sar?: boolean;
+      profileFilled?: boolean;
       /** @format date-time */
       createdAt?: string;
       /** @format date-time */
@@ -5057,6 +5280,7 @@ export interface Recording {
       name?: string;
       alternativeText?: string;
       caption?: string;
+      focalPoint?: any;
       width?: number;
       height?: number;
       formats?: any;
@@ -5092,6 +5316,7 @@ export interface Recording {
           name?: string;
           alternativeText?: string;
           caption?: string;
+          focalPoint?: any;
           width?: number;
           height?: number;
           formats?: any;
@@ -5268,6 +5493,9 @@ export interface Recording {
     };
     /** @format date-time */
     lastCheckedAt?: string;
+    recordingsCount?: number;
+    /** @format date-time */
+    lastRecordingAt?: string;
     protected?: boolean;
     blocked?: boolean;
     pause?: boolean;
@@ -5419,6 +5647,7 @@ export interface Recording {
     };
     lsr?: boolean;
     sar?: boolean;
+    profileFilled?: boolean;
     /** @format date-time */
     createdAt?: string;
     /** @format date-time */
@@ -5866,6 +6095,7 @@ export interface SocialAccount {
         name?: string;
         alternativeText?: string;
         caption?: string;
+        focalPoint?: any;
         width?: number;
         height?: number;
         formats?: any;
@@ -5901,6 +6131,7 @@ export interface SocialAccount {
             name?: string;
             alternativeText?: string;
             caption?: string;
+            focalPoint?: any;
             width?: number;
             height?: number;
             formats?: any;
@@ -5986,6 +6217,9 @@ export interface SocialAccount {
       };
       /** @format date-time */
       lastCheckedAt?: string;
+      recordingsCount?: number;
+      /** @format date-time */
+      lastRecordingAt?: string;
       protected?: boolean;
       blocked?: boolean;
       pause?: boolean;
@@ -6001,6 +6235,7 @@ export interface SocialAccount {
       };
       lsr?: boolean;
       sar?: boolean;
+      profileFilled?: boolean;
       /** @format date-time */
       createdAt?: string;
       /** @format date-time */
@@ -6189,6 +6424,7 @@ export interface Source {
         name?: string;
         alternativeText?: string;
         caption?: string;
+        focalPoint?: any;
         width?: number;
         height?: number;
         formats?: any;
@@ -6224,6 +6460,7 @@ export interface Source {
             name?: string;
             alternativeText?: string;
             caption?: string;
+            focalPoint?: any;
             width?: number;
             height?: number;
             formats?: any;
@@ -6400,6 +6637,9 @@ export interface Source {
       };
       /** @format date-time */
       lastCheckedAt?: string;
+      recordingsCount?: number;
+      /** @format date-time */
+      lastRecordingAt?: string;
       protected?: boolean;
       blocked?: boolean;
       pause?: boolean;
@@ -6551,6 +6791,7 @@ export interface Source {
       };
       lsr?: boolean;
       sar?: boolean;
+      profileFilled?: boolean;
       /** @format date-time */
       createdAt?: string;
       /** @format date-time */
@@ -6711,6 +6952,7 @@ export interface VisitorView {
         name?: string;
         alternativeText?: string;
         caption?: string;
+        focalPoint?: any;
         width?: number;
         height?: number;
         formats?: any;
@@ -6746,6 +6988,7 @@ export interface VisitorView {
             name?: string;
             alternativeText?: string;
             caption?: string;
+            focalPoint?: any;
             width?: number;
             height?: number;
             formats?: any;
@@ -6922,6 +7165,9 @@ export interface VisitorView {
       };
       /** @format date-time */
       lastCheckedAt?: string;
+      recordingsCount?: number;
+      /** @format date-time */
+      lastRecordingAt?: string;
       protected?: boolean;
       blocked?: boolean;
       pause?: boolean;
@@ -7073,6 +7319,7 @@ export interface VisitorView {
       };
       lsr?: boolean;
       sar?: boolean;
+      profileFilled?: boolean;
       /** @format date-time */
       createdAt?: string;
       /** @format date-time */
@@ -7289,8 +7536,8 @@ export type UsersPermissionsPermissionsTree = Record<
 >;
 
 export type ClipWithShare = Clip & {
-  /** User's latest share for this clip */
-  clipShare?: ClipShare | null;
+  /** Shares grouped by platform (e.g. { tiktok: {...}, youtube: {...} }) */
+  clipShares?: Record<string, ClipShare>;
 };
 
 export type FollowerWithMeta = {
@@ -7343,6 +7590,7 @@ export enum ActivityTypeEnum {
   Bigo = "bigo",
   Tango = "tango",
   Buzzcast = "buzzcast",
+  Liveme = "liveme",
 }
 
 export enum ActivityGenderEnum {
@@ -7389,6 +7637,7 @@ export enum AiRequestTypeEnum {
   Bigo = "bigo",
   Tango = "tango",
   Buzzcast = "buzzcast",
+  Liveme = "liveme",
 }
 
 export enum AiRequestGenderEnum {
@@ -7463,6 +7712,7 @@ export enum AiTaskTypeEnum {
   Bigo = "bigo",
   Tango = "tango",
   Buzzcast = "buzzcast",
+  Liveme = "liveme",
 }
 
 export enum AiTaskGenderEnum {
@@ -7520,6 +7770,24 @@ export enum AiTaskStateEnum3 {
   Failed = "failed",
 }
 
+export enum AnnouncementRequestTypeEnum {
+  Info = "info",
+  Warning = "warning",
+  Important = "important",
+}
+
+export enum AnnouncementTypeEnum {
+  Info = "info",
+  Warning = "warning",
+  Important = "important",
+}
+
+export enum AnnouncementTypeEnum1 {
+  Info = "info",
+  Warning = "warning",
+  Important = "important",
+}
+
 export enum ClipTypeEnum {
   Tiktok = "tiktok",
   Twitch = "twitch",
@@ -7530,6 +7798,7 @@ export enum ClipTypeEnum {
   Bigo = "bigo",
   Tango = "tango",
   Buzzcast = "buzzcast",
+  Liveme = "liveme",
 }
 
 export enum ClipGenderEnum {
@@ -7582,6 +7851,7 @@ export enum ClipShareTypeEnum {
   Bigo = "bigo",
   Tango = "tango",
   Buzzcast = "buzzcast",
+  Liveme = "liveme",
 }
 
 export enum ClipShareGenderEnum {
@@ -7640,6 +7910,7 @@ export enum FollowerRequestTypeEnum {
   Bigo = "bigo",
   Tango = "tango",
   Buzzcast = "buzzcast",
+  Liveme = "liveme",
 }
 
 export enum FollowerRequestGenderEnum {
@@ -7701,6 +7972,7 @@ export enum MemeTypeEnum1 {
   Bigo = "bigo",
   Tango = "tango",
   Buzzcast = "buzzcast",
+  Liveme = "liveme",
 }
 
 export enum MemeGenderEnum {
@@ -7795,6 +8067,7 @@ export enum SocialAccountTypeEnum {
   Bigo = "bigo",
   Tango = "tango",
   Buzzcast = "buzzcast",
+  Liveme = "liveme",
 }
 
 export enum SocialAccountGenderEnum {
@@ -7848,6 +8121,7 @@ export enum SourceTypeEnum {
   Bigo = "bigo",
   Tango = "tango",
   Buzzcast = "buzzcast",
+  Liveme = "liveme",
 }
 
 export enum SourceGenderEnum {
@@ -7894,6 +8168,7 @@ export enum VisitorViewTypeEnum {
   Bigo = "bigo",
   Tango = "tango",
   Buzzcast = "buzzcast",
+  Liveme = "liveme",
 }
 
 export enum VisitorViewGenderEnum {
@@ -8067,6 +8342,52 @@ export interface DeleteAiTasksIdParams {
 
 /** @format int64 */
 export type DeleteAiTasksIdData = number;
+
+export interface GetAnnouncementsParams {
+  /** Sort by attributes ascending (asc) or descending (desc) */
+  sort?: string;
+  /** Return page/pageSize (default: true) */
+  "pagination[withCount]"?: boolean;
+  /** Page number (default: 0) */
+  "pagination[page]"?: number;
+  /** Page size (default: 25) */
+  "pagination[pageSize]"?: number;
+  /** Offset value (default: 0) */
+  "pagination[start]"?: number;
+  /** Number of entities to return (default: 25) */
+  "pagination[limit]"?: number;
+  /** Fields to return (ex: title,author) */
+  fields?: string;
+  /** Relations to return */
+  populate?: string | string[] | object;
+  /** Filters to apply */
+  filters?: Record<string, any>;
+  /** Locale to apply */
+  locale?: string;
+}
+
+export type GetAnnouncementsData = AnnouncementListResponse;
+
+export type PostAnnouncementsData = AnnouncementResponse;
+
+export interface GetAnnouncementsIdParams {
+  id: string;
+}
+
+export type GetAnnouncementsIdData = AnnouncementResponse;
+
+export interface PutAnnouncementsIdParams {
+  id: string;
+}
+
+export type PutAnnouncementsIdData = AnnouncementResponse;
+
+export interface DeleteAnnouncementsIdParams {
+  id: string;
+}
+
+/** @format int64 */
+export type DeleteAnnouncementsIdData = number;
 
 export interface GetArticlesParams {
   /** Sort by attributes ascending (asc) or descending (desc) */
@@ -9598,6 +9919,110 @@ export namespace AiTask {
     export type RequestBody = never;
     export type RequestHeaders = {};
     export type ResponseBody = DeleteAiTasksIdData;
+  }
+}
+
+export namespace Announcement {
+  /**
+   * No description
+   * @tags Announcement
+   * @name GetAnnouncements
+   * @request GET:/announcements
+   * @secure
+   */
+  export namespace GetAnnouncements {
+    export type RequestParams = {};
+    export type RequestQuery = {
+      /** Sort by attributes ascending (asc) or descending (desc) */
+      sort?: string;
+      /** Return page/pageSize (default: true) */
+      "pagination[withCount]"?: boolean;
+      /** Page number (default: 0) */
+      "pagination[page]"?: number;
+      /** Page size (default: 25) */
+      "pagination[pageSize]"?: number;
+      /** Offset value (default: 0) */
+      "pagination[start]"?: number;
+      /** Number of entities to return (default: 25) */
+      "pagination[limit]"?: number;
+      /** Fields to return (ex: title,author) */
+      fields?: string;
+      /** Relations to return */
+      populate?: string | string[] | object;
+      /** Filters to apply */
+      filters?: Record<string, any>;
+      /** Locale to apply */
+      locale?: string;
+    };
+    export type RequestBody = never;
+    export type RequestHeaders = {};
+    export type ResponseBody = GetAnnouncementsData;
+  }
+
+  /**
+   * No description
+   * @tags Announcement
+   * @name PostAnnouncements
+   * @request POST:/announcements
+   * @secure
+   */
+  export namespace PostAnnouncements {
+    export type RequestParams = {};
+    export type RequestQuery = {};
+    export type RequestBody = AnnouncementRequest;
+    export type RequestHeaders = {};
+    export type ResponseBody = PostAnnouncementsData;
+  }
+
+  /**
+   * No description
+   * @tags Announcement
+   * @name GetAnnouncementsId
+   * @request GET:/announcements/{id}
+   * @secure
+   */
+  export namespace GetAnnouncementsId {
+    export type RequestParams = {
+      id: string;
+    };
+    export type RequestQuery = {};
+    export type RequestBody = never;
+    export type RequestHeaders = {};
+    export type ResponseBody = GetAnnouncementsIdData;
+  }
+
+  /**
+   * No description
+   * @tags Announcement
+   * @name PutAnnouncementsId
+   * @request PUT:/announcements/{id}
+   * @secure
+   */
+  export namespace PutAnnouncementsId {
+    export type RequestParams = {
+      id: string;
+    };
+    export type RequestQuery = {};
+    export type RequestBody = AnnouncementRequest;
+    export type RequestHeaders = {};
+    export type ResponseBody = PutAnnouncementsIdData;
+  }
+
+  /**
+   * No description
+   * @tags Announcement
+   * @name DeleteAnnouncementsId
+   * @request DELETE:/announcements/{id}
+   * @secure
+   */
+  export namespace DeleteAnnouncementsId {
+    export type RequestParams = {
+      id: string;
+    };
+    export type RequestQuery = {};
+    export type RequestBody = never;
+    export type RequestHeaders = {};
+    export type ResponseBody = DeleteAnnouncementsIdData;
   }
 }
 
@@ -12439,6 +12864,113 @@ export class Api<
     ) =>
       this.request<DeleteAiTasksIdData, Error>({
         path: `/ai-tasks/${id}`,
+        method: "DELETE",
+        secure: true,
+        format: "json",
+        ...params,
+      }),
+  };
+  announcement = {
+    /**
+     * No description
+     *
+     * @tags Announcement
+     * @name GetAnnouncements
+     * @request GET:/announcements
+     * @secure
+     */
+    getAnnouncements: (
+      query: GetAnnouncementsParams,
+      params: RequestParams = {},
+    ) =>
+      this.request<GetAnnouncementsData, Error>({
+        path: `/announcements`,
+        method: "GET",
+        query: query,
+        secure: true,
+        format: "json",
+        ...params,
+      }),
+
+    /**
+     * No description
+     *
+     * @tags Announcement
+     * @name PostAnnouncements
+     * @request POST:/announcements
+     * @secure
+     */
+    postAnnouncements: (
+      data: AnnouncementRequest,
+      params: RequestParams = {},
+    ) =>
+      this.request<PostAnnouncementsData, Error>({
+        path: `/announcements`,
+        method: "POST",
+        body: data,
+        secure: true,
+        type: ContentType.Json,
+        format: "json",
+        ...params,
+      }),
+
+    /**
+     * No description
+     *
+     * @tags Announcement
+     * @name GetAnnouncementsId
+     * @request GET:/announcements/{id}
+     * @secure
+     */
+    getAnnouncementsId: (
+      { id }: GetAnnouncementsIdParams,
+      params: RequestParams = {},
+    ) =>
+      this.request<GetAnnouncementsIdData, Error>({
+        path: `/announcements/${id}`,
+        method: "GET",
+        secure: true,
+        format: "json",
+        ...params,
+      }),
+
+    /**
+     * No description
+     *
+     * @tags Announcement
+     * @name PutAnnouncementsId
+     * @request PUT:/announcements/{id}
+     * @secure
+     */
+    putAnnouncementsId: (
+      { id }: PutAnnouncementsIdParams,
+      data: AnnouncementRequest,
+      params: RequestParams = {},
+    ) =>
+      this.request<PutAnnouncementsIdData, Error>({
+        path: `/announcements/${id}`,
+        method: "PUT",
+        body: data,
+        secure: true,
+        type: ContentType.Json,
+        format: "json",
+        ...params,
+      }),
+
+    /**
+     * No description
+     *
+     * @tags Announcement
+     * @name DeleteAnnouncementsId
+     * @request DELETE:/announcements/{id}
+     * @secure
+     */
+    deleteAnnouncementsId: (
+      { id }: DeleteAnnouncementsIdParams,
+      params: RequestParams = {},
+    ) =>
+      this.request<DeleteAnnouncementsIdData, Error>({
+        path: `/announcements/${id}`,
         method: "DELETE",
         secure: true,
         format: "json",

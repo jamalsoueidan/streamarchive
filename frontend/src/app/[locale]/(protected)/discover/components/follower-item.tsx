@@ -25,6 +25,7 @@ import { RecordingMenu } from "@/app/[locale]/(protected)/components/recording-m
 import { getProfileUrl } from "@/app/components/open-social";
 import { generateAvatarUrl } from "@/app/lib/avatar-url";
 import { safeRelativeTime } from "@/app/lib/safe-relative-time";
+import { useUser } from "@/app/providers/user-provider";
 import { useFormatter, useNow, useTranslations } from "next-intl";
 import Image from "next/image";
 import { CountryFlag } from "../../components/country-flag";
@@ -39,6 +40,11 @@ export default function FollowerItem({ follower }: Props) {
   const t = useTranslations("protected.common");
   const now = useNow({ updateInterval: 1000 * 30 });
   const format = useFormatter();
+  const user = useUser();
+
+  const isFollowing = (user?.followers || []).some(
+    (f) => f.documentId === follower.documentId,
+  );
 
   const mawTruncate = useMatches({
     base: 100,
@@ -85,7 +91,7 @@ export default function FollowerItem({ follower }: Props) {
                 </Text>
                 <Text size="xs" c="dimmed" suppressHydrationWarning>
                   {t("recordings.videoCount", {
-                    count: follower.totalRecordings!,
+                    count: follower.recordingsCount ?? 0,
                   })}
                 </Text>
               </Stack>
@@ -93,19 +99,15 @@ export default function FollowerItem({ follower }: Props) {
           </Group>
 
           <Flex gap="xs" justify="right" align="center">
-            {follower.isFollowing ? (
-              <>
-                <UnfollowButton
-                  username={follower.username}
-                  type={follower.type}
-                  //onSuccess={() => handleFollowed(follower.id!)}
-                />
-              </>
+            {isFollowing ? (
+              <UnfollowButton
+                username={follower.username}
+                type={follower.type}
+              />
             ) : (
               <FollowButton
                 username={follower.username}
                 type={follower.type}
-                //onSuccess={() => handleFollowed(follower.id!)}
               />
             )}
           </Flex>

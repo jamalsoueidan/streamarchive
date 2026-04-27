@@ -21,8 +21,8 @@ export async function GET(
 
   const allFollowers = [];
   for (let i = 0; i < strapiPagesPerSitemap; i++) {
-    const response = await publicApi.follower.browseFollowers({
-      hasRecordings: true,
+    const response = await publicApi.follower.getFollowers({
+      filters: { recordingsCount: { $gt: 0 } },
       "pagination[page]": startPage + i,
       "pagination[pageSize]": 100,
     });

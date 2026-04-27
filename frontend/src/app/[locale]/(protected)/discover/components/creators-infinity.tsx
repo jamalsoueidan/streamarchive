@@ -2,13 +2,14 @@
 
 import { Divider, Grid, Loader, Stack, Text } from "@mantine/core";
 import { useIntersection } from "@mantine/hooks";
-import { useEffect } from "react";
+import { useEffect, useMemo } from "react";
 
 import { useQueryStates } from "nuqs";
 
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { useTranslations } from "next-intl";
 
+import { useUser } from "@/app/providers/user-provider";
 import { fetchFollowers } from "../actions/fetch-followers";
 import { exploreParsers } from "../lib/search-params";
 import FollowerItem from "./follower-item";
@@ -16,11 +17,21 @@ import FollowerItem from "./follower-item";
 export default function CreatorsInfinity() {
   const [filters] = useQueryStates(exploreParsers);
   const t = useTranslations("protected.discover");
+  const user = useUser();
+
+  const excludeFollowingIds = useMemo(
+    () =>
+      (user?.followers || [])
+        .map((f) => f.id)
+        .filter((id): id is number => typeof id === "number"),
+    [user?.followers],
+  );
 
   const { data, fetchNextPage, hasNextPage, isFetchingNextPage, isLoading } =
     useInfiniteQuery({
-      queryKey: ["creators", "discover", filters],
-      queryFn: ({ pageParam }) => fetchFollowers(filters, pageParam),
+      queryKey: ["creators", "discover", filters, excludeFollowingIds],
+      queryFn: ({ pageParam }) =>
+        fetchFollowers(filters, pageParam, excludeFollowingIds),
       initialPageParam: 1,
       getNextPageParam: (lastPage) => {
         const { page = 1, pageCount = 0 } = lastPage.meta?.pagination ?? {};

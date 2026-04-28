@@ -2,36 +2,22 @@
 
 import { usernameOrFilter } from "@/app/lib/username-filter";
 import api from "@/lib/api";
-import { deepMerge } from "@mantine/core";
+import publicApi from "@/lib/public-api";
 import { getLocale } from "next-intl/server";
 import { ProfileFilters } from "../lib/search-params";
 
-const defaultOptions = {
+const defaultBody = {
   filters: {
-    // give me all recordings that are done or recording
-    sources: {
-      state: {
-        $ne: "failed",
-      },
-    },
+    sources: { state: { $ne: "failed" } },
   },
   populate: {
     sources: {
       fields: ["*"],
-      filters: {
-        // filter out from source
-        state: {
-          $ne: "failed",
-        },
-      },
+      filters: { state: { $ne: "failed" } },
     },
     follower: {
       fields: ["username", "type"],
-      populate: {
-        avatar: {
-          fields: ["url"],
-        },
-      },
+      populate: { avatar: { fields: ["url"] } },
     },
   },
 };
@@ -87,28 +73,24 @@ export async function fetchProfileRecordings(
   filters: ProfileFilters,
   page: number = 1,
 ) {
-  //const locale = await getLocale();
-  const response = await api.recording.browseRecordings(
-    deepMerge(defaultOptions, {
-      filters: {
-        follower: {
-          ...usernameOrFilter(username),
-          type: { $eq: type },
-        },
+  const response = await publicApi.recording.searchRecordings({
+    ...defaultBody,
+    filters: {
+      ...defaultBody.filters,
+      follower: {
+        ...usernameOrFilter(username),
+        type: { $eq: type },
       },
-      sort: filters.sort,
-      "pagination[page]": page,
-      "pagination[pageSize]": 15,
-      }),
-  );
+    },
+    sort: filters.sort,
+    pagination: { page, pageSize: 15 },
+  });
 
   return {
     data: response.data?.data || [],
     meta: response.data?.meta,
   };
 }
-
-// actions.ts
 
 export async function fetchRecordingWithContext(
   type: string,
@@ -122,20 +104,17 @@ export async function fetchRecordingWithContext(
   const decodedUsername = username.replace(/^(%40|@)/, "");
   const isDesc = !filters.sort?.includes(":asc");
 
-  // Special case: pageParam === 1 means "find the target video's page"
-  // Any other pageParam means "fetch that specific page"
   let actualPage = pageParam;
 
   if (pageParam === 1) {
     // 1. Get the target video to find its createdAt
-    const targetResponse = await api.recording.browseRecordings(
-      deepMerge(defaultOptions, {
-        filters: {
-          documentId: { $eq: targetDocumentId },
-        },
-            //locale,
-      }),
-    );
+    const targetResponse = await publicApi.recording.searchRecordings({
+      ...defaultBody,
+      filters: {
+        ...defaultBody.filters,
+        documentId: { $eq: targetDocumentId },
+      },
+    });
 
     const targetVideo = targetResponse.data?.data?.[0];
 
@@ -147,22 +126,18 @@ export async function fetchRecordingWithContext(
     }
 
     // 2. Count how many videos come BEFORE this one
-    const countResponse = await api.recording.browseRecordings({
+    const countResponse = await publicApi.recording.searchRecordings({
       filters: {
         follower: {
           username: { $eqi: decodedUsername },
           type: { $eq: type },
         },
-        sources: {
-          state: { $ne: "failed" },
-        },
+        sources: { state: { $ne: "failed" } },
         createdAt: isDesc
           ? { $gt: targetVideo.createdAt }
           : { $lt: targetVideo.createdAt },
       },
-      "pagination[page]": 1,
-      "pagination[pageSize]": 1,
-      //locale,
+      pagination: { page: 1, pageSize: 1, withCount: true },
     });
 
     const countBefore = countResponse.data?.meta?.pagination?.total || 0;
@@ -170,20 +145,18 @@ export async function fetchRecordingWithContext(
   }
 
   // 3. Fetch the actual page
-  const response = await api.recording.browseRecordings(
-    deepMerge(defaultOptions, {
-      filters: {
-        follower: {
-          username: { $eqi: decodedUsername },
-          type: { $eq: type },
-        },
+  const response = await publicApi.recording.searchRecordings({
+    ...defaultBody,
+    filters: {
+      ...defaultBody.filters,
+      follower: {
+        username: { $eqi: decodedUsername },
+        type: { $eq: type },
       },
-      sort: filters.sort,
-      "pagination[page]": actualPage,
-      "pagination[pageSize]": pageSize,
-        //locale,
-    }),
-  );
+    },
+    sort: filters.sort,
+    pagination: { page: actualPage, pageSize },
+  });
 
   return {
     data: response.data?.data || [],

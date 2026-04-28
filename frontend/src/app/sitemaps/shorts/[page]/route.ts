@@ -1,3 +1,4 @@
+import { getClipUrl } from "@/app/lib/clip-url";
 import { routing } from "@/i18n/routing";
 import publicApi from "@/lib/public-api";
 
@@ -40,8 +41,8 @@ export async function GET(
     .map((clip) => {
       const path = "/shorts/" + clip.documentId;
       const pageUrl = baseUrl + path;
-      const videoUrl = baseUrl + `/clip/${clip.documentId}/clip.mp4`;
-      const thumbnailUrl = baseUrl + `/clip/${clip.documentId}/thumbnail.jpg`;
+      const videoUrl = getClipUrl(clip.documentId!, "preview.mp4", clip.path);
+      const thumbnailUrl = getClipUrl(clip.documentId!, "thumbnail.jpg", clip.path);
 
       const creatorName =
         clip.follower?.nickname || clip.follower?.username || "Unknown";

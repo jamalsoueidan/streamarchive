@@ -222,7 +222,7 @@ export default function FollowerItem({ follower, isOpen }: Props) {
                               }),
                             })
                           : format.dateTime(new Date(rec.createdAt || ""), {
-                              dateStyle: "short",
+                              dateStyle: "medium",
                               timeStyle: "short",
                             })}
                       </Text>

@@ -54,7 +54,7 @@ export default function RecordingItem({ recording }: Props) {
           </Anchor>
           <Text size="xs" c="dimmed" truncate suppressHydrationWarning>
             {format.dateTime(new Date(recording.updatedAt || ""), {
-              dateStyle: "short",
+              dateStyle: "medium",
             })}
           </Text>
         </Stack>

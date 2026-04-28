@@ -268,7 +268,7 @@ export default function PremiumClient({
       )}
 
       {/* Features checklist */}
-      <Grid gutter="sm">
+      <Grid gap="sm">
         {PREMIUM_FEATURES.map((feature) => (
           <GridCol span={{ base: 12, sm: 6 }} key={feature.label}>
             <Group gap="xs" wrap="nowrap">

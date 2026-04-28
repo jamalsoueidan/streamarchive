@@ -1,6 +1,7 @@
 "use client";
 
 import { useWatched } from "@/app/hooks/use-watched";
+import { getImageUrl } from "@/app/lib/media-url";
 import { useUser } from "@/app/providers/user-provider";
 import {
   FollowerTypeEnum,
@@ -51,7 +52,8 @@ export function ImageSpritePreview({ recording, type, username }: Props) {
   );
 
   const hasSources = sources && sources.length > 0;
-  const uri = `/video/${recording.documentId}/`;
+  const lastSource = sources?.at(-1);
+  const firstDoneSource = sources?.find((s) => s.state === "done");
 
   const getHref = (time?: number) => {
     const params = new URLSearchParams(searchParams.toString());
@@ -123,7 +125,9 @@ export function ImageSpritePreview({ recording, type, username }: Props) {
           alt=""
           src={
             hasSources
-              ? uri + "screenshot.jpg"
+              ? isRecording
+                ? getImageUrl(recording.documentId!, "screenshot.jpg", lastSource)
+                : getImageUrl(recording.documentId!, "preview.jpg", firstDoneSource)
               : "/assets/placeholder/180x280/black/white?text=Recording started"
           }
           unoptimized
@@ -141,7 +145,7 @@ export function ImageSpritePreview({ recording, type, username }: Props) {
         />
         {showVideo && !isRecording && sources && sources.length > 0 && (
           <SpritePreview
-            baseUrl={`/video/${recording.documentId}/thumbnails.jpg`}
+            baseUrl={getImageUrl(recording.documentId!, "thumbnails.jpg", firstDoneSource)}
             sources={sources}
           />
         )}

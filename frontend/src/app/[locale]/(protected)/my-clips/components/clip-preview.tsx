@@ -1,6 +1,7 @@
 "use client";
 
 import { FollowerTypeIcon } from "@/app/[locale]/(protected)/components/follower-type-icon";
+import { getClipUrl } from "@/app/lib/clip-url";
 import {
   MediaControlBar,
   MediaController,
@@ -38,8 +39,8 @@ export function ClipPreview({ clip, type, locale }: Props) {
   const controllerRef = useRef<HTMLElement>(null);
   const [isInView, setIsInView] = useState(false);
 
-  const previewUrl = `/clip/${clip.documentId}/thumbnail.jpg`;
-  const src = `/clip/${clip.documentId}/clip.mp4`;
+  const previewUrl = getClipUrl(clip.documentId!, "thumbnail.jpg", clip.path);
+  const src = getClipUrl(clip.documentId!, "clip.mp4", clip.path);
   const subtitlesUrl = `/clip/${clip.documentId}/subtitles.vtt?locale=${locale}`;
 
   // Lazy load: only render video when in view

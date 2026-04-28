@@ -26,10 +26,8 @@ const cachedMyList = unstable_cache(
   ) => {
     const idScope = filters.favorites ? favoriteIds : followingIds;
     const baseFilters = buildCreatorsFilters(filters);
-    const response = await publicApi.follower.getFollowers({
-      "pagination[page]": page,
-      "pagination[pageSize]": 10,
-      "pagination[withCount]": true,
+    const response = await publicApi.follower.searchFollowers({
+      pagination: { page, pageSize: 10, withCount: true },
       sort: mapSort(filters.sort),
       populate: { avatar: { fields: ["url"] } },
       filters: {

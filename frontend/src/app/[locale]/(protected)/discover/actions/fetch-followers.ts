@@ -22,10 +22,8 @@ const cachedDiscover = unstable_cache(
     excludeFollowingIds: number[],
   ) => {
     const baseFilters = buildCreatorsFilters(filters);
-    const response = await publicApi.follower.getFollowers({
-      "pagination[page]": page,
-      "pagination[pageSize]": 10,
-      "pagination[withCount]": true,
+    const response = await publicApi.follower.searchFollowers({
+      pagination: { page, pageSize: 10, withCount: true },
       sort: mapSort(filters.sort),
       populate: {
         avatar: { fields: ["url"] },

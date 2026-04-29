@@ -3,15 +3,11 @@
 import { Link } from "@/i18n/navigation";
 import {
   ActionIcon,
-  Badge,
   Box,
   Button,
-  Flex,
-  Grid,
-  GridCol,
   Group,
   Modal,
-  Paper,
+  SimpleGrid,
   Stack,
   Text,
   Title,
@@ -29,8 +25,6 @@ import {
   IconX,
 } from "@tabler/icons-react";
 import { useTranslations } from "next-intl";
-
-const DISCOUNT_CODE = "FIRST25";
 
 interface UnfollowUpgradeModalProps {
   opened: boolean;
@@ -106,63 +100,15 @@ export function UnfollowUpgradeModal({
           <Text fw={600} size="sm" c="dimmed">
             {tp("unlockPremiumFeatures")}
           </Text>
-          <Grid gap="xs">
+          <SimpleGrid cols={2} spacing="xs">
             {features.map((f) => (
-              <GridCol span={6} key={f.label}>
-                <Group gap={6} wrap="nowrap">
-                  <IconCheck size={16} color="#52FF94" style={{ flexShrink: 0 }} />
-                  <Text size="xs">{f.label}</Text>
-                </Group>
-              </GridCol>
-            ))}
-          </Grid>
-        </Stack>
-
-        <Paper
-          p="sm"
-          radius="md"
-          style={{
-            background: "rgba(27, 147, 69, 0.08)",
-            border: "1px solid rgba(82, 255, 148, 0.3)",
-          }}
-        >
-          <Flex justify="space-between" align="center" gap="sm" wrap="nowrap">
-            <Stack gap={2}>
-              <Group gap="xs">
-                {!isMobile ? (
-                  <Badge color="green" variant="filled" size="sm">
-                    25% OFF
-                  </Badge>
-                ) : null}
-                <Text size="sm" fw={600}>
-                  {t("followers.upgradeModalDiscount")}
-                </Text>
+              <Group gap={6} wrap="nowrap" key={f.label}>
+                <IconCheck size={16} color="#52FF94" style={{ flexShrink: 0 }} />
+                <Text size="xs">{f.label}</Text>
               </Group>
-              <Text size="xs" c="dimmed">
-                {t("followers.upgradeModalCodeNote")}
-              </Text>
-            </Stack>
-            <Paper
-              px="sm"
-              py={6}
-              radius="sm"
-              style={{
-                background: "rgba(27, 147, 69, 0.15)",
-                border: "1px dashed rgba(82, 255, 148, 0.6)",
-                flexShrink: 0,
-              }}
-            >
-              <Text
-                fw={700}
-                size="sm"
-                c="green"
-                style={{ fontFamily: "monospace", letterSpacing: "0.12em" }}
-              >
-                {DISCOUNT_CODE}
-              </Text>
-            </Paper>
-          </Flex>
-        </Paper>
+            ))}
+          </SimpleGrid>
+        </Stack>
 
         <Button
           component={Link}

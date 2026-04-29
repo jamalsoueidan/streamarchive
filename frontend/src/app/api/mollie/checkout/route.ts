@@ -1,31 +1,11 @@
 import api from "@/lib/api";
+import { MOLLIE_PRICES } from "@/lib/mollie-prices";
 import createMollieClient, { SequenceType } from "@mollie/api-client";
 import { NextRequest, NextResponse } from "next/server";
 
 function getMollieClient() {
   return createMollieClient({ apiKey: process.env.MOLLIE_API_KEY! });
 }
-
-const PRICES: Record<
-  string,
-  { amount: string; description: string; interval: string }
-> = {
-  monthly: {
-    amount: "18.00",
-    description: "StreamArchive Premium - Monthly",
-    interval: "1 month",
-  },
-  quarterly: {
-    amount: "36.00",
-    description: "StreamArchive Premium - Quarterly",
-    interval: "3 months",
-  },
-  annual: {
-    amount: "120.00",
-    description: "StreamArchive Premium - Annual",
-    interval: "12 months",
-  },
-};
 
 export async function POST(request: NextRequest) {
   try {
@@ -36,20 +16,34 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Not authenticated" }, { status: 401 });
     }
 
-    const user = currentUser.data as { id: number; email: string };
+    const user = currentUser.data as {
+      id: number;
+      email: string;
+      subscriptionStatus?: string;
+    };
     const userId = user.id.toString();
     const userEmail = user.email;
 
+    if (user.subscriptionStatus === "active") {
+      return NextResponse.json(
+        {
+          error:
+            "You already have an active subscription. Cancel it before starting a new one.",
+        },
+        { status: 409 },
+      );
+    }
+
     const { billingCycle } = await request.json();
 
-    if (!billingCycle || !PRICES[billingCycle]) {
+    if (!billingCycle || !MOLLIE_PRICES[billingCycle]) {
       return NextResponse.json(
         { error: "Invalid billing cycle" },
         { status: 400 },
       );
     }
 
-    const plan = PRICES[billingCycle];
+    const plan = MOLLIE_PRICES[billingCycle];
     const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
     const isTestMode = process.env.MOLLIE_API_KEY!.startsWith("test_");
 

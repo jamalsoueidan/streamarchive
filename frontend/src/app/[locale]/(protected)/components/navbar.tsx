@@ -1,6 +1,7 @@
 "use client";
 
 import {
+  Anchor,
   AppShell,
   Card,
   ScrollArea,
@@ -80,6 +81,7 @@ export function Navbar({
 
   const pathname = usePathname();
   const t = useTranslations("protected.navigation");
+  const tFooter = useTranslations("footer");
 
   const handleLinkClick = (e: React.MouseEvent, url: string) => {
     if (url === "/search") {
@@ -154,13 +156,12 @@ export function Navbar({
   return (
     <>
       <SearchCreatorModal opened={searchOpened} onClose={closeSearch} />
-      <AppShell.Section grow component={ScrollArea}>
+      <AppShell.Section component={ScrollArea}>
         <Card
           radius="lg"
           p="xs"
           withBorder={false}
           bg="gray.9"
-          h="100%"
           w="100%"
         >
           <Stack gap={collapsed ? 4 : 8} align="center">
@@ -168,6 +169,22 @@ export function Navbar({
           </Stack>
         </Card>
       </AppShell.Section>
+
+      {!collapsed && (
+        <AppShell.Section mt="xs">
+          <Stack gap={4} align="center">
+            <Anchor href="/contact" size="xs" c="dimmed">
+              {tFooter("company.contact")}
+            </Anchor>
+            <Anchor href="/privacy" size="xs" c="dimmed">
+              {tFooter("legal.privacy")}
+            </Anchor>
+            <Anchor href="/terms" size="xs" c="dimmed">
+              {tFooter("legal.terms")}
+            </Anchor>
+          </Stack>
+        </AppShell.Section>
+      )}
     </>
   );
 }

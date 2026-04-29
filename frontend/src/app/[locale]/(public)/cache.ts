@@ -32,6 +32,9 @@ export const getLatestRecordings = unstable_cache(
             $eq: ["done"],
           },
         },
+        follower: {
+          type: { $ne: "tango" },
+        },
       },
       "pagination[limit]": 20,
       sort: "createdAt:desc",

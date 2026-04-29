@@ -1,16 +1,14 @@
-import { Divider, Group, Stack, Text, Title } from "@mantine/core";
-import { IconBrandSafari } from "@tabler/icons-react";
+import { Stack, Tabs, TabsList, TabsTab } from "@mantine/core";
 import {
   dehydrate,
   HydrationBoundary,
   QueryClient,
 } from "@tanstack/react-query";
 
+import { getFollowerFilters } from "@/app/actions/followers";
 import { getTranslations } from "next-intl/server";
-import { Suspense } from "react";
 import { fetchRecordings } from "./actions/fetch-recordings";
 import Filters from "./components/filters";
-import { FiltersWrapper } from "./components/filters-wrapper";
 import FollowingInfinity from "./components/following-infinity";
 import { FollowingFilters, followingParamsCache } from "./lib/search-params";
 
@@ -32,27 +30,30 @@ export default async function Page({
     { updatedAt: 0 },
   );
 
+  const filterOptions = await getFollowerFilters();
+
   return (
     <HydrationBoundary state={dehydrate(queryClient)}>
       <Stack w="100%">
-        <Group justify="space-between" w="100%">
-          <Stack gap={2}>
-            <Group gap="xs">
-              <IconBrandSafari size={32} />
-              <Title order={1} size="h3">
-                {t("title")}
-              </Title>
-            </Group>
-            <Text size="sm" c="dimmed">
-              {t("description")}
-            </Text>
-          </Stack>
-
-          <Suspense fallback={<Filters />}>
-            <FiltersWrapper />
-          </Suspense>
-        </Group>
-        <Divider mx={{ base: "-xs", sm: "-md" }} />
+        <Tabs
+          defaultValue="default"
+          styles={{
+            list: {
+              borderBottomWidth: 4,
+            },
+            tab: {
+              fontSize: "var(--mantine-font-size-lg)",
+              fontWeight: 600,
+              padding: "var(--mantine-spacing-sm) var(--mantine-spacing-md)",
+              borderBottomWidth: 4,
+            },
+          }}
+        >
+          <TabsList>
+            <TabsTab value="default">{t("title")}</TabsTab>
+          </TabsList>
+        </Tabs>
+        <Filters filterOptions={filterOptions} />
         <FollowingInfinity />
       </Stack>
     </HydrationBoundary>

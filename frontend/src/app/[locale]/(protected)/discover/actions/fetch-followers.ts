@@ -23,23 +23,13 @@ const cachedDiscover = unstable_cache(
   ) => {
     const baseFilters = buildCreatorsFilters(filters);
     const response = await publicApi.follower.searchFollowers({
-      pagination: { page, pageSize: 10, withCount: true },
+      pagination: { page, pageSize: 24, withCount: true },
       sort: mapSort(filters.sort),
-      populate: {
-        avatar: { fields: ["url"] },
-        recordings: {
-          populate: {
-            sources: {
-              fields: ["*"],
-              filters: { state: { $ne: "failed" } },
-            },
-          },
-        },
-      },
+      populate: { avatar: { fields: ["url"] } },
       filters: {
         ...baseFilters,
         ...(filters.hasRecordings ? { recordingsCount: { $gt: 0 } } : {}),
-        ...(excludeFollowingIds.length > 0
+        ...(filters.excludeMyCreators && excludeFollowingIds.length > 0
           ? { id: { $notIn: excludeFollowingIds } }
           : {}),
       },

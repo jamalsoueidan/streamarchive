@@ -23,6 +23,7 @@ export const exploreParsers = {
     SortOptions.createdAtDesc,
   ),
   hasRecordings: parseAsBoolean.withDefault(true),
+  excludeMyCreators: parseAsBoolean,
   gender: parseAsString,
   country: parseAsString,
   language: parseAsString,

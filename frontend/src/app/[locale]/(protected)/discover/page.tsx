@@ -1,6 +1,5 @@
 import { getUser } from "@/app/actions/user";
-import { Divider, Group, Stack, Text, Title } from "@mantine/core";
-import { IconWorldSearch } from "@tabler/icons-react";
+import { Stack, Tabs, TabsList, TabsTab } from "@mantine/core";
 import {
   dehydrate,
   HydrationBoundary,
@@ -30,7 +29,12 @@ export default async function Page({
   const queryClient = new QueryClient();
 
   await queryClient.prefetchInfiniteQuery({
-    queryKey: ["creators", "discover", filters, excludeFollowingIds],
+    queryKey: [
+      "creators",
+      "discover",
+      filters,
+      filters.excludeMyCreators ? excludeFollowingIds : null,
+    ],
     queryFn: ({ pageParam }) =>
       fetchFollowers(filters, pageParam, excludeFollowingIds),
     initialPageParam: 1,
@@ -39,24 +43,29 @@ export default async function Page({
   return (
     <HydrationBoundary state={dehydrate(queryClient)}>
       <Stack w="100%">
-        <Group justify="space-between" w="100%">
-          <Stack gap={2}>
-            <Group gap="xs">
-              <IconWorldSearch size={32} />
-              <Title order={1} size="h3">
-                {t("title")}
-              </Title>
-            </Group>
-            <Text size="sm" c="dimmed">
-              {t("description")}
-            </Text>
-          </Stack>
+        <Tabs
+          defaultValue="default"
+          styles={{
+            list: {
+              borderBottomWidth: 4,
+            },
+            tab: {
+              fontSize: "var(--mantine-font-size-lg)",
+              fontWeight: 600,
+              padding: "var(--mantine-spacing-sm) var(--mantine-spacing-md)",
+              borderBottomWidth: 4,
+            },
+          }}
+        >
+          <TabsList>
+            <TabsTab value="default">{t("title")}</TabsTab>
+          </TabsList>
+        </Tabs>
 
-          <Suspense fallback={<Filters />}>
-            <FiltersWrapper />
-          </Suspense>
-        </Group>
-        <Divider mx={{ base: "-xs", sm: "-md" }} />
+        <Suspense fallback={<Filters />}>
+          <FiltersWrapper />
+        </Suspense>
+
         <CreatorsInfinity />
       </Stack>
     </HydrationBoundary>

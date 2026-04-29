@@ -9,13 +9,22 @@ import { Anchor, Avatar, Box, Card, Group, Stack, Text } from "@mantine/core";
 import { IconVideo } from "@tabler/icons-react";
 import { useFormatter, useNow } from "next-intl";
 import NextImage from "next/image";
+import FollowButton from "./follow-button";
+import UnfollowButton from "./unfollow-button";
 
 interface CreatorCardProps {
   follower: Follower;
   width?: number | string;
+  isFollowing?: boolean;
+  showFollowAction?: boolean;
 }
 
-export function CreatorCard({ follower, width = 200 }: CreatorCardProps) {
+export function CreatorCard({
+  follower,
+  width = 200,
+  isFollowing,
+  showFollowAction,
+}: CreatorCardProps) {
   const format = useFormatter();
   const now = useNow({ updateInterval: 1000 * 30 });
   const avatarUrl = follower.avatar?.url
@@ -37,6 +46,7 @@ export function CreatorCard({ follower, width = 200 }: CreatorCardProps) {
           border: "1px solid rgba(255, 255, 255, 0.08)",
           cursor: "pointer",
           overflow: "hidden",
+          position: "relative",
         }}
       >
         <Box
@@ -50,6 +60,31 @@ export function CreatorCard({ follower, width = 200 }: CreatorCardProps) {
             filter: "brightness(0.6)",
           }}
         />
+
+        {showFollowAction && follower.username && follower.type && (
+          <Box
+            pos="absolute"
+            top={6}
+            right={6}
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+            }}
+            style={{ zIndex: 2 }}
+          >
+            {isFollowing ? (
+              <UnfollowButton
+                username={follower.username}
+                type={follower.type}
+              />
+            ) : (
+              <FollowButton
+                username={follower.username}
+                type={follower.type}
+              />
+            )}
+          </Box>
+        )}
 
         <Stack align="center" mt={-40} gap="sm" pb="md" px="md">
           <Avatar

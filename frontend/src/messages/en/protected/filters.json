@@ -59,5 +59,6 @@
   },
   "options": {
     "hasRecordings": "Only show creators with VODs"
-  }
+  },
+  "excludeMyCreators": "Exclude my creators"
 }

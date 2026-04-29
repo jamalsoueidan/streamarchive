@@ -267,6 +267,7 @@ export default async function Page({ params }: PageProps) {
                 </Tooltip>
                 <Anchor
                   href={`/dmca?url=${encodeURIComponent(profileUrl)}`}
+                  rel="nofollow"
                   size="xs"
                   c="dimmed"
                 >
